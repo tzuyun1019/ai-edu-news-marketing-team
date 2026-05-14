@@ -154,7 +154,7 @@ body {
 .day-pane[hidden] { display: none; }
 
 /* ── Split Layout ── */
-.split { flex: 1; display: flex; overflow: hidden; }
+.split { flex: 1; display: flex; overflow: hidden; position: relative; }
 
 /* ── Left: News List ── */
 .news-list {
@@ -166,6 +166,8 @@ body {
   background: var(--bg);
   flex-shrink: 0;
   scrollbar-width: thin;
+  display: flex;
+  flex-direction: column;
 }
 .news-list::-webkit-scrollbar { width: 4px; }
 .news-list::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
@@ -179,6 +181,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 1;
+  flex-shrink: 0;
 }
 .pane-header strong { color: var(--ink); font-weight: 600; }
 .pane-header .count { color: var(--terra-ink); font-weight: 600; }
@@ -191,6 +194,7 @@ body {
   text-transform: uppercase;
   padding: 10px 16px 4px;
   border-top: 1px solid var(--border-soft);
+  flex-shrink: 0;
 }
 .section-label:first-of-type { border-top: none; }
 
@@ -203,6 +207,7 @@ body {
   gap: 9px;
   align-items: flex-start;
   border-left: 3px solid transparent;
+  flex-shrink: 0;
 }
 .news-item:hover  { background: var(--card-hover); }
 .news-item.active {
@@ -252,6 +257,27 @@ body {
 }
 .detail-panel::-webkit-scrollbar { width: 4px; }
 .detail-panel::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+/* Back button (mobile only, hidden on desktop) */
+.back-btn {
+  display: none;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  color: var(--ink-soft);
+  font-size: 13px;
+  font-family: inherit;
+  cursor: pointer;
+  padding: 12px 18px 8px;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+.back-btn:hover { color: var(--ink); }
+.back-btn svg { flex-shrink: 0; }
+
+/* Mobile-only detail scroll wrapper */
+.mobile-detail-scroll { flex: 1; overflow-y: auto; padding: 0 18px 32px; }
 
 /* Empty state (detail hint) */
 .detail-empty {
@@ -356,21 +382,55 @@ body {
 }
 .site-footer #updated { color: var(--ink-soft); }
 
-/* ── Mobile ── */
+/* ══════════════════════════════════════
+   MOBILE RESPONSIVE (≤ 640px)
+   Master → Detail slide pattern
+══════════════════════════════════════ */
 @media (max-width: 640px) {
-  .split { flex-direction: column; }
+  .site-header { padding: 14px 16px 10px; }
+  .site-header h1 { font-size: 17px; }
+  .meta { font-size: 11.5px; gap: 6px; }
+  .day-tabs { padding: 0 10px; }
+  .tab { min-width: 50px; padding: 8px 10px 9px; }
+  .tab-date { font-size: 13px; }
+
+  /* Split becomes full-screen stacked container */
+  .split { overflow: hidden; }
+
+  /* List: full width, slides out to left */
   .news-list {
-    width: 100%;
-    max-width: none;
-    min-width: unset;
+    width: 100%; max-width: none; min-width: unset;
     border-right: none;
-    border-bottom: 1px solid var(--border-soft);
-    max-height: 42vh;
+    position: absolute; inset: 0;
+    max-height: none;
+    transition: transform 0.28s cubic-bezier(.4,0,.2,1), opacity 0.28s;
   }
-  .detail-panel { padding: 16px 18px 32px; }
-  .site-header { padding: 16px 18px 12px; }
-  .site-header h1 { font-size: 18px; }
-  .day-tabs { padding: 0 12px; }
+
+  /* Detail: slides in from right */
+  .detail-panel {
+    position: absolute; inset: 0;
+    padding: 0 0 24px;
+    transform: translateX(100%);
+    transition: transform 0.28s cubic-bezier(.4,0,.2,1);
+    display: flex; flex-direction: column;
+    overflow: hidden;
+  }
+
+  /* When detail is active */
+  .split.mobile-detail .news-list   { transform: translateX(-100%); pointer-events: none; }
+  .split.mobile-detail .detail-panel { transform: translateX(0); }
+
+  /* Show back button only on mobile */
+  .back-btn { display: flex; }
+
+  .story-card { padding: 16px; border-radius: 12px; }
+  .story-card h2 { font-size: 15px; }
+  .story-card p  { font-size: 13px; }
+  .takeaway p    { font-size: 12.5px; }
+
+  .detail-empty { padding: 40px 16px; }
+  .empty-state  { padding: 40px 16px; margin: 16px; }
+  .site-footer  { padding: 10px 16px; font-size: 11px; }
 }
 </style>
 </head>
@@ -384,7 +444,7 @@ body {
     <span class="dot">·</span>
     <span class="badge">行銷團隊版</span>
     <span class="dot">·</span>
-    <span>點擊左側新聞查看詳情</span>
+    <span id="meta-hint">點擊左側新聞查看詳情</span>
   </div>
 </header>
 
@@ -529,6 +589,17 @@ body {
 </footer>
 
 <script>
+/* ── 手機偵測 ── */
+function isMobile() { return window.innerWidth <= 640; }
+
+/* ── 調整 meta hint ── */
+function updateHint() {
+  const el = document.getElementById('meta-hint');
+  if (el) el.textContent = isMobile() ? '點選新聞查看詳情' : '點擊左側新聞查看詳情';
+}
+updateHint();
+window.addEventListener('resize', updateHint);
+
 /* ── Tab switching ── */
 (function () {
   const tabsEl    = document.getElementById('dayTabs');
@@ -543,19 +614,18 @@ body {
     tab.classList.add('active');
 
     const day = tab.dataset.day;
-
-    // 找有內容的 pane
     const targetPane = container.querySelector(`.day-pane:not(#emptyPane)[data-day="${day}"]`);
-
     container.querySelectorAll('.day-pane:not(#emptyPane)').forEach(p => p.setAttribute('hidden', ''));
 
     if (targetPane) {
       emptyPane.setAttribute('hidden', '');
       targetPane.removeAttribute('hidden');
+      // 切換 tab 時，手機上回到列表視圖
+      const split = targetPane.querySelector('.split');
+      if (split) split.classList.remove('mobile-detail');
     } else {
-      // 顯示 empty state，並動態填入日期
-      const dow  = tab.querySelector('.tab-dow')  ? tab.querySelector('.tab-dow').textContent  : '';
-      const date = tab.querySelector('.tab-date') ? tab.querySelector('.tab-date').textContent : '';
+      const dow  = tab.querySelector('.tab-dow')?.textContent  || '';
+      const date = tab.querySelector('.tab-date')?.textContent || '';
       emptyPane.querySelector('.empty-date').textContent = `${dow} ${date}`;
       emptyPane.removeAttribute('hidden');
     }
@@ -565,6 +635,7 @@ body {
 /* ── News item click → detail panel ── */
 function selectNews(itemEl) {
   const pane  = itemEl.closest('.day-pane');
+  const split = pane.querySelector('.split');
   pane.querySelectorAll('.news-item').forEach(el => el.classList.remove('active'));
   itemEl.classList.add('active');
 
@@ -572,21 +643,37 @@ function selectNews(itemEl) {
   const panel = pane.querySelector('.detail-panel');
 
   panel.innerHTML = `
-    <div class="story-card">
-      <span class="tag ${d.tagClass}">${d.section}</span>
-      <h2>${d.title}</h2>
-      <p>${d.para1}</p>
-      <p>${d.para2}</p>
-      <div class="takeaway">
-        <span class="takeaway-label">給 EdTech 產品團隊的啟示</span>
-        <p>${d.takeaway}</p>
+    <button class="back-btn" onclick="goBackToList(this)">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 18l-6-6 6-6"/></svg>
+      返回列表
+    </button>
+    <div class="mobile-detail-scroll">
+      <div class="story-card">
+        <span class="tag ${d.tagClass}">${d.section}</span>
+        <h2>${d.title}</h2>
+        <p>${d.para1}</p>
+        <p>${d.para2}</p>
+        <div class="takeaway">
+          <span class="takeaway-label">給 EdTech 產品團隊的啟示</span>
+          <p>${d.takeaway}</p>
+        </div>
+        <div class="story-source">
+          來源：<a href="${d.sourceUrl}" target="_blank" rel="noopener">${d.sourceName}</a>
+        </div>
       </div>
-      <div class="story-source">
-        來源：<a href="${d.sourceUrl}" target="_blank" rel="noopener">${d.sourceName}</a>
-      </div>
-    </div>
-  `;
+    </div>`;
+
   panel.scrollTop = 0;
+
+  // 手機：滑入詳情
+  if (isMobile()) {
+    split.classList.add('mobile-detail');
+  }
+}
+
+/* ── 返回列表（手機） ── */
+function goBackToList(btn) {
+  btn.closest('.split').classList.remove('mobile-detail');
 }
 </script>
 </body>
