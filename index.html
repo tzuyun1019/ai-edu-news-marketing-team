@@ -1,256 +1,393 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>教育 AI 情報 · 快讀版</title>
-  <style>
-    /* ── Morandi Palette ── */
-    :root {
-      --cream:       #F5F0EB;
-      --warm-white:  #FAF7F4;
-      --dusty-blue:  #8BA3B4;
-      --blue-light:  #B8CEDB;
-      --blue-hover:  #7A93A5;
-      --sage:        #9CAF8B;
-      --sage-dark:   #7A8F7A;
-      --terracotta:  #C4937A;
-      --warm-brown:  #5C4A3D;
-      --tan:         #8B7355;
-      --beige:       #D4C5B0;
-      --border:      #E2D8CE;
-      --text-main:   #3D3028;
-      --text-sub:    #7A6A5A;
-    }
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日教育 AI 情報 · 快讀版</title>
+<style>
+/* ── 完全繼承深度版莫蘭迪 Palette ── */
+:root {
+  color-scheme: light;
+  --bg:          #EDE8DF;
+  --card:        #F6F1E7;
+  --card-hover:  #F0E9DA;
+  --ink:         #4F4A42;
+  --ink-soft:    #7C7368;
+  --ink-faint:   #A39A8E;
+  --border:      #D8CFBE;
+  --border-soft: #E5DDCD;
 
-    html, body { height: 100%; }
-    body {
-      font-family: 'Noto Sans TC', 'PingFang TC', system-ui, sans-serif;
-      background: var(--cream);
-      color: var(--text-main);
-      display: flex;
-      flex-direction: column;
-    }
+  --sage:        #A8B5A0;
+  --sage-bg:     #DDE2D2;
+  --sage-ink:    #4F5C46;
+  --mauve:       #BFA8A8;
+  --mauve-bg:    #E6D8D5;
+  --mauve-ink:   #7E5A5A;
+  --terra:       #C9A99C;
+  --terra-bg:    #ECDDD3;
+  --terra-ink:   #8B5E51;
+  --slate:       #9FA8B0;
+  --slate-bg:    #DCE0E2;
+  --slate-ink:   #4F5A66;
+  --olive:       #B5AD8A;
+  --olive-bg:    #E5DFC8;
+  --olive-ink:   #6E6646;
 
-    /* ── Header ── */
-    .site-header {
-      background: var(--dusty-blue);
-      color: #fff;
-      padding: 14px 24px;
-      flex-shrink: 0;
-    }
-    .site-header h1 { font-size: 1.1rem; font-weight: 700; letter-spacing: .02em; }
-    .site-header h1 em { font-style: normal; font-weight: 400; opacity: .75; font-size: .88em; }
-    .site-header .meta { font-size: .72rem; color: var(--blue-light); margin-top: 3px; }
+  --takeaway-bg: #EFE7D6;
+  --takeaway-ink:#6B5E45;
+  --takeaway-bd: #DBCFB3;
+}
 
-    /* ── Day Tabs ── */
-    .day-tabs {
-      display: flex;
-      background: var(--warm-white);
-      border-bottom: 1px solid var(--border);
-      overflow-x: auto;
-      padding: 0 16px;
-      flex-shrink: 0;
-      scrollbar-width: none;
-    }
-    .day-tabs::-webkit-scrollbar { display: none; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC",
+               "Helvetica Neue", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.78;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
+}
 
-    .tab {
-      padding: 8px 14px 6px;
-      font-size: .75rem;
-      cursor: pointer;
-      border-bottom: 2.5px solid transparent;
-      white-space: nowrap;
-      color: var(--text-sub);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1px;
-      transition: color .15s;
-    }
-    .tab .tab-dow  { font-weight: 600; font-size: .78rem; }
-    .tab .tab-date { font-size: .68rem; }
-    .tab.active    { border-bottom-color: var(--dusty-blue); color: var(--dusty-blue); }
-    .tab.empty     { color: var(--beige); cursor: default; }
-    .tab-today {
-      font-size: .58rem;
-      background: var(--terracotta);
-      color: #fff;
-      border-radius: 8px;
-      padding: 1px 5px;
-      margin-top: 1px;
-    }
+/* ── Header ── */
+.site-header {
+  padding: 22px 26px 14px;
+  border-bottom: 1px solid var(--border-soft);
+  flex-shrink: 0;
+  background: var(--bg);
+}
+.kicker {
+  font-size: 11.5px;
+  letter-spacing: 0.2em;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+.site-header h1 {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+.meta {
+  font-size: 13px;
+  color: var(--ink-soft);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.meta .dot { color: var(--ink-faint); }
+.badge {
+  display: inline-block;
+  padding: 2px 9px;
+  background: var(--terra-bg);
+  color: var(--terra-ink);
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
 
-    /* ── Pane container ── */
-    #panesContainer { flex: 1; overflow: hidden; display: flex; flex-direction: column; }
+/* ── Day Tabs ── */
+.day-tabs {
+  display: flex;
+  gap: 2px;
+  border-bottom: 2px solid var(--border-soft);
+  overflow-x: auto;
+  scrollbar-width: thin;
+  padding: 0 20px;
+  flex-shrink: 0;
+  background: var(--bg);
+}
+.day-tabs::-webkit-scrollbar { height: 3px; }
+.day-tabs::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
 
-    .day-pane       { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
-    .day-pane[hidden]{ display: none; }
+.tab {
+  background: transparent;
+  border: none;
+  padding: 10px 14px 11px;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  color: var(--ink-soft);
+  font-family: inherit;
+  position: relative;
+  transition: background 0.15s, color 0.15s;
+  min-width: 68px;
+  flex: 0 0 auto;
+  border-bottom: 2px solid transparent;
+}
+.tab:hover { background: var(--card); color: var(--ink); }
+.tab.active {
+  background: var(--card);
+  color: var(--ink);
+  border-bottom: 2px solid var(--sage);
+  margin-bottom: -2px;
+}
+.tab.empty { color: var(--ink-faint); cursor: default; }
+.tab.empty:hover { background: var(--card-hover); color: var(--ink-soft); }
+.tab-dow  { font-size: 11px; letter-spacing: 0.1em; font-weight: 500; }
+.tab-date { font-size: 15px; font-weight: 600; letter-spacing: 0.01em; }
+.tab-today {
+  position: absolute;
+  top: 3px; right: 4px;
+  font-size: 8.5px;
+  background: var(--terra);
+  color: #fff;
+  padding: 1px 5px;
+  border-radius: 6px;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+}
 
-    /* ── Split layout ── */
-    .split {
-      flex: 1;
-      display: flex;
-      overflow: hidden;
-    }
+/* ── Pane container ── */
+#panesContainer { flex: 1; overflow: hidden; display: flex; flex-direction: column; }
+.day-pane { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+.day-pane[hidden] { display: none; }
 
-    /* ── Left: News List ── */
-    .news-list {
-      width: 38%;
-      min-width: 240px;
-      max-width: 360px;
-      border-right: 1px solid var(--border);
-      overflow-y: auto;
-      background: var(--warm-white);
-      flex-shrink: 0;
-    }
-    .section-label {
-      font-size: .65rem;
-      font-weight: 700;
-      color: var(--sage-dark);
-      padding: 10px 14px 4px;
-      letter-spacing: .06em;
-      border-top: 1px solid var(--border);
-    }
-    .section-label:first-child { border-top: none; }
+/* ── Split Layout ── */
+.split { flex: 1; display: flex; overflow: hidden; }
 
-    .news-item {
-      padding: 11px 14px;
-      cursor: pointer;
-      border-bottom: 1px solid var(--border);
-      transition: background .12s;
-      display: flex;
-      gap: 8px;
-      align-items: flex-start;
-    }
-    .news-item:hover  { background: #EEE8E1; }
-    .news-item.active { background: #E5EDF4; border-left: 3px solid var(--dusty-blue); padding-left: 11px; }
+/* ── Left: News List ── */
+.news-list {
+  width: 36%;
+  min-width: 240px;
+  max-width: 340px;
+  border-right: 1px solid var(--border-soft);
+  overflow-y: auto;
+  background: var(--bg);
+  flex-shrink: 0;
+  scrollbar-width: thin;
+}
+.news-list::-webkit-scrollbar { width: 4px; }
+.news-list::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
 
-    .tag {
-      font-size: .6rem;
-      font-weight: 700;
-      padding: 2px 5px;
-      border-radius: 3px;
-      white-space: nowrap;
-      flex-shrink: 0;
-      margin-top: 2px;
-    }
-    .tag-product  { background: #DDE8F0; color: #3E6E8A; }
-    .tag-funding  { background: #EDE8D6; color: #7A5E20; }
-    .tag-partner  { background: #E4EBE0; color: #426842; }
-    .tag-research { background: #E6E2EE; color: #5E4E82; }
-    .tag-market   { background: #EEE6DE; color: #7A4E2E; }
-    .tag-taiwan   { background: #EEDEDE; color: #7A2E2E; }
+.pane-header {
+  font-size: 12.5px;
+  color: var(--ink-soft);
+  padding: 12px 16px 10px;
+  border-bottom: 1px dashed var(--border-soft);
+  background: var(--bg);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.pane-header strong { color: var(--ink); font-weight: 600; }
+.pane-header .count { color: var(--terra-ink); font-weight: 600; }
 
-    .item-text { min-width: 0; }
-    .item-title  { font-size: .82rem; line-height: 1.45; font-weight: 500; color: var(--text-main); }
-    .item-source { font-size: .67rem; color: var(--tan); margin-top: 3px; }
+.section-label {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  padding: 10px 16px 4px;
+  border-top: 1px solid var(--border-soft);
+}
+.section-label:first-of-type { border-top: none; }
 
-    .list-empty {
-      padding: 48px 16px;
-      text-align: center;
-      color: var(--beige);
-      font-size: .82rem;
-      line-height: 1.7;
-    }
+.news-item {
+  padding: 10px 16px 10px 14px;
+  cursor: pointer;
+  border-bottom: 1px solid var(--border-soft);
+  transition: background 0.12s;
+  display: flex;
+  gap: 9px;
+  align-items: flex-start;
+  border-left: 3px solid transparent;
+}
+.news-item:hover  { background: var(--card-hover); }
+.news-item.active {
+  background: var(--card);
+  border-left-color: var(--sage);
+}
 
-    /* ── Right: Detail Panel ── */
-    .detail-panel {
-      flex: 1;
-      overflow-y: auto;
-      padding: 28px 36px;
-      background: var(--cream);
-    }
+/* Tags — identical to 深度版 */
+.tag {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 2px 6px;
+  border-radius: 5px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.tag-product  { background: var(--sage-bg);  color: var(--sage-ink); }
+.tag-funding  { background: var(--terra-bg); color: var(--terra-ink); }
+.tag-partner  { background: var(--slate-bg); color: var(--slate-ink); }
+.tag-research { background: var(--olive-bg); color: var(--olive-ink); }
+.tag-market   { background: var(--mauve-bg); color: var(--mauve-ink); }
+.tag-taiwan   { background: var(--sage-bg);  color: var(--sage-ink); }
 
-    .detail-empty {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      color: var(--beige);
-      gap: 10px;
-    }
-    .detail-empty p { font-size: .82rem; }
+.item-text { min-width: 0; }
+.item-title  { font-size: 13px; line-height: 1.45; font-weight: 500; color: var(--ink); }
+.item-source { font-size: 11px; color: var(--ink-faint); margin-top: 3px; }
 
-    .detail-tag { display: inline-block; font-size: .68rem; font-weight: 700; padding: 3px 8px; border-radius: 3px; margin-bottom: 12px; }
-    .detail-title { font-size: 1.18rem; font-weight: 700; color: var(--warm-brown); line-height: 1.55; margin-bottom: 18px; }
-    .detail-body p { font-size: .875rem; line-height: 1.85; color: var(--text-main); margin-bottom: 14px; }
+.list-empty {
+  padding: 48px 16px;
+  text-align: center;
+  color: var(--ink-faint);
+  font-size: 13px;
+  line-height: 1.7;
+}
 
-    .takeaway {
-      background: var(--warm-white);
-      border-left: 3px solid var(--sage);
-      border-radius: 0 6px 6px 0;
-      padding: 14px 16px;
-      margin: 18px 0 20px;
-    }
-    .takeaway-label {
-      display: block;
-      font-size: .67rem;
-      font-weight: 700;
-      color: var(--sage-dark);
-      letter-spacing: .05em;
-      margin-bottom: 6px;
-    }
-    .takeaway p { font-size: .83rem; line-height: 1.78; color: var(--tan); }
+/* ── Right: Detail Panel ── */
+.detail-panel {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px 28px 40px;
+  background: var(--bg);
+  scrollbar-width: thin;
+}
+.detail-panel::-webkit-scrollbar { width: 4px; }
+.detail-panel::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
 
-    .source-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      background: var(--dusty-blue);
-      color: #fff;
-      text-decoration: none;
-      border-radius: 6px;
-      padding: 9px 18px;
-      font-size: .82rem;
-      font-weight: 600;
-      transition: background .15s;
-    }
-    .source-btn:hover { background: var(--blue-hover); }
-    .source-caption { font-size: .67rem; color: var(--tan); margin-top: 8px; }
+/* Empty state */
+.detail-empty {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink-faint);
+  gap: 12px;
+}
+.detail-empty svg { opacity: 0.35; }
+.detail-empty p { font-size: 13.5px; }
 
-    /* ── Footer ── */
-    .site-footer {
-      font-size: .68rem;
-      color: var(--tan);
-      text-align: center;
-      padding: 8px 16px;
-      background: var(--warm-white);
-      border-top: 1px solid var(--border);
-      flex-shrink: 0;
-    }
+/* Story card — matches 深度版 */
+.story-card {
+  background: var(--card);
+  border: 1px solid var(--border-soft);
+  border-radius: 14px;
+  padding: 22px 24px;
+}
+.story-card .tag { margin-bottom: 10px; }
+.story-card h2 {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0 0 10px;
+  letter-spacing: -0.005em;
+  line-height: 1.5;
+  color: var(--ink);
+}
+.story-card p {
+  margin: 0 0 12px;
+  font-size: 14px;
+  color: var(--ink);
+  line-height: 1.8;
+}
+.story-card p:last-of-type { margin-bottom: 0; }
 
-    /* ── Mobile ── */
-    @media (max-width: 640px) {
-      .split { flex-direction: column; }
-      .news-list { width: 100%; max-width: none; min-width: unset; border-right: none; border-bottom: 1px solid var(--border); max-height: 44vh; }
-      .detail-panel { padding: 16px 18px; }
-    }
-  </style>
+.takeaway {
+  background: var(--takeaway-bg);
+  border: 1px solid var(--takeaway-bd);
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin: 14px 0 10px;
+}
+.takeaway-label {
+  display: block;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--takeaway-ink);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.takeaway p {
+  margin: 0;
+  font-size: 13.5px;
+  color: var(--takeaway-ink);
+  line-height: 1.72;
+}
+
+.story-source {
+  font-size: 12px;
+  color: var(--ink-soft);
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--border-soft);
+}
+.story-source a {
+  color: #8B7A6E;
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1px;
+  transition: color 0.15s;
+}
+.story-source a:hover { color: var(--ink); border-bottom-color: var(--ink-faint); }
+
+/* ── Footer ── */
+.site-footer {
+  padding: 12px 24px;
+  border-top: 1px solid var(--border-soft);
+  font-size: 12px;
+  color: var(--ink-faint);
+  text-align: center;
+  line-height: 1.8;
+  flex-shrink: 0;
+  background: var(--bg);
+}
+.site-footer #updated { color: var(--ink-soft); }
+
+/* ── Mobile ── */
+@media (max-width: 640px) {
+  .split { flex-direction: column; }
+  .news-list {
+    width: 100%;
+    max-width: none;
+    min-width: unset;
+    border-right: none;
+    border-bottom: 1px solid var(--border-soft);
+    max-height: 42vh;
+  }
+  .detail-panel { padding: 16px 18px 32px; }
+  .site-header { padding: 16px 18px 12px; }
+  .site-header h1 { font-size: 18px; }
+  .day-tabs { padding: 0 12px; }
+}
+</style>
 </head>
 <body>
 
 <header class="site-header">
-  <h1>📰 教育 AI 情報 <em>快讀版</em></h1>
-  <div class="meta">每日清晨 7:00 自動更新（台北時間）· 全球教育 AI 應用動態</div>
+  <div class="kicker">每日情報 · 教育 AI 應用</div>
+  <h1>全球教育 AI 應用動態 <span style="font-weight:400;color:var(--ink-soft);font-size:.82em">快讀版</span></h1>
+  <div class="meta">
+    <span id="weekrange">本週 –</span>
+    <span class="dot">·</span>
+    <span class="badge">行銷團隊版</span>
+    <span class="dot">·</span>
+    <span>點擊左側新聞查看詳情</span>
+  </div>
 </header>
 
 <nav class="day-tabs" id="dayTabs">
   <!-- Populated by daily agent -->
-  <div class="tab empty" data-day=""><span class="tab-dow">週一</span><span class="tab-date">–</span></div>
-  <div class="tab empty" data-day=""><span class="tab-dow">週二</span><span class="tab-date">–</span></div>
-  <div class="tab empty" data-day=""><span class="tab-dow">週三</span><span class="tab-date">–</span></div>
-  <div class="tab empty" data-day=""><span class="tab-dow">週四</span><span class="tab-date">–</span></div>
-  <div class="tab empty" data-day=""><span class="tab-dow">週五</span><span class="tab-date">–</span></div>
-  <div class="tab empty" data-day=""><span class="tab-dow">週六</span><span class="tab-date">–</span></div>
-  <div class="tab empty" data-day=""><span class="tab-dow">週日</span><span class="tab-date">–</span></div>
+  <button class="tab empty" data-day=""><span class="tab-dow">週一</span><span class="tab-date">–</span></button>
+  <button class="tab empty" data-day=""><span class="tab-dow">週二</span><span class="tab-date">–</span></button>
+  <button class="tab empty" data-day=""><span class="tab-dow">週三</span><span class="tab-date">–</span></button>
+  <button class="tab empty" data-day=""><span class="tab-dow">週四</span><span class="tab-date">–</span></button>
+  <button class="tab empty" data-day=""><span class="tab-dow">週五</span><span class="tab-date">–</span></button>
+  <button class="tab empty" data-day=""><span class="tab-dow">週六</span><span class="tab-date">–</span></button>
+  <button class="tab empty" data-day=""><span class="tab-dow">週日</span><span class="tab-date">–</span></button>
 </nav>
 
 <div id="panesContainer">
 
-  <!-- Empty placeholder for future dates -->
+  <!-- Empty placeholder -->
   <section class="day-pane" id="emptyPane" hidden>
     <div class="split">
       <aside class="news-list"><div class="list-empty">尚無當日情報</div></aside>
@@ -258,7 +395,7 @@
     </div>
   </section>
 
-</div><!-- /panesContainer -->
+</div>
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
@@ -266,9 +403,9 @@
 </footer>
 
 <script>
-/* ── Tab switching ───────────────────────────────────────────────────── */
+/* ── Tab switching ── */
 (function () {
-  const tabsEl = document.getElementById('dayTabs');
+  const tabsEl  = document.getElementById('dayTabs');
   const container = document.getElementById('panesContainer');
 
   tabsEl.addEventListener('click', function (e) {
@@ -286,27 +423,29 @@
   });
 })();
 
-/* ── News item click → detail panel ─────────────────────────────────── */
+/* ── News item click → detail panel ── */
 function selectNews(itemEl) {
-  const pane = itemEl.closest('.day-pane');
+  const pane  = itemEl.closest('.day-pane');
   pane.querySelectorAll('.news-item').forEach(el => el.classList.remove('active'));
   itemEl.classList.add('active');
 
-  const d = JSON.parse(itemEl.dataset.story);
+  const d     = JSON.parse(itemEl.dataset.story);
   const panel = pane.querySelector('.detail-panel');
+
   panel.innerHTML = `
-    <span class="detail-tag ${d.tagClass}">${d.section}</span>
-    <h2 class="detail-title">${d.title}</h2>
-    <div class="detail-body">
+    <div class="story-card">
+      <span class="tag ${d.tagClass}">${d.section}</span>
+      <h2>${d.title}</h2>
       <p>${d.para1}</p>
       <p>${d.para2}</p>
+      <div class="takeaway">
+        <span class="takeaway-label">給 EdTech 產品團隊的啟示</span>
+        <p>${d.takeaway}</p>
+      </div>
+      <div class="story-source">
+        來源：<a href="${d.sourceUrl}" target="_blank" rel="noopener">${d.sourceName}</a>
+      </div>
     </div>
-    <div class="takeaway">
-      <span class="takeaway-label">給 EdTech 產品團隊的啟示</span>
-      <p>${d.takeaway}</p>
-    </div>
-    <a class="source-btn" href="${d.sourceUrl}" target="_blank" rel="noopener">前往原文 →</a>
-    <div class="source-caption">來源：${d.sourceName}</div>
   `;
   panel.scrollTop = 0;
 }
