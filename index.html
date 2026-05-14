@@ -253,7 +253,7 @@ body {
 .detail-panel::-webkit-scrollbar { width: 4px; }
 .detail-panel::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
 
-/* Empty state */
+/* Empty state (detail hint) */
 .detail-empty {
   height: 100%;
   display: flex;
@@ -265,6 +265,20 @@ body {
 }
 .detail-empty svg { opacity: 0.35; }
 .detail-empty p { font-size: 13.5px; }
+
+/* Future date empty state — matches 深度版 */
+.empty-state {
+  background: var(--card);
+  border: 1px dashed var(--border);
+  border-radius: 14px;
+  padding: 60px 24px;
+  text-align: center;
+  color: var(--ink-soft);
+  max-width: 480px;
+  margin: 0 auto;
+}
+.empty-state .empty-date { font-size: 16px; color: var(--ink); margin: 0 0 8px; font-weight: 600; }
+.empty-state .empty-hint { font-size: 13.5px; margin: 0; line-height: 1.7; }
 
 /* Story card — matches 深度版 */
 .story-card {
@@ -387,11 +401,16 @@ body {
 
 <div id="panesContainer">
 
-  <!-- Empty placeholder -->
+  <!-- Empty placeholder for future/ungenerated dates -->
   <section class="day-pane" id="emptyPane" hidden>
     <div class="split">
-      <aside class="news-list"><div class="list-empty">尚無當日情報</div></aside>
-      <div class="detail-panel"><div class="detail-empty"><p>尚無當日情報</p></div></div>
+      <aside class="news-list"><div class="list-empty">本日尚未產出情報</div></aside>
+      <div class="detail-panel" style="display:flex;align-items:center;justify-content:center;">
+        <div class="empty-state">
+          <p class="empty-date">–</p>
+          <p class="empty-hint">本日尚未產出情報。<br>排程任務將於每天清晨 7:00（台北時間）自動更新。</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -405,21 +424,34 @@ body {
 <script>
 /* ── Tab switching ── */
 (function () {
-  const tabsEl  = document.getElementById('dayTabs');
+  const tabsEl    = document.getElementById('dayTabs');
   const container = document.getElementById('panesContainer');
+  const emptyPane = document.getElementById('emptyPane');
 
   tabsEl.addEventListener('click', function (e) {
     const tab = e.target.closest('.tab');
-    if (!tab || tab.classList.contains('empty')) return;
+    if (!tab || !tab.dataset.day) return;
 
     tabsEl.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
     tab.classList.add('active');
 
     const day = tab.dataset.day;
-    container.querySelectorAll('.day-pane:not(#emptyPane)').forEach(p => {
-      if (p.dataset.day === day) p.removeAttribute('hidden');
-      else p.setAttribute('hidden', '');
-    });
+
+    // 找有內容的 pane
+    const targetPane = container.querySelector(`.day-pane:not(#emptyPane)[data-day="${day}"]`);
+
+    container.querySelectorAll('.day-pane:not(#emptyPane)').forEach(p => p.setAttribute('hidden', ''));
+
+    if (targetPane) {
+      emptyPane.setAttribute('hidden', '');
+      targetPane.removeAttribute('hidden');
+    } else {
+      // 顯示 empty state，並動態填入日期
+      const dow  = tab.querySelector('.tab-dow')  ? tab.querySelector('.tab-dow').textContent  : '';
+      const date = tab.querySelector('.tab-date') ? tab.querySelector('.tab-date').textContent : '';
+      emptyPane.querySelector('.empty-date').textContent = `${dow} ${date}`;
+      emptyPane.removeAttribute('hidden');
+    }
   });
 })();
 
