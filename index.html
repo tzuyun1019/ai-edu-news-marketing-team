@@ -380,7 +380,7 @@ body {
   <div class="kicker">每日情報 · 教育 AI 應用</div>
   <h1>全球教育 AI 應用動態 <span style="font-weight:400;color:var(--ink-soft);font-size:.82em">快讀版</span></h1>
   <div class="meta">
-    <span id="weekrange">本週 –</span>
+    <span id="weekrange">本週 5/11–5/17</span>
     <span class="dot">·</span>
     <span class="badge">行銷團隊版</span>
     <span class="dot">·</span>
@@ -389,17 +389,124 @@ body {
 </header>
 
 <nav class="day-tabs" id="dayTabs">
-  <!-- Populated by daily agent -->
-  <button class="tab empty" data-day=""><span class="tab-dow">週一</span><span class="tab-date">–</span></button>
-  <button class="tab empty" data-day=""><span class="tab-dow">週二</span><span class="tab-date">–</span></button>
-  <button class="tab empty" data-day=""><span class="tab-dow">週三</span><span class="tab-date">–</span></button>
-  <button class="tab empty" data-day=""><span class="tab-dow">週四</span><span class="tab-date">–</span></button>
-  <button class="tab empty" data-day=""><span class="tab-dow">週五</span><span class="tab-date">–</span></button>
-  <button class="tab empty" data-day=""><span class="tab-dow">週六</span><span class="tab-date">–</span></button>
-  <button class="tab empty" data-day=""><span class="tab-dow">週日</span><span class="tab-date">–</span></button>
+  <button class="tab" data-day="2026-05-11"><span class="tab-dow">週一</span><span class="tab-date">5/11</span></button>
+  <button class="tab" data-day="2026-05-12"><span class="tab-dow">週二</span><span class="tab-date">5/12</span></button>
+  <button class="tab" data-day="2026-05-13"><span class="tab-dow">週三</span><span class="tab-date">5/13</span></button>
+  <button class="tab active" data-day="2026-05-14"><span class="tab-dow">週四</span><span class="tab-date">5/14</span><span class="tab-today">今日</span></button>
+  <button class="tab empty" data-day="2026-05-15"><span class="tab-dow">週五</span><span class="tab-date">5/15</span></button>
+  <button class="tab empty" data-day="2026-05-16"><span class="tab-dow">週六</span><span class="tab-date">5/16</span></button>
+  <button class="tab empty" data-day="2026-05-17"><span class="tab-dow">週日</span><span class="tab-date">5/17</span></button>
 </nav>
 
 <div id="panesContainer">
+
+  <section class="day-pane" data-day="2026-05-14">
+    <div class="split">
+      <aside class="news-list" id="list-2026-05-14">
+
+        <div class="pane-header">5月14日（週四）<span class="count"> · 9 則</span></div>
+
+        <div class="section-label">產品動態</div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"產品動態","tagClass":"tag-product","title":"Google 向 600 萬教師免費開放 AI 培訓，每月更新課程模組","para1":"Google 於 5 月 13 日正式推出 AI Educator Series，與 ISTE+ASCD 合作，向全美 600 萬名 K-12 及高等教育教師提供免費 AI 技能培訓，課程每月更新。學員可免費取得業界認可職業證照與 Google 最新 AI 工具使用權。","para2":"此計畫整合進 Google AI for Education Accelerator，聚焦教師 AI 素養的系統性提升而非單次培訓，代表 Google 將教師端培訓視為 AI 教育工具規模化推廣的核心槓桿策略。","takeaway":"教師是 AI 教育工具擴散最關鍵的槓桿；EdTech 產品若能同步提供結構化教師 onboarding 路徑，推廣效率將顯著提升。","sourceUrl":"https://blog.google/products-and-platforms/products/education/ai-tools-programs-educators/","sourceName":"Google Blog · From test prep to graduation, our latest AI tools support learners"}'>
+          <span class="tag tag-product">產品</span>
+          <div class="item-text">
+            <div class="item-title">Google 向 600 萬教師免費開放 AI 培訓，每月更新課程模組</div>
+            <div class="item-source">Google Blog</div>
+          </div>
+        </div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"產品動態","tagClass":"tag-product","title":"NotebookLM 整合進 Classroom，學生直接建立課程個人筆記本","para1":"Google 更新 Workspace for Education，高等教育學生現可在 Google Classroom 的 Gemini 標籤中直接建立 NotebookLM 課程筆記本。Education Plus 用戶的閃卡、測驗及音訊影片摘要功能上限也同步擴大。","para2":"AI 學習輔助工具深度嵌入 LMS 後，學生切換工具的摩擦大幅降低，代表 AI 教育功能從附加選項升格為課堂環境核心元件，是 EdTech 整合趨勢的重要里程碑。","takeaway":"AI 教育工具整合進 LMS（而非獨立 App）效果更優；規劃推廣策略時應優先評估 API 嵌入或 LTI 插件路徑，降低使用者切換成本。","sourceUrl":"https://workspaceupdates.googleblog.com/2026/04/students-can-now-create-personal-class-notebooks-with-NotebookLM-in-Google-Classroom.html","sourceName":"Google Workspace Updates · Students can now create personal class notebooks with NotebookLM in Google Classroom"}'>
+          <span class="tag tag-product">產品</span>
+          <div class="item-text">
+            <div class="item-title">NotebookLM 整合進 Classroom，學生直接建立課程個人筆記本</div>
+            <div class="item-source">Google Workspace Updates</div>
+          </div>
+        </div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"產品動態","tagClass":"tag-product","title":"Khan Academy 大改版：Khanmigo 嵌入日常教學，任務佇列取代傳統作業清單","para1":"Khan Academy 推出全新課堂設計，學生端加入 Learner Queue 任務佇列，將每日學習拆解為小步驟，並搭配寶石與週連勝遊戲化機制。Khanmigo AI 在學生卡關時提供一對一引導，設計原則是引導思考而非直接給答案。","para2":"改版聚焦降低教師操作複雜度，強化班級進度可視化，目前在多個學區試點，2026 學年完整推廣。免費內容庫與既有學生資料完整保留，只改產品體驗架構。","takeaway":"Khanmigo 的蘇格拉底引導模式已有學習成效佐證；EdTech 產品在 AI 輔導功能設計上，引導思考比直接解題更具長期教育價值。","sourceUrl":"https://blog.khanacademy.org/khan-academy-reimagined-for-districts-2026/","sourceName":"Khan Academy Blog · Motivation Meets Mastery: Khan Academy Reimagined for Every Classroom"}'>
+          <span class="tag tag-product">產品</span>
+          <div class="item-text">
+            <div class="item-title">Khan Academy 大改版：Khanmigo 嵌入日常教學，任務佇列取代傳統作業清單</div>
+            <div class="item-source">Khan Academy Blog</div>
+          </div>
+        </div>
+
+        <div class="section-label">工具推薦</div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"工具推薦","tagClass":"tag-product","title":"Duolingo AI 解釋功能全面免費，影片 AI 對話練習同步推出","para1":"2026 年起 Duolingo 將原付費的解釋我的答案功能開放給所有用戶，AI 即時分析錯誤原因並提供個人化說明。Max 訂閱者可與虛擬角色 Lily 進行 AI 影片通話口說練習，即時修正語法。","para2":"語言學習 App 的 AI 功能免費化趨勢加速，背後是 AI 即核心體驗的商業邏輯轉型。不過 Duolingo AI-first 策略也伴隨市場疑慮，股價已從高峰跌逾 80%。","takeaway":"免費開放 AI 核心功能可快速擴大用戶基礎，但壓縮訂閱收入；AI 功能的免費與付費邊界設定，是 EdTech 目前最值得深研的定價命題。","sourceUrl":"https://gamesbeat.com/duolingo-makes-its-ai-powered-explain-my-answer-feature-free-for-all-users-in-2026/","sourceName":"GamesBeat · Duolingo makes its AI-powered Explain My Answer feature free for all users in 2026"}'>
+          <span class="tag tag-product">工具</span>
+          <div class="item-text">
+            <div class="item-title">Duolingo AI 解釋功能全面免費，影片 AI 對話練習同步推出</div>
+            <div class="item-source">GamesBeat</div>
+          </div>
+        </div>
+
+        <div class="section-label">資金動態</div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"資金動態","tagClass":"tag-funding","title":"AI 批改平台 Pensive 獲 680 萬美元融資，300 萬題佐證市場需求","para1":"AI 輔助批改與個人化學習平台 Pensive 完成 Mayfield 領投的 680 萬美元種子輪，a16z 與 Sequoia Scout 基金也參與其中。封測期間已有千名以上教師、百所以上機構使用，累計批改超過 300 萬道題目。","para2":"Pensive 全面開放給所有教師後，資金將用於擴展深度學習功能與師生連結。AI 評量類工具目前在教育 AI 各細項中吸引最高比例 VC 資金，資本配置比率達 1.26x，居各類之首。","takeaway":"AI 批改工具兼具節省師資時間與提升學習品質的雙重可量化價值，是目前最易獲 VC 認可的 EdTech 切入點，值得深入研究其產品設計邏輯。","sourceUrl":"https://en.wowtale.net/2026/02/27/233611/","sourceName":"WowTale · Pensive Raises $6.8M Seed Round to Scale AI-Assisted Grading"}'>
+          <span class="tag tag-funding">資金</span>
+          <div class="item-text">
+            <div class="item-title">AI 批改平台 Pensive 獲 680 萬美元融資，300 萬題佐證市場需求</div>
+            <div class="item-source">WowTale</div>
+          </div>
+        </div>
+
+        <div class="section-label">台灣與亞洲</div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"台灣與亞洲","tagClass":"tag-taiwan","title":"南韓 8.5 億美元 AI 教科書計畫 4 個月夭折，教師賦能缺失是關鍵敗因","para1":"2025 年 3 月南韓 76 本 AI 數位教科書進入課堂，政府投入逾 8.5 億美元。然而一學期後，因內容錯誤、隱私疑慮及教師培訓嚴重不足，98.5% 教師認為培訓不夠，國會立法將其降為選用補充教材。","para2":"此案是全球 AI 教育政策最具警示性的反例：資金龐大、技術先進，但忽略教師共設，最終推動力量逆轉為阻力。多家出版商因低採購率已提起行政訴訟。","takeaway":"AI 教育工具導入成效取決於教師是否真正受惠，而非技術先進程度；教師共設與培訓是不可壓縮的投資，韓國案例是最清晰的全球實證。","sourceUrl":"https://www.seoulz.com/korea-ai-textbook-2026/","sourceName":"Seoulz · Korea AI Textbook 2026: How an $850M EdTech Dream Collapsed in 4 Months"}'>
+          <span class="tag tag-taiwan">亞洲</span>
+          <div class="item-text">
+            <div class="item-title">南韓 8.5 億美元 AI 教科書計畫 4 個月夭折，教師賦能缺失是關鍵敗因</div>
+            <div class="item-source">Seoulz</div>
+          </div>
+        </div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"台灣與亞洲","tagClass":"tag-taiwan","title":"台灣 55 所大專加入 AI 學程聯盟，跨校課程整合降低導入成本","para1":"教育部支持的臺灣大專院校人工智慧學程聯盟 TAICA，於 113 學年第 2 學期擴展至 55 所大專院校，包含台大等頂尖校，開設基礎、應用、進階及跨域四類 AI 學分學程，供各科系學生跨校選修。","para2":"此聯盟降低各校獨立開設 AI 課程的重複成本，讓非資工背景學生也能系統接觸 AI 應用訓練，是台灣將 AI 素養納入通識教育的重要基礎建設。","takeaway":"跨機構 AI 教育聯盟是降低推廣成本的有效架構；台灣 TAICA 若成效顯著，有潛力成為其他亞洲國家跨校 AI 課程整合的參考範本。","sourceUrl":"https://taicatw.net/","sourceName":"TAICA · 臺灣大專院校人工智慧學程聯盟"}'>
+          <span class="tag tag-taiwan">台灣</span>
+          <div class="item-text">
+            <div class="item-title">台灣 55 所大專加入 AI 學程聯盟，跨校課程整合降低導入成本</div>
+            <div class="item-source">TAICA</div>
+          </div>
+        </div>
+
+        <div class="section-label">Threads 精選</div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"Threads 精選","tagClass":"tag-partner","title":"Threads 熱傳：台大生常用 11 款 AI 工具清單，Kuse AI 做試卷最受推薦","para1":"台灣 Threads 帳號 @ai.study.tool 分享台大生常用的 11 款 AI 工具，涵蓋 Kuse AI（試卷練習）、ChatGPT（查資料）、Canva（簡報製作）等，以實際學習場景分類，引發廣泛轉發討論。","para2":"此類場景化工具清單在台灣學生族群中廣泛流傳，反映 AI 工具使用已滲透一般學生日常流程。工具的場景感是吸引點擊的關鍵，比技術規格更有說服力。","takeaway":"台灣學生傾向以任務導向評估 AI 工具；在地化推廣時以具體學習場景為切入點，如做試卷、寫報告，遠比強調技術規格更能吸引採用。","sourceUrl":"https://www.threads.com/@ai.study.tool/post/DP3KrJtkdOq/","sourceName":"Threads · @ai.study.tool"}'>
+          <span class="tag tag-partner">Threads</span>
+          <div class="item-text">
+            <div class="item-title">Threads 熱傳：台大生常用 11 款 AI 工具清單，Kuse AI 做試卷最受推薦</div>
+            <div class="item-source">Threads @ai.study.tool</div>
+          </div>
+        </div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"Threads 精選","tagClass":"tag-partner","title":"Threads 分享：Claude 新功能 Dispatch 讓手機可遠端指揮電腦 AI 工作","para1":"台灣 AI 觀察帳號 @future.ai.tw 分享 Claude 最新功能 Dispatch：透過手機配對，用戶可直接用手機傳訊指揮電腦上的 Claude 執行任務，擴展 AI 助理的多裝置使用情境，引起教育工作者熱議。","para2":"此功能改變教育工作者與 AI 的互動模式，從坐在電腦前進化到隨時隨地用手機指揮 AI 完成任務，對需在課堂與辦公室間頻繁切換的教師格外實用。","takeaway":"AI 工具的多裝置整合與隨時可用性是下一波採用的關鍵；教育科技產品應開始規劃行動端指揮、桌面端執行的新型使用場景。","sourceUrl":"https://www.threads.com/@future.ai.tw/post/DWAgAghCeNy/","sourceName":"Threads · @future.ai.tw"}'>
+          <span class="tag tag-partner">Threads</span>
+          <div class="item-text">
+            <div class="item-title">Threads 分享：Claude 新功能 Dispatch 讓手機可遠端指揮電腦 AI 工作</div>
+            <div class="item-source">Threads @future.ai.tw</div>
+          </div>
+        </div>
+
+      </aside>
+
+      <div class="detail-panel" id="detail-2026-05-14">
+        <div class="detail-empty">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          <p>點擊左側新聞查看詳情</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Empty placeholder for future/ungenerated dates -->
   <section class="day-pane" id="emptyPane" hidden>
@@ -418,7 +525,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">尚未更新</span>
+  最近更新：<span id="updated">2026-05-14 18:52 (Asia/Taipei)</span>
 </footer>
 
 <script>
