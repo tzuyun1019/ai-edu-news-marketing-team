@@ -452,15 +452,15 @@ body {
   <button class="tab" data-day="2026-05-11"><span class="tab-dow">週一</span><span class="tab-date">5/11</span></button>
   <button class="tab" data-day="2026-05-12"><span class="tab-dow">週二</span><span class="tab-date">5/12</span></button>
   <button class="tab" data-day="2026-05-13"><span class="tab-dow">週三</span><span class="tab-date">5/13</span></button>
-  <button class="tab active" data-day="2026-05-14"><span class="tab-dow">週四</span><span class="tab-date">5/14</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-day="2026-05-15"><span class="tab-dow">週五</span><span class="tab-date">5/15</span></button>
+  <button class="tab" data-day="2026-05-14"><span class="tab-dow">週四</span><span class="tab-date">5/14</span></button>
+  <button class="tab active" data-day="2026-05-15"><span class="tab-dow">週五</span><span class="tab-date">5/15</span><span class="tab-today">今日</span></button>
   <button class="tab empty" data-day="2026-05-16"><span class="tab-dow">週六</span><span class="tab-date">5/16</span></button>
   <button class="tab empty" data-day="2026-05-17"><span class="tab-dow">週日</span><span class="tab-date">5/17</span></button>
 </nav>
 
 <div id="panesContainer">
 
-  <section class="day-pane" data-day="2026-05-14">
+  <section class="day-pane" data-day="2026-05-14" hidden>
     <div class="split">
       <aside class="news-list" id="list-2026-05-14">
 
@@ -568,6 +568,105 @@ body {
     </div>
   </section>
 
+  <section class="day-pane" data-day="2026-05-15">
+    <div class="split">
+      <aside class="news-list" id="list-2026-05-15">
+
+        <div class="pane-header">5月15日（週五）<span class="count"> · 8 則</span></div>
+
+        <div class="section-label">產品動態</div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"產品動態","tagClass":"tag-product","title":"Gemini 和 NotebookLM 正式嵌入 Moodle，全球最大開源 LMS 原生支援 AI","para1":"5 月起 Google Workspace 的 Gemini LTI 正式擴展至 Moodle，全球使用最廣的開源 LMS。教師可在課程頁嵌入 Gemini 助手，學生可直接在 LMS 內使用 NotebookLM 生成課程摘要與音訊筆記，無需切換外部工具，全球 3 億以上 Moodle 用戶可受益。","para2":"Gemini LTI 原先僅支援 Canvas 與 Schoology，此次擴展至 Moodle 代表 AI 學習助手正式進入全球最大比例的大學與 K-12 機構，不再是少數進階平台特權，AI 嵌入 LMS 的趨勢正在系統性加速。","takeaway":"AI 嵌入 LMS 是降低使用門檻的最強路徑；若機構正在使用 Moodle，現在是評估 Gemini LTI 試點的最佳時機，可從單一課程小規模導入並蒐集教師使用反饋。","sourceUrl":"https://workspaceupdates.googleblog.com/2026/05/workspace-assignments-lti-and-gemini-lti-for-moodle.html","sourceName":"Google Workspace Updates · Workspace Assignments LTI and Gemini LTI are now available for Moodle"}'>
+          <span class="tag tag-product">產品</span>
+          <div class="item-text">
+            <div class="item-title">Gemini 和 NotebookLM 正式嵌入 Moodle，全球最大開源 LMS 原生支援 AI</div>
+            <div class="item-source">Google Workspace Updates</div>
+          </div>
+        </div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"產品動態","tagClass":"tag-product","title":"D2L Lumi 推出四大 AI 新功能：從出題到學習介入建議全覆蓋","para1":"D2L 於 5 月 5 日舉行首屆 Launch Week，推出 Lumi Ideas（作業靈感生成）、Lumi Insights（學習介入建議）、Lumi Quiz（多主題出題）、Lumi Summary（跨模組摘要）四項功能，全整合在 Brightspace LMS 中，教師無需離開平台即可操作。","para2":"D2L 更新策略聚焦降低教師備課與評量設計的重複性勞動，並首次將數據驅動介入建議納入 AI 流程。同期 Rasmussen University 決定整體採用，顯示 AI LMS 競爭已從功能比拚轉向整合深度。","takeaway":"LMS 的 AI 功能正從附加外掛升格為核心管理工具；比較現有 LMS 在 AI 介入建議與出題自動化上的能力，是評估是否需要升級或換平台的關鍵指標。","sourceUrl":"https://www.prnewswire.com/news-releases/d2l-launch-week-highlights-latest-product-releases-302763345.html","sourceName":"PR Newswire · D2L Launch Week Highlights Latest Product Releases"}'>
+          <span class="tag tag-product">產品</span>
+          <div class="item-text">
+            <div class="item-title">D2L Lumi 推出四大 AI 新功能：從出題到學習介入建議全覆蓋</div>
+            <div class="item-source">PR Newswire</div>
+          </div>
+        </div>
+
+        <div class="section-label">工具推薦</div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"工具推薦","tagClass":"tag-product","title":"Khan Academy × TED × ETS 推出萬元 AI 學士學位，Google 微軟 McKinsey 背書","para1":"Khan Academy、TED 與 ETS 宣布成立 Khan TED Institute，提供應用 AI 學士學位，學費不超過 1 萬美元、最快 3 年完成。課程結合 AI 應用實作、溝通與領導力，Google、Microsoft、Replit、McKinsey 已成早期雇主夥伴，預計 2027 年開放招生。","para2":"此計畫挑戰傳統高等教育的成本與時間框架，以三大非營利聯合背書及知名企業合作提升公信力。若成功，將成為 AI 時代職業教育的全新範本，對 EdTech 領域有高度示範效應。","takeaway":"低成本 AI 學位計畫的出現反映職業教育正加速脫離傳統路徑；EdTech 產品若能提供清晰的職業出口與企業合作背書，將顯著提升市場吸引力與採用意願。","sourceUrl":"https://blog.khanacademy.org/introducing-the-khan-ted-institute-a-new-approach-to-higher-education/","sourceName":"Khan Academy Blog · Introducing the Khan TED Institute, a New Approach to Higher Education"}'>
+          <span class="tag tag-product">工具</span>
+          <div class="item-text">
+            <div class="item-title">Khan Academy × TED × ETS 推出萬元 AI 學士學位，Google 微軟 McKinsey 背書</div>
+            <div class="item-source">Khan Academy Blog</div>
+          </div>
+        </div>
+
+        <div class="section-label">市場趨勢</div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"市場趨勢","tagClass":"tag-market","title":"Anthropic 與 Teach For All 攜手，63 國 10 萬名教師共同培訓 AI 教學應用","para1":"Anthropic 與全球教育非營利 Teach For All 合作，透過 AI 素養培育計畫在 63 個國家培訓超過 10 萬名教師掌握 Claude 教學應用。計畫已在賴比瑞亞開發氣候課程、在孟加拉設計數學遊戲、在阿根廷建立數位學習空間。","para2":"計畫以社群驅動（Claude Connect）與創新實驗（Claude Lab）雙軌運作，讓教師同時是 AI 學習者與共設者。Anthropic 直接投資教師端，代表 AI 公司已認知工具本身不足以推動教育變革，教師社群才是關鍵。","takeaway":"AI 教育工具大規模推廣需要教師社群而非個別訓練；建立有 peer-to-peer 分享機制的教師學習社群，是擴大工具覆蓋率最具持久性的策略。","sourceUrl":"https://www.anthropic.com/news/anthropic-teach-for-all","sourceName":"Anthropic · Anthropic and Teach For All launch global AI training initiative for educators"}'>
+          <span class="tag tag-market">趨勢</span>
+          <div class="item-text">
+            <div class="item-title">Anthropic 與 Teach For All 攜手，63 國 10 萬名教師共同培訓 AI 教學應用</div>
+            <div class="item-source">Anthropic</div>
+          </div>
+        </div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"市場趨勢","tagClass":"tag-market","title":"OECD 2026 數位教育展望：AI 個人化學習成各國施政焦點，政策配套普遍落後技術","para1":"OECD 發布《2026 數位教育展望》，彙整 30 餘國教育數位化進展，指出 AI 個人化學習工具已成各國施政共同目標，但數據隱私治理、教師培訓配套與評量系統更新普遍落後技術發展，報告強調以有意義的技術整合為核心原則。","para2":"此為 OECD 迄今最大規模的跨國教育 AI 比較報告，被多國教育部門引為政策依據。報告點名師生 AI 素養落差與評量框架過時為最大系統性風險，優先性高於技術本身問題。","takeaway":"OECD 報告是 EdTech 產品做市場論證最具說服力的第三方資料；若產品針對個人化學習或教師 AI 素養，這份報告的數據可直接引用為採購說服材料。","sourceUrl":"https://www.oecd.org/en/publications/oecd-digital-education-outlook-2026_062a7394-en.html","sourceName":"OECD · OECD Digital Education Outlook 2026"}'>
+          <span class="tag tag-market">趨勢</span>
+          <div class="item-text">
+            <div class="item-title">OECD 2026 數位教育展望：AI 個人化學習成各國施政焦點，政策配套普遍落後技術</div>
+            <div class="item-source">OECD</div>
+          </div>
+        </div>
+
+        <div class="section-label">台灣與亞洲</div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"台灣與亞洲","tagClass":"tag-taiwan","title":"日本 2030 全面採用數位教科書，韓國推 AI 語言平台助外籍學生融入課堂","para1":"Edmentum 亞太 5 月教育動態報告指出：日本預計 2030 年將數位教科書列為正式教材，目前已選定試點學校；南韓則擴大推廣 AI 韓語學習平台，專門協助移民家庭學生快速適應課堂語言需求，是 AI 語言教育最具說服力的實際應用場景之一。","para2":"亞太在 AI 教育政策上呈現兩種策略：韓國側重在地社會問題解決（移民語言融合），日本以系統數位化改革為主軸，兩者都反映 AI 工具正從試驗期過渡到制度化部署階段。","takeaway":"亞太 AI 教育市場有兩個清晰切入點：輔助移民與多元文化族群的語言學習，以及系統數位化需求強烈的傳統教育體系；專注其一都有可觀市場空間。","sourceUrl":"https://www.edmentum.com/intl/articles/may-2026-digital-transformation-and-secondary-school-reform-in-apac/","sourceName":"Edmentum · Education News in Asia-Pacific - May 2026"}'>
+          <span class="tag tag-taiwan">亞洲</span>
+          <div class="item-text">
+            <div class="item-title">日本 2030 全面採用數位教科書，韓國推 AI 語言平台助外籍學生融入課堂</div>
+            <div class="item-source">Edmentum</div>
+          </div>
+        </div>
+
+        <div class="section-label">Threads 精選</div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"Threads 精選","tagClass":"tag-partner","title":"Threads 熱傳：國小中高中老師必備 10 款 AI 教學工具清單，備課效率大提升","para1":"台灣 Threads 帳號 @daily.tools.ai 分享一份老師教學必備 AI 清單，涵蓋 Claude（課程設計）、Gamma（簡報製作）、Gradescope（AI 批改）、Edpuzzle（影片互動）等 10 款工具，適用國小至高中各段，以教學場景分類，引發廣泛轉發。","para2":"此類以教師視角切入的工具清單在 Threads 台灣教育圈廣為流傳，反映教師對 AI 工具的需求已從想了解轉為想立即可用。清單中工具均有免費或低門檻版本，符合一線教師使用習慣。","takeaway":"台灣教師對 AI 工具採用呈清單驅動特性，即由同儕推薦清單決定試用選擇；在教師社群中提供場景化工具清單，是最有效的低成本推廣路徑之一。","sourceUrl":"https://www.threads.com/@daily.tools.ai/post/DNu85H1QnDt/","sourceName":"Threads · @daily.tools.ai"}'>
+          <span class="tag tag-partner">Threads</span>
+          <div class="item-text">
+            <div class="item-title">Threads 熱傳：國小中高中老師必備 10 款 AI 教學工具清單，備課效率大提升</div>
+            <div class="item-source">Threads @daily.tools.ai</div>
+          </div>
+        </div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"Threads 精選","tagClass":"tag-partner","title":"Threads 分享：一個 AI 指令讓學習歷程不再像 AI 寫的，引發台灣高中生熱議","para1":"台灣設計與教育帳號 @tbd_studio_ 在 Threads 分享一個實用提示詞技巧，幫助學生將 AI 起草的學習歷程草稿轉化為更具個人反思感的文章，避免機械感與常見 AI 文體特徵。貼文引發大量高中生轉存，評論區累積數百則回應。","para2":"台灣高中學習歷程檔案制度推行後，AI 寫作輔助已成學生普遍行為，如何用 AI 卻不顯得像 AI 成為新的學習技能需求，反映 AI 工具在教育中的角色正從輔助演化為需要教導的使用素養。","takeaway":"AI 使用素養（辨識 AI 文體、調整輸出風格）已成台灣學生真實需求；教育工具若能內建去 AI 感的引導功能，在學習歷程製作場景中將有強烈差異化優勢。","sourceUrl":"https://www.threads.com/@tbd_studio_/post/DXtKibgiX_l/","sourceName":"Threads · @tbd_studio_"}'>
+          <span class="tag tag-partner">Threads</span>
+          <div class="item-text">
+            <div class="item-title">Threads 分享：一個 AI 指令讓學習歷程不再像 AI 寫的，引發台灣高中生熱議</div>
+            <div class="item-source">Threads @tbd_studio_</div>
+          </div>
+        </div>
+
+      </aside>
+
+      <div class="detail-panel" id="detail-2026-05-15">
+        <div class="detail-empty">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          <p>點擊左側新聞查看詳情</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Empty placeholder for future/ungenerated dates -->
   <section class="day-pane" id="emptyPane" hidden>
     <div class="split">
@@ -585,7 +684,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026-05-14 18:52 (Asia/Taipei)</span>
+  最近更新：<span id="updated">2026-05-15 07:52 (Asia/Taipei)</span>
 </footer>
 
 <script>
