@@ -1,0 +1,23 @@
+name: LINE Notify on Update
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Send LINE Notifications
+        env:
+          LINE_TOKEN_MKT: ${{ secrets.LINE_TOKEN_MKT }}
+          LINE_USER_MKT: ${{ secrets.LINE_USER_MKT }}
+          LINE_TOKEN_DEEP: ${{ secrets.LINE_TOKEN_DEEP }}
+          LINE_USER_DEEP: ${{ secrets.LINE_USER_DEEP }}
+          SITE_URL: "https://tzuyun1019.github.io/ai-edu-news-marketing-team/"
+        run: python3 .github/scripts/line_notify.py
