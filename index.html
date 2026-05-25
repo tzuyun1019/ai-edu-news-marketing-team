@@ -449,8 +449,8 @@ body {
 </header>
 
 <nav class="day-tabs" id="dayTabs">
-  <button class="tab active" data-day="2026-05-25"><span class="tab-dow">週一</span><span class="tab-date">5/25</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-day="2026-05-26"><span class="tab-dow">週二</span><span class="tab-date">5/26</span></button>
+  <button class="tab" data-day="2026-05-25"><span class="tab-dow">週一</span><span class="tab-date">5/25</span></button>
+  <button class="tab active" data-day="2026-05-26"><span class="tab-dow">週二</span><span class="tab-date">5/26</span><span class="tab-today">今日</span></button>
   <button class="tab empty" data-day="2026-05-27"><span class="tab-dow">週三</span><span class="tab-date">5/27</span></button>
   <button class="tab empty" data-day="2026-05-28"><span class="tab-dow">週四</span><span class="tab-date">5/28</span></button>
   <button class="tab empty" data-day="2026-05-29"><span class="tab-dow">週五</span><span class="tab-date">5/29</span></button>
@@ -460,7 +460,7 @@ body {
 
 <div id="panesContainer">
 
-  <section class="day-pane" data-day="2026-05-25">
+  <section class="day-pane" data-day="2026-05-25" hidden>
     <div class="split">
       <aside class="news-list" id="list-2026-05-25">
 
@@ -579,6 +579,116 @@ body {
     </div>
   </section>
 
+  <section class="day-pane" data-day="2026-05-26">
+    <div class="split">
+      <aside class="news-list" id="list-2026-05-26">
+
+        <div class="pane-header">5月26日（週二）<span class="count"> · 9 則</span></div>
+
+        <div class="section-label">產品動態</div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"產品動態","tagClass":"tag-product","title":"Google Gemini LTI 正式支援 Moodle，全球最大開源 LMS 課堂內可直接呼叫 NotebookLM 與 Gemini","para1":"Google 於 5 月 11 日正式將 Gemini LTI™ 支援延伸至 Moodle，使全球使用量最大的開源學習管理系統加入 Canvas、Schoology 的 AI 整合行列。教師無須離開 Moodle 課程頁面，即可讓學生在作業和課程內容頁面直接取用 Gemini 應用程式與 NotebookLM 的音訊摘要功能；管理員透過 LTI Dynamic Registration 規格完成一次設定後，Education Fundamentals、Standard 和 Plus 三個版本的學校師生皆可存取 AI 輔助功能。","para2":"全球有超過 4 億名學習者使用 Moodle，Gemini LTI 的加入代表 AI 教學工具的滲透率可在不要求學校採購新平台的前提下大規模提升。Google 選擇以 LTI 標準而非獨立平台切入的策略，正成為 2026 年 AI 教育工具的主流部署模式，也讓其他 LMS 廠商被迫評估是否跟進整合。","takeaway":"Gemini LTI 進駐 Moodle 代表「嵌入現有教師工作流程」已成 AI EdTech 主流部署策略；若你的工具有 LTI 或 API 整合能力，主動對接學校現有 LMS 而非另起爐灶，是 2026 年最快降低採用門檻、縮短採購週期的產品方向，LMS 整合能力已從加分功能成為採購評估的基線要求。","sourceUrl":"https://workspaceupdates.googleblog.com/2026/05/workspace-assignments-lti-and-gemini-lti-for-moodle.html","sourceName":"Google Workspace Updates · Workspace Assignments LTI and Gemini LTI for Moodle"}'>
+          <span class="tag tag-product">產品</span>
+          <div class="item-text">
+            <div class="item-title">Google Gemini LTI 正式支援 Moodle，全球最大開源 LMS 課堂內可直接呼叫 NotebookLM 與 Gemini</div>
+            <div class="item-source">Google Workspace Updates</div>
+          </div>
+        </div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"產品動態","tagClass":"tag-product","title":"GoGuardian 推出 Discover：AI 掃描學區 3,000 款數位工具，自動識別閒置授權與違規軟體節省預算","para1":"GoGuardian 於 4 月 14 日正式發布 Discover，提供學區教育科技長對全區 EdTech 生態的統一管理視圖。Discover 透過 AI 持續監控所有 App 的隱私合規認證，自動浮現未經核准的影子 IT 軟體，並識別從未被師生使用過的閒置授權。GoGuardian 指出，美國學區平均每年管理近 3,000 款數位工具，其中高達 70% 的軟體授權從未被學生或教師實際使用，Discover 截至 7 月 31 日提供 60 天免費試用。","para2":"Discover 把長期存在但缺乏解法的問題推向主流：EdTech 採購膨脹與合規風險管控。讓學區親眼看見授權浪費金額讓數字本身成為採購說服力，是 GoGuardian 的商業邏輯。對 EdTech 廠商而言，這個趨勢意味著學區將對使用率數據要求越來越嚴格，每款工具的採購續約都將面臨更嚴格的使用率審查。","takeaway":"GoGuardian Discover 揭示學區正系統性清查 EdTech 使用率，代表真實使用率數據將成為 2026 年合約續約的核心談判標準；若你的工具正在向學區採購，主動提供月活躍用戶數、使用頻率與功能開啟率，是在 Discover 這類清查工具普及後維持採購地位最必要的防守策略。","sourceUrl":"https://www.edtechdigest.com/2026/05/14/goguardian-discover/","sourceName":"EdTech Digest · GoGuardian Discover"}'>
+          <span class="tag tag-product">產品</span>
+          <div class="item-text">
+            <div class="item-title">GoGuardian 推出 Discover：AI 掃描學區 3,000 款數位工具，自動識別閒置授權與違規軟體節省預算</div>
+            <div class="item-source">EdTech Digest</div>
+          </div>
+        </div>
+
+        <div class="section-label">工具推薦</div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"工具推薦","tagClass":"tag-product","title":"Rasmussen 大學以 D2L Brightspace 取代 Blackboard，AI 導師 Lumi 優先在護理系部署個人化學習","para1":"D2L 宣布 Rasmussen 大學選擇 Brightspace 取代舊有 Blackboard 平台，並於 2026 年 5 月完成試點後優先在護理教育課程部署 Lumi AI。Lumi 提供個人化學習建議、Lumi Tutor 對話式輔導、Lumi Feedback 作業即時回饋以及 Performance+ 學習分析儀表板，讓護理系學生不離開課程平台即可獲得 AI 輔助學習支援；D2L Creator+ 則協助教師快速建構符合學習目標的沈浸式課程內容。","para2":"護理教育是全美 EdTech AI 滲透率低但學習壓力極高的課程類型，Rasmussen 選擇護理課程作為 AI 優先落地場景，反映出「學習成效可量化」是 AI 教育工具在高壓課程中最容易說服院校的切入點。D2L 的策略是讓個人化 AI 功能從一個系所的成功案例逐步擴展至全校，是目前大學 LMS 遷移市場最常見的進場路徑。","takeaway":"D2L Lumi 在護理教育的試點說明高壓課程是 AI 個人化學習工具最容易展現成效的場景；若你的工具有個人化學習功能，優先瞄準醫護、法律或工程等高壓課程系所作為試點合作對象，以可量化的學習成效數據作為向全校擴展的說服資本，是進入大學採購名單最有效的進場策略。","sourceUrl":"https://www.prnewswire.com/news-releases/rasmussen-university-selects-d2l-brightspace-to-deliver-inclusive-ai-in-education-302747324.html","sourceName":"PR Newswire · Rasmussen University Selects D2L Brightspace to Deliver Inclusive AI in Education"}'>
+          <span class="tag tag-product">工具</span>
+          <div class="item-text">
+            <div class="item-title">Rasmussen 大學以 D2L Brightspace 取代 Blackboard，AI 導師 Lumi 優先在護理系部署個人化學習</div>
+            <div class="item-source">PR Newswire</div>
+          </div>
+        </div>
+
+        <div class="section-label">資金動態</div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"資金動態","tagClass":"tag-funding","title":"歐洲學生筆記平台 Knowunity 完成 2,700 萬歐元 B 輪：17 歲創辦、15 國 2,000 萬用戶，矢志觸及 10 億學生","para1":"德國柏林 EdTech 新創 Knowunity 完成 2,700 萬歐元（約 2,900 萬美元）B 輪融資，由 XAnge 領投，Portfolion、Isomer Capital、Project A 等共同參與，累計融資達 4,500 萬歐元。Knowunity 由四位 17 歲高中生在 2020 年創立，提供學生為學生建立的 AI 學習筆記平台，目前已覆蓋 15 個國家逾 2,000 萬名用戶，計劃以本輪資金進一步擴張美國與亞洲市場，長期目標是觸及全球 10 億名學生。","para2":"Knowunity 在 2025-2026 AI 教育融資版圖中以 2,900 萬美元排名最大單筆，超過 AI 批改工具與教師助理整個品類的合計金額。其勝出邏輯清晰：學生自主上傳筆記建立網絡效應、AI 輔助學習降低製作門檻、社群口碑比廣告更有效，17 歲創辦人本身就是最具說服力的市場洞察。","takeaway":"Knowunity 的 B 輪說明學生為學生建立的產品比教師推薦工具更容易快速達到規模；若你的 EdTech 工具有學生端功能，建立學生自主生成與分享內容的機制是最低成本達到傳播效應的產品方向，也是 2026 年 AI 教育投資人最青睞的成長飛輪設計。","sourceUrl":"https://newmarketpitch.com/blogs/news/ai-education-funding-analysis","sourceName":"New Market Pitch · AI in Education Startup Funding 2025-2026"}'>
+          <span class="tag tag-funding">資金</span>
+          <div class="item-text">
+            <div class="item-title">歐洲學生筆記平台 Knowunity 完成 2,700 萬歐元 B 輪：17 歲創辦、15 國 2,000 萬用戶，矢志觸及 10 億學生</div>
+            <div class="item-source">New Market Pitch</div>
+          </div>
+        </div>
+
+        <div class="section-label">市場趨勢</div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"市場趨勢","tagClass":"tag-market","title":"EdTech Innovation Hub：AI 嵌入 LMS 生態的競賽已開始，2026 年 LMS 整合從差異化優勢成為採購基線","para1":"EdTech Innovation Hub 分析 Google 持續深化 Gemini、NotebookLM 與多個主流 LMS 整合後指出，AI 工具正在悄悄滑入所有人已在用的系統，而非以嶄新獨立平台的方式到來。2026 年的 AI 教育工具競爭核心已從 AI 功能是否強大，轉移到是否能無縫嵌入教師現有的日常工作流程；任何要求切換平台或重新學習操作方式的工具，都在面臨更高的採用阻力。","para2":"LMS 整合不再是加分功能，而是學校採購評估的必要條件。當 Gemini 已直接嵌入 Moodle、Canvas、Schoology，獨立 AI 教育工具若無法透過 LTI 或 API 嵌入同一生態，將面臨越來越難以進入學校採購名單的結構性障礙，也讓具備快速整合能力的 EdTech 工具取得明顯的競爭優勢。","takeaway":"LMS 整合能力已成為 2026 年學校 AI 工具採購的基本門檻而非差異化優勢；若你的工具尚無 LTI 或 API 整合，製作技術整合路線圖並在銷售話術中清楚說明何時可嵌入學校現有 LMS，是消除採購決策猶豫最直接有效的行動步驟。","sourceUrl":"https://www.edtechinnovationhub.com/news/google-expands-gemini-and-notebooklm-for-education-as-ai-tools-move-deeper-into-classrooms","sourceName":"EdTech Innovation Hub · Google expands Gemini and NotebookLM for education"}'>
+          <span class="tag tag-market">趨勢</span>
+          <div class="item-text">
+            <div class="item-title">EdTech Innovation Hub：AI 嵌入 LMS 生態的競賽已開始，2026 年 LMS 整合從差異化優勢成為採購基線</div>
+            <div class="item-source">EdTech Innovation Hub</div>
+          </div>
+        </div>
+
+        <div class="section-label">台灣與亞洲</div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"台灣與亞洲","tagClass":"tag-taiwan","title":"台灣品牌 BenQ 推出全球首款搭載專用 NPU 的教育 AI 互動顯示器 RP05，亞太美歐同步發售","para1":"台灣科技品牌 BenQ 正式推出 BenQ Board Pro RP05，是全球大尺寸互動顯示器中首款搭載 10 TOPS 專用神經處理單元（NPU）的教育顯示器。RP05 採用 Android 15 系統並通過 Google EDLA 認證，支援 AI 輔助白板、即時語音轉錄、課堂摘要生成與 50 點多點觸控，AI 運算在顯示器本地端完成而無須依賴雲端連線，大幅降低隱私與網路頻寬的管理負擔；65 吋、75 吋、86 吋三種規格在亞太、澳洲、美國市場同步發售。","para2":"BenQ 的 NPU 策略代表台灣 EdTech 硬體廠商正在搶佔 AI 課堂硬體的制高點：當軟體 AI 工具競爭日趨白熱化，在課堂物理終端嵌入專用 AI 算力成為差異化的新戰線。BenQ 以本地端 AI 處理強調資料不離校的隱私優勢，直接對應學校對雲端 AI 工具最普遍的顧慮。","takeaway":"BenQ RP05 顯示台灣品牌在 AI 教育硬體的全球佈局已開始落地；若你的 EdTech 軟體工具能與 AI 互動顯示器結合，建立硬體合作夥伴計畫是在台灣及亞太市場快速觸及課堂的通路捷徑，也是軟體工具提升課堂可見性最低成本的實體落地方式。","sourceUrl":"https://www.benq.com/en-ap/education/news/benq-launches-rp05-rm05-ai-interactive-displays.html","sourceName":"BenQ Education Asia Pacific · BenQ Launches AI-Optimized Interactive Displays"}'>
+          <span class="tag tag-taiwan">台灣</span>
+          <div class="item-text">
+            <div class="item-title">台灣品牌 BenQ 推出全球首款搭載專用 NPU 的教育 AI 互動顯示器 RP05，亞太美歐同步發售</div>
+            <div class="item-source">BenQ Education Asia Pacific</div>
+          </div>
+        </div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"台灣與亞洲","tagClass":"tag-taiwan","title":"中國五部委聯合發布「人工智能＋教育」行動計畫：2030 年 AI 全面融入中小學與高校課程體系","para1":"中國教育部聯合工業和信息化部等五個部委於 2026 年 4 月正式發布人工智能＋教育行動計畫，確立育人為本、素養為先、應用導向、智能向善的核心原則，明確目標為 2030 年形成人工智能與教育深度融合的完整格局。計畫推動 AI 列入高校公共基礎課程及中小學地方課程，並建立從幼稚園到大學的 AI 素養課程體系，將人工智能技術人才培育納入十五五教育戰略核心。","para2":"中國五部委聯合推動 AI 教育的政策格局，代表全球人口最多的國家以國家戰略層級強制推進 AI 素養普及，規模與速度對全球 EdTech 市場的影響不容忽視。對台灣和東亞 EdTech 業者而言，該政策代表 AI 課程材料、素養評量工具等品類在整個華語世界的採購需求，將在未來四年內大幅成長。","takeaway":"中國「人工智能＋教育」行動計畫代表華語世界 AI 課程材料與素養評量工具的市場需求即將出現政策驅動的爆發性成長；若你的工具有中文版或可繁簡轉換的內容，現在評估切入台港澳乃至海外華語教育市場的可能，是在政策紅利釋放前搶佔市場位置最有效的時機點。","sourceUrl":"https://edu.cctv.com/2026/04/02/ARTIJ6CNZOJGmrVciuTZ8i2F260402.shtml","sourceName":"央視教育 · 人工智能＋教育行動計畫"}'>
+          <span class="tag tag-taiwan">亞洲</span>
+          <div class="item-text">
+            <div class="item-title">中國五部委聯合發布「人工智能＋教育」行動計畫：2030 年 AI 全面融入中小學與高校課程體系</div>
+            <div class="item-source">央視教育</div>
+          </div>
+        </div>
+
+        <div class="section-label">Threads 精選</div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"Threads 精選","tagClass":"tag-partner","title":"Threads @daily.tools.ai：老師教學必備 10 款 AI 工具整理，小學到高中都用得上、從此備課不再加班","para1":"台灣 Threads 帳號 @daily.tools.ai 近期發布一則在教師社群廣泛轉存的貼文，整理了 10 款老師教學必備 AI 工具，涵蓋 Claude、Gamma、PicWish、Gradescope、Edpuzzle、Kahoot!、Diffit 等，強調國小、國中、高中教師都能直接上手，以「從此輕鬆備課不加班」作為核心訴求吸引教師注意。貼文同時指出這些工具各自對應不同教學場景，從內容生成、簡報製作到評量設計一條龍覆蓋，在台灣教師社群引發大量轉存與討論。","para2":"@daily.tools.ai 的 10 工具清單廣泛傳播，反映台灣教師對可直接使用的備課工具清單的需求，遠高於對單一工具的深度功能介紹。清單型內容比單一工具的詳細說明更容易在 Threads 快速傳播，也說明教師社群的決策模式是先有清單才有深入了解，而非從單一工具開始探索。","takeaway":"@daily.tools.ai 的高傳播清單說明教師最容易採用新工具的切入點是「這個工具在哪個教學場景最有用」；若你的工具想進入台灣教師社群，製作按教學場景分類的工具使用情境清單，比功能列表更能觸發教師的分享意願和採用動機。","sourceUrl":"https://www.threads.com/@daily.tools.ai/post/DNu85H1QnDt/","sourceName":"Threads · @daily.tools.ai"}'>
+          <span class="tag tag-partner">Threads</span>
+          <div class="item-text">
+            <div class="item-title">Threads @daily.tools.ai：老師教學必備 10 款 AI 工具整理，小學到高中都用得上、從此備課不再加班</div>
+            <div class="item-source">Threads @daily.tools.ai</div>
+          </div>
+        </div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"Threads 精選","tagClass":"tag-partner","title":"Threads @future.ai.tw：Google 生成式 AI 教育家免費認證完整攻略，5 章 12 題掀台灣教師考證熱潮","para1":"台灣 AI 觀察帳號 @future.ai.tw 近期發布 Google「Generative AI for Educators」認證完整攻略，詳細拆解此一免費、初學者友善的 Google 官方 AI 教育認證：課程共 5 章、測驗 12 題全英文選擇題、完成時間約 1-2 小時、完全免費，考取後獲得官方徽章可加入 Google Educator 社群。課程內容聚焦 AI 工具在教學中的實際應用，涵蓋 Gemini 和 ChatGPT 在備課中的省時技巧，貼文在台灣教師社群引發大量轉存。","para2":"@future.ai.tw 的 Google 認證攻略揭示，有官方認證加持的免費 AI 課程在台灣教師社群中具有極高的傳播效率。這也說明取得可展示的官方徽章已成為台灣教師提升 AI 能力信心的第一動機，不只是學知識，而是要有可以對學校展示的 AI 認證資格。","takeaway":"@future.ai.tw 的攻略揭示台灣教師在 AI 技能提升的首要動機是取得可展示的官方認證而非純粹的能力建立；若你的 EdTech 工具有教師培訓功能，與主流認證機構合作設計連結至官方徽章的學習路徑，是在台灣教師市場取得信任並推動採用的最低成本信譽建立方式。","sourceUrl":"https://www.threads.com/@future.ai.tw/post/DOivwojkTEg/","sourceName":"Threads · @future.ai.tw"}'>
+          <span class="tag tag-partner">Threads</span>
+          <div class="item-text">
+            <div class="item-title">Threads @future.ai.tw：Google 生成式 AI 教育家免費認證完整攻略，5 章 12 題掀台灣教師考證熱潮</div>
+            <div class="item-source">Threads @future.ai.tw</div>
+          </div>
+        </div>
+
+      </aside>
+
+      <div class="detail-panel" id="detail-2026-05-26">
+        <div class="detail-empty">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          <p>點擊左側新聞查看詳情</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Empty placeholder for future/ungenerated dates -->
   <section class="day-pane" id="emptyPane" hidden>
     <div class="split">
@@ -596,7 +706,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026-05-25 07:13 (Asia/Taipei)</span>
+  最近更新：<span id="updated">2026-05-26 07:16 (Asia/Taipei)</span>
 </footer>
 
 <script>
