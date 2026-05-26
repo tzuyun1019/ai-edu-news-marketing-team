@@ -1,9 +1,19 @@
-import json, urllib.request
+import json, urllib.request, os, sys
 
 LINE_TOKEN = "xWvZIRxhfUq17uj/JsOtz+RWuMbJFbtis4t6mkO8V+FQYyc5W32kulfiaHh/ZGd+t3G3lS4Ow+T0ukQcg/nrS7a1MtbcPIVcdepclJjRDssMR8gasxaeYloPnhzZWwdbGMSJ+HRb1e86DDqGrsW1iQdB04t89/1O/w1cDnyilFU="
 SITE_URL = "https://tzuyun1019.github.io/ai-edu-news-marketing-team/"
+FLAG_FILE = "/tmp/broadcast_done_today"
 
-# 從 JSON 檔讀取資料（安全處理特殊字元）
+# ★ 防止重複廣播：已發過就直接結束
+if os.path.exists(FLAG_FILE):
+    print("✅ 今日廣播已發出，跳過重複發送")
+    sys.exit(0)
+
+# 讀取 stories 資料
+if not os.path.exists("/tmp/mkt_stories.json"):
+    print("❌ /tmp/mkt_stories.json 不存在，廣播取消")
+    sys.exit(1)
+
 with open("/tmp/mkt_stories.json", encoding="utf-8") as f:
     data = json.load(f)
 
@@ -13,7 +23,7 @@ UPDATE_TIME = data["update_time"]
 
 if not stories:
     print("❌ stories 為空，廣播取消")
-    exit(1)
+    sys.exit(1)
 
 print(f"準備廣播 {len(stories)} 則新聞...")
 
@@ -75,7 +85,7 @@ flex_msg = {
     }
 }
 
-# ★ 廣播 API — 傳給所有好友，不指定 user_id
+# ★ broadcast API — 傳給所有好友，絕對不用 push
 payload = json.dumps({"messages": [flex_msg]}).encode()
 req = urllib.request.Request(
     "https://api.line.me/v2/bot/message/broadcast",
@@ -86,10 +96,14 @@ req = urllib.request.Request(
 )
 try:
     with urllib.request.urlopen(req, timeout=30) as resp:
+        # ★ 成功後寫 flag，防止後續重複發送
+        open(FLAG_FILE, "w").write("ok")
         print(f"✅ LINE 廣播成功！{len(stories)} 則，所有好友都已收到。Status: {resp.status}")
 except urllib.error.HTTPError as e:
     print(f"❌ LINE 廣播失敗：HTTP {e.code}")
     print(e.read().decode())
+    sys.exit(1)
 except Exception as e:
     print(f"❌ LINE 廣播失敗：{e}")
+    sys.exit(1)
 
