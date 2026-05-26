@@ -450,8 +450,8 @@ body {
 
 <nav class="day-tabs" id="dayTabs">
   <button class="tab" data-day="2026-05-25"><span class="tab-dow">週一</span><span class="tab-date">5/25</span></button>
-  <button class="tab active" data-day="2026-05-26"><span class="tab-dow">週二</span><span class="tab-date">5/26</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-day="2026-05-27"><span class="tab-dow">週三</span><span class="tab-date">5/27</span></button>
+  <button class="tab" data-day="2026-05-26"><span class="tab-dow">週二</span><span class="tab-date">5/26</span></button>
+  <button class="tab active" data-day="2026-05-27"><span class="tab-dow">週三</span><span class="tab-date">5/27</span><span class="tab-today">今日</span></button>
   <button class="tab empty" data-day="2026-05-28"><span class="tab-dow">週四</span><span class="tab-date">5/28</span></button>
   <button class="tab empty" data-day="2026-05-29"><span class="tab-dow">週五</span><span class="tab-date">5/29</span></button>
   <button class="tab empty" data-day="2026-05-30"><span class="tab-dow">週六</span><span class="tab-date">5/30</span></button>
@@ -579,7 +579,7 @@ body {
     </div>
   </section>
 
-  <section class="day-pane" data-day="2026-05-26">
+  <section class="day-pane" data-day="2026-05-26" hidden>
     <div class="split">
       <aside class="news-list" id="list-2026-05-26">
 
@@ -689,6 +689,114 @@ body {
     </div>
   </section>
 
+  <section class="day-pane" data-day="2026-05-27">
+    <div class="split">
+      <aside class="news-list" id="list-2026-05-27">
+
+        <div class="pane-header">5月27日（週三）<span class="count"> · 9 則</span></div>
+
+        <div class="section-label">產品動態</div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"產品動態","tagClass":"tag-product","title":"Microsoft Study and Learn Agent 正式上市，M365 教育版免費內建、以蘇格拉底提問支援學習而非直接給答案","para1":"Microsoft 於 5 月正式宣布 Study and Learn Agent 全面上市，整合進 Microsoft 365 Copilot，適用所有 M365 Education A1、A3、A5 授權用戶，無需額外付費、預先安裝即開箱即用。與一般 AI 問答工具不同，Study and Learn Agent 以蘇格拉底式提問引導學生自主推導答案而非直接給出解答，通過 FERPA 和 COPPA 合規審查，適合學校 IT 管理者直接部署於現有 Microsoft 365 環境。","para2":"Study and Learn Agent 的設計哲學——引導學習而非代替思考——直接回應了學術誠信爭議的核心問題。若 AI 工具從設計端就以培養學生能力為目標，課堂應用的合法性爭議大幅降低。Microsoft 以免費預裝策略快速佔領教育生態系入口，是 Copilot 2026 年教育市場佈局的關鍵一步。","takeaway":"Microsoft 的引導學習設計為所有 AI 教育工具提供了最佳論述範本：若你的工具被採購方質疑是否讓學生真正在學習，明確說明工具在哪些環節強制學生自己思考、哪些環節才提供 AI 輔助，是消除採購顧慮並縮短評估週期最直接的設計論述，也是目前最能說服學校教務長的合規語言。","sourceUrl":"https://www.microsoft.com/en-us/education/blog/2026/05/study-and-learn-ai-built-for-your-student/","sourceName":"Microsoft Education Blog · Study and Learn: AI built for your student"}'>
+          <span class="tag tag-product">產品</span>
+          <div class="item-text">
+            <div class="item-title">Microsoft Study and Learn Agent 正式上市，M365 教育版免費內建、以蘇格拉底提問支援學習而非直接給答案</div>
+            <div class="item-source">Microsoft Education Blog</div>
+          </div>
+        </div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"產品動態","tagClass":"tag-product","title":"Khan Academy 承認 Khanmigo 使用率僅 15%，暑期全面重設計加入動機機制與學習者儀表板應對採用率危機","para1":"Khan Academy 公開承認 Khanmigo 目前只有約 15% 的學生在使用，並宣布針對學區的平台大改版將於 2026 年暑期推出。新版本新增學習者儀表板整合課程進度與下一步建議、任務式學習佇列取代傳統作業列表，並加入寶石、每週連勝等動機機制；Khanmigo AI 家教直接嵌入學習路徑而非附加功能，教師報告介面同步更新，可快速追蹤學習時間、精熟度與作業完成率。","para2":"Khan Academy 罕見地公開承認採用率不足，說明即使是全球知名 AI 教育工具，光靠功能強大並不足以帶動課堂採用。以遊戲化動機機制補強學習體驗，才是讓工具從老師推薦使用升級為學生主動回訪的關鍵設計，也為所有面臨採用率停滯的 AI 教育工具提供了最誠實的市場反饋。","takeaway":"Khan Academy 公開 15% 採用率的誠實揭露說明課堂 AI 工具最常見的失敗原因不是功能不夠強，而是缺乏讓學生主動回來的動機設計；若你的工具採用率停滯，優先診斷每日回訪動機而非新增功能——連勝機制、即時回饋、每日任務感，通常是採用率最被低估的槓桿。","sourceUrl":"https://blog.khanacademy.org/khan-academy-reimagined-for-districts-2026/","sourceName":"Khan Academy Blog · Khan Academy Reimagined for Every Classroom"}'>
+          <span class="tag tag-product">產品</span>
+          <div class="item-text">
+            <div class="item-title">Khan Academy 承認 Khanmigo 使用率僅 15%，暑期全面重設計加入動機機制與學習者儀表板應對採用率危機</div>
+            <div class="item-source">Khan Academy Blog</div>
+          </div>
+        </div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"產品動態","tagClass":"tag-product","title":"Duolingo 將 AI 解釋我的答案功能全面免費，2026「AI 投資年」策略以用戶成長優先於利潤","para1":"Duolingo 於 2026 年將原本限定付費 Max 訂閱的「解釋我的答案」AI 功能正式免費開放給所有用戶，由 AI 驅動的個人化錯誤分析讓每位學習者都能在練習後即時了解語言錯誤原因。管理層同步公布 2026 年為「AI 投資年」，明確以 AI 產品改進、新科目擴展（數學、音樂、西洋棋）與用戶規模成長為優先，短期不追求訂閱收入和利潤最大化。","para2":"Duolingo 的免費開放策略代表 2026 年 AI 教育工具市場邏輯的轉變：當核心 AI 功能從收費護城河轉為用戶獲取工具，免費化是擴大規模最有效的成長槓桿，先規模後變現已成為頭部語言學習平台的共同選擇，也對中小型 EdTech 工具的付費牆設計形成壓力。","takeaway":"Duolingo 的先免費規模再轉換付費策略對 EdTech 付費設計有直接啟示：評估是否能讓最有價值的一項 AI 功能免費觸達用戶，以更進階的個人化服務收費，是 2026 年最常見的 AI 教育工具成長飛輪設計，Duolingo 的策略是目前最完整的可參考範本。","sourceUrl":"https://gamesbeat.com/duolingo-makes-its-ai-powered-explain-my-answer-feature-free-for-all-users-in-2026/","sourceName":"GamesBeat · Duolingo makes its AI-powered Explain My Answer feature free"}'>
+          <span class="tag tag-product">產品</span>
+          <div class="item-text">
+            <div class="item-title">Duolingo 將 AI 解釋我的答案功能全面免費，2026「AI 投資年」策略以用戶成長優先於利潤</div>
+            <div class="item-source">GamesBeat</div>
+          </div>
+        </div>
+
+        <div class="section-label">資金動態</div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"資金動態","tagClass":"tag-funding","title":"英國 AI 學習平台 Gizmo 完成 2,200 萬美元 A 輪：1,300 萬用戶的遊戲化 AI 筆記平台矢志讓學習讓人上癮","para1":"英國倫敦 AI 學習平台 Gizmo 於 2026 年 4 月完成 2,200 萬美元 A 輪融資，由 Shine Capital 領投，Ada Ventures、Seek Investments、GSV 和 NFX 共同參與，累計融資超過 2,500 萬美元。Gizmo 由劍橋大學畢業生於 2021 年創立，讓學生上傳筆記或文件後 AI 即時生成個人化互動閃卡、自適應測驗與遊戲化挑戰，目前已吸引超過 1,300 萬名學習者；本輪資金將用於擴大工程與 AI 團隊並深耕美國大學市場。","para2":"Gizmo 的 2,200 萬美元是 2025-2026 AI 教育融資中最大單筆一般學習工具輪次，驗證了讓學習讓人上癮這個設計哲學的商業吸引力：遊戲化、個人化與降低學習材料製作門檻三者合一，是學生端 AI 工具在口耳相傳擴散的核心機制，也是投資人最青睞的 EdTech 成長飛輪。","takeaway":"Gizmo 以讓學習上癮獲得 2,200 萬美元驗證，說明學生端工具設計核心不是功能最強而是最容易讓人持續使用；若你的工具有學生端，評估是否有每日回訪動機——即時回饋、個人化挑戰、進度可視化——是目前最值得投入的留存率優化方向，也是 AI 教育投資人評估成長潛力的首要指標。","sourceUrl":"https://techcrunch.com/2026/04/15/ai-learning-app-gizmo-levels-up-with-13m-users-and-a-22m-investment/","sourceName":"TechCrunch · AI learning app Gizmo levels up with 13M users and a $22M investment"}'>
+          <span class="tag tag-funding">資金</span>
+          <div class="item-text">
+            <div class="item-title">英國 AI 學習平台 Gizmo 完成 2,200 萬美元 A 輪：1,300 萬用戶的遊戲化 AI 筆記平台矢志讓學習讓人上癮</div>
+            <div class="item-source">TechCrunch</div>
+          </div>
+        </div>
+
+        <div class="section-label">市場趨勢</div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"市場趨勢","tagClass":"tag-market","title":"中國智慧教育平台升級開放全球 220 國，杭州世界數位教育大會推出 AI 終身學習與漢語學習社群","para1":"中國於 2026 年 5 月 12 日杭州世界數位教育大會上正式對全球開放升級版智慧教育平台，現已覆蓋約 220 個國家和地區。升級亮點包括新增終身學習平台、漢語學習社群等跨境高品質教育資源分享功能；中國同時在會議上發布《AI 與教育》倡議書，呼籲各國善用 AI 支持全面可持續的人類發展，並宣布成立首個 UNESCO AI 教育學科講席，強化在全球 AI 教育議題的主導地位。","para2":"中國以免費開放 220 國平台為教育軟實力佈局，代表教育基礎設施已成為地緣政治影響力的新工具。對全球 EdTech 業者而言，中國主導的免費全球平台設定了新的競爭參照點，免費資源廣度的競爭已上升至國家戰略層級，差異化的核心必須轉向深度個人化的學習體驗。","takeaway":"中國免費 AI 教育平台的 220 國入場說明全球教育資源廣度的競爭已無法靠單一工具勝出；EdTech 工具若要在此環境下保持競爭力，差異化護城河必須是深度個人化的學習體驗而非課程數量，品質深度比資源廣度更難被免費平台複製，也是 2026 年後最值得集中投資的工具壁壘。","sourceUrl":"https://english.news.cn/20260512/4cbe04435f52421ebba2c0c0bc53cc92/c.html","sourceName":"Xinhua · China opens global AI education service platform"}'>
+          <span class="tag tag-market">趨勢</span>
+          <div class="item-text">
+            <div class="item-title">中國智慧教育平台升級開放全球 220 國，杭州世界數位教育大會推出 AI 終身學習與漢語學習社群</div>
+            <div class="item-source">Xinhua</div>
+          </div>
+        </div>
+
+        <div class="section-label">台灣與亞洲</div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"台灣與亞洲","tagClass":"tag-taiwan","title":"台灣神基科技推出 AI 教育數據平台：整合新北市全區學校多維資料，AI 問答即時支援教育政策決策","para1":"台灣電子企業神基科技（MiTAC）在 2026 年 3 月智慧城市大展展示一套已運行四年的 AI 教育數據平台，整合新北市各學區學校的學生人數、教師配置、學習表現、最常用數位學習平台及學生健康指標等多維度數據，透過互動式城市地圖可視化呈現。平台內建 AI 聊天機器人，可即時回答哪所學校課程最多、哪區學生密度最低等政策決策相關問題，代表台灣 AI 教育的切入點是政策治理層而非課堂端。","para2":"台灣以 AI 優先強化教育治理基礎設施的路徑，有別於直接切入課堂 AI 教學：不讓 AI 面對學生，而是協助教育行政者做更好的系統性決策。MiTAC 平台在新北市已運行四年的深度數據積累，是一般新創工具難以快速複製的競爭壁壘，也為台灣 EdTech 創造了與政府深度合作的示範案例。","takeaway":"MiTAC 的台灣教育數據平台揭示一個被多數 EdTech 忽視的市場層：縣市教育局對 AI 決策支援工具有真實採購需求；若你的工具有學習數據分析功能，向縣市教育局以協助政策決策為核心論述提案，是進入台灣公部門教育市場最直接有效的切入路徑。","sourceUrl":"https://www.koreatimes.co.kr/amp/world/20260330/taiwan-taps-ai-driven-education-data-platform-for-policy-decisions","sourceName":"Korea Times · Taiwan taps AI-driven education data platform for policy decisions"}'>
+          <span class="tag tag-taiwan">台灣</span>
+          <div class="item-text">
+            <div class="item-title">台灣神基科技推出 AI 教育數據平台：整合新北市全區學校多維資料，AI 問答即時支援教育政策決策</div>
+            <div class="item-source">Korea Times</div>
+          </div>
+        </div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"台灣與亞洲","tagClass":"tag-taiwan","title":"Qualcomm QAIPI 2026 亞太計畫正式啟動：日、星、韓新創最高獲 1.5 萬美元補助，教育列六大優先 AI 場景","para1":"Qualcomm 於 2026 年正式啟動 AI Program for Innovators（QAIPI）亞太版，首批覆蓋日本、新加坡、南韓的 AI 新創，提供 Dragonwing 和 Snapdragon 平台存取、技術指導與導師、最高 1 萬美元創業資金及 5,000 美元專利申請補貼，支援教育、醫療、智慧城市、消費裝置、工業 IoT 等六大應用場景。邊緣 AI 硬體加教育軟體的組合解決方案是 Qualcomm 重點培育的新創類型，代表課堂本地端 AI 運算生態正在形成。","para2":"Qualcomm 以邊緣 AI 硬體加持教育新創，指向課堂 AI 的重要趨勢：當雲端 AI 工具面臨網路穩定性和資料隱私的採購顧慮，本地端運算教育工具正成為學校願意採購的差異化路徑。日、星、韓三國同步涵蓋，代表亞太教育 AI 生態系正在區域層級形成共同硬體平台支撐。","takeaway":"Qualcomm QAIPI 亞太計畫對台灣 EdTech 傳遞明確信號：邊緣 AI 硬體加教育軟體的組合方案在亞太市場正獲得主要晶片廠商的生態系支持；若你的工具有離線或本地端部署需求，主動聯繫 Qualcomm 或類似硬體夥伴計畫，是獲得技術資源與品牌背書雙重收益並進入亞太市場的最低成本路徑。","sourceUrl":"https://www.prnewswire.com/apac/news-releases/qualcomm-ai-program-for-innovators-2026--apac-officially-kicks-off---empowering-startups-across-japan-singapore-and-south-korea-to-lead-the-ai-innovation-302676025.html","sourceName":"PR Newswire · Qualcomm AI Program for Innovators 2026 APAC Officially Kicks Off"}'>
+          <span class="tag tag-taiwan">亞洲</span>
+          <div class="item-text">
+            <div class="item-title">Qualcomm QAIPI 2026 亞太計畫正式啟動：日、星、韓新創最高獲 1.5 萬美元補助，教育列六大優先 AI 場景</div>
+            <div class="item-source">PR Newswire</div>
+          </div>
+        </div>
+
+        <div class="section-label">Threads 精選</div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"Threads 精選","tagClass":"tag-partner","title":"Threads @future.ai.tw：Claude 新功能 Dispatch 解析，一句話從手機指揮電腦端 Claude 自動執行跨裝置任務","para1":"台灣 AI 觀察帳號 @future.ai.tw 近期發布 Claude 新功能 Dispatch 的深度解析，指出此功能讓用戶在手機端發出指令後，可配對並指揮電腦端 Claude 自動完成複雜任務——核心設計是手機傳訊息、電腦跑任務，讓 Claude 從單次對話工具進化為可在不同裝置間跨平台協作的個人 AI 代理。@future.ai.tw 重點整理了 Dispatch 的啟動方式、適用場景與實際操作流程，貼文在台灣 AI 工具重度用戶社群引發廣泛轉存與討論。","para2":"Claude Dispatch 的跨裝置指揮功能代表 AI 工具從單次會話進化到持續性任務代理的下一個發展階段。對教育工作者而言，手機端隨時下指令讓電腦後台執行任務的模式，將大幅改變 AI 助理在備課和行政工作的應用形態，教師不再需要坐在電腦前才能啟動 AI 工作流。","takeaway":"@future.ai.tw 的 Dispatch 解析說明台灣 AI 重度用戶社群對跨裝置 AI 代理功能有高度關注；若你的 EdTech 工具有行動端應用，評估是否能讓教師在手機觸發備課或學生進度追蹤任務並在後台自動完成，是符合 2026 年 AI 工作流趨勢且最容易打動技術型教師的產品差異化方向。","sourceUrl":"https://www.threads.com/@future.ai.tw/post/DWAgAghCeNy/","sourceName":"Threads · @future.ai.tw"}'>
+          <span class="tag tag-partner">Threads</span>
+          <div class="item-text">
+            <div class="item-title">Threads @future.ai.tw：Claude 新功能 Dispatch 解析，一句話從手機指揮電腦端 Claude 自動執行跨裝置任務</div>
+            <div class="item-source">Threads @future.ai.tw</div>
+          </div>
+        </div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"Threads 精選","tagClass":"tag-partner","title":"Threads @digitaliworld：新報告揭示大學生幾乎全數在使用 AI，校方限制與學生實際行為之間的落差正在加大","para1":"Threads 帳號 @digitaliworld 近期分享一份研究報告的關鍵發現：幾乎所有大學部學生都在使用 AI 工具，但多數學校的規範和配套支援仍落後於學生實際使用情況，校方禁用政策與學生真實行為之間存在顯著落差。報告指出當學校規範不明確時，學生傾向自行摸索使用方式，在學術誠信、引用規範和能力培養上產生灰色地帶，貼文在高教工作者社群引發廣泛轉存。","para2":"大學生幾乎全面採用 AI 的報告印證了一個現實：禁止無法阻止學生使用，學校真正需要解決的是如何幫助學生負責任地使用 AI 工具。對 EdTech 而言，這個數據代表大學端 AI 工具採購需求不再是選配，而是應對現實的必要基礎設施投資。","takeaway":"幾乎全面使用 AI 的大學生數據說明高教 AI 工具已從創新選項成為標準配備；若你的工具面向大學生或高教機構，主動提供學術誠信框架和教師監控功能，是在 AI 使用幾乎無法禁止的現實下最能打動大學教務長採購決策的差異化設計方向。","sourceUrl":"https://www.threads.net/@digitaliworld/post/DGlCwYsognc/","sourceName":"Threads · @digitaliworld"}'>
+          <span class="tag tag-partner">Threads</span>
+          <div class="item-text">
+            <div class="item-title">Threads @digitaliworld：新報告揭示大學生幾乎全數在使用 AI，校方限制與學生實際行為之間的落差正在加大</div>
+            <div class="item-source">Threads @digitaliworld</div>
+          </div>
+        </div>
+
+      </aside>
+
+      <div class="detail-panel" id="detail-2026-05-27">
+        <div class="detail-empty">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          <p>點擊左側新聞查看詳情</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Empty placeholder for future/ungenerated dates -->
   <section class="day-pane" id="emptyPane" hidden>
     <div class="split">
@@ -706,7 +814,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026-05-26 07:16 (Asia/Taipei)</span>
+  最近更新：<span id="updated">2026-05-27 07:16 (Asia/Taipei)</span>
 </footer>
 
 <script>
