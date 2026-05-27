@@ -451,8 +451,8 @@ body {
 <nav class="day-tabs" id="dayTabs">
   <button class="tab" data-day="2026-05-25"><span class="tab-dow">週一</span><span class="tab-date">5/25</span></button>
   <button class="tab" data-day="2026-05-26"><span class="tab-dow">週二</span><span class="tab-date">5/26</span></button>
-  <button class="tab active" data-day="2026-05-27"><span class="tab-dow">週三</span><span class="tab-date">5/27</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-day="2026-05-28"><span class="tab-dow">週四</span><span class="tab-date">5/28</span></button>
+  <button class="tab" data-day="2026-05-27"><span class="tab-dow">週三</span><span class="tab-date">5/27</span></button>
+  <button class="tab active" data-day="2026-05-28"><span class="tab-dow">週四</span><span class="tab-date">5/28</span><span class="tab-today">今日</span></button>
   <button class="tab empty" data-day="2026-05-29"><span class="tab-dow">週五</span><span class="tab-date">5/29</span></button>
   <button class="tab empty" data-day="2026-05-30"><span class="tab-dow">週六</span><span class="tab-date">5/30</span></button>
   <button class="tab empty" data-day="2026-05-31"><span class="tab-dow">週日</span><span class="tab-date">5/31</span></button>
@@ -689,7 +689,7 @@ body {
     </div>
   </section>
 
-  <section class="day-pane" data-day="2026-05-27">
+  <section class="day-pane" data-day="2026-05-27" hidden>
     <div class="split">
       <aside class="news-list" id="list-2026-05-27">
 
@@ -797,6 +797,122 @@ body {
     </div>
   </section>
 
+
+  <section class="day-pane" data-day="2026-05-28">
+    <div class="split">
+      <aside class="news-list" id="list-2026-05-28">
+
+        <div class="pane-header">5月28日（週四）<span class="count"> · 10 則</span></div>
+
+        <div class="section-label">產品動態</div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"產品動態","tagClass":"tag-product","title":"Anthropic Claude for Education 正式推出 Learning Mode：蘇格拉底問法引導學生思考，三所大學率先採用","para1":"Anthropic 正式推出 Claude for Education，首批合作校涵蓋美國東北大學（Northeastern University）、英國倫敦政治經濟學院（LSE）與佛蒙特州 Champlain College，提供全校覆蓋存取協議。核心差異化設計是 Learning Mode：Claude 不直接給出答案，而是以蘇格拉底式提問如「你會如何思考這個問題？」引導學生自主推導，同時宣布與 Internet2 及 Canvas LMS 建立學術整合夥伴關係，打通大學最主要的課程管理系統。","para2":"與 Microsoft Study and Learn Agent 設計邏輯相同，Claude for Education 的 Learning Mode 將「引導而非代答」設為核心設計原則，直接回應高等教育機構對學術誠信的顧慮。Anthropic 以校園全覆蓋協議而非按人頭計費的定價模式切入高教市場，是 2026 年 AI 教育平台搶佔大學機構契約的主流進場策略。","takeaway":"Claude for Education 以 Learning Mode 打入高教市場的策略說明「引導學習」已成 AI 教育工具獲得機構採購信任的核心差異化設計；若你的工具正面向大學採購，清楚說明工具在哪些步驟強制學生自行思考、哪些才提供 AI 輔助，是在學術誠信高度敏感的高教市場縮短評估週期最關鍵的設計論述。","sourceUrl":"https://www.anthropic.com/news/introducing-claude-for-education","sourceName":"Anthropic · Introducing Claude for education"}'>
+          <span class="tag tag-product">產品</span>
+          <div class="item-text">
+            <div class="item-title">Anthropic Claude for Education 正式推出 Learning Mode：蘇格拉底問法引導學生思考，三所大學率先採用</div>
+            <div class="item-source">Anthropic</div>
+          </div>
+        </div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"產品動態","tagClass":"tag-product","title":"Google I/O 2026 教育新功能：Pics AI 圖像設計工具整合 Workspace，Gemini for Science 串接 30 個科研資料庫","para1":"Google I/O 2026 在 5 月 20 日的開發者大會宣布多項教育場景 AI 更新。Pics 是整合進 Google Workspace 的 AI 圖像創作與編輯工具，讓教師無需專業設計技能即可製作教學視覺素材，每個元素皆可單獨修改；Gemini for Science 匯集 Deep Think、Deep Research 等工具並串接超過 30 個主要生命科學資料庫，協助研究者加速科研突破；Co-Scientist 作為研究人員的 AI 協作夥伴同步推出，定位為學術研究加速器。","para2":"Google I/O 2026 的教育工具更新顯示 Google 正系統性地將 AI 嵌入教育者和研究者的日常工作流程，而非以獨立 App 形式要求切換平台。Pics 對中小學教師最直接，Gemini for Science 對高等教育和研究機構影響最大，Google 同步覆蓋不同學習層級的全線佈局是其相較於單一 EdTech 工具最難以複製的競爭護城河。","takeaway":"Google I/O 2026 的教育工具矩陣說明大型科技平台正系統性滲透所有學習層級；若你的工具面向教師或研究者，評估是否有 Google Workspace 插件或 API 整合路徑，是在 Google 全面嵌入教育生態後維持獨立工具可見度最必要的防守策略，也是接下來採購評估中最容易被拿來比較的維度。","sourceUrl":"https://blog.google/innovation-and-ai/sundar-pichai-io-2026/","sourceName":"Google Blog · Google I/O 2026 opening keynote"}'>
+          <span class="tag tag-product">產品</span>
+          <div class="item-text">
+            <div class="item-title">Google I/O 2026 教育新功能：Pics AI 圖像設計工具整合 Workspace，Gemini for Science 串接 30 個科研資料庫</div>
+            <div class="item-source">Google Blog</div>
+          </div>
+        </div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"產品動態","tagClass":"tag-product","title":"Harvard FAS 宣布 6 月後停用 ChatGPT Edu 改接 Claude Code：學生採用率遠低預期是換平台的關鍵原因","para1":"哈佛大學文理學院（FAS）宣布將於 2026 年 6 月後停止補貼 ChatGPT Edu 帳號，FAS AI 高級顧問公開表示「大學部學生的採用率遠不如預期」，說明採購費用能確保平台可用，卻無法確保學生實際使用。停用後學校將改為支援 Anthropic Claude Code 作為全校授權 AI 工具，同時持續保留 Google Gemini 機構協議，以多平台並行策略取代單一供應商鎖定。","para2":"哈佛的 ChatGPT Edu 退場決定揭示 2026 年高教 AI 採購的核心現實：即使是全球知名度最高的 AI 工具，在沒有課程整合和使用動機設計的前提下，機構補貼採用率仍可能低於預期。從「有機構授權」到「真的被日常使用」之間的落差，是目前高教 AI 採購面臨的最核心挑戰，也是所有 AI 教育工具廠商必須正面回應的市場現實。","takeaway":"哈佛的 ChatGPT 退場說明機構採購並不等於用戶採用，授權費只能買到存取權而買不到使用習慣；若你的工具正在向高教機構銷售，提供可衡量的使用率追蹤指標並承諾採用率目標，是在 2026 年高教採購市場最能與競品形成差異的銷售策略，也是避免成為下一個被停用工具最實際的防守方法。","sourceUrl":"https://www.thecrimson.com/article/2026/4/28/fas-anthropic-claude/","sourceName":"Harvard Crimson · FAS Plans to Grant Access to Anthropic\u2019s Claude, Phase Out ChatGPT Edu"}'>
+          <span class="tag tag-product">產品</span>
+          <div class="item-text">
+            <div class="item-title">Harvard FAS 宣布 6 月後停用 ChatGPT Edu 改接 Claude Code：學生採用率遠低預期是換平台的關鍵原因</div>
+            <div class="item-source">Harvard Crimson</div>
+          </div>
+        </div>
+
+        <div class="section-label">市場趨勢</div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"市場趨勢","tagClass":"tag-market","title":"Anthropic 聯手 Teach For All 啟動 AI LCC：63 國 10 萬教師成 AI 教育共同設計者，啟動四天即收 200 申請","para1":"Anthropic 與全球教育非營利組織 Teach For All 合作啟動 AI 素養與創作者集體（AI LCC），讓 Teach For All 遍布 63 國、服務 150 萬名學生的網絡中逾 10 萬名教師與校友成為 AI 教育共同設計者。計畫分三個模組：AI Fluency Learning Series（與 Anthropic 教育團隊共同開發的六集直播課程，首場吸引 530 人）、Claude Connect（教師分享提示詞與實作案例的社群）、Claude Lab（創新實驗空間，啟動四天即收到超過 200 份申請）。","para2":"Anthropic 選擇以 Teach For All 的全球教師網絡作為 AI 教育培訓的槓桿點，其策略邏輯與 Google.org 亞太基金的師培優先路線高度吻合：教師不只是 AI 工具使用者，更是 AI 教育能否在課堂落地的最大決定因素。63 國同步覆蓋代表 AI 教育師培基礎設施正在進入全球規模化階段，而非局限於已開發國家市場。","takeaway":"Anthropic 的 63 國教師 AI 共同設計計畫說明 AI 教育工具廠商正把教師培訓能力從服務功能升格為核心戰略槓桿；若你的工具尚無明確的教師培訓路徑，設計一個可規模化的教師社群計畫，哪怕是免費的 Community of Practice，是在全球師培競爭加劇前建立教師端信任最低成本且最持久的方法。","sourceUrl":"https://www.anthropic.com/news/anthropic-teach-for-all","sourceName":"Anthropic · Anthropic and Teach For All launch global AI training initiative"}'>
+          <span class="tag tag-market">趨勢</span>
+          <div class="item-text">
+            <div class="item-title">Anthropic 聯手 Teach For All 啟動 AI LCC：63 國 10 萬教師成 AI 教育共同設計者，啟動四天即收 200 申請</div>
+            <div class="item-source">Anthropic</div>
+          </div>
+        </div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"市場趨勢","tagClass":"tag-market","title":"The 74 全球 AI 教育衝擊報告：各國政策嚴重分化，超前立法者與放手實驗者並行，中間地帶正在消失","para1":"美國教育媒體 The 74 與非營利研究機構 CRPE 聯合發布全球衝擊與創新報告，記錄全球各國面對 AI 衝擊時的教育政策回應差異。報告發現各國分化顯著：部分國家選擇嚴格立法優先管制 AI 在課堂的應用，另一端則是放手讓學校自行實驗；南韓已為每位學生配備個人化 AI 家教並將 AI 課程納入全國課綱，日本 MEXT 則選擇先在試點學校建立規範後再決定是否全面推廣。","para2":"超前管制者與實驗倡導者的政策分化，正在為 AI 教育工具廠商製造兩種截然不同的市場環境：嚴格管制市場需要合規認證優先，實驗導向市場則需要快速 MVP 和成效數據。2026 年真正的市場挑戰不是技術，而是同一款工具能否在不同政策環境下同時具備合規性與靈活性，這是多數 EdTech 工具最常被忽略的市場進入風險。","takeaway":"The 74 的全球分化報告說明進入不同國家市場前必須先研究該國 AI 教育政策定位；若你的工具正在評估海外擴張，先以「這個市場是嚴格管制優先還是實驗導向」為軸線分類，是決定進場順序和定位論述最節省資源的初步篩選框架，也能避免用錯語言讓採購者直接排除你的產品。","sourceUrl":"https://www.the74million.org/article/shockwaves-innovations-how-nations-worldwide-are-dealing-with-ai-in-education/","sourceName":"The 74 · Shockwaves & Innovations: How Nations Worldwide Are Dealing with AI in Education"}'>
+          <span class="tag tag-market">趨勢</span>
+          <div class="item-text">
+            <div class="item-title">The 74 全球 AI 教育衝擊報告：各國政策嚴重分化，超前立法者與放手實驗者並行，中間地帶正在消失</div>
+            <div class="item-source">The 74</div>
+          </div>
+        </div>
+
+        <div class="section-label">台灣與亞洲</div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"台灣與亞洲","tagClass":"tag-taiwan","title":"韓國 EdTech 新創 EduSync 完成種子輪：KlassMate 師生平板白板三合一即時同步，AI 協作教室生態正式起步","para1":"韓國 EdTech 新創 EduSync 宣布完成來自 New Paradigm Investment 的種子輪融資，核心產品 KlassMate 是一套以即時螢幕同步技術為核心的協作學習平台，將教師互動白板、教師個人電腦與學生平板三個設備整合進同一課堂環境。教師的課程內容和批注即時同步至學生端，學生亦可即時回傳作業與反饋，打破傳統課堂的單向教學模式，AI 輔助功能讓教師在不同學生群組間自動差異化內容。","para2":"EduSync 的 KlassMate 代表 2026 年亞洲課堂硬體整合的新趨勢：AI 不只要在個別設備上運行，而是要在課堂所有終端節點間流通並形成協作閉環。韓國政府已將 AI 個人化家教納入全國課綱，硬體同步協作平台的市場需求也在課堂 AI 化的過程中同步提升，說明亞洲 EdTech 投資市場對課堂即時協作基礎設施有真實的佈局意願。","takeaway":"EduSync KlassMate 的種子輪說明課堂即時協作基礎設施在韓國是有投資人願意佈局的真實市場；若你的 EdTech 軟體工具有課堂協作功能，評估能否與白板或平板硬體廠商合作打包進入亞洲市場，是在硬體整合競爭加速的 2026 年最有效率的亞太市場進入路徑。","sourceUrl":"https://en.wowtale.net/2026/04/06/233812/","sourceName":"WOWTALE · EduSync Secures Seed Funding to Advance Collaborative Learning Platform"}'>
+          <span class="tag tag-taiwan">亞洲</span>
+          <div class="item-text">
+            <div class="item-title">韓國 EdTech 新創 EduSync 完成種子輪：KlassMate 師生平板白板三合一即時同步，AI 協作教室生態正式起步</div>
+            <div class="item-source">WOWTALE</div>
+          </div>
+        </div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"台灣與亞洲","tagClass":"tag-taiwan","title":"OpenAI 發布日本 AI 經濟藍圖：教育列為 AI 帶動廣泛成長的核心路徑，師培與課程整合是重點投資方向","para1":"OpenAI 於 2026 年發布日本 AI 經濟藍圖，將教育明確列為確保 AI 技術帶動廣泛而非集中式成長的核心路徑之一，聚焦兩個具體方向：師培優先（確保日本教師能有效指導學生使用 AI 工具）與課程整合（將 AI 素養和 AI 應用能力嵌入既有課程框架而非另立新課）。OpenAI 以國家層級經濟藍圖定位其在教育市場的角色，是其在亞洲市場最系統性的政策佈局行動。","para2":"OpenAI 的日本藍圖延續其近期一系列國家層級戰略佈局，代表頭部 AI 平台正在以經濟政策建議的形式重塑各國政府的 AI 教育採購框架。對日本 EdTech 業者而言，被列入 OpenAI 藍圖的政策議題意味著未來政府資金和採購傾向將優先流向與師培和課程整合路徑對齊的工具，是值得優先研究的重要政策信號。","takeaway":"OpenAI 日本藍圖把師培和課程整合列為教育 AI 核心路徑，說明能對齊此框架的工具在日本市場將有更高的政策加持採購機率；台灣 EdTech 若正在評估進入日本市場，對齊 OpenAI 藍圖的論述語言是在主要科技平台影響力加持下最低摩擦的市場進入說服路徑。","sourceUrl":"https://www.edtechinnovationhub.com/news/openais-japan-economic-blueprint-identifies-education-as-a-key-route-to-ensuring-ai-supports-broad-based-growth","sourceName":"EdTech Innovation Hub · OpenAI Japan Economic Blueprint identifies education as a key route"}'>
+          <span class="tag tag-taiwan">亞洲</span>
+          <div class="item-text">
+            <div class="item-title">OpenAI 發布日本 AI 經濟藍圖：教育列為 AI 帶動廣泛成長的核心路徑，師培與課程整合是重點投資方向</div>
+            <div class="item-source">EdTech Innovation Hub</div>
+          </div>
+        </div>
+
+        <div class="section-label">Threads 精選</div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"Threads 精選","tagClass":"tag-partner","title":"Threads @ajesus1412：你不持續學習就會被 AI 取代！台灣升學教練揭示 AI 時代學習不間斷的核心論述","para1":"台灣升學輔導帳號 @ajesus1412（47 雲端輔導室）在 Threads 發文警示「你不持續學習就會被 AI 取代」，並附上免費電子書與學習歷程金牌寫作課試看連結，貼文在台灣高中生和升學準備族群中廣泛傳播。@ajesus1412 長期專注台灣大學申請學習歷程設計指導，以 AI 取代焦慮作為促動持續學習的核心論述，強調主動掌握 AI 技能才能讓大學申請脫穎而出，在台灣升學市場中累積了顯著的社群影響力。","para2":"@ajesus1412 的「被 AI 取代」論述在 Threads 台灣升學社群的廣泛傳播，說明 AI 取代焦慮已從職場擴散到高中升學市場：學生開始擔心如果不掌握 AI 技能，大學申請和未來職涯都將處於劣勢。這個焦慮情緒對 EdTech 工具而言既是行銷切入點，也是設計學習動機機制的重要參考。","takeaway":"@ajesus1412 的 AI 取代焦慮論述說明台灣高中生對「跟上 AI 才能不被取代」有高度共鳴；若你的工具有高中生或升學準備功能，以「學會使用 AI 讓大學申請脫穎而出」而非「AI 幫你寫文章」作為行銷核心訴求，是在台灣升學市場符合家長和學生共同期待且不觸碰學術誠信疑慮的最有效轉換論述。","sourceUrl":"https://www.threads.com/@ajesus1412/post/DVTRJq1iVHO/","sourceName":"Threads · @ajesus1412"}'>
+          <span class="tag tag-partner">Threads</span>
+          <div class="item-text">
+            <div class="item-title">Threads @ajesus1412：你不持續學習就會被 AI 取代！台灣升學教練揭示 AI 時代學習不間斷的核心論述</div>
+            <div class="item-source">Threads @ajesus1412</div>
+          </div>
+        </div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"Threads 精選","tagClass":"tag-partner","title":"Threads @kf0630：我是教 AI 的，重點要點出來！教師視角揭示學生使用 AI 最常被忽視的元認知能力缺口","para1":"台灣 Threads 帳號 @kf0630（Jackie Chien）以「我是教 AI 的，重點要點出來」為開頭直接以 AI 教師身份發文，分享在課堂教授 AI 使用的第一手觀察。貼文核心指向學生在學習使用 AI 工具時最常出現的能力盲點：能清楚判斷哪些內容值得用 AI 輔助、哪些需要自行深度思考，才是 AI 時代最需要培養的元認知能力，也是目前台灣 AI 教育課程最缺乏明確教導的核心能力維度。","para2":"@kf0630 的 AI 教師視角揭示一個核心挑戰：學生往往缺乏判斷何時該用 AI、何時不該用 AI 的元認知框架，導致 AI 工具成為思考的替代品而非加速器。這個觀察與史丹佛學者的評估高度呼應：AI 教育最難培養的不是操作技能，而是判斷何時使用以及如何批判性評估 AI 輸出的高階思維能力。","takeaway":"@kf0630 的 AI 教師觀察說明元認知能力（判斷何時用 AI）是 2026 年課堂 AI 素養最難但最重要的一環；若你的 EdTech 工具有課程設計功能，在課程框架中明確加入哪些任務適合 AI 輔助的判斷練習，是目前最能回應教師真實需求且幫助工具獲得課程採納的設計差異化方向。","sourceUrl":"https://www.threads.com/@kf0630/post/DXqk4WKD58V/","sourceName":"Threads · @kf0630"}'>
+          <span class="tag tag-partner">Threads</span>
+          <div class="item-text">
+            <div class="item-title">Threads @kf0630：我是教 AI 的，重點要點出來！教師視角揭示學生使用 AI 最常被忽視的元認知能力缺口</div>
+            <div class="item-source">Threads @kf0630</div>
+          </div>
+        </div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"Threads 精選","tagClass":"tag-partner","title":"Threads @techtip_s：香港學生免費用 Perplexity Pro 整整一年！亞洲學生 AI 工具福利揭示平台規模化最短路徑","para1":"台灣 AI 學習帳號 @techtip_s 在 Threads 分享香港學生專屬福利：持有香港學生身份即可免費使用 Perplexity Pro 完整功能長達一年，包含快速提取論文與 PDF 重點、逐步生成報告框架、製作測驗題目和抽認卡，以及無限次深度研究查詢，折合年費價值超過數千港幣。@techtip_s 指出此為 Perplexity 針對香港教育市場的免費策略，強調對準備論文和學術報告的學生而言實用性極高，貼文在香港和台灣學習者社群中廣泛流傳。","para2":"Perplexity 對香港學生的免費 Pro 策略，是 AI 工具平台以學生市場為先行規模化入口的教科書範例：先以免費策略在學生群體中建立使用習慣和口碑，再以教師或機構版本收費轉換。@techtip_s 對這個福利訊息的高傳播也說明亞洲學生社群對 AI 工具免費或優惠方案有極高敏感度和傳播意願。","takeaway":"Perplexity 香港學生免費策略說明亞洲學生市場是 AI 工具建立初期規模最高效率的入口；若你的 EdTech 工具正在進入台灣或亞洲市場，設計一個對學生明確且簡單的免費進入方案，並以可轉存分享的格式整理福利說明，是在 Threads 等社群平台建立口碑最低成本且傳播效率最高的市場進入策略。","sourceUrl":"https://www.threads.com/@techtip_s/post/DSKWCaPj8Fi/","sourceName":"Threads · @techtip_s"}'>
+          <span class="tag tag-partner">Threads</span>
+          <div class="item-text">
+            <div class="item-title">Threads @techtip_s：香港學生免費用 Perplexity Pro 整整一年！亞洲學生 AI 工具福利揭示平台規模化最短路徑</div>
+            <div class="item-source">Threads @techtip_s</div>
+          </div>
+        </div>
+
+      </aside>
+
+      <div class="detail-panel" id="detail-2026-05-28">
+        <div class="detail-empty">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          <p>點擊左側新聞查看詳情</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Empty placeholder for future/ungenerated dates -->
   <section class="day-pane" id="emptyPane" hidden>
     <div class="split">
@@ -814,7 +930,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026-05-27 07:16 (Asia/Taipei)</span>
+  最近更新：<span id="updated">2026-05-28 07:17 (Asia/Taipei)</span>
 </footer>
 
 <script>
