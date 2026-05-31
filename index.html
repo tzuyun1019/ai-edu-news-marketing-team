@@ -93,6 +93,38 @@ body {
   letter-spacing: 0.04em;
 }
 
+/* ── Week Navigator ── */
+.week-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 7px 20px;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border-soft);
+  flex-shrink: 0;
+}
+.week-nav-btn {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 3px 14px;
+  cursor: pointer;
+  font-size: 12.5px;
+  color: var(--ink-soft);
+  font-family: inherit;
+  transition: background 0.15s, color 0.15s;
+}
+.week-nav-btn:hover:not(:disabled) { background: var(--card); color: var(--ink); }
+.week-nav-btn:disabled { opacity: 0.3; cursor: default; }
+.week-nav-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+  min-width: 56px;
+  text-align: center;
+}
+
 /* ── Day Tabs ── */
 .day-tabs {
   display: flex;
@@ -448,14 +480,19 @@ body {
   </div>
 </header>
 
+<div class="week-nav" id="weekNav">
+  <button class="week-nav-btn" id="btnLastWeek" onclick="switchToWeek(1)">← 上週</button>
+  <span class="week-nav-label" id="weekNavLabel">本週</span>
+  <button class="week-nav-btn" id="btnThisWeek" onclick="switchToWeek(0)" disabled>本週 →</button>
+</div>
 <nav class="day-tabs" id="dayTabs">
-  <button class="tab" data-day="2026-05-25"><span class="tab-dow">週一</span><span class="tab-date">5/25</span></button>
-  <button class="tab" data-day="2026-05-26"><span class="tab-dow">週二</span><span class="tab-date">5/26</span></button>
-  <button class="tab" data-day="2026-05-27"><span class="tab-dow">週三</span><span class="tab-date">5/27</span></button>
-  <button class="tab" data-day="2026-05-28"><span class="tab-dow">週四</span><span class="tab-date">5/28</span></button>
-  <button class="tab" data-day="2026-05-29"><span class="tab-dow">週五</span><span class="tab-date">5/29</span></button>
-  <button class="tab" data-day="2026-05-30"><span class="tab-dow">週六</span><span class="tab-date">5/30</span></button>
-  <button class="tab active" data-day="2026-05-31"><span class="tab-dow">週日</span><span class="tab-date">5/31</span><span class="tab-today">今日</span></button>
+  <button class="tab" data-week="0" data-day="2026-05-25"><span class="tab-dow">週一</span><span class="tab-date">5/25</span></button>
+  <button class="tab" data-week="0" data-day="2026-05-26"><span class="tab-dow">週二</span><span class="tab-date">5/26</span></button>
+  <button class="tab" data-week="0" data-day="2026-05-27"><span class="tab-dow">週三</span><span class="tab-date">5/27</span></button>
+  <button class="tab" data-week="0" data-day="2026-05-28"><span class="tab-dow">週四</span><span class="tab-date">5/28</span></button>
+  <button class="tab" data-week="0" data-day="2026-05-29"><span class="tab-dow">週五</span><span class="tab-date">5/29</span></button>
+  <button class="tab" data-week="0" data-day="2026-05-30"><span class="tab-dow">週六</span><span class="tab-date">5/30</span></button>
+  <button class="tab active" data-week="0" data-day="2026-05-31"><span class="tab-dow">週日</span><span class="tab-date">5/31</span><span class="tab-today">今日</span></button>
 </nav>
 
 <div id="panesContainer">
@@ -1270,11 +1307,78 @@ function updateHint() {
 updateHint();
 window.addEventListener('resize', updateHint);
 
+/* ── Week 切換 ── */
+let currentViewWeek = 0; // 0 = 本週, 1 = 上週
+
+function switchToWeek(targetWeek) {
+  currentViewWeek = targetWeek;
+
+  // 更新 nav 按鈕與標籤
+  document.getElementById('weekNavLabel').textContent = targetWeek === 0 ? '本週' : '上週';
+  document.getElementById('btnLastWeek').disabled  = (targetWeek === 1);
+  document.getElementById('btnThisWeek').disabled  = (targetWeek === 0);
+
+  const tabsEl = document.getElementById('dayTabs');
+
+  // 顯示/隱藏對應週的 tabs
+  tabsEl.querySelectorAll('.tab[data-week]').forEach(t => {
+    t.style.display = (t.dataset.week === String(targetWeek)) ? '' : 'none';
+  });
+
+  // 若目標週沒有 tab，就回到本週並跳出
+  const weekTabs = tabsEl.querySelectorAll(`.tab[data-week="${targetWeek}"]`);
+  if (!weekTabs.length) {
+    switchToWeek(0);
+    return;
+  }
+
+  // 把所有 pane 隱藏
+  const container = document.getElementById('panesContainer');
+  const emptyPane = document.getElementById('emptyPane');
+  container.querySelectorAll('.day-pane:not(#emptyPane)').forEach(p => p.setAttribute('hidden', ''));
+  emptyPane.setAttribute('hidden', '');
+
+  // 移除所有 tab active
+  tabsEl.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+
+  // 選目標週的 active tab（有今日徽章優先，否則選最後一個有內容的 tab）
+  let targetTab = tabsEl.querySelector(`.tab[data-week="${targetWeek}"] .tab-today`)?.closest('.tab')
+               || null;
+  if (!targetTab) {
+    const candidates = [...weekTabs].filter(t => !t.classList.contains('empty'));
+    targetTab = candidates[candidates.length - 1] || weekTabs[weekTabs.length - 1];
+  }
+  if (targetTab) {
+    targetTab.classList.add('active');
+    const day = targetTab.dataset.day;
+    const targetPane = container.querySelector(`.day-pane:not(#emptyPane)[data-day="${day}"]`);
+    if (targetPane) {
+      targetPane.removeAttribute('hidden');
+    } else {
+      const dow  = targetTab.querySelector('.tab-dow')?.textContent  || '';
+      const date = targetTab.querySelector('.tab-date')?.textContent || '';
+      emptyPane.querySelector('.empty-date').textContent = `${dow} ${date}`;
+      emptyPane.removeAttribute('hidden');
+    }
+  }
+
+  // 上週 tab 若完全沒有內容，禁用上週按鈕
+  const hasLastWeek = !!tabsEl.querySelectorAll('.tab[data-week="1"]').length;
+  document.getElementById('btnLastWeek').disabled = !hasLastWeek || (targetWeek === 1);
+}
+
 /* ── Tab switching ── */
 (function () {
   const tabsEl    = document.getElementById('dayTabs');
   const container = document.getElementById('panesContainer');
   const emptyPane = document.getElementById('emptyPane');
+
+  // 初始化：隱藏上週 tab（如果有）
+  tabsEl.querySelectorAll('.tab[data-week="1"]').forEach(t => { t.style.display = 'none'; });
+  const hasLastWeek = !!tabsEl.querySelectorAll('.tab[data-week="1"]').length;
+  if (!hasLastWeek) {
+    document.getElementById('btnLastWeek').disabled = true;
+  }
 
   tabsEl.addEventListener('click', function (e) {
     const tab = e.target.closest('.tab');
@@ -1290,7 +1394,6 @@ window.addEventListener('resize', updateHint);
     if (targetPane) {
       emptyPane.setAttribute('hidden', '');
       targetPane.removeAttribute('hidden');
-      // 切換 tab 時，手機上回到列表視圖
       const split = targetPane.querySelector('.split');
       if (split) split.classList.remove('mobile-detail');
     } else {
@@ -1335,7 +1438,6 @@ function selectNews(itemEl) {
 
   panel.scrollTop = 0;
 
-  // 手機：滑入詳情
   if (isMobile()) {
     split.classList.add('mobile-detail');
   }
