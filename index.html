@@ -472,7 +472,7 @@ body {
   <div class="kicker">每日情報 · 教育 AI 應用</div>
   <h1>全球教育 AI 應用動態 <span style="font-weight:400;color:var(--ink-soft);font-size:.82em">快讀版</span></h1>
   <div class="meta">
-    <span id="weekrange">本週 5/25–5/31</span>
+    <span id="weekrange">本週 6/1–6/7</span>
     <span class="dot">·</span>
     <span class="badge">行銷團隊版</span>
     <span class="dot">·</span>
@@ -486,8 +486,8 @@ body {
   <button class="week-nav-btn" id="btnThisWeek" onclick="switchToWeek(0)" disabled>本週 →</button>
 </div>
 <nav class="day-tabs" id="dayTabs">
-  <button class="tab active" data-week="0" data-day="2026-06-01"><span class="tab-dow">週一</span><span class="tab-date">6/1</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-week="0" data-day="2026-06-02"><span class="tab-dow">週二</span><span class="tab-date">6/2</span></button>
+  <button class="tab" data-week="0" data-day="2026-06-01"><span class="tab-dow">週一</span><span class="tab-date">6/1</span></button>
+  <button class="tab active" data-week="0" data-day="2026-06-02"><span class="tab-dow">週二</span><span class="tab-date">6/2</span><span class="tab-today">今日</span></button>
   <button class="tab empty" data-week="0" data-day="2026-06-03"><span class="tab-dow">週三</span><span class="tab-date">6/3</span></button>
   <button class="tab empty" data-week="0" data-day="2026-06-04"><span class="tab-dow">週四</span><span class="tab-date">6/4</span></button>
   <button class="tab empty" data-week="0" data-day="2026-06-05"><span class="tab-dow">週五</span><span class="tab-date">6/5</span></button>
@@ -504,7 +504,114 @@ body {
 
 <div id="panesContainer">
 
-  <section class="day-pane" data-day="2026-06-01">
+  <section class="day-pane" data-day="2026-06-02">
+    <div class="split">
+      <aside class="news-list" id="list-2026-06-02">
+
+        <div class="pane-header">6月2日（週二）<span class="count"> · 9 則</span></div>
+
+        <div class="section-label">產品動態</div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"產品動態","tagClass":"tag-product","title":"Intel CEO Lip-Bu Tan COMPUTEX 2026 主題演講：AI PC 突破記憶體瓶頸，Crescent Island GPU 教育場景開啟本地端 AI 新時代","para1":"Intel CEO Lip-Bu Tan 於 6 月 2 日下午 1 時 30 分（台灣時間）在台北 COMPUTEX 2026 發表主題演講，重點揭示下一代 AI 驅動運算三大突破：Crescent Island AI GPU 搭載最高 480GB LPDDR5X 記憶體，大幅緩解 AI 工作負載的記憶體瓶頸；18A 製程成為晶圓代工的新名片；教育被明確列入 AI PC 六大核心應用場景之一，本地端 AI 推理能力直接嵌入課堂設備。","para2":"Intel Core Ultra Series 3 整合 CPU、GPU 與 NPU 三合一設計，使教育裝置在不依賴雲端的前提下完成複雜 AI 推理。搭配 Minecraft Education Edition 等課堂軟體生態，Intel 正將 AI 課堂算力從伺服器下放至每一台學生平板，教育裝置的 AI 能力門檻在 2026 年後將大幅降低。","takeaway":"Intel 把教育列為 AI PC 六大核心場景代表硬體廠商已將課堂裝置 AI 算力視為標準規格；若你的 EdTech 軟體工具有影像辨識、即時語音轉錄或本地 AI 批改需求，現在評估 NPU 加速功能與 Intel Core Ultra 生態合作，是在 2027 年本地端 AI 成為採購基線前卡位的最有效技術路徑。","sourceUrl":"https://newsroom.intel.com/client-computing/intel-at-computex-2026-the-next-era-of-ai-driven-computing","sourceName":"Intel Newsroom · Intel at Computex 2026: Advancing the Next Era of AI-Driven Computing"}'>
+          <span class="tag tag-product">產品</span>
+          <div class="item-text">
+            <div class="item-title">Intel CEO COMPUTEX 2026 主題演講：AI PC 突破記憶體瓶頸，教育列六大核心場景</div>
+            <div class="item-source">Intel Newsroom</div>
+          </div>
+        </div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"產品動態","tagClass":"tag-product","title":"NVIDIA COMPUTEX 2026 發布 Nemotron 3 Ultra 500B 推理模型：代理 AI 規劃引擎到位，NemoClaw 教育建構課程全面開放","para1":"NVIDIA 在 COMPUTEX 2026 正式發布 Nemotron 3 Ultra，參數規模約 500 至 550 億，設計專為代理 AI 工作流的複雜推理與任務規劃能力而優化，是 NVIDIA NeMo 平台上迄今規模最大的開放推理模型。不同於以對話生成為主的一般語言模型，Nemotron 3 Ultra 強調多步驟問題拆解與計畫執行，直接支援教育代理應用的建構。","para2":"配合模型發布，NVIDIA GTC 台北展場在 6 月 2 至 4 日向所有持通行證開發者全面開放 NemoClaw 代理 AI 教學活動，參與者可親手建構自主學習代理，體驗 AI 如何自主設計教學任務序列。教育開發者可直接在 TICC 展示區取得實作經驗，是目前門檻最低的代理 AI 教育工具開發入門管道。","takeaway":"Nemotron 3 Ultra 代理推理能力的開放代表打造自主制定教學計畫的 AI 代理的技術門檻大幅降低；EdTech 若有個人化學習路徑生成功能，評估以 Nemotron 3 Ultra 取代一般對話模型，可使學習路徑規劃的深度與連貫性顯著提升，是目前投入產出比最高的 AI 模型升級方向之一。","sourceUrl":"https://seekingalpha.com/news/4598749-nvidia-highlights-agentic-and-physical-ai-key-partnerships-at-computex","sourceName":"Seeking Alpha · Nvidia highlights agentic-physical AI, key partnerships at Computex"}'>
+          <span class="tag tag-product">產品</span>
+          <div class="item-text">
+            <div class="item-title">NVIDIA 發布 Nemotron 3 Ultra 500B 推理模型：代理 AI 規劃引擎到位，NemoClaw 教育課程全面開放</div>
+            <div class="item-source">Seeking Alpha</div>
+          </div>
+        </div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"產品動態","tagClass":"tag-product","title":"MediaTek COMPUTEX 2026「AI Without Limits」：天璣 AI 晶片原生支援 Minecraft Education，本地端 AI 算力進入課堂平板主流","para1":"聯發科技在 COMPUTEX 2026 以「AI Without Limits」為展覽主題，展示 Kompanio 540 教育專用 AI 晶片如何在不依賴雲端連線的前提下，流暢執行 STEM 教學場景、Tinkercad 3D 建模，以及 Minecraft Education Edition 課堂活動。聯發科的策略是讓 AI 運算直接發生在平板本地，無需高速網路即可完成課堂 AI 互動，正面回應學校對雲端 AI 隱私疑慮。","para2":"聯發科 Kompanio 系列已在全球超過三億台 Chromebook 和 Android 教育平板上部署，本屆 COMPUTEX 2026 是其首次以教育場景為核心的 AI 晶片展示。Kompanio 540 內建 NPU 讓本地 AI 翻譯、作文評析與程式偵錯等功能在沒有網路的教室環境中同樣可用，對偏遠地區學校尤其具有採購吸引力。","takeaway":"聯發科的本地端教育 AI 晶片策略說明課堂 AI 算力正從雲端服務轉向裝置端整合；若你的 EdTech 工具面向資源有限或網路不穩定的學校環境，現在評估與聯發科或 Intel 的本地 AI 算力整合，是在偏遠教育市場取得競爭優勢的最直接技術路徑，也是應對學校資料隱私疑慮的最有效設計論述。","sourceUrl":"https://www.mediatek.com/computex2026","sourceName":"MediaTek · Computex 2026 — AI Without Limits"}'>
+          <span class="tag tag-product">產品</span>
+          <div class="item-text">
+            <div class="item-title">MediaTek COMPUTEX 2026「AI Without Limits」：天璣 AI 晶片支援 Minecraft Education，本地 AI 進入課堂平板</div>
+            <div class="item-source">MediaTek</div>
+          </div>
+        </div>
+
+        <div class="section-label">政策法規</div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"政策法規","tagClass":"tag-partner","title":"美國教育部正式發布學校 AI 使用指引：AI 教育納入聯邦補助優先框架，McMahon 部長提出第四項 AI 教育補助計畫","para1":"美國教育部正式向各補助對象發出 Dear Colleague Letter，說明如何善用聯邦資金以 AI 改善教育成效，並明確揭示 AI 在課程規劃、評量支援、教師備課與學生輔導四大功能中的負責任使用原則。同一份公告中，教育部長 Linda McMahon 宣布第四項補助優先計畫，將「促進 AI 教育」正式納入聯邦撥款的優先評分標準，預計釋出 1.69 億美元補助給高等教育改善基金。","para2":"聯邦指引明確區分允許與禁止的 AI 用途：允許用於評量資料分析和課程設計，但禁止以 AI 自動化做出影響學生命運的高風險決策。部長 McMahon 的第四項補助計畫將 AI 教育定位為創新而非實驗，代表聯邦政府已明確承認 AI 在教育場景的正當性，各州和地方學區將因此獲得更多合規依據與資金支持。","takeaway":"美國教育部的 Dear Colleague Letter 是所有面向美國學區銷售的 EdTech 工具最重要的合規參考文件；若你的工具正在申請或有意申請聯邦補助，現在對照指引的五大負責任使用原則逐項確認數據使用規範並更新採購說明書，是進入 1.69 億美元補助評估名單最基本的進場準備動作。","sourceUrl":"https://www.ed.gov/about/news/press-release/us-department-of-education-issues-guidance-artificial-intelligence-use-schools-proposes-additional-supplemental-priority","sourceName":"U.S. Department of Education · Guidance on Artificial Intelligence Use in Schools"}'>
+          <span class="tag tag-partner">政策</span>
+          <div class="item-text">
+            <div class="item-title">美國教育部正式發布學校 AI 使用指引：AI 教育納入聯邦補助優先框架，McMahon 部長提出第四項補助計畫</div>
+            <div class="item-source">U.S. Department of Education</div>
+          </div>
+        </div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"政策法規","tagClass":"tag-partner","title":"2026 美國 AI 教育立法浪潮：31 州 134 項法案聚焦資料隱私、課堂限制與課程整合，各州立法分歧加速形成","para1":"MultiState 追蹤器最新數據顯示，截至 2026 年春季，全美 31 個州共提出 134 項與教育 AI 相關的立法提案，涵蓋三大軸向：學生資料隱私保護（要求 EdTech 工具不得使用學生資料訓練 AI 模型）、課堂使用限制（部分州要求 AI 生成內容必須強制標示）、以及課程整合（部分州要求高中生修習 AI 素養基礎課程）。","para2":"各州的立法差異正在加速形成：加州以隱私保護優先，要求最嚴格的學生數據使用同意機制；阿拉巴馬州強制高中 AI 素養必修；奧克拉荷馬州要求學區強制建立 AI 政策；俄亥俄州設定七月立法截止期限。在多州銷售的 EdTech 工具必須建立動態的州別合規管理機制才能維持採購資格。","takeaway":"31 州 134 項法案的立法浪潮代表合規能力已成 EdTech 產品的核心護城河；若你的工具在多個州部署，現在建立 AI 教育立法追蹤機制並提前準備一套可客製化的州別合規聲明文件，是在 2026 年下半年採購旺季保住客戶最低成本的防守策略，也是與競品形成制度性差異的最快路徑。","sourceUrl":"https://www.multistate.us/insider/2026/4/9/how-states-are-regulating-ai-in-education-this-legislative-session","sourceName":"MultiState · How States Are Regulating AI in Education This Legislative Session"}'>
+          <span class="tag tag-partner">政策</span>
+          <div class="item-text">
+            <div class="item-title">2026 美國 AI 教育立法浪潮：31 州 134 項法案聚焦資料隱私與課程整合，各州立法分歧加速形成</div>
+            <div class="item-source">MultiState</div>
+          </div>
+        </div>
+
+        <div class="section-label">市場趨勢</div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"市場趨勢","tagClass":"tag-market","title":"1EdTech 2026 三大趨勢報告：代理 AI 取代副駕駛型工具、AI 效益實證成採購門檻、學習分析進入 LMS 標配","para1":"教育科技標準組織 1EdTech 發布 2026 年三大觀察趨勢，核心預測是代理 AI 系統將超越生成式 AI 副駕駛成為教育科技的下一個主角——代理 AI 不只回答問題，而是能主動規劃學習任務序列、監控學習進度並自主調整教學路徑，代表 AI 在課堂中的角色從工具升格為共同教學夥伴，AI 的評估標準也因此從功能豐富性轉向自主規劃深度。","para2":"1EdTech 同步指出另外兩個 2026 年關鍵趨勢：AI 效益實證正從加分項升格為學校採購的基本門檻，採購者要求工具提供可量化學習成效數據；學習分析功能也正從獨立插件轉型為 LMS 原生標配，與 Gemini、Copilot 等 AI 層深度整合，孤立的分析儀表板在 2027 年後的採購競爭中將快速失去吸引力。","takeaway":"1EdTech 的三大趨勢說明 EdTech 正進入代理化、實證化、原生化的新競爭框架；若你的工具仍以生成文字為核心賣點，現在最重要的產品路線圖調整是加入代理任務序列設計並建立可匯出的學習成效報告，是在 2026 年下半年與 Google、Microsoft 原生 AI 功能形成差異化的最重要設計方向。","sourceUrl":"https://www.1edtech.org/blog/three-trends-were-watching-in-2026","sourceName":"1EdTech · Three Trends We're Watching in 2026"}'>
+          <span class="tag tag-market">趨勢</span>
+          <div class="item-text">
+            <div class="item-title">1EdTech 2026 三大趨勢：代理 AI 取代副駕駛工具、AI 效益實證成採購門檻、學習分析進 LMS 標配</div>
+            <div class="item-source">1EdTech</div>
+          </div>
+        </div>
+
+        <div class="section-label">台灣與亞洲</div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"台灣與亞洲","tagClass":"tag-taiwan","title":"COMPUTEX 2026「AI 實體化」全球盛會第二日：1,500 家廠商聚焦 AI 工廠與教育場景，智慧學習展區展示 AI 課堂落地全景","para1":"台北南港展覽館 COMPUTEX 2026 第二日（6 月 2 日）進入全面展覽模式，來自 33 個國家和地區的 1,500 家廠商在超過 6,000 個展示攤位以「AI Together」為主軸展示最新 AI 應用。智慧應用體驗區與電子紙展區聚焦教育、智慧零售與醫療場景，多家廠商現場展示 AI 課堂工具，包括 AI 即時轉錄黑板、多模態課堂評量輔助，與 AI 課程內容生成展示。","para2":"台灣展商在本屆 COMPUTEX 帶來多款教育 AI 硬體創新，包括本地端 AI 運算互動顯示器、AI 語音辨識智慧白板，以及結合 NPU 的學生端個人 AI 學習平板。主辦單位 TAITRA 指出，AI 如何在教室中真正落地是本屆展覽教育相關廠商被詢問最多的問題，台灣以硬體優勢切入教育 AI 場景的路徑正受到全球教育採購者的高度關注。","takeaway":"COMPUTEX 2026 讓台灣硬體在全球 EdTech 採購者面前完整展示，是台灣軟體工具廠商借力打力的最好平台機會；若你的工具有可在展場演示的課堂場景，下一屆 COMPUTEX 的 EdTech 合作展位申請應納入 2027 年行銷規劃，借助台灣硬體生態的全球曝光度擴大軟體工具的國際能見度。","sourceUrl":"https://www.prnewswire.com/news-releases/ai-goes-physical--taiwan-leads-global-industry-transformation-as-computex-2026-opens-tomorrow-in-taipei-302787133.html","sourceName":"PR Newswire · AI Goes Physical — Taiwan Leads Global Industry Transformation as COMPUTEX 2026 Opens"}'>
+          <span class="tag tag-taiwan">台灣</span>
+          <div class="item-text">
+            <div class="item-title">COMPUTEX 2026 第二日：1,500 家廠商聚焦 AI 工廠與教育場景，智慧學習展區展示 AI 課堂落地全景</div>
+            <div class="item-source">PR Newswire</div>
+          </div>
+        </div>
+
+        <div class="section-label">Threads 觀點</div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"Threads 觀點","tagClass":"tag-market","title":"Threads @__tsu__pei：習慣舊有路徑的教師用 AI 反而更費力——路徑依賴效應揭示 EdTech 推廣最大的隱形阻力","para1":"台灣 Threads 帳號 @__tsu__pei 近期發文分享教師使用 AI 工具的核心困境：「因為已經習慣舊有的路徑，使用 AI 反而需要耗費額外心力學習」。貼文精準點出路徑依賴效應——對資深教師而言，轉用 AI 工具的心理成本不只是學習新技能，更是放棄已熟練且有效的工作流程；習慣備課 PPT 的教師，切換到 AI 生成教材反而增加工作量，至少在初期如此。","para2":"這個觀察在台灣教師社群引發大量共鳴，說明 EdTech 推廣面對的最大阻力不是功能不夠好，而是工具切換本身造成的生產力暫時下降。資深教師往往在嘗試新工具後立即放棄，因為學習成本在短期完全抵消了 AI 帶來的效益，而工具設計若沒有考慮此一過渡期摩擦成本，採用率將長期停滯在初期使用者群體。","takeaway":"@__tsu__pei 的路徑依賴觀察說明 EdTech 推廣的最大阻力是轉換成本而非功能缺口；若你的工具採用率在教師試用後快速流失，優先評估是否能設計逐步替代現有工作流而非完全切換新流程的入門路徑，讓 AI 功能嵌入教師已在用的工具形態比要求切換更能突破路徑依賴壁壘。","sourceUrl":"https://www.threads.com/@__tsu__pei/post/DXZlSN0GvYZ/","sourceName":"Threads · @__tsu__pei"}'>
+          <span class="tag tag-market">趨勢</span>
+          <div class="item-text">
+            <div class="item-title">Threads @__tsu__pei：習慣舊有路徑的教師使用 AI 反而更費力——路徑依賴揭示 EdTech 推廣最大隱形阻力</div>
+            <div class="item-source">Threads @__tsu__pei</div>
+          </div>
+        </div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section":"Threads 觀點","tagClass":"tag-market","title":"Threads @ai5h6lyk.126：晚加入 AI 反而更容易用！早期追趕者像在瞎忙——後發優勢觀點顛覆台灣教師 AI 焦慮","para1":"台灣 Threads 帳號 @ai5h6lyk.126 近期發文提出與主流 AI 焦慮論述截然相反的觀點：「越後面加入 AI 反而越容易用，前面一直追 AI 怎麼用的人就像在瞎忙一樣」。貼文指出 AI 工具迭代速度極快，早期學習的使用方法幾個月後可能全部改變，而後發者可以直接從已成熟、介面更友善的版本入門，反而獲得更流暢的入門體驗，不必為初期版本的複雜操作付出學習成本。","para2":"貼文進一步指出，在 AI 工具還未穩定時去購買課程和死背操作方法，幾個月後會發現「全部都變了」。這個觀察在台灣教師社群引發廣泛共鳴，尤其觸及那些感到 AI 學習壓力過大的群體，也引發關於 AI 學習時機策略的討論：到底應該早學快學，還是等工具成熟後再系統學習？","takeaway":"@ai5h6lyk.126 的後發優勢觀點對 EdTech 課程設計有直接意涵：若你的工具提供 AI 培訓課程，應明確區分哪些是工具無關的底層能力值得早期投入，哪些是版本相依的操作技巧應等工具穩定後再學，這個框架本身就是台灣教師社群傳播效率最高的 AI 學習策略內容形式。","sourceUrl":"https://www.threads.com/@ai5h6lyk.126/post/DXQnVLHlEO4/","sourceName":"Threads · @ai5h6lyk.126"}'>
+          <span class="tag tag-market">趨勢</span>
+          <div class="item-text">
+            <div class="item-title">Threads @ai5h6lyk.126：晚加入 AI 反而更容易用！後發優勢觀點顛覆台灣教師的 AI 追趕焦慮</div>
+            <div class="item-source">Threads @ai5h6lyk.126</div>
+          </div>
+        </div>
+
+      </aside>
+      <div class="detail-panel" id="detail-2026-06-02">
+        <div class="detail-empty">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          <p>點擊左側新聞查看詳情</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="day-pane" data-day="2026-06-01" hidden>
     <div class="split">
       <aside class="news-list" id="list-2026-06-01">
 
@@ -1404,7 +1511,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026-06-01 07:10 (Asia/Taipei)</span>
+  最近更新：<span id="updated">2026-06-02 07:10 (Asia/Taipei)</span>
 </footer>
 
 <script>
