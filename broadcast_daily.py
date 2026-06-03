@@ -1,19 +1,18 @@
-import urllib.request, json, re, os, sys
+import json, re, os, sys
 from datetime import datetime, timezone, timedelta
 
 LINE_TOKEN = os.environ["LINE_TOKEN_QUICK"]
 SITE_URL = "https://tzuyun1019.github.io/ai-edu-news-marketing-team/"
-RAW_URL = "https://raw.githubusercontent.com/tzuyun1019/ai-edu-news-marketing-team/main/index.html"
 
 TPE = timezone(timedelta(hours=8))
 now = datetime.now(TPE)
 UPDATE_TIME = now.strftime("%Y-%m-%d %H:%M (Asia/Taipei)")
 print(f"台北時間: {now.strftime('%Y-%m-%d %H:%M')}")
 
-req = urllib.request.Request(RAW_URL, headers={"User-Agent": "Mozilla/5.0"})
-with urllib.request.urlopen(req, timeout=30) as r:
-    html = r.read().decode("utf-8")
-print("HTML 抓取成功")
+# 直接讀本地 checkout 的 index.html（比 raw.githubusercontent.com 更快更穩）
+with open("index.html", "r", encoding="utf-8") as f:
+    html = f.read()
+print("index.html 讀取成功")
 
 pane_matches = re.findall(
     r'<section[^>]+class="day-pane"[^>]+data-day="(\d{4}-\d{2}-\d{2})"[^>]*>([\s\S]*?)(?=<section[^>]+class="day-pane"|<div id="emptyPane")',
@@ -94,6 +93,7 @@ flex_msg = {
     }
 }
 
+import urllib.request
 payload = json.dumps({"messages": [flex_msg]}).encode()
 req = urllib.request.Request(
     "https://api.line.me/v2/bot/message/broadcast",
