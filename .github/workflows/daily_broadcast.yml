@@ -1,8 +1,9 @@
-name: Daily LINE Broadcast (07:30 Taipei)
+name: Daily LINE Broadcast
 
 on:
-  schedule:
-    - cron: "30 23 * * *"
+  push:
+    branches: [main]
+    paths: [index.html]
   workflow_dispatch:
 
 jobs:
