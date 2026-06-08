@@ -472,7 +472,7 @@ body {
   <div class="kicker">每日情報 · 教育 AI 應用</div>
   <h1>全球教育 AI 應用動態 <span style="font-weight:400;color:var(--ink-soft);font-size:.82em">快讀版</span></h1>
   <div class="meta">
-    <span id="weekrange">本週 6/1–6/7</span>
+    <span id="weekrange">本週 6/8–6/14</span>
     <span class="dot">·</span>
     <span class="badge">行銷團隊版</span>
     <span class="dot">·</span>
@@ -486,8 +486,8 @@ body {
   <button class="week-nav-btn" id="btnThisWeek" onclick="switchToWeek(0)" disabled>本週 →</button>
 </div>
 <nav class="day-tabs" id="dayTabs">
-  <button class="tab active" data-week="0" data-day="2026-06-08"><span class="tab-dow">週一</span><span class="tab-date">6/8</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-week="0" data-day="2026-06-09"><span class="tab-dow">週二</span><span class="tab-date">6/9</span></button>
+  <button class="tab" data-week="0" data-day="2026-06-08"><span class="tab-dow">週一</span><span class="tab-date">6/8</span></button>
+  <button class="tab active" data-week="0" data-day="2026-06-09"><span class="tab-dow">週二</span><span class="tab-date">6/9</span><span class="tab-today">今日</span></button>
   <button class="tab empty" data-week="0" data-day="2026-06-10"><span class="tab-dow">週三</span><span class="tab-date">6/10</span></button>
   <button class="tab empty" data-week="0" data-day="2026-06-11"><span class="tab-dow">週四</span><span class="tab-date">6/11</span></button>
   <button class="tab empty" data-week="0" data-day="2026-06-12"><span class="tab-dow">週五</span><span class="tab-date">6/12</span></button>
@@ -504,7 +504,113 @@ body {
 
 <div id="panesContainer">
 
-  <section class="day-pane" data-day="2026-06-08">
+  <section class="day-pane" data-day="2026-06-09">
+    <div class="split">
+      <aside class="news-list" id="list-2026-06-09">
+
+        <div class="pane-header">6月9日（週二）<span class="count"> · 9 則</span></div>
+
+        <div class="section-label">產品動態</div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "Google NotebookLM 升級 Gemini 3.5：代理研究工具 6/8 全球推送", "para1": "Google 於 6/8 起為 AI Ultra 及 Workspace 企業版用戶推送 NotebookLM 重大更新，核心模型升至 Gemini 3.5 並整合 Antigravity 代理 IDE，可自主搜尋網路建立來源庫、在 Notebook 內執行雲端程式碼，研究深度與自動化程度顯著提升，向代理型研究工具全面演進。", "para2": "輸出格式同步大幅擴充，使用者可從 Studio 面板直接匯出 PDF、DOCX、PPTX、XLSX、CSV、JSON 及圖片等格式，讓 NotebookLM 從筆記輔助工具正式升格為涵蓋課堂簡報與學術報告的一站式研究工作流，後續將擴展更多格式與更廣用戶群。", "takeaway": "NotebookLM 的升級揭示 Google 教育 AI 核心戰略——從輔助閱讀進化為主動代理研究，從問答進化為可下載成品的完整工作流。EdTech 產品團隊應評估自身工具在「主動探索」與「輸出多元化」兩個維度的補強空間，否則在製作教材與學生研究兩大場景，被 NotebookLM 直接替代的風險正在加速逼近。", "sourceUrl": "https://www.edtechinnovationhub.com/news/google-upgrades-notebooklm-with-gemini-35-and-agentic-research-tools", "sourceName": "EdTech Innovation Hub · Google adds Gemini 3.5 to NotebookLM research tool"}'>
+          <span class="tag tag-product">產品</span>
+          <div class="item-text">
+            <div class="item-title">Google NotebookLM 升級 Gemini 3.5：代理研究模式 6/8 全球推送，輸出支援 PDF／PPTX 等十種格式</div>
+            <div class="item-source">EdTech Innovation Hub</div>
+          </div>
+        </div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "Duolingo Max AI 代理家教 RCT：5 萬人實驗驗證 6 個月成績提升 38%", "para1": "2026 年 3 月，Duolingo 與 Khan Academy 完成全球最大規模代理型 AI 家教部署，共服務逾 5,000 萬名活躍學習者。Duolingo Max 的「Max Tutor」不再等待學生提問，而是主動介入提供語法解釋、情境角色扮演與視訊對話，實現從被動 AI 工具到主動學習夥伴的關鍵躍升。", "para2": "針對 5 萬名參與者的隨機對照試驗顯示，使用 Max Tutor 6 個月後語言標準化測試成績比對照組高出 38%；Max 功能已佔 Duolingo 2026 年訂閱收益的 30% 以上，代理型學習模式從實驗走向商業主力的趨勢已明確確立。", "takeaway": "「主動介入」是代理型 AI 輔導的核心差異化——被動等待學生提問的工具使用率難以提升，而主動識別學習困點並在正確時機觸發對話的設計才讓 AI 工具真正持續被使用。這一 RCT 數據也為 AI 教育工具提供最有力的商業論述框架：具備可驗證成效數據的工具，才能打開機構採購與投資人的信任門。", "sourceUrl": "https://callsphere.ai/blog/ai-agents-education-khan-academy-duolingo-autonomous-tutoring", "sourceName": "CallSphere · AI Agents in Education: Khan Academy and Duolingo Deploy Autonomous Tutoring Agents"}'>
+          <span class="tag tag-product">產品</span>
+          <div class="item-text">
+            <div class="item-title">Duolingo Max AI 代理家教 RCT：5 萬人六個月實驗，語言標準化測試成績提升 38%</div>
+            <div class="item-source">CallSphere Blog</div>
+          </div>
+        </div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "D2L Lumi Tutor 進駐 Rasmussen 護理學院：2.5 週啟動逾千場 AI 輔導對話", "para1": "美國 Rasmussen University 2026 年 4 月選定 D2L Brightspace 並優先在護理教育推進，5 月試點後 Lumi Tutor 與 Lumi Feedback 全面上線。Lumi Tutor 整合於課程系統內部，提供即時個人化輔導、學習計畫與練習，師生無需離開 LMS 即可取得 AI 即時支援，設計高度符合護理教育高壓密集的學習節奏。", "para2": "試點數據顯示，Blyth Academy 在僅 2.5 週內便有 10% 學生主動使用 Lumi Tutor，產生逾 1,000 場獨立對話，超越前一整年傳統輔導服務的總量。D2L 採模組化設計，學校可按需單獨選購 Lumi Tutor、Feedback、Insights 等獨立元件，彈性符合各機構預算節奏。", "takeaway": "護理等高壓職業教育因反饋需求密集，是 AI 輔導最容易展現 ROI 的場域。EdTech 產品進入醫療教育機構時，應優先強調「課內嵌入」而非「外掛工具」，AI 與課程內容的深度整合才能在量化數據上取得壓倒性效果，進而突破機構採購的決策門檻。", "sourceUrl": "https://www.prnewswire.com/news-releases/rasmussen-university-selects-d2l-brightspace-to-deliver-inclusive-ai-in-education-302747324.html", "sourceName": "PR Newswire · Rasmussen University Selects D2L Brightspace for Inclusive AI Education"}'>
+          <span class="tag tag-product">產品</span>
+          <div class="item-text">
+            <div class="item-title">D2L Lumi Tutor 進駐 Rasmussen 護理學院：2.5 週啟動逾千場 AI 輔導，超越一整年傳統服務量</div>
+            <div class="item-source">PR Newswire</div>
+          </div>
+        </div>
+
+        <div class="section-label">政策動態</div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section": "政策動態", "tagClass": "tag-taiwan", "title": "台灣「館館有 AI」Q4 啟動：持借書卡免費用三大 AI，47 所大學率先納入", "para1": "台灣教育部正式推動「館館有 AI」計畫，預計 2026 年第四季於全國圖書館導入，民眾持借書卡即可免費使用 ChatGPT、Claude、Gemini 等主流 AI 工具，初期已涵蓋 47 所大學，目標打造全民皆可近用的公共 AI 基礎設施，縮短 AI 取用的數位落差。", "para2": "此計畫配合教育部 AI 人才方舟計畫（2026–2029，預算逾 1,175 億台幣），從高校延伸至公共圖書館，以實體場域加免費授權組合解決中高齡與偏鄉民眾的 AI 取用障礙；教育部同步推廣 13 歲以下學生使用教學型 AI（e-du），而非開放商業 AI 工具。", "takeaway": "台灣以圖書館為入口將 AI 帶進全民生活，對 EdTech 業者是雙面訊號：公有 AI 設施降低入門付費動機，但同時創造大量首次接觸 AI 的潛在用戶。進階個人化功能、訂閱轉化設計與 B2B 機構服務，仍是在此政策框架下最具商業潛力的差異化空間。", "sourceUrl": "https://flipedu.parenting.com.tw/article/010778", "sourceName": "翻轉教育 · 教育部推「館館有 AI」，憑借書証免費用 GPT、Claude"}'>
+          <span class="tag tag-taiwan">台灣</span>
+          <div class="item-text">
+            <div class="item-title">台灣「館館有 AI」Q4 啟動：持借書卡免費用 ChatGPT、Claude，47 所大學率先納入</div>
+            <div class="item-source">翻轉教育</div>
+          </div>
+        </div>
+
+        <div class="section-label">市場動態</div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section": "市場動態", "tagClass": "tag-market", "title": "亞洲三國 AI 教室全面深化：新加坡 NIE 五年計畫、韓國每生一 AI 家教", "para1": "亞洲三大教育體系正以截然不同策略加速 AI 教室落地：新加坡由 AI Singapore 與教育部聯手啟動 AI@NIE 五年研究計畫，深入研究 AI 在真實教學現場的效益；韓國為每位學生部署個人化 AI 家教，依學習傾向與能力水準動態調整課業；日本則在全國試點學校以實地驗證審慎推進 AI 教學指引。", "para2": "與西方市場聚焦政策框架和倫理規範不同，亞洲三國更側重全國規模的部署實施，尤其韓國個人化 AI 家教系統是目前政府主導最大規模的 AI 教育落地案例之一，設計上強調行為傾向感知與個人化節奏，已遠超傳統適性學習系統的功能邊界。", "takeaway": "韓國模式揭示政府採購可以成為 EdTech 規模化最穩定的路徑，但「政府主導」同時意味標準化壓力與認證門檻。進入亞洲政府教育採購市場的 EdTech 產品，需同步具備本地語言深度支援、課綱對齊認證與資料安全合規三道入場門檻，缺一不可。", "sourceUrl": "https://www.chinapulse.com/data-news/2026/05/31/the-schools-in-asia-embracing-artificial-intelligence-in-classrooms", "sourceName": "ChinaPulse · The schools in Asia embracing artificial intelligence in classrooms"}'>
+          <span class="tag tag-market">市場</span>
+          <div class="item-text">
+            <div class="item-title">亞洲三國 AI 教室全面深化：新加坡 AI@NIE 五年計畫、韓國每生一 AI 家教全國部署</div>
+            <div class="item-source">ChinaPulse</div>
+          </div>
+        </div>
+
+        <div class="section-label">融資動態</div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section": "融資動態", "tagClass": "tag-funding", "title": "AI 教育創投 12 個月深析：$1.836 億聚焦 AI Tutor，代理型學習成融資熱點", "para1": "New Market Pitch 最新分析追蹤 2025 年 5 月至 2026 年 4 月共 21 件 AI 教育融資，總金額達 1.836 億美元。AI Tutor 平台與 AI 評量平台分別以 1.28x 和 1.26x 的資本集中比位居前兩名，前十大交易佔整體資本的 82.3%，資金高度向頭部聚集，市場格局正在快速固化。", "para2": "種子輪估值顯著回升：Vimi、Giant、Pensive 在 2026 年初分別完成 700 至 1,200 萬美元種子輪；MagicSchool AI 從 2023 年 240 萬美元種子輪到 2025 年完成三輪共 6,200 萬美元，17 個月最快融資軌跡，代表 AI 教師工具市場頭部化速度已超乎預期。", "takeaway": "AI Tutor 與評量平台是當前最受資本青睞的 EdTech 類型，核心在於「可量化學習成效加明確替換場景」的組合。EdTech 新創尋求融資時，應以「能提供多少可驗證的學習成效數據」作為核心訴求，因為 VC 在 2026 年的決策標準已幾乎全面轉向 evidence-based ROI，功能豐富本身已不足以說服投資人。", "sourceUrl": "https://newmarketpitch.com/blogs/news/ai-education-funding-analysis", "sourceName": "New Market Pitch · AI in Education Startup Funding 2025-2026"}'>
+          <span class="tag tag-funding">融資</span>
+          <div class="item-text">
+            <div class="item-title">AI 教育創投 12 個月深析：$1.836 億流入 AI Tutor 與評量平台，代理型學習成融資最熱賽道</div>
+            <div class="item-source">New Market Pitch</div>
+          </div>
+        </div>
+
+        <div class="section-label">Threads 觀點</div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section": "Threads 觀點", "tagClass": "tag-taiwan", "title": "台灣教育部 @moe_tw：生成式 AI 兩本工具書公開，陪各年齡孩子正確使用 AI", "para1": "台灣教育部官方 Threads 帳號（@moe_tw）公開發布兩本生成式 AI 工具書，針對不同年齡層學生提供 AI 安全使用指引，幫助家長理解孩子如何正確面對 AI 工具。貼文回應家長對「孩子過度依賴 AI、不自己思考」的普遍焦慮，強調 AI 不是不能用，關鍵在於建立正確使用框架。", "para2": "教育部此舉標誌官方政策從「管制 AI 工具」明確轉向「引導正確使用」的策略轉型。兩本工具書涵蓋不同學習階段，以家長與學生均能理解的語言設計，顯示政府已認知透明引導比限制禁用更能在 AI 快速普及時代達到有效教育目標。", "takeaway": "教育部主動在 Threads 分發 AI 教育指引工具書，代表官方已認知社群媒體是觸達教育現場最快的管道。台灣 EdTech 產品在學校採購評估和家長溝通時，若主動對齊官方工具書的框架語彙，「符合教育部指引」本身即可成為降低採購阻力的有效行銷訴求。", "sourceUrl": "https://www.threads.com/@moe_tw/post/DUPcftFispw/", "sourceName": "Threads @moe_tw · 教育部生成式 AI 工具書正式公開"}'>
+          <span class="tag tag-taiwan">台灣</span>
+          <div class="item-text">
+            <div class="item-title">台灣教育部 @moe_tw：生成式 AI 兩本工具書公開，引導各年齡層孩子安全正確學習用 AI</div>
+            <div class="item-source">Threads @moe_tw</div>
+          </div>
+        </div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section": "Threads 觀點", "tagClass": "tag-product", "title": "@middle2sick_：一個指令讓學習歷程不再像 AI 寫的，高中備審真實感攻略", "para1": "Threads 帳號 @middle2sick_ 發布高互動帖文，分享一個關鍵提示詞技巧，讓學生在 AI 輔助製作學習歷程備審時，成品保留個人真實聲音而非顯得像 AI 代寫，引發台灣高中生廣泛共鳴與轉發。貼文強調沒有真實實力不應依靠 AI 虛張聲勢，以兼顧效率與真實性的框架精準切中學生核心焦慮。", "para2": "此貼與上週 @tbd_studio_ 同類爆文同步引爆，顯示台灣高中生的「去 AI 痕跡」焦慮在 Threads 上已形成持續熱點討論：如何在大學端強化 AI 偵測壓力下，既借助 AI 提升效率又保有真實個人聲音，是升學備審場景最敏感的 AI 應用議題。", "takeaway": "台灣高中備審市場的「AI 真實感」需求，正催生一個尚未充分被滿足的工具缺口——幫助學生用 AI 提升效率同時保有個人聲音的引導型寫作工具。競爭遠小於通用 AI 寫作工具，市場需求卻極為真實，是在台灣高中生族群建立高黏著度的精準切入點。", "sourceUrl": "https://www.threads.com/@middle2sick_/post/DXt5wQJERy3/", "sourceName": "Threads @middle2sick_ · 一個指令讓學習歷程不再像 AI 寫的"}'>
+          <span class="tag tag-product">Threads</span>
+          <div class="item-text">
+            <div class="item-title">@middle2sick_：一個指令讓學習歷程不像 AI 寫的，台灣高中生備審真實感攻略引發廣泛討論</div>
+            <div class="item-source">Threads @middle2sick_</div>
+          </div>
+        </div>
+
+        <div class="news-item" onclick="selectNews(this)"
+          data-story='{"section": "Threads 觀點", "tagClass": "tag-research", "title": "@vista：AI 讓你變笨還是變聰明？長年教學者坦言愈用 AI 愈不踏實", "para1": "台灣 Threads 知名教學者 @vista 發文自省：身為長年從事 AI 應用與內容創作教學的實踐者，坦言這兩年有愈用 AI 愈不踏實的感受——不是 AI 不好用，而是深夜意識到花三小時用 AI 產出許多內容後，卻感覺沒有真正學到什麼。貼文引用李海碩總校長的 AI 教育哲學，反思這一代人最易忽略的認知危機。", "para2": "貼文觸及 AI 教育工具的核心悖論：效率提升與深度學習之間的根本矛盾。過度依賴 AI 產出可能導致認知外包，讓使用者逐漸喪失真正思考能力與知識內化動力。此觀點在台灣教育社群引發廣泛共鳴，呼應近期多份研究對 AI 削弱認知投入的持續警示。", "takeaway": "「AI 使用後的認知踏實感」是 EdTech 工具設計極少主動面對的痛點。只強化產出效率而忽略學習者是否真正在思考的工具，長期將面臨信任流失危機。主動設計反省引導機制的工具——如 AI 使用自評標記、摘要自寫後再對照 AI 版本——將在這波認知焦慮浪潮中取得真正的差異化優勢。", "sourceUrl": "https://www.threads.com/@vista/post/DVH5H7rEpO3/", "sourceName": "Threads @vista · AI 讓你變笨還是變聰明"}'>
+          <span class="tag tag-research">研究</span>
+          <div class="item-text">
+            <div class="item-title">@vista：AI 讓你變笨還是變聰明？長年 AI 教學者坦言愈用 AI 愈不踏實的認知危機</div>
+            <div class="item-source">Threads @vista</div>
+          </div>
+        </div>
+
+      </aside>
+      <div class="detail-panel" id="detail-2026-06-09">
+        <div class="detail-empty">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          <p>點擊左側新聞查看詳情</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="day-pane" data-day="2026-06-08" hidden>
     <div class="split">
       <aside class="news-list" id="list-2026-06-08">
 
@@ -1383,7 +1489,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026-06-08 07:15 (Asia/Taipei)</span>
+  最近更新：<span id="updated">2026-06-09 07:15 (Asia/Taipei)</span>
 </footer>
 
 <script>
