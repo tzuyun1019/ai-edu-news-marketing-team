@@ -486,8 +486,8 @@ body {
   <button class="week-nav-btn" id="btnThisWeek" onclick="switchToWeek(0)" disabled>本週 →</button>
 </div>
 <nav class="day-tabs" id="dayTabs">
-  <button class="tab active" data-week="0" data-day="2026-06-15"><span class="tab-dow">週一</span><span class="tab-date">6/15</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-week="0" data-day="2026-06-16"><span class="tab-dow">週二</span><span class="tab-date">6/16</span></button>
+  <button class="tab" data-week="0" data-day="2026-06-15"><span class="tab-dow">週一</span><span class="tab-date">6/15</span></button>
+  <button class="tab active" data-week="0" data-day="2026-06-16"><span class="tab-dow">週二</span><span class="tab-date">6/16</span><span class="tab-today">今日</span></button>
   <button class="tab empty" data-week="0" data-day="2026-06-17"><span class="tab-dow">週三</span><span class="tab-date">6/17</span></button>
   <button class="tab empty" data-week="0" data-day="2026-06-18"><span class="tab-dow">週四</span><span class="tab-date">6/18</span></button>
   <button class="tab empty" data-week="0" data-day="2026-06-19"><span class="tab-dow">週五</span><span class="tab-date">6/19</span></button>
@@ -503,7 +503,97 @@ body {
 </nav>
 
 <div id="panesContainer">
-<section class="day-pane" data-day="2026-06-15">
+<section class="day-pane" data-day="2026-06-16">
+  <div class="split">
+    <aside class="news-list" id="list-2026-06-16">
+      <div class="pane-header">6月16日（週二）<span class="count"> · 9 則</span></div>
+      <div class="section-label">產品動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"產品動態","tagClass":"tag-product","title":"Canva AI 2.0 正式推出 Learn Grid 教育平台：差異化課程三級一鍵生成，16 語言跨越全球資源鴻溝","para1":"Canva 於 4 月 Canva Create 2026 大會宣布發布 AI 2.0 版本，核心教育升級是全新 Learn Grid 學習平台，整合課程對齊資源、AI 活動生成與即時課堂互動，提供涵蓋 16 語言的差異化教學工具庫。最受教師關注的功能是「三級差異化生成」：教師只需描述課程目標，AI 可一次生成同一課題的基礎版、標準版、進階版三套教學活動，無需分開設計三套教材，直接解決混合能力班級中最耗時的差異化教學準備難題。Canva 同步與 NASA、紐約時報等機構合作開發超過 5,000 套可自定義課堂資源，全數免費開放給全球教師使用。","para2":"Canva Shield 安全框架同步升級，提供學生數據保護和 AI 內容自動審核機制，學校管理者可精確控制開放給師生的 AI 功能範圍，直接回應機構採購對 AI 安全的核心疑慮。Learn Grid 採全球免費策略，以縮短不同地區教師在優質課程資源可及性上的落差為使命，全年持續更新更多語言版本與學科覆蓋，標誌著 Canva 從設計工具平台全面升格為教育內容生態系的重要一步。","takeaway":"Canva Learn Grid 的三級差異化生成讓台灣混合能力班教師備課時間可縮短至原本的三分之一；若你仍視 Canva 為設計工具，現在是更新認知的時機——它已進化為課程設計加差異化教學的整合平台。台灣 EdTech 若在課程或評量工具領域，Canva 免費策略對中低端市場的壓縮效應正在加速，現在必須清晰回答：你的差異化競爭優勢建立在功能本身，還是整合機構特定需求的深度服務？","sourceUrl":"https://www.canva.com/newsroom/news/learn-grid/","sourceName":"Canva Newsroom · Introducing Learn Grid: A new home for learning, built for everyone"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">Canva AI 2.0 推出 Learn Grid：差異化課程三級一鍵生成，16 語言跨越資源落差</div>
+          <div class="item-source">Canva Newsroom</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"產品動態","tagClass":"tag-product","title":"Zedbud K-12 統一平台招募 2026-27 試點學區：AI 輔助溝通嵌入作業流程，50 語言翻譯終結校園工具碎片化","para1":"EdTech 新創 Zedbud 正式啟動 K-12 統一學習與溝通平台的 2026-27 學年試點招募，核心設計主張是終結學校同時依賴電子郵件、通訊 App、家長入口網站和 LMS 四套獨立工具的碎片化困境。平台將溝通功能直接嵌入作業工作流程：教師發布的通知、學生提問與家長回應全部在同一介面完成，不需要跨系統切換。AI 功能包含根據教師語氣自動生成訊息草稿建議、即時跨逾 50 種語言翻譯（直接服務雙語和新移民家庭），以及學生參與度視覺化儀表板，讓教師即時掌握家長覆蓋率與互動深度。","para2":"試點合作學區可獲得完整的平台導入支援、成效追蹤框架與結案評估報告，平台強調 FERPA 合規設計，所有學生數據均在受保護框架內流通。Zedbud 的核心設計邏輯「溝通嵌入工作流而非並行分散」，是 2026 年 EdTech 平台整合趨勢的縮影——越來越多機構採購者已意識到工具越多不等於效率越高，整合設計已取代功能最多成為採購評估的新核心標準。","takeaway":"Zedbud 的反向邏輯對台灣學校有直接啟示：引入更多 AI 工具之前，先問現有工具是否碎片化到讓教師根本用不起來。台灣 EdTech 若在協作或溝通類工具領域，Zedbud 架構選擇——先解決整合問題再加 AI 功能——是比堆疊 AI 功能更能真正提升機構採購轉化率的設計優先序。平台整合者正在成為 2026 年 EdTech 採購者最偏好的產品形態。","sourceUrl":"https://www.prnewswire.com/news-releases/zedbud-seeks-teachers-schools-and-districts-to-pilot-new-unified-learning-and-communication-platform-302774225.html","sourceName":"PR Newswire · Zedbud Seeks Teachers, Schools, and Districts to Pilot Unified Learning Platform"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">Zedbud K-12 統一平台試點招募：AI 嵌入作業溝通，50 語言翻譯終結碎片化</div>
+          <div class="item-source">PR Newswire</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"產品動態","tagClass":"tag-product","title":"OpenAI Education 首發「Edu Prompt」電子報：Duke 大學「駭客成績」AI 素養作業設計成 2026 最受引用教學案例","para1":"OpenAI Education 正式推出教育專屬電子報「The Edu Prompt」，定期發布 AI 工具更新、教師提示詞實踐指南與院校合作案例，定位是連結 OpenAI 產品更新與一線教育現場的橋樑。首刊封面故事是杜克大學 Brinnae Bent 博士設計的 AI 素養作業「駭客你的期末成績（Hack Your Grade）」：學生必須試圖說服一個設定為「永遠不給 A」的 AI 聊天機器人更改評分，在過程中實踐說服論述、提示注入技術與模型批判思維，讓學生在受控環境中直接碰撞 AI 的邊界與缺陷，被認為是 2026 年最具原創性且可立即移植的 AI 素養作業設計之一。","para2":"首刊同步收錄 Codex Mobile 更新說明、Education for Countries 計畫進度（透過 ChatGPT 讓更多發展中國家學生取得 AI 學習資源）、Voice Mode 家庭學習對話使用指南，以及 OpenAI Academy 資源盤點。電子報的推出標誌著 OpenAI 正從工具供應商向教育知識夥伴角色轉型，顯示 AI 巨頭已將教育機構視為 2026 年最關鍵的生態系滲透場域。","takeaway":"OpenAI 「駭客成績」案例是台灣教師設計 AI 素養課最直接可用的作業模板：選一個學生最想要的目標，讓他們試著說服 AI 達成，再反思 AI 如何被說服或抵制。這個設計同時訓練批判思維、說服邏輯和 AI 限制識別三個核心能力——而且完全不需要額外技術設備。台灣大學教師若正在為 AI 素養課設計作業，這個模板比任何市售 AI 課程套件的起點都更高效。","sourceUrl":"https://edunewsletter.openai.com/p/the-edu-prompt-by-openai-education","sourceName":"OpenAI Education · The Edu Prompt Newsletter"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">OpenAI Education 首發「Edu Prompt」電子報：Duke「駭客成績」作業成 2026 最受引用 AI 素養案例</div>
+          <div class="item-source">OpenAI Education</div>
+        </div>
+      </div>
+      <div class="section-label">研究報告</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"研究報告","tagClass":"tag-research","title":"AIED 2026 首爾大會 6/29 開幕：「從工具到隊友」主題揭示 AI 教育研究下個十年核心框架","para1":"全球最重要的教育 AI 學術盛會 AIED（人工智慧教育國際研討會）2026 年第 27 屆大會將於 6 月 29 日至 7 月 3 日在韓國首爾 COEX 中心舉辦，今年主題「從工具到隊友：人機協作促進增強式學習（From Tools To Teammates: Human-AI Synergy For Augmented Learning）」正式宣告教育 AI 研究典範的重大轉移——AI 已不再是輔助工具，而是主動協作的學習夥伴。大會設置 BlueSky 前瞻研究軌道（突破現有系統邊界的原創願景）與 WideAIED 軌道（聚焦弱勢群體與全球教育公平的 AI 研究），前者代表 2026 年後教育 AI 研究者最期待的學術創新方向。","para2":"AIED 2026 作為「學習節（Festival of Learning 2026）」的核心共辦會議，與 LAK、L@S、ECTEL 等多個學習科學旗艦會議同期在首爾舉辦，預計吸引全球頂尖教育 AI 研究學者集結。最受關注的研究方向包括學習者代理（Learner Agency）在 AI 環境中的保存設計、跨文化 AI 教育公平性驗證，以及 AI 同伴式學習的實驗規範——這些研究成果通常在大會後 12 至 24 個月內成為 EdTech 機構採購的理論背書框架。","takeaway":"AIED 2026「工具到隊友」的主題轉移是台灣 EdTech 產品設計最重要的學術信號：若你的 AI 功能仍停留在被動問答模式，現在需要評估是否向主動協作夥伴模型升級。大會論文將在未來一年內成為機構採購評估時最常被引用的理論依據——追蹤首爾大會的 BlueSky 研究軌道成果，等同免費取得 2027 年 EdTech 採購對話的預測地圖。","sourceUrl":"https://www.aied-conference.org/2026","sourceName":"AIED 2026 · 27th International Conference on Artificial Intelligence in Education"}'>
+        <span class="tag tag-research">研究</span>
+        <div class="item-text">
+          <div class="item-title">AIED 2026 首爾大會 6/29 開幕：「從工具到隊友」主題揭示 AI 教育研究下十年框架</div>
+          <div class="item-source">AIED 2026 · Seoul</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"研究報告","tagClass":"tag-research","title":"EdtechX Summit 2026 今日倫敦登場：歐洲最大 EdTech 峰會宣布年度大獎，AI 教育與職場培訓雙線主題引領","para1":"歐洲規模最大的 EdTech 年度峰會 EdtechX Summit 2026 今日（6 月 16 日）在倫敦 County Hall 舉辦，作為「倫敦 EdTech 週（6/15-19）」的壓軸活動，匯聚全球 EdTech 投資人、創辦人、政策制定者與機構採購決策者。今年峰會五大主題為教育中的 AI 應用、職場與企業學習、K-12 創新、EdTech 投資與成長、政策與系統轉型，EdtechX Awards 2026 年度大獎各類別得主同步在今日峰會現場公布，是歐洲 EdTech 生態圈最重要的品牌曝光與市場信號輸出場域。","para2":"EdtechX 是近年最能直接反映歐洲 EdTech 機構採購優先序的指標峰會，今年主題清晰揭示歐洲市場的雙重動能：AI 在 K-12 與高等教育的落地深化，以及職場技能培訓的快速崛起——兩者都需要新型評估框架驗證 AI 工具的實際效益而非停留在功能展示。參與者結構偏向企業學習與高等教育機構決策者，與美國市場以 K-12 消費端為主的生態明顯不同，折射出歐洲 EdTech 的 B2B 機構採購優先邏輯。","takeaway":"EdtechX 今日峰會最值得追蹤的不是誰獲獎，而是年度大獎評選維度的演變——這就是歐洲機構採購未來一年優先序的最佳預言。台灣 EdTech 若有意進入歐洲市場，現在從峰會官方社群媒體追蹤今日現場發布的主題演講摘要，是取得歐洲市場 12 個月採購前瞻情報的最低成本方式，遠比後期參加銷售洽談更有效率。","sourceUrl":"https://impactx2050.com/edtechx_summit_2026","sourceName":"EdtechX · The EdTechX Summit 2026, London"}'>
+        <span class="tag tag-research">研究</span>
+        <div class="item-text">
+          <div class="item-title">EdtechX Summit 2026 今日倫敦登場：歐洲最大 EdTech 峰會宣布年度大獎得主</div>
+          <div class="item-source">EdtechX · London</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"研究報告","tagClass":"tag-research","title":"EdUHK × 清大未來教育論壇：七國 200 學者齊聚北京，74,000 線上見證亞洲 AI 教育知識中心加速成形","para1":"香港教育大學（EdUHK）與清華大學（北京）聯合舉辦「2026 未來教育與學習論壇」，吸引來自七個國家與地區的逾 200 位教育學者、創新者與實踐者出席，線上同步觀眾超過 74,000 人次，是近年亞洲規模最大的 AI 教育跨學科對話平台之一。論壇為期兩天，涵蓋主題演講、圓桌對話、海報展示、課堂觀察與青年學者交流，聚焦四大核心議題：AI 如何重塑傳統教育典範、未來課程設計方向、AI 增強學習的倫理與價值考量，以及 AI 素養與教育領導力的未來圖景。新加坡 NUS AICET 代表同場出席，帶來 ScholAIstic 組合式課堂 AI 設計最新實踐更新。","para2":"論壇特別設計課堂觀察環節，讓參與者進入真實課堂觀察 AI 整合教學現場，而非只聽簡報，體現實踐先於理論的設計取向。亞洲 AI 教育學術合作框架正快速清晰化：兩岸三地與東南亞研究機構開始建立獨立知識生產網絡，不再僅引用西方研究框架，而是輸出具有亞洲文化脈絡的 AI 教育理論，是 2026 年亞洲 AI 教育研究能見度最重要的提升信號。","takeaway":"EdUHK × 清大論壇 74,000 線上觀眾代表重要市場信號：亞洲 AI 教育研究受眾規模已足以支撐獨立知識生產中心。台灣教育研究者和 EdTech 業者若想在亞洲知識網絡中取得早期位置，現在與 EdUHK 和東南亞大學建立研究合作，是成本最低、槓桿最大的學術能見度策略——等亞洲 AI 教育知識網絡完全成形後才加入，先行者優勢將難以追及。","sourceUrl":"https://www.eduhk.hk/en/press-releases/eduhk-and-tsinghua-university-co-organise-2026-future-education-and-learning-forumto-promote-deep-integration-of-ai-and-educational-innovation","sourceName":"EdUHK · 2026 Future Education and Learning Forum with Tsinghua University"}'>
+        <span class="tag tag-research">研究</span>
+        <div class="item-text">
+          <div class="item-title">EdUHK × 清大未來教育論壇：七國 200 學者、74,000 線上見證亞洲 AI 教育知識自主化加速</div>
+          <div class="item-source">EdUHK · Tsinghua University</div>
+        </div>
+      </div>
+      <div class="section-label">亞洲焦點</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"亞洲焦點","tagClass":"tag-taiwan","title":"台灣教育部推廣高中科學課堂 AI 化：自適應學習三段課程整合，配套 AI 英語自評覆蓋 75 萬學生","para1":"台灣教育部五月下旬召開高中科學教育工作坊，展示如何協助教師在科學課堂導入 AI 與數位工具，核心推廣平台為「自適應學習（Adaptive Learning）」系統，設計為課前預習、課中互動、課後複習三段無縫整合：教師可依學生課前答題數據即時調整課堂重點，課後自動生成個人化複習建議。此舉是 AI 輔助教學在台灣正規課堂推廣從早期試點進入系統化推廣軌道的重要升級訊號，配套的 AI 英語口語自評系統已服務逾 75 萬學生，23 所高中職程式碼審查 AI 系統已上線，AI 教育覆蓋率持續快速提升。","para2":"台灣 AI 教育政策推進路徑逐漸清晰：從單一數位工具引入升格為三段整合自適應學習架構，目標讓 AI 真正嵌入教師教學工作流，而非停留在額外附加補充工具的位置。配合成大 AITC 高中職 AI 進階人才培育計畫與全民 AI 素養計畫，台灣正建立從基礎素養到進階應用的縱向培育鏈，政策方向的系統性比 2024 年明顯更為清晰。","takeaway":"台灣教育部推廣高中科學 AI 化是 EdTech 業者最應把握的政策整合機會：三段整合自適應學習框架是台灣官方認可的 AI 輔助教學設計範本。台灣 EdTech 若正在開發 K-12 學科工具，現在評估如何對齊此三段框架，是在競爭前建立與教育部政策方向契合的最快路徑，也是爭取成為官方合作工具最關鍵的設計起點。","sourceUrl":"https://www.taiwannews.com.tw/news/6369652","sourceName":"Taiwan News · Taiwan education ministry highlights AI use in high school science classrooms"}'>
+        <span class="tag tag-taiwan">台灣</span>
+        <div class="item-text">
+          <div class="item-title">台灣教育部推廣高中科學 AI 課堂：自適應學習三段整合，AI 英語自評覆蓋 75 萬學生</div>
+          <div class="item-source">Taiwan News</div>
+        </div>
+      </div>
+      <div class="section-label">Threads 觀點</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"Threads 觀點","tagClass":"tag-taiwan","title":"Threads @skyline.tw：Microsoft 2026 免費 AI 學習資源完整攻略，edX 60+ 課零成本建立 AI 技能路徑","para1":"台灣 Threads 帳號 @skyline.tw 整理「Microsoft 2026 免費線上課程完整攻略」，彙整透過 edX 平台提供的 60 餘門免費課程，涵蓋人工智慧與機器學習、雲端運算、資料科學與行動應用四大技能領域，全球學習者均可存取、自主安排學習時程，無需任何費用。帖文在台灣 AI 技能提升社群引發廣泛轉存，被多名教師和 EdTech 開發者收藏，指出這是「現在職場最需要的技能」的最低門檻學習路徑，成為本月台灣技術社群被轉存最多的 AI 學習資源彙整帖文之一。","para2":"Microsoft edX 免費課程是 2026 年 Microsoft AI 技能普及全球戰略的一環，配合日本四年 100 億美元投資計畫同步推出，以免費課程深化 Microsoft 生態系黏著度。對台灣教師和教育行政者而言，此課程路徑是建立 AI 基礎能力最低成本的選項之一；但對台灣付費 AI 技能培訓業者而言，Microsoft 持續擴大免費課程覆蓋，正快速壓縮入門 AI 課程的付費市場空間，差異化必須向更深層的服務設計轉移。","takeaway":"@skyline.tw 的攻略熱度是台灣 AI 技能培訓市場結構轉移的清晰信號：免費優質資源規模持續擴大，付費課程的差異化必須建立在完成率設計、同儕社群、企業客製與成效驗證，而非課程內容本身。台灣 EdTech 若在技能培訓領域，現在需要清晰回答你的付費產品比 Microsoft 免費課更值得選擇的具體理由——那個理由才是真正的護城河。","sourceUrl":"https://www.threads.com/@skyline.tw/post/DUvQd3XkvSL/","sourceName":"Threads @skyline.tw · Microsoft 2026 免費線上課程攻略"}'>
+        <span class="tag tag-taiwan">台灣</span>
+        <div class="item-text">
+          <div class="item-title">Threads @skyline.tw：Microsoft 2026 免費 AI 課程攻略，edX 60+ 門零成本建立 AI 技能</div>
+          <div class="item-source">Threads @skyline.tw</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"Threads 觀點","tagClass":"tag-taiwan","title":"Threads @jwutingchen：遠哲科教基金會 Future Edu Lab 推 PBL × AI 工作坊，AI 時代能問對問題才是最稀缺的教育能力","para1":"台灣教育研究者 @jwutingchen 在 Threads 分享遠哲科教基金會推出 Future Edu Lab 的消息，這是一個以「PBL × AI 課程設計」為核心的教師工作坊計畫，旨在協助教師設計能讓學生在 AI 時代真正發展提問力的學習活動。帖文引用頂尖 AI 產業 CEO 包含輝達 CEO 黃仁勳的觀點，強調在 AI 能高效生成答案的時代，學生最關鍵的稀缺能力不是記憶知識，而是「決定該問什麼問題」的洞察力與判斷力，PBL 設計因此在 AI 時代重新獲得核心地位。","para2":"遠哲科教基金會的 Future Edu Lab 定位是台灣民間教育社群的 AI 課程設計實驗室，補充政府課綱框架之外更具彈性的課程創新空間。帖文在台灣教師社群引發共鳴，同時點燃了關於 108 課綱能力導向理念與現實評量環境落差的討論——在時間壓縮、評量框架固定的台灣課堂中推行真實問題探究，設計之外的落地難度往往更高，是台灣 AI 課程改革最需要正視的實踐瓶頸。","takeaway":"遠哲 Future Edu Lab 的核心主張給台灣 EdTech 工具設計者一個關鍵問題：你的產品是讓學生更有效地找到答案，還是讓他們更有能力決定該問什麼問題？前者在 AI 全面普及後將快速商品化，後者才是 AI 時代學習工具的稀缺設計核心。台灣 EdTech 現在評估自家工具設計重心是否需要轉移，可能比追加任何 AI 功能都更重要。","sourceUrl":"https://www.threads.com/@jwutingchen/post/DTQEiNIE8aQ/","sourceName":"Threads @jwutingchen · 遠哲科教基金會 Future Edu Lab PBL × AI 課程設計工作坊"}'>
+        <span class="tag tag-taiwan">台灣</span>
+        <div class="item-text">
+          <div class="item-title">Threads @jwutingchen：遠哲科教基金會 Future Edu Lab 推 PBL × AI 工作坊，提問力才是 AI 時代教育核心</div>
+          <div class="item-source">Threads @jwutingchen</div>
+        </div>
+      </div>
+    </aside>
+    <div class="detail-panel" id="detail-2026-06-16">
+      <div class="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <p>點擊左側新聞查看詳情</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="day-pane" data-day="2026-06-15" hidden>
   <div class="split">
     <aside class="news-list" id="list-2026-06-15">
       <div class="pane-header">6月15日（週一）<span class="count"> · 9 則</span></div>
@@ -1246,7 +1336,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026-06-15 07:00 (Asia/Taipei)</span>
+  最近更新：<span id="updated">2026-06-16 07:00 (Asia/Taipei)</span>
 </footer>
 
 <script>
