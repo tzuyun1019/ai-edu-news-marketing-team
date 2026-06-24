@@ -486,9 +486,9 @@ body {
   <button class="week-nav-btn" id="btnThisWeek" onclick="switchToWeek(0)" disabled>本週 →</button>
 </div>
 <nav class="day-tabs" id="dayTabs">
-  <button class="tab active" data-week="0" data-day="2026-06-22"><span class="tab-dow">週一</span><span class="tab-date">6/22</span><span class="tab-today">今日</span></button>
+  <button class="tab" data-week="0" data-day="2026-06-22"><span class="tab-dow">週一</span><span class="tab-date">6/22</span></button>
   <button class="tab empty" data-week="0" data-day="2026-06-23"><span class="tab-dow">週二</span><span class="tab-date">6/23</span></button>
-  <button class="tab empty" data-week="0" data-day="2026-06-24"><span class="tab-dow">週三</span><span class="tab-date">6/24</span></button>
+  <button class="tab active" data-week="0" data-day="2026-06-24"><span class="tab-dow">週三</span><span class="tab-date">6/24</span><span class="tab-today">今日</span></button>
   <button class="tab empty" data-week="0" data-day="2026-06-25"><span class="tab-dow">週四</span><span class="tab-date">6/25</span></button>
   <button class="tab empty" data-week="0" data-day="2026-06-26"><span class="tab-dow">週五</span><span class="tab-date">6/26</span></button>
   <button class="tab empty" data-week="0" data-day="2026-06-27"><span class="tab-dow">週六</span><span class="tab-date">6/27</span></button>
@@ -503,7 +503,111 @@ body {
 </nav>
 
 <div id="panesContainer">
-<section class="day-pane" data-day="2026-06-22">
+<section class="day-pane" data-day="2026-06-24">
+  <div class="split">
+    <aside class="news-list" id="list-2026-06-24">
+      <div class="pane-header">6月24日（週三）<span class="count"> · 9 則</span></div>
+
+      <div class="section-label">產品動態</div>
+
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"產品動態","tagClass":"tag-product","title":"DeepTutor 更新：Agent 原生架構讓 AI 家教擁有自己的「個性」","para1":"香港大學研究團隊推出的 DeepTutor 進行重大更新，採用 agent 原生架構，整合了個人化輔導、題目解析、測驗生成、研究工具與視覺化練習於單一平台。新版本讓學習者可自訂 AI 代理人的個性、技能庫與偏好，在對話中即時調用不同助教協作。","para2":"此次更新反映 AI 輔導從「工具」升級為「可組合的學習夥伴」的趨勢。Agent 原生設計讓平台具備高度擴展性，未來可接入更多學科專業代理人，不再只是問答機器人。","takeaway":"EdTech 產品若能讓用戶「定製 AI 老師個性」，黏著度與學習動機都會顯著提升，值得台灣補教業者關注此類設計理念。","sourceUrl":"https://github.com/HKUDS/DeepTutor","sourceName":"GitHub · DeepTutor HKUDS"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">DeepTutor 更新：Agent 原生架構讓 AI 家教擁有自己的「個性」</div>
+          <div class="item-source">GitHub · DeepTutor</div>
+        </div>
+      </div>
+
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"產品動態","tagClass":"tag-product","title":"Duolingo 2026 升級：語音辨識 + 上下文語法讓語言學習更像真人對話","para1":"Duolingo 在 2026 年版本大幅升級 AI 語言輔導功能，新增進階語音辨識、上下文語法修正與個人化對話練習，平台已從遊戲化詞彙 App 進化為具備真實對話能力的 AI 語言家教。","para2":"語言學習類 EdTech 在 AI 融合後成為最吸引資金的賽道之一，Duolingo 的升級示範了如何將用戶既有習慣與 AI 深度結合，而不只是貼上「AI功能」標籤。","takeaway":"語音互動＋語境理解是目前語言 AI 最有感的突破，台灣英語教學類 App 若能導入類似功能，將大幅提升學習留存率。","sourceUrl":"https://nerdsip.com/blog/best-ai-tutor-apps-2026","sourceName":"NerdSip · Best AI Tutor Apps in 2026"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">Duolingo 2026 升級：語音辨識 + 上下文語法讓語言學習更像真人對話</div>
+          <div class="item-source">NerdSip</div>
+        </div>
+      </div>
+
+      <div class="section-label">資金動態</div>
+
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"資金動態","tagClass":"tag-funding","title":"教師 AI 工具 MagicSchool AI 完成 $45M B 輪，「減輕教師負擔」成投資主題","para1":"面向教育工作者的 AI 工具平台 MagicSchool AI 完成 4500 萬美元 B 輪融資，產品涵蓋備課、差異化教學、學生回饋生成等功能，定位為幫助教師減少行政負擔的 AI 助教。此次融資顯示機構投資者持續看好「teacher workflow」賽道。","para2":"2026 年全球 EdTech 募資約 28 億美元，其中 31% 流向 AI 個人化學習與教師效率工具。MagicSchool 的成功印證「幫老師省時」比「直接教學生」更容易打入 B2B 學校採購。","takeaway":"台灣學校 IT 採購若能看到 AI 工具「幫老師省多少時」的量化數據，接受度會大幅提升，這是產品行銷需要優先準備的內容。","sourceUrl":"https://newmarketpitch.com/blogs/news/ai-education-top-startups-fundraising","sourceName":"New Market Pitch · AI Education Fundraising 2026"}'>
+        <span class="tag tag-funding">資金</span>
+        <div class="item-text">
+          <div class="item-title">教師 AI 工具 MagicSchool AI 完成 $45M B 輪，「減輕教師負擔」成投資主題</div>
+          <div class="item-source">New Market Pitch</div>
+        </div>
+      </div>
+
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"資金動態","tagClass":"tag-funding","title":"AI 學習平台 Gizmo 完成 $22M A 輪，5月最大 EdTech 新創募資","para1":"AI 驅動的個人化學習平台 Gizmo 於 2026 年 5 月完成 2200 萬美元 A 輪融資，成為當月最大 EdTech 新創融資案。Gizmo 以自適應內容推薦與進度追蹤為核心，目標打入 K-12 與職業培訓市場。","para2":"本輪由 Angel Investors Network 領投，顯示個人投資人持續對 AI 原生教育平台保持高度興趣。EdTech 整體募資趨於穩定（2026 年約 28 億美元），但 AI 原生新創仍能以清晰的差異化獲得青睞。","takeaway":"「AI 原生」（不是在既有平台貼 AI 標籤）的 EdTech 新創更容易說服投資人，台灣新創應思考如何在產品層面就體現 AI 的核心角色。","sourceUrl":"https://angelinvestorsnetwork.com/startups/series-a-ai-native-ed-tech-startup-funding-2026","sourceName":"Angel Investors Network · Gizmo $22M Series A"}'>
+        <span class="tag tag-funding">資金</span>
+        <div class="item-text">
+          <div class="item-title">AI 學習平台 Gizmo 完成 $22M A 輪，5月最大 EdTech 新創募資</div>
+          <div class="item-source">Angel Investors Network</div>
+        </div>
+      </div>
+
+      <div class="section-label">市場趨勢</div>
+
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"市場趨勢","tagClass":"tag-market","title":"紐約市教育局發布 AI 使用指引：110 萬學生的 AI 邊界在哪裡","para1":"紐約市教育局（全美最大學區，110 萬學生）正式發布 AI 使用指引，允許教師用 AI 備課、起草溝通稿、腦力激盪，但明確禁止 AI 自動評分、做出懲戒決定，或在未嚴格監管下蒐集學生行為與生物識別數據。所有 AI 工具須通過偏見、公平性與文化適切性評估。","para2":"這份指引代表全球最具影響力的學區之一首次對 AI 劃出清晰紅線，預計將成為其他學區效仿的模板。指引明確區分「輔助教師」與「替代教師判斷」的邊界，具有重要的政策示範意義。","takeaway":"教育 AI 工具若能提前準備「偏見評估報告」與「教師主導性聲明」，將更容易進入公立學校採購流程，這是台灣廠商拓展美國市場的必備功課。","sourceUrl":"https://www.pursuit.us/news/ai-in-education-news-policies-innovations","sourceName":"Pursuit · AI in Education News & Policies May-June 2026"}'>
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">紐約市教育局發布 AI 使用指引：110 萬學生的 AI 邊界在哪裡</div>
+          <div class="item-source">Pursuit</div>
+        </div>
+      </div>
+
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"市場趨勢","tagClass":"tag-market","title":"EdTech 買家新標準：AI 必須「讓人行動」而非「讓人消費內容」","para1":"最新 EdTech 市場報告指出，2026 年採購方已不再接受單純「提供內容」的 AI 工具，買家明確要求自適應學習、更快速的回饋機制、更精準的評量，以及「驅動行動」而非「呈現資訊」的功能設計。全球教育科技市場預計 2032 年達 5989 億美元，年成長率逾 17%。","para2":"這個買家認知的轉變意味著 EdTech 銷售話術也要改變：不能再說「我們有 AI 功能」，而要說「使用後你的學生完成率提升 X%、教師備課時間縮短 Y 分鐘」，可量化的結果才是新的門票。","takeaway":"台灣 EdTech 廠商在規劃 AI 功能時，應從「功能清單」思維轉向「可量化的學習成效」思維，客戶購買決策越來越依賴可驗證的數據。","sourceUrl":"https://www.eschoolnews.com/innovative-teaching/2026/01/01/draft-2026-predictions/","sourceName":"eSchool News · 49 EdTech Predictions 2026"}'>
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">EdTech 買家新標準：AI 必須「讓人行動」而非「讓人消費內容」</div>
+          <div class="item-source">eSchool News</div>
+        </div>
+      </div>
+
+      <div class="section-label">台灣與亞洲</div>
+
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"台灣與亞洲","tagClass":"tag-taiwan","title":"新加坡 2026 預算案：AI 培訓免費六個月，全民 upskill 計畫啟動","para1":"新加坡 2026 年度預算案中包含「六個月免費 AI 培訓資源」計畫，讓企業員工與求職者免費使用頂級 AI 學習平台（LinkedIn Learning、Coursera 等），同時 National Institute of Education 啟動五年「AI@NIE」計畫，將 AI 深度融入師培課程與教育研究。","para2":"新加坡政府將 AI 教育從「學校課程」擴展至「全民終身學習」，這種由政府補貼、帶動企業培訓需求的模式，是台灣推動 AI 教育政策可參考的路徑。","takeaway":"新加坡政府採購 AI 培訓平台授權的模式，對台灣 EdTech 廠商是個機會——若能取得政府授權合約，一次獲得大量企業用戶。","sourceUrl":"https://www.linkedin.com/posts/leeps_budget-2026-6-months-free-access-to-premium-activity-7427674742628810753-SZM4","sourceName":"LinkedIn · Singapore Budget 2026 AI Training"}'>
+        <span class="tag tag-taiwan">亞洲</span>
+        <div class="item-text">
+          <div class="item-title">新加坡 2026 預算案：AI 培訓免費六個月，全民 upskill 計畫啟動</div>
+          <div class="item-source">LinkedIn</div>
+        </div>
+      </div>
+
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"台灣與亞洲","tagClass":"tag-taiwan","title":"東京都 AI 平台服務 16 萬師生，Azure OpenAI 進入公立教育體系","para1":"東京都教育委員會建立的「都立 AI」平台基於 Azure OpenAI 服務，目前已服務 16 萬名教師與學生，涵蓋教學備課、行政效率化與學生學習輔助。這是日本最大規模的公立教育 AI 部署案例，展示 AI 從試點進入全面落地的路徑。","para2":"微軟 Azure OpenAI 透過各地政府教育部門持續深入公立教育體系，此模式在日本成功後，有望成為亞洲其他地區複製的範本，台灣公立學校系統的 AI 採購也可能受此影響。","takeaway":"「大型雲端廠商＋地方政府教育局」的合作模式正在成為亞洲 AI 教育落地的主流路徑，台灣 EdTech 廠商應思考如何與 Microsoft/Google 生態系協作。","sourceUrl":"https://news.microsoft.com/source/asia/2025/11/06/asia-pacifics-ai-leap-from-strategic-drive-to-agentic-innovation/","sourceName":"Microsoft Source Asia · Asia Pacific AI Education"}'>
+        <span class="tag tag-taiwan">亞洲</span>
+        <div class="item-text">
+          <div class="item-title">東京都 AI 平台服務 16 萬師生，Azure OpenAI 進入公立教育體系</div>
+          <div class="item-source">Microsoft Source Asia</div>
+        </div>
+      </div>
+
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"台灣與亞洲","tagClass":"tag-taiwan","title":"全球華文網路教育學會年會：AI 時代教學新視野登場","para1":"全球華文網路教育學會於 6 月 13-14 日在實踐大學舉辦年度學術研討會，主題為「探索 AI 時代的教學新視野」，由數位部長主講 AI 對教育產業衝擊，聚集兩岸三地華文教育工作者探討 AI 融入課堂的實務挑戰與機會。","para2":"此研討會是今年台灣最重要的華文 AI 教育交流平台之一，代表台灣教育界已從「觀望 AI」進入「積極研討如何用 AI」的階段。數位部長親自出席，也顯示政策層面對 AI 教育的高度重視。","takeaway":"台灣教育工作者對 AI 的接受度正在快速提升，EdTech 廠商若能在此類研討會上展示實際應用案例，轉換率遠高於一般行銷活動。","sourceUrl":"https://www.icice.info/news","sourceName":"全球華文網路教育學會 · 最新消息"}'>
+        <span class="tag tag-taiwan">台灣</span>
+        <div class="item-text">
+          <div class="item-title">全球華文網路教育學會年會：AI 時代教學新視野登場</div>
+          <div class="item-source">全球華文網路教育學會</div>
+        </div>
+      </div>
+
+    </aside>
+    <div class="detail-panel" id="detail-2026-06-24">
+      <div class="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <p>點擊左側新聞查看詳情</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="day-pane" data-day="2026-06-22" hidden>
   <div class="split">
     <aside class="news-list" id="list-2026-06-22">
       <div class="pane-header">6月22日（週一）<span class="count"> · 9 則</span></div>
@@ -1213,7 +1317,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026-06-22 07:00 (Asia/Taipei)</span>
+  最近更新：<span id="updated">2026-06-24 17:20 (Asia/Taipei)</span>
 </footer>
 
 <script>
