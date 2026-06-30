@@ -1,0 +1,46 @@
+name: Daily Auto News Update
+
+on:
+  schedule:
+    - cron: '5 23 * * *'   # 7:05 AM Taipei (UTC+8 = UTC-8h, so 23:05 UTC)
+  workflow_dispatch:         # Allow manual trigger from GitHub UI
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install feedparser anthropic
+
+      - name: Fetch news and update index.html
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python .github/scripts/auto_news.py
+
+      - name: Commit and push
+        run: |
+          git config user.email "tzuyun@ischool.com.tw"
+          git config user.name "auto-news-bot"
+          git add index.html
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            COUNT=$(grep -c 'class="news-item"' index.html || echo "?")
+            TODAY=$(TZ=Asia/Taipei date '+%Y-%m-%d')
+            git commit -m "Daily auto: ${TODAY} (${COUNT} stories)"
+            git push
+            echo "✅ Pushed successfully"
+          fi
