@@ -1,44 +1,34 @@
-name: Daily Auto News Update
+name: Daily Auto News Update (disabled - using CCR instead)
 
 on:
-  schedule:
-    - cron: '5 23 * * *'   # 7:05 AM Taipei (UTC+8)
-  workflow_dispatch:
+  workflow_dispatch:   # Manual trigger only; schedule removed
 
 jobs:
   update:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-
       - name: Install dependencies
         run: pip install feedparser
-
       - name: Fetch news and update index.html
         run: python .github/scripts/auto_news.py
-
       - name: Commit and push
         run: |
           git config user.email "tzuyun@ischool.com.tw"
           git config user.name "auto-news-bot"
           git add index.html
           if git diff --cached --quiet; then
-            echo "No changes to commit"
+            echo "No changes"
           else
             COUNT=$(grep -c 'class="news-item"' index.html || echo "?")
             TODAY=$(TZ=Asia/Taipei date '+%Y-%m-%d')
-            git commit -m "Daily auto: ${TODAY} (${COUNT} stories)"
+            git commit -m "Manual update: ${TODAY} (${COUNT} stories)"
             git push
-            echo "✅ Pushed"
           fi
