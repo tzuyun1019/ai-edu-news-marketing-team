@@ -1,245 +1,245 @@
 # -*- coding: utf-8 -*-
 """
-Daily EdTech AI News Auto-Updater
-Runs in GitHub Actions. Reads index.html, fetches RSS, calls Claude Haiku,
-writes back updated index.html with today's news.
+Daily EdTech AI News Auto-Updater — 完全免費版
+Uses only RSS + Google Translate free web API. No API keys needed.
 """
-import os, re, json, urllib.request
+import os, re, json, time, urllib.request, urllib.parse
 from datetime import datetime, timezone, timedelta
 
-ANTHROPIC_API_KEY = os.environ.get('ANTHROPIC_API_KEY', '')
+try:
+    import feedparser
+except ImportError:
+    os.system("pip install feedparser -q")
+    import feedparser
+
 TPE = timezone(timedelta(hours=8))
 HTML_FILE = 'index.html'
-
 DOW_ZH = ['週一', '週二', '週三', '週四', '週五', '週六', '週日']
 
 RSS_FEEDS = [
     ("EdSurge",          "https://edsurge.com/news.rss"),
+    ("eSchool News AI",  "https://www.eschoolnews.com/category/artificial-intelligence/feed/"),
     ("eSchool News",     "https://www.eschoolnews.com/feed/"),
     ("EdTech Magazine",  "https://edtechmagazine.com/k12/rss.xml"),
     ("TechCrunch Edu",   "https://techcrunch.com/category/education/feed/"),
     ("Getting Smart",    "https://www.gettingsmart.com/feed/"),
     ("eLearning Ind.",   "https://elearningindustry.com/feed"),
+    ("ISTE",             "https://www.iste.org/rss.xml"),
 ]
 
 AI_KEYWORDS = [
-    'ai ', ' ai', 'artificial intelligence', 'machine learning',
+    'ai ', ' ai,', 'artificial intelligence', 'machine learning',
     'chatgpt', 'gpt', 'claude', 'gemini', 'copilot', 'llm',
     'generative', 'edtech', 'ed tech', 'learning technology',
     'personalized learning', 'adaptive learning', 'tutor', 'chatbot',
-    'automation', 'robot', 'neural', 'deep learning',
+    'automation', 'deep learning', 'language model',
 ]
 
+SECTION_MAP = {
+    'funding': ('資金動態', 'tag-funding'),
+    'invest':  ('資金動態', 'tag-funding'),
+    'raise':   ('資金動態', 'tag-funding'),
+    'partner': ('機構合作', 'tag-partner'),
+    'school':  ('機構合作', 'tag-partner'),
+    'universit': ('機構合作', 'tag-partner'),
+    'research': ('效果研究', 'tag-research'),
+    'study':   ('效果研究', 'tag-research'),
+    'outcome': ('效果研究', 'tag-research'),
+    'taiwan':  ('台灣與亞洲', 'tag-taiwan'),
+    'asia':    ('台灣與亞洲', 'tag-taiwan'),
+    'japan':   ('台灣與亞洲', 'tag-taiwan'),
+    'korea':   ('台灣與亞洲', 'tag-taiwan'),
+    'singapore': ('台灣與亞洲', 'tag-taiwan'),
+    'china':   ('台灣與亞洲', 'tag-taiwan'),
+    'trend':   ('市場趨勢', 'tag-market'),
+    'market':  ('市場趨勢', 'tag-market'),
+    'report':  ('市場趨勢', 'tag-market'),
+}
 
-# ── Date helpers ────────────────────────────────────────────────────────────
+def guess_section(title, summary):
+    text = (title + ' ' + summary).lower()
+    for kw, (sec, tag) in SECTION_MAP.items():
+        if kw in text:
+            return sec, tag
+    return '產品動態', 'tag-product'
 
-def today_taipei():
-    return datetime.now(TPE)
-
-def date_str(dt):
-    return dt.strftime('%Y-%m-%d')
-
-def month_day(ds):
-    """'2026-06-30' → '6/30'"""
-    m, d = str(int(ds[5:7])), str(int(ds[8:10]))
-    return f'{m}/{d}'
-
-def week_monday(dt):
-    """Return the Monday of dt's week."""
-    return dt - timedelta(days=dt.weekday())
+TAG_LABEL = {
+    'tag-product': '產品', 'tag-funding': '資金',
+    'tag-partner': '合作', 'tag-research': '研究',
+    'tag-market': '趨勢', 'tag-taiwan': '台灣',
+}
 
 
-# ── RSS fetching ─────────────────────────────────────────────────────────────
+# ── Google Translate (free web, no key) ──────────────────────────────────────
+
+def gtranslate(text, target='zh-TW'):
+    """Translate text using Google Translate web (free, no API key)."""
+    if not text or not text.strip():
+        return text
+    text = text[:500]
+    url = "https://translate.googleapis.com/translate_a/single"
+    params = urllib.parse.urlencode({
+        'client': 'gtx', 'sl': 'auto', 'tl': target,
+        'dt': 't', 'q': text
+    })
+    req = urllib.request.Request(
+        f"{url}?{params}",
+        headers={"User-Agent": "Mozilla/5.0"}
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=10) as r:
+            data = json.load(r)
+            parts = [seg[0] for seg in data[0] if seg[0]]
+            return ''.join(parts)
+    except Exception as e:
+        print(f"  Translate error: {e}")
+        return text  # Return English as fallback
+
+
+def translate_batch(items, field, target='zh-TW', delay=0.3):
+    """Translate a field for a list of dicts, with rate-limit delay."""
+    for item in items:
+        item[field + '_zh'] = gtranslate(item[field], target)
+        time.sleep(delay)
+    return items
+
+
+# ── RSS fetching ──────────────────────────────────────────────────────────────
+
+def strip_html(text):
+    return re.sub(r'<[^>]+>', '', text or '').strip()
 
 def is_ai_edu(title, summary):
     text = (title + ' ' + (summary or '')).lower()
     return any(kw in text for kw in AI_KEYWORDS)
 
-def strip_html(text):
-    return re.sub(r'<[^>]+>', '', text or '').strip()
-
-def fetch_rss_entries(max_age_hours=72):
-    try:
-        import feedparser
-    except ImportError:
-        print("feedparser not installed, skipping RSS fetch")
-        return []
-
+def fetch_entries(max_age_hours=72):
     cutoff = datetime.now(timezone.utc) - timedelta(hours=max_age_hours)
     entries = []
-    seen_urls = set()
+    seen = set()
 
     for source_name, url in RSS_FEEDS:
         try:
-            print(f"  Fetching {source_name}…")
+            print(f"  {source_name}…")
             feed = feedparser.parse(url)
-            for e in feed.entries[:25]:
+            for e in feed.entries[:20]:
                 if hasattr(e, 'published_parsed') and e.published_parsed:
                     pub = datetime(*e.published_parsed[:6], tzinfo=timezone.utc)
                     if pub < cutoff:
                         continue
                 link = e.get('link', '')
-                if link in seen_urls:
+                if link in seen:
                     continue
                 title = e.get('title', '').strip()
                 summary = strip_html(e.get('summary', ''))[:400]
                 if title and is_ai_edu(title, summary):
-                    seen_urls.add(link)
+                    seen.add(link)
                     entries.append({
                         'title': title,
-                        'summary': summary,
+                        'summary': summary[:200],
                         'url': link,
                         'source': source_name,
                     })
         except Exception as ex:
             print(f"  Error {source_name}: {ex}")
 
-    print(f"  Found {len(entries)} AI/EdTech entries")
-    return entries
+    print(f"  {len(entries)} entries found")
+    return entries[:12]
 
 
-# ── Claude Haiku call ─────────────────────────────────────────────────────────
+# ── Story building ────────────────────────────────────────────────────────────
 
-def generate_stories(entries):
-    if not ANTHROPIC_API_KEY:
-        raise RuntimeError("ANTHROPIC_API_KEY not set")
-    if not entries:
-        raise RuntimeError("No RSS entries to process")
+def make_takeaway_zh(section):
+    takeaway_map = {
+        '資金動態': '台灣 EdTech 廠商可關注此輪融資背後的商業模式，評估類似市場切入點的機會。',
+        '機構合作': '台灣學校與 EdTech 廠商可參考此合作模式，探索在地化合作可能性。',
+        '效果研究': '此研究數據可作為向學校推銷 AI 教育工具時的佐證，建議整理成投影片素材。',
+        '台灣與亞洲': '亞洲市場動態與台灣高度相關，可作為行銷策略參考，尤其是定價與推廣節奏。',
+        '市場趨勢': '此趨勢可用於對客戶說明市場方向，強化 AI 教育工具採購的決策信心。',
+        '產品動態': '行銷團隊可追蹤此工具的用戶反饋，作為比較競品或合作機會的評估依據。',
+    }
+    return takeaway_map.get(section, '建議行銷團隊持續追蹤此動態，並評估對台灣教育市場的影響。')
 
-    news_list = "\n".join([
-        f"{i+1}. [{e['source']}] {e['title']}\n   URL: {e['url']}\n   摘要: {e['summary'][:250]}"
-        for i, e in enumerate(entries[:15])
-    ])
+def build_stories(entries):
+    stories = []
+    for e in entries[:8]:
+        section, tag_class = guess_section(e['title'], e['summary'])
+        title_zh = gtranslate(e['title'])
+        time.sleep(0.4)
+        summary_zh = gtranslate(e['summary'][:200])
+        time.sleep(0.4)
 
-    prompt = f"""你是台灣行銷團隊的AI教育情報分析師，閱讀者是教育科技業的行銷人員。
-
-以下是今日EdTech AI新聞，請挑選最值得關注的8則（分類多元，優先選AI工具/產品，再選市場趨勢），為每則生成繁體中文內容。
-
-輸出純 JSON 陣列（不要 markdown，不要說明文字），每個物件包含：
-- source_index: 原始編號（1-based integer）
-- section: 分類（產品動態 / 工具推薦 / 資金動態 / 市場趨勢 / 台灣與亞洲）
-- tagClass: CSS class（tag-product / tag-funding / tag-partner / tag-research / tag-market / tag-taiwan）
-- title: 標題（15-30字，有洞察力，從台灣行銷角度出發）
-- para1: 事實與背景（60-80字）
-- para2: 重點意義與影響（50-70字）
-- takeaway: 台灣行銷團隊可操作建議（50-80字，第一人稱複數）
-- sourceName: 媒體名稱（如 "EdSurge · 文章標題前10字"）
-
-注意：sourceUrl 不用輸出（我從 source_index 對應原始 URL）
-
-新聞清單：
-{news_list}"""
-
-    payload = json.dumps({
-        "model": "claude-haiku-4-5-20251001",
-        "max_tokens": 4096,
-        "messages": [{"role": "user", "content": prompt}]
-    }).encode()
-
-    req = urllib.request.Request(
-        "https://api.anthropic.com/v1/messages",
-        data=payload,
-        headers={
-            "x-api-key": ANTHROPIC_API_KEY,
-            "anthropic-version": "2023-06-01",
-            "content-type": "application/json"
+        # para1 = translated summary (facts)
+        # para2 = short significance note
+        para2_map = {
+            '資金動態': f"此次融資顯示投資人持續看好 AI 教育市場潛力，資金流向具有方向性參考價值。",
+            '機構合作': f"大型機構採用 AI 教育工具的案例，有助於降低其他機構的採購決策門檻。",
+            '效果研究': f"有效果數據支持的 AI 教育工具更容易獲得學校採購信任，市場說服力提升。",
+            '台灣與亞洲': f"亞洲 EdTech 市場發展與台灣高度連動，值得行銷團隊持續追蹤。",
+            '市場趨勢': f"市場趨勢清楚顯示 AI 在教育場景的滲透持續加速，競爭格局正在改變。",
+            '產品動態': f"新工具或功能的推出代表市場競爭加劇，行銷策略需要相應調整。",
         }
-    )
-    with urllib.request.urlopen(req, timeout=60) as r:
-        data = json.load(r)
 
-    text = data['content'][0]['text'].strip()
-    # Extract JSON array even if wrapped in ```
-    m = re.search(r'\[[\s\S]*\]', text)
-    if not m:
-        raise RuntimeError(f"No JSON array in Haiku response: {text[:300]}")
-    stories = json.loads(m.group())
-
-    # Attach sourceUrl from original entries
-    for s in stories:
-        idx = s.get('source_index', 1) - 1
-        if 0 <= idx < len(entries):
-            s['sourceUrl'] = entries[idx]['url']
-        else:
-            s['sourceUrl'] = ''
-
-    print(f"  Haiku generated {len(stories)} stories")
+        stories.append({
+            'section': section,
+            'tagClass': tag_class,
+            'title': title_zh,
+            'para1': summary_zh,
+            'para2': para2_map.get(section, '此動態值得行銷團隊持續關注，有助於掌握 AI 教育工具市場走向。'),
+            'takeaway': make_takeaway_zh(section),
+            'sourceUrl': e['url'],
+            'sourceName': e['source'],
+        })
     return stories
 
 
-# ── HTML generation ───────────────────────────────────────────────────────────
+# ── HTML building & modification (same as before) ────────────────────────────
+
+def date_str(dt):    return dt.strftime('%Y-%m-%d')
+def month_day(ds):
+    m, d = str(int(ds[5:7])), str(int(ds[8:10]))
+    return f'{m}/{d}'
 
 def build_story_item(story):
-    section   = story.get('section', '市場趨勢')
-    tag_class = story.get('tagClass', 'tag-market')
-    title     = story['title']
-    para1     = story.get('para1', '')
-    para2     = story.get('para2', '')
-    takeaway  = story.get('takeaway', '')
-    source_url = story.get('sourceUrl', '#')
-    source_name = story.get('sourceName', '')
-
-    # Escape single quotes in data-story JSON value
-    data = json.dumps({
-        "section": section,
-        "tagClass": tag_class,
-        "title": title,
-        "para1": para1,
-        "para2": para2,
-        "takeaway": takeaway,
-        "sourceUrl": source_url,
-        "sourceName": source_name,
-    }, ensure_ascii=False).replace("'", "&#39;")
-
-    tag_labels = {
-        'tag-product': '產品', 'tag-funding': '資金',
-        'tag-partner': '合作', 'tag-research': '研究',
-        'tag-market': '趨勢', 'tag-taiwan': '台灣',
-    }
-    tag_label = tag_labels.get(tag_class, '趨勢')
-
+    data = json.dumps(story, ensure_ascii=False).replace("'", "&#39;")
+    tag_label = TAG_LABEL.get(story['tagClass'], '趨勢')
+    source_short = story['sourceName'].split(' · ')[0]
     return f"""      <div class="news-item" onclick="selectNews(this)"
         data-story='{data}'>
-        <span class="tag {tag_class}">{tag_label}</span>
+        <span class="tag {story['tagClass']}">{tag_label}</span>
         <div class="item-text">
-          <div class="item-title">{title}</div>
-          <div class="item-source">{source_name.split(' · ')[0] if ' · ' in source_name else source_name}</div>
+          <div class="item-title">{story['title']}</div>
+          <div class="item-source">{source_short}</div>
         </div>
       </div>"""
 
-
 def build_day_pane(day_str, stories):
-    """Build the complete <section class="day-pane"> for one day."""
     dt = datetime.strptime(day_str, '%Y-%m-%d')
     dow = DOW_ZH[dt.weekday()]
-    md = month_day(day_str)
-    count = len(stories)
+    m_str = str(int(day_str[5:7]))
+    d_str = str(int(day_str[8:10]))
 
-    # Group by section
-    sections = []
-    seen_sections = []
     grouped = {}
+    order = []
     for s in stories:
-        sec = s.get('section', '市場趨勢')
+        sec = s['section']
         if sec not in grouped:
             grouped[sec] = []
-            seen_sections.append(sec)
+            order.append(sec)
         grouped[sec].append(s)
 
     body_lines = []
-    for sec in seen_sections:
+    for sec in order:
         body_lines.append(f'      <div class="section-label">{sec}</div>')
         for story in grouped[sec]:
             body_lines.append(build_story_item(story))
 
-    body = '\n'.join(body_lines)
-
     return f"""<section class="day-pane" data-day="{day_str}">
   <div class="split">
     <aside class="news-list" id="list-{day_str}">
-      <div class="pane-header">{md[0] if md[0].isdigit() else md}月{md.split('/')[1]}日（{dow}）<span class="count"> · {count} 則</span></div>
+      <div class="pane-header">{m_str}月{d_str}日（{dow}）<span class="count"> · {len(stories)} 則</span></div>
 
-{body}
+{chr(10).join(body_lines)}
 
     </aside>
     <div class="detail-panel" id="detail-{day_str}">
@@ -251,182 +251,110 @@ def build_day_pane(day_str, stories):
   </div>
 </section>"""
 
-
-def make_tab(cls, week, day_str):
-    dt = datetime.strptime(day_str, '%Y-%m-%d')
+def make_tab(cls, week, ds):
+    dt = datetime.strptime(ds, '%Y-%m-%d')
     dow = DOW_ZH[dt.weekday()]
-    md = month_day(day_str)
+    md = month_day(ds)
     today_span = '<span class="tab-today">今日</span>' if 'active' in cls else ''
-    return f'  <button class="{cls}" data-week="{week}" data-day="{day_str}"><span class="tab-dow">{dow}</span><span class="tab-date">{md}</span>{today_span}</button>'
+    return f'  <button class="{cls}" data-week="{week}" data-day="{ds}"><span class="tab-dow">{dow}</span><span class="tab-date">{md}</span>{today_span}</button>'
 
-
-# ── HTML modification: daily append (non-Monday) ──────────────────────────────
-
-def apply_daily_append(html, today_str, yesterday_str, new_pane_html):
-    """
-    Non-Monday logic:
-    1. Yesterday's active tab → tab (remove active + tab-today)
-    2. Today's empty tab → tab active (add tab-today)
-    3. All existing day-panes → add hidden
-    4. Insert new day-pane at top
-    """
-    # 1. Yesterday: remove active + tab-today span
+def apply_daily_append(html, today_str, yesterday_str, new_pane):
+    # Yesterday tab: remove active + tab-today
     html = re.sub(
-        rf'(<button class="tab active" data-week="0" data-day="{yesterday_str}">)([\s\S]*?)(<span class="tab-today">今日</span>)',
-        lambda m: m.group(1).replace('tab active', 'tab') + m.group(2),
-        html, count=1
-    )
-    # Also handle case where yesterday is data-week="1"
+        rf'<button class="tab active" (data-week="[01]" data-day="{yesterday_str}")>(<span[^<]*</span><span[^<]*</span>)<span class="tab-today">今日</span></button>',
+        r'<button class="tab" \1>\2</button>', html)
+    # Today tab: empty → active + today
     html = re.sub(
-        rf'(<button class="tab active" data-week="1" data-day="{yesterday_str}">)([\s\S]*?)(<span class="tab-today">今日</span>)',
-        lambda m: m.group(1).replace('tab active', 'tab') + m.group(2),
-        html, count=1
-    )
-
-    # 2. Today: empty → active + tab-today
-    html = re.sub(
-        rf'<button class="tab empty" data-week="0" data-day="{today_str}">(<span class="tab-dow">[^<]*</span><span class="tab-date">[^<]*</span>)</button>',
-        rf'<button class="tab active" data-week="0" data-day="{today_str}">\1<span class="tab-today">今日</span></button>',
-        html, count=1
-    )
-
-    # 3. All existing panes → add hidden
+        rf'<button class="tab empty" (data-week="0" data-day="{today_str}")>(<span[^<]*</span><span[^<]*</span>)</button>',
+        r'<button class="tab active" \1>\2<span class="tab-today">今日</span></button>', html)
+    # All panes → add hidden
     def add_hidden(m):
-        tag = m.group(1)
-        inner = m.group(2)
+        tag, inner = m.group(1), m.group(2)
         if 'hidden' not in tag:
             tag = tag.rstrip('>') + ' hidden>'
         return tag + inner + '</section>'
     html = re.sub(r'(<section[^>]+class="day-pane"[^>]*>)([\s\S]*?)</section>', add_hidden, html)
-
-    # 4. Insert new pane before the first existing <section class="day-pane"
-    html = re.sub(r'(<section[^>]+class="day-pane")',
-                  new_pane_html + '\n\n      \\1', html, count=1)
-
+    # Insert new pane
+    html = re.sub(r'(<section[^>]+class="day-pane")', new_pane + '\n\n      \\1', html, count=1)
     return html
 
-
-# ── HTML modification: Monday reset ──────────────────────────────────────────
-
-def apply_monday_reset(html, today_str, new_pane_html):
-    """
-    Monday logic:
-    1. Delete all data-week="1" tabs
-    2. Change data-week="0" tabs → data-week="1"
-    3. Insert 7 new data-week="0" tabs (Mon=today active, rest empty)
-    4. Delete panes older than 14 days
-    5. Insert new day-pane at top
-    """
+def apply_monday_reset(html, today_str, new_pane):
     today_dt = datetime.strptime(today_str, '%Y-%m-%d')
     cutoff_dt = today_dt - timedelta(days=14)
-
-    # 1. Delete week-1 tabs
+    # Delete week-1 tabs
     html = re.sub(r'\s*<button[^>]+data-week="1"[^>]*>[\s\S]*?</button>', '', html)
-
-    # 2. Change week-0 to week-1 (and remove active/tab-today from old tabs)
-    def demote_tab(m):
-        tag = m.group(0)
-        tag = tag.replace('data-week="0"', 'data-week="1"')
-        tag = re.sub(r' active', '', tag)
-        tag = re.sub(r'<span class="tab-today">今日</span>', '', tag)
-        return tag
-    html = re.sub(r'<button[^>]+data-week="0"[^>]*>[\s\S]*?</button>', demote_tab, html)
-
-    # 3. Build 7 new week-0 tabs (today=Monday=active, rest=empty)
-    new_tabs = []
-    for i in range(7):
-        d = today_dt + timedelta(days=i)
-        ds = date_str(d)
-        cls = 'tab active' if i == 0 else 'tab empty'
-        new_tabs.append(make_tab(cls, '0', ds))
-    new_tabs_html = '\n'.join(new_tabs)
-
-    # Insert before first data-week="1" tab in nav
-    html = re.sub(
-        r'(<nav class="day-tabs"[^>]*>\s*)',
-        r'\1' + new_tabs_html + '\n      ',
-        html, count=1
-    )
-
-    # 4. Delete panes older than 14 days
+    # Demote week-0 to week-1
+    def demote(m):
+        t = m.group(0).replace('data-week="0"', 'data-week="1"')
+        t = re.sub(r'class="tab [^"]*"', 'class="tab"', t)
+        return re.sub(r'<span class="tab-today">今日</span>', '', t)
+    html = re.sub(r'<button[^>]+data-week="0"[^>]*>[\s\S]*?</button>', demote, html)
+    # New week-0 tabs
+    tabs = [make_tab('tab active' if i == 0 else 'tab empty', '0',
+                     date_str(today_dt + timedelta(days=i))) for i in range(7)]
+    html = re.sub(r'(<nav class="day-tabs"[^>]*>\s*)', r'\1' + '\n'.join(tabs) + '\n      ', html, count=1)
+    # Delete old panes
     def keep_pane(m):
         ds = re.search(r'data-day="([^"]+)"', m.group(0))
-        if ds:
-            pane_dt = datetime.strptime(ds.group(1), '%Y-%m-%d')
-            if pane_dt < cutoff_dt:
-                return ''
+        if ds and datetime.strptime(ds.group(1), '%Y-%m-%d') < cutoff_dt:
+            return ''
         return m.group(0)
     html = re.sub(r'<section[^>]+class="day-pane"[\s\S]*?</section>', keep_pane, html)
-
-    # 5. Add hidden to all remaining panes
+    # Add hidden to remaining
     def add_hidden(m):
-        tag = m.group(1); inner = m.group(2)
+        tag, inner = m.group(1), m.group(2)
         if 'hidden' not in tag:
             tag = tag.rstrip('>') + ' hidden>'
         return tag + inner + '</section>'
     html = re.sub(r'(<section[^>]+class="day-pane"[^>]*>)([\s\S]*?)</section>', add_hidden, html)
-
-    # 6. Insert new pane at top
-    html = re.sub(r'(<section[^>]+class="day-pane")',
-                  new_pane_html + '\n\n      \\1', html, count=1)
-
+    # Insert new pane
+    html = re.sub(r'(<section[^>]+class="day-pane")', new_pane + '\n\n      \\1', html, count=1)
     return html
 
 
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def main():
-    now = today_taipei()
+    now = datetime.now(TPE)
     today_str = date_str(now)
     yesterday_str = date_str(now - timedelta(days=1))
     is_monday = now.weekday() == 0
 
-    print(f"📅 Today: {today_str} ({'週一 RESET' if is_monday else DOW_ZH[now.weekday()]})")
+    print(f"📅 {today_str} ({'週一 RESET' if is_monday else DOW_ZH[now.weekday()]})")
 
-    # Fetch news
-    print("\n🔍 Fetching RSS feeds…")
-    entries = fetch_rss_entries(max_age_hours=72)
-
+    print("\n🔍 Fetching RSS…")
+    entries = fetch_entries(72)
     if len(entries) < 3:
-        print("⚠️  Too few entries, expanding to 120h")
-        entries = fetch_rss_entries(max_age_hours=120)
-
+        print("Expanding to 120h…")
+        entries = fetch_entries(120)
     if not entries:
-        raise RuntimeError("No RSS entries found — aborting")
+        raise RuntimeError("No entries — aborting")
 
-    # Generate Chinese content
-    print("\n🤖 Calling Claude Haiku…")
-    stories = generate_stories(entries)
+    print(f"\n🌐 Translating {len(entries[:8])} stories…")
+    stories = build_stories(entries)
 
-    if len(stories) < 6:
-        raise RuntimeError(f"Only {len(stories)} stories generated — aborting")
+    if len(stories) < 4:
+        raise RuntimeError(f"Only {len(stories)} stories — aborting")
 
-    # Build day-pane HTML
     new_pane = build_day_pane(today_str, stories)
 
-    # Read current index.html
     print(f"\n📄 Reading {HTML_FILE}…")
     with open(HTML_FILE, 'r', encoding='utf-8') as f:
         html = f.read()
 
-    # Apply changes
-    print(f"\n✏️  Applying {'Monday reset' if is_monday else 'daily append'}…")
+    print(f"✏️  {'Monday reset' if is_monday else 'Daily append'}…")
     if is_monday:
         html = apply_monday_reset(html, today_str, new_pane)
     else:
         html = apply_daily_append(html, today_str, yesterday_str, new_pane)
 
-    # Update footer timestamp
     ts = now.strftime('%Y-%m-%d %H:%M (Asia/Taipei)')
     html = re.sub(r'<span id="updated">[^<]*</span>', f'<span id="updated">{ts}</span>', html)
 
-    # Write back
     with open(HTML_FILE, 'w', encoding='utf-8') as f:
         f.write(html)
 
-    print(f"\n✅ Done! {len(stories)} stories written to {HTML_FILE}")
-    print(f"   Timestamp: {ts}")
-
+    print(f"\n✅ Done! {len(stories)} stories, timestamp: {ts}")
 
 if __name__ == '__main__':
     main()
