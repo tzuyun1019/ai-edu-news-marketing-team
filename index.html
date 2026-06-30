@@ -486,8 +486,8 @@ body {
   <button class="week-nav-btn" id="btnThisWeek" onclick="switchToWeek(0)" disabled>本週 →</button>
 </div>
 <nav class="day-tabs" id="dayTabs">
-  <button class="tab active" data-week="0" data-day="2026-06-29"><span class="tab-dow">週一</span><span class="tab-date">6/29</span><span class="tab-today">今日</span></button>
-      <button class="tab empty" data-week="0" data-day="2026-06-30"><span class="tab-dow">週二</span><span class="tab-date">6/30</span></button>
+  <button class="tab" data-week="0" data-day="2026-06-29"><span class="tab-dow">週一</span><span class="tab-date">6/29</span></button>
+      <button class="tab active" data-week="0" data-day="2026-06-30"><span class="tab-dow">週二</span><span class="tab-date">6/30</span><span class="tab-today">今日</span></button>
       <button class="tab empty" data-week="0" data-day="2026-07-01"><span class="tab-dow">週三</span><span class="tab-date">7/1</span></button>
       <button class="tab empty" data-week="0" data-day="2026-07-02"><span class="tab-dow">週四</span><span class="tab-date">7/2</span></button>
       <button class="tab empty" data-week="0" data-day="2026-07-03"><span class="tab-dow">週五</span><span class="tab-date">7/3</span></button>
@@ -510,7 +510,100 @@ body {
 </nav>
 
 <div id="panesContainer">
-<section class="day-pane" data-day="2026-06-29">
+<section class="day-pane" data-day="2026-06-30">
+  <div class="split">
+    <aside class="news-list" id="list-2026-06-30">
+      <div class="pane-header">6月30日（週二）<span class="count"> · 8 則</span></div>
+
+      <div class="section-label">產品動態</div>
+
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"產品動態","tagClass":"tag-product","title":"OECD 報告：GenAI 有助學習，但缺乏教學引導只會提升分數而非能力","para1":"OECD 發布《2026 數位教育展望》報告，系統性梳理生成式 AI 在教育場景的研究證據。報告指出 GenAI 能帶來中等程度的學科學習成效提升，並在批判性思維與協作上有顯著進步——但前提是需有明確的教學引導。若僅讓學生將任務外包給 AI，成績或許提升但沒有真實學習發生。","para2":"OECD 報告為全球教育政策制定者提供了一個重要框架：AI 本身不等於教育轉型，技術採用率高但教學方式未改變，仍是當前最大瓶頸。報告也強調，AI 應強化教師自主性而非取代它。","takeaway":"台灣 EdTech 廠商在行銷 AI 工具時，應明確說明「如何搭配教學設計使用」，而非只強調 AI 功能本身，這才是符合 OECD 建議的負責任行銷方式。","sourceUrl":"https://www.oecd.org/en/publications/oecd-digital-education-outlook-2026_062a7394-en.html","sourceName":"OECD · Digital Education Outlook 2026"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">OECD 報告：GenAI 有助學習，但缺乏教學引導只會提升分數而非能力</div>
+          <div class="item-source">OECD</div>
+        </div>
+      </div>
+
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"產品動態","tagClass":"tag-product","title":"Mathos AI：前 MathGPTPro，100 萬學生 AI 數學家教現進軍學校 B2B","para1":"YC 資助的 Mathos AI（前身 MathGPTPro）已服務全球 200+ 國家超過 100 萬學生，AI 數學模型準確率比 GPT-4o 高約 20%。平台提供文字、語音、圖形多模態解題說明，依每位學生知識狀態自動調整難度，並已與法國理工學院等頂尖機構建立 B2B 合作，同時對家長端維持 C2C 銷售。","para2":"Mathos 從 C2C（家長購買）擴展至 B2B（學校採購）是 AI 教育新創的經典成長路徑：先建立個人用戶信任，再以數據說服機構。100 萬用戶的規模讓 B2B 進入機構時已有充分的效果佐證，這正是多數台灣新創缺少的護城河。","takeaway":"台灣補教業者若想驗證 AI 輔導效果，可參考 Mathos 做法：先對免費用戶收集學習成效數據，再以數據驅動機構採購，降低學校端的決策風險。","sourceUrl":"https://www.ycombinator.com/companies/mathos","sourceName":"Y Combinator · Mathos AI"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">Mathos AI：前 MathGPTPro，100 萬學生 AI 數學家教現進軍學校 B2B</div>
+          <div class="item-source">Y Combinator</div>
+        </div>
+      </div>
+
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"產品動態","tagClass":"tag-product","title":"SimCare：YC 資助 AI 醫療培訓，語音互動虛擬病人讓臨床技能可量化","para1":"YC 資助的 SimCare 提供 AI 虛擬病人培訓系統，學員可與 AI 角色進行口語對話，模擬真實臨床情境，系統自動提供即時回饋並追蹤技能進步曲線。服務對象涵蓋諮商師、社工、醫師與護理師，並整合職位安置工具協助用戶展示技能並找到實習或工作機會。","para2":"SimCare 代表 AI 教育從「知識傳遞」延伸至「技能培訓」的新賽道——特別是高度情境化、難以標準化的軟技能（如臨床溝通）。語音互動加即時評估，讓過去難以量化的培訓效果變得可追蹤、可改善。","takeaway":"台灣醫事、社工、教師培訓等專業領域都有類似需求，SimCare 模式可作為本地職業技能培訓 AI 化的參考，尤其適合結合政府職訓補助計畫一起推廣。","sourceUrl":"https://www.ycombinator.com/companies/industry/AI-Enhanced%20Learning","sourceName":"Y Combinator · AI-Enhanced Learning 2026"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">SimCare：YC 資助 AI 醫療培訓，語音互動虛擬病人讓臨床技能可量化</div>
+          <div class="item-source">Y Combinator</div>
+        </div>
+      </div>
+
+      <div class="section-label">市場趨勢</div>
+
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"市場趨勢","tagClass":"tag-market","title":"EdTech 3.0 全球黑客松落幕：7 天打造可部署 AI 學習代理已成新標準","para1":"EdTech 3.0 全球 AI 教育黑客松於 6 月 18-25 日線上舉辦，召集 ML 工程師、創業者、研究員與教育工作者，限時 7 天打造「可立即試點部署」的 AI 學習代理，目標讓 AI 教育工具從原型直達課堂。活動定位為 EdTech 產業的快速產品發射台，代表教育 AI 開發週期持續壓縮。","para2":"「7 天完成可部署的 AI 學習代理」不只是黑客松噱頭，而是整個 EdTech 開發週期壓縮趨勢的縮影。過去需要 6-12 個月的原型開發，在 AI 原生框架下已可壓縮至週。這對傳統 EdTech 廠商的產品開發速度形成直接壓力。","takeaway":"台灣 EdTech 廠商應開始追蹤這類黑客松的得獎專案——這些是未來 6-12 個月內可能成為競爭對手或合作夥伴的早期產品，是低成本的早期市場情報來源。","sourceUrl":"https://www.ai-in-edtech.com/","sourceName":"EdTech 3.0 · AI in Education Hackathon"}'>
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">EdTech 3.0 全球黑客松落幕：7 天打造可部署 AI 學習代理已成新標準</div>
+          <div class="item-source">EdTech 3.0</div>
+        </div>
+      </div>
+
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"市場趨勢","tagClass":"tag-market","title":"Google ISTE：免費 AI ACT/GRE 練習題上線，傳統考試補習業首當其衝","para1":"Google 在 ISTE 2026 宣布於 Google Classroom 提供免費 AI 驅動的 ACT 與 GRE 模擬測驗，Gemini 根據學生弱點自動生成個人化練習題與解析，讓原本需付費的考試準備工具變成免費公共資源，目標讓全球學生不論經濟背景都能接受高品質備考訓練。","para2":"Google 將考試準備工具「免費化」，對 Kaplan、Princeton Review 等傳統付費補習業者形成直接衝擊。更廣泛來看，這是科技平台以免費功能取代付費 EdTech 垂直市場的典型策略，台灣英文考試補習市場同樣面臨類似壓力。","takeaway":"台灣英文考試補習業（托福、雅思、學測）若只靠題目資源，競爭優勢正在消失。未來核心價值必須轉向「人的陪伴」：情感支持、動機維持、進度管理與在地化師資，這才是 AI 難以複製的差異化。","sourceUrl":"https://blog.google/products-and-platforms/products/education/iste-students-2026/","sourceName":"Google Blog · ISTE 2026 Students"}'>
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">Google ISTE：免費 AI ACT/GRE 練習題上線，傳統考試補習業首當其衝</div>
+          <div class="item-source">Google Blog</div>
+        </div>
+      </div>
+
+      <div class="section-label">台灣與亞洲</div>
+
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"台灣與亞洲","tagClass":"tag-taiwan","title":"GTC Taipei 2026：黃仁勳親臨台灣揭示 AI 路線圖，教育應用受矚目","para1":"NVIDIA CEO 黃仁勳於 GTC Taipei 2026 出席並揭示 AI 發展路線圖，台灣在全球 AI 供應鏈的核心地位再度確立。會場討論涵蓋 AI 算力基礎設施、機器人教育應用以及下一代 AI 學習工具的需求，吸引全球 EdTech 廠商與投資人關注台灣市場。","para2":"黃仁勳出席台北顯示台灣已成為 AI 發展的全球節點，不只是硬體製造，也包含 AI 應用落地討論的重要場域。對台灣 EdTech 廠商來說，全球目光聚焦台灣是罕見的國際能見度機會。","takeaway":"台灣 EdTech 廠商應把握 GTC 帶來的國際媒體關注，積極參與相關活動或側展展示，藉助黃仁勳效應提升海外市場知名度，特別是面向亞太 EdTech 投資人的招商機會。","sourceUrl":"https://www.youtube.com/watch?v=9DGEu5hmlF8","sourceName":"YouTube · GTC Taipei 2026 黃仁勳"}'>
+        <span class="tag tag-taiwan">台灣</span>
+        <div class="item-text">
+          <div class="item-title">GTC Taipei 2026：黃仁勳親臨台灣揭示 AI 路線圖，教育應用受矚目</div>
+          <div class="item-source">GTC Taipei 2026</div>
+        </div>
+      </div>
+
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"台灣與亞洲","tagClass":"tag-taiwan","title":"北京 AI-Native 教育論壇：從哲學三維度重新定義 AI 時代該培養怎樣的人","para1":"6 月 13 日北京智源大會舉辦 AI-Native 教育論壇，首次系統性從哲學（培養什麼人）、技術（AI 如何輔助）與實踐（課堂如何落地）三個維度重新定義 AI 時代教育。同期廣州數智校園論壇發布 AI 能力中心 3.0，兩地形成「人才培養範式重塑」的共振效應。","para2":"中國 AI 教育政策已從「工具導入」轉向「範式重塑」，反映 AI 在教育系統滲透已達到需要重新思考教育本質的深度。這種哲學層面的討論超越了多數西方 EdTech 論壇的技術導向視角，值得台灣教育界參考。","takeaway":"台灣教育政策若在推動 AI 工具導入時，同步開展「AI 時代需培養怎樣的人」的公共討論，將使政策更具前瞻性，也幫助 EdTech 廠商定位更高層次的價值主張。","sourceUrl":"https://www.woloveai.cn/p/aiedu20260613/","sourceName":"WoLoveAI · AI 高等教育日報"}'>
+        <span class="tag tag-taiwan">亞洲</span>
+        <div class="item-text">
+          <div class="item-title">北京 AI-Native 教育論壇：從哲學三維度重新定義 AI 時代該培養怎樣的人</div>
+          <div class="item-source">WoLoveAI</div>
+        </div>
+      </div>
+
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"台灣與亞洲","tagClass":"tag-taiwan","title":"COMPUTEX 2026「AI Together」：33 國千家廠商聚台北，AI 教育應用獲展示機會","para1":"COMPUTEX 2026 以「AI Together」為核心主題，33 個國家 1,500 家廠商匯聚台北，展示涵蓋 AI 運算、機器人教育應用及智慧校園解決方案。今年首度採用雙展區模式並增設 AI 應用落地展區，多家台灣 EdTech 廠商藉此接觸國際買家，教育科技在 COMPUTEX 的能見度大幅提升。","para2":"COMPUTEX 過去以硬體展示為主，「AI Together」主題代表展會策略轉型：從晶片算力，到 AI 如何改變人類生活（含教育）。這讓台灣 EdTech 廠商有了在全球最重要科技展上曝光的機會，且與硬體廠商同台，有助於建立「AI 教育解決方案」的整體形象。","takeaway":"台灣 EdTech 廠商若尚未參與 COMPUTEX，明年應積極評估。AI Together 主題讓教育科技不再是邊緣議題，是接觸國際投資人與合作夥伴最高效率的本土平台之一。","sourceUrl":"https://yayanews.com.tw/15479/","sourceName":"鴨鴨新聞 · COMPUTEX 2026"}'>
+        <span class="tag tag-taiwan">台灣</span>
+        <div class="item-text">
+          <div class="item-title">COMPUTEX 2026「AI Together」：33 國千家廠商聚台北，AI 教育應用獲展示機會</div>
+          <div class="item-source">鴨鴨新聞</div>
+        </div>
+      </div>
+
+    </aside>
+    <div class="detail-panel" id="detail-2026-06-30">
+      <div class="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <p>點擊左側新聞查看詳情</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="day-pane" data-day="2026-06-29" hidden>
   <div class="split">
     <aside class="news-list" id="list-2026-06-29">
       <div class="pane-header">6月29日（週一）<span class="count"> · 9 則</span></div>
@@ -954,7 +1047,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026-06-29 15:05 (Asia/Taipei)</span>
+  最近更新：<span id="updated">2026-06-30 10:46 (Asia/Taipei)</span>
 </footer>
 
 <script>
