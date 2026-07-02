@@ -488,8 +488,8 @@ body {
 <nav class="day-tabs" id="dayTabs">
   <button class="tab" data-week="0" data-day="2026-06-29"><span class="tab-dow">週一</span><span class="tab-date">6/29</span></button>
       <button class="tab" data-week="0" data-day="2026-06-30"><span class="tab-dow">週二</span><span class="tab-date">6/30</span></button>
-      <button class="tab active" data-week="0" data-day="2026-07-01"><span class="tab-dow">週三</span><span class="tab-date">7/1</span><span class="tab-today">今日</span></button>
-      <button class="tab empty" data-week="0" data-day="2026-07-02"><span class="tab-dow">週四</span><span class="tab-date">7/2</span></button>
+      <button class="tab" data-week="0" data-day="2026-07-01"><span class="tab-dow">週三</span><span class="tab-date">7/1</span></button>
+      <button class="tab active" data-week="0" data-day="2026-07-02"><span class="tab-dow">週四</span><span class="tab-date">7/2</span><span class="tab-today">今日</span></button>
       <button class="tab empty" data-week="0" data-day="2026-07-03"><span class="tab-dow">週五</span><span class="tab-date">7/3</span></button>
       <button class="tab empty" data-week="0" data-day="2026-07-04"><span class="tab-dow">週六</span><span class="tab-date">7/4</span></button>
       <button class="tab empty" data-week="0" data-day="2026-07-05"><span class="tab-dow">週日</span><span class="tab-date">7/5</span></button>
@@ -510,7 +510,92 @@ body {
 </nav>
 
 <div id="panesContainer">
-<section class="day-pane" data-day="2026-07-01">
+<section class="day-pane" data-day="2026-07-02">
+  <div class="split">
+    <aside class="news-list" id="list-2026-07-02">
+      <div class="pane-header">7月2日（週四）<span class="count"> · 8 則</span></div>
+
+      <div class="section-label">資金動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "資金動態", "tagClass": "tag-funding", "title": "Amboss 醫學教育平台完成 2.6 億美元融資：AI 臨床學習市場創新高", "para1": "德國醫學教育平台 Amboss 完成近 2.6 億美元融資，平台整合 AI 輔助的臨床推理訓練、病例分析與執照考試備考，已成為全球最大的 AI 醫學教育平台之一，用戶覆蓋 170+ 國家。", "para2": "Amboss 的超大額融資顯示專業技能培訓（medical education）是 AI EdTech 最高單價的賽道，學習者有強烈的職業驅動力且願意付費。台灣護理、醫師、國考相關培訓市場有類似的商業邏輯。", "takeaway": "台灣醫事、護理或國家考試補習市場，可參考 Amboss 的 AI 考題分析模式，針對高考、護理師、醫師執照等考試開發 AI 輔助備考工具，單客戶付費意願高於一般教育市場。", "sourceUrl": "https://newmarketpitch.com/blogs/news/ai-education-top-startups-fundraising", "sourceName": "New Market Pitch · AI Education Startups"}'>
+        <span class="tag tag-funding">資金</span>
+        <div class="item-text">
+          <div class="item-title">Amboss 醫學教育平台完成 2.6 億美元融資：AI 臨床學習市場創新高</div>
+          <div class="item-source">New Market Pitch</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "資金動態", "tagClass": "tag-funding", "title": "種子輪重估：Vimi、Giant、Pensive 各獲 700-1200 萬美元，AI 教育創業門檻拉高", "para1": "2026 年初，AI 教育新創 Vimi、Giant 和 Pensive 各完成 700 萬至 1200 萬美元種子輪融資，估值相較 18 個月前大幅上調。三家公司分別聚焦語言學習、K-12 課程自動化與學習成效分析。", "para2": "AI 教育種子輪估值重估，代表投資人對此賽道的信心明顯回升，但也意味著進入競爭更昂貴。沒有明確差異化（數據、技術或通路優勢）的新創，很難在現在的估值水位獲得資金。", "takeaway": "台灣 EdTech 新創若在考慮融資，此輪估值重估是好消息，但需準備清楚的差異化故事：台灣或華語市場獨特性、獨特數據集或通路，才能在國際投資人面前脫穎而出。", "sourceUrl": "https://blog.mean.ceo/ai-startup-trends-july-2026/", "sourceName": "Mean CEO · AI Startup Trends July 2026"}'>
+        <span class="tag tag-funding">資金</span>
+        <div class="item-text">
+          <div class="item-title">種子輪重估：Vimi、Giant、Pensive 各獲 700-1200 萬美元，AI 教育創業門檻拉高</div>
+          <div class="item-source">Mean CEO</div>
+        </div>
+      </div>
+      <div class="section-label">市場趨勢</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "市場趨勢", "tagClass": "tag-market", "title": "Goodwater Capital 全球佈局 AI 教育：四大洲同步投資顯示賽道國際化", "para1": "專注消費科技的 Goodwater Capital 同步投資 Teachy（巴西）、RevisionDojo（英國）、SuperKalam（印度）和 Ello（美國），在四個不同大洲建立 AI 教育投資組合，顯示全球 AI 教育市場的在地化競爭正在加速。", "para2": "Goodwater 的全球多點佈局策略反映一個重要趨勢：AI 教育沒有全球單一贏家，每個市場都有本地化需求，懂得當地語言、考試制度和教育文化的在地廠商有天然優勢。", "takeaway": "台灣 EdTech 廠商對國際投資人的最大吸引力，正是在地化優勢：台灣獨特的升學考試體系、繁體中文內容、與在地學校的深度合作關係，這些都是跨國平台難以複製的護城河。", "sourceUrl": "https://newmarketpitch.com/blogs/news/ai-education-top-startups-fundraising", "sourceName": "New Market Pitch · Goodwater EdTech"}'>
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">Goodwater Capital 全球佈局 AI 教育：四大洲同步投資顯示賽道國際化</div>
+          <div class="item-source">New Market Pitch</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "市場趨勢", "tagClass": "tag-market", "title": "K-12 EdTech 疫情紅利退潮：AI 驅動是唯一增長亮點", "para1": "根據 Rest of World 分析，全球 K-12 EdTech 新創融資大幅萎縮，整體市場仍在疫情後的去泡沫化過程中，但 AI 驅動的個人化學習工具是唯一逆勢增長的子類別，吸引了新一輪資本流入。", "para2": "疫情後 EdTech 泡沫破裂，大量無核心競爭力的平台倒閉或融資困難。倖存者和新贏家幾乎都有共同特徵：AI 驅動、可量化的學習成效提升、明確的商業模式（非純燒錢獲客）。", "takeaway": "台灣 EdTech 行銷策略應主動強調「可量化的成效」——用戶留存率、測驗成績提升、教師省時比例等具體數字，這在投資人眼中和機構採購決策上都比功能清單更有說服力。", "sourceUrl": "https://restofworld.org/2026/edtech-funding-collapse-k12-startups-ai-workforce/", "sourceName": "Rest of World · EdTech Funding"}'>
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">K-12 EdTech 疫情紅利退潮：AI 驅動是唯一增長亮點</div>
+          <div class="item-source">Rest of World</div>
+        </div>
+      </div>
+      <div class="section-label">產品動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "OpenAI Education 推出月刊「The Edu Prompt」：直接對話教師的內容策略", "para1": "OpenAI Education 正式推出電子報《The Edu Prompt》，定期向教師、教育機構和教育行政人員更新 OpenAI 教育產品、課堂使用案例與 AI 教育合作動態，是 OpenAI 深化教育市場關係的重要內容行銷動作。", "para2": "OpenAI 直接面向教師發行電子報，代表其教育市場策略從 B2B（機構合約）延伸到 B2Teacher（信任建立）。先讓教師對 ChatGPT 有信心，再推動學校整體採購，這是一個更長線但更穩固的市場滲透策略。", "takeaway": "台灣 EdTech 廠商可借鑑 OpenAI 的「教師電子報」策略，建立自己的教師社群和定期內容輸出。這不只是行銷，更是建立在地教師 AI 使用信心的基礎設施，最終轉化為採購信任。", "sourceUrl": "https://www.edtechinnovationhub.com/news/openai-education-launches-newsletter-as-ai-classroom-push-grows", "sourceName": "EdTech Innovation Hub · OpenAI Edu"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">OpenAI Education 推出月刊「The Edu Prompt」：直接對話教師的內容策略</div>
+          <div class="item-source">EdTech Innovation Hub</div>
+        </div>
+      </div>
+      <div class="section-label">台灣與亞洲</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "台灣與亞洲", "tagClass": "tag-taiwan", "title": "AI4kids 台灣：兒童 AI 程式教育從娛樂切入，降低家長決策門檻", "para1": "台灣 AI 兒童程式教育平台 AI4kids 以「AI 其實很簡單」為訴求，提供針對兒童設計的 AI 程式課程，強調趣味性與可操作性，已在台灣多個縣市學校導入，並提供英文介面供海外市場使用。", "para2": "AI4kids 的成功在於將「AI 教育」從艱深的技術概念轉化為家長可理解的兒童課外活動，跳過了 B2B 學校採購的複雜流程，直接透過 B2C 家長購買快速建立用戶基礎。", "takeaway": "台灣 EdTech 的家長端行銷（B2C）往往比學校端（B2B）轉換快、決策週期短。AI4kids 的模式說明，先建立 B2C 口碑，再以用戶數據說服 B2B 採購，是可行的雙軌策略。", "sourceUrl": "https://ai4kids.ai/en", "sourceName": "AI4kids · 兒童 AI 教育"}'>
+        <span class="tag tag-taiwan">台灣</span>
+        <div class="item-text">
+          <div class="item-title">AI4kids 台灣：兒童 AI 程式教育從娛樂切入，降低家長決策門檻</div>
+          <div class="item-source">AI4kids</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "台灣與亞洲", "tagClass": "tag-taiwan", "title": "Microsoft Elevate 台灣：未來兩年協助 2000 萬人取得 AI 技能認證", "para1": "微軟今年 7 月推出全新 Microsoft Elevate 教育訓練計畫，目標在未來兩年內協助超過 2000 萬人取得 AI 技能認證，課程涵蓋 Azure AI、Copilot 應用與 AI 倫理，部分課程在台灣市場已開放報名。", "para2": "微軟以「2000 萬人認證」作為 Elevate 計畫的量化目標，代表 AI 技能認證市場正被科技巨頭積極佔據。企業採購 AI 訓練方案時，附帶「可認證」的方案往往比純課程更有競爭力。", "takeaway": "台灣 EdTech 廠商若能在課程結束後提供有公信力的 AI 技能認證，將大幅提升企業採購意願。可考慮與國際認證機構或產業協會合作，建立台灣版 AI 技能認證框架。", "sourceUrl": "https://www.cio.com.tw/103466/", "sourceName": "CIO Taiwan · Microsoft Elevate"}'>
+        <span class="tag tag-taiwan">台灣</span>
+        <div class="item-text">
+          <div class="item-title">Microsoft Elevate 台灣：未來兩年協助 2000 萬人取得 AI 技能認證</div>
+          <div class="item-source">CIO Taiwan</div>
+        </div>
+      </div>
+      <div class="section-label">工具推薦</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "工具推薦", "tagClass": "tag-product", "title": "HackMD 教育場景爆發：台灣本土共筆工具成 AI 課堂標配", "para1": "台灣本土 SaaS 平台 HackMD 在教育場景使用量持續成長，以 Markdown 格式支援師生即時共筆、課堂筆記分享與小組報告協作，操作直覺且免費，已成為台灣大學與高中課堂的 AI 輔助工具標準配件之一。", "para2": "HackMD 的成功說明「台灣本土工具」在教育場景的獨特優勢：中文介面、在地客服、免費方案、與台灣學術環境深度整合。這些都是國際工具難以快速複製的在地化優勢。", "takeaway": "台灣 EdTech 行銷應積極強調「本土化優勢」：中文支援品質、台灣課程對接、在地客服響應速度——這些是學校 IT 採購者最重視、但國際競品最弱的向度。", "sourceUrl": "https://maplefeather.com/article/best-ai-tools-for-students-2026", "sourceName": "楓葉教育 · 學生 AI 工具推薦"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">HackMD 教育場景爆發：台灣本土共筆工具成 AI 課堂標配</div>
+          <div class="item-source">楓葉教育</div>
+        </div>
+      </div>
+
+    </aside>
+    <div class="detail-panel" id="detail-2026-07-02">
+      <div class="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <p>點擊左側新聞查看詳情</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="day-pane" data-day="2026-07-01" hidden>
   <div class="split">
     <aside class="news-list" id="list-2026-07-01">
       <div class="pane-header">7月1日（週三）<span class="count"> · 8 則</span></div>
