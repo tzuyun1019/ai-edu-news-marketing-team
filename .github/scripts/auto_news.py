@@ -322,6 +322,12 @@ def main():
 
     print(f"📅 {today_str} ({'週一 RESET' if is_monday else DOW_ZH[now.weekday()]})")
 
+    # 看門狗檢查：今日已有 day-pane（CCR 主流程已成功）就跳過
+    with open(HTML_FILE, 'r', encoding='utf-8') as f:
+        if f'<section class="day-pane" data-day="{today_str}"' in f.read():
+            print(f"✅ {today_str} 已有內容（主流程成功），看門狗跳過。")
+            return
+
     print("\n🔍 Fetching RSS…")
     entries = fetch_entries(72)
     if len(entries) < 3:
