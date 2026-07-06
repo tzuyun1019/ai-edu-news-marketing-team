@@ -9,6 +9,8 @@ on:
 jobs:
   broadcast:
     runs-on: ubuntu-latest
+    # Backfill（補舊資料）的 commit 不觸發廣播，避免重複推播
+    if: ${{ github.event_name == 'workflow_dispatch' || !contains(github.event.head_commit.message, 'Backfill') }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
