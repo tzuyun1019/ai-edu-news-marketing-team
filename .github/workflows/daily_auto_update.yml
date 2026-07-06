@@ -1,7 +1,10 @@
-name: Daily Auto News Update (disabled - using CCR instead)
+name: Daily News Watchdog
 
 on:
-  workflow_dispatch:   # Manual trigger only; schedule removed
+  schedule:
+    - cron: '40 23 * * *'   # 7:40 AM Taipei — CCR 主流程 7:00 跑完後檢查
+    - cron: '0 1 * * *'     # 9:00 AM Taipei — 第二次保險
+  workflow_dispatch:
 
 jobs:
   update:
@@ -17,7 +20,7 @@ jobs:
           python-version: '3.11'
       - name: Install dependencies
         run: pip install feedparser
-      - name: Fetch news and update index.html
+      - name: Watchdog check and update if needed
         run: python .github/scripts/auto_news.py
       - name: Commit and push
         run: |
@@ -25,10 +28,10 @@ jobs:
           git config user.name "auto-news-bot"
           git add index.html
           if git diff --cached --quiet; then
-            echo "No changes"
+            echo "No changes (CCR succeeded or watchdog skipped)"
           else
-            COUNT=$(grep -c 'class="news-item"' index.html || echo "?")
             TODAY=$(TZ=Asia/Taipei date '+%Y-%m-%d')
-            git commit -m "Manual update: ${TODAY} (${COUNT} stories)"
+            git commit -m "Daily update: ${TODAY} - watchdog fallback"
             git push
+            echo "✅ Watchdog pushed fallback content"
           fi
