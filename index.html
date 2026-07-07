@@ -486,8 +486,8 @@ body {
   <button class="week-nav-btn" id="btnThisWeek" onclick="switchToWeek(0)" disabled>本週 →</button>
 </div>
 <nav class="day-tabs" id="dayTabs">
-    <button class="tab active" data-week="0" data-day="2026-07-06"><span class="tab-dow">週一</span><span class="tab-date">7/6</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-week="0" data-day="2026-07-07"><span class="tab-dow">週二</span><span class="tab-date">7/7</span></button>
+    <button class="tab" data-week="0" data-day="2026-07-06"><span class="tab-dow">週一</span><span class="tab-date">7/6</span></button>
+  <button class="tab active" data-week="0" data-day="2026-07-07"><span class="tab-dow">週二</span><span class="tab-date">7/7</span><span class="tab-today">今日</span></button>
   <button class="tab empty" data-week="0" data-day="2026-07-08"><span class="tab-dow">週三</span><span class="tab-date">7/8</span></button>
   <button class="tab empty" data-week="0" data-day="2026-07-09"><span class="tab-dow">週四</span><span class="tab-date">7/9</span></button>
   <button class="tab empty" data-week="0" data-day="2026-07-10"><span class="tab-dow">週五</span><span class="tab-date">7/10</span></button>
@@ -510,7 +510,92 @@ body {
 </nav>
 
 <div id="panesContainer">
-<section class="day-pane" data-day="2026-07-06">
+<section class="day-pane" data-day="2026-07-07">
+  <div class="split">
+    <aside class="news-list" id="list-2026-07-07">
+      <div class="pane-header">7月7日（週二）<span class="count"> · 8 則</span></div>
+
+      <div class="section-label">市場趨勢</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "市場趨勢", "tagClass": "tag-market", "title": "聯合國 AI 治理全球對話今日日內瓦登場：169 國代表定調教育 AI 規範", "para1": "首屆聯合國 AI 治理全球對話 7 月 6 日至 7 日在日內瓦舉行，169 國代表與會，緊接著 7 月 7 日至 10 日舉行 ITU「AI for Good」全球峰會。教育領域的 AI 應用規範與數位落差是重點議程之一。", "para2": "聯合國層級的 AI 治理對話啟動，意味著各國教育 AI 政策將逐步向國際框架靠攏。未來的教育 AI 產品合規要求（透明度、資料保護、兒童權益）可能從「各國各表」走向全球標準化。", "takeaway": "行銷團隊應開始留意國際 AI 治理框架的教育條款，及早在產品敘事中融入「符合國際規範」的元素——當客戶開始問合規問題時，先準備好的廠商就是贏家。", "sourceUrl": "https://www.crescendo.ai/news/latest-ai-news-and-updates", "sourceName": "Crescendo AI · UN AI Governance"}'>
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">聯合國 AI 治理全球對話今日日內瓦登場：169 國代表定調教育 AI 規範</div>
+          <div class="item-source">Crescendo AI</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "市場趨勢", "tagClass": "tag-research", "title": "OECD 發布 AI 素養框架：「賦能 AI 時代的學習者」定義全球中小學標準", "para1": "OECD 發布中小學 AI 素養框架《Empowering Learners for the Age of AI》，為全球初等與中等教育提供 AI 素養的定義、能力指標與課程設計指引，是繼數位素養之後最重要的國際教育能力框架。", "para2": "OECD 框架歷來是各國課綱修訂的重要參照，台灣 108 課綱的下一輪調整很可能對接此框架。「AI 素養」從模糊概念變成有明確指標的能力體系，也讓相關課程產品有了權威定價錨點。", "takeaway": "課程開發團隊應立即研讀此框架，將產品的學習目標對齊 OECD 指標——「符合 OECD AI 素養框架」將是未來兩年最有力的 B2B 行銷背書之一。", "sourceUrl": "https://www.oecd.org/en/publications/oecd-digital-education-outlook-2026_062a7394-en.html", "sourceName": "OECD · AI Literacy Framework"}'>
+        <span class="tag tag-research">研究</span>
+        <div class="item-text">
+          <div class="item-title">OECD 發布 AI 素養框架：「賦能 AI 時代的學習者」定義全球中小學標準</div>
+          <div class="item-source">OECD</div>
+        </div>
+      </div>
+      <div class="section-label">產品動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "產品動態", "tagClass": "tag-partner", "title": "D2L 拿下 Rasmussen 大學：AI 原生 LMS 開始蠶食 Blackboard 版圖", "para1": "D2L 宣布 Rasmussen 大學選用 Brightspace 取代使用多年的 Blackboard 平台，部署以護理教育為優先，並導入 D2L Lumi 提供 AI 原生的個人化學習建議。這是 AI 功能直接影響 LMS 汰換決策的指標案例。", "para2": "LMS 市場正經歷「AI 原生」洗牌：老牌平台的既有優勢正被 AI 功能差距抵消，學校願意承擔轉換成本只為取得更好的 AI 能力。教學平台的競爭維度已徹底改變。", "takeaway": "台灣大專院校的 LMS 汰換週期即將與 AI 需求交會，本地系統商與代理商應把 AI 功能放在提案首位；教學工具廠商則應同時支援新舊 LMS 的整合介接，卡住轉換期的機會。", "sourceUrl": "https://www.pursuit.us/news/ai-in-education-news-policies-innovations", "sourceName": "Pursuit · D2L Rasmussen"}'>
+        <span class="tag tag-partner">合作</span>
+        <div class="item-text">
+          <div class="item-title">D2L 拿下 Rasmussen 大學：AI 原生 LMS 開始蠶食 Blackboard 版圖</div>
+          <div class="item-source">Pursuit</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "Instructure 設計哲學：AI 當教練不代寫，Canvas 的防依賴設計", "para1": "Canvas 母公司 Instructure 發表 AI 設計論述：AI 應扮演學生的教練（coach）而非代做作業的工具，透過提問引導、進度提示與回饋機制支持學習，但把思考的工作留給學生本人。", "para2": "主流平台紛紛採納「教練式 AI」設計語言（Claude 的 Learning Mode、Khanmigo 的蘇格拉底式引導、Canvas 的 coach 定位），這已是教育 AI 的產品共識，「直接給答案」的工具將被視為劣質品。", "takeaway": "檢視自家產品的 AI 互動設計：如果還是「問了就給答案」模式，需要盡快加入引導式選項。在對學校的簡報中主動展示防依賴機制，這是 2026 年採購方必問的問題。", "sourceUrl": "https://www.hkmu.edu.hk/oetools/news-events/weekly-ai-news-update-26-2-july-2026/", "sourceName": "HKMU · Weekly AI News"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">Instructure 設計哲學：AI 當教練不代寫，Canvas 的防依賴設計</div>
+          <div class="item-source">HKMU</div>
+        </div>
+      </div>
+      <div class="section-label">效果研究</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "效果研究", "tagClass": "tag-research", "title": "新研究：重視 AI 倫理的學生，自主學習能力反而更強", "para1": "香港都會大學 AI 週報引述新研究指出，重視 AI 倫理的學生在自我調節學習（self-regulated learning）上表現更佳，倫理意識與學習自律之間存在正向關聯，挑戰「談倫理拖慢學習」的常見假設。", "para2": "這項發現給了「AI 倫理教育」明確的商業價值支撐：倫理課程不只是合規要求，而是實際提升學習成效的因子。倫理與效能不是取捨，而是相輔相成。", "takeaway": "將 AI 倫理模組包裝進課程產品時，可引用此研究強調「倫理教育提升學習自律」的實證效益，把家長與學校眼中的「附加成本」翻轉為「成效加分項」。", "sourceUrl": "https://www.hkmu.edu.hk/oetools/news-events/weekly-ai-news-update-26-2-july-2026/", "sourceName": "HKMU · AI 倫理研究"}'>
+        <span class="tag tag-research">研究</span>
+        <div class="item-text">
+          <div class="item-title">新研究：重視 AI 倫理的學生，自主學習能力反而更強</div>
+          <div class="item-source">HKMU</div>
+        </div>
+      </div>
+      <div class="section-label">台灣與亞洲</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "台灣與亞洲", "tagClass": "tag-taiwan", "title": "香港《數字教育藍圖》年內公布：AI 納入中小學核心課程", "para1": "香港教育局正編訂《中小學數字教育藍圖》，預計 2026 年內公布，將建立「AI 素養」學習框架、把 AI 教育納入核心課程、強化教師 AI 培訓並引入企業資源，是香港教育數位化的最高層級政策文件。", "para2": "香港把 AI 列入「核心課程」的力度超過多數亞洲市場——不是選修或融入，而是必修等級。政策落地後將產生大量的教材、師培與平台採購需求，且明確歡迎企業參與。", "takeaway": "香港與台灣課程文化相近、繁體中文內容可直接複用，是台灣 EdTech 出海的首選市場。藍圖公布前的這段時間正是建立香港通路夥伴關係的窗口期。", "sourceUrl": "https://unwire.hk/2025/11/12/hk-digital-education-blueprint-ai-curriculum-2026/ai/", "sourceName": "Unwire.hk · 香港數字教育藍圖"}'>
+        <span class="tag tag-taiwan">台灣</span>
+        <div class="item-text">
+          <div class="item-title">香港《數字教育藍圖》年內公布：AI 納入中小學核心課程</div>
+          <div class="item-source">Unwire.hk</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "台灣與亞洲", "tagClass": "tag-taiwan", "title": "香港六間機構搶攻兒童 AI 課程：3 歲起跑的 AI 教育軍備競賽", "para1": "信報教育報導，香港已有六間本地教育機構為中小學生提供 AI 課程：CodeN&#39;Sim Academy 提供 3-11 歲程式教育，RoboCode Academy 覆蓋 4-16 歲程式與 AI 課程，兒童 AI 教育市場競爭快速升溫。", "para2": "「3 歲學 AI」反映香港家長的教育焦慮與付費意願，也顯示兒童 AI 課程已從新奇賣點變成標配品類。市場快速擁擠後，下一階段的差異化將回歸師資品質與學習成效證明。", "takeaway": "台灣的兒童程式教育品牌（如橘子蘋果、CodePro）可評估香港市場：在地機構雖多但課程深度參差，台灣品牌的教學系統化能力有機會做出差異化。", "sourceUrl": "https://edu.hkej.com/php/article.detail.php?aid=61668", "sourceName": "信報教育 · 香港兒童 AI 課程"}'>
+        <span class="tag tag-taiwan">台灣</span>
+        <div class="item-text">
+          <div class="item-title">香港六間機構搶攻兒童 AI 課程：3 歲起跑的 AI 教育軍備競賽</div>
+          <div class="item-source">信報教育</div>
+        </div>
+      </div>
+      <div class="section-label">市場趨勢</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "市場趨勢", "tagClass": "tag-market", "title": "全球高教 AI 大調查 2026：機構態度從實驗轉向體制化", "para1": "Digital Education Council 發布《AI in Higher Education Global Survey 2026》，追蹤全球大學的 AI 採用態度：機構正從零星實驗走向體制化部署，AI 政策制定、教師培訓與基礎建設投資成為校級預算的固定項目。", "para2": "「體制化」是本年度高教 AI 的關鍵字：AI 預算從一次性專案變成經常性支出，這代表市場從搶灘期進入深耕期——比的不再是誰先進場，而是誰能提供持續的價值與服務。", "takeaway": "對大學客戶的經營策略應從「賣專案」轉向「年度服務合約」：包含定期功能更新、使用數據報告與教師增能工作坊的訂閱制方案，更符合校方預算編列的新常態。", "sourceUrl": "https://www.digitaleducationcouncil.com/resource-library-items/ai-in-higher-education-global-survey-2026", "sourceName": "Digital Education Council · 全球調查"}'>
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">全球高教 AI 大調查 2026：機構態度從實驗轉向體制化</div>
+          <div class="item-source">Digital Education Council</div>
+        </div>
+      </div>
+
+    </aside>
+    <div class="detail-panel" id="detail-2026-07-07">
+      <div class="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <p>點擊左側新聞查看詳情</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="day-pane" data-day="2026-07-06" hidden>
   <div class="split">
     <aside class="news-list" id="list-2026-07-06">
       <div class="pane-header">7月6日（週一）<span class="count"> · 8 則</span></div>
@@ -1199,7 +1284,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026-07-06 09:14 (Asia/Taipei)</span>
+  最近更新：<span id="updated">2026-07-07 08:04 (Asia/Taipei)</span>
 </footer>
 
 <script>
