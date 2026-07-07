@@ -2,8 +2,13 @@ name: Daily News Watchdog
 
 on:
   schedule:
-    - cron: '40 23 * * *'   # 7:40 AM Taipei — CCR 主流程 7:00 跑完後檢查
-    - cron: '0 1 * * *'     # 9:00 AM Taipei — 第二次保險
+    # GitHub 排程有嚴重延遲（實測可達 4 小時），多排幾班增加命中率
+    # 已有今日內容時 auto_news.py 會直接跳過，多跑無害
+    - cron: '10 23 * * *'   # 7:10 AM Taipei
+    - cron: '40 23 * * *'   # 7:40 AM Taipei
+    - cron: '25 0 * * *'    # 8:25 AM Taipei
+    - cron: '15 1 * * *'    # 9:15 AM Taipei
+    - cron: '5 2 * * *'     # 10:05 AM Taipei
   workflow_dispatch:
 
 jobs:
