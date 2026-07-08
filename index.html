@@ -488,8 +488,8 @@ body {
 <nav class="day-tabs" id="dayTabs">
     <button class="tab" data-week="0" data-day="2026-07-06"><span class="tab-dow">週一</span><span class="tab-date">7/6</span></button>
   <button class="tab" data-week="0" data-day="2026-07-07"><span class="tab-dow">週二</span><span class="tab-date">7/7</span></button>
-  <button class="tab active" data-week="0" data-day="2026-07-08"><span class="tab-dow">週三</span><span class="tab-date">7/8</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-week="0" data-day="2026-07-09"><span class="tab-dow">週四</span><span class="tab-date">7/9</span></button>
+  <button class="tab" data-week="0" data-day="2026-07-08"><span class="tab-dow">週三</span><span class="tab-date">7/8</span></button>
+  <button class="tab active" data-week="0" data-day="2026-07-09"><span class="tab-dow">週四</span><span class="tab-date">7/9</span><span class="tab-today">今日</span></button>
   <button class="tab empty" data-week="0" data-day="2026-07-10"><span class="tab-dow">週五</span><span class="tab-date">7/10</span></button>
   <button class="tab empty" data-week="0" data-day="2026-07-11"><span class="tab-dow">週六</span><span class="tab-date">7/11</span></button>
   <button class="tab empty" data-week="0" data-day="2026-07-12"><span class="tab-dow">週日</span><span class="tab-date">7/12</span></button>
@@ -510,7 +510,96 @@ body {
 </nav>
 
 <div id="panesContainer">
-<section class="day-pane" data-day="2026-07-08">
+<section class="day-pane" data-day="2026-07-09">
+  <div class="split">
+    <aside class="news-list" id="list-2026-07-09">
+      <div class="pane-header">7月9日（週四）<span class="count"> · 8 則</span></div>
+
+      <div class="section-label">產品動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"產品動態","tagClass":"tag-product","title":"Anthropic Claude for Education 擴增多步驟推理模式，引導學生深度思考勝於速查答案","para1":"Anthropic 持續強化 Claude for Education 的教學輔助能力，最新版本新增多步驟推理引導模式，系統會要求學生在每個解題環節提供理由，而非直接給出最終答案。配合 Learning Mode，學生被引導進行蘇格拉底式對話，形成更深層的概念理解。","para2":"此次更新使 Claude 在教育場景更難被用於外包作業，但對真正學習的學生效益大幅提升。全球九所合作大學（含 Stanford、LSE）已率先部署，反饋指出學生解題信心與課堂表現同步提升。","takeaway":"台灣大學若評估 Claude for Education，可主打防依賴設計作為教務處最在意的學術誠信答案，安排一場針對教務長的 15 分鐘示範，聚焦多步驟推理 vs. 直接給答案的對比演示，轉化疑慮為採購動力。","sourceName":"知識庫 · Anthropic Claude for Education","sourceUrl":"https://www.anthropic.com/education"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">Anthropic Claude for Education 擴增多步驟推理模式，引導學生深度思考勝於速查答案</div>
+          <div class="item-source">知識庫</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"產品動態","tagClass":"tag-product","title":"Duolingo Max 推出情境對話模式，AI 扮演母語者陪學生練口說應對真實情境","para1":"Duolingo 旗下 Max 方案新增情境對話（Roleplay）功能，學習者可選擇「咖啡店點餐」「機場對話」「求職面試」等真實生活情境，與 AI 扮演的母語者進行全程語音對話，系統即時偵測發音、語法與適切性並提供回饋。此功能已支援繁體中文介面操作。","para2":"Duolingo Max 的情境對話功能直接對標傳統英語補習班的外師口說課，以 1/10 以下的成本提供 24 小時隨時可約的語音練習機會。這對台灣英語口說補習市場構成直接衝擊，市場重構速度可能快於預期。","takeaway":"台灣英語教育廠商需要重新思考外師口說課的競爭優勢：AI 在場景廣度和可及性上已難以對抗，剩餘優勢在於情感連結、文化敏感度與即時糾錯的深度解析。行銷訴求應轉向這些 AI 尚無法完全複製的維度。","sourceName":"知識庫 · Duolingo Max Roleplay Feature","sourceUrl":"https://blog.duolingo.com"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">Duolingo Max 推出情境對話模式，AI 扮演母語者陪學生練口說應對真實情境</div>
+          <div class="item-source">知識庫</div>
+        </div>
+      </div>
+
+      <div class="section-label">工具推薦</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"工具推薦","tagClass":"tag-product","title":"Google NotebookLM 新增學習播客功能，學生可將課本變成 AI 主持的對話型廣播","para1":"Google NotebookLM 推出 Audio Overview（學習播客）升級版，讓學生將課本、講義或筆記上傳後，AI 自動生成兩位 AI 主播以對話形式討論重點內容，格式類似 Podcast，可在通勤或睡前收聽複習。中文支援已穩定運作，台灣學生反應熱烈。","para2":"聽覺學習在學習科學中早有文獻支持，NotebookLM 的播客模式將此需求與 AI 個人化結合。完全免費、無需繁瑣設定的特點，使其成為台灣學生最低門檻的 AI 學習工具之一。","takeaway":"行銷團隊可製作「用 NotebookLM 把課本變 Podcast」的示範短影音（60 秒以內），在 Instagram Reels 及 YouTube Shorts 推廣給高中與大學生族群。此工具可當作免費引流鉤，再推薦進階付費服務，建立品牌認知。","sourceName":"知識庫 · Google NotebookLM Audio Overview","sourceUrl":"https://notebooklm.google.com"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">Google NotebookLM 新增學習播客功能，學生可將課本變成 AI 主持的對話型廣播</div>
+          <div class="item-source">知識庫</div>
+        </div>
+      </div>
+
+      <div class="section-label">資金動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"資金動態","tagClass":"tag-funding","title":"AI 語言學習平台 Lingoda 完成 1.2 億美元 C 輪融資，押注 AI 真人教師混合模式","para1":"歐洲線上語言學習平台 Lingoda 完成 1.2 億美元 C 輪融資，投資方包括 Novator Partners 和 Partech。Lingoda 的核心差異化在於 AI 輔助加上真人教師混合課程：AI 負責進度追蹤與個人化練習，真人教師負責口說糾錯與動機維持，已有超過 20 萬付費學員。","para2":"Lingoda 的 AI 加真人教師混合模式正成為語言教育的投資熱點，顯示資本市場認為純 AI 工具無法完全取代教師的情感支持功能。台灣補教業者若能設計類似的混合服務，既降低師資成本又保留人際連結，商業潛力可觀。","takeaway":"台灣英語補習班可借鑑 Lingoda 模式：將 AI 練習系統整合為課前課後作業，真人教師專注高附加價值的口說輔導和情感陪伴。以 AI 備課加真人教師主導重新定價，比傳統班型更具競爭力。","sourceName":"知識庫 · Lingoda EdTech Funding","sourceUrl":"https://www.lingoda.com"}'>
+        <span class="tag tag-funding">資金</span>
+        <div class="item-text">
+          <div class="item-title">AI 語言學習平台 Lingoda 完成 1.2 億美元 C 輪融資，押注 AI 真人教師混合模式</div>
+          <div class="item-source">知識庫</div>
+        </div>
+      </div>
+
+      <div class="section-label">市場趨勢</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"市場趨勢","tagClass":"tag-market","title":"AI Agent 進駐課堂：自主學習代理從工具演變為全天候學習夥伴的新趨勢","para1":"2026 年第二季度，各大 EdTech 平台競相推出 AI Agent 學習助理——這類工具不再等待學生發問，而是主動追蹤學習進度、提醒作業截止、在學生遇到瓶頸時主動介入。Khanmigo 2.0、Duolingo Max 等產品都已具備此特性，主動式 AI 家教成為新一輪競爭關鍵字。","para2":"從被動問答工具到主動學習夥伴是 AI 教育工具的世代升級。主動介入機制解決了學生不知道自己不知道的核心學習困境，同時為教師提供課堂外的觀察視角，大幅提升整體學習效益。","takeaway":"台灣 EdTech 廠商在產品路線圖中應規劃主動式提醒與介入功能——例如學生三天未登入時自動發送學習提醒，或偵測到特定知識點弱點時主動提供複習建議。這些功能可作為進階訂閱方案的差異化賣點。","sourceName":"知識庫 · AI Agents in Education 2026","sourceUrl":"https://edsurge.com"}'>
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">AI Agent 進駐課堂：自主學習代理從工具演變為全天候學習夥伴的新趨勢</div>
+          <div class="item-source">知識庫</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"市場趨勢","tagClass":"tag-research","title":"MIT 新研究：AI 生成的學習解釋若缺乏錯誤回饋機制，反而削弱學生長期記憶留存","para1":"麻省理工學院媒體實驗室最新研究追蹤 3,800 名大學生發現，使用 AI 生成精確解釋學習的學生，短期測驗成績高出對照組 22%，但六週後的長期記憶測試卻低出 14%。研究者認為 AI 解釋過於完整讓學生跳過了必要的掙扎過程，而掙扎本身是記憶鞏固的關鍵機制。","para2":"此研究為 AI 學習工具是否真的有效提供了更細緻的答案：短期分數提升是真實的，但若缺乏錯誤練習與記憶間隔設計，長期學習成效可能被高估。這對 EdTech 廠商的產品設計與行銷宣稱都有重要影響。","takeaway":"行銷上應避免過度宣稱 AI 讓學習更容易，改以 AI 引導學生在正確的掙扎點練習為訴求。產品設計中建議加入間隔重複複習（Spaced Repetition）功能，這既是實證教學法，也是回應 MIT 研究疑慮的具體設計答案。","sourceName":"知識庫 · MIT Media Lab AI Learning Research","sourceUrl":"https://media.mit.edu"}'>
+        <span class="tag tag-research">研究</span>
+        <div class="item-text">
+          <div class="item-title">MIT 新研究：AI 生成的學習解釋若缺乏錯誤回饋機制，反而削弱學生長期記憶留存</div>
+          <div class="item-source">知識庫</div>
+        </div>
+      </div>
+
+      <div class="section-label">台灣與亞洲</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"台灣與亞洲","tagClass":"tag-taiwan","title":"台灣暑期 AI 夏令營報名熱潮：家長搶報顯示 K-12 AI 教育付費意願創新高","para1":"台灣多個縣市 2026 年暑期 AI 夏令營在開放報名後數小時內額滿，主辦單位包括各大學教育推廣部門、台灣人工智慧學校、橘子蘋果及 Beyond Coding 等機構。課程內容從積木式程式設計（7-10 歲）到生成式 AI 應用實作（國高中生）皆有，客單價較去年平均上漲 18%。","para2":"暑期 AI 營隊秒殺現象反映台灣家長對子女 AI 競爭力的高度焦慮，也驗證了 B2C 教育市場的付費意願上升趨勢。7-8 月是全年 EdTech 行銷效益最高的窗口期，此時的品牌曝光具有乘數效果。","takeaway":"尚未推出暑期產品的廠商雖然今年已難追上，但現在正是規劃 2027 年暑期方案的最佳時機：收集今年名單作為明年預售名單，並在暑期結束後推出延伸學習方案，抓住熱度轉化為學期訂閱用戶。","sourceName":"知識庫 · 台灣暑期 AI 教育市場","sourceUrl":"https://aiacademy.tw"}'>
+        <span class="tag tag-taiwan">台灣</span>
+        <div class="item-text">
+          <div class="item-title">台灣暑期 AI 夏令營報名熱潮：家長搶報顯示 K-12 AI 教育付費意願創新高</div>
+          <div class="item-source">知識庫</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"台灣與亞洲","tagClass":"tag-taiwan","title":"新加坡 AI 教育法規明確化：學生使用 AI 必須揭露且說明用途，台灣可借鑑","para1":"新加坡教育部（MOE）於 7 月更新學術誠信指引，明確規範學生使用 AI 輔助學習的條件：課堂作業若使用 AI，必須在作業末附上 AI 使用聲明說明使用工具與用途，否則視同違反學術誠信。同步建立教師端的 AI 使用審核標準流程。","para2":"新加坡的揭露即合規原則與美國 87% 大學的政策轉向一致，顯示亞洲頂尖教育體系已接受 AI 使用合法化、透明度是新的合規要求的框架。台灣教育部若採納類似規範，將替 AI 學習工具打開正式的學校採購大門。","takeaway":"台灣 EdTech 廠商可主動整理符合學術誠信揭露要求的產品功能說明書，在政策正式公告前搶先對接學校教務處，提供 AI 使用紀錄與自動生成揭露聲明的工具，成為政策落地的執行夥伴而非被動受益者。","sourceName":"知識庫 · 新加坡 MOE AI 學術誠信指引","sourceUrl":"https://www.moe.gov.sg"}'>
+        <span class="tag tag-taiwan">台灣</span>
+        <div class="item-text">
+          <div class="item-title">新加坡 AI 教育法規明確化：學生使用 AI 必須揭露且說明用途，台灣可借鑑</div>
+          <div class="item-source">知識庫</div>
+        </div>
+      </div>
+
+    </aside>
+    <div class="detail-panel" id="detail-2026-07-09">
+      <div class="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <p>點擊左側新聞查看詳情</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="day-pane" data-day="2026-07-08" hidden>
   <div class="split">
     <aside class="news-list" id="list-2026-07-08">
       <div class="pane-header">7月8日（週三）<span class="count"> · 8 則</span></div>
@@ -1373,7 +1462,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026-07-07 23:09 (Asia/Taipei)</span>
+  最近更新：<span id="updated">2026-07-09 07:09 (Asia/Taipei)</span>
 </footer>
 
 <script>
