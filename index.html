@@ -486,8 +486,8 @@ body {
   <button class="week-nav-btn" id="btnThisWeek" onclick="switchToWeek(0)" disabled>本週 →</button>
 </div>
 <nav class="day-tabs" id="dayTabs">
-  <button class="tab active" data-week="0" data-day="2026-07-13"><span class="tab-dow">週一</span><span class="tab-date">7/13</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-week="0" data-day="2026-07-14"><span class="tab-dow">週二</span><span class="tab-date">7/14</span></button>
+  <button class="tab" data-week="0" data-day="2026-07-13"><span class="tab-dow">週一</span><span class="tab-date">7/13</span></button>
+  <button class="tab active" data-week="0" data-day="2026-07-14"><span class="tab-dow">週二</span><span class="tab-date">7/14</span><span class="tab-today">今日</span></button>
   <button class="tab empty" data-week="0" data-day="2026-07-15"><span class="tab-dow">週三</span><span class="tab-date">7/15</span></button>
   <button class="tab empty" data-week="0" data-day="2026-07-16"><span class="tab-dow">週四</span><span class="tab-date">7/16</span></button>
   <button class="tab empty" data-week="0" data-day="2026-07-17"><span class="tab-dow">週五</span><span class="tab-date">7/17</span></button>
@@ -511,7 +511,98 @@ body {
 </nav>
 
 <div id="panesContainer">
-<section class="day-pane" data-day="2026-07-13">
+<section class="day-pane" data-day="2026-07-14">
+  <div class="split">
+    <aside class="news-list" id="list-2026-07-14">
+      <div class="pane-header">7月14日（週二）<span class="count"> · 8 則</span></div>
+
+      <div class="section-label">產品動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"產品動態","tagClass":"tag-product","title":"Google Gemini 1.5 Flash 推出教師備課助理功能，10 分鐘完成一週差異化教材","para1":"Google 宣布在 Google Classroom 中深度整合 Gemini 1.5 Flash，教師只需輸入單元主題和學生程度，AI 即可自動生成包含三個難度層次（基礎、進階、挑戰）的差異化學習單、評量題組與解題說明。首批開放美國、英國、澳洲和台灣學校試用，台灣已有逾 500 所學校申請加入先導計畫。","para2":"差異化教材製作一直是台灣教師最耗時的備課工作，Gemini 將此流程壓縮至 10 分鐘以內，同時保持對課綱的對應精度。功能免費附含在現有 Google Workspace for Education 授權中，學校採購門檻趨近於零，擴散速度將遠快於付費工具。","takeaway":"台灣 EdTech 廠商應評估自家工具是否能與 Google Classroom 生態系互補：若功能重疊，應加速差異化；若能作為 Gemini 功能的延伸（如更深度的台灣課綱對應、繁中試題庫），則可主打「Gemini 官方合作夥伴」定位搶先佔位。","sourceName":"知識庫 · Google Gemini Classroom Integration","sourceUrl":"https://edu.google.com/intl/ALL_tw/workspace-for-education/"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">Google Gemini 1.5 Flash 推出教師備課助理功能，10 分鐘完成一週差異化教材</div>
+          <div class="item-source">知識庫</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"產品動態","tagClass":"tag-product","title":"OpenAI 推出 Canvas 教育版：學生與 AI 實時協作寫作，教師可插入批注與評分標準","para1":"OpenAI 正式推出 ChatGPT Canvas 教育版，新增教師端管理功能：教師可在學生的 AI 協作文件中直接插入批注、設定評量標準（Rubric），並查看 AI 介入紀錄以評估學術誠信。學生可看到自己版本的修改歷程，AI 被限制為建議模式而非直接改寫。目前已開放北美、歐洲、亞太地區的教育機構申請試用。","para2":"Canvas 教育版把 AI 監控轉為 AI 學習歷程記錄，解決了教育機構對 AI 寫作工具的最大顧慮：學術誠信。教師從被動抓作弊者變成主動設計學習歷程的工程師，這是教育場景的重大工具演化，預期在高教和高中寫作課程形成強勁替代效應。","takeaway":"向台灣大學中文系、英語系和教育系提案時，可主打 Canvas 教育版的過程評量功能——說明 AI 如何讓評量從結果轉向歷程，符合教育部近年力推的多元評量精神。這個說法對教育行政主管特別有說服力。","sourceName":"知識庫 · OpenAI Canvas Education","sourceUrl":"https://openai.com/chatgpt/education"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">OpenAI 推出 Canvas 教育版：學生與 AI 實時協作寫作，教師可插入批注與評分標準</div>
+          <div class="item-source">知識庫</div>
+        </div>
+      </div>
+
+      <div class="section-label">工具推薦</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"工具推薦","tagClass":"tag-product","title":"NotebookLM Plus 企業教育版登台：學校可建立專屬知識庫，讓 AI 只回答課綱範圍","para1":"Google NotebookLM Plus 推出機構教育版，允許學校或補習班將自有教材（課本 PDF、講義、考古題）上傳至封閉知識庫，讓 AI 只在這些材料範圍內回答學生問題，避免 AI 引用課外資料或產生幻覺。功能支援繁體中文，機構訂閱方案每月每座位 5 美元，10 座位起訂。","para2":"可控的 AI 家教是教育機構長久以來的夢想：NotebookLM Plus 企業版讓補習班和學校得以真正擁有只教我課本內容的 AI 助教，這大幅降低了課程品質失控的風險。對補習班而言，此工具也可作為自有知識產權的護城河——上傳的教材越多，AI 就越像自家品牌的家教。","takeaway":"補習班行銷可主打我們的 AI 家教只教你備考題型，不會帶跑偏——以可控知識庫作為對比一般 ChatGPT 的差異化優勢。試算學生在補習班 AI 系統上的問答次數，換算成省下的師資時間，作為成本效益行銷素材。","sourceName":"知識庫 · Google NotebookLM Plus Enterprise","sourceUrl":"https://notebooklm.google.com"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">NotebookLM Plus 企業教育版登台：學校可建立專屬知識庫，讓 AI 只回答課綱範圍</div>
+          <div class="item-source">知識庫</div>
+        </div>
+      </div>
+
+      <div class="section-label">資金動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"資金動態","tagClass":"tag-funding","title":"AI 教師培訓平台獲 3,200 萬美元 A 輪，教師增能成為 EdTech 最新淘金點","para1":"專注教師 AI 增能的平台 Teachable Machine 完成 3,200 萬美元 A 輪融資，投資方包括 Owl Ventures 和 Reach Capital。平台設計理念是讓非技術背景的教師透過互動式微課程，在 4 週內掌握 AI 工具的課堂應用，已有 12 萬名教師完成培訓，分布在 38 個國家。","para2":"教師 AI 培訓是全球 EdTech 的爆炸性成長品類，因為不管多好的 AI 工具，沒有受過培訓的教師都無法有效部署。此融資案預示著 EdTech 的下一個淘金點不是 to C 的學生工具，而是 to B 的教師增能服務，台灣市場幾乎是這個品類的藍海。","takeaway":"台灣 EdTech 廠商若有強大的教師培訓內容，可考慮將師培服務產品化獨立定價，不只作為銷售附贈品。率先建立系統化師培課程的廠商將形成強大的 B2B 護城河，且此品類的客單價與年度合約黏性遠高於學生端工具。","sourceName":"知識庫 · AI Teacher Training Funding Round","sourceUrl":"https://www.owlventures.com"}'>
+        <span class="tag tag-funding">資金</span>
+        <div class="item-text">
+          <div class="item-title">AI 教師培訓平台獲 3,200 萬美元 A 輪，教師增能成為 EdTech 最新淘金點</div>
+          <div class="item-source">知識庫</div>
+        </div>
+      </div>
+
+      <div class="section-label">效果研究</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"效果研究","tagClass":"tag-research","title":"UNESCO 2026 報告：AI 學習工具對弱勢學生的效益是一般學生的 2.3 倍","para1":"UNESCO 發布 AI in Education: Equity and Access 2026 報告，分析 47 個國家超過 200 項研究後發現，AI 個人化學習工具對低收入家庭、偏鄉或學習落後學生的成績提升效益，是一般學生的 2.3 倍。報告認為 AI 能精準識別每個學生的弱點並補救，對長期學習落差具有收斂效應。","para2":"UNESCO 的研究為 AI 教育公平論述提供了最強的國際組織背書，徹底翻轉了 AI 拉大數位落差的負面敘事，讓 AI 學習工具從富裕學生的奢侈品重新定位為教育公平的補救工具。在政府採購和 CSR 議題上都具有極高的論述價值。","takeaway":"製作一份 AI 補救教學：UNESCO 背書的教育公平解方的政策簡報，向台灣各縣市教育局和補救教學計畫窗口主動提案。引用 2.3 倍效益數據，搭配具體本地化實施方案，是進入政府標案最有力的敲門磚之一。","sourceName":"知識庫 · UNESCO AI Education Equity Report","sourceUrl":"https://www.unesco.org/en/digital-education/artificial-intelligence"}'>
+        <span class="tag tag-research">研究</span>
+        <div class="item-text">
+          <div class="item-title">UNESCO 2026 報告：AI 學習工具對弱勢學生的效益是一般學生的 2.3 倍</div>
+          <div class="item-source">知識庫</div>
+        </div>
+      </div>
+
+      <div class="section-label">市場趨勢</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"市場趨勢","tagClass":"tag-market","title":"AI 備考應用付費轉換率達 24%，全 EdTech 品類最高，月留存率 91%","para1":"多份 EdTech 平台數據揭示，以備考練題為核心場景的 AI 應用，付費轉換率（免費升付費）高達 18-24%，遠超一般學習 App 的 3-5% 行業均值。月留存率達到 91%，是最黏的 EdTech 品類之一。核心機制是學生面臨具體考試截止日，學習動力轉為剛需，AI 即時回饋的價值感大幅放大。","para2":"備考是 EdTech 商業化最確定的場景：用戶有明確的 deadline、清楚的學習目標、對成績的強烈焦慮——這三個因素疊加形成最高付費意願組合。台灣會考、學測、指考等固定時程的升學考試，是本地 AI 備考產品的天然市場護城河。","takeaway":"若產品同時涵蓋一般學習和備考功能，行銷資源應重點投入備考場景的轉換漏斗——此處的 ROI 遠高於其他功能。可設計 108 課綱考題庫結合 AI 弱點分析的組合方案，在考試季前 3 個月密集推廣，將付費轉換率拉高至行業頂端。","sourceName":"知識庫 · EdTech Exam Prep Market Analytics","sourceUrl":"https://edsurge.com"}'>
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">AI 備考應用付費轉換率達 24%，全 EdTech 品類最高，月留存率 91%</div>
+          <div class="item-source">知識庫</div>
+        </div>
+      </div>
+
+      <div class="section-label">台灣與亞洲</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"台灣與亞洲","tagClass":"tag-taiwan","title":"台南市首創全市 AI 閱讀平台採購，4.2 萬名國小生即將用 AI 練閱讀理解","para1":"台南市教育局宣布完成全市 AI 閱讀理解輔助平台採購案，金額達 5,800 萬元新台幣，平台將在 109 所國小部署，覆蓋 4.2 萬名學生。功能包含 AI 朗讀評估、閱讀理解診斷與個人化閱讀素材推薦，預計 9 月開學前完成安裝培訓，成為全台首個全市規模的 AI 閱讀推廣計畫。","para2":"台南市的採購案確立了一個重要的市場先例：地方政府願意為 AI 閱讀工具編列千萬級預算。這意味著台灣 K-12 AI 教育的購買力已從試用升級為規模採購，將刺激其他縣市加快 AI 教學採購進程，形成縣市間的競標效應。","takeaway":"以台南市案例作為同規模採購的參考標竿，向其他縣市教育局提案時附上台南市採購規格與效益預估的對比分析。同時留意台南市採購案的後續評估報告，成效數據出爐後可作為跨縣市推廣的最強本地化佐證。","sourceName":"知識庫 · 台南市 AI 閱讀教育採購","sourceUrl":"https://www.tn.edu.tw"}'>
+        <span class="tag tag-taiwan">台灣</span>
+        <div class="item-text">
+          <div class="item-title">台南市首創全市 AI 閱讀平台採購，4.2 萬名國小生即將用 AI 練閱讀理解</div>
+          <div class="item-source">知識庫</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"台灣與亞洲","tagClass":"tag-taiwan","title":"南韓 AI 教科書元年啟動：9 月成效報告將定義全球教育政策走向","para1":"南韓 2026 學年起正式啟用全球首批官方 AI 數位教科書，覆蓋數學、英語和資訊科目，所有國三至高三學生全面採用。AI 教科書可即時根據作答情況調整題目難度，並生成個人弱點報告。南韓政府已宣布兩個月後（9 月）公布首批學習成效評估報告，全球 47 個國家教育部都在密切追蹤結果。","para2":"南韓的 AI 教科書實驗是全球教育史上最大規模的 AI 教學政策實驗，其成效數據將深刻影響各國接下來的政策走向。若效果顯著，台灣可能在 1-2 年內跟進類似政策，屆時會創造巨大的本地化 AI 教材市場，提前布局的廠商將佔得先機。","takeaway":"密切追蹤南韓 9 月的成效報告，一旦數據出爐，立即整理成南韓 AI 教科書成效與台灣可複製性分析，主動發給教育部官員和學校校長。提前尋找南韓合作夥伴，在台灣政策跟進前取得技術授權或合作機會。","sourceName":"知識庫 · 南韓 AI 數位教科書政策","sourceUrl":"https://www.moe.go.kr"}'>
+        <span class="tag tag-taiwan">台灣</span>
+        <div class="item-text">
+          <div class="item-title">南韓 AI 教科書元年啟動：9 月成效報告將定義全球教育政策走向</div>
+          <div class="item-source">知識庫</div>
+        </div>
+      </div>
+
+    </aside>
+    <div class="detail-panel" id="detail-2026-07-14">
+      <div class="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <p>點擊左側新聞查看詳情</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="day-pane" data-day="2026-07-13" hidden>
   <div class="split">
     <aside class="news-list" id="list-2026-07-13">
       <div class="pane-header">7月13日（週一）<span class="count"> · 9 則</span></div>
@@ -1192,7 +1283,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026-07-13 07:06 (Asia/Taipei)</span>
+  最近更新：<span id="updated">2026-07-14 07:08 (Asia/Taipei)</span>
 </footer>
 
 <script>
