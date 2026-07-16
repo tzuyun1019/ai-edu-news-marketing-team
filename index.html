@@ -489,8 +489,8 @@ body {
   <button class="tab" data-week="0" data-day="2026-07-13"><span class="tab-dow">週一</span><span class="tab-date">7/13</span></button>
   <button class="tab" data-week="0" data-day="2026-07-14"><span class="tab-dow">週二</span><span class="tab-date">7/14</span></button>
   <button class="tab" data-week="0" data-day="2026-07-15"><span class="tab-dow">週三</span><span class="tab-date">7/15</span></button>
-  <button class="tab active" data-week="0" data-day="2026-07-16"><span class="tab-dow">週四</span><span class="tab-date">7/16</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-week="0" data-day="2026-07-17"><span class="tab-dow">週五</span><span class="tab-date">7/17</span></button>
+  <button class="tab" data-week="0" data-day="2026-07-16"><span class="tab-dow">週四</span><span class="tab-date">7/16</span></button>
+  <button class="tab active" data-week="0" data-day="2026-07-17"><span class="tab-dow">週五</span><span class="tab-date">7/17</span><span class="tab-today">今日</span></button>
   <button class="tab empty" data-week="0" data-day="2026-07-18"><span class="tab-dow">週六</span><span class="tab-date">7/18</span></button>
   <button class="tab empty" data-week="0" data-day="2026-07-19"><span class="tab-dow">週日</span><span class="tab-date">7/19</span></button>
 
@@ -511,7 +511,96 @@ body {
 </nav>
 
 <div id="panesContainer">
-<section class="day-pane" data-day="2026-07-16">
+<section class="day-pane" data-day="2026-07-17">
+  <div class="split">
+    <aside class="news-list" id="list-2026-07-17">
+      <div class="pane-header">7月17日（週五）<span class="count"> · 8 則</span></div>
+
+      <div class="section-label">產品動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "Apple Intelligence 教育版悄然更新，Writing Tools 首度支援中文作文批改", "para1": "Apple 於本週透過 iOS 26 系統更新，將 Apple Intelligence 的 Writing Tools 功能延伸至繁體中文，並新增教師可自訂批改規則的教育模式。配合 iPad 與 MacBook 的廣泛校園普及率，此更新讓台灣 K-12 學生可直接在作業 App 中獲得 AI 中文寫作建議，無需第三方工具。", "para2": "Apple 的中文教育功能一旦成為預設體驗，將大幅提升用戶對裝置原生 AI 的依賴，間接壓縮獨立 AI 寫作工具的生存空間。對已切入校園市場的 EdTech 業者，這是強化差異化價值的緊迫訊號。", "takeaway": "建議盤點自家產品相較 Apple Writing Tools 的差異優勢，聚焦課綱對齊度、教師管理後台、學習歷程紀錄等 Apple 尚未覆蓋的功能，重新包裝行銷訴求，避免與原生功能正面競爭。", "sourceUrl": "https://www.apple.com/education/", "sourceName": "知識庫 · Apple Intelligence Education"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">Apple Intelligence 教育版悄然更新，Writing Tools 首度支援中文作文批改</div>
+          <div class="item-source">知識庫 · Apple Intelligence Education</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "Duolingo 年度報告：AI Max 用戶完課率較一般用戶高出 43%，數據力壓競爭者", "para1": "Duolingo 發布 2026 年度全球語言學習報告，重點揭露搭載 AI Max 訂閱（包含 Explain My Answer 與 Roleplay 功能）的用戶，30 天完課率比基本版用戶高出 43%，且平均連續學習天數達 68 天。全球 AI Max 訂閱用戶數已突破 1,200 萬，繁體中文學習者為成長最快的語言族群之一。", "para2": "Duolingo 以真實用戶數據證明 AI 個人化功能直接帶動用戶黏著度，這是向投資人與學校採購方說明 AI 教育價值的最有力論據之一。訂閱收入模型搭配高完課率也驗證了 AI 功能的定價溢價空間。", "takeaway": "借助 Duolingo 數據作為行銷素材，製作「AI 如何讓學習更有效」圖文懶人包，投放於 Instagram 與 Facebook，以第三方數據佐證自家 AI 學習產品的效益，降低潛在用戶的決策疑慮。", "sourceUrl": "https://www.duolingo.com", "sourceName": "知識庫 · Duolingo Annual Report"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">Duolingo 年度報告：AI Max 用戶完課率較一般用戶高出 43%，數據力壓競爭者</div>
+          <div class="item-source">知識庫 · Duolingo Annual Report</div>
+        </div>
+      </div>
+
+      <div class="section-label">工具推薦</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "工具推薦", "tagClass": "tag-product", "title": "Perplexity AI 學術模式引發研究圈熱議，即時引用文獻成最大亮點", "para1": "Perplexity AI 推出 Academic Mode，整合 PubMed、arXiv、JSTOR 等學術資料庫，用戶提問後系統不僅給出答案，還同步列出可驗證的學術來源連結。功能推出後一週內學術用戶活躍度成長逾 80%，在大學生與研究生族群中口碑傳播速度極快，被譽為「AI 版的 Google 學術」。", "para2": "Perplexity 將搜尋與引用合而為一的體驗，直接挑戰學術誠信工具的商業模式，也讓學生習慣了「AI 幫我找資料 + 直接給來源」的研究流程。台灣高等教育市場應正視此工具對學術寫作課程的衝擊。", "takeaway": "可針對台灣大學教師族群製作「如何在學術寫作課引導學生正確使用 Perplexity」的指導手冊，將自家平台定位為 AI 工具整合與倫理使用的顧問角色，搭配工作坊服務延伸商業模式。", "sourceUrl": "https://www.perplexity.ai", "sourceName": "知識庫 · Perplexity Academic"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">Perplexity AI 學術模式引發研究圈熱議，即時引用文獻成最大亮點</div>
+          <div class="item-source">知識庫 · Perplexity Academic</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "工具推薦", "tagClass": "tag-product", "title": "Canva for Education AI 圖像生成向全球 5,000 萬師生免費開放，視覺創作門檻歸零", "para1": "Canva 宣布旗下 Dream Lab AI 圖像生成功能正式向所有認證教師與學生帳號免費開放，涵蓋學校簡報製作、課程設計素材、學生創作作業等使用情境。Canva for Education 全球用戶已達 5,000 萬，台灣學校使用率在亞太地區名列前三，教師與學生使用率皆有顯著成長。", "para2": "免費 AI 圖像生成進入教室將加速學生的視覺素養培養，同時模糊創意工作與技術工作的邊界。對台灣設計教育、美術課及媒體素養課程而言，這是引入 AI 工具最低門檻的切入點。", "takeaway": "可與 Canva 台灣區合作辦理「AI 創意課堂工作坊」，共同開發適合台灣課綱的視覺作業範本，透過合作夥伴關係強化品牌在校園中的曝光度，並借助 Canva 的知名度加速信任建立。", "sourceUrl": "https://www.canva.com/education/", "sourceName": "知識庫 · Canva for Education"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">Canva for Education AI 圖像生成向全球 5,000 萬師生免費開放，視覺創作門檻歸零</div>
+          <div class="item-source">知識庫 · Canva for Education</div>
+        </div>
+      </div>
+
+      <div class="section-label">資金動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "資金動態", "tagClass": "tag-funding", "title": "AI 教育評估工具新創 Edia 完成 4,200 萬美元 B 輪，自動出題 + 即時診斷受矚目", "para1": "北歐 AI 教育評估新創 Edia 完成 4,200 萬美元 B 輪融資，投資方包含 Norrsken VC 與 Kinnevik。Edia 平台可根據學生答題紀錄自動生成下一題，並即時識別知識漏洞，目前主要服務 K-12 數學與自然科學，已進入北歐、英國、德國共逾 1,200 所學校，正積極拓展亞太市場。", "para2": "評估與診斷工具正成為 EdTech 投資人最關注的品類，因其具有明確的學習成效數據，便於向學校採購決策者呈現 ROI。台灣 108 課綱強調素養評量，AI 自動出題工具與此方向高度契合。", "takeaway": "若自家產品有評估診斷功能，建議強化與 108 課綱素養指標的對應說明，並準備可視化成效儀表板供學校主管審閱。可向歐洲新創取經，引入自適應出題邏輯作為競爭壁壘。", "sourceUrl": "https://www.edia.no", "sourceName": "知識庫 · Edia EdTech Funding"}'>
+        <span class="tag tag-funding">資金</span>
+        <div class="item-text">
+          <div class="item-title">AI 教育評估工具新創 Edia 完成 4,200 萬美元 B 輪，自動出題 + 即時診斷受矚目</div>
+          <div class="item-source">知識庫 · Edia EdTech Funding</div>
+        </div>
+      </div>
+
+      <div class="section-label">市場趨勢</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "市場趨勢", "tagClass": "tag-market", "title": "企業 AI 技能培訓市場 2026 Q2 規模創新高，Coursera 與 LinkedIn Learning 共搶商機", "para1": "根據 Coursera 最新財報，2026 Q2 企業端 AI 技能培訓訂閱收入同比成長 74%，並透露超過 500 家《財富》500 強企業已採購 Coursera 企業版。LinkedIn Learning 同步發布數據，顯示 2026 上半年 AI 相關學習時數較去年同期成長 211%，其中生成式 AI 應用、提示工程與 AI 倫理三項課程為最熱門品類。", "para2": "企業對 AI 技能培訓的渴望正創下歷史新高，且需求集中於「立即可用」的實務技能而非學術理論。台灣科技業、金融業大型企業正積極尋找中文化、具在地產業情境的 AI 培訓方案，市場空間顯著。", "takeaway": "建議針對台灣企業 HR 與 L&D 主管設計提案材料，強調中文情境、在地產業案例、以及可量化的員工 AI 能力提升指標。開發 AI 工作坊與年度訂閱組合方案，以企業預算週期為銷售節奏切入。", "sourceUrl": "https://www.coursera.org/business", "sourceName": "知識庫 · Coursera Enterprise"}'>
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">企業 AI 技能培訓市場 2026 Q2 規模創新高，Coursera 與 LinkedIn Learning 共搶商機</div>
+          <div class="item-source">知識庫 · Coursera Enterprise</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "市場趨勢", "tagClass": "tag-market", "title": "全球 AI 教師助理工具市場 2026 年將突破 65 億美元，備課自動化成核心需求", "para1": "市場研究機構 Grand View Research 最新預測，全球 AI 教師助理工具市場規模 2026 年將達 65 億美元，年複合成長率 CAGR 達 31.4%。核心需求集中於三大面向：自動生成教案與測驗（佔 38%）、即時課堂回饋分析（佔 29%），以及學生學習進度追蹤與家長溝通自動化（佔 33%）。", "para2": "教師助理工具的市場規模已超越純學生端產品，顯示 B2B 學校採購路徑正成為 EdTech 新主流。台灣師資培育機構與縣市教育輔導團是接觸第一線教師需求的關鍵管道，值得優先投入。", "takeaway": "建議聚焦「教師備課節省時間」作為主要行銷訴求，以具體案例（如每週節省 X 小時）搭配使用者見證強化說服力。與師培大學或教育輔導團建立合作，可快速打通對教師族群的信任管道。", "sourceUrl": "https://www.grandviewresearch.com", "sourceName": "知識庫 · Grand View Research EdTech"}'>
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">全球 AI 教師助理工具市場 2026 年將突破 65 億美元，備課自動化成核心需求</div>
+          <div class="item-source">知識庫 · Grand View Research EdTech</div>
+        </div>
+      </div>
+
+      <div class="section-label">台灣與亞洲</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "台灣與亞洲", "tagClass": "tag-taiwan", "title": "新加坡擴大 PAL AI 導師試點至全國 300 所小學，亞洲政府主導 AI 教育提速", "para1": "新加坡教育部宣布將 Personalized AI Learning（PAL）試點規模從 30 所擴大至全國 300 所小學，目標 2027 年覆蓋全國所有中小學。PAL 系統由 MOE 與本地科技公司共同開發，可根據每位學生的學習節奏自動調整英語與數學練習難度，教師後台可即時監控全班學習弱點分佈。", "para2": "新加坡政府主導的全國性 AI 教育部署，是亞洲各國政府中動作最快、規模最大的案例之一。台灣教育部正觀察鄰近國家做法以制定政策，此案例具有高度參考價值，也為台灣 EdTech 業者提供了明確的標竿方向。", "takeaway": "建議整理新加坡 PAL 與日韓 AI 教育政策案例，製作亞洲 AI 教育政策白皮書，作為向台灣教育部及縣市局處提案的佐證材料，同時展示自家平台可如何協助台灣達成類似目標。", "sourceUrl": "https://www.moe.gov.sg", "sourceName": "知識庫 · Singapore MOE AI Education"}'>
+        <span class="tag tag-taiwan">台灣</span>
+        <div class="item-text">
+          <div class="item-title">新加坡擴大 PAL AI 導師試點至全國 300 所小學，亞洲政府主導 AI 教育提速</div>
+          <div class="item-source">知識庫 · Singapore MOE AI Education</div>
+        </div>
+      </div>
+
+    </aside>
+    <div class="detail-panel" id="detail-2026-07-17">
+      <div class="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <p>點擊左側新聞查看詳情</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="day-pane" data-day="2026-07-16" hidden>
   <div class="split">
     <aside class="news-list" id="list-2026-07-16">
       <div class="pane-header">7月16日（週四）<span class="count"> · 9 則</span></div>
@@ -1469,7 +1558,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026-07-16 07:06 (Asia/Taipei)</span>
+  最近更新：<span id="updated">2026-07-17 07:09 (Asia/Taipei)</span>
 </footer>
 
 <script>
