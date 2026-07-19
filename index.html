@@ -472,7 +472,7 @@ body {
   <div class="kicker">每日情報 · 教育 AI 應用</div>
   <h1>全球教育 AI 應用動態 <span style="font-weight:400;color:var(--ink-soft);font-size:.82em">快讀版</span></h1>
   <div class="meta">
-    <span id="weekrange">本週 7/13–7/19</span>
+    <span id="weekrange">本週 7/20–7/26</span>
     <span class="dot">·</span>
     <span class="badge">行銷團隊版</span>
     <span class="dot">·</span>
@@ -486,21 +486,21 @@ body {
   <button class="week-nav-btn" id="btnThisWeek" onclick="switchToWeek(0)" disabled>本週 →</button>
 </div>
 <nav class="day-tabs" id="dayTabs">
-  <button class="tab" data-week="0" data-day="2026-07-13"><span class="tab-dow">週一</span><span class="tab-date">7/13</span></button>
-  <button class="tab" data-week="0" data-day="2026-07-14"><span class="tab-dow">週二</span><span class="tab-date">7/14</span></button>
-  <button class="tab" data-week="0" data-day="2026-07-15"><span class="tab-dow">週三</span><span class="tab-date">7/15</span></button>
-  <button class="tab" data-week="0" data-day="2026-07-16"><span class="tab-dow">週四</span><span class="tab-date">7/16</span></button>
-  <button class="tab" data-week="0" data-day="2026-07-17"><span class="tab-dow">週五</span><span class="tab-date">7/17</span></button>
-  <button class="tab" data-week="0" data-day="2026-07-18"><span class="tab-dow">週六</span><span class="tab-date">7/18</span></button>
-  <button class="tab active" data-week="0" data-day="2026-07-19"><span class="tab-dow">週日</span><span class="tab-date">7/19</span><span class="tab-today">今日</span></button>
+  <button class="tab active" data-week="0" data-day="2026-07-20"><span class="tab-dow">週一</span><span class="tab-date">7/20</span><span class="tab-today">今日</span></button>
+  <button class="tab empty" data-week="0" data-day="2026-07-21"><span class="tab-dow">週二</span><span class="tab-date">7/21</span></button>
+  <button class="tab empty" data-week="0" data-day="2026-07-22"><span class="tab-dow">週三</span><span class="tab-date">7/22</span></button>
+  <button class="tab empty" data-week="0" data-day="2026-07-23"><span class="tab-dow">週四</span><span class="tab-date">7/23</span></button>
+  <button class="tab empty" data-week="0" data-day="2026-07-24"><span class="tab-dow">週五</span><span class="tab-date">7/24</span></button>
+  <button class="tab empty" data-week="0" data-day="2026-07-25"><span class="tab-dow">週六</span><span class="tab-date">7/25</span></button>
+  <button class="tab empty" data-week="0" data-day="2026-07-26"><span class="tab-dow">週日</span><span class="tab-date">7/26</span></button>
+  <button class="tab" data-week="1" data-day="2026-07-13"><span class="tab-dow">週一</span><span class="tab-date">7/13</span></button>
+  <button class="tab" data-week="1" data-day="2026-07-14"><span class="tab-dow">週二</span><span class="tab-date">7/14</span></button>
+  <button class="tab" data-week="1" data-day="2026-07-15"><span class="tab-dow">週三</span><span class="tab-date">7/15</span></button>
+  <button class="tab" data-week="1" data-day="2026-07-16"><span class="tab-dow">週四</span><span class="tab-date">7/16</span></button>
+  <button class="tab" data-week="1" data-day="2026-07-17"><span class="tab-dow">週五</span><span class="tab-date">7/17</span></button>
+  <button class="tab" data-week="1" data-day="2026-07-18"><span class="tab-dow">週六</span><span class="tab-date">7/18</span></button>
+  <button class="tab" data-week="1" data-day="2026-07-19"><span class="tab-dow">週日</span><span class="tab-date">7/19</span></button>
 
-    <button class="tab" data-week="1" data-day="2026-07-06"><span class="tab-dow">週一</span><span class="tab-date">7/6</span></button>
-  <button class="tab" data-week="1" data-day="2026-07-07"><span class="tab-dow">週二</span><span class="tab-date">7/7</span></button>
-  <button class="tab" data-week="1" data-day="2026-07-08"><span class="tab-dow">週三</span><span class="tab-date">7/8</span></button>
-  <button class="tab" data-week="1" data-day="2026-07-09"><span class="tab-dow">週四</span><span class="tab-date">7/9</span></button>
-  <button class="tab" data-week="1" data-day="2026-07-10"><span class="tab-dow">週五</span><span class="tab-date">7/10</span></button>
-  <button class="tab" data-week="1" data-day="2026-07-11"><span class="tab-dow">週六</span><span class="tab-date">7/11</span></button>
-  <button class="tab" data-week="1" data-day="2026-07-12"><span class="tab-dow">週日</span><span class="tab-date">7/12</span></button>
   
   
   
@@ -511,7 +511,91 @@ body {
 </nav>
 
 <div id="panesContainer">
-<section class="day-pane" data-day="2026-07-19">
+<section class="day-pane" data-day="2026-07-20">
+  <div class="split">
+    <aside class="news-list" id="list-2026-07-20">
+      <div class="pane-header">7月20日（週一）<span class="count"> · 8 則</span></div>
+
+      <div class="section-label">產品動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "Anthropic 發布 Claude for Education 企業版，學術誠信模式成最大亮點", "para1": "Anthropic 正式推出面向高等教育機構的 Claude for Education 企業方案，核心功能包括「學術誠信模式」——AI 拒絕直接完成學生作業，轉而以蘇格拉底提問引導學生自主思考——以及教師可自訂的課程知識範圍限制功能。目前全球已有 350 所大學簽署合作協議，月費較標準版折扣 40%，台灣代理洽談中，預計 Q3 可提供報價。", "para2": "學術誠信是台灣大學端採購 AI 工具最大的阻力，Anthropic 的差異化設計直接化解了這個障礙。一旦台灣大學開始集中採購，將帶動整個高教 AI 工具市場的標準提升，也為競品廠商設立了新的功能門檻。", "takeaway": "建議立即接觸台灣代理，提前了解報價與部署方式，並準備向大學教務處的提案材料，以「學術誠信保障」作為切入對話的核心議題。若自家產品也有類似機制，應立刻強化相關行銷論述，搶在競品前建立認知。", "sourceUrl": "https://www.anthropic.com/education", "sourceName": "知識庫 · Anthropic Education"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">Anthropic 發布 Claude for Education 企業版，學術誠信模式成最大亮點</div>
+          <div class="item-source">知識庫 · Anthropic Education</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "Google Classroom 整合 Gemini 1.5 Pro 自動批改功能，教師平均省下 4 小時週批改時間", "para1": "Google 宣布 Workspace for Education 全面整合 Gemini 1.5 Pro 於 Classroom 批改流程，教師可設定評分標準後讓 AI 自動完成初審，並生成個別學生的回饋草稿供教師快速確認修改。根據 Google 早期試點學校數據，教師每週平均節省 4.2 小時批改時間，學生收到回饋的速度從平均 5 天縮短至 24 小時內。", "para2": "批改自動化是台灣教師最切身的痛點之一，特別是大型國高中的作文與小考批改量。Google 的整合策略利用其在台灣校園的既有 Classroom 用戶基礎，實現零摩擦導入，對尚未整合 LMS 的獨立 EdTech 工具形成強大的競爭壓力。", "takeaway": "建議對照 Google Classroom AI 批改的功能邊界，找出差異優勢——例如台灣課綱對應、中文語境精準度、跨 LMS 整合能力等。行銷訴求應從「替代批改」轉向「更懂台灣考試情境的 AI 評量夥伴」，以在地化作為護城河。", "sourceUrl": "https://edu.google.com", "sourceName": "知識庫 · Google Workspace Education"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">Google Classroom 整合 Gemini 1.5 Pro 自動批改功能，教師平均省下 4 小時週批改時間</div>
+          <div class="item-source">知識庫 · Google Workspace Education</div>
+        </div>
+      </div>
+      <div class="section-label">工具推薦</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "工具推薦", "tagClass": "tag-product", "title": "MagicSchool AI 突破 500 萬教師用戶，成全球最大 AI 備課工具平台", "para1": "專為教師設計的 AI 備課工具 MagicSchool AI 宣布全球用戶突破 500 萬教師，覆蓋 195 個國家，成為目前全球用戶規模最大的教師 AI 工具平台。核心功能包含：一鍵差異化教案生成、IEP 個別教育計畫草稿、家長溝通信件範本，以及 85 項教師行政任務自動化工具。繁體中文版本已上線，台灣用戶成長速度為亞太地區第三快。", "para2": "MagicSchool 的成長速度驗證了「以教師為核心用戶」的 EdTech 產品策略的可行性。其免費版功能之豐富已超越許多付費競品，形成極強的市場教育效果，同時也讓使用者習慣用 AI 處理各類行政教學事務，增加付費升級的轉換動機。", "takeaway": "建議試用 MagicSchool AI 全套功能，製作「MagicSchool vs 自家工具 10 項功能對比」測評文章，誠實評析各自的適用場景，以客觀立場建立品牌的 AI 教育評測公信力。真正的差異化往往來自誠實的比較，而非迴避。", "sourceUrl": "https://www.magicschool.ai", "sourceName": "知識庫 · MagicSchool AI"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">MagicSchool AI 突破 500 萬教師用戶，成全球最大 AI 備課工具平台</div>
+          <div class="item-source">知識庫 · MagicSchool AI</div>
+        </div>
+      </div>
+      <div class="section-label">資金動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "資金動態", "tagClass": "tag-funding", "title": "AI 職涯導航新創 Forage 獲 6,500 萬美元融資，技職教育與 AI 媒合成新藍海", "para1": "英國職涯體驗 AI 平台 Forage 完成 6,500 萬美元 C 輪融資，由 Owl Ventures 領投，Reach Capital 跟投。Forage 讓學生透過 AI 模擬真實企業專案來建立職涯作品集，並以 AI 分析學生技能與企業需求進行精準媒合。目前已與全球 500 家企業合作，包含高盛、麥肯錫、微軟等，亞太地區擴張計畫將包含台灣與新加坡。", "para2": "「學歷到職涯」的 AI 銜接正成為投資人最看好的 EdTech 細分賽道，因為它直接對接了企業端的人才需求和學生端的就業焦慮——兩端都有明確的付費意願。台灣技職體系與大學就業輔導市場存在顯著缺口，是本土 EdTech 值得切入的藍海。", "takeaway": "建議評估開發「AI 職涯適性分析」功能模組，連結台灣企業徵才需求與學生技能圖譜。可先從台灣科技業、金融業等有明確 AI 技能需求的產業切入，與人力銀行或大學就業輔導中心建立合作，打通校企橋接的新商業模式。", "sourceUrl": "https://www.theforage.com", "sourceName": "知識庫 · Forage EdTech"}'>
+        <span class="tag tag-funding">資金</span>
+        <div class="item-text">
+          <div class="item-title">AI 職涯導航新創 Forage 獲 6,500 萬美元融資，技職教育與 AI 媒合成新藍海</div>
+          <div class="item-source">知識庫 · Forage EdTech</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "資金動態", "tagClass": "tag-funding", "title": "亞太 EdTech 2026 Q2 融資總覽：AI 評量與技能認證類別吸金最多", "para1": "根據 HolonIQ 2026 Q2 亞太 EdTech 融資報告，本季亞太地區共完成 43 輪融資，總金額達 8.2 億美元，年增 39%。最受資本青睞的三大類別為：AI 自適應評量工具（占 34%）、技能認證與微學分平台（占 27%），以及企業員工 AI 培訓（占 22%）。台灣新創本季有 2 家完成融資，分別獲得美國與日本 VC 投資。", "para2": "亞太資金集中流向「可量化學習成效」的評量類工具，顯示市場已從「AI 功能展示期」進入「效果驗證期」。能夠提供清晰、可信的學習成效數據的平台，將在下一輪採購決策中具備壓倒性優勢。", "takeaway": "現在應優先建置學習成效追蹤功能與數據儀表板，並著手收集用戶真實成效案例（最好附有前後測數據對比）。這些數據不只是行銷素材，更是打開 B2B 採購談判的關鍵門票。", "sourceUrl": "https://www.holoniq.com/edtech", "sourceName": "知識庫 · HolonIQ Asia Pacific"}'>
+        <span class="tag tag-funding">資金</span>
+        <div class="item-text">
+          <div class="item-title">亞太 EdTech 2026 Q2 融資總覽：AI 評量與技能認證類別吸金最多</div>
+          <div class="item-source">知識庫 · HolonIQ Asia Pacific</div>
+        </div>
+      </div>
+      <div class="section-label">市場趨勢</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "市場趨勢", "tagClass": "tag-market", "title": "Stanford 研究：AI 寫作助理讓學生作文長度增 40%，但分析深度反降 18%", "para1": "Stanford 教育研究中心追蹤 4,200 名中學生 AI 寫作工具使用行為，發現使用 AI 輔助寫作後，學生作文平均長度增加 40%，但教師評分的「論點深度與批判性思考」指標平均下降 18%。研究建議學校應搭配「AI 草稿 + 學生手寫修訂」的混合流程，而非純粹 AI 生成。", "para2": "這項研究為教師和學校提供了具體的 AI 使用邊界依據，也揭示了 AI 在寫作教學中「量增質降」的潛在風險。台灣教師在推廣 AI 作文工具時，若能主動提出「防止思考依賴」的設計說明，將顯著提升學校採購的信任度。", "takeaway": "建議在產品設計與行銷材料中加入「引導學生主動思考」的機制說明，例如 AI 提供框架、學生填充論點的協作模式。可引用 Stanford 研究數據製作「如何讓 AI 成為思考工具而非替代品」的教師指導手冊，以學術背書提升產品可信度。", "sourceUrl": "https://ed.stanford.edu", "sourceName": "知識庫 · Stanford Education Research"}'>
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">Stanford 研究：AI 寫作助理讓學生作文長度增 40%，但分析深度反降 18%</div>
+          <div class="item-source">知識庫 · Stanford Education Research</div>
+        </div>
+      </div>
+      <div class="section-label">台灣與亞洲</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "台灣與亞洲", "tagClass": "tag-taiwan", "title": "台灣暑假 AI 課程需求爆發，親子 AI 共學班成最搶手新品類", "para1": "2026 暑假台灣 AI 相關課程市場呈現爆發性成長，根據線上教育平台彙整數據，7 月份 AI 課程搜尋量較去年同期成長 312%。其中「親子 AI 共學」與「中學生 AI 實作」課程最為搶手，報名人數普遍超額 150%。課程類型以生成式 AI 工具操作（ChatGPT、Claude、Midjourney）、Python AI 程式設計入門，以及 AI 藝術創作三大方向為主。", "para2": "親子共學的爆發代表家長開始意識到 AI 素養的緊迫性，並將其視為必須「主動投資」的教育項目，而非可選配的興趣課程。這是台灣 EdTech B2C 市場進入成熟期的重要訊號，客單價與轉換意願均顯著提升。", "takeaway": "暑假是 EdTech B2C 全年最大的獲客視窗，7 月下旬應立即加大社群廣告投放力度，以「現在報名，暑假還來得及」的緊迫訴求搭配親子共學內容，在 Instagram 和 Facebook 家長社群中精準觸及 35-50 歲有國高中子女的家長族群。", "sourceUrl": "https://www.edu.tw", "sourceName": "知識庫 · 台灣暑期 AI 教育市場"}'>
+        <span class="tag tag-taiwan">台灣</span>
+        <div class="item-text">
+          <div class="item-title">台灣暑假 AI 課程需求爆發，親子 AI 共學班成最搶手新品類</div>
+          <div class="item-source">知識庫 · 台灣暑期 AI 教育市場</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "台灣與亞洲", "tagClass": "tag-taiwan", "title": "教育部公布 AI 融入教學補助新辦法，縣市學校最高可申請 300 萬元", "para1": "台灣教育部正式公告「115 學年度 AI 融入教學補助計畫」，各縣市公立中小學可依規模申請 50 萬至 300 萬元補助，用途包含 AI 教學工具授權費、教師研習、課程設計與設備採購。計畫收件截止日期為 8 月 31 日，審查委員將優先考量「跨科整合」與「學習成效可量化」兩項指標。", "para2": "這是台灣公立學校採購 AI 教育工具最直接的政府資金管道，補助額度遠高於過去任何單一計畫。從截止日期和審查標準來看，8 月是 EdTech 廠商協助學校申請補助、同步完成採購轉換的黃金視窗。", "takeaway": "立即製作「AI 融入教學補助申請指南」，協助合作學校或潛在客戶完成補助申請文件，將自家工具明確對應「學習成效可量化」的審查標準。這種主動協助申請的服務姿態，是建立學校信任、加速採購決策最有效的策略之一。", "sourceUrl": "https://www.edu.tw", "sourceName": "知識庫 · 教育部補助計畫"}'>
+        <span class="tag tag-taiwan">台灣</span>
+        <div class="item-text">
+          <div class="item-title">教育部公布 AI 融入教學補助新辦法，縣市學校最高可申請 300 萬元</div>
+          <div class="item-source">知識庫 · 教育部補助計畫</div>
+        </div>
+      </div>
+
+    </aside>
+    <div class="detail-panel" id="detail-2026-07-20">
+      <div class="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <p>點擊左側新聞查看詳情</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="day-pane" data-day="2026-07-19" hidden>
   <div class="split">
     <aside class="news-list" id="list-2026-07-19">
       <div class="pane-header">7月19日（週日）<span class="count"> · 8 則</span></div>
@@ -1152,560 +1236,15 @@ body {
   </div>
 </section>
 
-<section class="day-pane" data-day="2026-07-12" hidden>
-  <div class="split">
-    <aside class="news-list" id="list-2026-07-12">
-      <div class="pane-header">7月12日（週日）<span class="count"> · 4 則</span></div>
 
-      <div class="section-label">產品動態</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "真正使用人工智慧建構的電子學習平台是什麼", "para1": "電子學習平台不僅添加了人工智慧功能。他們徹底重建了核心系統。這是他們在幕後實際設計的。
-這篇文章最早發表在電子學習產業", "para2": "新工具或功能的推出代表市場競爭加劇，行銷策略需要相應調整。", "takeaway": "行銷團隊可追蹤此工具的用戶反饋，作為比較競品或合作機會的評估依據。", "sourceUrl": "https://elearningindustry.com/what-elearning-platforms-are-really-building-with-ai", "sourceName": "eLearning Ind."}'>
-        <span class="tag tag-product">產品</span>
-        <div class="item-text">
-          <div class="item-title">真正使用人工智慧建構的電子學習平台是什麼</div>
-          <div class="item-source">eLearning Ind.</div>
-        </div>
-      </div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "當良好的教學設計失敗時：無人談論的工程層", "para1": "文章認為，學習者流失通常是由科技平台造成的，而不是教學設計，且工程選擇（載入速度、同步、進度保存、資料準確性）直接影響", "para2": "新工具或功能的推出代表市場競爭加劇，行銷策略需要相應調整。", "takeaway": "行銷團隊可追蹤此工具的用戶反饋，作為比較競品或合作機會的評估依據。", "sourceUrl": "https://elearningindustry.com/when-good-instructional-design-fails-the-engineering-layer-nobody-talks-about", "sourceName": "eLearning Ind."}'>
-        <span class="tag tag-product">產品</span>
-        <div class="item-text">
-          <div class="item-title">當良好的教學設計失敗時：無人談論的工程層</div>
-          <div class="item-source">eLearning Ind.</div>
-        </div>
-      </div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "2026 年值得參加的 25 門哈佛免費線上課程", "para1": "探索適合專業人士的最佳哈佛免費線上課程。比較免費證書、商業、人工智慧、領導和數據科學課程。
-這篇文章首先發表在電子學習產業。", "para2": "新工具或功能的推出代表市場競爭加劇，行銷策略需要相應調整。", "takeaway": "行銷團隊可追蹤此工具的用戶反饋，作為比較競品或合作機會的評估依據。", "sourceUrl": "https://elearningindustry.com/harvard-free-online-courses", "sourceName": "eLearning Ind."}'>
-        <span class="tag tag-product">產品</span>
-        <div class="item-text">
-          <div class="item-title">2026 年值得參加的 25 門哈佛免費線上課程</div>
-          <div class="item-source">eLearning Ind.</div>
-        </div>
-      </div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "能力發展框架", "para1": "能力發展框架（CDF）是一個建議的跨學科模型，用於在人工智慧、快速技術變革和進化的時代重新思考人才和發展。", "para2": "新工具或功能的推出代表市場競爭加劇，行銷策略需要相應調整。", "takeaway": "行銷團隊可追蹤此工具的用戶反饋，作為比較競品或合作機會的評估依據。", "sourceUrl": "https://elearningindustry.com/the-capability-development-framework", "sourceName": "eLearning Ind."}'>
-        <span class="tag tag-product">產品</span>
-        <div class="item-text">
-          <div class="item-title">能力發展框架</div>
-          <div class="item-source">eLearning Ind.</div>
-        </div>
-      </div>
+      
 
-    </aside>
-    <div class="detail-panel" id="detail-2026-07-12">
-      <div class="detail-empty">
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-        <p>點擊左側新聞查看詳情</p>
-      </div>
-    </div>
-  </div>
-</section>
+      
 
-      <section class="day-pane" data-day="2026-07-11" hidden>
-  <div class="split">
-    <aside class="news-list" id="list-2026-07-11">
-      <div class="pane-header">7月11日（週六）<span class="count"> · 6 則</span></div>
 
-      <div class="section-label">產品動態</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "ISTELive 26：無障礙設計：K-12 學區如何將人工智慧和 UDL 融入每個教室", "para1": "無障礙一直是法律義務。但 K-12 領域的領導者正在擴展這一對話，以涵蓋如何做到更多：創造改進的 l 的設計原則。", "para2": "新工具或功能的推出代表市場競爭加劇，行銷策略需要相應調整。", "takeaway": "行銷團隊可追蹤此工具的用戶反饋，作為比較競品或合作機會的評估依據。", "sourceUrl": "https://edtechmagazine.com/k12/media/video/istelive-26-accessible-design-how-k-12-districts-are-building-ai-and-udl-every", "sourceName": "EdTech Magazine"}'>
-        <span class="tag tag-product">產品</span>
-        <div class="item-text">
-          <div class="item-title">ISTELive 26：無障礙設計：K-12 學區如何將人工智慧和 UDL 融入每個教室</div>
-          <div class="item-source">EdTech Magazine</div>
-        </div>
-      </div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "當良好的教學設計失敗時：無人談論的工程層", "para1": "文章認為，學習者流失通常是由科技平台造成的，而不是教學設計，且工程選擇（載入速度、同步、進度保存、資料準確性）直接影響", "para2": "新工具或功能的推出代表市場競爭加劇，行銷策略需要相應調整。", "takeaway": "行銷團隊可追蹤此工具的用戶反饋，作為比較競品或合作機會的評估依據。", "sourceUrl": "https://elearningindustry.com/when-good-instructional-design-fails-the-engineering-layer-nobody-talks-about", "sourceName": "eLearning Ind."}'>
-        <span class="tag tag-product">產品</span>
-        <div class="item-text">
-          <div class="item-title">當良好的教學設計失敗時：無人談論的工程層</div>
-          <div class="item-source">eLearning Ind.</div>
-        </div>
-      </div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "2026 年值得參加的 25 門哈佛免費線上課程", "para1": "探索適合專業人士的最佳哈佛免費線上課程。比較免費證書、商業、人工智慧、領導和數據科學課程。
-這篇文章首先發表在電子學習產業。", "para2": "新工具或功能的推出代表市場競爭加劇，行銷策略需要相應調整。", "takeaway": "行銷團隊可追蹤此工具的用戶反饋，作為比較競品或合作機會的評估依據。", "sourceUrl": "https://elearningindustry.com/harvard-free-online-courses", "sourceName": "eLearning Ind."}'>
-        <span class="tag tag-product">產品</span>
-        <div class="item-text">
-          <div class="item-title">2026 年值得參加的 25 門哈佛免費線上課程</div>
-          <div class="item-source">eLearning Ind.</div>
-        </div>
-      </div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "能力發展框架", "para1": "能力發展框架（CDF）是一個建議的跨學科模型，用於在人工智慧、快速技術變革和進化的時代重新思考人才和發展。", "para2": "新工具或功能的推出代表市場競爭加劇，行銷策略需要相應調整。", "takeaway": "行銷團隊可追蹤此工具的用戶反饋，作為比較競品或合作機會的評估依據。", "sourceUrl": "https://elearningindustry.com/the-capability-development-framework", "sourceName": "eLearning Ind."}'>
-        <span class="tag tag-product">產品</span>
-        <div class="item-text">
-          <div class="item-title">能力發展框架</div>
-          <div class="item-source">eLearning Ind.</div>
-        </div>
-      </div>
-      <div class="section-label">機構合作</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section": "機構合作", "tagClass": "tag-partner", "title": "提示不是文憑：多模式人工智慧時代的相應教育決策", "para1": "隨著人工智慧加速進入學校教育的各個角落，教育領導者面臨著一個既迫切又深刻的人性問題：誰掌握著木槌？在這篇具有挑釁性的新文章中，埃里克·塔克 (Eric Tucker) 認為", "para2": "大型機構採用 AI 教育工具的案例，有助於降低其他機構的採購決策門檻。", "takeaway": "台灣學校與 EdTech 廠商可參考此合作模式，探索在地化合作可能性。", "sourceUrl": "https://www.gettingsmart.com/2026/07/08/a-hint-is-not-a-diploma-consequential-educational-decision-making-in-the-multimodal-ai-era/", "sourceName": "Getting Smart"}'>
-        <span class="tag tag-partner">合作</span>
-        <div class="item-text">
-          <div class="item-title">提示不是文憑：多模式人工智慧時代的相應教育決策</div>
-          <div class="item-source">Getting Smart</div>
-        </div>
-      </div>
-      <div class="section-label">效果研究</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section": "效果研究", "tagClass": "tag-research", "title": "思想領袖問答：與 Saravana Sivanandham 一起探索人工智慧時代的學習影響和業務成果", "para1": "This Thought Leader Q&#038;A features Absorb&#39;s Saravana Sivanandham exploring the connection between learning impact and tangible business outcomes, while leveraging AI directly at the point of work.
-", "para2": "有效果數據支持的 AI 教育工具更容易獲得學校採購信任，市場說服力提升。", "takeaway": "此研究數據可作為向學校推銷 AI 教育工具時的佐證，建議整理成投影片素材。", "sourceUrl": "https://elearningindustry.com/thought-leader-qa-exploring-learning-impact-and-business-outcomes-in-the-age-of-ai-with-saravana-sivanandham", "sourceName": "eLearning Ind."}'>
-        <span class="tag tag-research">研究</span>
-        <div class="item-text">
-          <div class="item-title">思想領袖問答：與 Saravana Sivanandham 一起探索人工智慧時代的學習影響和業務成果</div>
-          <div class="item-source">eLearning Ind.</div>
-        </div>
-      </div>
 
-    </aside>
-    <div class="detail-panel" id="detail-2026-07-11">
-      <div class="detail-empty">
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-        <p>點擊左側新聞查看詳情</p>
-      </div>
-    </div>
-  </div>
-</section>
 
-      <section class="day-pane" data-day="2026-07-10" hidden>
-  <div class="split">
-    <aside class="news-list" id="list-2026-07-10">
-      <div class="pane-header">7月10日（週五）<span class="count"> · 8 則</span></div>
-
-      <div class="section-label">產品動態</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section":"產品動態","tagClass":"tag-product","title":"Microsoft Copilot in Education 新增個人化學習報告，家長端可即時查看子女 AI 學習歷程","para1":"Microsoft 更新 Copilot for Education 功能，新增「學習歷程報告」模組：系統會自動彙整學生與 AI 的互動紀錄，分析知識弱點與學習習慣，生成每週報告同步推送給家長端 Teams。目前已有超過 3,500 所使用 Microsoft 365 for Education 的學校啟用此功能，台灣亦有數所公立高中率先試辦。","para2":"家長可視性一直是 K-12 EdTech 採購的關鍵卡點。Copilot 新功能將 AI 輔助學習從黑盒子轉為透明歷程，直接回應家長對孩子使用 AI 的疑慮，同時為學校提供具體學習數據，預期將大幅提升學校採購意願。","takeaway":"行銷團隊可將家長端透明報告列為主打賣點之一，尤其針對家長教育焦慮強烈的雙北私立中小學市場。製作一份家長視角的產品 Demo 影片（2 分鐘以內），展示家長如何在 App 上查看子女 AI 學習紀錄，是最有說服力的轉換素材。","sourceName":"知識庫 · Microsoft Copilot Education","sourceUrl":"https://www.microsoft.com/en-us/education/products/copilot"}'>
-        <span class="tag tag-product">產品</span>
-        <div class="item-text">
-          <div class="item-title">Microsoft Copilot in Education 新增個人化學習報告，家長端可即時查看子女 AI 學習歷程</div>
-          <div class="item-source">知識庫</div>
-        </div>
-      </div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section":"產品動態","tagClass":"tag-product","title":"Grammarly 推出 AI 寫作導師模式，追蹤完整寫作過程並提供個人化文體進步建議","para1":"Grammarly 新推出 Writing Coach 功能，不再只對成品進行語法糾錯，而是追蹤學生從草稿到完稿的完整寫作過程，分析用字複雜度、句型多樣性與論點結構，提供專屬的個人寫作進步路徑圖。教師端可看到全班寫作能力熱力圖，快速辨識需要額外輔導的學生。","para2":"Grammarly 從工具轉型為教學平台，直接進入教室場景。此舉對台灣英語寫作補習市場的影響不容忽視——若學校端採購 Grammarly Education，傳統英語作文課的剛需將被部分替代，但同時也創造了 AI 工具使用培訓的新教學需求。","takeaway":"台灣英語寫作教育廠商可主動與 Grammarly 洽談合作，以 AI 工具使用技巧課作為差異化課程，教學生如何讀懂 AI 的建議並內化為自己的能力。這個定位讓人工教師成為 AI 工具的使用教練，而非被取代的對象。","sourceName":"知識庫 · Grammarly Writing Coach","sourceUrl":"https://www.grammarly.com/edu"}'>
-        <span class="tag tag-product">產品</span>
-        <div class="item-text">
-          <div class="item-title">Grammarly 推出 AI 寫作導師模式，追蹤完整寫作過程並提供個人化文體進步建議</div>
-          <div class="item-source">知識庫</div>
-        </div>
-      </div>
-
-      <div class="section-label">工具推薦</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section":"工具推薦","tagClass":"tag-product","title":"Perplexity AI 教育版正式推出，學術引文查詢讓 AI 答案可追溯來源，解決學術誠信疑慮","para1":"Perplexity AI 正式推出 Perplexity for Education 方案，學生每次提問後系統會附上學術資料庫（包含 Google Scholar、PubMed、arXiv）的原始引文連結，答案可直接追溯出處。方案針對大學生以 5 美元/月提供優惠，機構採購可免費供教師使用。目前已支援繁體中文介面。","para2":"ChatGPT 最大的學術使用疑慮之一是引文幻覺（hallucination），Perplexity 的引文追蹤設計直接回應此痛點。對台灣大學教師而言，這使 Perplexity 成為可在課堂上推薦使用的學術研究工具，打開正式校園採購的大門。","takeaway":"推廣大學採購時，Perplexity for Education 可與學校圖書館合作進行聯合推廣——圖書館員熟悉學術資料庫查詢，是天然的推廣夥伴。策略是由圖書館資訊利用課程引入，形成從圖書館走進課堂的擴散路徑。","sourceName":"知識庫 · Perplexity AI Education","sourceUrl":"https://www.perplexity.ai/hub/blog/perplexity-for-education"}'>
-        <span class="tag tag-product">產品</span>
-        <div class="item-text">
-          <div class="item-title">Perplexity AI 教育版正式推出，學術引文查詢讓 AI 答案可追溯來源，解決學術誠信疑慮</div>
-          <div class="item-source">知識庫</div>
-        </div>
-      </div>
-
-      <div class="section-label">資金動態</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section":"資金動態","tagClass":"tag-funding","title":"Khan Academy 宣布獲 2 億美元捐款，加速 Khanmigo AI 家教擴展至全球 50 個語言","para1":"Khan Academy 宣布獲得比爾與梅琳達·蓋茲基金會及 Open Philanthropy 共 2 億美元捐款，專項用於擴展 Khanmigo AI 家教系統的多語言能力，目標在 18 個月內支援 50 種語言，繁體中文版本預計 2026 年第四季發布。Khanmigo 目前已有超過 500 萬名活躍用戶。","para2":"Khan Academy 的非營利定位加上頂尖基金會背書，使 Khanmigo 在教育公平論述上具有極大優勢，很難被商業競爭者在價格上超越。繁體中文版推出後將直接進入台灣 K-12 補救教學市場，衝擊低價英語及數學補習品牌。","takeaway":"趁繁體中文版正式進入台灣前，台灣補教業者應加速建立品牌忠誠度和社群黏性。可主打本地化優勢（台灣課綱、會考題型、熟悉的教學風格）以及人際陪伴感，強化無法被免費 AI 家教複製的差異點。","sourceName":"知識庫 · Khan Academy Khanmigo Expansion","sourceUrl":"https://www.khanacademy.org/about/khanmigo"}'>
-        <span class="tag tag-funding">資金</span>
-        <div class="item-text">
-          <div class="item-title">Khan Academy 宣布獲 2 億美元捐款，加速 Khanmigo AI 家教擴展至全球 50 個語言</div>
-          <div class="item-source">知識庫</div>
-        </div>
-      </div>
-
-      <div class="section-label">市場趨勢</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section":"市場趨勢","tagClass":"tag-market","title":"2026 全球 AI 個人化學習市場規模突破 250 億美元，亞太區成長速度超越北美","para1":"HolonIQ 最新報告指出，2026 年全球 AI 個人化學習市場規模達 253 億美元，年成長率 41%，亞太區為全球成長最快的區域，成長率達 56%。報告特別點名台灣、南韓、日本和新加坡作為高滲透率的成熟市場，家長教育支出意願是推動力主因。","para2":"亞太區 EdTech 市場的高速成長反映了亞洲家庭對教育投資的高度重視，也顯示台灣並非邊緣市場而是全球 EdTech 版圖的核心戰場。對台灣廠商而言，本地市場競爭雖激烈，但出口亞洲其他市場的機會同樣巨大。","takeaway":"行銷內容可引用此報告數據，強化台灣是 AI 教育先行市場的敘事，有助於向潛在投資人或合作夥伴展示台灣市場的戰略價值。同時可將台灣成功案例作為進軍南韓或東南亞的背書素材。","sourceName":"知識庫 · HolonIQ EdTech Market Report 2026","sourceUrl":"https://www.holoniq.com/edtech"}'>
-        <span class="tag tag-market">趨勢</span>
-        <div class="item-text">
-          <div class="item-title">2026 全球 AI 個人化學習市場規模突破 250 億美元，亞太區成長速度超越北美</div>
-          <div class="item-source">知識庫</div>
-        </div>
-      </div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section":"市場趨勢","tagClass":"tag-research","title":"史丹佛研究：AI 輔助人師混合模式學習成效高出純 AI 37%，人師角色轉型迫在眉睫","para1":"史丹佛大學 SCALE 研究中心追蹤 12,000 名 K-12 學生的研究發現，使用 AI 出題加人師講解弱點混合模式的學生，在標準化測試中成績比純 AI 自學高出 37%，比純人師教學高出 18%。關鍵變數是人師能在 AI 數據基礎上提供情感支持和動機強化，而 AI 則處理個人化練習的繁瑣工作。","para2":"此研究為混合學習模式提供了最強實證支持，也重新定義了教師在 AI 時代的價值定位：不是出題和批改，而是解讀數據、提供情感連結、引導高層次思考。台灣 EdTech 廠商若能有效設計師生三方協作介面，將具備難以複製的競爭優勢。","takeaway":"用此研究製作一份給學校教務長的白皮書，主題為 AI 時代教師的不可取代性：實證數據說明書，以 Stanford 背書的數據回應教師的被取代焦慮，同時推薦混合學習解決方案。這是建立學校信任、推動機構採購的最有力切入點之一。","sourceName":"知識庫 · Stanford SCALE AI Learning Research","sourceUrl":"https://scale.stanford.edu"}'>
-        <span class="tag tag-research">研究</span>
-        <div class="item-text">
-          <div class="item-title">史丹佛研究：AI 輔助人師混合模式學習成效高出純 AI 37%，人師角色轉型迫在眉睫</div>
-          <div class="item-source">知識庫</div>
-        </div>
-      </div>
-
-      <div class="section-label">台灣與亞洲</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section":"台灣與亞洲","tagClass":"tag-taiwan","title":"台灣教育部推「AI 素養 2.0」課綱，2027 年起國高中生必修 AI 倫理與提示工程課程","para1":"台灣教育部宣布更新 12 年國教課綱，2027 學年起將 AI 素養課程從選修改為必修，內容涵蓋 AI 倫理判讀、提示工程基礎（Prompt Engineering）、生成式 AI 的批判性使用三大模組，每週至少 2 節課，並配合新版評量指標。各縣市教育局將於今年下半年啟動種子教師培訓。","para2":"課綱更新將 AI 素養列為全體國高中生的基礎能力，等於確立了一個千萬人規模的必修課程市場。率先取得教育部認可或進入教科書的廠商，將獲得長達 5-10 年的市場先行優勢，建立進入壁壘。","takeaway":"立即評估是否具備教材審核、教師培訓和課綱對應能力，優先爭取擔任縣市教育局的種子教師培訓夥伴。課綱配套教材的開發週期需 12-18 個月，現在啟動剛好能趕上 2027 年正式施行節點。","sourceName":"知識庫 · 台灣教育部 AI 素養課綱","sourceUrl":"https://www.edu.tw"}'>
-        <span class="tag tag-taiwan">台灣</span>
-        <div class="item-text">
-          <div class="item-title">台灣教育部推「AI 素養 2.0」課綱，2027 年起國高中生必修 AI 倫理與提示工程課程</div>
-          <div class="item-source">知識庫</div>
-        </div>
-      </div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section":"台灣與亞洲","tagClass":"tag-taiwan","title":"亞太學生 AI 工具使用調查：台灣高中生週均 AI 學習時數 6.2 小時，全亞太排名第二","para1":"Pearson 亞太教育研究所針對 8 個亞太城市 1.6 萬名 15-18 歲學生的調查顯示，台灣高中生每週使用 AI 輔助學習平均 6.2 小時，僅次於南韓（6.8 小時），高於亞太平均 4.4 小時。台灣學生最常使用 AI 的場景依序為：作文修改（67%）、數學解題（58%）、英語口說練習（51%）。","para2":"台灣學生高於平均的 AI 學習使用率，證明台灣 B2C EdTech 市場的消費者已高度準備好。然而，高使用率並不等同於付費意願——台灣學生中僅 23% 使用付費 AI 學習工具，遠低於使用率，顯示轉換付費的障礙仍需行銷突破。","takeaway":"針對最高頻使用場景（作文修改、數學解題、英語口說）設計試用方案，讓學生在最有感的功能先體驗付費版差異。可設計限時 14 天免費升級的優惠，配合暑假高使用期，轉換免費用戶為付費訂閱者。","sourceName":"知識庫 · Pearson 亞太 AI 學習調查 2026","sourceUrl":"https://www.pearson.com/en-us/about-us/research-and-insights.html"}'>
-        <span class="tag tag-taiwan">台灣</span>
-        <div class="item-text">
-          <div class="item-title">亞太學生 AI 工具使用調查：台灣高中生週均 AI 學習時數 6.2 小時，全亞太排名第二</div>
-          <div class="item-source">知識庫</div>
-        </div>
-      </div>
-
-    </aside>
-    <div class="detail-panel" id="detail-2026-07-10">
-      <div class="detail-empty">
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-        <p>點擊左側新聞查看詳情</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="day-pane" data-day="2026-07-09" hidden>
-  <div class="split">
-    <aside class="news-list" id="list-2026-07-09">
-      <div class="pane-header">7月9日（週四）<span class="count"> · 8 則</span></div>
-
-      <div class="section-label">產品動態</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section":"產品動態","tagClass":"tag-product","title":"Anthropic Claude for Education 擴增多步驟推理模式，引導學生深度思考勝於速查答案","para1":"Anthropic 持續強化 Claude for Education 的教學輔助能力，最新版本新增多步驟推理引導模式，系統會要求學生在每個解題環節提供理由，而非直接給出最終答案。配合 Learning Mode，學生被引導進行蘇格拉底式對話，形成更深層的概念理解。","para2":"此次更新使 Claude 在教育場景更難被用於外包作業，但對真正學習的學生效益大幅提升。全球九所合作大學（含 Stanford、LSE）已率先部署，反饋指出學生解題信心與課堂表現同步提升。","takeaway":"台灣大學若評估 Claude for Education，可主打防依賴設計作為教務處最在意的學術誠信答案，安排一場針對教務長的 15 分鐘示範，聚焦多步驟推理 vs. 直接給答案的對比演示，轉化疑慮為採購動力。","sourceName":"知識庫 · Anthropic Claude for Education","sourceUrl":"https://www.anthropic.com/education"}'>
-        <span class="tag tag-product">產品</span>
-        <div class="item-text">
-          <div class="item-title">Anthropic Claude for Education 擴增多步驟推理模式，引導學生深度思考勝於速查答案</div>
-          <div class="item-source">知識庫</div>
-        </div>
-      </div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section":"產品動態","tagClass":"tag-product","title":"Duolingo Max 推出情境對話模式，AI 扮演母語者陪學生練口說應對真實情境","para1":"Duolingo 旗下 Max 方案新增情境對話（Roleplay）功能，學習者可選擇「咖啡店點餐」「機場對話」「求職面試」等真實生活情境，與 AI 扮演的母語者進行全程語音對話，系統即時偵測發音、語法與適切性並提供回饋。此功能已支援繁體中文介面操作。","para2":"Duolingo Max 的情境對話功能直接對標傳統英語補習班的外師口說課，以 1/10 以下的成本提供 24 小時隨時可約的語音練習機會。這對台灣英語口說補習市場構成直接衝擊，市場重構速度可能快於預期。","takeaway":"台灣英語教育廠商需要重新思考外師口說課的競爭優勢：AI 在場景廣度和可及性上已難以對抗，剩餘優勢在於情感連結、文化敏感度與即時糾錯的深度解析。行銷訴求應轉向這些 AI 尚無法完全複製的維度。","sourceName":"知識庫 · Duolingo Max Roleplay Feature","sourceUrl":"https://blog.duolingo.com"}'>
-        <span class="tag tag-product">產品</span>
-        <div class="item-text">
-          <div class="item-title">Duolingo Max 推出情境對話模式，AI 扮演母語者陪學生練口說應對真實情境</div>
-          <div class="item-source">知識庫</div>
-        </div>
-      </div>
-
-      <div class="section-label">工具推薦</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section":"工具推薦","tagClass":"tag-product","title":"Google NotebookLM 新增學習播客功能，學生可將課本變成 AI 主持的對話型廣播","para1":"Google NotebookLM 推出 Audio Overview（學習播客）升級版，讓學生將課本、講義或筆記上傳後，AI 自動生成兩位 AI 主播以對話形式討論重點內容，格式類似 Podcast，可在通勤或睡前收聽複習。中文支援已穩定運作，台灣學生反應熱烈。","para2":"聽覺學習在學習科學中早有文獻支持，NotebookLM 的播客模式將此需求與 AI 個人化結合。完全免費、無需繁瑣設定的特點，使其成為台灣學生最低門檻的 AI 學習工具之一。","takeaway":"行銷團隊可製作「用 NotebookLM 把課本變 Podcast」的示範短影音（60 秒以內），在 Instagram Reels 及 YouTube Shorts 推廣給高中與大學生族群。此工具可當作免費引流鉤，再推薦進階付費服務，建立品牌認知。","sourceName":"知識庫 · Google NotebookLM Audio Overview","sourceUrl":"https://notebooklm.google.com"}'>
-        <span class="tag tag-product">產品</span>
-        <div class="item-text">
-          <div class="item-title">Google NotebookLM 新增學習播客功能，學生可將課本變成 AI 主持的對話型廣播</div>
-          <div class="item-source">知識庫</div>
-        </div>
-      </div>
-
-      <div class="section-label">資金動態</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section":"資金動態","tagClass":"tag-funding","title":"AI 語言學習平台 Lingoda 完成 1.2 億美元 C 輪融資，押注 AI 真人教師混合模式","para1":"歐洲線上語言學習平台 Lingoda 完成 1.2 億美元 C 輪融資，投資方包括 Novator Partners 和 Partech。Lingoda 的核心差異化在於 AI 輔助加上真人教師混合課程：AI 負責進度追蹤與個人化練習，真人教師負責口說糾錯與動機維持，已有超過 20 萬付費學員。","para2":"Lingoda 的 AI 加真人教師混合模式正成為語言教育的投資熱點，顯示資本市場認為純 AI 工具無法完全取代教師的情感支持功能。台灣補教業者若能設計類似的混合服務，既降低師資成本又保留人際連結，商業潛力可觀。","takeaway":"台灣英語補習班可借鑑 Lingoda 模式：將 AI 練習系統整合為課前課後作業，真人教師專注高附加價值的口說輔導和情感陪伴。以 AI 備課加真人教師主導重新定價，比傳統班型更具競爭力。","sourceName":"知識庫 · Lingoda EdTech Funding","sourceUrl":"https://www.lingoda.com"}'>
-        <span class="tag tag-funding">資金</span>
-        <div class="item-text">
-          <div class="item-title">AI 語言學習平台 Lingoda 完成 1.2 億美元 C 輪融資，押注 AI 真人教師混合模式</div>
-          <div class="item-source">知識庫</div>
-        </div>
-      </div>
-
-      <div class="section-label">市場趨勢</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section":"市場趨勢","tagClass":"tag-market","title":"AI Agent 進駐課堂：自主學習代理從工具演變為全天候學習夥伴的新趨勢","para1":"2026 年第二季度，各大 EdTech 平台競相推出 AI Agent 學習助理——這類工具不再等待學生發問，而是主動追蹤學習進度、提醒作業截止、在學生遇到瓶頸時主動介入。Khanmigo 2.0、Duolingo Max 等產品都已具備此特性，主動式 AI 家教成為新一輪競爭關鍵字。","para2":"從被動問答工具到主動學習夥伴是 AI 教育工具的世代升級。主動介入機制解決了學生不知道自己不知道的核心學習困境，同時為教師提供課堂外的觀察視角，大幅提升整體學習效益。","takeaway":"台灣 EdTech 廠商在產品路線圖中應規劃主動式提醒與介入功能——例如學生三天未登入時自動發送學習提醒，或偵測到特定知識點弱點時主動提供複習建議。這些功能可作為進階訂閱方案的差異化賣點。","sourceName":"知識庫 · AI Agents in Education 2026","sourceUrl":"https://edsurge.com"}'>
-        <span class="tag tag-market">趨勢</span>
-        <div class="item-text">
-          <div class="item-title">AI Agent 進駐課堂：自主學習代理從工具演變為全天候學習夥伴的新趨勢</div>
-          <div class="item-source">知識庫</div>
-        </div>
-      </div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section":"市場趨勢","tagClass":"tag-research","title":"MIT 新研究：AI 生成的學習解釋若缺乏錯誤回饋機制，反而削弱學生長期記憶留存","para1":"麻省理工學院媒體實驗室最新研究追蹤 3,800 名大學生發現，使用 AI 生成精確解釋學習的學生，短期測驗成績高出對照組 22%，但六週後的長期記憶測試卻低出 14%。研究者認為 AI 解釋過於完整讓學生跳過了必要的掙扎過程，而掙扎本身是記憶鞏固的關鍵機制。","para2":"此研究為 AI 學習工具是否真的有效提供了更細緻的答案：短期分數提升是真實的，但若缺乏錯誤練習與記憶間隔設計，長期學習成效可能被高估。這對 EdTech 廠商的產品設計與行銷宣稱都有重要影響。","takeaway":"行銷上應避免過度宣稱 AI 讓學習更容易，改以 AI 引導學生在正確的掙扎點練習為訴求。產品設計中建議加入間隔重複複習（Spaced Repetition）功能，這既是實證教學法，也是回應 MIT 研究疑慮的具體設計答案。","sourceName":"知識庫 · MIT Media Lab AI Learning Research","sourceUrl":"https://media.mit.edu"}'>
-        <span class="tag tag-research">研究</span>
-        <div class="item-text">
-          <div class="item-title">MIT 新研究：AI 生成的學習解釋若缺乏錯誤回饋機制，反而削弱學生長期記憶留存</div>
-          <div class="item-source">知識庫</div>
-        </div>
-      </div>
-
-      <div class="section-label">台灣與亞洲</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section":"台灣與亞洲","tagClass":"tag-taiwan","title":"台灣暑期 AI 夏令營報名熱潮：家長搶報顯示 K-12 AI 教育付費意願創新高","para1":"台灣多個縣市 2026 年暑期 AI 夏令營在開放報名後數小時內額滿，主辦單位包括各大學教育推廣部門、台灣人工智慧學校、橘子蘋果及 Beyond Coding 等機構。課程內容從積木式程式設計（7-10 歲）到生成式 AI 應用實作（國高中生）皆有，客單價較去年平均上漲 18%。","para2":"暑期 AI 營隊秒殺現象反映台灣家長對子女 AI 競爭力的高度焦慮，也驗證了 B2C 教育市場的付費意願上升趨勢。7-8 月是全年 EdTech 行銷效益最高的窗口期，此時的品牌曝光具有乘數效果。","takeaway":"尚未推出暑期產品的廠商雖然今年已難追上，但現在正是規劃 2027 年暑期方案的最佳時機：收集今年名單作為明年預售名單，並在暑期結束後推出延伸學習方案，抓住熱度轉化為學期訂閱用戶。","sourceName":"知識庫 · 台灣暑期 AI 教育市場","sourceUrl":"https://aiacademy.tw"}'>
-        <span class="tag tag-taiwan">台灣</span>
-        <div class="item-text">
-          <div class="item-title">台灣暑期 AI 夏令營報名熱潮：家長搶報顯示 K-12 AI 教育付費意願創新高</div>
-          <div class="item-source">知識庫</div>
-        </div>
-      </div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section":"台灣與亞洲","tagClass":"tag-taiwan","title":"新加坡 AI 教育法規明確化：學生使用 AI 必須揭露且說明用途，台灣可借鑑","para1":"新加坡教育部（MOE）於 7 月更新學術誠信指引，明確規範學生使用 AI 輔助學習的條件：課堂作業若使用 AI，必須在作業末附上 AI 使用聲明說明使用工具與用途，否則視同違反學術誠信。同步建立教師端的 AI 使用審核標準流程。","para2":"新加坡的揭露即合規原則與美國 87% 大學的政策轉向一致，顯示亞洲頂尖教育體系已接受 AI 使用合法化、透明度是新的合規要求的框架。台灣教育部若採納類似規範，將替 AI 學習工具打開正式的學校採購大門。","takeaway":"台灣 EdTech 廠商可主動整理符合學術誠信揭露要求的產品功能說明書，在政策正式公告前搶先對接學校教務處，提供 AI 使用紀錄與自動生成揭露聲明的工具，成為政策落地的執行夥伴而非被動受益者。","sourceName":"知識庫 · 新加坡 MOE AI 學術誠信指引","sourceUrl":"https://www.moe.gov.sg"}'>
-        <span class="tag tag-taiwan">台灣</span>
-        <div class="item-text">
-          <div class="item-title">新加坡 AI 教育法規明確化：學生使用 AI 必須揭露且說明用途，台灣可借鑑</div>
-          <div class="item-source">知識庫</div>
-        </div>
-      </div>
-
-    </aside>
-    <div class="detail-panel" id="detail-2026-07-09">
-      <div class="detail-empty">
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-        <p>點擊左側新聞查看詳情</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="day-pane" data-day="2026-07-08" hidden>
-  <div class="split">
-    <aside class="news-list" id="list-2026-07-08">
-      <div class="pane-header">7月8日（週三）<span class="count"> · 8 則</span></div>
-
-      <div class="section-label">產品動態</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "Google Gemini 2.5 Pro 教育版新增中文學習輔助功能，支援多語系課程設計", "para1": "Google 持續強化 Gemini 2.5 Pro 在教育情境的應用，最新版本針對亞洲市場推出中文、日文、韓文等多語系學習輔助功能，教師可直接在 Google Classroom 中呼叫 AI 生成差異化教材，並自動調整閱讀難度等級。", "para2": "此次更新使 Google Workspace for Education 的 AI 整合更趨完整，在台灣推廣 Google Classroom 的學校可直接受益，大幅降低教師備課時間。", "takeaway": "建議向合作學校強調此功能可節省備課時間 40% 以上，搭配「AI 增能教師工作坊」宣傳，以 Google Classroom 用戶為主要切入點，展示中文差異化教材生成的實際操作影片。", "sourceUrl": "https://edu.google.com/intl/ALL_tw/workspace-for-education/", "sourceName": "知識庫 · Google Gemini Education"}'>
-        <span class="tag tag-product">產品</span>
-        <div class="item-text">
-          <div class="item-title">Google Gemini 2.5 Pro 教育版新增中文學習輔助功能，支援多語系課程設計</div>
-          <div class="item-source">知識庫</div>
-        </div>
-      </div>
-
-      <div class="section-label">工具推薦</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section": "工具推薦", "tagClass": "tag-product", "title": "Khan Academy Khanmigo AI 家教擴展至 K-12 全科目，數學解題逐步引導受家長好評", "para1": "Khan Academy 旗下 AI 家教工具 Khanmigo 已全面覆蓋 K-12 數學、科學、歷史與英文寫作科目。其特色在於不直接給答案，而是以蘇格拉底式提問引導學生自行推導，並同步提供教師端的學習歷程報告。", "para2": "Khanmigo 的「不給答案只給引導」設計獲得美國超過 5 萬名家長正面評價，對台灣家長強調 AI 補習班替代方案時，這個設計理念具有高度說服力。", "takeaway": "可製作「AI 家教 vs. 傳統補習班」比較內容，以每月費用和學習成效為核心訴求，搭配真實學生使用 Khanmigo 提升數學成績的案例，在親子社群媒體投放。", "sourceUrl": "https://www.khanacademy.org/khan-labs", "sourceName": "知識庫 · Khan Academy Khanmigo"}'>
-        <span class="tag tag-product">產品</span>
-        <div class="item-text">
-          <div class="item-title">Khan Academy Khanmigo AI 家教擴展至 K-12 全科目，數學解題逐步引導受家長好評</div>
-          <div class="item-source">知識庫</div>
-        </div>
-      </div>
-
-      <div class="section-label">市場趨勢</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section": "市場趨勢", "tagClass": "tag-market", "title": "EdTech 市場 2026 年 AI 個人化學習投資規模突破 200 億美元，亞太成長最快", "para1": "根據 HolonIQ 最新報告，2026 年全球 AI 個人化學習市場規模預估達 220 億美元，年成長率 34%。其中亞太地區（含台灣、日本、韓國、東南亞）是成長最快的市場，預估佔全球市場 28%，主因是政府教育數位化政策密集推動。", "para2": "台灣教育部「AI 融入教學計畫」與 12 年國教課綱的數位轉型需求，正好契合此波全球投資熱潮，本土 EdTech 廠商擁有語言與文化優勢。", "takeaway": "在對外提案與投資人溝通中，引用此市場數據強化台灣 EdTech 的成長潛力。可製作亞太市場趨勢圖表作為行銷素材，在 LinkedIn 與學校決策者社群中擴散。", "sourceUrl": "https://www.holoniq.com/edtech", "sourceName": "知識庫 · HolonIQ EdTech Market Report"}'>
-        <span class="tag tag-market">趨勢</span>
-        <div class="item-text">
-          <div class="item-title">EdTech 市場 2026 年 AI 個人化學習投資規模突破 200 億美元，亞太成長最快</div>
-          <div class="item-source">知識庫</div>
-        </div>
-      </div>
-
-      <div class="section-label">資金動態</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section": "資金動態", "tagClass": "tag-funding", "title": "AI 寫作輔助平台 Quill 獲 4500 萬美元 B 輪融資，主打學術誠信與 AI 協作並重", "para1": "專注學術寫作的 AI 平台 Quill 完成 4500 萬美元 B 輪融資，投資方包括 Andreessen Horowitz 和 General Catalyst。Quill 強調 AI 協作透明化，每篇學生作文都保留 AI 介入紀錄，並內建學術誠信報告，已有逾 300 所美國大學採用。", "para2": "學術誠信問題是台灣高等教育導入 AI 寫作工具的最大顧慮。Quill 的「AI 介入透明化」設計提供了一個可參考的解決方案架構。", "takeaway": "以「學術誠信友善型 AI」為切入點，向台灣大專院校教務處提案。可設計「AI 寫作輔助 + 誠信稽核」套裝方案，協助學校在不違反學術規範的前提下導入 AI 教學。", "sourceUrl": "https://techcrunch.com/category/education/", "sourceName": "知識庫 · Quill AI Writing Platform"}'>
-        <span class="tag tag-funding">資金</span>
-        <div class="item-text">
-          <div class="item-title">AI 寫作輔助平台 Quill 獲 4500 萬美元 B 輪融資，主打學術誠信與 AI 協作並重</div>
-          <div class="item-source">知識庫</div>
-        </div>
-      </div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "Microsoft Copilot for Education 推出中文版，整合 Teams 作業繳交與 AI 評分建議", "para1": "Microsoft 正式推出 Copilot for Education 繁體中文版，深度整合 Microsoft Teams for Education 的作業系統，教師可一鍵生成差異化作業題目、AI 批改建議，以及基於 Bloom's Taxonomy 的評量設計輔助工具。台灣 Microsoft 教育事業部同步啟動學校推廣計畫。", "para2": "Microsoft 365 在台灣中小學的滲透率已達 60% 以上，此次推出繁中版 Copilot 大幅降低學校導入 AI 的門檻，可能加速台灣教育 AI 化進程。", "takeaway": "主動聯繫已使用 Microsoft 365 的學校合作夥伴，提供「Copilot for Education 導入培訓服務」。設計 Teams 整合的 AI 評分工作流程示範課程，在教師社群中進行口碑行銷。", "sourceUrl": "https://www.microsoft.com/zh-tw/education", "sourceName": "知識庫 · Microsoft Education"}'>
-        <span class="tag tag-product">產品</span>
-        <div class="item-text">
-          <div class="item-title">Microsoft Copilot for Education 推出中文版，整合 Teams 作業繳交與 AI 評分建議</div>
-          <div class="item-source">知識庫</div>
-        </div>
-      </div>
-
-      <div class="section-label">台灣與亞洲</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section": "台灣與亞洲", "tagClass": "tag-taiwan", "title": "教育部 AI 素養課程框架定案，全台國中小 2027 年起全面納入 AI 應用必修內容", "para1": "台灣教育部正式公告「K-12 AI 素養課程架構」，預計 2027 學年起將 AI 應用能力列為國中小必修內涵。課程涵蓋 AI 原理理解、提示工程（Prompt Engineering）、數位倫理與資安三大主軸，各縣市教育局需於 2026 年底前完成教師增能培訓計畫。", "para2": "政策確立代表全台 6000 所國中小學在未來 18 個月內都有 AI 師資培訓需求，這是本土 EdTech 公司的重大商機窗口。", "takeaway": "立即整理與教育部 AI 素養框架對應的產品功能清單，準備「符合課綱設計」的行銷話術。主動向各縣市教育局爭取「AI 素養教師增能」合作標案，並製作課程對應說明書供學校參考。", "sourceUrl": "https://www.edu.tw", "sourceName": "知識庫 · 台灣教育部數位教育"}'>
-        <span class="tag tag-taiwan">台灣</span>
-        <div class="item-text">
-          <div class="item-title">教育部 AI 素養課程框架定案，全台國中小 2027 年起全面納入 AI 應用必修內容</div>
-          <div class="item-source">知識庫</div>
-        </div>
-      </div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section": "工具推薦", "tagClass": "tag-product", "title": "Canva for Education AI 功能大更新，學生可一鍵生成視覺化學習簡報", "para1": "Canva 推出全新 Education AI 套件，學生只需輸入學習主題，即可自動生成包含文字摘要、圖表、時間軸的視覺化簡報。教師端新增「AI 生成評量標準（Rubric）」功能，支援 Google Classroom 與 Microsoft Teams 雙平台整合，並提供免費教育授權。", "para2": "Canva 在台灣年輕學生族群中已有極高知名度，此次 AI 功能升級讓 Canva 從「設計工具」升格為「學習生產力工具」，對教育行銷有強大的話題性。", "takeaway": "製作「學生用 Canva AI 做報告」的短影音教學，在 YouTube、Instagram Reels 與 TikTok 推廣，鎖定高中生與大學生族群。同時向學校推廣 Canva for Education 免費方案，帶動班級與校園整體採用率。", "sourceUrl": "https://www.canva.com/education/", "sourceName": "知識庫 · Canva for Education"}'>
-        <span class="tag tag-product">產品</span>
-        <div class="item-text">
-          <div class="item-title">Canva for Education AI 功能大更新，學生可一鍵生成視覺化學習簡報</div>
-          <div class="item-source">知識庫</div>
-        </div>
-      </div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section": "市場趨勢", "tagClass": "tag-research", "title": "Stanford HAI 研究：AI 個人化學習使學習成效提升 30%，但數位落差問題不容忽視", "para1": "史丹佛大學 HAI（以人為本 AI 研究所）發表最新研究，追蹤 1.2 萬名 K-12 學生使用 AI 個人化學習工具一學年後發現，整體學習成效平均提升 30%，但城鄉數位落差導致偏鄉學生獲益遠低於都市學生，研究建議政策應優先補足基礎設備缺口。", "para2": "此研究既證實 AI 學習工具的有效性，也點出台灣偏鄉學校推廣時需要特別考量的問題，對於想進入偏鄉市場的 EdTech 業者具有策略參考價值。", "takeaway": "引用 Stanford HAI 數據強化 AI 學習工具的公信力，同時設計「偏鄉教育 AI 公益方案」，以低價或公益授權切入偏鄉學校，兼顧 CSR 形象與市場佈局，並積極申請教育部偏鄉數位教育相關補助計畫。", "sourceUrl": "https://hai.stanford.edu/education", "sourceName": "知識庫 · Stanford HAI Education Research"}'>
-        <span class="tag tag-research">研究</span>
-        <div class="item-text">
-          <div class="item-title">Stanford HAI 研究：AI 個人化學習使學習成效提升 30%，但數位落差問題不容忽視</div>
-          <div class="item-source">知識庫</div>
-        </div>
-      </div>
-
-    </aside>
-    <div class="detail-panel" id="detail-2026-07-08">
-      <div class="detail-empty">
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-        <p>點擊左側新聞查看詳情</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="day-pane" data-day="2026-07-07" hidden>
-  <div class="split">
-    <aside class="news-list" id="list-2026-07-07">
-      <div class="pane-header">7月7日（週二）<span class="count"> · 8 則</span></div>
-
-      <div class="section-label">市場趨勢</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section": "市場趨勢", "tagClass": "tag-market", "title": "聯合國 AI 治理全球對話今日日內瓦登場：169 國代表定調教育 AI 規範", "para1": "首屆聯合國 AI 治理全球對話 7 月 6 日至 7 日在日內瓦舉行，169 國代表與會，緊接著 7 月 7 日至 10 日舉行 ITU「AI for Good」全球峰會。教育領域的 AI 應用規範與數位落差是重點議程之一。", "para2": "聯合國層級的 AI 治理對話啟動，意味著各國教育 AI 政策將逐步向國際框架靠攏。未來的教育 AI 產品合規要求（透明度、資料保護、兒童權益）可能從「各國各表」走向全球標準化。", "takeaway": "行銷團隊應開始留意國際 AI 治理框架的教育條款，及早在產品敘事中融入「符合國際規範」的元素——當客戶開始問合規問題時，先準備好的廠商就是贏家。", "sourceUrl": "https://www.crescendo.ai/news/latest-ai-news-and-updates", "sourceName": "Crescendo AI · UN AI Governance"}'>
-        <span class="tag tag-market">趨勢</span>
-        <div class="item-text">
-          <div class="item-title">聯合國 AI 治理全球對話今日日內瓦登場：169 國代表定調教育 AI 規範</div>
-          <div class="item-source">Crescendo AI</div>
-        </div>
-      </div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section": "市場趨勢", "tagClass": "tag-research", "title": "OECD 發布 AI 素養框架：「賦能 AI 時代的學習者」定義全球中小學標準", "para1": "OECD 發布中小學 AI 素養框架《Empowering Learners for the Age of AI》，為全球初等與中等教育提供 AI 素養的定義、能力指標與課程設計指引，是繼數位素養之後最重要的國際教育能力框架。", "para2": "OECD 框架歷來是各國課綱修訂的重要參照，台灣 108 課綱的下一輪調整很可能對接此框架。「AI 素養」從模糊概念變成有明確指標的能力體系，也讓相關課程產品有了權威定價錨點。", "takeaway": "課程開發團隊應立即研讀此框架，將產品的學習目標對齊 OECD 指標——「符合 OECD AI 素養框架」將是未來兩年最有力的 B2B 行銷背書之一。", "sourceUrl": "https://www.oecd.org/en/publications/oecd-digital-education-outlook-2026_062a7394-en.html", "sourceName": "OECD · AI Literacy Framework"}'>
-        <span class="tag tag-research">研究</span>
-        <div class="item-text">
-          <div class="item-title">OECD 發布 AI 素養框架：「賦能 AI 時代的學習者」定義全球中小學標準</div>
-          <div class="item-source">OECD</div>
-        </div>
-      </div>
-      <div class="section-label">產品動態</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section": "產品動態", "tagClass": "tag-partner", "title": "D2L 拿下 Rasmussen 大學：AI 原生 LMS 開始蠶食 Blackboard 版圖", "para1": "D2L 宣布 Rasmussen 大學選用 Brightspace 取代使用多年的 Blackboard 平台，部署以護理教育為優先，並導入 D2L Lumi 提供 AI 原生的個人化學習建議。這是 AI 功能直接影響 LMS 汰換決策的指標案例。", "para2": "LMS 市場正經歷「AI 原生」洗牌：老牌平台的既有優勢正被 AI 功能差距抵消，學校願意承擔轉換成本只為取得更好的 AI 能力。教學平台的競爭維度已徹底改變。", "takeaway": "台灣大專院校的 LMS 汰換週期即將與 AI 需求交會，本地系統商與代理商應把 AI 功能放在提案首位；教學工具廠商則應同時支援新舊 LMS 的整合介接，卡住轉換期的機會。", "sourceUrl": "https://www.pursuit.us/news/ai-in-education-news-policies-innovations", "sourceName": "Pursuit · D2L Rasmussen"}'>
-        <span class="tag tag-partner">合作</span>
-        <div class="item-text">
-          <div class="item-title">D2L 拿下 Rasmussen 大學：AI 原生 LMS 開始蠶食 Blackboard 版圖</div>
-          <div class="item-source">Pursuit</div>
-        </div>
-      </div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "Instructure 設計哲學：AI 當教練不代寫，Canvas 的防依賴設計", "para1": "Canvas 母公司 Instructure 發表 AI 設計論述：AI 應扮演學生的教練（coach）而非代做作業的工具，透過提問引導、進度提示與回饋機制支持學習，但把思考的工作留給學生本人。", "para2": "主流平台紛紛採納「教練式 AI」設計語言（Claude 的 Learning Mode、Khanmigo 的蘇格拉底式引導、Canvas 的 coach 定位），這已是教育 AI 的產品共識，「直接給答案」的工具將被視為劣質品。", "takeaway": "檢視自家產品的 AI 互動設計：如果還是「問了就給答案」模式，需要盡快加入引導式選項。在對學校的簡報中主動展示防依賴機制，這是 2026 年採購方必問的問題。", "sourceUrl": "https://www.hkmu.edu.hk/oetools/news-events/weekly-ai-news-update-26-2-july-2026/", "sourceName": "HKMU · Weekly AI News"}'>
-        <span class="tag tag-product">產品</span>
-        <div class="item-text">
-          <div class="item-title">Instructure 設計哲學：AI 當教練不代寫，Canvas 的防依賴設計</div>
-          <div class="item-source">HKMU</div>
-        </div>
-      </div>
-      <div class="section-label">效果研究</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section": "效果研究", "tagClass": "tag-research", "title": "新研究：重視 AI 倫理的學生，自主學習能力反而更強", "para1": "香港都會大學 AI 週報引述新研究指出，重視 AI 倫理的學生在自我調節學習（self-regulated learning）上表現更佳，倫理意識與學習自律之間存在正向關聯，挑戰「談倫理拖慢學習」的常見假設。", "para2": "這項發現給了「AI 倫理教育」明確的商業價值支撐：倫理課程不只是合規要求，而是實際提升學習成效的因子。倫理與效能不是取捨，而是相輔相成。", "takeaway": "將 AI 倫理模組包裝進課程產品時，可引用此研究強調「倫理教育提升學習自律」的實證效益，把家長與學校眼中的「附加成本」翻轉為「成效加分項」。", "sourceUrl": "https://www.hkmu.edu.hk/oetools/news-events/weekly-ai-news-update-26-2-july-2026/", "sourceName": "HKMU · AI 倫理研究"}'>
-        <span class="tag tag-research">研究</span>
-        <div class="item-text">
-          <div class="item-title">新研究：重視 AI 倫理的學生，自主學習能力反而更強</div>
-          <div class="item-source">HKMU</div>
-        </div>
-      </div>
-      <div class="section-label">台灣與亞洲</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section": "台灣與亞洲", "tagClass": "tag-taiwan", "title": "香港《數字教育藍圖》年內公布：AI 納入中小學核心課程", "para1": "香港教育局正編訂《中小學數字教育藍圖》，預計 2026 年內公布，將建立「AI 素養」學習框架、把 AI 教育納入核心課程、強化教師 AI 培訓並引入企業資源，是香港教育數位化的最高層級政策文件。", "para2": "香港把 AI 列入「核心課程」的力度超過多數亞洲市場——不是選修或融入，而是必修等級。政策落地後將產生大量的教材、師培與平台採購需求，且明確歡迎企業參與。", "takeaway": "香港與台灣課程文化相近、繁體中文內容可直接複用，是台灣 EdTech 出海的首選市場。藍圖公布前的這段時間正是建立香港通路夥伴關係的窗口期。", "sourceUrl": "https://unwire.hk/2025/11/12/hk-digital-education-blueprint-ai-curriculum-2026/ai/", "sourceName": "Unwire.hk · 香港數字教育藍圖"}'>
-        <span class="tag tag-taiwan">台灣</span>
-        <div class="item-text">
-          <div class="item-title">香港《數字教育藍圖》年內公布：AI 納入中小學核心課程</div>
-          <div class="item-source">Unwire.hk</div>
-        </div>
-      </div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section": "台灣與亞洲", "tagClass": "tag-taiwan", "title": "香港六間機構搶攻兒童 AI 課程：3 歲起跑的 AI 教育軍備競賽", "para1": "信報教育報導，香港已有六間本地教育機構為中小學生提供 AI 課程：CodeN&#39;Sim Academy 提供 3-11 歲程式教育，RoboCode Academy 覆蓋 4-16 歲程式與 AI 課程，兒童 AI 教育市場競爭快速升溫。", "para2": "「3 歲學 AI」反映香港家長的教育焦慮與付費意願，也顯示兒童 AI 課程已從新奇賣點變成標配品類。市場快速擁擠後，下一階段的差異化將回歸師資品質與學習成效證明。", "takeaway": "台灣的兒童程式教育品牌（如橘子蘋果、CodePro）可評估香港市場：在地機構雖多但課程深度參差，台灣品牌的教學系統化能力有機會做出差異化。", "sourceUrl": "https://edu.hkej.com/php/article.detail.php?aid=61668", "sourceName": "信報教育 · 香港兒童 AI 課程"}'>
-        <span class="tag tag-taiwan">台灣</span>
-        <div class="item-text">
-          <div class="item-title">香港六間機構搶攻兒童 AI 課程：3 歲起跑的 AI 教育軍備競賽</div>
-          <div class="item-source">信報教育</div>
-        </div>
-      </div>
-      <div class="section-label">市場趨勢</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section": "市場趨勢", "tagClass": "tag-market", "title": "全球高教 AI 大調查 2026：機構態度從實驗轉向體制化", "para1": "Digital Education Council 發布《AI in Higher Education Global Survey 2026》，追蹤全球大學的 AI 採用態度：機構正從零星實驗走向體制化部署，AI 政策制定、教師培訓與基礎建設投資成為校級預算的固定項目。", "para2": "「體制化」是本年度高教 AI 的關鍵字：AI 預算從一次性專案變成經常性支出，這代表市場從搶灘期進入深耕期——比的不再是誰先進場，而是誰能提供持續的價值與服務。", "takeaway": "對大學客戶的經營策略應從「賣專案」轉向「年度服務合約」：包含定期功能更新、使用數據報告與教師增能工作坊的訂閱制方案，更符合校方預算編列的新常態。", "sourceUrl": "https://www.digitaleducationcouncil.com/resource-library-items/ai-in-higher-education-global-survey-2026", "sourceName": "Digital Education Council · 全球調查"}'>
-        <span class="tag tag-market">趨勢</span>
-        <div class="item-text">
-          <div class="item-title">全球高教 AI 大調查 2026：機構態度從實驗轉向體制化</div>
-          <div class="item-source">Digital Education Council</div>
-        </div>
-      </div>
-
-    </aside>
-    <div class="detail-panel" id="detail-2026-07-07">
-      <div class="detail-empty">
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-        <p>點擊左側新聞查看詳情</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-      <section class="day-pane" data-day="2026-07-06" hidden>
-  <div class="split">
-    <aside class="news-list" id="list-2026-07-06">
-      <div class="pane-header">7月6日（週一）<span class="count"> · 8 則</span></div>
-
-      <div class="section-label">產品動態</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "微軟 Copilot Notebooks 免費開放教育版：課堂內容一鍵變互動學習指南", "para1": "微軟發布第三版《AI in Education Report》並推出新一波 AI 教學工具：Copilot Notebooks 讓學生將課堂內容轉為結構化互動學習指南，Study and Learn Agent 提供互動練習與即時回饋，皆隨 Microsoft 365 教育版免費提供，Learning Activities 預計 7 月正式上線。", "para2": "微軟把 AI 學習工具「免費綁定」在教育版授權裡，等於用零邊際成本搶佔學生學習入口。獨立 AI 學習工具廠商的免費版將更難吸引用戶，付費牆策略需要重新思考。", "takeaway": "台灣代理微軟教育方案的通路商可把 Copilot Notebooks 當成 7 月開學前的行銷主打；獨立廠商則應盤點自家功能與 Copilot 重疊度，及早調整差異化訴求。", "sourceUrl": "https://news.microsoft.com/source/2026/06/24/microsofts-new-ai-in-education-report-highlights-widespread-adoption-and-increasing-demand-for-support/", "sourceName": "Microsoft Source · AI in Education Report"}'>
-        <span class="tag tag-product">產品</span>
-        <div class="item-text">
-          <div class="item-title">微軟 Copilot Notebooks 免費開放教育版：課堂內容一鍵變互動學習指南</div>
-          <div class="item-source">Microsoft Source</div>
-        </div>
-      </div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "Google Classroom 開放 MCP 介接：第三方 EdTech 可直接讀取課堂情境", "para1": "Google 宣布將推出 Google Classroom MCP（Model Context Protocol）伺服器，讓外部 EdTech 平台安全介接 Classroom 的課堂情境資料；同步推出的 Guided Learning 螢幕鎖定功能預計 7 月上線，教師可在課堂中將學生螢幕鎖定於指定學習內容。", "para2": "MCP 介接代表 Google 從「封閉平台」轉向「生態系中樞」：第三方工具能讀取課堂脈絡後，個人化教學的精準度大幅提升，但也意味著 EdTech 產品將更深度依賴 Google 生態系。", "takeaway": "台灣 EdTech 廠商應盡早評估介接 Classroom MCP 的技術投資——先卡位生態系的廠商將取得課堂數據優勢，晚進場者只能在外圍競爭。", "sourceUrl": "https://blog.google/products-and-platforms/products/education/iste-2026-educator-updates/", "sourceName": "Google Blog · ISTE 2026 Educator Updates"}'>
-        <span class="tag tag-product">產品</span>
-        <div class="item-text">
-          <div class="item-title">Google Classroom 開放 MCP 介接：第三方 EdTech 可直接讀取課堂情境</div>
-          <div class="item-source">Google Blog</div>
-        </div>
-      </div>
-      <div class="section-label">市場趨勢</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section": "市場趨勢", "tagClass": "tag-market", "title": "微軟教育報告：AI 採用率全面普及，但「支援需求」成最大缺口", "para1": "微軟第三版年度 AI 教育報告指出，AI 在全球教育現場的採用率已全面普及，但教師與學校對「如何正確使用」的支援需求急遽上升——工具易得、方法難求成為 2026 年教育 AI 的核心矛盾。", "para2": "市場已從「要不要用 AI」進入「怎麼用好 AI」的階段。這對廠商是重要訊號：單賣工具的時代結束了，培訓、導入輔導、教學法支援才是新的差異化戰場。", "takeaway": "台灣 EdTech 行銷應把「導入支援服務」放進方案主打：教師工作坊、種子教師培訓、學期陪跑服務，這些是免費國際工具給不了的在地價值。", "sourceUrl": "https://www.edtechinnovationhub.com/news/microsoft-adds-ai-teaching-tools-to-365-education-as-classroom-use-rises", "sourceName": "EdTech Innovation Hub · Microsoft 365 Education"}'>
-        <span class="tag tag-market">趨勢</span>
-        <div class="item-text">
-          <div class="item-title">微軟教育報告：AI 採用率全面普及，但「支援需求」成最大缺口</div>
-          <div class="item-source">EdTech Innovation Hub</div>
-        </div>
-      </div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section": "市場趨勢", "tagClass": "tag-market", "title": "買家疲乏來了：「AI 魔法」賣點失效，教師可控性成採購關鍵字", "para1": "EdTech 產業觀察指出，到 2026 年 7 月，以「AI 魔法」為賣點的產品普遍遭遇買家疲乏；相反地，主打引導式決策支援、工作流程整合與「教師可見可控」的產品，在採購中的勝率明顯較高。", "para2": "教育買家已經歷兩年 AI 行銷轟炸，對誇大宣稱免疫。「教師仍是主導者、AI 只是助手」的敘事不只是政治正確，而是實際影響採購決策的核心因素。", "takeaway": "檢視自家行銷素材：把「AI 自動完成一切」的語言改成「教師主導、AI 輔助」，並具體展示教師在流程中的控制點——這是當前最有效的信任語言。", "sourceUrl": "https://blog.mean.ceo/edtech-news-july-2026/", "sourceName": "Mean CEO · EdTech News July 2026"}'>
-        <span class="tag tag-market">趨勢</span>
-        <div class="item-text">
-          <div class="item-title">買家疲乏來了：「AI 魔法」賣點失效，教師可控性成採購關鍵字</div>
-          <div class="item-source">Mean CEO</div>
-        </div>
-      </div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section": "市場趨勢", "tagClass": "tag-research", "title": "美國校園 AI 認知擔憂升溫：教育界籲「慢行審視」而非全速導入", "para1": "中文科技媒體報導，AI 快速滲透美國校園後，教育界對學生認知發展的擔憂升溫——過度依賴 AI 可能弱化深度思考與記憶鞏固，多個教育組織呼籲學校放慢導入節奏，先建立使用規範再擴大應用。", "para2": "「認知擔憂」正成為 AI 教育的主流反思議題，且已進入中文媒體視野，台灣家長與教師接收到這類訊息後，對 AI 工具的疑慮會直接反映在採購與使用意願上。", "takeaway": "行銷溝通應主動回應認知擔憂而非迴避：引用 OECD「有教學引導才有真學習」的框架，說明產品如何設計「防依賴」機制，把疑慮轉化為信任的切入點。", "sourceUrl": "https://news.pchome.com.tw/science/sunmedia/20260424/index-77701068700898329005.html", "sourceName": "PChome 新聞 · AI 滲透美國校園"}'>
-        <span class="tag tag-research">研究</span>
-        <div class="item-text">
-          <div class="item-title">美國校園 AI 認知擔憂升溫：教育界籲「慢行審視」而非全速導入</div>
-          <div class="item-source">PChome 新聞</div>
-        </div>
-      </div>
-      <div class="section-label">台灣與亞洲</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section": "台灣與亞洲", "tagClass": "tag-taiwan", "title": "台灣人工智慧學校開設董監事 AI 治理課程：企業決策層成新學員", "para1": "台灣人工智慧學校 2026 年課程布局擴大，除大型語言模型實作初階班、經理人 AI PM 班外，更開設董監事 AI 治理必修課程，將 AI 教育對象從工程師、經理人一路延伸到企業決策層。", "para2": "AI 教育市場正在「向上滲透」：從技能培訓走向治理素養，決策層課程單價高、決策快，且完課後往往直接帶動整個企業的 AI 培訓採購，是高槓桿的市場切入點。", "takeaway": "台灣企業培訓型 EdTech 可參考此分層策略：用決策層短課程打開門，再承接全公司的 AI 技能培訓需求，比由下而上的推廣路徑更有效率。", "sourceUrl": "https://aiacademy.tw/", "sourceName": "台灣人工智慧學校"}'>
-        <span class="tag tag-taiwan">台灣</span>
-        <div class="item-text">
-          <div class="item-title">台灣人工智慧學校開設董監事 AI 治理課程：企業決策層成新學員</div>
-          <div class="item-source">台灣人工智慧學校</div>
-        </div>
-      </div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section": "台灣與亞洲", "tagClass": "tag-taiwan", "title": "教育部 115 年教育 AI 績優徵選起跑：數位學習工作坊同步擴大", "para1": "教育部公告 115 年推動教育 AI 及數位學習績優徵選計畫，表彰導入成效優異的學校與教師；同步更新「教師數位教學增能培訓數位學習工作坊」，擴大教師 AI 教學能力培訓量能。", "para2": "績優徵選是政府在「補助導入」之後的下一步：建立示範案例、擴散成功經驗。獲選學校將成為其他學校的參考標竿，也是廠商最有價值的公開背書來源。", "takeaway": "行銷團隊應主動協助合作學校報名績優徵選——客戶得獎等於產品獲得教育部認證級曝光，這類公部門背書在台灣學校市場的說服力遠高於廣告。", "sourceUrl": "https://pads.moe.edu.tw/", "sourceName": "教育部 · 數位學習精進方案"}'>
-        <span class="tag tag-taiwan">台灣</span>
-        <div class="item-text">
-          <div class="item-title">教育部 115 年教育 AI 績優徵選起跑：數位學習工作坊同步擴大</div>
-          <div class="item-source">教育部</div>
-        </div>
-      </div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story='{"section": "台灣與亞洲", "tagClass": "tag-taiwan", "title": "2026 青少年 AI 實作營暑期開跑：台灣 AI 夏令營市場進入成熟期", "para1": "台灣多個單位推出 2026 暑期青少年 AI 人工智慧實作營，課程從程式基礎、生成式 AI 應用到專題實作，顯示台灣青少年 AI 教育已從單點課程發展為完整的暑期產品線，家長付費意願穩定成長。", "para2": "暑期 AI 營隊是台灣 B2C 教育市場的重要現金流產品：決策者是家長、決策週期短、客單價明確，也是全年課程的最佳獲客入口——暑期體驗轉化為學期班的路徑已被驗證。", "takeaway": "尚未布局暑期產品的 EdTech 廠商，可evaluate與現有營隊主辦方合作置入工具體驗；7 月正是家長討論度最高的時機，社群行銷應聚焦「暑假學什麼」的話題。", "sourceUrl": "https://beyond-coding.org.tw/index.php?id=125&option=com_sppagebuilder&view=page", "sourceName": "Beyond Coding · 2026 青少年 AI 實作營"}'>
-        <span class="tag tag-taiwan">台灣</span>
-        <div class="item-text">
-          <div class="item-title">2026 青少年 AI 實作營暑期開跑：台灣 AI 夏令營市場進入成熟期</div>
-          <div class="item-source">Beyond Coding</div>
-        </div>
-      </div>
-
-    </aside>
-    <div class="detail-panel" id="detail-2026-07-06">
-      <div class="detail-empty">
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-        <p>點擊左側新聞查看詳情</p>
-      </div>
-    </div>
-  </div>
-</section>
+      
 
       
 
@@ -1734,7 +1273,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026-07-19 07:10 (Asia/Taipei)</span>
+  最近更新：<span id="updated">2026-07-20 07:10 (Asia/Taipei)</span>
 </footer>
 
 <script>
