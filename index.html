@@ -489,8 +489,8 @@ body {
   <button class="tab" data-week="0" data-day="2026-07-20"><span class="tab-dow">週一</span><span class="tab-date">7/20</span></button>
   <button class="tab" data-week="0" data-day="2026-07-21"><span class="tab-dow">週二</span><span class="tab-date">7/21</span></button>
   <button class="tab" data-week="0" data-day="2026-07-22"><span class="tab-dow">週三</span><span class="tab-date">7/22</span></button>
-  <button class="tab active" data-week="0" data-day="2026-07-23"><span class="tab-dow">週四</span><span class="tab-date">7/23</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-week="0" data-day="2026-07-24"><span class="tab-dow">週五</span><span class="tab-date">7/24</span></button>
+  <button class="tab" data-week="0" data-day="2026-07-23"><span class="tab-dow">週四</span><span class="tab-date">7/23</span></button>
+  <button class="tab active" data-week="0" data-day="2026-07-24"><span class="tab-dow">週五</span><span class="tab-date">7/24</span><span class="tab-today">今日</span></button>
   <button class="tab empty" data-week="0" data-day="2026-07-25"><span class="tab-dow">週六</span><span class="tab-date">7/25</span></button>
   <button class="tab empty" data-week="0" data-day="2026-07-26"><span class="tab-dow">週日</span><span class="tab-date">7/26</span></button>
   <button class="tab" data-week="1" data-day="2026-07-13"><span class="tab-dow">週一</span><span class="tab-date">7/13</span></button>
@@ -511,7 +511,95 @@ body {
 </nav>
 
 <div id="panesContainer">
-<section class="day-pane" data-day="2026-07-23">
+<section class="day-pane" data-day="2026-07-24">
+  <div class="split">
+    <aside class="news-list" id="list-2026-07-24">
+      <div class="pane-header">7月24日（週五）<span class="count"> · 8 則</span></div>
+
+      <div class="section-label">產品動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "OpenAI o3-mini 教育版正式上線，數學解題能力讓 AI 家教效率倍增", "para1": "OpenAI 正式發布 o3-mini 教育專用版，針對數學、物理、化學等理科解題場景深度優化，推理鏈長度可自適應調整。根據內部測試數據，o3-mini 在高中程度數學問題的解題正確率達 94.2%，顯著優於前代 GPT-4o。定價較完整版本 o3 低 85%，教育機構採購具有明確成本優勢。", "para2": "數學一直是台灣家長最看重的學科補強需求，o3-mini 的推出讓低成本 AI 數學家教從構想變為現實。對台灣 EdTech 業者而言，這是快速升級 AI 解題功能的最佳視窗，搶先整合者將取得市場先機。", "takeaway": "立即申請 o3-mini API 試用資格，測試在自家平台的數學解題整合效果，重點評估中文數學題目的繁體字識別準確度。若效果達標，可策劃「AI 數學家教挑戰」行銷活動，邀請用戶上傳難題讓 AI 現場示範，帶動社群病毒式傳播。", "sourceName": "知識庫 · OpenAI o3 Education", "sourceUrl": "https://openai.com/api"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">OpenAI o3-mini 教育版正式上線，數學解題能力讓 AI 家教效率倍增</div>
+          <div class="item-source">知識庫 · OpenAI o3 Education</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "Perplexity AI 推出教育版 Pro，學術引用自動標注讓學生告別抄襲風險", "para1": "AI 搜尋引擎 Perplexity 發布 Perplexity Pro for Education，核心功能包含學術論文即時引用生成（支援 APA/MLA 格式）、可信度評分系統，以及學習報告自動摘要。教育版強制標注所有資訊來源，確保學生不會無意中引用未標注資料。訂閱費每月 8 美元，較一般版本低 45%。", "para2": "Perplexity 以「負責任 AI 搜尋」為核心賣點，直接回應學術機構對 AI 助長抄襲的核心疑慮。台灣大學生和研究生群體對此需求旺盛，且月費合理，B2C 訂閱轉化潛力高。", "takeaway": "製作「如何用 Perplexity Pro 正確做學術研究」教學影片，投放於大學生常聚集的 Dcard、PTT 學術版，以工具評測口吻建立品牌在學生族群的知名度，同時自然帶入自家平台的互補功能。", "sourceName": "知識庫 · Perplexity AI Education", "sourceUrl": "https://www.perplexity.ai"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">Perplexity AI 推出教育版 Pro，學術引用自動標注讓學生告別抄襲風險</div>
+          <div class="item-source">知識庫 · Perplexity AI Education</div>
+        </div>
+      </div>
+
+      <div class="section-label">工具推薦</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "工具推薦", "tagClass": "tag-product", "title": "Quizlet AI 全面升級：自動從課本截圖生成考試題庫，備考效率革命性提升", "para1": "線上學習工具 Quizlet 發布 AI 生成考題功能大更新，學生只需用手機拍攝課本頁面，AI 即可在 30 秒內自動識別重點概念並生成選擇題、填空題與問答題混合題庫。新功能支援中文識別，可處理繁體中文課本圖片。Quizlet 公布數據顯示，使用 AI 題庫的學生考試成績平均提升 19%。", "para2": "「拍照即出題」消除了學生自製題庫最耗時的手動輸入環節，大幅降低備考工具的使用門檻。此功能對台灣應考族群（尤其高中生及大學生）的吸引力極強，是帶動訂閱轉換的殺手級功能。", "takeaway": "拍攝一段「用 Quizlet 拍教科書變題庫」的 60 秒操作示範，在 Instagram Reels 和 TikTok 發布，鎖定備考高峰期（學測前、期末考前）投放廣告。同時評估自家平台是否可開發類似的「拍照出題」功能，搶在競品前推出台灣本地課本的最佳化版本。", "sourceName": "知識庫 · Quizlet AI Study Tools", "sourceUrl": "https://quizlet.com"}'>
+        <span class="tag tag-product">工具</span>
+        <div class="item-text">
+          <div class="item-title">Quizlet AI 全面升級：自動從課本截圖生成考試題庫，備考效率革命性提升</div>
+          <div class="item-source">知識庫 · Quizlet AI Study Tools</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "工具推薦", "tagClass": "tag-product", "title": "ElevenLabs 教育版讓教師一鍵將講義轉為有聲教材，輔助特殊生學習效果顯著", "para1": "AI 語音合成公司 ElevenLabs 推出教師專屬計畫，教師每月可免費生成 10 萬字元的高品質 AI 語音，將課程講義、作業說明、考題內容轉為音頻檔案，並支援多種說話速度與語調調整。中文語音品質已達專業有聲書水準，特別適合為閱讀障礙、視力受損或注意力不集中的學生提供無障礙學習素材。", "para2": "有聲教材的製作過去需要大量錄音時間或昂貴外包費用，ElevenLabs 將這個門檻幾乎歸零。台灣融合教育政策正加強推動特殊生在一般學校就讀，有聲教材需求將持續成長，相關工具市場空間顯著。", "takeaway": "鎖定特殊教育教師與融合班級任課教師群體，設計「10 分鐘製作全學期有聲講義包」的培訓工作坊，強調免費方案的可操作性。與縣市特殊教育輔導團合作辦理，能快速打入公立學校系統並建立正面口碑。", "sourceName": "知識庫 · ElevenLabs Education", "sourceUrl": "https://elevenlabs.io"}'>
+        <span class="tag tag-product">工具</span>
+        <div class="item-text">
+          <div class="item-title">ElevenLabs 教育版讓教師一鍵將講義轉為有聲教材，輔助特殊生學習效果顯著</div>
+          <div class="item-source">知識庫 · ElevenLabs Education</div>
+        </div>
+      </div>
+
+      <div class="section-label">資金動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "資金動態", "tagClass": "tag-funding", "title": "AI 職場培訓平台 Degreed 完成 1.2 億美元融資，技能圖譜與 AI 推薦引擎成核心賣點", "para1": "企業技能培訓平台 Degreed 宣布完成 1.2 億美元 E 輪融資，由 General Atlantic 領投，本輪估值達 14 億美元。Degreed 以 AI 動態技能圖譜（Skill Graph）著稱，能即時追蹤員工技能發展並推薦學習路徑，新資金將用於整合生成式 AI 課程自動生成功能。目前已與全球超過 400 家企業客戶簽約，台灣代理商正在洽談中。", "para2": "企業培訓市場對 AI 個人化學習路徑的採購意願正快速提升，Degreed 的巨額融資反映資本對「技能可視化 + AI 推薦」商業模型的強力背書。台灣科技業人才發展預算龐大，此類平台的落地潛力顯著。", "takeaway": "追蹤 Degreed 台灣代理商洽談進展，若自家產品服務企業培訓市場，應盡快建立「AI 技能診斷 + 學習路徑推薦」的功能展示案例，在 HR 圈的 LinkedIn 與人資社群中發布，吸引大型企業決策者主動接觸。", "sourceName": "知識庫 · Degreed Enterprise Learning", "sourceUrl": "https://degreed.com"}'>
+        <span class="tag tag-funding">資金</span>
+        <div class="item-text">
+          <div class="item-title">AI 職場培訓平台 Degreed 完成 1.2 億美元融資，技能圖譜與 AI 推薦引擎成核心賣點</div>
+          <div class="item-source">知識庫 · Degreed Enterprise Learning</div>
+        </div>
+      </div>
+
+      <div class="section-label">市場趨勢</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "市場趨勢", "tagClass": "tag-market", "title": "週末特輯：AI 家長焦慮指數創新高，「擔心孩子依賴 AI」成全台家長頭號顧慮", "para1": "根據台灣線上親子社群平台最新民調，逾 67% 的台灣家長表示對孩子使用 AI 學習工具「感到擔憂」，其中 81% 的焦慮源自「擔心孩子停止自主思考」，其次為「不確定 AI 內容是否正確」（58%）及「孩子沉迷 AI 無法自拔」（44%）。同時，76% 的家長表示「如果有引導式 AI，而不是直接給答案，我就比較放心讓孩子用」。", "para2": "家長的核心焦慮明確指出市場缺口：「引導式 AI」而非「代做式 AI」才是台灣家長願意付費的產品型態。這是台灣 EdTech 品牌建立差異化論述最清晰的機會，訴求重點應從功能轉向教育哲學。", "takeaway": "在所有面向家長的行銷材料中，明確說明自家 AI 工具是「引導思考型」還是「代做型」，若屬前者，以顯眼方式強調並舉出具體互動範例（例如：學生答錯時 AI 如何提示而非直接告訴答案）。此訴求能顯著降低家長的試用阻力並提升付費意願。", "sourceName": "知識庫 · 台灣 AI 教育親子調查", "sourceUrl": "https://www.edu.tw"}'>
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">週末特輯：AI 家長焦慮指數創新高，「擔心孩子依賴 AI」成全台家長頭號顧慮</div>
+          <div class="item-source">知識庫 · 台灣 AI 教育親子調查</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "市場趨勢", "tagClass": "tag-market", "title": "ChatGPT 教育使用全球調查：學生最愛用於報告寫作，教師最愛用於備課規劃", "para1": "國際教育研究機構 RAND Corporation 發布全球 28 國、逾 3.8 萬名師生的 ChatGPT 使用行為調查。學生使用前三名：撰寫報告初稿（73%）、整理筆記摘要（61%）、查找學習資源（58%）。教師使用前三名：設計課程大綱（68%）、起草家長溝通信件（55%）、生成差異化作業版本（51%）。調查並發現師生對 AI 學術誠信的理解存在顯著落差。", "para2": "此調查揭示了 AI 在教育場景的兩條清晰主線：學生端「省力」與教師端「省時」。台灣 EdTech 若能同時覆蓋這兩條需求鏈，並以明確的誠信機制連結雙方，將有機會打造師生共用的整合型平台，提高客戶黏著度。", "takeaway": "以 RAND 調查數據為引，製作「台灣師生 AI 工具使用大調查」，自行在用戶群或社群中發起問卷，蒐集在地數據。在地數據比全球數據更具說服力，可作為下一季公關稿的核心素材，同時建立自家品牌的市場調研形象。", "sourceName": "知識庫 · RAND Education AI Survey", "sourceUrl": "https://www.rand.org/education-and-labor.html"}'>
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">ChatGPT 教育使用全球調查：學生最愛用於報告寫作，教師最愛用於備課規劃</div>
+          <div class="item-source">知識庫 · RAND Education AI Survey</div>
+        </div>
+      </div>
+
+      <div class="section-label">台灣與亞洲</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "台灣與亞洲", "tagClass": "tag-taiwan", "title": "教育部啟動「AI 素養種子教師」全台徵選，首批 500 名通過認證享三年專業加給", "para1": "台灣教育部正式公告「AI 素養種子教師認證計畫」，面向全國公私立中小學教師開放報名，預計首批認證 500 名教師，通過認證者三年內享有每月 3,000 元 AI 素養加給，並獲優先分派參與縣市 AI 教學示範課計畫。認證考試分三階段：線上課程（30 小時）、實作評量（AI 工具應用教案設計）、班級示範教學。報名截止日為 8 月 31 日。", "para2": "政府首次以薪資加給方式激勵教師主動提升 AI 素養，預計帶動大量教師湧入培訓市場。台灣現有約 16 萬名中小學教師，若有 5% 積極備考，就是逾 8,000 人的培訓市場，且需求集中在短期內爆發。", "takeaway": "立即開發「AI 素養種子教師認證備考班」課程，時間壓縮為週末兩天的密集班型，定價建議在 3,000-5,000 元之間，以三年加給作為投資報酬率說明（「繳一次課費，三年回收逾 10 萬元」）。在教師 Facebook 社群和 LINE 群組密集投放報名資訊，搶佔 8 月報名截止前的備考黃金期。", "sourceName": "知識庫 · 教育部 AI 素養認證", "sourceUrl": "https://www.edu.tw"}'>
+        <span class="tag tag-taiwan">台灣</span>
+        <div class="item-text">
+          <div class="item-title">教育部啟動「AI 素養種子教師」全台徵選，首批 500 名通過認證享三年專業加給</div>
+          <div class="item-source">知識庫 · 教育部 AI 素養認證</div>
+        </div>
+      </div>
+
+    </aside>
+    <div class="detail-panel" id="detail-2026-07-24">
+      <div class="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <p>點擊左側新聞查看詳情</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="day-pane" data-day="2026-07-23" hidden>
   <div class="split">
     <aside class="news-list" id="list-2026-07-23">
       <div class="pane-header">7月23日（週四）<span class="count"> · 8 則</span></div>
@@ -1537,7 +1625,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026-07-23 07:09 (Asia/Taipei)</span>
+  最近更新：<span id="updated">2026-07-24 07:10 (Asia/Taipei)</span>
 </footer>
 
 <script>
