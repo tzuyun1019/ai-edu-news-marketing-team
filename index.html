@@ -491,8 +491,8 @@ body {
   <button class="tab" data-week="0" data-day="2026-07-22"><span class="tab-dow">週三</span><span class="tab-date">7/22</span></button>
   <button class="tab" data-week="0" data-day="2026-07-23"><span class="tab-dow">週四</span><span class="tab-date">7/23</span></button>
   <button class="tab" data-week="0" data-day="2026-07-24"><span class="tab-dow">週五</span><span class="tab-date">7/24</span></button>
-  <button class="tab active" data-week="0" data-day="2026-07-25"><span class="tab-dow">週六</span><span class="tab-date">7/25</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-week="0" data-day="2026-07-26"><span class="tab-dow">週日</span><span class="tab-date">7/26</span></button>
+  <button class="tab" data-week="0" data-day="2026-07-25"><span class="tab-dow">週六</span><span class="tab-date">7/25</span></button>
+  <button class="tab active" data-week="0" data-day="2026-07-26"><span class="tab-dow">週日</span><span class="tab-date">7/26</span><span class="tab-today">今日</span></button>
   <button class="tab" data-week="1" data-day="2026-07-13"><span class="tab-dow">週一</span><span class="tab-date">7/13</span></button>
   <button class="tab" data-week="1" data-day="2026-07-14"><span class="tab-dow">週二</span><span class="tab-date">7/14</span></button>
   <button class="tab" data-week="1" data-day="2026-07-15"><span class="tab-dow">週三</span><span class="tab-date">7/15</span></button>
@@ -511,7 +511,95 @@ body {
 </nav>
 
 <div id="panesContainer">
-<section class="day-pane" data-day="2026-07-25">
+<section class="day-pane" data-day="2026-07-26">
+  <div class="split">
+    <aside class="news-list" id="list-2026-07-26">
+      <div class="pane-header">7月26日（週日）<span class="count"> · 8 則</span></div>
+
+      <div class="section-label">產品動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "Google NotebookLM 推出教育版功能，學生可建立個人化知識庫", "para1": "Google 持續強化 NotebookLM 在教育場景的應用，推出針對學生與教師設計的進階功能，包含課程筆記整合、自動生成測驗題目，以及跨文件的 AI 問答能力。教師可將教材上傳後由 AI 自動摘要重點，大幅降低備課時間。", "para2": "NotebookLM 的教育版將個人化 AI 學習助理的門檻降至零，學生無需任何提示工程技巧即可與 AI 深度互動。這代表 AI 輔助學習正從「工具」轉型為「學習夥伴」的關鍵一步。", "takeaway": "台灣學校合作單位可安排 NotebookLM 工作坊，引導學生將課本與講義上傳，體驗 AI 問答學習。行銷切入點：主打「不只是搜尋，而是真正理解」，搭配學科成效數據做口碑案例。", "sourceName": "知識庫 · Google NotebookLM", "sourceUrl": "https://notebooklm.google.com"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">Google NotebookLM 推出教育版功能，學生可建立個人化知識庫</div>
+          <div class="item-source">知識庫 · Google NotebookLM</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "Khan Academy Khanmigo AI 家教全球擴展，支援非英語母語學習者", "para1": "Khan Academy 旗下 AI 家教系統 Khanmigo 宣布擴大多語言支援，加入西班牙語、法語等主要語種，並針對英語非母語的學習者優化對話邏輯。Khanmigo 以蘇格拉底式問答引導學生思考，而非直接給出答案，已在美國超過 10 萬間教室部署。", "para2": "多語言支援意味著亞洲市場潛力大幅提升。台灣擁有穩定的英語學習需求，Khanmigo 的問答模式與本地補習文化形成對比，突顯「引導式學習 vs. 填鴨式答題」的市場差異化機會。", "takeaway": "可與本地英語補習業者或國際學校合作試行。行銷重點聚焦「AI 家教不給答案，而是教會孩子如何思考」，對應台灣家長對培養解題能力的高度需求，並可製作中英雙語測試影片作為社群內容。", "sourceName": "知識庫 · Khan Academy Khanmigo", "sourceUrl": "https://www.khanacademy.org/khan-labs"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">Khan Academy Khanmigo AI 家教全球擴展，支援非英語母語學習者</div>
+          <div class="item-source">知識庫 · Khan Academy Khanmigo</div>
+        </div>
+      </div>
+
+      <div class="section-label">工具推薦</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "工具推薦", "tagClass": "tag-product", "title": "Microsoft Copilot 教育版整合 Teams，教師可一鍵生成差異化教材", "para1": "Microsoft 將 Copilot for Education 深度整合至 Microsoft Teams for Education，教師可在課程頁面直接透過 AI 生成針對不同學習程度學生的差異化教材，並自動格式化為可列印的學習單。此功能已在 60 個國家超過 5,000 所學校進行 beta 測試。", "para2": "差異化教學（Differentiated Instruction）是台灣融合教育政策的核心挑戰之一。若 AI 工具能自動生成適合不同需求學生的內容，不僅減輕教師負擔，也能顯著提升特殊需求學生的學習品質。", "takeaway": "可以「一位老師，同時照顧 30 種學習需求」為核心訴求，針對已採用 Microsoft 365 的台灣學校進行深入行銷。搭配現有客戶的實際教師見證，製作短影音展示教材生成的即時效率，同步在教師社群（Facebook 教育社團）擴散。", "sourceName": "知識庫 · Microsoft Education", "sourceUrl": "https://education.microsoft.com"}'>
+        <span class="tag tag-product">工具</span>
+        <div class="item-text">
+          <div class="item-title">Microsoft Copilot 教育版整合 Teams，教師可一鍵生成差異化教材</div>
+          <div class="item-source">知識庫 · Microsoft Education</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "工具推薦", "tagClass": "tag-product", "title": "Anthropic Claude 推出教育專用 API，支援安全內容過濾與學習情境管控", "para1": "Anthropic 針對教育市場推出 Claude for Education API，內建兒童安全內容過濾層、課程主題限制功能，以及學習進度追蹤介面。教育機構可透過 API 快速建立符合 COPPA 與 FERPA 法規的 AI 學習助理，大幅降低合規成本。", "para2": "合規功能是教育 AI 進入學校市場的最高門檻之一，尤其是涉及未成年學生的數據處理。Anthropic 主動提供合規框架，直接打通了許多學校 IT 部門的採購疑慮，有望加速 AI 工具在正式課堂的落地速度。", "takeaway": "可將 Claude API 的合規優勢作為與競品差異化的核心訴求，特別針對重視資安的私立學校與補習班業者進行技術說明會。同時製作「建立合規 AI 學習助理」的開發者指南，吸引本地 EdTech 新創以此為基礎進行開發，擴大生態系影響力。", "sourceName": "知識庫 · Anthropic Education", "sourceUrl": "https://www.anthropic.com"}'>
+        <span class="tag tag-product">工具</span>
+        <div class="item-text">
+          <div class="item-title">Anthropic Claude 推出教育專用 API，支援安全內容過濾與學習情境管控</div>
+          <div class="item-source">知識庫 · Anthropic Education</div>
+        </div>
+      </div>
+
+      <div class="section-label">資金動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "資金動態", "tagClass": "tag-funding", "title": "AI 個人化學習新創獲億元融資，投資人押注自適應測評系統", "para1": "多家專注於 AI 自適應學習的 EdTech 新創在近期融資環境中逆勢吸金，其中結合大型語言模型與認知科學的個人化測評平台獲得最多關注。投資人特別看重能整合課程標準、即時調整學習路徑，並提供教師可讀報告的解決方案。", "para2": "資本往自適應學習集中，意味著市場認為「一對一 AI 家教規模化」是下一個教育科技主戰場。台灣補教業面臨少子化與線上競爭雙重壓力，採用 AI 自適應系統重塑商業模式的時間窗口正在縮短。", "takeaway": "向台灣補習班業者與出版社傳遞危機感與機會並存的訊息：「不轉型 AI 的補習班將失去競爭力，但先行者可取得 3-5 年的市場優勢」。可提供 AI 自適應功能的白標解決方案，協助本地業者快速上市。", "sourceName": "知識庫 · EdTech 融資動態", "sourceUrl": "https://techcrunch.com/category/education"}'>
+        <span class="tag tag-funding">資金</span>
+        <div class="item-text">
+          <div class="item-title">AI 個人化學習新創獲億元融資，投資人押注自適應測評系統</div>
+          <div class="item-source">知識庫 · EdTech 融資動態</div>
+        </div>
+      </div>
+
+      <div class="section-label">市場趨勢</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "市場趨勢", "tagClass": "tag-market", "title": "EdTech AI 採購熱度創高，全球學校 IT 預算有 38% 轉向 AI 工具", "para1": "根據多份市場調查，2025至2026學年度全球中小學與高等教育機構的 IT 預算中，AI 相關工具採購比例首度突破三成八，年增幅達 62%。其中個人化學習平台與 AI 批改系統需求最旺，亞太地區採購金額年增超過四成。", "para2": "此採購趨勢代表 EdTech AI 已從「試驗期」進入「規模化採購期」。台灣教育部也已啟動 AI 教育推動計畫，公立學校正逐步建立採購評估框架，市場窗口短期內將大幅開放。", "takeaway": "行銷策略應從 B2C 轉向 B2B2C，鎖定學校行政端與採購委員會。準備白皮書與 ROI 計算工具，說明 AI 工具如何降低師資人力成本、提升學習成效，並取得符合台灣教育部規範的資格認證作為進入公立學校市場的敲門磚。", "sourceName": "知識庫 · EdTech 市場研究", "sourceUrl": "https://www.edsurge.com"}'>
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">EdTech AI 採購熱度創高，全球學校 IT 預算有 38% 轉向 AI 工具</div>
+          <div class="item-source">知識庫 · EdTech 市場研究</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "市場趨勢", "tagClass": "tag-market", "title": "AI 偵測學術不誠信工具進化，引發教育界對公平性的新辯論", "para1": "隨著學生使用 AI 輔助寫作日益普遍，Turnitin、GPTZero 等學術誠信檢測工具持續升級 AI 偵測引擎。然而多份研究指出，現有工具對非英語母語學生的誤判率偏高，引發教育公平性爭議，部分歐美大學已暫停強制使用 AI 偵測評分。", "para2": "AI 偵測工具的「信任危機」為台灣教育市場帶來新機會：強調「AI 輔助學習過程透明化」的平台，而非單純偵測使用痕跡，將更符合教育現場的實際需求與倫理期待。", "takeaway": "行銷訊息可聚焦「與其防堵 AI，不如教會孩子負責任地使用 AI」，區隔於傳統的防弊工具定位。可舉辦教師研習或線上論壇，邀請本地學者討論 AI 時代的學術誠信新框架，藉此建立品牌在教育社群的思想領導地位。", "sourceName": "知識庫 · AI 學術誠信議題", "sourceUrl": "https://www.elearningindustry.com"}'>
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">AI 偵測學術不誠信工具進化，引發教育界對公平性的新辯論</div>
+          <div class="item-source">知識庫 · AI 學術誠信議題</div>
+        </div>
+      </div>
+
+      <div class="section-label">台灣與亞洲</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "台灣與亞洲", "tagClass": "tag-taiwan", "title": "台灣教育部推動 AI 素養課程，目標 2027 年全面納入 K-12 課綱", "para1": "台灣教育部宣示將 AI 素養教育納入正式課綱規劃，目標於 2027 年前讓全國 K-12 學生均能接受系統性 AI 學習課程。初期將從高中職開始試行，聚焦 AI 工具應用、資料思維與倫理判斷三大能力面向，並搭配教師增能計畫同步推進。", "para2": "政策方向明確化意味著課綱採購與師資培訓市場即將啟動。能夠提供符合教育部框架、具備完整師訓體系的 EdTech 業者，將在公立學校採購招標中占據優先位置。", "takeaway": "立即著手對齊教育部 AI 素養框架，將產品功能與政策語言掛鉤，並積極參與縣市教育局主辦的數位教育論壇。同時培育種子教師與認證制度，藉由教師社群口碑建立品牌可信度，為 2027 年正式課綱落地提前卡位。", "sourceName": "知識庫 · 台灣教育部 AI 政策", "sourceUrl": "https://www.edu.tw"}'>
+        <span class="tag tag-taiwan">台灣</span>
+        <div class="item-text">
+          <div class="item-title">台灣教育部推動 AI 素養課程，目標 2027 年全面納入 K-12 課綱</div>
+          <div class="item-source">知識庫 · 台灣教育部 AI 政策</div>
+        </div>
+      </div>
+
+    </aside>
+    <div class="detail-panel" id="detail-2026-07-26">
+      <div class="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <p>點擊左側新聞查看詳情</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="day-pane" data-day="2026-07-25" hidden>
   <div class="split">
     <aside class="news-list" id="list-2026-07-25">
       <div class="pane-header">7月25日（週六）<span class="count"> · 8 則</span></div>
@@ -1713,7 +1801,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026-07-25 07:08 (Asia/Taipei)</span>
+  最近更新：<span id="updated">2026-07-26 07:09 (Asia/Taipei)</span>
 </footer>
 
 <script>
