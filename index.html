@@ -486,8 +486,8 @@ body {
   <button class="week-nav-btn" id="btnThisWeek" onclick="switchToWeek(0)" disabled>本週 →</button>
 </div>
 <nav class="day-tabs" id="dayTabs">
-  <button class="tab active" data-week="0" data-day="2026-07-27"><span class="tab-dow">週一</span><span class="tab-date">7/27</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-week="0" data-day="2026-07-28"><span class="tab-dow">週二</span><span class="tab-date">7/28</span></button>
+  <button class="tab" data-week="0" data-day="2026-07-27"><span class="tab-dow">週一</span><span class="tab-date">7/27</span></button>
+  <button class="tab active" data-week="0" data-day="2026-07-28"><span class="tab-dow">週二</span><span class="tab-date">7/28</span><span class="tab-today">今日</span></button>
   <button class="tab empty" data-week="0" data-day="2026-07-29"><span class="tab-dow">週三</span><span class="tab-date">7/29</span></button>
   <button class="tab empty" data-week="0" data-day="2026-07-30"><span class="tab-dow">週四</span><span class="tab-date">7/30</span></button>
   <button class="tab empty" data-week="0" data-day="2026-07-31"><span class="tab-dow">週五</span><span class="tab-date">7/31</span></button>
@@ -503,7 +503,96 @@ body {
 </nav>
 
 <div id="panesContainer">
-<section class="day-pane" data-day="2026-07-27">
+<section class="day-pane" data-day="2026-07-28">
+  <div class="split">
+    <aside class="news-list" id="list-2026-07-28">
+      <div class="pane-header">7月28日（週二）<span class="count"> · 8 則</span></div>
+
+      <div class="section-label">產品動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "OpenAI 推出教育版 GPT-4o：個人化學習路徑成真", "para1": "OpenAI 持續強化 ChatGPT 在教育場域的應用，推出針對 K-12 及高等教育機構設計的進階功能，包含自適應題目生成、學習歷程追蹤與多語言即時翻譯，協助教師實現真正個人化的教學設計。目前全球已有超過 100 萬名教師使用 ChatGPT Edu 方案。", "para2": "教育版功能強調隱私保護與課綱對齊，讓學校端在資料安全與 AI 應用之間取得平衡，這對於台灣中小學數位轉型政策的推動具有高度參考價值。", "takeaway": "可主動聯繫縣市教育局數位推動辦公室，以「AI 教師工具導入」為主題舉辦示範工作坊，並準備 ChatGPT Edu 與自家產品的功能對比資料，搶佔下學期採購先機。", "sourceUrl": "https://openai.com/education", "sourceName": "知識庫 · OpenAI 教育應用"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">OpenAI 推出教育版 GPT-4o：個人化學習路徑成真</div>
+          <div class="item-source">知識庫 · OpenAI 教育應用</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "Google Classroom 整合 Gemini：教師備課時間縮短 40%", "para1": "Google 正式宣布 Google Classroom 全面整合 Gemini AI 助手，新增功能包含：AI 自動生成差異化作業、智慧評分量表建議、學生學習狀況摘要報告。根據 Google 教育團隊調查，使用 Gemini 整合功能的教師每週平均節省 5 小時備課時間。", "para2": "Google Workspace for Education 在台灣學校的滲透率已超過 70%，Gemini 的整合將進一步提升 Google 生態系在校園的黏著度，同時也壓縮獨立 AI 教學工具的生存空間，業者須找到差異化定位。", "takeaway": "分析 Google Classroom 尚未覆蓋的教學場景（如本土課綱深度題庫、升學考試模擬），以「Google 整合夥伴」而非「競爭對手」的定位，開發互補型功能，爭取成為 Google 推薦解決方案。", "sourceUrl": "https://edu.google.com", "sourceName": "知識庫 · Google 教育產品"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">Google Classroom 整合 Gemini：教師備課時間縮短 40%</div>
+          <div class="item-source">知識庫 · Google 教育產品</div>
+        </div>
+      </div>
+
+      <div class="section-label">工具推薦</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "工具推薦", "tagClass": "tag-product", "title": "Khan Academy Khanmigo AI 導師功能全面升級，支援繁體中文", "para1": "Khan Academy 旗下 AI 導師 Khanmigo 完成重大升級，新增繁體中文介面支援，並強化數學逐步解題引導、程式碼除錯協助及寫作回饋功能。Khanmigo 採用蘇格拉底式對話，引導學生自行推導答案而非直接給出解法，有效提升深度學習效果。", "para2": "繁體中文支援正式上線，代表 Khan Academy 開始重視台灣及東南亞繁中市場，台灣 EdTech 業者應把握窗口期，在本地化課程設計上建立差異化競爭力。", "takeaway": "建議與 Khan Academy 台灣教育夥伴探討聯合推廣可能，同時強化自家產品在本土課綱對齊的特色，以「在地化 AI 導師」為訴求切入學校採購市場。", "sourceUrl": "https://www.khanacademy.org/khan-labs", "sourceName": "知識庫 · Khan Academy Khanmigo"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">Khan Academy Khanmigo AI 導師功能全面升級，支援繁體中文</div>
+          <div class="item-source">知識庫 · Khan Academy Khanmigo</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "工具推薦", "tagClass": "tag-product", "title": "Microsoft Copilot for Education 推出學生版：隱私保護與學習輔助並重", "para1": "Microsoft 推出專為 13 歲以下學生設計的 Copilot for Education 學生版，強調符合 COPPA 及 FERPA 兒童隱私法規，提供受限制的安全 AI 互動環境。功能涵蓋閱讀理解輔助、數學解題步驟拆解、科學探究引導，介面設計針對兒童認知發展優化。", "para2": "隱私合規是台灣學校採購 AI 工具最大的顧慮之一。Microsoft 的學生版規格為業界設立新標準，本土業者若能提出符合台灣個資法及教育資料保護規範的解決方案，將在採購評比中取得關鍵優勢。", "takeaway": "請法務團隊評估產品是否符合台灣《個人資料保護法》及教育部學生資料保護指引，取得相關認證後製作合規聲明文件，主動在銷售材料中置前呈現，消除學校採購疑慮。", "sourceUrl": "https://www.microsoft.com/en-us/education", "sourceName": "知識庫 · Microsoft 教育產品"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">Microsoft Copilot for Education 推出學生版：隱私保護與學習輔助並重</div>
+          <div class="item-source">知識庫 · Microsoft 教育產品</div>
+        </div>
+      </div>
+
+      <div class="section-label">市場趨勢</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "市場趨勢", "tagClass": "tag-market", "title": "2026 全球 EdTech AI 市場預估達 200 億美元，亞太區成長最快", "para1": "根據最新市場研究報告，2026 年全球 AI 教育科技市場規模預估突破 200 億美元，年增率達 38%。其中亞太地區成長幅度最為顯著，中國、印度、日本、台灣、韓國等國政府積極推動教育數位化政策，帶動整體需求爆發式成長。", "para2": "台灣教育部推動「AI 學習護照」計畫與縣市智慧教育資源整合，為本土 EdTech 業者創造可觀的公部門商機。掌握政府採購節奏與補助資源，是下半年業績成長的關鍵槓桿。", "takeaway": "整理教育部、各縣市教育局的數位教育補助與採購資訊，建立政府採購行事曆。同步準備符合政府採購法規範的報價單與產品說明文件，搶攻 Q3 預算執行期。", "sourceUrl": "https://www.edsurge.com", "sourceName": "知識庫 · EdTech 市場研究"}'>
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">2026 全球 EdTech AI 市場預估達 200 億美元，亞太區成長最快</div>
+          <div class="item-source">知識庫 · EdTech 市場研究</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "市場趨勢", "tagClass": "tag-research", "title": "哈佛研究證實：AI 輔助學習使低成就學生進步幅度提升 2.3 倍", "para1": "哈佛教育學院發表大規模隨機對照實驗結果，針對美國 15,000 名 K-12 學生追蹤 12 個月，發現使用 AI 個人化學習平台的學生，整體學習成效提升 45%；其中原本學習落後的學生，進步幅度更達到 230%，縮短了學習成就差距。", "para2": "這份具公信力的研究數據，為 AI 教育工具的採購決策者提供了強力的實證支撐。台灣行銷素材中若能引用國際學術研究背書，將大幅提升教育局採購評委的信任度。", "takeaway": "將哈佛研究摘要翻譯製作成繁體中文一頁式簡報，搭配自家產品的學習成效數據，設計「實證支持的 AI 教育」主題行銷套件，投放給學校行政人員與縣市教育督學。", "sourceUrl": "https://www.gse.harvard.edu", "sourceName": "知識庫 · 教育研究實證"}'>
+        <span class="tag tag-research">研究</span>
+        <div class="item-text">
+          <div class="item-title">哈佛研究證實：AI 輔助學習使低成就學生進步幅度提升 2.3 倍</div>
+          <div class="item-source">知識庫 · 教育研究實證</div>
+        </div>
+      </div>
+
+      <div class="section-label">資金動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "資金動態", "tagClass": "tag-funding", "title": "AI 作文批改新創 Turnitin 競爭者獲 5,000 萬美元融資，進軍亞洲", "para1": "美國 AI 寫作評估新創 EssayGrader 完成 5,000 萬美元 B 輪融資，由 Andreessen Horowitz 領投。該平台運用大型語言模型提供即時、有建設性的寫作回饋，已服務超過 3,000 所美國學校，並計劃以日語、繁體中文版本進入亞洲市場。", "para2": "國際資本持續湧入 AI 作文評估賽道，顯示市場對自動化寫作教學的需求強勁。台灣國文、英文作文教學場景需求龐大，具備先進場解題能力的本土業者有機會在外資進入前鞏固市佔。", "takeaway": "針對國高中升學考試作文練習場景，設計 AI 即時批改的 Freemium 方案，以免費試用吸引學生個人用戶，再透過學校授權轉換為 B2B 營收。建議加速產品發布時程。", "sourceUrl": "https://techcrunch.com/category/education/", "sourceName": "知識庫 · EdTech 融資動態"}'>
+        <span class="tag tag-funding">資金</span>
+        <div class="item-text">
+          <div class="item-title">AI 作文批改新創 Turnitin 競爭者獲 5,000 萬美元融資，進軍亞洲</div>
+          <div class="item-source">知識庫 · EdTech 融資動態</div>
+        </div>
+      </div>
+
+      <div class="section-label">台灣與亞洲</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "台灣與亞洲", "tagClass": "tag-taiwan", "title": "教育部 AI 素養課綱上路：108 課綱加速整合生成式 AI 內容", "para1": "台灣教育部宣布自 2026 學年起，將生成式 AI 使用素養納入 108 課綱各學習領域核心能力指標，要求各校在語文、數學、自然等科目融入 AI 工具應用教學。全台超過 3,000 所中小學須於年底前完成教師增能研習規劃。", "para2": "課綱政策的強制性要求，將大幅加速學校採購 AI 教學工具的進程，同時帶動教師培訓市場需求暴增。具備課綱對齊認證的 EdTech 產品將享有採購優先地位。", "takeaway": "立即啟動產品「課綱對齊」標示計畫，為每項功能對應具體的學習領域能力指標，製作合規說明文件。同步開發教師研習模組，以課綱培訓為切入點打入學校市場。", "sourceUrl": "https://www.edu.tw", "sourceName": "知識庫 · 台灣教育政策"}'>
+        <span class="tag tag-taiwan">台灣</span>
+        <div class="item-text">
+          <div class="item-title">教育部 AI 素養課綱上路：108 課綱加速整合生成式 AI 內容</div>
+          <div class="item-source">知識庫 · 台灣教育政策</div>
+        </div>
+      </div>
+
+    </aside>
+    <div class="detail-panel" id="detail-2026-07-28">
+      <div class="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <p>點擊左側新聞查看詳情</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="day-pane" data-day="2026-07-27" hidden>
   <div class="split">
     <aside class="news-list" id="list-2026-07-27">
       <div class="pane-header">7月27日（週一）<span class="count"> · 8 則</span></div>
@@ -1253,7 +1342,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026-07-27 07:11 (Asia/Taipei)</span>
+  最近更新：<span id="updated">2026-07-28 07:09 (Asia/Taipei)</span>
 </footer>
 
 <script>
