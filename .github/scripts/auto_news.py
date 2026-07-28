@@ -17,14 +17,14 @@ HTML_FILE = 'index.html'
 DOW_ZH = ['週一', '週二', '週三', '週四', '週五', '週六', '週日']
 
 RSS_FEEDS = [
-    ("EdSurge",          "https://edsurge.com/news.rss"),
-    ("eSchool News AI",  "https://www.eschoolnews.com/category/artificial-intelligence/feed/"),
     ("eSchool News",     "https://www.eschoolnews.com/feed/"),
-    ("EdTech Magazine",  "https://edtechmagazine.com/k12/rss.xml"),
-    ("TechCrunch Edu",   "https://techcrunch.com/category/education/feed/"),
-    ("Getting Smart",    "https://www.gettingsmart.com/feed/"),
+    ("EdSurge",          "https://www.edsurge.com/articles_rss"),
+    ("EdTech Innov Hub", "https://www.edtechinnovationhub.com/news?format=rss"),
+    ("K-12 Dive",        "https://www.k12dive.com/feeds/news/"),
+    ("Higher Ed Dive",   "https://www.highereddive.com/feeds/news/"),
+    ("Hechinger Report", "https://hechingerreport.org/feed/"),
+    ("Chalkbeat",        "https://www.chalkbeat.org/arc/outboundfeeds/rss/"),
     ("eLearning Ind.",   "https://elearningindustry.com/feed"),
-    ("ISTE",             "https://www.iste.org/rss.xml"),
 ]
 
 AI_KEYWORDS = [
@@ -123,10 +123,12 @@ def fetch_entries(max_age_hours=72):
             print(f"  {source_name}…")
             feed = feedparser.parse(url)
             for e in feed.entries[:20]:
-                if hasattr(e, 'published_parsed') and e.published_parsed:
-                    pub = datetime(*e.published_parsed[:6], tzinfo=timezone.utc)
-                    if pub < cutoff:
-                        continue
+                # 沒有可解析的發布日期就丟棄——寧缺勿舊
+                if not (hasattr(e, 'published_parsed') and e.published_parsed):
+                    continue
+                pub = datetime(*e.published_parsed[:6], tzinfo=timezone.utc)
+                if pub < cutoff:
+                    continue
                 link = e.get('link', '')
                 if link in seen:
                     continue
@@ -329,18 +331,17 @@ def main():
             return
 
     print("\n🔍 Fetching RSS…")
-    entries = fetch_entries(72)
-    if len(entries) < 3:
-        print("Expanding to 120h…")
-        entries = fetch_entries(120)
-    if not entries:
-        raise RuntimeError("No entries — aborting")
+    entries = fetch_entries(168)   # 嚴格 7 天內，不再放寬
+    if len(entries) < 4:
+        raise RuntimeError(
+            f"只找到 {len(entries)} 則 7 天內的真實新聞，低於門檻。"
+            "依規定中止——寧可開天窗，也不產出編造或過期內容。")
 
     print(f"\n🌐 Translating {len(entries[:8])} stories…")
     stories = build_stories(entries)
 
     if len(stories) < 4:
-        raise RuntimeError(f"Only {len(stories)} stories — aborting")
+        raise RuntimeError(f"僅產出 {len(stories)} 則，低於門檻，中止不寫入。")
 
     new_pane = build_day_pane(today_str, stories)
 
