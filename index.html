@@ -490,8 +490,8 @@ body {
   <button class="tab" data-week="0" data-day="2026-07-28"><span class="tab-dow">週二</span><span class="tab-date">7/28</span></button>
   <button class="tab" data-week="0" data-day="2026-07-29"><span class="tab-dow">週三</span><span class="tab-date">7/29</span></button>
   <button class="tab" data-week="0" data-day="2026-07-30"><span class="tab-dow">週四</span><span class="tab-date">7/30</span></button>
-  <button class="tab active" data-week="0" data-day="2026-07-31"><span class="tab-dow">週五</span><span class="tab-date">7/31</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-week="0" data-day="2026-08-01"><span class="tab-dow">週六</span><span class="tab-date">8/1</span></button>
+  <button class="tab" data-week="0" data-day="2026-07-31"><span class="tab-dow">週五</span><span class="tab-date">7/31</span></button>
+  <button class="tab active" data-week="0" data-day="2026-08-01"><span class="tab-dow">週六</span><span class="tab-date">8/1</span><span class="tab-today">今日</span></button>
   <button class="tab empty" data-week="0" data-day="2026-08-02"><span class="tab-dow">週日</span><span class="tab-date">8/2</span></button>
   <button class="tab empty" data-week="1" data-day="2026-07-20"><span class="tab empty">週一</span><span class="tab empty">7/20</span></button>
   <button class="tab empty" data-week="1" data-day="2026-07-21"><span class="tab empty">週二</span><span class="tab empty">7/21</span></button>
@@ -503,7 +503,81 @@ body {
 </nav>
 
 <div id="panesContainer">
-<section class="day-pane" data-day="2026-07-31">
+<section class="day-pane" data-day="2026-08-01">
+  <div class="split">
+    <aside class="news-list" id="list-2026-08-01">
+      <div class="pane-header">8月1日（週六）<span class="count"> · 7 則</span></div>
+      <div class="section-label">效果研究</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "效果研究", "tagClass": "tag-research", "title": "7/28 賓大 Wharton RCT 警示：AI 助教讓教師省時卻讓學生動機下滑", "para1": "Hechinger Report（7/28）報導賓大沃頓商學院 Alp Sungu 主導的首批課堂隨機對照試驗：導入 AI 教學助理後，學生學習動機顯著降低；效果在師資本就較弱的班級更明顯，學生期末標準化測驗成績亦同步下滑。研究者警告，教師可能如學生一樣將 AI 當「拐杖」使用。", "para2": "此為罕見的課堂 AI 隨機對照試驗，直接衝擊「AI 提升教學效率」的主流論述。「效率上升、學習卻退步」的悖論揭示 AI 教育工具的風險不只在學生端，教師的使用方式同樣關鍵。", "takeaway": "銷售教育 AI 工具時，建議搭配「教師正確使用指引」並主動引用此類研究，說明工具如何設計為增強師生互動而非替代，有助在學校採購決策層面前建立可信度並形成差異化。", "sourceUrl": "https://hechingerreport.org/proof-points-ai-in-teaching/", "sourceName": "Hechinger Report · AI 教學效果研究"}'>
+        <span class="tag tag-research">研究</span>
+        <div class="item-text">
+          <div class="item-title">7/28 賓大 Wharton RCT 警示：AI 助教讓教師省時卻讓學生動機下滑</div>
+          <div class="item-source">Hechinger Report</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "效果研究", "tagClass": "tag-research", "title": "7/20 FutureEd：教師過度依賴 AI 工具 學生課堂參與感顯著下滑", "para1": "FutureEd（7/20）報導最新研究：教師課堂上高度依賴 AI 輔助工具後，學生參與感與主動學習意願明顯下滑。此效應在教師本身 AI 操作技巧不足時尤為突出，暗示師資訓練缺口是 AI 規模化落地的潛在風險。", "para2": "此研究補充了「學生使用 AI 的影響」之外較少被關注的面向——教師如何使用 AI，同樣塑造課堂生態。若不正視副作用，AI 規模化落地後恐造成系統性學習退步。", "takeaway": "若產品主打提升教師效率，行銷材料中應主動揭示「如何維持學生互動」的具體設計，並提供師資培訓配套，以符合學區越來越普遍的「以學習成效為採購核心」評估標準。", "sourceUrl": "https://www.future-ed.org/when-teachers-rely-on-ai-student-engagement-drops-study-finds/", "sourceName": "FutureEd · AI 教師依賴研究"}'>
+        <span class="tag tag-research">研究</span>
+        <div class="item-text">
+          <div class="item-title">7/20 FutureEd：教師過度依賴 AI 工具 學生課堂參與感顯著下滑</div>
+          <div class="item-source">FutureEd</div>
+        </div>
+      </div>
+      <div class="section-label">機構合作</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "機構合作", "tagClass": "tag-partner", "title": "7/29 佛州橙縣 24 萬師生 AI 政策 8/11 上路：2 萬問卷換來實用護欄", "para1": "佛羅里達橙縣公立學校（OCPS，約 24 萬師生）於 7 月 28 日通過首份 AI 政策，8 月 11 日開學日起生效。政策歷時多月研擬、蒐集逾 2 萬份問卷；明訂禁止學生資料輸入 AI 平台，並禁止以 AI 聊天機器人取代情感支持，取代先前直接封鎖 ChatGPT 的做法。", "para2": "OCPS 政策標誌美國大學區從「封鎖 AI 平台」轉向「有條件開放並立規」的主流拐點。選擇以替代評量取代 AI 偵測工具，反映學區接受：持續的信任機制比一刀切禁止更可行。", "takeaway": "美國學區 AI 政策已從「要不要用」升級為「怎麼用、誰負責」，可彙整為數據隱私合規清單，協助教育 AI 產品進入校園時主動揭示隱私保護機制，加速採購層的決策信心。", "sourceUrl": "https://mynews13.com/fl/orlando/news/2026/07/29/orange-county-passes-first-ever-ai-policy-for-classroom-instruction", "sourceName": "MyNews13 · 橙縣學區 AI 政策"}'>
+        <span class="tag tag-partner">合作</span>
+        <div class="item-text">
+          <div class="item-title">7/29 佛州橙縣 24 萬師生 AI 政策 8/11 上路：2 萬問卷換來實用護欄</div>
+          <div class="item-source">MyNews13</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "機構合作", "tagClass": "tag-partner", "title": "7/29 佛州布里瓦德學區 AI 政策：進課堂先須校長點頭、禁止代寫作業", "para1": "佛羅里達布里瓦德郡學務委員會正式通過 AI 使用政策，規定教師導入任何 AI 工具前須先取得校長批准；AI 僅作輔助資源，不得取代傳統教學。學生可以 AI 作為研究的起點，但不得用 AI 完成作業，師生數據亦禁止輸入 AI 平台。", "para2": "布里瓦德政策與橙縣同日入法，顯示美國學區在新學年前集中推出 AI 治理框架。「教師→校長」分層審核制度，預示教育 AI 採購將日趨重視可稽核性與行政可控性。", "takeaway": "學區行政審批機制越來越普遍，建議銷售端提供「行政審批友善說明包」，包含功能範圍聲明、數據處理說明及教師培訓時數，以配合採購審查流程並縮短成交周期。", "sourceUrl": "https://www.fox35orlando.com/news/brevard-county-schools-adopts-a-i-policy-guidelines-what-know", "sourceName": "Fox35 Orlando · 布里瓦德學區 AI 政策"}'>
+        <span class="tag tag-partner">合作</span>
+        <div class="item-text">
+          <div class="item-title">7/29 佛州布里瓦德學區 AI 政策：進課堂先須校長點頭、禁止代寫作業</div>
+          <div class="item-source">Fox35 Orlando</div>
+        </div>
+      </div>
+      <div class="section-label">市場趨勢</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "市場趨勢", "tagClass": "tag-market", "title": "Filament Games 七月研究總覽：AI 移除後成效退步 17% 揭工具依賴陷阱", "para1": "Filament Games 七月版 AI 學習研究回顧揭示矛盾數據：學生使用 AI 完成任務成功率提升 48%，但一旦移除 AI，表現即下滑 17%。報告指出小到中等的學習效益，僅在 AI 支援協作而非取代互動的情境中才能實現，過程導向優於產出導向。", "para2": "AI 移除後表現驟降，說明「學習遷移率」才是衡量教育 AI 真實價值的核心指標。以過程導向設計 AI 工具，讓學習留在學生身上而非只讓答案出現，已成研究最一致的主流建議。", "takeaway": "可將「移除 AI 後的獨立作業能力」納入產品效益的衡量指標，在銷售提案中展示工具如何讓學習留下而非讓答案出現，以此差異化對抗純效率型競品，也符合學區採購日趨重視的「成效可遷移」要求。", "sourceUrl": "https://www.filamentgames.com/blog/the-latest-findings-in-ai-and-learning---july-2026", "sourceName": "Filament Games · AI 學習研究七月總覽"}'>
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">Filament Games 七月研究總覽：AI 移除後成效退步 17% 揭工具依賴陷阱</div>
+          <div class="item-source">Filament Games</div>
+        </div>
+      </div>
+      <div class="section-label">台灣與亞洲</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "台灣與亞洲", "tagClass": "tag-taiwan", "title": "台灣學聯 2026 暑期 AI 半導體職涯探索：國高中生提早認識產業鏈", "para1": "台灣學聯 2026 年暑假推出兩日制「半導體職業探索課程」，帶領國高中生認識全球半導體與 AI 產業趨勢、晶片製造流程及職涯方向。此課程反映台灣在生成式 AI 快速發展下，積極將 AI 科技教育向下延伸至中學階段，培育下一世代產業人才。", "para2": "台灣半導體與 AI 的深度整合，讓職涯教育從「認識 AI 工具」升級為「理解 AI 供應鏈」。針對中學生設計的產業探索課程，是台灣科技人才培育「起跑線前移」策略的具體落地。", "takeaway": "台灣 AI 教育市場的中學端需求正在崛起，「職涯探索 × AI」是接觸學生、家長與學校的有效切入角度。行銷團隊可規劃針對國高中生的 AI 素養體驗活動，同步開拓 B2C 與 B2B（學校合作）雙通路。", "sourceUrl": "https://more-news.tw/672336/", "sourceName": "更多新聞 · 台灣學聯 AI 教育課程"}'>
+        <span class="tag tag-taiwan">亞洲</span>
+        <div class="item-text">
+          <div class="item-title">台灣學聯 2026 暑期 AI 半導體職涯探索：國高中生提早認識產業鏈</div>
+          <div class="item-source">更多新聞</div>
+        </div>
+      </div>
+      <div class="section-label">Threads 精選</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "Threads 精選", "tagClass": "tag-taiwan", "title": "Threads 實用技：一個指令讓學習歷程聽起來像你自己寫的", "para1": "Threads 創作者 @tbd_studio_ 分享關鍵提示詞設計：只要一行指令，讓 AI 生成的學習歷程文字去除「AI 腔調」，恢復個人化的真實語氣。針對台灣高中生備審大學甄選時最頭痛的「學習歷程 AI 感」痛點，提供可立即套用的具體解法。", "para2": "台灣高中生用 AI 寫學習歷程已是普遍現象，如何讓 AI 輸出更「像自己」成為新痛點。此貼文展現真實使用者從「要不要用 AI」進化至「如何正確使用 AI」的更細緻討論層次。", "takeaway": "台灣學習歷程備審市場是本土 AI 寫作輔助工具的絕佳切入點，可設計「個人化語氣調整」功能並以此為主打，同步在 Threads 等平台發布場景化示範貼文，精準觸及備審焦慮的高中生與家長。", "sourceUrl": "https://www.threads.com/@tbd_studio_/post/DXtKibgiX_l/", "sourceName": "Threads · @tbd_studio_"}'>
+        <span class="tag tag-taiwan">亞洲</span>
+        <div class="item-text">
+          <div class="item-title">Threads 實用技：一個指令讓學習歷程聽起來像你自己寫的</div>
+          <div class="item-source">Threads</div>
+        </div>
+      </div>
+    </aside>
+    <div class="detail-panel" id="detail-2026-08-01">
+      <div class="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <p>點擊左側新聞查看詳情</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="day-pane" data-day="2026-07-31" hidden>
   <div class="split">
     <aside class="news-list" id="list-2026-07-31">
       <div class="pane-header">7月31日（週五）<span class="count"> · 5 則</span></div>
@@ -860,7 +934,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026-07-31 07:17 台北時間</span>
+  最近更新：<span id="updated">2026-08-01 07:17 台北時間</span>
 </footer>
 
 <script>
