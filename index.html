@@ -491,8 +491,8 @@ body {
   <button class="tab" data-week="0" data-day="2026-07-29"><span class="tab-dow">週三</span><span class="tab-date">7/29</span></button>
   <button class="tab" data-week="0" data-day="2026-07-30"><span class="tab-dow">週四</span><span class="tab-date">7/30</span></button>
   <button class="tab" data-week="0" data-day="2026-07-31"><span class="tab-dow">週五</span><span class="tab-date">7/31</span></button>
-  <button class="tab active" data-week="0" data-day="2026-08-01"><span class="tab-dow">週六</span><span class="tab-date">8/1</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-week="0" data-day="2026-08-02"><span class="tab-dow">週日</span><span class="tab-date">8/2</span></button>
+  <button class="tab" data-week="0" data-day="2026-08-01"><span class="tab-dow">週六</span><span class="tab-date">8/1</span></button>
+  <button class="tab active" data-week="0" data-day="2026-08-02"><span class="tab-dow">週日</span><span class="tab-date">8/2</span><span class="tab-today">今日</span></button>
   <button class="tab empty" data-week="1" data-day="2026-07-20"><span class="tab empty">週一</span><span class="tab empty">7/20</span></button>
   <button class="tab empty" data-week="1" data-day="2026-07-21"><span class="tab empty">週二</span><span class="tab empty">7/21</span></button>
   <button class="tab empty" data-week="1" data-day="2026-07-22"><span class="tab empty">週三</span><span class="tab empty">7/22</span></button>
@@ -503,7 +503,82 @@ body {
 </nav>
 
 <div id="panesContainer">
-<section class="day-pane" data-day="2026-08-01">
+<section class="day-pane" data-day="2026-08-02">
+  <div class="split">
+    <aside class="news-list" id="list-2026-08-02">
+      <div class="pane-header">8月2日（週日）<span class="count"> · 7 則</span></div>
+      <div class="section-label">效果研究</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "效果研究", "tagClass": "tag-research", "title": "全球調查：88% 大學生用 AI，57% 卻說沒有足夠指導", "para1": "數位教育委員會（DEC）2026 年全球高等教育 AI 調查（逾 4.5 萬份回應、35 國）顯示：88% 學生、77% 教師現已使用 AI，教師使用率較 2025 年大幅攀升 16 個百分點。然而，57% 學生表示缺乏足夠指引，僅 29% 認為教師有能力輔導 AI 使用。美加地區教師未來使用意願反而下滑 9 個百分點，居全球最低。", "para2": "採用率雖已普及，但機構回應速度嚴重落後。學生自主使用 AI 的速度遠超過課程與政策的調整，「用了但不知對不對」正成為高等教育最大的 AI 治理缺口。", "takeaway": "這份數據是向校方、培訓機構推銷 AI 素養課程的最佳切入點：引用「57% 學生缺乏指導」作為痛點，主動提案師資培訓或學生 AI 使用規範工作坊，時機成熟。", "sourceUrl": "https://www.winssolutions.org/dec-ai-higher-education-survey-2026/", "sourceName": "Digital Education Council · 全球調查"}'>
+        <span class="tag tag-research">研究</span>
+        <div class="item-text">
+          <div class="item-title">全球調查：88% 大學生用 AI，57% 卻說沒有足夠指導</div>
+          <div class="item-source">Digital Education Council</div>
+        </div>
+      </div>
+      <div class="section-label">機構合作</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "機構合作", "tagClass": "tag-partner", "title": "7/29 佛州最大學區 OCPS 正式通過首部 AI 政策，禁用 OpenAI 工具", "para1": "佛羅里達州橘郡公立學校（OCPS，全美前十大學區）於 7 月 28 日通過首部 AI 政策，8 月 11 日開學日起生效。政策明確禁止師生使用 OpenAI 旗下工具，要求所有 AI 工具須經學區審核才可使用，並採用封閉式 AI 平台保護學生資料，不允許使用 AI 偵測工具判斷學生是否過度依賴 AI。", "para2": "學區拋棄「一律封鎖」的舊策略，改採「允許但管控」模式，並透過 2 萬份問卷與學生座談深度蒐集意見。這是美國近期最具代表性的 K-12 AI 政策落地案例。", "takeaway": "OCPS 禁用 OpenAI、自建審核白名單的做法，為尋求替代方案的學區創造了商機。可準備「符合學區 AI 政策白名單標準」的解決方案話術，主動接觸各縣市教育局。", "sourceUrl": "https://mynews13.com/fl/orlando/news/2026/07/29/orange-county-passes-first-ever-ai-policy-for-classroom-instruction", "sourceName": "MyNews13 · K-12 AI 政策"}'>
+        <span class="tag tag-partner">合作</span>
+        <div class="item-text">
+          <div class="item-title">7/29 佛州最大學區 OCPS 正式通過首部 AI 政策，禁用 OpenAI 工具</div>
+          <div class="item-source">MyNews13</div>
+        </div>
+      </div>
+      <div class="section-label">市場趨勢</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "市場趨勢", "tagClass": "tag-market", "title": "8/2 起歐盟 AI 法透明義務正式生效，教育聊天機器人必須揭露身份", "para1": "歐盟 AI 法第 50 條透明義務於 2026 年 8 月 2 日（即今日）正式生效：所有聊天機器人、虛擬助理必須揭露其 AI 身份；生成式 AI 產出的文字、圖像、影音需加蓋機器可讀標記；深偽內容須標示為人工生成。教育領域高風險 AI 系統（如學生評量、招生篩選）的全面合規期限延至 2027 年 12 月。違規最高罰款 1,500 萬歐元或全球年營業額 3%。", "para2": "高風險 AI 合規雖獲延期，透明義務已無寬限。任何在歐洲市場部署 AI 教育工具的業者，今日起即需確保聊天機器人明確告知使用者「你正在與 AI 互動」，否則即屬違規。", "takeaway": "台灣 EdTech 業者若有歐洲客戶或合作夥伴，務必立刻確認產品是否符合 Article 50。可將「歐盟 AI 合規認證」作為差異化賣點，優先向有出海計畫的學校或企業培訓客戶提案。", "sourceUrl": "https://www.technology.org/2026/07/17/eu-ai-act-what-actually-applies-on-2-august-2026/", "sourceName": "Technology.org · EU AI Act"}'>
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">8/2 起歐盟 AI 法透明義務正式生效，教育聊天機器人必須揭露身份</div>
+          <div class="item-source">Technology.org</div>
+        </div>
+      </div>
+      <div class="section-label">台灣與亞洲</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "台灣與亞洲", "tagClass": "tag-taiwan", "title": "7/22-26 新加坡主辦東協教育部長會議，AI 倫理框架成最大共識", "para1": "第 14 屆東協教育部長會議（ASED）於 7 月 22 至 26 日在新加坡舉行，AI 倫理在教育中的應用成為最大共識。新加坡以 2026-2027 年東協教育領域主席身份，將統籌規劃跨區域 AI 教育論壇，邀請東協 10 國、中國、日本、韓國及對話夥伴參與，並推動 STEM 青年營、大學生暑期計畫等，依據《東協教育工作計畫 2026-2030》執行。", "para2": "東協層級首次將 AI 倫理列為教育政策核心共識，意味著整個亞太地區的 AI 教育規範正在系統化。台灣雖非東協成員，此框架將深刻影響區域 EdTech 市場準入標準。", "takeaway": "密切追蹤東協 AI 教育論壇議程與輸出文件，提前對齊倫理框架語言；若有東南亞市場計畫，可將「符合東協 AI 教育倫理框架」作為進入各國校園的背書策略。", "sourceUrl": "https://english.news.cn/20260723/954dc093c51844d994986bd2a1986038/c.html", "sourceName": "新華社 · 東協教育峰會"}'>
+        <span class="tag tag-taiwan">亞洲</span>
+        <div class="item-text">
+          <div class="item-title">7/22-26 新加坡主辦東協教育部長會議，AI 倫理框架成最大共識</div>
+          <div class="item-source">新華社</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "台灣與亞洲", "tagClass": "tag-taiwan", "title": "印尼在東協論壇倡議強化教育 AI 倫理，強調科技作為國際連結橋樑", "para1": "在新加坡東協教育部長會議上，印尼教育部代表團積極倡導在全區域推動「有倫理的 AI」教育框架，強調 AI 融入教學必須配套倫理指引，涵蓋基礎教學規範與科技使用禮節，並將 AI 定位為促進各國學生相互理解、跨國友誼的橋樑，而非取代教師的工具。", "para2": "印尼作為東南亞最大的教育市場（學生人數超過 6,000 萬），其在 AI 倫理上的立場將影響整個東協 AI 教育政策走向，也代表區域市場對「負責任 AI」的需求日益具體化。", "takeaway": "「AI 倫理」不再只是歐洲法規議題，東南亞大市場同樣要求。建議在進入印尼或東協市場的產品說明中，主動揭露 AI 使用透明度、資料保護機制，並備妥倫理框架對齊文件。", "sourceUrl": "https://www.kemendikdasmen.go.id/en/press-release/15848-di-forum-asean-indonesia-dorong-penguatan-ai-beretika-di-dun", "sourceName": "印尼教育部 · ASEAN 論壇聲明"}'>
+        <span class="tag tag-taiwan">亞洲</span>
+        <div class="item-text">
+          <div class="item-title">印尼在東協論壇倡議強化教育 AI 倫理，強調科技作為國際連結橋樑</div>
+          <div class="item-source">印尼教育部</div>
+        </div>
+      </div>
+      <div class="section-label">資金動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "資金動態", "tagClass": "tag-funding", "title": "2026 年前 7 個月 EdTech 融資 24 件，AI 原生平台成唯一熱點", "para1": "據 New Market Pitch 七月報告，2026 年 1 至 7 月全球 EdTech 融資共 24 件，較 2025 年同期 37 件明顯下滑。AI 原生學習平台仍是唯一吸引資金的主題，EdVisorly、YoLearn.ai、Lytmus AI、ProLearn、Third Space Learning、Stepful 及 Gizmo 均成功募資。印度在早期階段表現突出，聚焦 AI 家教與沉浸式職業培訓。", "para2": "整體融資件數下滑，但「AI 深度整合於核心學習流程」（如考試準備、醫療培訓）的項目仍能獲得青睞，反映投資人從廣泛押注轉向精選有明確學習成效的平台。", "takeaway": "募資環境趨嚴，但 AI 原生是護城河。若正在準備募資或尋找合作夥伴，應在 pitch 中明確呈現 AI 如何嵌入學習流程核心，並有可量化的學習成效數據，而非泛泛強調「AI 功能」。", "sourceUrl": "https://newmarketpitch.com/blogs/news/edtech-funding-news", "sourceName": "New Market Pitch · EdTech 融資報告"}'>
+        <span class="tag tag-funding">資金</span>
+        <div class="item-text">
+          <div class="item-title">2026 年前 7 個月 EdTech 融資 24 件，AI 原生平台成唯一熱點</div>
+          <div class="item-source">New Market Pitch</div>
+        </div>
+      </div>
+      <div class="section-label">Threads 精選</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "Threads 精選", "tagClass": "tag-product", "title": "2026 年必備 12 項 AI 技能：提示工程已是「基本識字能力」", "para1": "台灣 Threads 用戶 @darks0603 整理 2026 年 AI 學習路徑清單，列出 12 項必備技能，首推「提示工程」——他直言：「能否設定複雜背景限制，讓 AI 產出專家級成果，才是關鍵」，並點名 ChatGPT、Claude、Gemini、Grok 為核心工具。貼文強調學 AI 永遠不晚，但不懂引導 AI 已如同「不會用鍵盤打字」般吃虧。", "para2": "這則貼文引發廣泛共鳴，反映台灣社群對 AI 技能「從可選變必修」的共識正在快速形成，也呼應全球調查中學生自主使用 AI 遠超過學校指導速度的現象。", "takeaway": "「提示工程是新識字能力」這個框架極具行銷穿透力。可將此論點作為課程推廣的核心主張，設計「AI 提示工程入門」模組，對準在職進修或親子 AI 教育市場，切入點明確且共鳴度高。", "sourceUrl": "https://www.threads.com/@darks0603/post/DTFodIikmN0/", "sourceName": "Threads · @darks0603"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">2026 年必備 12 項 AI 技能：提示工程已是「基本識字能力」</div>
+          <div class="item-source">Threads</div>
+        </div>
+      </div>
+    </aside>
+    <div class="detail-panel" id="detail-2026-08-02">
+      <div class="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <p>點擊左側新聞查看詳情</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="day-pane" data-day="2026-08-01" hidden>
   <div class="split">
     <aside class="news-list" id="list-2026-08-01">
       <div class="pane-header">8月1日（週六）<span class="count"> · 7 則</span></div>
@@ -934,7 +1009,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026-08-01 07:17 台北時間</span>
+  最近更新：<span id="updated">2026-08-02 07:12 台北時間</span>
 </footer>
 
 <script>
