@@ -486,24 +486,106 @@ body {
   <button class="week-nav-btn" id="btnThisWeek" onclick="switchToWeek(0)" disabled>本週 →</button>
 </div>
 <nav class="day-tabs" id="dayTabs">
-  <button class="tab empty" data-week="0" data-day="2026-07-27"><span class="tab empty">週一</span><span class="tab empty">7/27</span></button>
-  <button class="tab" data-week="0" data-day="2026-07-28"><span class="tab-dow">週二</span><span class="tab-date">7/28</span></button>
-  <button class="tab" data-week="0" data-day="2026-07-29"><span class="tab-dow">週三</span><span class="tab-date">7/29</span></button>
-  <button class="tab" data-week="0" data-day="2026-07-30"><span class="tab-dow">週四</span><span class="tab-date">7/30</span></button>
-  <button class="tab" data-week="0" data-day="2026-07-31"><span class="tab-dow">週五</span><span class="tab-date">7/31</span></button>
-  <button class="tab" data-week="0" data-day="2026-08-01"><span class="tab-dow">週六</span><span class="tab-date">8/1</span></button>
-  <button class="tab active" data-week="0" data-day="2026-08-02"><span class="tab-dow">週日</span><span class="tab-date">8/2</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-week="1" data-day="2026-07-20"><span class="tab empty">週一</span><span class="tab empty">7/20</span></button>
-  <button class="tab empty" data-week="1" data-day="2026-07-21"><span class="tab empty">週二</span><span class="tab empty">7/21</span></button>
-  <button class="tab empty" data-week="1" data-day="2026-07-22"><span class="tab empty">週三</span><span class="tab empty">7/22</span></button>
-  <button class="tab empty" data-week="1" data-day="2026-07-23"><span class="tab empty">週四</span><span class="tab empty">7/23</span></button>
-  <button class="tab empty" data-week="1" data-day="2026-07-24"><span class="tab empty">週五</span><span class="tab empty">7/24</span></button>
-  <button class="tab empty" data-week="1" data-day="2026-07-25"><span class="tab empty">週六</span><span class="tab empty">7/25</span></button>
-  <button class="tab empty" data-week="1" data-day="2026-07-26"><span class="tab empty">週日</span><span class="tab empty">7/26</span></button>
+  <button class="tab active" data-week="0" data-day="2026-08-03"><span class="tab-dow">週一</span><span class="tab-date">8/3</span><span class="tab-today">今日</span></button>
+  <button class="tab empty" data-week="0" data-day="2026-08-04"><span class="tab-dow">週二</span><span class="tab-date">8/4</span></button>
+  <button class="tab empty" data-week="0" data-day="2026-08-05"><span class="tab-dow">週三</span><span class="tab-date">8/5</span></button>
+  <button class="tab empty" data-week="0" data-day="2026-08-06"><span class="tab-dow">週四</span><span class="tab-date">8/6</span></button>
+  <button class="tab empty" data-week="0" data-day="2026-08-07"><span class="tab-dow">週五</span><span class="tab-date">8/7</span></button>
+  <button class="tab empty" data-week="0" data-day="2026-08-08"><span class="tab-dow">週六</span><span class="tab-date">8/8</span></button>
+  <button class="tab empty" data-week="0" data-day="2026-08-09"><span class="tab-dow">週日</span><span class="tab-date">8/9</span></button>
+  <button class="tab empty" data-week="1" data-day="2026-07-27"><span class="tab empty">週一</span><span class="tab empty">7/27</span></button>
+  <button class="tab" data-week="1" data-day="2026-07-28"><span class="tab-dow">週二</span><span class="tab-date">7/28</span></button>
+  <button class="tab" data-week="1" data-day="2026-07-29"><span class="tab-dow">週三</span><span class="tab-date">7/29</span></button>
+  <button class="tab" data-week="1" data-day="2026-07-30"><span class="tab-dow">週四</span><span class="tab-date">7/30</span></button>
+  <button class="tab" data-week="1" data-day="2026-07-31"><span class="tab-dow">週五</span><span class="tab-date">7/31</span></button>
+  <button class="tab" data-week="1" data-day="2026-08-01"><span class="tab-dow">週六</span><span class="tab-date">8/1</span></button>
+  <button class="tab" data-week="1" data-day="2026-08-02"><span class="tab-dow">週日</span><span class="tab-date">8/2</span></button>
 </nav>
 
 <div id="panesContainer">
-<section class="day-pane" data-day="2026-08-02">
+<section class="day-pane" data-day="2026-08-03">
+  <div class="split">
+    <aside class="news-list" id="list-2026-08-03">
+      <div class="pane-header">8月3日（週一）<span class="count"> · 8 則</span></div>
+      <div class="section-label">產品動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "Khan Academy 承認 Khanmigo 使用率僅 15%，啟動全面改版", "para1": "Khan Academy 內部數據顯示，有資格使用 Khanmigo AI 家教的學生中，僅約 15% 真正活躍使用。執行長 Sal Khan 坦承預期的學習革命尚未到來。平台將於 2026 年夏季為參與學區推出主動提示功能，從被動聊天視窗轉型為能依學生學習歷程主動介入的個人家教。", "para2": "這份數據揭示 AI 教育工具「有人裝但沒人用」的關鍵痛點。主動式設計、與學習紀錄整合，才是提升實際採用率的核心策略，而非功能多寡。", "takeaway": "台灣團隊可藉此切入「AI 工具導入≠實際使用」的議題，協助學校建立 AI 工具使用行為追蹤機制，並提供提升教師與學生採用率的顧問服務，鞏固長期合作關係。", "sourceUrl": "https://thelearningstandard.org/news/khan-academy-revamps-ai-tutor-after-low-student-usage", "sourceName": "The Learning Standard · AI 教學工具"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">Khan Academy 承認 Khanmigo 使用率僅 15%，啟動全面改版</div>
+          <div class="item-source">The Learning Standard</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "OpenAI 教育部門推出電子報「The Edu Prompt」直攻師資溝通缺口", "para1": "OpenAI Education 於 2026 年 6 月正式推出《The Edu Prompt》電子報，第三期於 7 月 17 日發布，內容涵蓋課堂提示詞技巧、AI 產品更新、國家級 AI 教育部署案例及教師導向資源。計劃每月發行兩次，定位為教師、學校行政與教育機構的「AI 應用田野指南」。", "para2": "OpenAI 直接建立教師溝通管道，意在繞過政策審核層次，快速影響課堂採用決策。這是平台搶佔教師心智的重要布局，也代表 AI 公司正將教師視為最關鍵的推廣節點。", "takeaway": "台灣行銷團隊可追蹤並翻譯 The Edu Prompt 內容，搭配本地案例二次加工後在自媒體發布，快速建立「AI 教育情報站」定位，無需大量原創資源即可提供高價值內容。", "sourceUrl": "https://www.edtechinnovationhub.com/news/openai-education-launches-newsletter-as-ai-classroom-push-grows", "sourceName": "EdTech Innovation Hub · OpenAI 教育"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">OpenAI 教育部門推出電子報「The Edu Prompt」直攻師資溝通缺口</div>
+          <div class="item-source">EdTech Innovation Hub</div>
+        </div>
+      </div>
+      <div class="section-label">機構合作</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "機構合作", "tagClass": "tag-partner", "title": "7/28 印尼新加坡更新教育備忘錄，AI 與數位學習列為核心", "para1": "2026 年 7 月 22 日，印尼初中等教育部長 Abdul Mu&#39;ti 與新加坡教育部長 Desmond Lee 在第 14 屆 ASEAN 教育部長會議期間會面，同意更新 2017 年簽訂的雙邊教育合作備忘錄，新版協議將 AI 整合教學、教育科技及技能發展列為核心，預計在兩國 2027 年慶祝建交 60 周年前落實。", "para2": "東南亞最大國與城市國家的教育合作聚焦 AI，顯示區域對 AI 教育基礎建設的政治意志正在加速形成，也代表相關採購與課程合作機會將隨之擴大。", "takeaway": "台灣 EdTech 廠商可將此合作框架視為進入印尼或新加坡市場的政策風向標，優先布局符合雙邊 AI 教育需求的產品，並考慮透過新加坡作為東南亞市場的跳板。", "sourceUrl": "https://indiplomacy.com/2026/07/28/indonesia-singapore-strengthen-education-partnership-with-ai-and-digital-learning-focus/", "sourceName": "Indiplomacy · 東南亞教育合作"}'>
+        <span class="tag tag-partner">合作</span>
+        <div class="item-text">
+          <div class="item-title">7/28 印尼新加坡更新教育備忘錄，AI 與數位學習列為核心</div>
+          <div class="item-source">Indiplomacy</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "機構合作", "tagClass": "tag-partner", "title": "佛州南馬里昂高中 8 月開學，以 26 萬美元補助正式開辦 AI 職業課程", "para1": "佛羅里達州南馬里昂高中（South Marion High School）於 2026 年 8 月正式開辦 AI 職業課程，成為馬里昂郡職業技術教育（CTE）第 36 個課程類別。經費來源為佛州教育廳 Workforce CAP 補助計畫的 26 萬美元專案補助，課程將 AI 基礎與 AI 應用整合入職業技能訓練。", "para2": "補助資金帶動課程落地，顯示美國以職業教育為切入點推廣 AI 教學的路徑日趨成熟。這種「AI＋職業技能」的融合模式，對缺乏獨立 AI 課程資源的學校尤具參考價值。", "takeaway": "台灣行銷團隊可以「政府補助 × 職業教育 × AI」為關鍵訊息框架，幫助客戶撰寫申請補助的示範案例，提升 AI 課程採購正當性，並向教育部及勞動部爭取類似計畫。", "sourceUrl": "https://www.wftv.com/news/local/florida-high-school-unveils-ai-program-with-260k-state-grant/RUAI47ECYVEGZLGXOE4VJWJI3I/", "sourceName": "WFTV · 佛羅里達教育"}'>
+        <span class="tag tag-partner">合作</span>
+        <div class="item-text">
+          <div class="item-title">佛州南馬里昂高中 8 月開學，以 26 萬美元補助正式開辦 AI 職業課程</div>
+          <div class="item-source">WFTV</div>
+        </div>
+      </div>
+      <div class="section-label">台灣與亞洲</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "台灣與亞洲", "tagClass": "tag-taiwan", "title": "台灣「AI 人才方舟計畫」117.5 億元啟動，K-12 全面邁入 AI 教育時代", "para1": "台灣教育部正式啟動「AI 人才方舟計畫」，2026 至 2029 年投入新台幣 117.55 億元，推動中小學從全面數位化升級至 AI 教育時代。六項子計畫涵蓋 AI 學習環境建構、跨域 AI 師資培育及數據決策能力強化，其中數位內容充實計畫與數位教學支持計畫各年編列 10 億及 16 億元，占最大比例預算。", "para2": "此計畫代表台灣政府首次將 AI 教育定位為「國家戰略」而非單一數位工具，四年近百億規模意味著從硬體建置到師資培訓，整個 AI 教育生態系統將全面重塑。", "takeaway": "台灣行銷團隊應立即對應各子計畫需求，確認自身產品或服務符合補助項目，並建立與縣市教育局的接觸管道，在計畫採購啟動前完成品牌預熱與概念驗證（POC）部署。", "sourceUrl": "https://technews.tw/2026/06/15/ai-talent-ark/", "sourceName": "TechNews 科技新報 · 台灣教育政策"}'>
+        <span class="tag tag-taiwan">亞洲</span>
+        <div class="item-text">
+          <div class="item-title">台灣「AI 人才方舟計畫」117.5 億元啟動，K-12 全面邁入 AI 教育時代</div>
+          <div class="item-source">TechNews 科技新報</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "台灣與亞洲", "tagClass": "tag-taiwan", "title": "8/1 北美智權報：AI、資安、設計人才並列教育部重點，高教治理分工引發討論", "para1": "北美智權報於 2026 年 8 月 1 日分析，台灣教育部同時將 AI 人才、資安人才與設計人才列為高等教育治理重點，三大領域均屬跨域融合型人才需求，引發業界對高教治理是否需要重新思考部會分工的討論，強調教育資源分配與產業需求的對接效率。", "para2": "「AI 人才缺口」已從單一技術問題演變為教育政策的整體議題，資安與設計和 AI 的交叉融合顯示跨域複合型人才才是未來市場主力，單一技術課程已難以滿足需求。", "takeaway": "行銷團隊可針對「AI × 資安 × 設計」三合一人才培育趨勢，開發整合型課程方案（如 AI 驅動的設計思維或 AI 安全應用），以差異化定位搶佔尚未有明確方案的高教市場空缺。", "sourceUrl": "https://naipnews.naipo.com/69036/", "sourceName": "北美智權報 · 台灣高教政策"}'>
+        <span class="tag tag-taiwan">亞洲</span>
+        <div class="item-text">
+          <div class="item-title">8/1 北美智權報：AI、資安、設計人才並列教育部重點，高教治理分工引發討論</div>
+          <div class="item-source">北美智權報</div>
+        </div>
+      </div>
+      <div class="section-label">市場趨勢</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "市場趨勢", "tagClass": "tag-market", "title": "美國學區 AI 政策潮持續：Brevard 郡 7 月公開討論師生 AI 共同守則", "para1": "佛羅里達州 Brevard 公立學校於 2026 年 7 月在開學前公開討論新 AI 政策方向，加入橙郡（OCPS）、卡提郡（Katy ISD）等已完成 AI 政策制定的學區行列。全美 27 個州已在 2026 年立法會期提出 77 項 K-12 AI 教育相關法案，35 個以上的州教育廳發布 AI 使用指引。", "para2": "K-12 AI 治理框架正在全美形成制度化浪潮，學區政策一旦確立，即開始帶動師資培訓、課程採購與工具審核等一連串採購決策，是 EdTech 廠商進場的黃金窗口期。", "takeaway": "台灣團隊可整理全球（含美國、台灣、東南亞）AI 教育政策白皮書，作為客戶內部推動 AI 治理的參考藍本，同時爭取協助縣市教育局草擬 AI 使用指引的顧問角色。", "sourceUrl": "https://spacecoastdaily.com/2026/07/brevard-public-schools-discusses-possible-new-artificial-intelligence-policy-ahead-of-school-year/", "sourceName": "Space Coast Daily · 美國學區政策"}'>
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">美國學區 AI 政策潮持續：Brevard 郡 7 月公開討論師生 AI 共同守則</div>
+          <div class="item-source">Space Coast Daily</div>
+        </div>
+      </div>
+      <div class="section-label">Threads 精選</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "Threads 精選", "tagClass": "tag-market", "title": "Threads 教師真心話：學生用 AI 沒問題，基礎能力不足才是真正風險", "para1": "教師 @kenzi_never 在 Threads 分享親身觀察：並不反對學生使用 AI 學習，真正的問題是在基礎能力與判斷力尚未建立前就過度依賴。AI 並非絕對正確，本人使用 GPT 也常發現答案有誤；若學生本身沒有基本功，極容易被錯誤資訊誤導而不自知。這則貼文引發大量教育者共鳴與討論。", "para2": "「先建能力，再用 AI」正成為台灣教育現場越來越多教師的共識，也反映出市場真正需要的不只是 AI 工具，而是配套的評量機制與漸進式導入策略。", "takeaway": "台灣行銷團隊可以這個教師視角為素材，製作「AI 輔助學習的正確使用階段」內容行銷，協助學校建立漸進式 AI 導入框架，既回應教師疑慮，也凸顯產品的教學設計深度。", "sourceUrl": "https://www.threads.com/@kenzi_never/post/DYBz4WeDMbg/", "sourceName": "Threads · @kenzi_never"}'>
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">Threads 教師真心話：學生用 AI 沒問題，基礎能力不足才是真正風險</div>
+          <div class="item-source">Threads</div>
+        </div>
+      </div>
+    </aside>
+    <div class="detail-panel" id="detail-2026-08-03">
+      <div class="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <p>點擊左側新聞查看詳情</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="day-pane" hidden data-day="2026-08-02">
   <div class="split">
     <aside class="news-list" id="list-2026-08-02">
       <div class="pane-header">8月2日（週日）<span class="count"> · 7 則</span></div>
@@ -578,7 +660,7 @@ body {
     </div>
   </div>
 </section>
-<section class="day-pane" data-day="2026-08-01" hidden>
+<section class="day-pane" hidden data-day="2026-08-01" hidden>
   <div class="split">
     <aside class="news-list" id="list-2026-08-01">
       <div class="pane-header">8月1日（週六）<span class="count"> · 7 則</span></div>
@@ -652,7 +734,7 @@ body {
     </div>
   </div>
 </section>
-<section class="day-pane" data-day="2026-07-31" hidden>
+<section class="day-pane" hidden data-day="2026-07-31" hidden>
   <div class="split">
     <aside class="news-list" id="list-2026-07-31">
       <div class="pane-header">7月31日（週五）<span class="count"> · 5 則</span></div>
@@ -709,7 +791,7 @@ body {
     </div>
   </div>
 </section>
-<section class="day-pane" data-day="2026-07-30" hidden>
+<section class="day-pane" hidden data-day="2026-07-30" hidden>
   <div class="split">
     <aside class="news-list" id="list-2026-07-30">
       <div class="pane-header">7月30日（週四）<span class="count"> · 7 則</span></div>
@@ -787,7 +869,7 @@ body {
     </div>
   </div>
 </section>
-<section class="day-pane" data-day="2026-07-29" hidden>
+<section class="day-pane" hidden data-day="2026-07-29" hidden>
   <div class="split">
     <aside class="news-list" id="list-2026-07-29">
       <div class="pane-header">7月29日（週三）<span class="count"> · 9 則</span></div>
@@ -881,7 +963,7 @@ body {
   </div>
 </section>
 
-<section class="day-pane" data-day="2026-07-28" hidden>
+<section class="day-pane" hidden data-day="2026-07-28" hidden>
   <div class="split">
     <aside class="news-list" id="list-2026-07-28">
       <div class="pane-header">7月28日（週二）<span class="count"> · 11 則</span></div>
@@ -1009,7 +1091,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026-08-02 07:12 台北時間</span>
+  最近更新：<span id="updated">2026-08-03 07:15 台北時間</span>
 </footer>
 
 <script>
