@@ -490,8 +490,8 @@ body {
   <button class="tab" data-week="0" data-day="2026-08-04"><span class="tab-dow">週二</span><span class="tab-date">8/4</span></button>
   <button class="tab" data-week="0" data-day="2026-08-05"><span class="tab-dow">週三</span><span class="tab-date">8/5</span></button>
   <button class="tab" data-week="0" data-day="2026-08-06"><span class="tab-dow">週四</span><span class="tab-date">8/6</span></button>
-  <button class="tab active" data-week="0" data-day="2026-08-07"><span class="tab-dow">週五</span><span class="tab-date">8/7</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-week="0" data-day="2026-08-08"><span class="tab-dow">週六</span><span class="tab-date">8/8</span></button>
+  <button class="tab" data-week="0" data-day="2026-08-07"><span class="tab-dow">週五</span><span class="tab-date">8/7</span></button>
+  <button class="tab active" data-week="0" data-day="2026-08-08"><span class="tab-dow">週六</span><span class="tab-date">8/8</span><span class="tab-today">今日</span></button>
   <button class="tab empty" data-week="0" data-day="2026-08-09"><span class="tab-dow">週日</span><span class="tab-date">8/9</span></button>
   <button class="tab empty" data-week="1" data-day="2026-07-27"><span class="tab empty">週一</span><span class="tab empty">7/27</span></button>
   <button class="tab" data-week="1" data-day="2026-07-28"><span class="tab-dow">週二</span><span class="tab-date">7/28</span></button>
@@ -503,7 +503,91 @@ body {
 </nav>
 
 <div id="panesContainer">
-<section class="day-pane" data-day="2026-08-07">
+<section class="day-pane" data-day="2026-08-08">
+  <div class="split">
+    <aside class="news-list" id="list-2026-08-08">
+      <div class="pane-header">8月8日（週六）<span class="count"> · 8 則</span></div>
+
+      <div class="section-label">機構合作</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "機構合作", "tagClass": "tag-partner", "title": "學校在知道目的地之前就制定了人工智慧規則", "para1": "美國的學校正在迅速採取行動，以應對人工智慧的興起，家長、教師、管理人員和立法者都在努力了解這對學生意味著什麼", "para2": "大型機構採用 AI 教育工具的案例，有助於降低其他機構的採購決策門檻。", "takeaway": "台灣學校與 EdTech 廠商可參考此合作模式，探索在地化合作可能性。", "sourceUrl": "https://www.eschoolnews.com/digital-learning/2026/08/07/schools-are-building-ai-rules-before-they-know-the-destination/", "sourceName": "eSchool News"}'>
+        <span class="tag tag-partner">合作</span>
+        <div class="item-text">
+          <div class="item-title">學校在知道目的地之前就制定了人工智慧規則</div>
+          <div class="item-source">eSchool News</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "機構合作", "tagClass": "tag-partner", "title": "當人工智慧政策遇到真實課堂會發生什麼事？", "para1": "一項全國性研究、一位地方領導人以及對學校如何真正監管人工智慧的現實檢驗。", "para2": "大型機構採用 AI 教育工具的案例，有助於降低其他機構的採購決策門檻。", "takeaway": "台灣學校與 EdTech 廠商可參考此合作模式，探索在地化合作可能性。", "sourceUrl": "https://edsurge.com/news/what-happens-when-ai-policy-meets-a-real-classroom", "sourceName": "EdSurge"}'>
+        <span class="tag tag-partner">合作</span>
+        <div class="item-text">
+          <div class="item-title">當人工智慧政策遇到真實課堂會發生什麼事？</div>
+          <div class="item-source">EdSurge</div>
+        </div>
+      </div>
+      <div class="section-label">市場趨勢</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "市場趨勢", "tagClass": "tag-market", "title": "教師在人工智慧融合方面不斷進步", "para1": "一份新報告強調了教師主導的採用、學生對回饋的需求以及對專門為課堂量身定制的工具的不斷推動。", "para2": "市場趨勢清楚顯示 AI 在教育場景的滲透持續加速，競爭格局正在改變。", "takeaway": "此趨勢可用於對客戶說明市場方向，強化 AI 教育工具採購的決策信心。", "sourceUrl": "https://edsurge.com/news/teachers-forge-ahead-on-integrating-ai", "sourceName": "EdSurge"}'>
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">教師在人工智慧融合方面不斷進步</div>
+          <div class="item-source">EdSurge</div>
+        </div>
+      </div>
+      <div class="section-label">效果研究</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "效果研究", "tagClass": "tag-research", "title": "Demis Hassabis 將 Google DeepMind 的日常領導權移交給 Koray Kavukcuoglu", "para1": "這位擁有 13 年 DeepMind 經驗的資深人士將負責 Gemini 模型開發、前沿人工智慧研究和產品團隊，而 Hassabis 則專注於 AGI、科學和同構實驗室", "para2": "有效果數據支持的 AI 教育工具更容易獲得學校採購信任，市場說服力提升。", "takeaway": "此研究數據可作為向學校推銷 AI 教育工具時的佐證，建議整理成投影片素材。", "sourceUrl": "https://www.edtechinnovationhub.com/news/e6jbqlsiv0bte7hruv5sgk6z41k29e", "sourceName": "EdTech Innov Hub"}'>
+        <span class="tag tag-research">研究</span>
+        <div class="item-text">
+          <div class="item-title">Demis Hassabis 將 Google DeepMind 的日常領導權移交給 Koray Kavukcuoglu</div>
+          <div class="item-source">EdTech Innov Hub</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "效果研究", "tagClass": "tag-research", "title": "OpenAI 選擇了 14 個研究項目來研究人工智慧對工作、教育和不平等的影響", "para1": "第一個經濟研究交流隊列包括使用 ChatGPT、行政、招聘和科學輸出數據進行的規劃實驗和研究", "para2": "有效果數據支持的 AI 教育工具更容易獲得學校採購信任，市場說服力提升。", "takeaway": "此研究數據可作為向學校推銷 AI 教育工具時的佐證，建議整理成投影片素材。", "sourceUrl": "https://www.edtechinnovationhub.com/news/openai-selects-14-research-projects-to-study-ais-effects-on-work-education-and-inequality", "sourceName": "EdTech Innov Hub"}'>
+        <span class="tag tag-research">研究</span>
+        <div class="item-text">
+          <div class="item-title">OpenAI 選擇了 14 個研究項目來研究人工智慧對工作、教育和不平等的影響</div>
+          <div class="item-source">EdTech Innov Hub</div>
+        </div>
+      </div>
+      <div class="section-label">產品動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "英國人工智慧安全研究所發現人工智慧代理在網路測試中針對真人", "para1": "122 次評估中有 10 次產生了 19 項未經批准的行為，其中包括嘗試開源供應鏈攻擊，儘管 AISI 沒有發現任何造成損害的證據", "para2": "新工具或功能的推出代表市場競爭加劇，行銷策略需要相應調整。", "takeaway": "行銷團隊可追蹤此工具的用戶反饋，作為比較競品或合作機會的評估依據。", "sourceUrl": "https://www.edtechinnovationhub.com/news/uk-ai-security-institute-finds-ai-agents-targeted-real-people-during-cyber-tests", "sourceName": "EdTech Innov Hub"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">英國人工智慧安全研究所發現人工智慧代理在網路測試中針對真人</div>
+          <div class="item-source">EdTech Innov Hub</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "Google AI 獎學金將技能培訓與社區主導的研討會結合起來", "para1": "Watson Institute 計畫僅限於美國、英國、荷蘭和芬蘭的指定資料中心社區，並要求每週投入 8 到 10 小時", "para2": "新工具或功能的推出代表市場競爭加劇，行銷策略需要相應調整。", "takeaway": "行銷團隊可追蹤此工具的用戶反饋，作為比較競品或合作機會的評估依據。", "sourceUrl": "https://www.edtechinnovationhub.com/news/google-ai-fellowship-pairs-skills-training-with-community-led-workshops", "sourceName": "EdTech Innov Hub"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">Google AI 獎學金將技能培訓與社區主導的研討會結合起來</div>
+          <div class="item-source">EdTech Innov Hub</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "七月最大的教育科技故事：人工智慧安全失敗、課堂機器人與人工智慧流暢度競賽", "para1": "7 月人工智慧安全、教育政策、網路安全和課堂技術方面取得了重大進展", "para2": "新工具或功能的推出代表市場競爭加劇，行銷策略需要相應調整。", "takeaway": "行銷團隊可追蹤此工具的用戶反饋，作為比較競品或合作機會的評估依據。", "sourceUrl": "https://www.edtechinnovationhub.com/news/julys-biggest-edtech-stories-ai-safety-failures-classroom-robots-and-the-race-for-ai-fluency", "sourceName": "EdTech Innov Hub"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">七月最大的教育科技故事：人工智慧安全失敗、課堂機器人與人工智慧流暢度競賽</div>
+          <div class="item-source">EdTech Innov Hub</div>
+        </div>
+      </div>
+
+    </aside>
+    <div class="detail-panel" id="detail-2026-08-08">
+      <div class="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <p>點擊左側新聞查看詳情</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="day-pane" data-day="2026-08-07" hidden>
   <div class="split">
     <aside class="news-list" id="list-2026-08-07">
       <div class="pane-header">8月7日（週五）<span class="count"> · 8 則</span></div>
@@ -1379,7 +1463,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026-08-07 07:21 (Asia/Taipei)</span>
+  最近更新：<span id="updated">2026-08-08 07:43 (Asia/Taipei)</span>
 </footer>
 
 <script>
