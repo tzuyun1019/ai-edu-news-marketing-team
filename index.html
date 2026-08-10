@@ -486,8 +486,8 @@ body {
   <button class="week-nav-btn" id="btnThisWeek" onclick="switchToWeek(0)" disabled>本週 →</button>
 </div>
 <nav class="day-tabs" id="dayTabs">
-    <button class="tab active" data-week="0" data-day="2026-08-10"><span class="tab-dow">週一</span><span class="tab-date">8/10</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-week="0" data-day="2026-08-11"><span class="tab-dow">週二</span><span class="tab-date">8/11</span></button>
+    <button class="tab" data-week="0" data-day="2026-08-10"><span class="tab-dow">週一</span><span class="tab-date">8/10</span></button>
+  <button class="tab active" data-week="0" data-day="2026-08-11"><span class="tab-dow">週二</span><span class="tab-date">8/11</span><span class="tab-today">今日</span></button>
   <button class="tab empty" data-week="0" data-day="2026-08-12"><span class="tab-dow">週三</span><span class="tab-date">8/12</span></button>
   <button class="tab empty" data-week="0" data-day="2026-08-13"><span class="tab-dow">週四</span><span class="tab-date">8/13</span></button>
   <button class="tab empty" data-week="0" data-day="2026-08-14"><span class="tab-dow">週五</span><span class="tab-date">8/14</span></button>
@@ -503,7 +503,75 @@ body {
 </nav>
 
 <div id="panesContainer">
-<section class="day-pane" data-day="2026-08-10">
+<section class="day-pane" data-day="2026-08-11">
+  <div class="split">
+    <aside class="news-list" id="list-2026-08-11">
+      <div class="pane-header">8月11日（週二）<span class="count"> · 6 則</span></div>
+
+      <div class="section-label">資金動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"資金動態","tagClass":"tag-funding","title":"8/6 Wild Zebra 完成 $6M 種子輪，AI 家教只提問不給答案","para1":"西雅圖新創 Wild Zebra 於 8 月 6 日宣布完成 600 萬美元種子輪，由 Trilogy Equity Partners 領投，總融資達 800 萬美元。平台以蘇格拉底問答法引導 2–9 年級學生自主學習數學與閱讀，依學生興趣個人化課程，目前服務數萬名學生，團隊計畫用於招聘工程師及銷售人員。","para2":"AI 家教市場正走向「不代替思考」的設計哲學。Wild Zebra 的融資論述清楚說明：符合學習科學原則的互動設計，比單純的內容庫更有說服投資人的能力，也更容易取得家長信任。","takeaway":"若正在推廣 AI 家教產品，可在行銷素材中強調「引導思考而非代替思考」的設計原則，這個訴求直接回應家長最核心的疑慮——怕孩子對 AI 產生依賴，遠比「提升成績」更具差異化說服力。","sourceUrl":"https://www.geekwire.com/2026/this-startup-just-raised-6m-for-an-ai-tutor-that-helps-kids-figure-it-out-themselves/","sourceName":"GeekWire · Wild Zebra"}'>
+        <span class="tag tag-funding">資金</span>
+        <div class="item-text">
+          <div class="item-title">8/6 Wild Zebra 完成 $6M 種子輪，AI 家教只提問不給答案</div>
+          <div class="item-source">GeekWire</div>
+        </div>
+      </div>
+      <div class="section-label">效果研究</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"效果研究","tagClass":"tag-research","title":"8月研究速報：86% 高等教育生以 AI 為主要研究夥伴，美國學生年增 26%","para1":"Filament Games 8 月 AI 學習研究月報指出，估計 86% 的高等教育學生已以 AI 作為主要研究與腦力激盪夥伴，美國學生使用 AI 輔助學習年增 26%，教師採用率也上升 21%；但僅 28% 學生認為目前評量方式符合 AI 時代職場所需能力。","para2":"這些數字顯示採用端已進入高原期，瓶頸正在轉移：不是工具不夠用，而是評量制度尚未跟上。教育界最緊迫的問題正從「如何用 AI」轉向「如何公正評核在 AI 輔助下的學習成果」。","takeaway":"評量設計的制度真空是當前最大的產品機會。行銷團隊可提案「能偵測 AI 輔助層次的評量模組」，這個切入點比單純賣 AI 工具更具說服力，也更容易引起學校行政端採購興趣。","sourceUrl":"https://www.filamentgames.com/blog/the-latest-findings-in-ai-and-learning---august-2026","sourceName":"Filament Games · 8月 AI 教育研究"}'>
+        <span class="tag tag-research">研究</span>
+        <div class="item-text">
+          <div class="item-title">8月研究速報：86% 高等教育生以 AI 為主要研究夥伴，美國學生年增 26%</div>
+          <div class="item-source">Filament Games</div>
+        </div>
+      </div>
+      <div class="section-label">機構合作</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"機構合作","tagClass":"tag-partner","title":"8/11 加州蒙特雷郡多學區今日表決 AI 政策，新學年明訂師生使用邊界","para1":"加州蒙特雷郡多個學區正趕在新學年前確立 AI 政策。Salinas Union 高中學區今日（8/11）提請董事會表決，若通過將於 2026-27 學年正式規範師生 AI 使用方式，涵蓋資料隱私與學術誠信，是蒙特雷郡學區集體政策化的重要里程碑。","para2":"美國各地學區正從「觀望」轉向「明文立規」，新學年前集中完成 AI 政策立法，說明學校系統已將 AI 治理視為基礎設施問題，合規壓力正從政府端向學校端快速傳導。","takeaway":"學校 AI 政策化代表採購決策將日益制度化。台灣廠商應提前備妥合規文件，包含資料處理流程、學生隱私保護說明與模型來源，不要等學校問了才準備——主動備好才有機會成為優先考量名單。","sourceUrl":"https://www.montereycountynow.com/news/local_news/monterey-county-school-districts-to-roll-out-ai-policies-for-the-upcoming-school-year/article_b4b3bc77-c854-482c-a373-f906e532ab26.html","sourceName":"Monterey County Now · 加州學區 AI 政策"}'>
+        <span class="tag tag-partner">合作</span>
+        <div class="item-text">
+          <div class="item-title">8/11 加州蒙特雷郡多學區今日表決 AI 政策，新學年明訂師生使用邊界</div>
+          <div class="item-source">Monterey County Now</div>
+        </div>
+      </div>
+      <div class="section-label">市場趨勢</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"市場趨勢","tagClass":"tag-market","title":"8/1 ETC Journal 展望：未來五年 AI 原生課程、自適應評量與師資角色全面翻轉","para1":"Educational Technology and Change Journal 8 月分析指出，未來五年 AI 教育將出現三大結構性轉變：AI 原生課程設計成主流、自適應評量取代紙筆測驗普及，以及教師角色從知識傳遞者轉為引導學生與 AI 互動的能力教練，大學已開始將 AI 素養整合至各專業領域。","para2":"市場轉型路線圖正在明朗化。教師角色的重新定義，意味著「如何帶著學生與 AI 互動」的師培課程是接下來最確定的需求爆發點，先卡位者將擁有明顯的先發優勢。","takeaway":"師培方向是最確定的切入點。可與師培大學共創「引導學生與 AI 互動」的工作坊課程，或為在職教師提供相關培訓，搶佔教師 AI 能力培育市場，這塊需求正在快速形成。","sourceUrl":"https://etcjournal.com/2026/08/01/august-2026-where-ai-is-headed-in-next-5-years/","sourceName":"ETC Journal · AI 教育展望 2026"}'>
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">8/1 ETC Journal 展望：未來五年 AI 原生課程、自適應評量與師資角色全面翻轉</div>
+          <div class="item-source">ETC Journal</div>
+        </div>
+      </div>
+      <div class="section-label">台灣與亞洲</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"台灣與亞洲","tagClass":"tag-taiwan","title":"7/23 新加坡接掌東盟教育主席，2030 前推動 AI 教育跨國論壇與 STEM 計畫","para1":"新加坡擔任 2026-27 年東盟教育主席，依《東盟教育工作計畫 2026-2030》主辦跨國 AI 教育論壇，涵蓋東盟各國、中國、日本、南韓及對話夥伴。新加坡教育部另宣布，四年級學生的 AI 工具使用須在教師監督下透過學生學習平台進行，而非開放式工具。","para2":"東亞最重要的區域教育框架將 AI 整合列為優先議題，代表各國以合作而非競爭的姿態面對 AI 教育挑戰。多邊框架將大幅加速亞洲各國教師培訓與課程標準化的進程。","takeaway":"東盟 AI 教育框架是台灣廠商東南亞布局的重要參考。建議追蹤論壇議題，找出台灣教育 AI 產品可切入的使用情境，尤其是東盟國家正在尋找的監督式 AI 工具與師培解決方案。","sourceUrl":"https://www.chinadailyhk.com/hk/article/636844","sourceName":"China Daily HK · 東盟 AI 教育"}'>
+        <span class="tag tag-taiwan">台灣</span>
+        <div class="item-text">
+          <div class="item-title">7/23 新加坡接掌東盟教育主席，2030 前推動 AI 教育跨國論壇與 STEM 計畫</div>
+          <div class="item-source">China Daily HK</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section":"台灣與亞洲","tagClass":"tag-taiwan","title":"教育部 iLink 8 月推三場 AI 師培課，聚焦教學痛點、知識庫與 Codex 實作","para1":"台灣教育部資科司 iLink 計畫 8 月排定三場 AI 教師增能課程：8/5「老師痛點 AI 知：如何改變教學模式」、8/17「從問答到知識庫：教師的 AI 使用基本功」、8/27「Codex 教學實務應用」，為 AI 人才方舟計畫 115-118 年師培配套的重要環節。","para2":"三門課程分層推進，從痛點解決到技術應用，顯示教育部正系統性地提升教師 AI 能力，而非單次工作坊式的曝光。這個課程設計框架同時為民間師培機構提供了可參考的能力路徑藍圖。","takeaway":"民間師培廠商可對照 iLink 課程排程，設計互補而非重疊的產品。例如深化「Codex 實作進階班」，或針對無法參加政府課程的私立學校教師提供客製化服務，都是競爭相對少的市場縫隙。","sourceUrl":"https://depart.moe.edu.tw/ed2700/News_Content.aspx?n=727087A8A1328DEE&s=BBF5C75D50EF627E","sourceName":"教育部 · iLink AI 師培計畫"}'>
+        <span class="tag tag-taiwan">台灣</span>
+        <div class="item-text">
+          <div class="item-title">教育部 iLink 8 月推三場 AI 師培課，聚焦教學痛點、知識庫與 Codex 實作</div>
+          <div class="item-source">教育部</div>
+        </div>
+      </div>
+    </aside>
+    <div class="detail-panel" id="detail-2026-08-11">
+      <div class="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <p>點擊左側新聞查看詳情</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="day-pane" data-day="2026-08-10" hidden>
   <div class="split">
     <aside class="news-list" id="list-2026-08-10">
       <div class="pane-header">8月10日（週一）<span class="count"> · 10 則</span></div>
@@ -1649,7 +1717,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026-08-10 09:41 (Asia/Taipei)</span>
+  最近更新：<span id="updated">2026-08-11 07:16 (Asia/Taipei)</span>
 </footer>
 
 <script>
