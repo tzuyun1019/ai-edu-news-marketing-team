@@ -486,8 +486,8 @@ body {
   <button class="week-nav-btn" id="btnThisWeek" onclick="switchToWeek(0)" disabled>本週 →</button>
 </div>
 <nav class="day-tabs" id="dayTabs">
-    <button class="tab active" data-week="0" data-day="2026-08-24"><span class="tab-dow">週一</span><span class="tab-date">8/24</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-week="0" data-day="2026-08-25"><span class="tab-dow">週二</span><span class="tab-date">8/25</span></button>
+    <button class="tab" data-week="0" data-day="2026-08-24"><span class="tab-dow">週一</span><span class="tab-date">8/24</span></button>
+  <button class="tab active" data-week="0" data-day="2026-08-25"><span class="tab-dow">週二</span><span class="tab-date">8/25</span><span class="tab-today">今日</span></button>
   <button class="tab empty" data-week="0" data-day="2026-08-26"><span class="tab-dow">週三</span><span class="tab-date">8/26</span></button>
   <button class="tab empty" data-week="0" data-day="2026-08-27"><span class="tab-dow">週四</span><span class="tab-date">8/27</span></button>
   <button class="tab empty" data-week="0" data-day="2026-08-28"><span class="tab-dow">週五</span><span class="tab-date">8/28</span></button>
@@ -503,7 +503,91 @@ body {
 </nav>
 
 <div id="panesContainer">
-<section class="day-pane" data-day="2026-08-24">
+<section class="day-pane" data-day="2026-08-25">
+  <div class="split">
+    <aside class="news-list" id="list-2026-08-25">
+      <div class="pane-header">8月25日（週二）<span class="count"> · 8 則</span></div>
+
+      <div class="section-label">機構合作</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "機構合作", "tagClass": "tag-partner", "title": "揭示特殊學校系統正在做出的大學和職業準備轉變", "para1": "如果你問大多數教育工作者大學和職業準備（CCR）從哪裡開始，許多人會指出高中。從那時起，許多學生開始認真考慮畢業要求、雙重錄取", "para2": "大型機構採用 AI 教育工具的案例，有助於降低其他機構的採購決策門檻。", "takeaway": "台灣學校與 EdTech 廠商可參考此合作模式，探索在地化合作可能性。", "sourceUrl": "https://www.eschoolnews.com/innovative-teaching/2026/08/19/uncovering-college-and-career-readiness-shifts/", "sourceName": "eSchool News"}'>
+        <span class="tag tag-partner">合作</span>
+        <div class="item-text">
+          <div class="item-title">揭示特殊學校系統正在做出的大學和職業準備轉變</div>
+          <div class="item-source">eSchool News</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "機構合作", "tagClass": "tag-partner", "title": "US Education Department urges schools to judge EdTech by outcomes, not screen time", "para1": "新的聯邦指南要求各州和地區將學習證據、獨立評估和實施品質置於技術採購和更新決策的中心", "para2": "大型機構採用 AI 教育工具的案例，有助於降低其他機構的採購決策門檻。", "takeaway": "台灣學校與 EdTech 廠商可參考此合作模式，探索在地化合作可能性。", "sourceUrl": "https://www.edtechinnovationhub.com/news/us-education-department-urges-schools-to-judge-edtech-by-outcomes-not-screen-time", "sourceName": "EdTech Innov Hub"}'>
+        <span class="tag tag-partner">合作</span>
+        <div class="item-text">
+          <div class="item-title">US Education Department urges schools to judge EdTech by outcomes, not screen time</div>
+          <div class="item-source">EdTech Innov Hub</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "機構合作", "tagClass": "tag-partner", "title": "為什麼教育科技組織不再選擇零信任網路訪問", "para1": "以下的統計數據應該會讓每所學校和大學的 IT 經理停下腳步：91% 的英國高等教育機構在過去 12 個月內發現了網路漏洞或攻擊。對於商務", "para2": "大型機構採用 AI 教育工具的案例，有助於降低其他機構的採購決策門檻。", "takeaway": "台灣學校與 EdTech 廠商可參考此合作模式，探索在地化合作可能性。", "sourceUrl": "https://www.edtechinnovationhub.com/news/why-zero-trust-network-access-is-no-longer-optional-for-edtech-organisations", "sourceName": "EdTech Innov Hub"}'>
+        <span class="tag tag-partner">合作</span>
+        <div class="item-text">
+          <div class="item-title">為什麼教育科技組織不再選擇零信任網路訪問</div>
+          <div class="item-source">EdTech Innov Hub</div>
+        </div>
+      </div>
+      <div class="section-label">效果研究</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "效果研究", "tagClass": "tag-research", "title": "教育部為各州和地區發布期待已久的教育科技指南", "para1": "這封信強調了結果和證據，但沒有發布聯邦法規。", "para2": "有效果數據支持的 AI 教育工具更容易獲得學校採購信任，市場說服力提升。", "takeaway": "此研究數據可作為向學校推銷 AI 教育工具時的佐證，建議整理成投影片素材。", "sourceUrl": "https://edsurge.com/news/department-of-education-issues-long-awaited-edtech-guidance-for-states-and-districts", "sourceName": "EdSurge"}'>
+        <span class="tag tag-research">研究</span>
+        <div class="item-text">
+          <div class="item-title">教育部為各州和地區發布期待已久的教育科技指南</div>
+          <div class="item-source">EdSurge</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "效果研究", "tagClass": "tag-research", "title": "加州大學歐文分校獲得 1000 萬美元聯邦撥款用於國家人工智慧寫作研究中心", "para1": "為期五年的 WRITE AI 中心將研究高等教育寫作中的生成式 AI，開發和測試 PapyrusAI，並在六所社區大學進行隨機對照試驗", "para2": "有效果數據支持的 AI 教育工具更容易獲得學校採購信任，市場說服力提升。", "takeaway": "此研究數據可作為向學校推銷 AI 教育工具時的佐證，建議整理成投影片素材。", "sourceUrl": "https://www.edtechinnovationhub.com/news/uc-irvine-receives-10m-federal-grant-for-national-ai-writing-research-center", "sourceName": "EdTech Innov Hub"}'>
+        <span class="tag tag-research">研究</span>
+        <div class="item-text">
+          <div class="item-title">加州大學歐文分校獲得 1000 萬美元聯邦撥款用於國家人工智慧寫作研究中心</div>
+          <div class="item-source">EdTech Innov Hub</div>
+        </div>
+      </div>
+      <div class="section-label">產品動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "作業、發票和 AI 修復", "para1": "本週與 EdSurge 一起探索人工智慧在哪些領域悄悄崛起。", "para2": "新工具或功能的推出代表市場競爭加劇，行銷策略需要相應調整。", "takeaway": "行銷團隊可追蹤此工具的用戶反饋，作為比較競品或合作機會的評估依據。", "sourceUrl": "https://edsurge.com/news/what-is-ai-actually-costing-schools", "sourceName": "EdSurge"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">作業、發票和 AI 修復</div>
+          <div class="item-source">EdSurge</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "AI tutor slows math practice but improves post-mistake recovery in 6,997-student trial", "para1": "延遲測試的進步不大，主要集中在田納西州連續三次正確掌握工作流程中使用人工智慧的學生中", "para2": "新工具或功能的推出代表市場競爭加劇，行銷策略需要相應調整。", "takeaway": "行銷團隊可追蹤此工具的用戶反饋，作為比較競品或合作機會的評估依據。", "sourceUrl": "https://www.edtechinnovationhub.com/news/ai-tutor-slows-math-practice-but-improves-post-mistake-recovery-in-6997-student-trial", "sourceName": "EdTech Innov Hub"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">AI tutor slows math practice but improves post-mistake recovery in 6,997-student trial</div>
+          <div class="item-source">EdTech Innov Hub</div>
+        </div>
+      </div>
+      <div class="section-label">資金動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "資金動態", "tagClass": "tag-funding", "title": "ETIH 每週綜述：70% 的美國青少年使用 AI 完成學業、彌補 GCSE 差距以及 Lovable 的 4 億美元融資", "para1": "上週的 ETIH 綜述涵蓋了學生人工智慧使用和輔導的新證據、GCSE 成績和學校手機政策、人工智慧素養計劃、NASA 職業道路、谷歌的學生工具和 Lo", "para2": "此次融資顯示投資人持續看好 AI 教育市場潛力，資金流向具有方向性參考價值。", "takeaway": "台灣 EdTech 廠商可關注此輪融資背後的商業模式，評估類似市場切入點的機會。", "sourceUrl": "https://www.edtechinnovationhub.com/news/etih-weekly-roundup-70-of-us-teens-use-ai-for-schoolwork-gcse-gaps-and-lovables-400m-raise", "sourceName": "EdTech Innov Hub"}'>
+        <span class="tag tag-funding">資金</span>
+        <div class="item-text">
+          <div class="item-title">ETIH 每週綜述：70% 的美國青少年使用 AI 完成學業、彌補 GCSE 差距以及 Lovable 的 4 億美元融資</div>
+          <div class="item-source">EdTech Innov Hub</div>
+        </div>
+      </div>
+
+    </aside>
+    <div class="detail-panel" id="detail-2026-08-25">
+      <div class="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <p>點擊左側新聞查看詳情</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="day-pane" data-day="2026-08-24" hidden>
   <div class="split">
     <aside class="news-list" id="list-2026-08-24">
       <div class="pane-header">8月24日（週一）<span class="count"> · 8 則</span></div>
@@ -2026,7 +2110,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026-08-24 07:31 (Asia/Taipei)</span>
+  最近更新：<span id="updated">2026-08-25 07:31 (Asia/Taipei)</span>
 </footer>
 
 <script>
