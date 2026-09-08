@@ -486,8 +486,8 @@ body {
   <button class="week-nav-btn" id="btnThisWeek" onclick="switchToWeek(0)" disabled>本週 →</button>
 </div>
 <nav class="day-tabs" id="dayTabs">
-    <button class="tab active" data-week="0" data-day="2026-09-07"><span class="tab-dow">週一</span><span class="tab-date">9/7</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-week="0" data-day="2026-09-08"><span class="tab-dow">週二</span><span class="tab-date">9/8</span></button>
+    <button class="tab" data-week="0" data-day="2026-09-07"><span class="tab-dow">週一</span><span class="tab-date">9/7</span></button>
+  <button class="tab active" data-week="0" data-day="2026-09-08"><span class="tab-dow">週二</span><span class="tab-date">9/8</span><span class="tab-today">今日</span></button>
   <button class="tab empty" data-week="0" data-day="2026-09-09"><span class="tab-dow">週三</span><span class="tab-date">9/9</span></button>
   <button class="tab empty" data-week="0" data-day="2026-09-10"><span class="tab-dow">週四</span><span class="tab-date">9/10</span></button>
   <button class="tab empty" data-week="0" data-day="2026-09-11"><span class="tab-dow">週五</span><span class="tab-date">9/11</span></button>
@@ -503,7 +503,90 @@ body {
 </nav>
 
 <div id="panesContainer">
-<section class="day-pane" data-day="2026-09-07">
+<section class="day-pane" data-day="2026-09-08">
+  <div class="split">
+    <aside class="news-list" id="list-2026-09-08">
+      <div class="pane-header">9月8日（週二）<span class="count"> · 8 則</span></div>
+
+      <div class="section-label">機構合作</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "機構合作", "tagClass": "tag-partner", "title": "人工智慧時代的職業準備需要決策實踐，而不僅僅是工具的使用", "para1": "學校正在競相教導學生如何使用人工智慧。這是必要的，但還不夠。工作場所的優勢將越來越屬於那些能夠決定人工智慧輸出何時有用、何時有用的人。", "para2": "大型機構採用 AI 教育工具的案例，有助於降低其他機構的採購決策門檻。", "takeaway": "台灣學校與 EdTech 廠商可參考此合作模式，探索在地化合作可能性。", "sourceUrl": "https://www.eschoolnews.com/digital-learning/2026/09/04/career-readiness-in-the-ai-era-needs-decision-practice-not-just-tool-access/", "sourceName": "eSchool News"}'>
+        <span class="tag tag-partner">合作</span>
+        <div class="item-text">
+          <div class="item-title">人工智慧時代的職業準備需要決策實踐，而不僅僅是工具的使用</div>
+          <div class="item-source">eSchool News</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "機構合作", "tagClass": "tag-partner", "title": "在學校中建立人工智慧的日常公平實踐", "para1": "人工智慧技術在學校中迅速發展，但越來越多的研究表明，大型語言模型 (LLM) 缺乏常識、道德和個人課堂動態知識。", "para2": "大型機構採用 AI 教育工具的案例，有助於降低其他機構的採購決策門檻。", "takeaway": "台灣學校與 EdTech 廠商可參考此合作模式，探索在地化合作可能性。", "sourceUrl": "https://www.eschoolnews.com/digital-learning/2026/09/03/building-an-everyday-equitable-practice-for-ai-in-schools/", "sourceName": "eSchool News"}'>
+        <span class="tag tag-partner">合作</span>
+        <div class="item-text">
+          <div class="item-title">在學校中建立人工智慧的日常公平實踐</div>
+          <div class="item-source">eSchool News</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "機構合作", "tagClass": "tag-partner", "title": "哥倫比亞和 JED 合作為人工智慧提供青少年心理健康保障", "para1": "科技與民主倡議和傑德基金會將以專家圓桌會議和工作文件開始，旨在將心理健康專業知識與技術決策聯繫起來", "para2": "大型機構採用 AI 教育工具的案例，有助於降低其他機構的採購決策門檻。", "takeaway": "台灣學校與 EdTech 廠商可參考此合作模式，探索在地化合作可能性。", "sourceUrl": "https://www.edtechinnovationhub.com/news/columbia-and-jed-partner-on-teen-mental-health-safeguards-for-ai", "sourceName": "EdTech Innov Hub"}'>
+        <span class="tag tag-partner">合作</span>
+        <div class="item-text">
+          <div class="item-title">哥倫比亞和 JED 合作為人工智慧提供青少年心理健康保障</div>
+          <div class="item-source">EdTech Innov Hub</div>
+        </div>
+      </div>
+      <div class="section-label">產品動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "將教育科技指導應用於課堂", "para1": "看看當遠離教室的規則落在老師的桌子上時會發生什麼。", "para2": "新工具或功能的推出代表市場競爭加劇，行銷策略需要相應調整。", "takeaway": "行銷團隊可追蹤此工具的用戶反饋，作為比較競品或合作機會的評估依據。", "sourceUrl": "https://edsurge.com/news/putting-edtech-guidance-to-work-in-the-classroom", "sourceName": "EdSurge"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">將教育科技指導應用於課堂</div>
+          <div class="item-source">EdSurge</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "人工智慧如何教我在課堂上擁抱脆弱性", "para1": "真正的創新並不在於掌握每個平台，而是願意提出更深層的問題並承擔風險。", "para2": "新工具或功能的推出代表市場競爭加劇，行銷策略需要相應調整。", "takeaway": "行銷團隊可追蹤此工具的用戶反饋，作為比較競品或合作機會的評估依據。", "sourceUrl": "https://edsurge.com/news/how-ai-taught-me-to-embrace-vulnerability-in-the-classroom", "sourceName": "EdSurge"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">人工智慧如何教我在課堂上擁抱脆弱性</div>
+          <div class="item-source">EdSurge</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "PUCPR 發布 Humanitas Code，將人類判斷保留在人工智慧對話中", "para1": "免費的 12 篇協議可以貼到 ChatGPT、Claude、Gemini 和其他人工智慧工具中，以改變它們的回應方式，包括要求來源、暴露不確定性和返回結果", "para2": "新工具或功能的推出代表市場競爭加劇，行銷策略需要相應調整。", "takeaway": "行銷團隊可追蹤此工具的用戶反饋，作為比較競品或合作機會的評估依據。", "sourceUrl": "https://www.edtechinnovationhub.com/news/pucpr-releases-humanitas-code-to-keep-human-judgment-inside-ai-conversations", "sourceName": "EdTech Innov Hub"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">PUCPR 發布 Humanitas Code，將人類判斷保留在人工智慧對話中</div>
+          <div class="item-source">EdTech Innov Hub</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "開放安全 AI 聯盟提議共享 AI 事件交換並轉向 Linux 基金會", "para1": "NVIDIA 成立的聯盟將在 Linux 基金會的治理下運作，同時開發開源 AI 安全工具、標準以及用於共享事件和未遂事件的建議系統", "para2": "新工具或功能的推出代表市場競爭加劇，行銷策略需要相應調整。", "takeaway": "行銷團隊可追蹤此工具的用戶反饋，作為比較競品或合作機會的評估依據。", "sourceUrl": "https://www.edtechinnovationhub.com/news/open-secure-ai-alliance-moves-to-linux-foundation-as-it-proposes-shared-ai-incident-exchange", "sourceName": "EdTech Innov Hub"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">開放安全 AI 聯盟提議共享 AI 事件交換並轉向 Linux 基金會</div>
+          <div class="item-source">EdTech Innov Hub</div>
+        </div>
+      </div>
+      <div class="section-label">資金動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "資金動態", "tagClass": "tag-funding", "title": "研究發現，私人補習連鎖店提高了美國的考試成績，但擴大了種族差距", "para1": "NBER 的一份工作文件追蹤了 Kumon、Sylvan Learning 和 Mathnasium 等連鎖店，發現在第一個中心開業後，全學區的數學和閱讀成績更高，但數學成績集中", "para2": "此次融資顯示投資人持續看好 AI 教育市場潛力，資金流向具有方向性參考價值。", "takeaway": "台灣 EdTech 廠商可關注此輪融資背後的商業模式，評估類似市場切入點的機會。", "sourceUrl": "https://www.edtechinnovationhub.com/news/private-tutoring-chains-raise-us-test-scores-but-widen-racial-gaps-study-findspei63t6nechguwu48bmhybfykd9vyj", "sourceName": "EdTech Innov Hub"}'>
+        <span class="tag tag-funding">資金</span>
+        <div class="item-text">
+          <div class="item-title">研究發現，私人補習連鎖店提高了美國的考試成績，但擴大了種族差距</div>
+          <div class="item-source">EdTech Innov Hub</div>
+        </div>
+      </div>
+
+    </aside>
+    <div class="detail-panel" id="detail-2026-09-08">
+      <div class="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <p>點擊左側新聞查看詳情</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="day-pane" data-day="2026-09-07" hidden>
   <div class="split">
     <aside class="news-list" id="list-2026-09-07">
       <div class="pane-header">9月7日（週一）<span class="count"> · 8 則</span></div>
@@ -2298,7 +2381,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026-09-07 08:55 (Asia/Taipei)</span>
+  最近更新：<span id="updated">2026-09-08 09:07 (Asia/Taipei)</span>
 </footer>
 
 <script>
