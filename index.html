@@ -486,8 +486,8 @@ body {
   <button class="week-nav-btn" id="btnThisWeek" onclick="switchToWeek(0)" disabled>本週 →</button>
 </div>
 <nav class="day-tabs" id="dayTabs">
-      <button class="tab active" data-week="0" data-day="2026-09-14"><span class="tab-dow">週一</span><span class="tab-date">9/14</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-week="0" data-day="2026-09-15"><span class="tab-dow">週二</span><span class="tab-date">9/15</span></button>
+      <button class="tab" data-week="0" data-day="2026-09-14"><span class="tab-dow">週一</span><span class="tab-date">9/14</span></button>
+  <button class="tab active" data-week="0" data-day="2026-09-15"><span class="tab-dow">週二</span><span class="tab-date">9/15</span><span class="tab-today">今日</span></button>
   <button class="tab empty" data-week="0" data-day="2026-09-16"><span class="tab-dow">週三</span><span class="tab-date">9/16</span></button>
   <button class="tab empty" data-week="0" data-day="2026-09-17"><span class="tab-dow">週四</span><span class="tab-date">9/17</span></button>
   <button class="tab empty" data-week="0" data-day="2026-09-18"><span class="tab-dow">週五</span><span class="tab-date">9/18</span></button>
@@ -503,7 +503,83 @@ body {
 </nav>
 
 <div id="panesContainer">
-<section class="day-pane" data-day="2026-09-14">
+<section class="day-pane" data-day="2026-09-15">
+  <div class="split">
+    <aside class="news-list" id="list-2026-09-15">
+      <div class="pane-header">9月15日（週二）<span class="count"> · 7 則</span></div>
+      <div class="section-label">市場趨勢</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "市場趨勢", "tagClass": "tag-market", "title": "9/2 紐約市宣布全美最大規模K-8生成式AI禁令", "para1": "紐約市長 Mamdani 與教育局長 Samuels 於 9 月 2 日宣布對幼稚園至 8 年級近 60 萬名學生實施為期一年的生成式 AI 禁令，為美國史上最大規模學校 AI 限制。高中生可使用指定工具並修 AI 批判思維課，教師可用 AI 備課但禁止評分。", "para2": "此政策標誌美國正式進入「分齡 AI 監管」時代，預計引發全美其他學區跟進討論，直接影響 K-8 EdTech 工具在美國市場的准入條件與銷售策略。", "takeaway": "行銷素材可強調產品具備年齡分層設計、教師管控介面，以「合規設計」作差異化切入點，主動搶佔政策討論話語權。", "sourceUrl": "https://www.cnn.com/2026/09/02/tech/new-york-city-classroom-ai-ban", "sourceName": "CNN · 教育政策"}'>
+        <span class="tag tag-market">市場</span>
+        <div class="item-text">
+          <div class="item-title">9/2 紐約市宣布全美最大規模K-8生成式AI禁令</div>
+          <div class="item-source">CNN</div>
+        </div>
+      </div>
+      <div class="section-label">機構合作</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "機構合作", "tagClass": "tag-partner", "title": "9月 萊斯特大學全校部署 Microsoft 365 Copilot，2.5萬師生受惠", "para1": "英國萊斯特大學於 2026 年 9 月起，作為英國首批 Microsoft Frontier University 之一，向全校 21,000 名學生與 4,000 名教職員全面開放 Microsoft 365 Copilot。大學同步將 Copilot 培訓納入 2026-27 學年新生入學課程。", "para2": "這是迄今英國規模最大的高等教育機構級 AI 部署案例，示範了「全校統一授權」模式如何降低導入門檻、加速 AI 素養普及，對台灣大學採購決策具重要參考意義。", "takeaway": "可製作案例一頁紙，聚焦「全校授權 vs 個別購買」的成本效益分析，協助台灣院校行政人員向上說服，加速批量採購決策。", "sourceUrl": "https://www.technologyrecord.com/article/university-of-leicester-rolls-out-microsoft-365-copilot-to-all-students-and-staff", "sourceName": "Technology Record · 高教合作"}'>
+        <span class="tag tag-partner">合作</span>
+        <div class="item-text">
+          <div class="item-title">9月 萊斯特大學全校部署 Microsoft 365 Copilot，2.5萬師生受惠</div>
+          <div class="item-source">Technology Record</div>
+        </div>
+      </div>
+      <div class="section-label">產品動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "9/2 Google 聯手 ISTE 推免費 AI 教師培訓系列，覆蓋600萬名師", "para1": "Google for Education 與 ISTE+ASCD 於 9 月 2 日正式推出 Google AI Educator Series，對全美 600 萬名 K-12 與高等教育教師免費開放。課程分 10-45 分鐘，涵蓋基礎理解、教學應用與行政應用三類，完成後頒發徽章認證。9 月 19 日另設線上 Badge-a-thon 學習日。", "para2": "Google 以免費師訓規模化切入教育市場，既建立品牌信任又形成工具黏性，對 EdTech 廠商的產品生態策略形成示範。", "takeaway": "台灣行銷團隊可借鑒此模式，規劃免費線上師訓活動搭配產品認證徽章，以「教師社群」驅動工具採用，降低學校採購決策門檻。", "sourceUrl": "https://blog.google/products-and-platforms/products/education/new-ai-educator-trainings-september-2026/", "sourceName": "Google Blog · 教育產品"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">9/2 Google 聯手 ISTE 推免費 AI 教師培訓系列，覆蓋600萬名師</div>
+          <div class="item-source">Google Blog</div>
+        </div>
+      </div>
+      <div class="section-label">效果研究</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "效果研究", "tagClass": "tag-research", "title": "9/8 UNESCO 數位學習週：高教 AI 採用率飆升但治理嚴重滯後", "para1": "UNESCO 數位學習週（9 月 8-11 日）揭示一項新研究：AI 工具在拉丁美洲與加勒比海高等教育機構的採用率已大幅躍升，但相應的治理框架嚴重落後。論壇探討 AI 時代「何謂事實」以及合成知識對教育系統的摩擦挑戰。", "para2": "UNESCO 的全球視野數據是最具公信力的教育 AI 採用佐證，治理滯後的問題也點出市場痛點：機構需要能協助建立 AI 使用準則的合作夥伴。", "takeaway": "引用 UNESCO 報告數據於簡報與白皮書中，強化產品合規性與治理支援功能的行銷論述，提升對公立學校與政府採購的說服力。", "sourceUrl": "https://www.unesco.org/en/weeks/digital-learning", "sourceName": "UNESCO · 數位學習週"}'>
+        <span class="tag tag-research">研究</span>
+        <div class="item-text">
+          <div class="item-title">9/8 UNESCO 數位學習週：高教 AI 採用率飆升但治理嚴重滯後</div>
+          <div class="item-source">UNESCO</div>
+        </div>
+      </div>
+      <div class="section-label">台灣與亞洲</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "台灣與亞洲", "tagClass": "tag-taiwan", "title": "台灣 AI 教育元年：教育部推「e度」平台，韓星赴台取經", "para1": "天下雜誌報導，2026 年為台灣 AI 教育正式元年。教育部計畫於 9 月起在國家數位學習平台上線 AI 學習夥伴「e度」，供全台中小學師生免費使用。Google 同步提供台灣大學生一年免費 Google AI Plus。韓國、新加坡教育官員亦陸續赴台交流取經。", "para2": "台灣從跟隨者轉為亞洲觀摩對象，顯示本地 EdTech 解決方案具備輸出潛力，尤其在中文語境與課綱整合方面佔有先發優勢。", "takeaway": "把握「AI 教育元年」時間窗口，主動接觸教育部數位學習平台合作機會，並整理台灣成功案例提案給韓星有興趣的合作單位。", "sourceUrl": "https://www.cw.com.tw/article/5140414", "sourceName": "天下雜誌 · 台灣教育"}'>
+        <span class="tag tag-taiwan">台灣</span>
+        <div class="item-text">
+          <div class="item-title">台灣 AI 教育元年：教育部推「e度」平台，韓星赴台取經</div>
+          <div class="item-source">天下雜誌</div>
+        </div>
+      </div>
+      <div class="section-label">Threads 精選</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "Threads 精選", "tagClass": "tag-taiwan", "title": "鴻海教基會偏鄉 AI 研習營邁入第六年，入選校名單出爐", "para1": "鴻海教育基金會主辦的偏鄉國中 AI 研習營於 2026 年邁入第六年，今年入選學校名單已正式公布。研習營讓偏鄉學生透過程式設計、感測器應用與機器人實作等專案，親身體驗 AI 工具的實際應用，而非僅停留在課本知識層次。", "para2": "連續六年的長期投入顯示企業 CSR 與 AI 教育的結合正成為品牌長效資產，也為 EdTech 廠商示範如何以「偏鄉覆蓋率」作為差異化指標。", "takeaway": "台灣行銷團隊可積極尋求 CSR 合作機會，以「偏鄉教育平權」作為品牌故事，降低學校信任門檻並累積政策背書案例。", "sourceUrl": "https://www.threads.com/@foxconnedu/post/DZ67KnFn0q5/", "sourceName": "Threads · @foxconnedu"}'>
+        <span class="tag tag-taiwan">精選</span>
+        <div class="item-text">
+          <div class="item-title">鴻海教基會偏鄉 AI 研習營邁入第六年，入選校名單出爐</div>
+          <div class="item-source">Threads</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "Threads 精選", "tagClass": "tag-taiwan", "title": "ChatGPT 推 K-12「教師版」免費開放，含 FERPA 合規機制", "para1": "OpenAI 推出 ChatGPT 教師版，美國 K-12 教師申請通過後可免費使用至 2027 年 6 月。此版本以教師主導為核心設計，預設不將輸入內容用於模型訓練，符合 FERPA 學生資料保護標準，並提供個人化教學支援與師師協作工具。@learn4c 在 Threads 整理了主要功能。", "para2": "OpenAI 直接以「免費師訓版」進攻 K-12 教育市場，加速教師端 AI 黏性建立，對其他尚未導入的 EdTech 工具構成壓力，也說明合規設計已成市場准入門票。", "takeaway": "台灣 EdTech 產品若面向教師市場，需優先強調「不用訓練模型」與「符合學生資料保護規範」等合規特性，以降低學校 IT 主管的採購疑慮。", "sourceUrl": "https://www.threads.com/@learn4c/post/DRRlGr1EWhR/", "sourceName": "Threads · @learn4c"}'>
+        <span class="tag tag-taiwan">精選</span>
+        <div class="item-text">
+          <div class="item-title">ChatGPT 推 K-12「教師版」免費開放，含 FERPA 合規機制</div>
+          <div class="item-source">Threads</div>
+        </div>
+      </div>
+    </aside>
+    <div class="detail-panel" id="detail-2026-09-15">
+      <div class="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <p>點擊左側新聞查看詳情</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="day-pane" hidden data-day="2026-09-14">
   <div class="split">
     <aside class="news-list" id="list-2026-09-14">
       <div class="pane-header">9月14日（週一）<span class="count"> · 8 則</span></div>
@@ -2539,7 +2615,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026-09-14 08:58 (Asia/Taipei)</span>
+  最近更新：<span id="updated">2026-09-15 07:13 (台北)</span>
 </footer>
 
 <script>
