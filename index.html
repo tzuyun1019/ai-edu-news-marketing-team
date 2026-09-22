@@ -486,8 +486,8 @@ body {
   <button class="week-nav-btn" id="btnThisWeek" onclick="switchToWeek(0)" disabled>本週 →</button>
 </div>
 <nav class="day-tabs" id="dayTabs">
-  <button class="tab active" data-week="0" data-day="2026-09-21"><span class="tab-dow">週一</span><span class="tab-date">9/21</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-week="0" data-day="2026-09-22"><span class="tab-dow">週二</span><span class="tab-date">9/22</span></button>
+  <button class="tab" data-week="0" data-day="2026-09-21"><span class="tab-dow">週一</span><span class="tab-date">9/21</span></button>
+  <button class="tab active" data-week="0" data-day="2026-09-22"><span class="tab-dow">週二</span><span class="tab-date">9/22</span><span class="tab-today">今日</span></button>
   <button class="tab empty" data-week="0" data-day="2026-09-23"><span class="tab-dow">週三</span><span class="tab-date">9/23</span></button>
   <button class="tab empty" data-week="0" data-day="2026-09-24"><span class="tab-dow">週四</span><span class="tab-date">9/24</span></button>
   <button class="tab empty" data-week="0" data-day="2026-09-25"><span class="tab-dow">週五</span><span class="tab-date">9/25</span></button>
@@ -504,7 +504,89 @@ body {
 </nav>
 
 <div id="panesContainer">
-<section class="day-pane" data-day="2026-09-21">
+<section class="day-pane" data-day="2026-09-22">
+  <div class="split">
+    <aside class="news-list" id="list-2026-09-22">
+      <div class="pane-header">9月22日（週二）<span class="count"> · 8 則</span></div>
+
+      <div class="section-label">機構合作</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "機構合作", "tagClass": "tag-partner", "title": "口試回歸，AI可能是原因", "para1": "2023 年，懷俄明大學教授凱瑟琳哈特曼 (Catherine Hartmann) 給冥想歷史課程的學生佈置了一項非常個人化的作業：嘗試冥想練習，並寫一篇反思性的文章。", "para2": "大型機構採用 AI 教育工具的案例，有助於降低其他機構的採購決策門檻。", "takeaway": "台灣學校與 EdTech 廠商可參考此合作模式，探索在地化合作可能性。", "sourceUrl": "https://www.eschoolnews.com/digital-learning/2026/09/18/the-oral-exam-is-back-and-ai-may-be-the-reason/", "sourceName": "eSchool News"}'>
+        <span class="tag tag-partner">合作</span>
+        <div class="item-text">
+          <div class="item-title">口試回歸，AI可能是原因</div>
+          <div class="item-source">eSchool News</div>
+        </div>
+      </div>
+      <div class="section-label">產品動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "Navigating the Future of Work: A Conversation with JFF’s Maria Flynn", "para1": "從基線人工智慧素養到早期職業生涯接觸，「未來就業」主席瑪麗亞·弗林分享了教育系統如何幫助年輕人為…做好準備", "para2": "新工具或功能的推出代表市場競爭加劇，行銷策略需要相應調整。", "takeaway": "行銷團隊可追蹤此工具的用戶反饋，作為比較競品或合作機會的評估依據。", "sourceUrl": "https://edsurge.com/news/navigating-the-future-of-work-a-conversation-with-jffs-maria-flynn", "sourceName": "EdSurge"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">Navigating the Future of Work: A Conversation with JFF’s Maria Flynn</div>
+          <div class="item-source">EdSurge</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "What Yellowstone, Rwanda and AI Taught Me About Change", "para1": "透過將我們的課堂視為相互關聯的生態系統，我們可以超越關於技術的表面辯論，專注於培養判斷力，...", "para2": "新工具或功能的推出代表市場競爭加劇，行銷策略需要相應調整。", "takeaway": "行銷團隊可追蹤此工具的用戶反饋，作為比較競品或合作機會的評估依據。", "sourceUrl": "https://edsurge.com/news/what-yellowstone-rwanda-and-ai-taught-me-about-change", "sourceName": "EdSurge"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">What Yellowstone, Rwanda and AI Taught Me About Change</div>
+          <div class="item-source">EdSurge</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "卡內基任命托德·齊珀為首席執行官，高等教育正處於決定性時刻", "para1": "托德·拉鍊 (Todd Zipper) 將於本月晚些時候加入數據和人工智慧驅動的高等教育技術專家卡內基 (Carnegie)，擔任首席執行官，接替加里·科倫 (Gary Colen)，後者將過渡到該公司董事會", "para2": "新工具或功能的推出代表市場競爭加劇，行銷策略需要相應調整。", "takeaway": "行銷團隊可追蹤此工具的用戶反饋，作為比較競品或合作機會的評估依據。", "sourceUrl": "https://www.edtechinnovationhub.com/news/carnegie-taps-todd-zipper-for-chief-executive-officer-role-as-higher-education-finds-itself-in-a-defining-moment", "sourceName": "EdTech Innov Hub"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">卡內基任命托德·齊珀為首席執行官，高等教育正處於決定性時刻</div>
+          <div class="item-source">EdTech Innov Hub</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "OpenAI 高層、前財政大臣喬治奧斯本敦促人工智慧公司保持透明度", "para1": "政府和公眾需要能夠審查前沿人工智慧的行為方式，包括何時出錯。建構這些系統的公司有責任分享這些證據。所以薩", "para2": "新工具或功能的推出代表市場競爭加劇，行銷策略需要相應調整。", "takeaway": "行銷團隊可追蹤此工具的用戶反饋，作為比較競品或合作機會的評估依據。", "sourceUrl": "https://www.edtechinnovationhub.com/news/openai-exec-and-former-chancellor-of-the-exchequer-george-osborne-urges-transparency-from-ai-firms", "sourceName": "EdTech Innov Hub"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">OpenAI 高層、前財政大臣喬治奧斯本敦促人工智慧公司保持透明度</div>
+          <div class="item-source">EdTech Innov Hub</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "The Google AI Educator Series has come up with a new way for students to showcase what they’ve learned", "para1": "學生和教育工作者現在可以將 15 分鐘的 Google AI 教育者係列課程轉化為真正的證書。提供以下內容：本科學分：今年稍後將透過 College Unb 提供免費學分", "para2": "新工具或功能的推出代表市場競爭加劇，行銷策略需要相應調整。", "takeaway": "行銷團隊可追蹤此工具的用戶反饋，作為比較競品或合作機會的評估依據。", "sourceUrl": "https://www.edtechinnovationhub.com/news/the-google-ai-educator-series-has-a-new-way-for-students-to-showcase-what-theyve-learned", "sourceName": "EdTech Innov Hub"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">The Google AI Educator Series has come up with a new way for students to showcase what they’ve learned</div>
+          <div class="item-source">EdTech Innov Hub</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "隨著人工智慧技術的興起，Young Futures 和 Bukhman Philanthropies 推出了 Groundwork UK", "para1": "該計劃得到了未來幾年 400 萬英鎊的支持，旨在幫助年輕人在人工智慧塑造的世界中茁壯成長", "para2": "新工具或功能的推出代表市場競爭加劇，行銷策略需要相應調整。", "takeaway": "行銷團隊可追蹤此工具的用戶反饋，作為比較競品或合作機會的評估依據。", "sourceUrl": "https://www.edtechinnovationhub.com/news/young-futures-and-bukhman-philanthropies-launch-groundwork-uk", "sourceName": "EdTech Innov Hub"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">隨著人工智慧技術的興起，Young Futures 和 Bukhman Philanthropies 推出了 Groundwork UK</div>
+          <div class="item-source">EdTech Innov Hub</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "青年人工智慧安全研究所發現，Perplexity 的人工智慧搜尋對孩子來說並不比Google更安全", "para1": "在 1,200 次搜尋測試中，即使用戶透露了自己的年齡，困惑也會帶來不可接受的風險", "para2": "新工具或功能的推出代表市場競爭加劇，行銷策略需要相應調整。", "takeaway": "行銷團隊可追蹤此工具的用戶反饋，作為比較競品或合作機會的評估依據。", "sourceUrl": "https://www.edtechinnovationhub.com/news/perplexitys-ai-search-isnt-a-safer-choice-for-kids-than-google-youth-ai-safety-institute-finds", "sourceName": "EdTech Innov Hub"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">青年人工智慧安全研究所發現，Perplexity 的人工智慧搜尋對孩子來說並不比Google更安全</div>
+          <div class="item-source">EdTech Innov Hub</div>
+        </div>
+      </div>
+
+    </aside>
+    <div class="detail-panel" id="detail-2026-09-22">
+      <div class="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <p>點擊左側新聞查看詳情</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="day-pane" data-day="2026-09-21" hidden>
   <div class="split">
     <aside class="news-list" id="list-2026-09-21">
       <div class="pane-header">9月21日（週一）<span class="count"> · 6 則</span></div>
@@ -1143,7 +1225,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026-09-21 07:00 (Asia/Taipei)</span>
+  最近更新：<span id="updated">2026-09-22 09:34 (Asia/Taipei)</span>
 </footer>
 
 <script>
