@@ -487,8 +487,8 @@ body {
 </div>
 <nav class="day-tabs" id="dayTabs">
   <button class="tab" data-week="0" data-day="2026-09-21"><span class="tab-dow">週一</span><span class="tab-date">9/21</span></button>
-  <button class="tab active" data-week="0" data-day="2026-09-22"><span class="tab-dow">週二</span><span class="tab-date">9/22</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-week="0" data-day="2026-09-23"><span class="tab-dow">週三</span><span class="tab-date">9/23</span></button>
+  <button class="tab" data-week="0" data-day="2026-09-22"><span class="tab-dow">週二</span><span class="tab-date">9/22</span></button>
+  <button class="tab active" data-week="0" data-day="2026-09-23"><span class="tab-dow">週三</span><span class="tab-date">9/23</span><span class="tab-today">今日</span></button>
   <button class="tab empty" data-week="0" data-day="2026-09-24"><span class="tab-dow">週四</span><span class="tab-date">9/24</span></button>
   <button class="tab empty" data-week="0" data-day="2026-09-25"><span class="tab-dow">週五</span><span class="tab-date">9/25</span></button>
   <button class="tab empty" data-week="0" data-day="2026-09-26"><span class="tab-dow">週六</span><span class="tab-date">9/26</span></button>
@@ -504,7 +504,93 @@ body {
 </nav>
 
 <div id="panesContainer">
-<section class="day-pane" data-day="2026-09-22">
+<section class="day-pane" data-day="2026-09-23">
+  <div class="split">
+    <aside class="news-list" id="list-2026-09-23">
+      <div class="pane-header">9月23日（週三）<span class="count"> · 8 則</span></div>
+
+      <div class="section-label">市場趨勢</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "市場趨勢", "tagClass": "tag-market", "title": "微軟聯手兩大教師工會訂全國 AI 隱私標準：學生資料不得訓練模型", "para1": "微軟與美國教師聯合會（AFT）、聯合教師聯合會（UFT）共同發布全國性的校園 AI 安全與隱私標準，明訂學生與教師資料不得用於訓練 AI 模型、不得出售或挪作他用，學校必須保有資料如何使用、儲存與刪除的控制權。", "para2": "由科技公司主動和教師工會一起立規矩，是很不尋常的組合。這代表資料治理已經從技術細節升級成採購門檻——談不清楚資料流向的廠商會直接出局。", "takeaway": "現在就把資料處理說明書準備好：資料存哪裡、會不會用於訓練、如何刪除、留存多久。這份文件遲早會被學校要求，先有的人在比稿時會領先一圈。", "sourceUrl": "https://www.edcapit.com/en/2026/09/22/ai-in-education-in-2026-new-rules-virtual-peers-and-student-data-protection/", "sourceName": "EDCAPIT · AI in Education 2026"}'>
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">微軟聯手兩大教師工會訂全國 AI 隱私標準：學生資料不得訓練模型</div>
+          <div class="item-source">EDCAPIT</div>
+        </div>
+      </div>
+      <div class="section-label">機構合作</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "機構合作", "tagClass": "tag-partner", "title": "9 月萊斯特大學全校開通 Copilot：2.5 萬人一次到位，且綁強制訓練", "para1": "英國萊斯特大學成為首批全校導入 Microsoft 365 Copilot 的大學，涵蓋 2.1 萬名學生與 4 千名教職員，9 月起全面部署，Copilot 嵌入所有 Microsoft 365 應用，並搭配「強制」數位技能訓練。曼徹斯特大學今年 1 月已為 6.5 萬人做過同樣的事。", "para2": "重點在「強制訓練」四個字。過去導入工具後訓練是選配，現在變成合約的一部分——因為校方已經學到，沒有訓練的授權等於沒有人用。", "takeaway": "提案時主動把教育訓練包進報價，而不是當加購項目。訴求「我們負責讓人真的用起來」，這比削價競爭更能贏下全校級的大單。", "sourceUrl": "https://www.edtechinnovationhub.com/news/etih-weekly-roundup-openai-models-breach-hugging-face-university-ai-deals-and-edtech-funding", "sourceName": "EdTech Innovation Hub · 大學 AI 採購"}'>
+        <span class="tag tag-partner">合作</span>
+        <div class="item-text">
+          <div class="item-title">9 月萊斯特大學全校開通 Copilot：2.5 萬人一次到位，且綁強制訓練</div>
+          <div class="item-source">EdTech Innovation Hub</div>
+        </div>
+      </div>
+      <div class="section-label">市場趨勢</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "市場趨勢", "tagClass": "tag-market", "title": "全校級採購正在取代逐系採購：英國高教 AI 進入「預設開通」階段", "para1": "產業分析指出，英國高教的 AI 採購模式正從各系所零星試點，轉為整校統一簽約、預設全員開通。廠商端也反映，全校型 AI 採購案的詢問量明顯增加，取代了過去一個系所一個系所談的模式。", "para2": "這對廠商是雙面刃：單案金額變大，但決策層級拉高、週期拉長，而且輸了就是整校都沒有，沒有從小處慢慢滲透的機會。", "takeaway": "台灣大專院校若跟進這個模式，銷售策略要改：從經營系所窗口改為經營教務處與資訊中心。同時準備好全校級部署的資安與維運說明，這是校方最先問的兩件事。", "sourceUrl": "https://newmarketpitch.com/blogs/news/ai-education-funding-analysis", "sourceName": "New Market Pitch · AI 教育資金分析"}'>
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">全校級採購正在取代逐系採購：英國高教 AI 進入「預設開通」階段</div>
+          <div class="item-source">New Market Pitch</div>
+        </div>
+      </div>
+      <div class="section-label">資金動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "資金動態", "tagClass": "tag-funding", "title": "美國 AI 教育補助累計逾 8 億美元：錢開始流向「真的要部署」的案子", "para1": "彙整顯示，目前開放申請的 AI 教育相關補助金額累計超過 8 億美元，涵蓋 K-12、大學與勞動力再訓練計畫。資金投向明顯轉變：從概念驗證轉為補助社區大學的 AI 家教系統、把 AI 素養列為必修的師培計畫，以及用 AI 平台再訓練轉職者的就業管道。", "para2": "補助方向從「試試看」轉為「做出來」，代表評審標準也變了——現在看的是部署規模與可測量的成果，不是創新程度。", "takeaway": "若有意申請台灣的教育補助，提案重點應放在可量化的部署指標（服務人數、完課率、成效提升幅度），而不是技術亮點。這是國際補助評選已經走到的位置。", "sourceUrl": "https://grantedai.com/blog/ai-education-grants-k12-workforce", "sourceName": "Granted AI · AI 教育補助盤點"}'>
+        <span class="tag tag-funding">資金</span>
+        <div class="item-text">
+          <div class="item-title">美國 AI 教育補助累計逾 8 億美元：錢開始流向「真的要部署」的案子</div>
+          <div class="item-source">Granted AI</div>
+        </div>
+      </div>
+      <div class="section-label">台灣與亞洲</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "台灣與亞洲", "tagClass": "tag-taiwan", "title": "因材網「e度」破 75 萬師生使用，教育部證實國英數三科成效明顯提升", "para1": "教育部「因材網」導入生成式 AI 學習夥伴「e度」，以對話式引導協助學生釐清概念、練習題目並給予正向回饋，自 113 年 9 月開放至今已有超過 75 萬名師生使用。官方數據顯示，使用因材網 4 小時以上並搭配 e度 的學生，在國語文、英語文與數學三科的學習成效都有明顯提升。", "para2": "75 萬使用者加上官方成效數據，等於政府替整個台灣市場完成了「AI 學習有效」的信任建立。這個門檻過了，民間產品不必再從零說服學校。", "takeaway": "行銷素材可直接引用這組官方數據作為前提，然後把重點放在「因材網沒做到的部分」——例如家長端回報、補教場景、跨校數據比較，這才是差異化空間。", "sourceUrl": "https://money.udn.com/money/story/7307/9179935", "sourceName": "經濟日報 · 因材網 e度"}'>
+        <span class="tag tag-taiwan">台灣</span>
+        <div class="item-text">
+          <div class="item-title">因材網「e度」破 75 萬師生使用，教育部證實國英數三科成效明顯提升</div>
+          <div class="item-source">經濟日報</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "台灣與亞洲", "tagClass": "tag-taiwan", "title": "教育部預告再推三款 AI 學習夥伴：繪圖、文思、樂學精靈分工明確", "para1": "教育部表示因材網後續將陸續推出多款 AI 學習夥伴：「繪圖精靈」以文字轉圖像協助學生提升圖像思維與表達、「文思精靈」一步步帶學生找重點與理解內容、「樂學精靈」則專門陪伴需要更多支持的學生。", "para2": "值得注意的是「樂學精靈」——專為學習落後或需要額外支持的學生設計。官方把學習弱勢明確列為獨立產品線，等於認證了這個需求的規模。", "takeaway": "學習扶助與特教輔助是台灣少數還沒被填滿的 AI 教育缺口，而且有政策與預算支撐。若要投入新產品線，這個方向的競爭壓力明顯低於主流學科輔導。", "sourceUrl": "https://www.ydn.com.tw/tw/News/ugC_News_Detail.aspx?ID=619721", "sourceName": "青年日報 · 因材網 AI 學習夥伴"}'>
+        <span class="tag tag-taiwan">台灣</span>
+        <div class="item-text">
+          <div class="item-title">教育部預告再推三款 AI 學習夥伴：繪圖、文思、樂學精靈分工明確</div>
+          <div class="item-source">青年日報</div>
+        </div>
+      </div>
+      <div class="section-label">Threads 精選</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "Threads 精選", "tagClass": "tag-product", "title": "Threads：一句指令讓學習歷程不再「一看就是 AI 寫的」", "para1": "Threads 帳號 @tbd_studio_ 分享一組指令，讓學生用 AI 輔助撰寫學習歷程時，成品不會帶有明顯的 AI 腔調。這類內容在台灣高中生族群擴散極快，因為學習歷程檔案是升學實質採計項目，學生既想用 AI 省時間、又怕被看出來。", "para2": "這反映台灣特有的矛盾：108 課綱的學習歷程要求真實反思，但學生普遍用 AI 代筆，於是衍生出「怎麼讓 AI 寫得不像 AI」的地下需求。這是產品設計繞不開的現實。", "takeaway": "與其對抗這個需求，不如正面做成產品：引導式提問工具，讓學生回答問題後自己產出內容，而不是一鍵代寫。既符合課綱精神，也是學校端敢採購的版本。", "sourceUrl": "https://www.threads.com/@tbd_studio_/post/DXtKibgiX_l/", "sourceName": "Threads · @tbd_studio_"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">Threads：一句指令讓學習歷程不再「一看就是 AI 寫的」</div>
+          <div class="item-source">Threads</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "Threads 精選", "tagClass": "tag-product", "title": "Threads：五款筆記整理 AI 實測分享，ChatDOC、Miro、Mapify 上榜", "para1": "Threads 帳號 @ainews57 分享五款提升筆記整理效率的 AI 工具，包含 ChatDOC（摘要 PDF 與長文件）、Miro（把零散文字整理成清晰段落與視覺圖表）、Mapify（文字轉心智圖與概念圖），訴求對象是學生、研究者以及任何需要快速理解大量資訊的人。", "para2": "這類貼文的擴散力來自「立刻可用」——沒有理論、沒有願景，就是工具名稱加一句用途。這正是社群上 AI 教育內容最有效的格式。", "takeaway": "社群內容可以直接模仿這個格式：一則貼文推三到五個工具，每個只講一句話用途。比長篇教學文的互動率高很多，也更容易被收藏轉發。", "sourceUrl": "https://www.threads.com/@ainews57/post/DRjfshLkgEQ/", "sourceName": "Threads · @ainews57"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">Threads：五款筆記整理 AI 實測分享，ChatDOC、Miro、Mapify 上榜</div>
+          <div class="item-source">Threads</div>
+        </div>
+      </div>
+
+    </aside>
+    <div class="detail-panel" id="detail-2026-09-23">
+      <div class="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <p>點擊左側新聞查看詳情</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="day-pane" data-day="2026-09-22" hidden>
   <div class="split">
     <aside class="news-list" id="list-2026-09-22">
       <div class="pane-header">9月22日（週二）<span class="count"> · 8 則</span></div>
@@ -1225,7 +1311,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026-09-22 09:34 (Asia/Taipei)</span>
+  最近更新：<span id="updated">2026-09-23 12:17 (Asia/Taipei)</span>
 </footer>
 
 <script>
