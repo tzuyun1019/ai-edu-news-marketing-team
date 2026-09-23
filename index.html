@@ -488,8 +488,8 @@ body {
 <nav class="day-tabs" id="dayTabs">
   <button class="tab" data-week="0" data-day="2026-09-21"><span class="tab-dow">週一</span><span class="tab-date">9/21</span></button>
   <button class="tab" data-week="0" data-day="2026-09-22"><span class="tab-dow">週二</span><span class="tab-date">9/22</span></button>
-  <button class="tab active" data-week="0" data-day="2026-09-23"><span class="tab-dow">週三</span><span class="tab-date">9/23</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-week="0" data-day="2026-09-24"><span class="tab-dow">週四</span><span class="tab-date">9/24</span></button>
+  <button class="tab" data-week="0" data-day="2026-09-23"><span class="tab-dow">週三</span><span class="tab-date">9/23</span></button>
+  <button class="tab active" data-week="0" data-day="2026-09-24"><span class="tab-dow">週四</span><span class="tab-date">9/24</span><span class="tab-today">今日</span></button>
   <button class="tab empty" data-week="0" data-day="2026-09-25"><span class="tab-dow">週五</span><span class="tab-date">9/25</span></button>
   <button class="tab empty" data-week="0" data-day="2026-09-26"><span class="tab-dow">週六</span><span class="tab-date">9/26</span></button>
   <button class="tab empty" data-week="0" data-day="2026-09-27"><span class="tab-dow">週日</span><span class="tab-date">9/27</span></button>
@@ -504,7 +504,86 @@ body {
 </nav>
 
 <div id="panesContainer">
-<section class="day-pane" data-day="2026-09-23">
+<section class="day-pane" data-day="2026-09-24">
+  <div class="split">
+    <aside class="news-list" id="list-2026-09-24">
+      <div class="pane-header">9月24日（週四）<span class="count"> · 7 則</span></div>
+
+      <div class="section-label">資金動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "資金動態", "tagClass": "tag-funding", "title": "Wild Zebra 募得 600 萬美元：用蘇格拉底提問法教 2 到 9 年級生找答案", "para1": "西雅圖 EdTech 新創 Wild Zebra 完成 600 萬美元種子輪，由 Trilogy Equity Partners 領投，累計融資達 800 萬美元。平台現服務數萬名學生，以每月 48 美元對家庭開放。核心設計是拒絕直接給答案，而是透過蘇格拉底式提問一步步引導學生釐清邏輯，課程並依學生個人興趣（運動、音樂、烹飪）客製化。", "para2": "這輪資金代表「不給答案的 AI 家教」已有投資人願意下注。與市面上「秒出答案」的 AI 工具形成明顯對比，也指向學校端日益擔心學生思考力退化的採購焦慮。", "takeaway": "若手上的產品也強調引導思考而非代替思考，Wild Zebra 的敘事策略值得直接借用：主打「讓學生自己找到答案」，比「AI 幫你解題」更容易獲得學校購買意願，尤其是面對家長評審委員會時效果更明顯。", "sourceUrl": "https://www.geekwire.com/2026/this-startup-just-raised-6m-for-an-ai-tutor-that-helps-kids-figure-it-out-themselves/", "sourceName": "GeekWire · EdTech 融資"}'>
+        <span class="tag tag-funding">資金</span>
+        <div class="item-text">
+          <div class="item-title">Wild Zebra 募得 600 萬美元：用蘇格拉底提問法教 2 到 9 年級生找答案</div>
+          <div class="item-source">GeekWire</div>
+        </div>
+      </div>
+      <div class="section-label">機構合作</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "機構合作", "tagClass": "tag-partner", "title": "9/2 懷俄明大學選定 BoodleBox：38 個 AI 模型統一窗口，全校 AI 素養一起升", "para1": "懷俄明大學（UW）於 9 月 2 日宣布選定 BoodleBox 作為全校企業級 AI 平台，完成全校規模的 RFP 比選流程後定案。BoodleBox 為高教專用平台，透過單一安全介面提供 38 種以上主流 AI 大型語言模型存取，並內建 AI 素養教學模組與協作工具，強調資料隱私與負責任使用。", "para2": "「38 個模型統一窗口」解決了校園同時用多種工具、資料流向難以追蹤的問題。這個整合訴求正是目前高教採購方最在意的：不只要功能，還要管得住。", "takeaway": "台灣大學採購 AI 工具時，「多模型整合＋統一管控」是愈來愈受用的組合。若你的產品能接入多種模型又提供統一管理後台，提案時可以搬出懷俄明案例說明：這是國際高教的標準需求，不是加分項目。", "sourceUrl": "https://www.uwyo.edu/news/2026/09/uw-selects-boodlebox-to-launch-enterprise-ai-platform-for-faculty-staff-and-students.html", "sourceName": "懷俄明大學官網 · AI 平台採購"}'>
+        <span class="tag tag-partner">合作</span>
+        <div class="item-text">
+          <div class="item-title">9/2 懷俄明大學選定 BoodleBox：38 個 AI 模型統一窗口，全校 AI 素養一起升</div>
+          <div class="item-source">懷俄明大學官網</div>
+        </div>
+      </div>
+      <div class="section-label">效果研究</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "效果研究", "tagClass": "tag-research", "title": "全球 35 國高教 AI 調查：88% 學生用 AI，但僅 29% 信任教授能給指引", "para1": "Digital Education Council 發布 2026 全球高等教育 AI 調查，有效回收 45,398 份問卷（27,284 名學生、18,114 名教師），涵蓋 35 個國家。關鍵數字：88% 學生使用 AI、61% 擔心同學濫用、57% 認為作業缺乏 AI 指引、卻只有 29% 相信老師有能力引導他們正確使用 AI。美加地區教師未來使用 AI 的意願更從 76% 滑落至 67%。", "para2": "「學生已在用，老師還在猶豫」的裂縫正在放大。這個空白既是風險也是機會——誰能提供老師用得上的 AI 使用指引工具，誰就填補了調查裡那 71% 的信任缺口。", "takeaway": "把這組數字做成一頁簡報帶進學校拜訪：「貴校的學生八成已在用 AI，但老師還沒有工具引導他們。」這樣開場比介紹產品功能更能喚起採購痛點，尤其對教務長層級的對象效果明顯。", "sourceUrl": "https://www.digitaleducationcouncil.com/resource-library-items/ai-in-higher-education-global-survey-2026", "sourceName": "Digital Education Council · 2026 高教 AI 全球調查"}'>
+        <span class="tag tag-research">研究</span>
+        <div class="item-text">
+          <div class="item-title">全球 35 國高教 AI 調查：88% 學生用 AI，但僅 29% 信任教授能給指引</div>
+          <div class="item-source">Digital Education Council</div>
+        </div>
+      </div>
+      <div class="section-label">機構合作</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "機構合作", "tagClass": "tag-partner", "title": "9/21 印度 KL 大學與 HCL GUVI 簽約：全印首個 Agentic AI 校園正式啟動", "para1": "KL Deemed to be University 與 HCL 集團旗下 HCL GUVI AI Labs 於 9 月 21 日在安德拉邦 Vaddeswaram 校區簽署 MoU，啟動「全印度首個 Agentic AI 校園」，推出以 AI Agent 驅動的學位課程，將代理式 AI 基礎設施整合進所有學術課程中。", "para2": "「Agentic AI 校園」代表的不只是工具導入，而是以 AI Agent 自動化學習流程的新課程架構。這比單純裝設 AI 工具更深一層，也暗示高教競爭開始從「有沒有 AI」升級到「AI 能不能動起來」。", "takeaway": "亞洲已有具體的 Agentic AI 課程案例，台灣若要在大學端談 AI 教育合作，可以把話題從「如何使用 ChatGPT」升級到「如何設計讓 AI Agent 幫學生完成真實任務的課程」，這樣的提案在學術圈更有新鮮感也更有說服力。", "sourceUrl": "https://www.business-standard.com/amp/content/press-releases-ani/kl-deemed-to-be-university-launches-nation-s-first-agentic-ai-campus-with-hcl-guvi-ai-labs-126092200019_1.html", "sourceName": "Business Standard · 印度 AI 校園"}'>
+        <span class="tag tag-partner">合作</span>
+        <div class="item-text">
+          <div class="item-title">9/21 印度 KL 大學與 HCL GUVI 簽約：全印首個 Agentic AI 校園正式啟動</div>
+          <div class="item-source">Business Standard</div>
+        </div>
+      </div>
+      <div class="section-label">產品動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "9/10 烏特勒支大學自建 AI Chat 平台：不用 ChatGPT 也有安全版 AI 了", "para1": "荷蘭烏特勒支大學（Utrecht University）於 9 月第一週上線自研的「UU AI-Chat」平台，全校師生均可使用。此舉是為了提供公開 AI 服務之外的安全替代方案，確保學術資料與師生對話不流出外部服務。", "para2": "自建 AI 平台的代價很高，但代表資料主權的顧慮已大到讓知名大學寧願自己做。這個趨勢對台灣廠商是機會：若能提供「可部署在校方伺服器上的 AI 工具」，正好命中這個需求。", "takeaway": "與歐洲大學的資料主權焦慮相比，台灣大學的顧慮更多在「萬一出包誰負責」。銷售時可主動提供「資料留在貴校伺服器」或「私有雲部署」方案，這不只是技術規格，而是能讓行政窗口放心拍板的安全感。", "sourceUrl": "https://www.intelligentedu.tech/2026/09/10/utrecht-university-launches-own-generative-ai-platform-for-students-and-staff/", "sourceName": "Intelligent Edu.tech · 大學 AI 平台"}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">9/10 烏特勒支大學自建 AI Chat 平台：不用 ChatGPT 也有安全版 AI 了</div>
+          <div class="item-source">Intelligent Edu.tech</div>
+        </div>
+      </div>
+      <div class="section-label">資金動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "資金動態", "tagClass": "tag-funding", "title": "EdVisorly 獲 1,330 萬美元 A 輪：用 AI 自動化大學轉學行政流程", "para1": "AI 新創 EdVisorly 完成 1,330 萬美元 A 輪融資，目標是以 AI 自動化大學後台的轉學申請與行政流程，解決傳統上人工密集且容易出錯的跨校轉學作業。", "para2": "後台行政自動化是 EdTech 較少被談到的角落，但正是學校願意花錢買的地方。與直接面向學生的 AI 工具相比，行政流程工具的採購決策更快、更容易量化 ROI。", "takeaway": "如果你的 AI 工具能讓學校的行政人員省時省力，不要只推學生端功能——把行政成本節省量化出來（例如每件轉學申請省幾分鐘），在提案比稿中這個數字比功能展示更有說服力。", "sourceUrl": "https://news.crunchbase.com/venture/edtech-university-ai-platform-funding-edvisorly/", "sourceName": "Crunchbase · EdVisorly A 輪"}'>
+        <span class="tag tag-funding">資金</span>
+        <div class="item-text">
+          <div class="item-title">EdVisorly 獲 1,330 萬美元 A 輪：用 AI 自動化大學轉學行政流程</div>
+          <div class="item-source">Crunchbase</div>
+        </div>
+      </div>
+      <div class="section-label">台灣與亞洲</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "台灣與亞洲", "tagClass": "tag-taiwan", "title": "台灣大學生開學福利：Google AI Plus 免費用一年，內含 Gemini Omni 旗艦版", "para1": "Google 台灣宣布開學季限定優惠：憑教育信箱（.edu 網域）驗證的大學生，可免費領取一年 Google AI Plus 訂閱，原價每月 NT$165。內容包含 Gemini Omni 旗艦模型、Gemini Live 即時對話、影片生成功能，以及 400GB 儲存空間，兌換期限至 2026 年 12 月 31 日。", "para2": "Google 直接在學生族群建立 Gemini 使用習慣，免費用一年後下一步就是付費續訂。這是課堂外的習慣養成戰，影響的是台灣下一批職場 AI 用戶的工具偏好。", "takeaway": "大學生已開始免費使用 Gemini，這是向他們推薦與 Gemini 整合的教育工具的絕佳時機。合作內容可設計成「讓 Gemini 更好用的學習助手」，搭便車既省推廣成本，也讓轉換門檻大幅降低。", "sourceUrl": "https://mashdigi.com/great-start-to-the-school-year-google-offers-a-special-ai-discount-for-college-students-with-taiwanese-students-enjoying-a-free-year-of-google-ai-plus/", "sourceName": "Mashdigi · Google 台灣 AI Plus 優惠"}'>
+        <span class="tag tag-taiwan">台灣</span>
+        <div class="item-text">
+          <div class="item-title">台灣大學生開學福利：Google AI Plus 免費用一年，內含 Gemini Omni 旗艦版</div>
+          <div class="item-source">Mashdigi</div>
+        </div>
+      </div>
+
+    </aside>
+    <div class="detail-panel" id="detail-2026-09-24">
+      <div class="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <p>點擊左側新聞查看詳情</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="day-pane" data-day="2026-09-23" hidden>
   <div class="split">
     <aside class="news-list" id="list-2026-09-23">
       <div class="pane-header">9月23日（週三）<span class="count"> · 8 則</span></div>
@@ -1311,7 +1390,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026-09-23 12:17 (Asia/Taipei)</span>
+  最近更新：<span id="updated">2026-09-24 07:10 (Asia/Taipei)</span>
 </footer>
 
 <script>
