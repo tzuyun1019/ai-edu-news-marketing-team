@@ -489,8 +489,8 @@ body {
   <button class="tab" data-week="0" data-day="2026-09-21"><span class="tab-dow">週一</span><span class="tab-date">9/21</span></button>
   <button class="tab" data-week="0" data-day="2026-09-22"><span class="tab-dow">週二</span><span class="tab-date">9/22</span></button>
   <button class="tab" data-week="0" data-day="2026-09-23"><span class="tab-dow">週三</span><span class="tab-date">9/23</span></button>
-  <button class="tab active" data-week="0" data-day="2026-09-24"><span class="tab-dow">週四</span><span class="tab-date">9/24</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-week="0" data-day="2026-09-25"><span class="tab-dow">週五</span><span class="tab-date">9/25</span></button>
+  <button class="tab" data-week="0" data-day="2026-09-24"><span class="tab-dow">週四</span><span class="tab-date">9/24</span></button>
+  <button class="tab active" data-week="0" data-day="2026-09-25"><span class="tab-dow">週五</span><span class="tab-date">9/25</span><span class="tab-today">今日</span></button>
   <button class="tab empty" data-week="0" data-day="2026-09-26"><span class="tab-dow">週六</span><span class="tab-date">9/26</span></button>
   <button class="tab empty" data-week="0" data-day="2026-09-27"><span class="tab-dow">週日</span><span class="tab-date">9/27</span></button>
       <button class="tab" data-week="1" data-day="2026-09-14"><span class="tab-dow">週一</span><span class="tab-date">9/14</span></button>
@@ -504,7 +504,106 @@ body {
 </nav>
 
 <div id="panesContainer">
-<section class="day-pane" data-day="2026-09-24">
+<section class="day-pane" data-day="2026-09-25">
+  <div class="split">
+    <aside class="news-list" id="list-2026-09-25">
+      <div class="pane-header">9月25日（週五）<span class="count"> · 9 則</span></div>
+
+      <div class="section-label">市場趨勢</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{&quot;section&quot;: &quot;市場趨勢&quot;, &quot;tagClass&quot;: &quot;tag-market&quot;, &quot;title&quot;: &quot;9/9 加拿大投入1300萬啟動全國 AI 素養計畫，目標百萬大學生&quot;, &quot;para1&quot;: &quot;加拿大聯邦政府於9月9日宣布與阿爾伯塔機器智能研究院（Amii）合作，投入1,300萬加幣推動「全國 AI 素養計畫」。9月21日起，全國大學可加入聯盟，為學生提供免費三小時 AI 素養課程，涵蓋基礎知識、批判性評估與職場準備；同步為5萬名K-12教師提供教室適用資源。&quot;, &quot;para2&quot;: &quot;此計畫規模龐大且具政策強制性，代表加拿大將 AI 素養正式納入國家人才戰略。免費、雙語、可擴展的課程模式，是政府主導推動 AI 素養的典型範例，也為其他國家提供可參考的公私合作架構。&quot;, &quot;takeaway&quot;: &quot;台灣教育部正推動「AI人才培育方舟計畫」，加拿大模式值得參考：針對大學生設計短時數（3小時）的模組化課程，搭配認證機制，讓行銷團隊可以此為故事角度，呼籲台灣也應加快建立類似的全國性 AI 素養標準課程，並在社群上發起討論。&quot;, &quot;sourceUrl&quot;: &quot;https://www.canada.ca/en/innovation-science-economic-development/news/2026/09/government-of-canada-launches-national-ai-literacy-initiative.html&quot;, &quot;sourceName&quot;: &quot;Canada.ca · 政府新聞稿&quot;}'>
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">9/9 加拿大投入1300萬啟動全國 AI 素養計畫，目標百萬大學生</div>
+          <div class="item-source">Canada.ca</div>
+        </div>
+      </div>
+
+      <div class="section-label">效果研究</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{&quot;section&quot;: &quot;效果研究&quot;, &quot;tagClass&quot;: &quot;tag-research&quot;, &quot;title&quot;: &quot;英國 HEPI 調查：95% 大學生用 AI，15% 甚至用來排解孤獨&quot;, &quot;para1&quot;: &quot;英國高等教育政策研究院（HEPI）2026年學生生成式AI調查顯示，95%英國大學生以某種形式使用AI，94%用於受評作業。更值得關注的是，15%學生使用AI工具獲取情感支持或排解孤獨，8%使用純AI諮商或心理治療服務。使用AI生成文字的比例則從2025年的64%降至56%。&quot;, &quot;para2&quot;: &quot;AI使用已從學術工具擴展至心理健康領域，呈現「日常化」趨勢。使用生成文字比例下降，可能反映學生開始更有策略地運用AI（如分析、摘要），而非依賴直接生成答案，這對學術誠信政策有重要意涵。&quot;, &quot;takeaway&quot;: &quot;此數據可作為台灣教育機構導入 AI 輔導工具的佐證，尤其在學生心理健康資源不足的現況下，AI諮詢是否為合適補充值得公開討論。行銷團隊可發起「你用AI做過最意外的事？」話題，引發真實互動。&quot;, &quot;sourceUrl&quot;: &quot;https://www.hepi.ac.uk/reports/student-generative-ai-survey-2026/&quot;, &quot;sourceName&quot;: &quot;HEPI · 學生AI調查報告&quot;}'>
+        <span class="tag tag-research">研究</span>
+        <div class="item-text">
+          <div class="item-title">英國 HEPI 調查：95% 大學生用 AI，15% 甚至用來排解孤獨</div>
+          <div class="item-source">HEPI</div>
+        </div>
+      </div>
+
+      <div class="section-label">機構合作</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{&quot;section&quot;: &quot;機構合作&quot;, &quot;tagClass&quot;: &quot;tag-partner&quot;, &quot;title&quot;: &quot;9/2 紐約市對幼K至8年級全面禁止生成式 AI，波及60萬學生&quot;, &quot;para1&quot;: &quot;紐約市長 Zohran Mamdani 與教育局長 Kamar Samuels 於9月2日宣布，對幼K至8年級公立學校學生實施一年期生成式 AI 禁令，影響近60萬名學生。政策同步停用38個以上原本獲准程式的 AI 功能，並針對高中生推出每年兩次的 AI 批判思考課程模組。&quot;, &quot;para2&quot;: &quot;美國最大城市學區的禁令，象徵 AI 在K-8教育中的安全性仍存在重大疑慮。此決策也反映家長壓力與教育官員對認知發展、資料隱私的顧慮，預計將帶動其他城市學區跟進討論。&quot;, &quot;takeaway&quot;: &quot;台灣在推動校園AI工具時，可主動強調「分齡分級使用指南」，此策略在家長社群最具說服力。行銷材料中可對比紐約禁令 vs. 台灣積極引導的差異，凸顯台灣在AI教育的前瞻性，同時展現對安全的重視。&quot;, &quot;sourceUrl&quot;: &quot;https://www.nyc.gov/mayors-office/news/2026/09/mayor-mamdani-and-chancellor-samuels-put-students-first-with-nat&quot;, &quot;sourceName&quot;: &quot;NYC Mayor's Office · 政策公告&quot;}'>
+        <span class="tag tag-partner">合作</span>
+        <div class="item-text">
+          <div class="item-title">9/2 紐約市對幼K至8年級全面禁止生成式 AI，波及60萬學生</div>
+          <div class="item-source">NYC Mayor&#x27;s Office</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{&quot;section&quot;: &quot;機構合作&quot;, &quot;tagClass&quot;: &quot;tag-partner&quot;, &quot;title&quot;: &quot;9/3 喬治城大學宣布建立全校 AI 治理框架，歷時兩學期&quot;, &quot;para1&quot;: &quot;喬治城大學校長 Penalver 於9月3日宣布，將用兩個學期時間建立校內全面的 AI 治理框架。此框架建基於今年2月發布的以人為本 AI 原則，以及4月通過的八項 AI 輔助評量原則，強調在評分與回饋中人類判斷不可或缺，並確保學生有權要求人工審核。&quot;, &quot;para2&quot;: &quot;喬治城選擇透過系統性治理框架而非快速禁令來回應 AI 衝擊，代表頂尖大學傾向「治理而非禁止」的路線。這套做法若成功，將成為其他大學複製的範本，推動高教 AI 使用走向標準化。&quot;, &quot;takeaway&quot;: &quot;台灣大學若缺乏系統性 AI 政策，將在學術聲望競爭中落後。可以喬治城的兩學期框架建構過程為參考，建議台灣教育單位跟進發布 AI 治理白皮書，行銷團隊可協助相關機構梳理政策論述，轉化為易懂的社群內容。&quot;, &quot;sourceUrl&quot;: &quot;https://thehoya.com/news/penalver-to-set-university-wide-ai-framework/&quot;, &quot;sourceName&quot;: &quot;The Hoya · 喬治城校報&quot;}'>
+        <span class="tag tag-partner">合作</span>
+        <div class="item-text">
+          <div class="item-title">9/3 喬治城大學宣布建立全校 AI 治理框架，歷時兩學期</div>
+          <div class="item-source">The Hoya</div>
+        </div>
+      </div>
+
+      <div class="section-label">產品動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{&quot;section&quot;: &quot;產品動態&quot;, &quot;tagClass&quot;: &quot;tag-product&quot;, &quot;title&quot;: &quot;芝加哥大學開設應用 AI 碩士，2027年秋季首屆招生&quot;, &quot;para1&quot;: &quot;芝加哥大學宣布開設「應用人工智慧碩士」學位，申請通道於2026年9月開放，首屆將於2027年秋季入學。課程聚焦AI實務技能培養，面向產業需求設計，標誌芝加哥大學正式進入研究所層級AI教育市場，與史丹佛、卡內基美隆等名校競爭AI人才培育版圖。&quot;, &quot;para2&quot;: &quot;頂尖研究型大學紛紛設立應用AI學位，反映學界已承認AI工程師需要有別於傳統CS碩士的培訓路徑。此趨勢也意味著未來幾年全球「應用AI」碩士供給將快速增加，競爭加劇。&quot;, &quot;takeaway&quot;: &quot;台灣各大學若規劃AI相關學程，可參考芝加哥大學「應用」導向的設計邏輯。行銷團隊可製作「全球頂尖大學 AI 學程比較」系列內容，建立議題領導地位，同時帶流量回台灣相關課程招生頁面。&quot;, &quot;sourceUrl&quot;: &quot;https://news.uchicago.edu/story/uchicago-launches-new-masters-degree-applied-ai&quot;, &quot;sourceName&quot;: &quot;UChicago News · 大學新聞室&quot;}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">芝加哥大學開設應用 AI 碩士，2027年秋季首屆招生</div>
+          <div class="item-source">UChicago News</div>
+        </div>
+      </div>
+
+      <div class="section-label">台灣與亞洲</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{&quot;section&quot;: &quot;台灣與亞洲&quot;, &quot;tagClass&quot;: &quot;tag-taiwan&quot;, &quot;title&quot;: &quot;9/24 台灣老師憂 AI 增負擔，教育部：AI 應當助教非壓力源&quot;, &quot;para1&quot;: &quot;中央社9月24日報導，隨AI陸續進入校園，第一線教師反映額外負擔增加，包括學習新工具、調整教材設計及處理學生 AI 濫用問題。立委范雲要求政府建立涵蓋資安、著作權與倫理的完整 AI 素養架構；教育部表示，AI 導入應以「協助老師減壓」為核心目標。&quot;, &quot;para2&quot;: &quot;台灣教師的疑慮折射出全球共同議題：AI 工具若缺乏配套培訓與明確政策，反而成為教師的新負擔。這也揭示了 AI EdTech 產品設計的核心挑戰：如何真正降低教師工作量，而非增加認知負荷。&quot;, &quot;takeaway&quot;: &quot;此報導可成為行銷主軸：以「減輕老師負擔」為核心價值主張，具體舉例AI工具如何縮短備課時間、自動化行政作業。避免訴諸「AI很厲害」的技術語言，改以「還給老師時間」的情感訴求，在教師社群效果更佳。&quot;, &quot;sourceUrl&quot;: &quot;https://www.cna.com.tw/news/ahel/202609240210.aspx&quot;, &quot;sourceName&quot;: &quot;中央社 CNA · 生活新聞&quot;}'>
+        <span class="tag tag-taiwan">台灣</span>
+        <div class="item-text">
+          <div class="item-title">9/24 台灣老師憂 AI 增負擔，教育部：AI 應當助教非壓力源</div>
+          <div class="item-source">中央社 CNA</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{&quot;section&quot;: &quot;台灣與亞洲&quot;, &quot;tagClass&quot;: &quot;tag-taiwan&quot;, &quot;title&quot;: &quot;台灣 AI 教育元年：科技巨頭搶進校園，韓星跨海取經&quot;, &quot;para1&quot;: &quot;翻轉教育報導指出，2026年是台灣 AI 教育元年，Google、Microsoft 等科技巨頭積極與台灣中小學合作布局 AI 教育。不僅如此，韓國與新加坡教育單位相繼派員赴台考察，肯定台灣在政策推動與產學合作上的整合能力，認為具有值得複製的經驗。&quot;, &quot;para2&quot;: &quot;台灣在 AI 教育的快速推進已吸引亞洲鄰國目光，此一區域聲望有助於強化台灣 AI EdTech 品牌的國際形象。在全球 EdTech 競爭加速之際，這是少見的台灣主場優勢敘事。&quot;, &quot;takeaway&quot;: &quot;「連韓國、新加坡都來取經」是極具說服力的社群素材，可直接用於貼文標題。行銷團隊可將此角度延伸為品牌故事：台灣 AI 教育不是跟隨者，而是區域引領者；配合具體案例（如哪間學校、哪個計畫），可有效提升公信力。&quot;, &quot;sourceUrl&quot;: &quot;https://flipedu.parenting.com.tw/article/010743&quot;, &quot;sourceName&quot;: &quot;翻轉教育 · 親子天下&quot;}'>
+        <span class="tag tag-taiwan">台灣</span>
+        <div class="item-text">
+          <div class="item-title">台灣 AI 教育元年：科技巨頭搶進校園，韓星跨海取經</div>
+          <div class="item-source">翻轉教育</div>
+        </div>
+      </div>
+
+      <div class="section-label">效果研究</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{&quot;section&quot;: &quot;效果研究&quot;, &quot;tagClass&quot;: &quot;tag-research&quot;, &quot;title&quot;: &quot;Gallup 報告：57% 美國大學生每週用 AI 做功課，兩成每天用&quot;, &quot;para1&quot;: &quot;美國 Lumina Foundation-Gallup 2026高等教育調查發現，57%大學生每週至少用一次 AI 做功課，約20%每天使用。調查也指出，儘管部分校園已設使用限制，AI 使用已成美國大學校園的日常實踐，整體呈現「常規化」而非「偶發性」特徵。&quot;, &quot;para2&quot;: &quot;AI使用頻率從「嘗鮮」升級至「日常」，意味著教學評量體系若不隨之調整，將面臨結構性失效風險。同時，這份數據也說明，強制禁止比引導使用更難奏效，政策方向正在轉向規範而非禁止。&quot;, &quot;takeaway&quot;: &quot;此數據是和學校合作提案的有力彈藥：「57%的學生已在用AI，與其禁止，不如教對方法」。行銷團隊可將 Gallup 數字做成一張資訊圖卡，直接在教師與校長社群散發，搭配台灣在地數字對比，效果更強。&quot;, &quot;sourceUrl&quot;: &quot;https://news.gallup.com/poll/704090/routine-college-students-despite-campus-limits.aspx&quot;, &quot;sourceName&quot;: &quot;Gallup · 高等教育研究&quot;}'>
+        <span class="tag tag-research">研究</span>
+        <div class="item-text">
+          <div class="item-title">Gallup 報告：57% 美國大學生每週用 AI 做功課，兩成每天用</div>
+          <div class="item-source">Gallup</div>
+        </div>
+      </div>
+
+      <div class="section-label">Threads 精選</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{&quot;section&quot;: &quot;Threads 精選&quot;, &quot;tagClass&quot;: &quot;tag-product&quot;, &quot;title&quot;: &quot;Threads 精選：老師必備 10 個 AI 工具，從此輕鬆備課不加班&quot;, &quot;para1&quot;: &quot;Threads 帳號 @daily.tools.ai 分享「老師教學必備AI」懶人包，推薦包括：ChatGPT（備課規劃與課程設計）、Curipod（互動簡報自動生成）、Lessonplans.ai（完整課程計畫一鍵輸出）、Notion AI（教案集中管理）等工具，強調國小、國中、高中老師皆適用，目標是大幅縮短備課時間。&quot;, &quot;para2&quot;: &quot;此貼文以具體工具名稱取代抽象倡議，切中台灣教師「想用AI但不知從何開始」的痛點。懶人包形式也非常適合在教師群組轉傳，傳播效率高。&quot;, &quot;takeaway&quot;: &quot;這類「工具推薦懶人包」內容在教師社群的轉傳率極高。行銷團隊可策劃「每週一工具」固定系列，加入使用情境截圖與教師真實分享，建立長期流量來源；並與 @daily.tools.ai 這類 KOL 建立合作，擴大觸及。&quot;, &quot;sourceUrl&quot;: &quot;https://www.threads.com/@daily.tools.ai/post/DLR6AvLJwJ3/&quot;, &quot;sourceName&quot;: &quot;Threads · @daily.tools.ai&quot;}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">Threads 精選：老師必備 10 個 AI 工具，從此輕鬆備課不加班</div>
+          <div class="item-source">Threads</div>
+        </div>
+      </div>
+    </aside>
+    <div class="detail-panel" id="detail-2026-09-25">
+      <div class="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <p>點擊左側新聞查看詳情</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="day-pane" data-day="2026-09-24" hidden>
   <div class="split">
     <aside class="news-list" id="list-2026-09-24">
       <div class="pane-header">9月24日（週四）<span class="count"> · 7 則</span></div>
@@ -1390,7 +1489,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026-09-24 07:10 (Asia/Taipei)</span>
+  最近更新：<span id="updated">2026-09-25 07:07 (Asia/Taipei)</span>
 </footer>
 
 <script>
