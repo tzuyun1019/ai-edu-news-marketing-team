@@ -486,8 +486,8 @@ body {
   <button class="week-nav-btn" id="btnThisWeek" onclick="switchToWeek(0)" disabled>本週 →</button>
 </div>
 <nav class="day-tabs" id="dayTabs">
-  <button class="tab active" data-week="0" data-day="2026-09-28"><span class="tab-dow">週一</span><span class="tab-date">9/28</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-week="0" data-day="2026-09-29"><span class="tab-dow">週二</span><span class="tab-date">9/29</span></button>
+  <button class="tab" data-week="0" data-day="2026-09-28"><span class="tab-dow">週一</span><span class="tab-date">9/28</span></button>
+  <button class="tab active" data-week="0" data-day="2026-09-29"><span class="tab-dow">週二</span><span class="tab-date">9/29</span><span class="tab-today">今日</span></button>
   <button class="tab empty" data-week="0" data-day="2026-09-30"><span class="tab-dow">週三</span><span class="tab-date">9/30</span></button>
   <button class="tab empty" data-week="0" data-day="2026-10-01"><span class="tab-dow">週四</span><span class="tab-date">10/1</span></button>
   <button class="tab empty" data-week="0" data-day="2026-10-02"><span class="tab-dow">週五</span><span class="tab-date">10/2</span></button>
@@ -504,7 +504,78 @@ body {
 </nav>
 
 <div id="panesContainer">
-<section class="day-pane" data-day="2026-09-28">
+<section class="day-pane" data-day="2026-09-29">
+  <div class="split">
+    <aside class="news-list" id="list-2026-09-29">
+      <div class="pane-header">9月29日（週二）<span class="count"> · 6 則</span></div>
+
+      <div class="section-label">市場趨勢</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "市場趨勢", "tagClass": "tag-market", "title": "波士頓成美國首個大城市要求高中生畢業具備AI素養", "para1": "波士頓公立學校於2026年9月正式啟動 AI 素養必修計畫，由市長吳弭、教育局長 Skipper 與企業夥伴共同宣布，投入 100 萬美元公私合作資金，與麻州大學波士頓分校共同開發課程。計畫涵蓋教師培訓、學生黑客松、產業實習與職涯路徑，讓學生學習以負責任、符合倫理的方式使用 AI。", "para2": "波士頓成為全美第一個確保高中生畢業前具備 AI 能力的大城市，標誌著 AI 素養從選修轉向必修的政策轉折點。此模式為其他城市學區提供了可複製的公私合作框架，預計帶動全國跟進討論。", "takeaway": "台灣教育部正推動「AI人才培育方舟計畫」，波士頓模式是理想參照：短模組課程搭配產業實習，效果遠優於純課堂講授。行銷團隊可製作「全球 AI 素養政策地圖」，凸顯台灣若不跟進將落後的緊迫感，引發教育主管機關與媒體關注。", "sourceUrl": "https://www.wbur.org/news/2026/03/26/boston-public-schools-ai-literacy", "sourceName": "WBUR · 波士頓公共廣播"}'> 
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">波士頓成美國首個大城市要求高中生畢業具備AI素養</div>
+          <div class="item-source">WBUR</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "市場趨勢", "tagClass": "tag-market", "title": "9/8 UNESCO 逾 25 國教育部長聯合聲明：AI 時代教育應保持公共財地位", "para1": "UNESCO 2026年數位學習週（9月8-11日）於巴黎召開，逾25國教育部長聯合採納宣言，強調 AI 時代教育必須維持人權與公共財的地位。現場1,500名與會者涵蓋部長、科技業代表及教育工作者。93% 的 UNESCO 學者認為學生用 AI 完成作業，63% 感知學生認知能力下降。", "para2": "UNESCO 等級的部長聯合聲明，標誌著 AI 教育治理已從各國各自為政走向尋求全球共識。「教育是公共財」的框架，預示未來國際 AI 教育政策將強調主權、安全與平等取得，而非純市場驅動的技術擴散。", "takeaway": "UNESCO 聲明提供強力背書：台灣 AI 教育業者可援引「符合全球治理框架」作為公信力論述，尤其在對教育主管機關的 B2G 行銷中效果顯著。可製作「台灣 AI 教育政策 vs. UNESCO 指引對照表」強化專業形象，引發政策圈討論。", "sourceUrl": "https://www.unesco.org/en/articles/education-ministers-call-education-remain-common-good-age-ai-unescos-digital-learning-week", "sourceName": "UNESCO · 官方新聞稿"}'> 
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">9/8 UNESCO 逾 25 國教育部長聯合聲明：AI 時代教育應保持公共財地位</div>
+          <div class="item-source">UNESCO</div>
+        </div>
+      </div>
+
+      <div class="section-label">工具推薦</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "工具推薦", "tagClass": "tag-product", "title": "9/19 Google 舉辦 AI 教師徽章馬拉松，10 小時免費研習可獲 ISTE 認可數位徽章", "para1": "Google 於9月19日舉辦全天免費線上 AI 教師研習日「Badge-a-thon: Day of AI Learning」，課程每30分鐘一節、可隨時加入，涵蓋 Gemini 操作、行政流程自動化與互動課程設計，完成後頒發 ISTE 認可的數位徽章。活動免費開放全球教師參與，無需預先報名整天。", "para2": "Google 以低門檻（免費、彈性加入）搭配高公信力（ISTE 認證）的設計，證明教師專業發展不必依賴高成本實體研習。免費認證徽章已成為教師社群最有效的參與誘因，成為 AI 教師培訓行銷的重要示範。", "takeaway": "台灣業者若規劃教師 AI 研習課程，可借鑑此模式：與師培機構合作發行「AI 教學認證徽章」，以認證為誘因擴大採用率。行銷重點應放在「免費獲得職涯加分認證」的具體價值，而非課程內容本身，在教師 Facebook 社群效果最佳。", "sourceUrl": "https://blog.google/products-and-platforms/products/education/new-ai-educator-trainings-september-2026/", "sourceName": "Google Blog · 教育產品公告"}'> 
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">9/19 Google 舉辦 AI 教師徽章馬拉松，10 小時免費研習可獲 ISTE 認可數位徽章</div>
+          <div class="item-source">Google Blog</div>
+        </div>
+      </div>
+
+      <div class="section-label">產品動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "產品動態", "tagClass": "tag-product", "title": "Microsoft 免費推出 AI 教育全套工具：單元計畫生成、學習代理人、學生 AI 指南", "para1": "Microsoft 宣布在 Microsoft 365 Education 中免費推出多項 AI 新功能，包括「Unit Plans」（自動生成單元教學計畫）、「Student AI Guidelines」（學生 AI 使用指南）、「Learning Zone」（個人化學習環境）與「Study and Learn Agent」（Copilot Chat 內的學習代理人）。教師可用 AI 快速建立評分標準、行政自動化；學生可獲研究與腦力激盪支援。", "para2": "Microsoft 以「免費全套」策略快速佔領學校市場，降低教師採用門檻。此舉也設定了市場比較標準：未來其他 AI 教育工具若要收費，必須在 Microsoft 免費功能之上提供明顯的差異化價值。", "takeaway": "台灣大多數學校已有 Microsoft 365 授權，此更新意味著 AI 功能即刻可用，無需另購工具。行銷團隊可趁機推出「如何在學校活用 Microsoft AI 教育功能」的教學內容，搭配自家付費工具的互補定位，抓住學校願意深化 AI 應用的窗口期。", "sourceUrl": "https://news.microsoft.com/source/2026/06/24/microsofts-new-ai-in-education-report-highlights-widespread-adoption-and-increasing-demand-for-support/", "sourceName": "Microsoft Source · 官方新聞室"}'> 
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">Microsoft 免費推出 AI 教育全套工具：單元計畫生成、學習代理人、學生 AI 指南</div>
+          <div class="item-source">Microsoft Source</div>
+        </div>
+      </div>
+
+      <div class="section-label">資金動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "資金動態", "tagClass": "tag-funding", "title": "Rest of World：K-12 EdTech 創投大崩潰，資本轉向 AI 職場培訓找出口", "para1": "Rest of World 報導，全球 K-12 教育科技創投資金持續崩跌，至 2025 年已降至不足 30 億美元，投資人正加速將資本轉移至 AI 工具與職場培訓領域——因後者有更清晰的 ROI 指標。EdTech 融資已從疫情高峰大幅縮水，新創估值普遍回落。", "para2": "此趨勢揭示 EdTech 資本邏輯的根本轉變：學習成效難量化的 K-12 工具吸引力下滑，「能直接連結職場技能與薪資提升」的 AI 培訓平台成為新寵。這對台灣以 K-12 為主的 EdTech 市場是警示，也是轉型機遇。", "takeaway": "台灣 K-12 AI 教育業者應考慮拓展企業培訓（B2B）客群，以彌補 K-12 市場景氣不足。行銷上可轉化敘事：從「幫助孩子學習」升級為「培養未來職場必備 AI 能力」，吸引更重視 ROI 的企業與家長買單，並以此角度尋求國際投資人。", "sourceUrl": "https://restofworld.org/2026/edtech-funding-collapse-k12-startups-ai-workforce/", "sourceName": "Rest of World · 科技新聞"}'> 
+        <span class="tag tag-funding">資金</span>
+        <div class="item-text">
+          <div class="item-title">Rest of World：K-12 EdTech 創投大崩潰，資本轉向 AI 職場培訓找出口</div>
+          <div class="item-source">Rest of World</div>
+        </div>
+      </div>
+
+      <div class="section-label">Threads 精選</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{"section": "Threads 精選", "tagClass": "tag-product", "title": "Threads @learn4c：ChatGPT 教師版在美開放，K12 老師免費用到明年六月", "para1": "Threads 用戶 @learn4c 分享 ChatGPT 推出 K12 教師專版：通過申請後可免費使用到隔年六月，核心賣點是「教師輸入內容不用來訓練模型、支援 FERPA 學生資料保護、整合 Google Drive 與 Microsoft 365」。該貼文附上申請步驟與可用功能清單，受到台灣教育圈廣傳。", "para2": "ChatGPT 教師版定位清晰：讓教師成主導者，AI 成教學夥伴而非取代工具。此策略有效降低教師對「資料外洩」與「被取代」的疑慮，是目前最能說服台灣第一線教師嘗試 AI 的產品訊息框架。", "takeaway": "台灣教師若還未申請，現在是絕佳時機。行銷團隊可截圖此貼文加入教師社群討論，並搭配「申請教學版 ChatGPT 完整教學」的懶人包內容，引流至自家平台。強調「資料不被 OpenAI 訓練」是消除疑慮的關鍵訊息。", "sourceUrl": "https://www.threads.com/@learn4c/post/DRRlGr1EWhR/chatgpt-%E5%B1%85%E7%84%B6%E5%9C%A8%E7%BE%8E%E5%9C%8B%E5%9C%B0%E5%8D%80%E6%8E%A8%E5%87%BA-%E6%95%99%E5%B8%AB%E7%89%88k12-%E8%80%81%E5%B8%AB%E7%94%B3%E8%AB%8B%E9%80%9A%E9%81%8E%E5%B0%B1%E4%BF%9D%E8%AD%89%E8%83%BD%E5%85%8D%E8%B2%BB%E7%94%A8%E5%88%B0%E6%98%8E%E5%B9%B4%E5%85%AD%E6%9C%88%E5%95%8A%E7%82%BA%E4%BB%80%E9%BA%BC%E5%91%A2%E5%9B%A0%E7%82%BA%E6%95%99%E5%B8%AB%E8%A7%92%E8%89%B2%E4%B8%8D%E5%8F%AA%E6%98%AF%E6%95%99%E7%9F%A5%E8%AD%98%E6%9B%B4%E6%98%AF%E5%B9%AB%E5%AD%B8%E7%94%9F%E7%90%86%E8%A7%A3-ai-%E5%A6%82%E4%BD%95%E6%94%AF%E6%8F%B4%E5%AD%B8%E7%BF%92-%E6%AD%A4%E7%89%88", "sourceName": "Threads · @learn4c"}'> 
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">Threads @learn4c：ChatGPT 教師版在美開放，K12 老師免費用到明年六月</div>
+          <div class="item-source">Threads</div>
+        </div>
+      </div>
+    </aside>
+    <div class="detail-panel" id="detail-2026-09-29">
+      <div class="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <p>點擊左側新聞查看詳情</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="day-pane" data-day="2026-09-28" hidden>
   <div class="split">
     <aside class="news-list" id="list-2026-09-28">
       <div class="pane-header">9月28日（週一）<span class="count"> · 8 則</span></div>
@@ -1200,7 +1271,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026-09-28 07:10 台北時間</span>
+  最近更新：<span id="updated">2026/09/29 07:11</span>
 </footer>
 
 <script>
