@@ -489,8 +489,8 @@ body {
   <button class="tab" data-week="0" data-day="2026-09-28"><span class="tab-dow">週一</span><span class="tab-date">9/28</span></button>
   <button class="tab" data-week="0" data-day="2026-09-29"><span class="tab-dow">週二</span><span class="tab-date">9/29</span></button>
   <button class="tab" data-week="0" data-day="2026-09-30"><span class="tab-dow">週三</span><span class="tab-date">9/30</span></button>
-  <button class="tab active" data-week="0" data-day="2026-10-01"><span class="tab-dow">週四</span><span class="tab-date">10/1</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-week="0" data-day="2026-10-02"><span class="tab-dow">週五</span><span class="tab-date">10/2</span></button>
+  <button class="tab" data-week="0" data-day="2026-10-01"><span class="tab-dow">週四</span><span class="tab-date">10/1</span></button>
+  <button class="tab active" data-week="0" data-day="2026-10-02"><span class="tab-dow">週五</span><span class="tab-date">10/2</span><span class="tab-today">今日</span></button>
   <button class="tab empty" data-week="0" data-day="2026-10-03"><span class="tab-dow">週六</span><span class="tab-date">10/3</span></button>
   <button class="tab empty" data-week="0" data-day="2026-10-04"><span class="tab-dow">週日</span><span class="tab-date">10/4</span></button>
   <button class="tab" data-week="1" data-day="2026-09-21"><span class="tab-dow">週一</span><span class="tab-date">9/21</span></button>
@@ -504,7 +504,84 @@ body {
 </nav>
 
 <div id="panesContainer">
-<section class="day-pane" data-day="2026-10-01">
+<section class="day-pane" data-day="2026-10-02">
+  <div class="split">
+    <aside class="news-list" id="list-2026-10-02">
+      <div class="pane-header">10月2日（週五）<span class="count"> · 7 則</span></div>
+
+      <div class="section-label">產品動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{&quot;section&quot;: &quot;產品動態&quot;, &quot;tagClass&quot;: &quot;tag-product&quot;, &quot;title&quot;: &quot;8/28 Anthropic 將 Claude for Teachers 擴展至學區，統一管理教師帳號&quot;, &quot;para1&quot;: &quot;Anthropic 於 8 月 28 日宣布 Claude for Teachers 正式開放學校與學區集中申請，管理者可將全體教師和員工納入同一組織，並套用 K-12 專屬條款。符合資格的機構在 2027 年 6 月 30 日前完成申請，可獲整年免費存取，功能涵蓋教學技能庫、全美 50 州標準對齊課綱及個人化備課支援。&quot;, &quot;para2&quot;: &quot;AI 廠商從「單一教師免費」升級為「機構集中管理」，標誌著 AI 教育工具正式進入機構採購決策層。此模式讓學校管理者掌握使用邊界，也讓廠商深入機構 IT 體系，形成更高黏性的 B2B 關係而非一次性 B2C 下載。&quot;, &quot;takeaway&quot;: &quot;Anthropic 以「機構組合授權 ＋ 全年免費試用」作為進校策略。台灣業者可對標：針對高中或大專推出「學校組合授權、一次申請涵蓋全體教師」的方案，將採購決策上移至教務主任或資訊組長，強調管理者視角（使用統計、合規記錄）而非功能列表，能有效縮短採購周期。&quot;, &quot;sourceUrl&quot;: &quot;https://www.unite.ai/anthropic-brings-claude-for-teachers-to-schools-and-districts/&quot;, &quot;sourceName&quot;: &quot;Unite.AI · 教育 AI 產品&quot;}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">8/28 Anthropic 將 Claude for Teachers 擴展至學區，統一管理教師帳號</div>
+          <div class="item-source">Unite.AI</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{&quot;section&quot;: &quot;產品動態&quot;, &quot;tagClass&quot;: &quot;tag-product&quot;, &quot;title&quot;: &quot;OpenAI 推三款 ChatGPT 教育外掛：K-12 教師版、大學教師版、大學生版分角色設計&quot;, &quot;para1&quot;: &quot;OpenAI 宣布為機構管理的 ChatGPT 工作區推出三款教育外掛：K-12 教師版可生成自訂作業與學習指引；大學教師版可規劃課表與教材；大學生版可製作學習卡片、建立互動學習站及個人讀書計畫。外掛僅供通過機構身份驗證的帳號使用，確保學校能控管 AI 存取邊界。&quot;, &quot;para2&quot;: &quot;三款外掛的角色細分顯示 OpenAI 正系統性攻佔 K-12 到高教的完整市場，且採「機構管控優先」設計回應學校的治理需求。此舉也預示 AI 教育工具的差異化方向：不再只是功能豐富，而是角色適配 ＋ 管理者友善。&quot;, &quot;takeaway&quot;: &quot;OpenAI 三角色外掛架構是高度可複製的設計思路。台灣 EdTech 業者應明確區分教師、學生、家長三種使用情境，提供教師更多控制介面，讓學校管理者放心推廣。功能差異化比同質競爭更有效，尤其在中小學採購時，「管理者能看到學生用了什麼」往往比「功能多強大」更具說服力。&quot;, &quot;sourceUrl&quot;: &quot;https://www.techrepublic.com/article/news-openai-chatgpt-education-plugins/&quot;, &quot;sourceName&quot;: &quot;TechRepublic · AI 教育工具&quot;}'>
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">OpenAI 推三款 ChatGPT 教育外掛：K-12 教師版、大學教師版、大學生版分角色設計</div>
+          <div class="item-source">TechRepublic</div>
+        </div>
+      </div>
+
+      <div class="section-label">效果研究</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{&quot;section&quot;: &quot;效果研究&quot;, &quot;tagClass&quot;: &quot;tag-research&quot;, &quot;title&quot;: &quot;Coursera 跨國調查：95% 師生已在用 AI，但僅 26% 的大學有正式 AI 政策&quot;, &quot;para1&quot;: &quot;Coursera 針對 5 國 4,200 位大學師生的調查顯示：95% 的受訪者在學術工作中使用 AI，其中 80% 的學生表示成績有所提升；然而只有 26% 的教育工作者表示所在機構制定了正式 AI 使用政策。高達 74% 的高教機構尚未建立 AI 治理框架，政策滯後現象十分普遍。&quot;, &quot;para2&quot;: &quot;「廣泛使用但缺乏政策」是全球高教的普遍困境。這一落差不只帶來學術誠信風險，也讓機構無法評估 AI 對教學品質的真實影響。對 EdTech 廠商而言，這既是市場訊號，也是產品設計的切入點——「AI 使用政策配套工具」需求明確且迫切。&quot;, &quot;takeaway&quot;: &quot;台灣大專院校有同樣的治理空白。業者可設計「AI 合規政策包」——含使用政策範本、學生行為統計報表、教師 AI 課堂使用記錄——作為附加服務，而非單純銷售工具授權。幫學校在兩週內建立基本治理框架，「快速合規」能有效打動教務長和法規遵循主管，同時建立更長期的機構夥伴關係。&quot;, &quot;sourceUrl&quot;: &quot;https://www.coursera.org/enterprise/articles/ai-in-higher-education-guidance-for-university-leaders-2026-cm&quot;, &quot;sourceName&quot;: &quot;Coursera Enterprise · 高教 AI 調查&quot;}'>
+        <span class="tag tag-research">研究</span>
+        <div class="item-text">
+          <div class="item-title">Coursera 跨國調查：95% 師生已在用 AI，但僅 26% 的大學有正式 AI 政策</div>
+          <div class="item-source">Coursera Enterprise</div>
+        </div>
+      </div>
+
+      <div class="section-label">台灣與亞洲</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{&quot;section&quot;: &quot;台灣與亞洲&quot;, &quot;tagClass&quot;: &quot;tag-taiwan&quot;, &quot;title&quot;: &quot;10月 香港推 AI Sandbox 計畫，讓學校邊試用邊落實個資保護（申請至 10/30）&quot;, &quot;para1&quot;: &quot;香港個人資料私隱專員公署與數字政策辦公室合作，推出為期 6 個月的「保障個人資料 AI Sandbox」，開放公資中小學申請（截止日 10 月 30 日）。入選學校將獲政府提供監管指引、技術支援及個資保護實務顧問，協助學校在導入 AI 工具的同時，確保學生資料安全符合規範。&quot;, &quot;para2&quot;: &quot;香港採「試驗 ＋ 監管陪跑」模式，有效消除學校因擔心個資違規而不敢試用 AI 的障礙。這種「政府作護欄、學校主導實驗」的治理路徑，讓整體 AI 採購生態更健康，也對台灣教育主管機關提供了具體的政策設計參考。&quot;, &quot;takeaway&quot;: &quot;香港 Sandbox 的「合規先行、補貼陪跑」模式可直接借鏡：台灣業者行銷時可主動提供「免費個資合規評估」服務，協助學校確認產品符合個人資料保護標準。以評估報告換取深入採購討論，尤其對公立學校 IT 主管，「合規先行」比「功能亮眼」更能打開大門。&quot;, &quot;sourceUrl&quot;: &quot;https://opengovasia.com/hong-kong-launches-ai-sandbox-to-support-data-protection-in-schools/?c=us&quot;, &quot;sourceName&quot;: &quot;OpenGov Asia · 香港教育 AI&quot;}'>
+        <span class="tag tag-taiwan">台灣</span>
+        <div class="item-text">
+          <div class="item-title">10月 香港推 AI Sandbox 計畫，讓學校邊試用邊落實個資保護（申請至 10/30）</div>
+          <div class="item-source">OpenGov Asia</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{&quot;section&quot;: &quot;台灣與亞洲&quot;, &quot;tagClass&quot;: &quot;tag-taiwan&quot;, &quot;title&quot;: &quot;香港 5 億計畫每所公立學校獲 50 萬港元 AI 教育預算，市場窗口已開&quot;, &quot;para1&quot;: &quot;據《南華早報》報導，香港政府宣布 5 億港元 AI 教育計畫，每所公資中小學可獲 50 萬港元預算，用於採購 AI 教育工具與師資培訓。學校可在政府認可的工具清單中自行選購，此政策是香港 2026-27 年度財政預算的重點教育科技投入，目標讓香港學生在 AI 時代保持競爭力。&quot;, &quot;para2&quot;: &quot;政府以「補貼每所學校、自主選購工具」而非「統一採購」，開放了市場競爭空間。對 EdTech 廠商而言，這是明確的政府背書採購潮——學校有了預算，有了需求，市場窗口已開啟，率先進入「認可工具清單」的廠商將取得先機。&quot;, &quot;takeaway&quot;: &quot;台灣業者若有意進入香港市場，時機已到：立即研究香港教育局「認可工具清單」申請資格，準備個資合規與課綱對應文件，透過本地代理或直接參與香港教育展爭取曝光，在 2026-27 學年預算消耗前建立通路，避免被優先進場的競爭對手搶佔先機。&quot;, &quot;sourceUrl&quot;: &quot;https://www.scmp.com/news/hong-kong/education/article/3336600/hong-kong-schools-get-hk500000-each-under-hk500-million-ai-education-plan&quot;, &quot;sourceName&quot;: &quot;SCMP · 香港教育政策&quot;}'>
+        <span class="tag tag-taiwan">台灣</span>
+        <div class="item-text">
+          <div class="item-title">香港 5 億計畫每所公立學校獲 50 萬港元 AI 教育預算，市場窗口已開</div>
+          <div class="item-source">SCMP</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{&quot;section&quot;: &quot;台灣與亞洲&quot;, &quot;tagClass&quot;: &quot;tag-taiwan&quot;, &quot;title&quot;: &quot;10/18 台大辦「AI 時代教學新能力」研習系列，11、12 月續辦三梯次&quot;, &quot;para1&quot;: &quot;國立台灣大學主辦「2026 教育未來式 — AI 時代的教學新能力」系列研習，首場訂於 10 月 18 日，後續安排 11 月 21-22 日及 12 月 19 日共三梯次，主要對象為中小學教師。課程主題涵蓋 AI 智慧輔助教學、AI 教學設計實作，以及生成式 AI 在課室的具體應用，由台大教學發展中心協辦。&quot;, &quot;para2&quot;: &quot;台灣頂尖大學主動承擔中小學 AI 師培角色，展現「學術機構向下銜接」的新模式。此類研習不只是技術推廣，更是教師社群信任建立的重要場合——在研習中使用的工具，往往成為教師日後採購的首選。&quot;, &quot;takeaway&quot;: &quot;台大研習系列是深入台灣中小學教師圈的最佳接觸點。建議主動洽談「研習教材贊助」或「工具試用授權」合作，讓與會教師在現場體驗產品；也可規劃配套的「教師試用禮包」（含進階功能免費 30 天），讓研習後轉換率最大化。透過台大的學術公信力背書，能顯著縮短從「體驗」到「學校採購」的路徑。&quot;, &quot;sourceUrl&quot;: &quot;https://www.cyc.edu.tw/modules/tadnews/index.php?nsn=95208&quot;, &quot;sourceName&quot;: &quot;嘉義縣教育資訊網 · 台大 AI 研習&quot;}'>
+        <span class="tag tag-taiwan">台灣</span>
+        <div class="item-text">
+          <div class="item-title">10/18 台大辦「AI 時代教學新能力」研習系列，11、12 月續辦三梯次</div>
+          <div class="item-source">嘉義縣教育資訊網</div>
+        </div>
+      </div>
+
+      <div class="section-label">Threads 精選</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story='{&quot;section&quot;: &quot;Threads 精選&quot;, &quot;tagClass&quot;: &quot;tag-product&quot;, &quot;title&quot;: &quot;Threads @chihua.wang.3：台灣碩博生 2026 必試三款 AI 工具，改變你思考的方式&quot;, &quot;para1&quot;: &quot;Threads 用戶 @chihua.wang.3 分享三款 2026 年四月值得台灣碩博士嘗試的 AI 學習工具：Heptabase AI Tutor 讓學習者在研究過程中隨時對話、即時修正理解；Notion AI 自動整理會議討論；Obsidian ＋ OpenAI Codex 整合用於 AI 知識管理。作者強調 AI 的真正價值不是讓你變快，而是「改變你怎麼思考」。&quot;, &quot;para2&quot;: &quot;此類實測分享在台灣研究生社群具有高傳播力，反映高階學習者已從「AI 是效率工具」轉向「AI 是認知夥伴」的觀念轉變。強調對話式、主動學習的工具設計，比被動生成型工具更符合深度學習需求。&quot;, &quot;takeaway&quot;: &quot;台灣碩博士生是 EdTech 的高黏性族群，且口碑效應強。業者可在研究生常用社群（Threads、Dcard 研究所板、FB 台灣學術社群）推動「真實用戶研究流程分享」行銷——徵集用戶分享 AI 如何改變其學習與研究流程，而非功能介紹，搭配進階功能試用兌換，能有效在研究生圈建立品牌可信度與傳播動能。&quot;, &quot;sourceUrl&quot;: &quot;https://www.threads.com/@chihua.wang.3/post/DW2cJQbCeoj/&quot;, &quot;sourceName&quot;: &quot;Threads · @chihua.wang.3&quot;}'>
+        <span class="tag tag-product">社群</span>
+        <div class="item-text">
+          <div class="item-title">Threads @chihua.wang.3：台灣碩博生 2026 必試三款 AI 工具，改變你思考的方式</div>
+          <div class="item-source">Threads</div>
+        </div>
+      </div>
+    </aside>
+    <div class="detail-panel" id="detail-2026-10-02">
+      <div class="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <p>點擊左側新聞查看詳情</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="day-pane" data-day="2026-10-01" hidden>
   <div class="split">
     <aside class="news-list" id="list-2026-10-01">
       <div class="pane-header">10月1日（週四）<span class="count"> · 8 則</span></div>
@@ -1441,7 +1518,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026/10/01 07:11 台北時間</span>
+  最近更新：<span id="updated">2026/10/02 07:12 台北時間</span>
 </footer>
 
 <script>
