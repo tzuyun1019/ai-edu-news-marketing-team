@@ -486,8 +486,8 @@ body {
   <button class="week-nav-btn" id="btnThisWeek" onclick="switchToWeek(0)" disabled>本週 →</button>
 </div>
 <nav class="day-tabs" id="dayTabs">
-  <button class="tab active" data-week="0" data-day="2026-10-05"><span class="tab-dow">週一</span><span class="tab-date">10/5</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-week="0" data-day="2026-10-06"><span class="tab-dow">週二</span><span class="tab-date">10/6</span></button>
+  <button class="tab" data-week="0" data-day="2026-10-05"><span class="tab-dow">週一</span><span class="tab-date">10/5</span></button>
+  <button class="tab active" data-week="0" data-day="2026-10-06"><span class="tab-dow">週二</span><span class="tab-date">10/6</span><span class="tab-today">今日</span></button>
   <button class="tab empty" data-week="0" data-day="2026-10-07"><span class="tab-dow">週三</span><span class="tab-date">10/7</span></button>
   <button class="tab empty" data-week="0" data-day="2026-10-08"><span class="tab-dow">週四</span><span class="tab-date">10/8</span></button>
   <button class="tab empty" data-week="0" data-day="2026-10-09"><span class="tab-dow">週五</span><span class="tab-date">10/9</span></button>
@@ -504,7 +504,90 @@ body {
 </nav>
 
 <div id="panesContainer">
-<section class="day-pane" data-day="2026-10-05">
+<section class="day-pane" data-day="2026-10-06">
+  <div class="split">
+    <aside class="news-list" id="list-2026-10-06">
+      <div class="pane-header">10月6日（週二）<span class="count"> · 8 則</span></div>
+      <div class="section-label">機構合作</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;機構合作&quot;, &quot;tagClass&quot;: &quot;tag-partner&quot;, &quot;title&quot;: &quot;9/17 麥格羅希爾收購 TeachFX：AI 錄課分析變教師私人教練&quot;, &quot;para1&quot;: &quot;麥格羅希爾（McGraw Hill）9 月 17 日宣布收購 AI 教學指導平台 TeachFX。教師用手機錄製課堂後，TeachFX 的 AI 自動分析師生互動，生成與高效教學實踐掛鉤的私人回饋，並聚合全校數據協助校長識別教學趨勢。麥格羅希爾藉此切入估值 60 億美元的教師專業發展市場。&quot;, &quot;para2&quot;: &quot;此收購標誌 AI 正從「幫學生學」延伸到「幫教師教」，以客觀課堂數據縮短教師成長週期。麥格羅希爾的課程資產結合 TeachFX 的行為分析，打造完整教學閉環。&quot;, &quot;takeaway&quot;: &quot;設計以「課堂錄影 AI 分析」為核心的體驗式 Demo，讓教師先感受 AI 教練帶來的成長洞察，而非直接談功能清單。讓教師說出「這就是我需要的」，再開口談採購，說服力翻倍。&quot;, &quot;sourceUrl&quot;: &quot;https://www.mheducation.com/about-us/news-insights/press-releases/mcgraw-hill-acquires-teachfx-expanding-commitment-to-great-teaching-with-ai-coaching-tool-designed-by-educators.html&quot;, &quot;sourceName&quot;: &quot;McGraw Hill · 收購公告&quot;}">
+        <span class="tag tag-partner">合作</span>
+        <div class="item-text">
+          <div class="item-title">9/17 麥格羅希爾收購 TeachFX：AI 錄課分析變教師私人教練</div>
+          <div class="item-source">McGraw Hill</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;機構合作&quot;, &quot;tagClass&quot;: &quot;tag-partner&quot;, &quot;title&quot;: &quot;Atos 攜手英國 Tech First Youth 免費培訓 65 萬青少年 AI 技能&quot;, &quot;para1&quot;: &quot;科技公司 Atos 宣布投資 Tech First Youth 的「未來準備倡議」，向英國西米德蘭地區最多 65 萬名青少年提供免費 AI 培訓，為學校與大學提供免費資源存取。計畫由 Atos 全額資助，無需學校額外負擔，意在彌合 AI 技能的城鄉差距。&quot;, &quot;para2&quot;: &quot;企業投資公共 AI 素養教育的模式正在西方快速擴散：既完成 CSR 目標，也建立品牌與下世代用戶的早期接觸。這股趨勢也暗示企業端 EdTech 夥伴關係的新商機。&quot;, &quot;takeaway&quot;: &quot;此模式對台灣中大型企業極具參考價值：AI 素養公益培訓可同步達到品牌露出、人才管道佈局與政策公關三重目標。可主動接觸企業 CSR 部門，設計「企業資助 x 學校導入 x 共同品牌」的三方合作包，創造 win-win 商業模式。&quot;, &quot;sourceUrl&quot;: &quot;https://www.computerweekly.com/news/366651503/Atos-invests-in-AI-education-for-West-Midlands-youth&quot;, &quot;sourceName&quot;: &quot;Computer Weekly · 教育合作&quot;}">
+        <span class="tag tag-partner">合作</span>
+        <div class="item-text">
+          <div class="item-title">Atos 攜手英國 Tech First Youth 免費培訓 65 萬青少年 AI 技能</div>
+          <div class="item-source">Computer Weekly</div>
+        </div>
+      </div>
+      <div class="section-label">資金動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;資金動態&quot;, &quot;tagClass&quot;: &quot;tag-funding&quot;, &quot;title&quot;: &quot;9/29 培生收購 AI 職能鑑定平台 Workera，劍指企業技能市場&quot;, &quot;para1&quot;: &quot;全球最大教育出版商培生（Pearson）9 月 29 日宣布收購 Workera，一家服務 ServiceNow、Accenture 及美國太空軍的 AI 職能智能平台。Workera 結合 AI、心理測量學與情境模擬，精準評估員工技能缺口，並提供個人化學習路徑。收購完成後將併入培生企業學習事業部。&quot;, &quot;para2&quot;: &quot;培生此舉將產品版圖從傳統課程延伸至「可測量的技能驗證」，直接回應企業對 AI 轉型人才的迫切需求。技能鑑定＋個人化學習的組合，正是 B2B 教育市場最具黏性的商業模式。&quot;, &quot;takeaway&quot;: &quot;「技能驗證」是台灣企業培訓市場的藍海：幫客戶說清楚員工「現在能力在哪、目標差多少、學完能做到什麼」，比只賣課程更有說服力。可參考 Workera 模式，在提案中加入「能力前測＋後測報告」作為差異化賣點。&quot;, &quot;sourceUrl&quot;: &quot;https://plc.pearson.com/en-GB/news-and-insights/news/pearson-acquires-workera-pioneer-ai-native-enterprise-assessment-and-skills&quot;, &quot;sourceName&quot;: &quot;Pearson · 收購公告&quot;}">
+        <span class="tag tag-funding">資金</span>
+        <div class="item-text">
+          <div class="item-title">9/29 培生收購 AI 職能鑑定平台 Workera，劍指企業技能市場</div>
+          <div class="item-source">Pearson</div>
+        </div>
+      </div>
+      <div class="section-label">效果研究</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;效果研究&quot;, &quot;tagClass&quot;: &quot;tag-research&quot;, &quot;title&quot;: &quot;DEC 全球調查：88% 學生已用 AI，卻有 57% 說指引嚴重不足&quot;, &quot;para1&quot;: &quot;Digital Education Council（DEC）2026 年高等教育 AI 全球調查顯示，88% 學生、77% 教師現已使用 AI，兩組均較 2025 年大增 16 個百分點。但 57% 學生表示作業缺乏足夠 AI 使用指引，僅 29% 學生認為教師能引導他們用好 AI，美加地區教師未來使用意願更較去年下滑 9 個百分點。&quot;, &quot;para2&quot;: &quot;「普及率高、指導力低」的矛盾揭示出市場最大痛點：AI 工具早已人手一份，真正缺的是能幫師生用好 AI 的配套培訓。誰能填補這個空缺，誰就佔據市場先機。&quot;, &quot;takeaway&quot;: &quot;以「88% 學生在用 AI，您的老師準備好引導了嗎？」作為行銷開場白，直接命中學校行政的焦慮感。主打「教師 AI 使用力培訓」，搭配配套教案範本，讓客戶感受到購買的是解決方案而非又一個工具。&quot;, &quot;sourceUrl&quot;: &quot;https://www.digitaleducationcouncil.com/resource-library-items/ai-in-higher-education-global-survey-2026&quot;, &quot;sourceName&quot;: &quot;Digital Education Council · 全球調查 2026&quot;}">
+        <span class="tag tag-research">研究</span>
+        <div class="item-text">
+          <div class="item-title">DEC 全球調查：88% 學生已用 AI，卻有 57% 說指引嚴重不足</div>
+          <div class="item-source">Digital Education Council</div>
+        </div>
+      </div>
+      <div class="section-label">市場趨勢</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;市場趨勢&quot;, &quot;tagClass&quot;: &quot;tag-market&quot;, &quot;title&quot;: &quot;9/2 紐約市下令 K-8 禁用生成式 AI：全美最大學區設下使用底線&quot;, &quot;para1&quot;: &quot;全美最大學區紐約市公立學校 9 月 2 日公告，對 K-8 年級（幼兒園至八年級）全面暫停學生端生成式 AI 使用，高中年級僅限特定情境，並同步實施分齡螢幕時間上限。此為紐約市繼 2023 年短暫禁止 ChatGPT 後，第二次、也是更系統性的 AI 管制措施。&quot;, &quot;para2&quot;: &quot;紐約市的選擇反映大型學區在「學習效益未經充分驗證前」的保守優先立場，預計將引發全美其他學區的跟進討論。禁令同時也暗示：中學以上的合規使用指導產品將出現新商機。&quot;, &quot;takeaway&quot;: &quot;紐約禁令是台灣教育主管機關的隱性參考座標。行銷上可主動提供「K-12 分齡 AI 使用規範建議書」，協助學校在管制與創新之間找到合規平衡點，搶先建立政策顧問形象，而非被動等待學校下決策。&quot;, &quot;sourceUrl&quot;: &quot;https://www.chalkbeat.org/newyork/2026/09/02/nyc-schools-to-set-ai-policy-ban-screen-time-limits/&quot;, &quot;sourceName&quot;: &quot;Chalkbeat · 紐約教育政策&quot;}">
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">9/2 紐約市下令 K-8 禁用生成式 AI：全美最大學區設下使用底線</div>
+          <div class="item-source">Chalkbeat</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;市場趨勢&quot;, &quot;tagClass&quot;: &quot;tag-market&quot;, &quot;title&quot;: &quot;波士頓 vs 紐約：同一國，兩種極端的 AI 教育選擇&quot;, &quot;para1&quot;: &quot;GovTech 報導，波士頓與紐約市在 AI 教育政策上走向截然相反的路徑：紐約市對 K-8 全面禁用生成式 AI，波士頓則採積極整合策略，鼓勵教師探索 AI 融入教學，並提供配套培訓支援。這組對比已成為全美各學區制定政策的重要參照。&quot;, &quot;para2&quot;: &quot;「禁」或「行」的政策分歧，反映出教育主管對 AI 教育效益的不同評估。波士頓模式正成為 AI 教育廠商的最佳背書案例，說明完善配套比工具本身更決定成敗。&quot;, &quot;takeaway&quot;: &quot;主動收集「開放使用學區的具體成效數據」作為行銷素材。當客戶猶豫是否引入 AI 時，波士頓模式的對比案例能直接化解疑慮，形成「有配套才成功」的說服邏輯，進而帶動培訓方案的銷售。&quot;, &quot;sourceUrl&quot;: &quot;https://govtech.com/education/k-12/boston-and-new-york-city-take-opposite-approaches-to-ai-in-school&quot;, &quot;sourceName&quot;: &quot;GovTech · K-12 政策分析&quot;}">
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">波士頓 vs 紐約：同一國，兩種極端的 AI 教育選擇</div>
+          <div class="item-source">GovTech</div>
+        </div>
+      </div>
+      <div class="section-label">台灣與亞洲</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;台灣與亞洲&quot;, &quot;tagClass&quot;: &quot;tag-taiwan&quot;, &quot;title&quot;: &quot;台灣 AI 教育元年：117 億方舟計畫啟動，韓、新加坡跨海取經&quot;, &quot;para1&quot;: &quot;台灣 2026 年正式進入 AI 教育元年。教育部投入 117.55 億元啟動「AI 人才方舟計畫」，涵蓋 AI 家教、AI 助教進教室，並延伸到高教及職訓。Google 推出 Gemini 教師認證，微軟開設 Microsoft 365 Copilot 教師工作坊。南韓與新加坡已派員赴台取經，視台灣為亞洲 AI 教育政策的前沿實驗場。&quot;, &quot;para2&quot;: &quot;百億級政府預算入場，代表台灣 AI 教育市場從「觀望期」正式進入「執行期」。政府採購、師培需求、學生端工具三大商機同步打開，本土廠商的黃金視窗期已來臨。&quot;, &quot;takeaway&quot;: &quot;現在是遞送提案給縣市教育局的最佳時機：引用方舟計畫框架，說明你的產品如何符合政策目標。同時可準備英語版的台灣 AI 教育案例簡報，主動接洽韓國、新加坡的 EdTech 同業，把台灣經驗轉化為出海跳板。&quot;, &quot;sourceUrl&quot;: &quot;https://www.cw.com.tw/article/5140414&quot;, &quot;sourceName&quot;: &quot;天下雜誌 · 台灣教育特輯&quot;}">
+        <span class="tag tag-taiwan">台灣</span>
+        <div class="item-text">
+          <div class="item-title">台灣 AI 教育元年：117 億方舟計畫啟動，韓、新加坡跨海取經</div>
+          <div class="item-source">天下雜誌</div>
+        </div>
+      </div>
+      <div class="section-label">Threads 精選</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;Threads 精選&quot;, &quot;tagClass&quot;: &quot;tag-product&quot;, &quot;title&quot;: &quot;Threads 精選：@daily.tools.ai 整理老師教學必備 10 款 AI 工具不加班&quot;, &quot;para1&quot;: &quot;Threads 帳號 @daily.tools.ai 發文整理「10 個老師教學必備 AI 工具」，涵蓋備課、出題、評分、製作教材等各種使用情境，強調國小到高中各階段教師均適用，訴求是讓老師「輕鬆備課不加班」，引發大量同溫層互動與轉分享。&quot;, &quot;para2&quot;: &quot;「減少老師工作量」是 AI 教育工具最直接的行銷切點，遠比「提升學習成效」更能打動第一線教師。此類實用型貼文在教師社群的傳播速度遠超過官方宣傳。&quot;, &quot;takeaway&quot;: &quot;參考此貼文的結構製作「你的產品幫老師省下了什麼」的社群內容：用具體情境（備課、出題、批改）＋省時數字（如「每週省 5 小時」）替換抽象功能說明，並透過 Threads 教師社群帳號發布，比付費廣告更能有效觸及目標族群。&quot;, &quot;sourceUrl&quot;: &quot;https://www.threads.com/@daily.tools.ai/post/DLR6AvLJwJ3/%E5%88%86%E4%BA%AB10%E5%80%8B%E8%80%81%E5%B8%AB%E6%95%99%E5%AD%B8%E5%BF%85%E5%82%99ai%E5%BE%9E%E6%AD%A4%E8%BC%95%E9%AC%86%E5%82%99%E8%AA%B2%E4%B8%8D%E5%8A%A0%E7%8F%AD%E5%9C%8B%E5%B0%8F%E8%80%81%E5%B8%AB%E5%9C%8B%E4%B8%AD%E8%80%81%E5%B8%AB%E9%AB%98%E4%B8%AD%E8%80%81%E5%B8%AB%E9%83%BD%E7%94%A8%E5%BE%97%E4%B8%8A&quot;, &quot;sourceName&quot;: &quot;Threads · @daily.tools.ai&quot;}">
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">Threads 精選：@daily.tools.ai 整理老師教學必備 10 款 AI 工具不加班</div>
+          <div class="item-source">Threads</div>
+        </div>
+      </div>
+    </aside>
+    <div class="detail-panel" id="detail-2026-10-06">
+      <div class="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <p>點擊左側新聞查看詳情</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="day-pane" data-day="2026-10-05" hidden>
   <div class="split">
     <aside class="news-list" id="list-2026-10-05">
       <div class="pane-header">10月5日（週一）<span class="count"> · 8 則</span></div>
@@ -1191,7 +1274,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026/10/05 07:14 台北時間</span>
+  最近更新：<span id="updated">2026/10/06 07:08 台北時間</span>
 </footer>
 
 <script>
