@@ -486,8 +486,8 @@ body {
   <button class="week-nav-btn" id="btnThisWeek" onclick="switchToWeek(0)" disabled>本週 →</button>
 </div>
 <nav class="day-tabs" id="dayTabs">
-  <button class="tab active" data-week="0" data-day="2026-10-12"><span class="tab-dow">週一</span><span class="tab-date">10/12</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-week="0" data-day="2026-10-13"><span class="tab-dow">週二</span><span class="tab-date">10/13</span></button>
+  <button class="tab" data-week="0" data-day="2026-10-12"><span class="tab-dow">週一</span><span class="tab-date">10/12</span></button>
+  <button class="tab active" data-week="0" data-day="2026-10-13"><span class="tab-dow">週二</span><span class="tab-date">10/13</span><span class="tab-today">今日</span></button>
   <button class="tab empty" data-week="0" data-day="2026-10-14"><span class="tab-dow">週三</span><span class="tab-date">10/14</span></button>
   <button class="tab empty" data-week="0" data-day="2026-10-15"><span class="tab-dow">週四</span><span class="tab-date">10/15</span></button>
   <button class="tab empty" data-week="0" data-day="2026-10-16"><span class="tab-dow">週五</span><span class="tab-date">10/16</span></button>
@@ -504,7 +504,64 @@ body {
 </nav>
 
 <div id="panesContainer">
-<section class="day-pane" data-day="2026-10-12">
+<section class="day-pane" data-day="2026-10-13">
+  <div class="split">
+    <aside class="news-list" id="list-2026-10-13">
+      <div class="pane-header">10月13日（週二）<span class="count"> · 5 則</span></div>
+      <div class="section-label">機構合作</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;機構合作&quot;, &quot;tagClass&quot;: &quot;tag-partner&quot;, &quot;title&quot;: &quot;10/8 英國 Arden 大學攜手 Google Cloud，三萬師生全面啟用 Gemini Enterprise&quot;, &quot;para1&quot;: &quot;英國 Arden 大學於 10 月 8 日宣布與 Google Cloud 結成策略夥伴關係，超過三萬名學生與教職員將獲得 Gemini Enterprise 使用權。此次合作同步推出逾 30 個圍繞 AI 工具重新設計的新學位課程，AI 素養與倫理使用指引將貫穿所有課程，而非另設獨立模組。學生可用 Gemini 整理筆記、深化概念理解與模擬面試；教職員則藉此提供個人化 AI 導向學習。&quot;, &quot;para2&quot;: &quot;Arden 是英國最大的營利型高等教育機構之一，約有四萬名學生。「AI 素養嵌入每門課」的模式，代表大學對 AI 的定位從輔助工具升格為核心能力，也預示全球高教課程架構的典範轉移正在加速——單一工具授權將被完整的 AI 學習生態系取代。&quot;, &quot;takeaway&quot;: &quot;Arden x Google 的合作架構是台灣高校向教育部提案的參考範本。建議行銷團隊設計「全校授權套件」方案，強調可嵌入每門課而非僅限 IT 部門使用，搭配教師增能服務，降低學校的整體採購決策門檻，有效切入校層級預算而非單一科系。&quot;, &quot;sourceUrl&quot;: &quot;https://hpcwire.com/aiwire/2026/10/09/google-cloud-partnership-expands-ai-access-and-training-at-arden-university&quot;, &quot;sourceName&quot;: &quot;AIwire · 大學 AI 合作&quot;}">
+        <span class="tag tag-partner">合作</span>
+        <div class="item-text">
+          <div class="item-title">10/8 英國 Arden 大學攜手 Google Cloud，三萬師生全面啟用 Gemini Enterprise</div>
+          <div class="item-source">AIwire</div>
+        </div>
+      </div>
+      <div class="section-label">產品動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;產品動態&quot;, &quot;tagClass&quot;: &quot;tag-product&quot;, &quot;title&quot;: &quot;9/16 Aristotle 聲控 AI 家教美國全面上線，種子輪 500 萬美元強調「不給答案」&quot;, &quot;para1&quot;: &quot;語音 AI 家教新創 Aristotle 於 9 月 16 日向全美家庭正式開放服務，同步完成 500 萬美元種子輪融資，由 True Ventures 領投。產品以語音對話為核心，服務 6–12 年級學生，能記住歷次對話紀錄、自動適應學習風格，並刻意在學生應自行思考時「不直接給出答案」，有別於通用 AI 聊天機器人的即時解題模式。私測期間逾千名學生完成超過 1,500 小時一對一輔導。&quot;, &quot;para2&quot;: &quot;「不給答案、引導思考」是 Aristotle 與 ChatGPT 等工具的核心差異，也是教育場景下最能打動家長信任的賣點。語音家教市場的先佔者效應顯著，率先在台灣推出類似「問而不答」的語音 AI 輔導工具，可鎖定對子女學習焦慮的家長族群，建立難以複製的差異化壁壘。&quot;, &quot;takeaway&quot;: &quot;台灣英語與數學補習市場龐大，Aristotle 的語音家教模式提供現成的產品定位藍圖。建議研究其轉換率並推出「引導式問答＋中文語音指令」的本土化版本，主打「訓練思考能力」的家長痛點，搶在語音 AI 家教市場普及前卡位。&quot;, &quot;sourceUrl&quot;: &quot;https://pulse2.com/aristotle-raises-5-million-seed-funding/&quot;, &quot;sourceName&quot;: &quot;Pulse 2.0 · 語音 AI 家教&quot;}">
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">9/16 Aristotle 聲控 AI 家教美國全面上線，種子輪 500 萬美元強調「不給答案」</div>
+          <div class="item-source">Pulse 2.0</div>
+        </div>
+      </div>
+      <div class="section-label">效果研究</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;效果研究&quot;, &quot;tagClass&quot;: &quot;tag-research&quot;, &quot;title&quot;: &quot;10/1 英國報告：僅 9% 年輕人對 AI 有準備，QAA 組建評量新框架諮詢小組&quot;, &quot;para1&quot;: &quot;英國全國 AI 中心於 10 月 1 日發布 9 月情報彙整，揭示英國 AI 教育政策嚴重落後：英格蘭僅 9% 年輕人感到已為 AI 時代做好準備。英國高等教育品質保證局（QAA）正組建含學生代表的諮詢小組，針對生成式 AI 時代的學術評量共同制訂原則框架。南安普頓大學則宣布 2026/27 學年後不再續約 Turnitin，理由是擔憂學生作業被用於訓練 AI 模型。&quot;, &quot;para2&quot;: &quot;英國學生 AI 準備度極低、師生能力落差加劇，加上 QAA 師生共建評量框架的嘗試，折射出高等教育面對 AI 的系統性困境。大學反 Turnitin 趨勢則揭示學術界對 AI 公司使用學生資料的疑慮升溫，「資料倫理透明度」將成為未來學術工具採購的隱性門檻。&quot;, &quot;takeaway&quot;: &quot;QAA 動向意味著「師生共建 AI 評量政策」將成為英語系高教採購新標配。台灣廠商若能主動提供「資料倫理透明說明書」及「師生共同使用守則模板」，不僅提升採購信任，也可預先布局未來可能出現的 Turnitin 替代方案市場。&quot;, &quot;sourceUrl&quot;: &quot;https://nationalcentreforai.jiscinvolve.org/wp/2026/10/01/september-2026-round-up-of-interesting-ai-news-and-announcements/&quot;, &quot;sourceName&quot;: &quot;National Centre for AI · 英國月報&quot;}">
+        <span class="tag tag-research">研究</span>
+        <div class="item-text">
+          <div class="item-title">10/1 英國報告：僅 9% 年輕人對 AI 有準備，QAA 組建評量新框架諮詢小組</div>
+          <div class="item-source">National Centre for AI</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;效果研究&quot;, &quot;tagClass&quot;: &quot;tag-research&quot;, &quot;title&quot;: &quot;10/12 AI 衝擊美國選科：19% 副學士生已因 AI 換主修，CS 招生跌 8.1%&quot;, &quot;para1&quot;: &quot;WBUR Here &amp; Now 於 10 月 12 日報導，AI 正全面重塑美國大學科系選擇生態。Gallup-Lumina 2026 報告顯示，13% 學士生與 19% 副學士生已因 AI 改換主修，47% 曾認真考慮轉系。電腦科學（CS）去年招生下降 8.1%，結束長達 15 年的持續增長。相對的，截至 2026 年已有 79 所大學開設獨立 AI 主修，2020 年時僅有 4 所。&quot;, &quot;para2&quot;: &quot;CS 招生下滑暗示學生對「純技術專業就業保障」的信心動搖，而 AI 學位快速增加則說明市場需求從通用程式轉向 AI 應用整合。學生選科行為的快速變化，是 AI 對勞動市場影響的第一線信號，也直接影響台灣高教課程規劃與 EdTech 廠商的目標族群定位。&quot;, &quot;takeaway&quot;: &quot;台灣大學招生面臨類似的選科焦慮。建議行銷團隊與正在評估課程改革的學院合作，設計「非資工背景學生也能快速上手的 AI 應用學程」，以「AI 不只是資工系的事」為核心訴求，切入人文、商管、設計等科系學生的 AI 素養補強市場。&quot;, &quot;sourceUrl&quot;: &quot;https://wbur.org/hereandnow/2026/10/12/college-majors-ai-influencers&quot;, &quot;sourceName&quot;: &quot;WBUR · 大學選科趨勢&quot;}">
+        <span class="tag tag-research">研究</span>
+        <div class="item-text">
+          <div class="item-title">10/12 AI 衝擊美國選科：19% 副學士生已因 AI 換主修，CS 招生跌 8.1%</div>
+          <div class="item-source">WBUR</div>
+        </div>
+      </div>
+      <div class="section-label">市場趨勢</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;市場趨勢&quot;, &quot;tagClass&quot;: &quot;tag-market&quot;, &quot;title&quot;: &quot;10/9 全美 79 所大學已設 AI 主修，大學選科版圖因 AI 加速重寫&quot;, &quot;para1&quot;: &quot;美國公共廣播 NPR 旗下 WUNC 於 10 月 9 日報導，美國各大學正加速推出以 AI 和數位創作為核心的全新學位課程，吸引尋求新職涯的學生。2020 年全美僅有 4 所大學開設獨立 AI 主修，截至 2026 年已達 79 所，另有約 100 所提供 AI 輔修或選修方向，顯示高等教育在 AI 時代的課程架構正快速迭代。&quot;, &quot;para2&quot;: &quot;將 AI 設為「可獨立主修的學科」是高教課程架構的重大信號：AI 不再只是輔助工具，而是與醫學、法律、工程並列的核心知識體系。對台灣高教而言，「AI 跨域主修」的市場時機已到，率先推出的學校將在招生競爭中取得先佔優勢，吸引有意投入 AI 職涯的高中畢業生。&quot;, &quot;takeaway&quot;: &quot;台灣補教業者可與有意設立 AI 學程的系所洽談「課程共創」，提供從短期工作坊到正式學分課程的模組化設計服務。針對非資工背景系所，「AI 應用入門完整課程包」是高需求採購標的，建議製作可直接投入教學的課程說明書與教師培訓資源。&quot;, &quot;sourceUrl&quot;: &quot;https://www.wunc.org/2026-10-09/new-career-paths-colleges-now-offer-degrees-in-influencing-and-ai&quot;, &quot;sourceName&quot;: &quot;WUNC / NPR · 大學新學位&quot;}">
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">10/9 全美 79 所大學已設 AI 主修，大學選科版圖因 AI 加速重寫</div>
+          <div class="item-source">WUNC / NPR</div>
+        </div>
+      </div>
+    </aside>
+    <div class="detail-panel" id="detail-2026-10-13">
+      <div class="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <p>點擊左側新聞查看詳情</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="day-pane" hidden data-day="2026-10-12">
   <div class="split">
     <aside class="news-list" id="list-2026-10-12">
       <div class="pane-header">10月12日（週一）<span class="count"> · 7 則</span></div>
@@ -1176,7 +1233,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026-10-12 07:11 (台北)</span>
+  最近更新：<span id="updated">2026-10-13 07:14 (台北)</span>
 </footer>
 
 <script>
