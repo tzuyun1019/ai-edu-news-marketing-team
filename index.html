@@ -491,8 +491,8 @@ body {
   <button class="tab" data-week="0" data-day="2026-10-14"><span class="tab-dow">週三</span><span class="tab-date">10/14</span></button>
   <button class="tab" data-week="0" data-day="2026-10-15"><span class="tab-dow">週四</span><span class="tab-date">10/15</span></button>
   <button class="tab" data-week="0" data-day="2026-10-16"><span class="tab-dow">週五</span><span class="tab-date">10/16</span></button>
-  <button class="tab active" data-week="0" data-day="2026-10-17"><span class="tab-dow">週六</span><span class="tab-date">10/17</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-week="0" data-day="2026-10-18"><span class="tab-dow">週日</span><span class="tab-date">10/18</span></button>
+  <button class="tab" data-week="0" data-day="2026-10-17"><span class="tab-dow">週六</span><span class="tab-date">10/17</span></button>
+  <button class="tab active" data-week="0" data-day="2026-10-18"><span class="tab-dow">週日</span><span class="tab-date">10/18</span><span class="tab-today">今日</span></button>
   <button class="tab" data-week="1" data-day="2026-10-05"><span class="tab-dow">週一</span><span class="tab-date">10/5</span></button>
   <button class="tab" data-week="1" data-day="2026-10-06"><span class="tab-dow">週二</span><span class="tab-date">10/6</span></button>
   <button class="tab" data-week="1" data-day="2026-10-07"><span class="tab-dow">週三</span><span class="tab-date">10/7</span></button>
@@ -504,7 +504,84 @@ body {
 </nav>
 
 <div id="panesContainer">
-<section class="day-pane" data-day="2026-10-17">
+<section class="day-pane" data-day="2026-10-18">
+  <div class="split">
+    <aside class="news-list" id="list-2026-10-18">
+      <div class="pane-header">10月18日（週日）<span class="count"> · 7 則</span></div>
+
+      <div class="section-label">產品動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;產品動態&quot;, &quot;tagClass&quot;: &quot;tag-product&quot;, &quot;tagLabel&quot;: &quot;產品&quot;, &quot;title&quot;: &quot;10/15 OpenAI 推 Rosalind 學術方案：美國大學研究室免費獲 30 個 ChatGPT 席次&quot;, &quot;para1&quot;: &quot;OpenAI 於 10 月 15 日宣布「Rosalind Academic Plan」，讓美國大學研究室申請最多 30 個 ChatGPT Business Standard 免費帳號，為期 12 個月，含 GPT-Rosalind 模型存取，適用於生命科學等研究領域。OpenAI 承諾研究資料預設不用於訓練模型，PI 或實驗室負責人需以大學信箱申請並通過審核。&quot;, &quot;para2&quot;: &quot;此方案是 OpenAI 深耕美國學術生態的策略佈局，以免費降低學術採用門檻，培養大學研究者對 GPT-Rosalind 的使用習慣。學術版授權通常是機構全面部署的先導，未來可望帶動更大規模的校園商業合約。&quot;, &quot;takeaway&quot;: &quot;台灣大學教授與研究計畫主持人可循此模式評估自己是否符合申請條件，同時觀察 OpenAI 是否將類似方案擴及亞洲學術機構。台灣 EdTech 廠商可參考此「先學術後商業」的滲透策略，設計免費研究合作計畫，以頂尖大學案例建立品牌公信力，再轉化為商業採購的背書資產。&quot;, &quot;sourceUrl&quot;: &quot;https://openai.com/index/introducing-the-rosalind-academic-plan/&quot;, &quot;sourceName&quot;: &quot;OpenAI · Rosalind 學術方案&quot;}">
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">10/15 OpenAI 推 Rosalind 學術方案：美國大學研究室免費獲 30 個 ChatGPT 席次</div>
+          <div class="item-source">OpenAI</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;產品動態&quot;, &quot;tagClass&quot;: &quot;tag-product&quot;, &quot;tagLabel&quot;: &quot;產品&quot;, &quot;title&quot;: &quot;Anthropic 在 Coursera 上線 10 門免費 AI 課程，含教師專屬培訓模組&quot;, &quot;para1&quot;: &quot;Anthropic 與 Coursera 合作，新增 10 門免費 AI 課程，涵蓋 AI 素養、人機協作、生成式 AI 應用等主題，課程數量從 12 門倍增至 22 門。其中包含與 Teach for America 聯合設計的 K-12 教師課程（4 小時）及由美國教師聯盟（AFT）開發的「訓練師培訓」課程，附帶完整工作坊套件與教學指引，供學校內部推廣使用。&quot;, &quot;para2&quot;: &quot;Anthropic 以免費課程快速拓展品牌影響力，尤其瞄準教師族群的 AI 培訓市場，而非單純的開發者受眾。「免費培訓 → 品牌認同 → 機構採購」的漏斗策略，使 Coursera 成為 Anthropic 進入學校行政預算的前沿陣地。&quot;, &quot;takeaway&quot;: &quot;Anthropic 免費課程為台灣教師提供絕佳自主學習資源，更值得台灣 EdTech 廠商研究其課程框架作為師訓產品設計的參考。建議仿效其「訓練師培訓」模式，設計台灣版「AI 教學種子師資培訓包」，以乘數效應加速工具在學校的推廣速度，降低逐校拜訪的銷售成本。&quot;, &quot;sourceUrl&quot;: &quot;https://www.edtechinnovationhub.com/news/anthropic-brings-10-free-ai-courses-to-coursera-including-training-for-teachers&quot;, &quot;sourceName&quot;: &quot;EdTech Innovation Hub · Anthropic × Coursera&quot;}">
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">Anthropic 在 Coursera 上線 10 門免費 AI 課程，含教師專屬培訓模組</div>
+          <div class="item-source">EdTech Innovation Hub</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;產品動態&quot;, &quot;tagClass&quot;: &quot;tag-product&quot;, &quot;tagLabel&quot;: &quot;產品&quot;, &quot;title&quot;: &quot;Khan Academy 與 Google 合作，Khanmigo 引入 Gemini 互動式視覺輔導功能&quot;, &quot;para1&quot;: &quot;Khan Academy 宣布 Khanmigo 透過與 Google 的合作，整合 Gemini 模型支援，新增「互動視覺家教」功能：Khanmigo 可自動生成可操作的數學圖表與幾何圖形，學生拖動頂點或數值後，AI 隨即調整解說與回應，實現更貼近人類一對一輔導的互動體驗。Google.org 資助了六個月的工程師駐點計畫，支持此功能開發。&quot;, &quot;para2&quot;: &quot;互動式視覺輔導填補了純文字 AI 家教的重大缺口，尤其在數理科教學中，「看得見、可操作的解題過程」對學習理解的效益遠優於文字說明。Khanmigo 的升級代表 AI 家教正從「給答案」進化為「共同探索解題路徑」，設定了市場新標準。&quot;, &quot;takeaway&quot;: &quot;台灣數學與自然科 EdTech 廠商應將「互動式視覺輔導」列為下一代產品功能規格。能提供「學生自己動手操作 + AI 即時回應」的互動體驗，將成為家長和教師選擇 AI 家教工具的關鍵差異因素，建議在現有題庫型產品上優先評估加入此類動態視覺化互動層。&quot;, &quot;sourceUrl&quot;: &quot;https://www.edtechinnovationhub.com/news/khan-academy-brings-gemini-powered-visual-tutoring-into-classrooms-for-2026&quot;, &quot;sourceName&quot;: &quot;EdTech Innovation Hub · Khan Academy × Gemini&quot;}">
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">Khan Academy 與 Google 合作，Khanmigo 引入 Gemini 互動式視覺輔導功能</div>
+          <div class="item-source">EdTech Innovation Hub</div>
+        </div>
+      </div>
+
+      <div class="section-label">市場趨勢</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;市場趨勢&quot;, &quot;tagClass&quot;: &quot;tag-market&quot;, &quot;tagLabel&quot;: &quot;趨勢&quot;, &quot;title&quot;: &quot;10/15 Teachers Pay Teachers 宣布全面禁止 AI 生成教材，創作者強烈抗議&quot;, &quot;para1&quot;: &quot;美國最大教師教材交易平台 Teachers Pay Teachers（TPT）於 10 月 15 日宣布，將全面禁止 AI 生成的教學資源上架，目標是確保平台內容保持「獨特、專業精製且無 AI」。此舉在 Chalkbeat 揭露平台出現格式錯誤的低品質 AI 教材（含缺字工作單、異常圖像）後做出。創作者隨即在 Change.org 發起聯署，批評禁令過於激進，未區分「負責任使用 AI」與「完全 AI 生成」的差異。&quot;, &quot;para2&quot;: &quot;TPT 的禁令揭示一個市場矛盾：AI 降低了教材製作門檻，卻也稀釋了市場內容品質。教材平台與出版商正面臨是否透過「AI-free」標章重建信任的品牌抉擇，這將直接影響台灣教材廠商的差異化定位策略。&quot;, &quot;takeaway&quot;: &quot;「AI-free 認證」可能成為教材市場的新溢價標籤。台灣教材廠商可考慮主動強調「人工審核與教師共創」流程，以品質保證和真人智慧作為差異化賣點，在 AI 教材泛濫的市場中建立難以複製的信任壁壘，搶先佔領「高品質人機協作教材」的定位。&quot;, &quot;sourceUrl&quot;: &quot;https://www.chalkbeat.org/2026/10/15/teachers-pay-teachers-to-ban-ai-generated-teaching-resources/&quot;, &quot;sourceName&quot;: &quot;Chalkbeat · TPT 教材平台政策&quot;}">
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">10/15 Teachers Pay Teachers 宣布全面禁止 AI 生成教材，創作者強烈抗議</div>
+          <div class="item-source">Chalkbeat</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;市場趨勢&quot;, &quot;tagClass&quot;: &quot;tag-market&quot;, &quot;tagLabel&quot;: &quot;趨勢&quot;, &quot;title&quot;: &quot;Sal Khan 公開承認初代 Khanmigo 未達標準，全面重建 AI 家教架構&quot;, &quot;para1&quot;: &quot;可汗學院創辦人 Sal Khan 在公開採訪中坦承，初代 Khanmigo 的表現未能達到預期效果，團隊已全面重建 AI 家教架構。新版本緊密整合可汗學院既有題庫與練習系統，讓 AI 能針對學生正在作答的具體題目給出精準回應，而非泛泛引導，大幅提升了輔導的針對性與即時性。&quot;, &quot;para2&quot;: &quot;可汗學院公開承認失敗並快速迭代，體現了 AI 教育工具的成熟化過程：從「AI 加上教育」的通用模式，走向「針對特定學習任務深度整合」的專業設計。此一轉變對整個 AI 家教市場提出更高的設計標準，也讓用戶期待提升。&quot;, &quot;takeaway&quot;: &quot;Khanmigo 重建的核心教訓是：AI 家教若與學習內容脫節，效果必然有限。台灣 AI 教學工具廠商應評估自身產品是否真正與課程內容深度整合，而非只是通用 AI 套個教育介面。「教學工具 × 課程內容深度耦合」是下一代產品的核心競爭門檻，值得提前投入設計。&quot;, &quot;sourceUrl&quot;: &quot;https://www.edtechinnovationhub.com/news/r5qzna95z9ubi8dbj8tikeayb1ej31&quot;, &quot;sourceName&quot;: &quot;EdTech Innovation Hub · Khanmigo 重建&quot;}">
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">Sal Khan 公開承認初代 Khanmigo 未達標準，全面重建 AI 家教架構</div>
+          <div class="item-source">EdTech Innovation Hub</div>
+        </div>
+      </div>
+
+      <div class="section-label">資金動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;資金動態&quot;, &quot;tagClass&quot;: &quot;tag-funding&quot;, &quot;tagLabel&quot;: &quot;資金&quot;, &quot;title&quot;: &quot;10/16 EdTech 新創週報：兒童 AI 學習 Nookly 獲 200 萬美元、語音 AI 語言家教 Eevi 完成種子輪&quot;, &quot;para1&quot;: &quot;10 月 16 日 EdTech 投資快訊顯示，AI 幼兒學習新創 Nookly 完成 200 萬美元早期輪融資，透過個人化 AI 內容專為幼兒設計學習體驗；語音 AI 語言家教 Eevi 完成未揭露金額的 pre-seed 輪，以語音對話模式教授語言，鎖定成人碎片時間學習場景。兩筆均屬 AI 教育市場的早期小額投資，但顯示兒童 AI 學習與成人語音語言學習仍持續吸引風投關注。&quot;, &quot;para2&quot;: &quot;在大額 EdTech 融資趨緩的背景下，這類早期小額輪投資反映投資人對 AI 教育賽道的持續看好，但也更加精挑細選：幼兒個人化學習與成人語音語言學習，是目前仍能獲得早期資金的利基方向。&quot;, &quot;takeaway&quot;: &quot;幼兒 AI 個人化學習是台灣尚未飽和的市場藍海，家長對「讓孩子從小接觸 AI 輔助學習」的接受度正在提升。建議台灣 EdTech 廠商評估是否能將現有產品延伸至幼兒段（3-6 歲），以語音互動和視覺豐富的介面設計取代傳統題目介面，搶佔家長最願意付費的早期教育市場區段。&quot;, &quot;sourceUrl&quot;: &quot;https://seekinvestmentsedu.substack.com/p/whats-happening-in-education-16102026&quot;, &quot;sourceName&quot;: &quot;Seeking Investments in Edu · 10/16 週報&quot;}">
+        <span class="tag tag-funding">資金</span>
+        <div class="item-text">
+          <div class="item-title">10/16 EdTech 新創週報：兒童 AI 學習 Nookly 獲 200 萬美元、語音 AI 語言家教 Eevi 完成種子輪</div>
+          <div class="item-source">Seeking Investments in Edu</div>
+        </div>
+      </div>
+
+      <div class="section-label">效果研究</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;效果研究&quot;, &quot;tagClass&quot;: &quot;tag-research&quot;, &quot;tagLabel&quot;: &quot;研究&quot;, &quot;title&quot;: &quot;Gallup 調查：57% 美國大學生每週用 AI，每5人有1人每天使用&quot;, &quot;para1&quot;: &quot;Gallup 與 Lumina Foundation 2026 年調查顯示，57% 美國大學生每週至少使用 AI 輔助課業一次，其中約五分之一（約 20%）每天使用。商業、科技與工程科系學生是使用頻率最高的族群。儘管校園內有使用限制，AI 使用已成為學生日常學習的常規行為，顯示機構層面的限制對實際行為影響有限。&quot;, &quot;para2&quot;: &quot;「使用已常規化，管制效果有限」是這份調查傳遞的核心訊息。高達 57% 的每週使用率意味著 AI 學習工具已成為大學生的基本配備，學校若無整合性的 AI 使用指引，將難以有效引導學生發展正確的使用習慣，反而讓無序使用繼續擴大。&quot;, &quot;takeaway&quot;: &quot;「57% 每週使用率」是台灣高教推廣 AI 工具時最有說服力的開場數據。建議行銷素材直接引用此數字，強調「AI 使用已是學生事實，問題不是要不要用，而是怎麼用好」，以「合規有效使用引導平台」的定位切入大學學務處與教務處，比單純推產品功能更容易打開決策大門。&quot;, &quot;sourceUrl&quot;: &quot;https://news.gallup.com/poll/704090/routine-college-students-despite-campus-limits.aspx&quot;, &quot;sourceName&quot;: &quot;Gallup · 美國大學生 AI 使用調查&quot;}">
+        <span class="tag tag-research">研究</span>
+        <div class="item-text">
+          <div class="item-title">Gallup 調查：57% 美國大學生每週用 AI，每5人有1人每天使用</div>
+          <div class="item-source">Gallup</div>
+        </div>
+      </div>
+    </aside>
+    <div class="detail-panel" id="detail-2026-10-18">
+      <div class="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <p>點擊左側新聞查看詳情</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="day-pane" hidden data-day="2026-10-17">
   <div class="split">
     <aside class="news-list" id="list-2026-10-17">
       <div class="pane-header">10月17日（週六）<span class="count"> · 8 則</span></div>
@@ -1547,7 +1624,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026-10-17 07:07 (台北)</span>
+  最近更新：<span id="updated">2026-10-18 07:21 (台北)</span>
 </footer>
 
 <script>
