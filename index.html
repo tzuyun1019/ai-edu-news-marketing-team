@@ -486,8 +486,8 @@ body {
   <button class="week-nav-btn" id="btnThisWeek" onclick="switchToWeek(0)" disabled>本週 →</button>
 </div>
 <nav class="day-tabs" id="dayTabs">
-  <button class="tab active" data-week="0" data-day="2026-10-19"><span class="tab-dow">週一</span><span class="tab-date">10/19</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-week="0" data-day="2026-10-20"><span class="tab-dow">週二</span><span class="tab-date">10/20</span></button>
+  <button class="tab" data-week="0" data-day="2026-10-19"><span class="tab-dow">週一</span><span class="tab-date">10/19</span></button>
+  <button class="tab active" data-week="0" data-day="2026-10-20"><span class="tab-dow">週二</span><span class="tab-date">10/20</span><span class="tab-today">今日</span></button>
   <button class="tab empty" data-week="0" data-day="2026-10-21"><span class="tab-dow">週三</span><span class="tab-date">10/21</span></button>
   <button class="tab empty" data-week="0" data-day="2026-10-22"><span class="tab-dow">週四</span><span class="tab-date">10/22</span></button>
   <button class="tab empty" data-week="0" data-day="2026-10-23"><span class="tab-dow">週五</span><span class="tab-date">10/23</span></button>
@@ -504,7 +504,83 @@ body {
 </nav>
 
 <div id="panesContainer">
-<section class="day-pane" data-day="2026-10-19">
+<section class="day-pane" data-day="2026-10-20">
+  <div class="split">
+    <aside class="news-list" id="list-2026-10-20">
+      <div class="pane-header">10月20日（週二）<span class="count"> · 7 則</span></div>
+
+      <div class="section-label">機構合作</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;機構合作&quot;, &quot;tagClass&quot;: &quot;tag-partner&quot;, &quot;tagLabel&quot;: &quot;合作&quot;, &quot;title&quot;: &quot;10/13 萊斯大學啟動全校 AI 計畫，十年目標招募 75 名跨學科 AI 師資&quot;, &quot;para1&quot;: &quot;萊斯大學（Rice University）於 10 月 13 日宣布啟動全校性 AI 計畫，目標十年內招募 75 名橫跨工程、自然科學與社會科學的 AI 專職教授，目前已完成前 35 人招募。計畫同步在休士頓 Ion 創新區設立 AI Foundry，作為研究人員、產業夥伴與學生的聯合研究基地，並預計於 2027 年秋季推出 AI 理學碩士新學位。&quot;, &quot;para2&quot;: &quot;萊斯的佈局代表美國頂尖研究型大學正進入「全校 AI 轉型」的新階段——不僅是個別學院的添置課程，而是以師資結構調整為核心、帶動研究生態與校園基礎設施的系統性重組。此模式對其他院校具有強烈的示範效果。&quot;, &quot;takeaway&quot;: &quot;萊斯大學「先深耕師資、再推 AI Foundry、再開碩士學位」的三段式策略，可作為台灣大學規劃 AI 學院的參考藍圖。台灣 EdTech 廠商可主動接觸正在評估 AI 碩士設置的大學，以「師生共用 AI 工具平台」的採購模式切入，搭上台灣高教 AI 學位化趨勢的東風。&quot;, &quot;sourceUrl&quot;: &quot;https://news.rice.edu/news/2026/rice-launches-transformational-ai-initiative-faculty-hiring-new-programs-and-facilities&quot;, &quot;sourceName&quot;: &quot;Rice University News · AI 計畫&quot;}">
+        <span class="tag tag-partner">合作</span>
+        <div class="item-text">
+          <div class="item-title">10/13 萊斯大學啟動全校 AI 計畫，十年目標招募 75 名跨學科 AI 師資</div>
+          <div class="item-source">Rice University News</div>
+        </div>
+      </div>
+      <div class="section-label">資金動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;資金動態&quot;, &quot;tagClass&quot;: &quot;tag-funding&quot;, &quot;tagLabel&quot;: &quot;資金&quot;, &quot;title&quot;: &quot;Wild Zebra 獲 600 萬美元，推出不給答案的「引導式」AI 數學閱讀輔導&quot;, &quot;para1&quot;: &quot;西雅圖新創 Wild Zebra 完成 600 萬美元融資，其 AI 學習平台的核心設計是「提問而非給答案」——學生在數學與閱讀練習中，AI 不直接提供解法，而是以引導式問題促使學生自己推導。平台今年已向家庭開放，月費每位學童 48 美元，鎖定中小學自主學習市場。&quot;, &quot;para2&quot;: &quot;Wild Zebra 的「引導式 AI 家教」理念，回應了近期世界銀行與馬里蘭大學研究對 AI 直接給答案削弱學習的批評。市場正在重新定義「有效 AI 家教」：從內容提供者轉向學習過程的設計者，代表一個更高門檻但更有教育價值的產品方向。&quot;, &quot;takeaway&quot;: &quot;「不給答案、只給引導」是目前教育主流研究的黃金方向，台灣 AI 家教產品若能清楚展示「引導式問答比例」與學習成效數據，在對家長的銷售中將比功能列表更有說服力。建議以學習行為數據（完成率、重試次數、答對率成長曲線）作為核心展示素材，區隔於市場上「一問一答型」的競品。&quot;, &quot;sourceUrl&quot;: &quot;https://www.geekwire.com/2026/this-startup-just-raised-6m-for-an-ai-tutor-that-helps-kids-figure-it-out-themselves/&quot;, &quot;sourceName&quot;: &quot;GeekWire · Wild Zebra 融資&quot;}">
+        <span class="tag tag-funding">資金</span>
+        <div class="item-text">
+          <div class="item-title">Wild Zebra 獲 600 萬美元，推出不給答案的「引導式」AI 數學閱讀輔導</div>
+          <div class="item-source">GeekWire</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;資金動態&quot;, &quot;tagClass&quot;: &quot;tag-funding&quot;, &quot;tagLabel&quot;: &quot;資金&quot;, &quot;title&quot;: &quot;紐西蘭 EdTech SupaHuman 完成 NZ$260 萬融資，鎖定職業培訓 AI 市場&quot;, &quot;para1&quot;: &quot;紐西蘭 AI 教育新創 SupaHuman 完成 NZ$260 萬（約 A$210 萬）Series A 融資，計畫以此擴展至澳洲市場。SupaHuman 的差異化定位在於專攻「職業與職場培訓」領域，提供 AI 驅動的技能評估與個人化學習路徑，鎖定企業與職業學校，而非消費者端的 K-12 家庭市場。&quot;, &quot;para2&quot;: &quot;SupaHuman 的案例顯示，AI 教育的商業機會正從 K-12 消費端向職業培訓的 B2B 市場擴散。職業教育通常有更清晰的學習成效指標（技能達標率、就業率），AI 的效益更易被量化，採購決策速度也相對更快，是目前 EdTech 融資環境下更容易看到早期回報的賽道。&quot;, &quot;takeaway&quot;: &quot;台灣的職業技術學院（技職體系）與企業內訓市場是被 AI 工具嚴重低估的機會。建議台灣 EdTech 廠商評估是否能將現有產品延伸出一個「B2B 職業培訓」SKU，以成效指標（而非功能演示）為提案核心，切入勞動部職訓局、企業人資部門等有明確預算的機構採購管道。&quot;, &quot;sourceUrl&quot;: &quot;https://www.startupdaily.net/topic/funding/kiwi-edtech-supahuman-chalks-up-2-6-million-series-for-australian-plans/&quot;, &quot;sourceName&quot;: &quot;Startup Daily · SupaHuman 融資&quot;}">
+        <span class="tag tag-funding">資金</span>
+        <div class="item-text">
+          <div class="item-title">紐西蘭 EdTech SupaHuman 完成 NZ$260 萬融資，鎖定職業培訓 AI 市場</div>
+          <div class="item-source">Startup Daily</div>
+        </div>
+      </div>
+      <div class="section-label">效果研究</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;效果研究&quot;, &quot;tagClass&quot;: &quot;tag-research&quot;, &quot;tagLabel&quot;: &quot;研究&quot;, &quot;title&quot;: &quot;拉丁美洲高教 AI 大調查：學生用率 92% 創高，但 65% 憂流於表面學習&quot;, &quot;para1&quot;: &quot;Digital Education Council 發布拉丁美洲高等教育 AI 調查，3 萬份問卷顯示學生 AI 使用率由 86% 升至 92%、教師由 61% 升至 79%。高達 65% 學生擔心 AI 過度使用會導致學習流於表面，僅 50% 的學生支持 AI 協助作業批改，而目前只有 19% 的教師實際使用 AI 批改回饋。&quot;, &quot;para2&quot;: &quot;拉美的數據比全球平均更極端——採用率更高，對流於表面學習的焦慮也更深。這揭示了一個全球性困境：AI 工具的普及速度遠超批判性使用能力的培育。學生自我警覺本身是個市場訊號——他們需要「幫助自己用好 AI」的工具，不只是「更多 AI 功能」。&quot;, &quot;takeaway&quot;: &quot;「65% 學生擔心 AI 讓學習變膚淺」是台灣教育廠商的強力行銷切入點。對家長端可訴諸「深度學習 AI 工具」vs「補充廉價作答工具」的差異化；對學校採購端可推「AI 使用成效追蹤模組」，幫助教師識別哪些學生陷入表面使用陷阱，作為學習輔導介入的依據。&quot;, &quot;sourceUrl&quot;: &quot;https://www.digitaleducationcouncil.com/dec-insights/92-of-students-and-79-of-faculty-actively-engaging-with-ai-findings-from-ai-in-higher-education-latam-survey-2026&quot;, &quot;sourceName&quot;: &quot;Digital Education Council · 拉美高教 AI 調查&quot;}">
+        <span class="tag tag-research">研究</span>
+        <div class="item-text">
+          <div class="item-title">拉丁美洲高教 AI 大調查：學生用率 92% 創高，但 65% 憂流於表面學習</div>
+          <div class="item-source">Digital Education Council</div>
+        </div>
+      </div>
+      <div class="section-label">工具推薦</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;工具推薦&quot;, &quot;tagClass&quot;: &quot;tag-product&quot;, &quot;tagLabel&quot;: &quot;工具&quot;, &quot;title&quot;: &quot;OpenAI 教師工作坊實測：教師成功創出可重用教材，但渴望更多練習時間&quot;, &quot;para1&quot;: &quot;EdTech Innovation Hub 報導 OpenAI 針對教師舉辦的 AI 工作坊成果：參與教師普遍能在坊後自行開發出可立即用於課堂的教案與評量工具，顯示工作坊的生產效能達標。然而多數教師反映工作坊時間過短，希望有更多反覆實作與情境演練機會，以真正內化 AI 提示設計能力。&quot;, &quot;para2&quot;: &quot;OpenAI 工作坊的結果印證：短期密集式師訓的知識傳遞有效，但實作熟練需要持續接觸與支持。教師 AI 培訓的最大痛點已從「學不到東西」轉移至「沒有夠多的練習情境」，代表後工作坊的持續學習社群與任務式練習機制，成為師訓產品的新關鍵功能。&quot;, &quot;takeaway&quot;: &quot;台灣 EdTech 廠商設計教師 AI 培訓產品時，可參考此模式：「一次工作坊 + 30 天線上任務挑戰包 + 社群互動」的組合，比單次活動更能建立黏著度與口碑。課後任務包（每週 1 個真實備課挑戰 + AI 範例反饋）是低邊際成本、高價值感知的服務設計，可作為工作坊的標配加值附件。&quot;, &quot;sourceUrl&quot;: &quot;https://edtechinnovationhub.com/news/openais-educator-ai-workshops-yield-reusable-tools-but-teachers-want-more-practice&quot;, &quot;sourceName&quot;: &quot;EdTech Innovation Hub · OpenAI 教師工作坊&quot;}">
+        <span class="tag tag-product">工具</span>
+        <div class="item-text">
+          <div class="item-title">OpenAI 教師工作坊實測：教師成功創出可重用教材，但渴望更多練習時間</div>
+          <div class="item-source">EdTech Innovation Hub</div>
+        </div>
+      </div>
+      <div class="section-label">效果研究</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;效果研究&quot;, &quot;tagClass&quot;: &quot;tag-research&quot;, &quot;tagLabel&quot;: &quot;研究&quot;, &quot;title&quot;: &quot;10/19 學術論文：高教機構員工 AI 就緒度嚴重不足，HR 政策是核心瓶頸&quot;, &quot;para1&quot;: &quot;《行政科學》期刊（Administrative Sciences）10 月 19 日刊出論文，針對高等教育機構員工（非教師端）的 AI 使用狀況與就緒度進行研究，發現多數高校員工雖有 AI 工具使用意願，但機構 HR 政策的缺位——包括培訓投入不足、AI 使用邊界不明、績效評估未更新——是最大的採用障礙，並對機構整體 AI 效能造成系統性拖累。&quot;, &quot;para2&quot;: &quot;此研究聚焦常被忽略的「非教師員工」族群，揭示大學 AI 治理的盲區：師生端討論熱鬧，行政員工端卻在制度真空中自行摸索。HR 政策的滯後將拖累整個機構的 AI 效能轉化，也代表學校 AI 服務商若只關注教學端，將錯失機構全域整合的商業機會。&quot;, &quot;takeaway&quot;: &quot;台灣 EdTech 廠商若目標是機構級採購而非單一系所採購，必須同時規劃教師端、學生端、行政端三條產品線的整合方案。向大學高層提案時，以「全機構 AI 就緒度」為框架（而非單一功能），更容易拿下預算規模更大的數位轉型合約，而非只是單點工具購入。&quot;, &quot;sourceUrl&quot;: &quot;https://mdpi.com/2076-3387/16/10/517&quot;, &quot;sourceName&quot;: &quot;MDPI Administrative Sciences · 高教員工 AI 就緒度&quot;}">
+        <span class="tag tag-research">研究</span>
+        <div class="item-text">
+          <div class="item-title">10/19 學術論文：高教機構員工 AI 就緒度嚴重不足，HR 政策是核心瓶頸</div>
+          <div class="item-source">MDPI Administrative Sciences</div>
+        </div>
+      </div>
+      <div class="section-label">市場趨勢</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;市場趨勢&quot;, &quot;tagClass&quot;: &quot;tag-market&quot;, &quot;tagLabel&quot;: &quot;趨勢&quot;, &quot;title&quot;: &quot;波士頓高校學生預告 10/21 發動 AI 開發暫停抗議，校園 AI 治理再受關注&quot;, &quot;para1&quot;: &quot;多所波士頓大學區學生宣布將於 10 月 21 日舉行聯合罷課，呼籲政府凍結 AI 開發速度並建立更強的公眾監督機制，是美國高校中近期最大規模的學生 AI 治理行動。學生強調訴求並非反對 AI，而是要求 AI 發展與社會影響評估同步推進，並對教育倫理衝擊進行系統性回應。&quot;, &quot;para2&quot;: &quot;學生行動主義進入 AI 治理議題，代表校園內的話語空間正在改變。EdTech 廠商與高校採購方都需意識到：學生已從被動的工具使用者轉為積極的政策倡議者，未來的教育 AI 導入策略若缺少學生參與設計的環節，將面臨來自學生群體本身的更大阻力。&quot;, &quot;takeaway&quot;: &quot;台灣高校導入 AI 工具前，可主動設計「學生意見徵集流程」作為採購標準程序的一環，而非事後溝通。實際邀請學生測試工具、回報使用體驗，不僅降低推行阻力，更能產生真實的學生見證案例，成為向下一所學校銷售時最有說服力的口碑素材。&quot;, &quot;sourceUrl&quot;: &quot;https://boston25news.com/news/local/boston-area-college-students-plan-walkout-calling-freeze-ai-development/56IM7DQTWRBRLNMVJOOARTRAJI&quot;, &quot;sourceName&quot;: &quot;Boston 25 News · 學生 AI 抗議&quot;}">
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">波士頓高校學生預告 10/21 發動 AI 開發暫停抗議，校園 AI 治理再受關注</div>
+          <div class="item-source">Boston 25 News</div>
+        </div>
+      </div>
+    </aside>
+    <div class="detail-panel" id="detail-2026-10-20">
+      <div class="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <p>點擊左側新聞查看詳情</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="day-pane" hidden data-day="2026-10-19">
   <div class="split">
     <aside class="news-list" id="list-2026-10-19">
       <div class="pane-header">10月19日（週一）<span class="count"> · 8 則</span></div>
@@ -1125,7 +1201,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026-10-19 07:20 (台北)</span>
+  最近更新：<span id="updated">2026-10-20 07:21 (台北)</span>
 </footer>
 
 <script>
