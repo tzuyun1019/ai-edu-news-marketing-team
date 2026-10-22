@@ -489,8 +489,8 @@ body {
   <button class="tab" data-week="0" data-day="2026-10-19"><span class="tab-dow">週一</span><span class="tab-date">10/19</span></button>
   <button class="tab" data-week="0" data-day="2026-10-20"><span class="tab-dow">週二</span><span class="tab-date">10/20</span></button>
   <button class="tab" data-week="0" data-day="2026-10-21"><span class="tab-dow">週三</span><span class="tab-date">10/21</span></button>
-  <button class="tab active" data-week="0" data-day="2026-10-22"><span class="tab-dow">週四</span><span class="tab-date">10/22</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-week="0" data-day="2026-10-23"><span class="tab-dow">週五</span><span class="tab-date">10/23</span></button>
+  <button class="tab" data-week="0" data-day="2026-10-22"><span class="tab-dow">週四</span><span class="tab-date">10/22</span></button>
+  <button class="tab active" data-week="0" data-day="2026-10-23"><span class="tab-dow">週五</span><span class="tab-date">10/23</span><span class="tab-today">今日</span></button>
   <button class="tab empty" data-week="0" data-day="2026-10-24"><span class="tab-dow">週六</span><span class="tab-date">10/24</span></button>
   <button class="tab empty" data-week="0" data-day="2026-10-25"><span class="tab-dow">週日</span><span class="tab-date">10/25</span></button>
   <button class="tab" data-week="1" data-day="2026-10-12"><span class="tab-dow">週一</span><span class="tab-date">10/12</span></button>
@@ -504,7 +504,75 @@ body {
 </nav>
 
 <div id="panesContainer">
-<section class="day-pane" data-day="2026-10-22">
+<section class="day-pane" data-day="2026-10-23">
+  <div class="split">
+    <aside class="news-list" id="list-2026-10-23">
+      <div class="pane-header">10月23日（週五）<span class="count"> · 6 則</span></div>
+
+      <div class="section-label">產品動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;產品動態&quot;, &quot;tagClass&quot;: &quot;tag-product&quot;, &quot;tagLabel&quot;: &quot;產品&quot;, &quot;title&quot;: &quot;OpenAI Education 推出 The Edu Prompt 電子報，加速校園 AI 推廣&quot;, &quot;para1&quot;: &quot;OpenAI Education 宣布推出專屬教育電子報《The Edu Prompt》，定期發布 AI 在課堂的實作案例、教師故事與政策動態，作為其校園 AI 推廣策略的一環。此舉標誌 OpenAI 將教育內容行銷提升至官方渠道層級，強化與教育工作者的直接溝通管道。&quot;, &quot;para2&quot;: &quot;大型 AI 廠商發行教育專屬電子報，代表「建立教師社群 → 培養品牌忠誠 → 推動機構採購」的生態策略正在成形。內容行銷不只是知名度工具，更是縮短校方採購決策週期、建立長期信任的關鍵基礎建設。&quot;, &quot;takeaway&quot;: &quot;台灣 EdTech 廠商若缺乏持續性師生溝通管道，可參考《The Edu Prompt》模式，建立自有教育電子報，定期輸出可操作的 AI 教學案例。固定頻率的優質內容能累積訂閱者信任，成為後續課程推廣和機構採購的暖場工具，建立低成本但高轉化的行銷護城河。&quot;, &quot;sourceUrl&quot;: &quot;https://www.edtechinnovationhub.com/news/openai-education-launches-newsletter-as-ai-classroom-push-grows&quot;, &quot;sourceName&quot;: &quot;EdTech Innovation Hub · OpenAI Education 電子報&quot;}">
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">OpenAI Education 推出 The Edu Prompt 電子報，加速校園 AI 推廣</div>
+          <div class="item-source">EdTech Innovation Hub</div>
+        </div>
+      </div>
+      <div class="section-label">機構合作</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;機構合作&quot;, &quot;tagClass&quot;: &quot;tag-partner&quot;, &quot;tagLabel&quot;: &quot;合作&quot;, &quot;title&quot;: &quot;Rice 大學宣布增聘 40 名 AI 師資並推出 AI 碩士學程&quot;, &quot;para1&quot;: &quot;萊斯大學（Rice University）宣布擴大 AI 學術布局，計劃增聘 40 名 AI 領域師資，並預計 2027 年秋季開設人工智慧碩士（MAI）學位，提供 30 學分的非論文型應用課程，聚焦實作能力而非傳統研究路徑，同時在 Ion 區建設新的 AI 研究設施。&quot;, &quot;para2&quot;: &quot;Rice 的布局代表美國頂尖理工大學將 AI 從研究課題升級為核心學院建制，「非論文型 AI 碩士」面向業界實戰需求的定位，也預示未來幾年 AI 應用人才的主要供給管道將更快速、更務實化。&quot;, &quot;takeaway&quot;: &quot;台灣大學若規劃 AI 學程，Rice MAI「30 學分非論文型、聚焦實作」的課程框架可提供參考藍圖。企業培訓市場也可關注此趨勢：以「AI 碩士等級課程、短期密集版」為訴求設計培訓包，精準打入想提升 AI 職能的在職人士需求。&quot;, &quot;sourceUrl&quot;: &quot;https://edtechinnovationhub.com/news/rice-university-plans-40-more-ai-faculty-hires-and-new-masters-degree&quot;, &quot;sourceName&quot;: &quot;EdTech Innovation Hub · Rice AI 學術擴張&quot;}">
+        <span class="tag tag-partner">合作</span>
+        <div class="item-text">
+          <div class="item-title">Rice 大學宣布增聘 40 名 AI 師資並推出 AI 碩士學程</div>
+          <div class="item-source">EdTech Innovation Hub</div>
+        </div>
+      </div>
+      <div class="section-label">資金動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;資金動態&quot;, &quot;tagClass&quot;: &quot;tag-funding&quot;, &quot;tagLabel&quot;: &quot;資金&quot;, &quot;title&quot;: &quot;IXL Learning 完成第 14 起收購：吃下 AI 寫作評測平台 NoRedInk&quot;, &quot;para1&quot;: &quot;EdTech 巨頭 IXL Learning 宣布收購 NoRedInk，這是該公司自 2018 年以來第 14 起收購案。NoRedInk 提供個人化寫作練習與 AI 輔助評測功能，廣泛應用於美國各學區，收購後將繼續獨立運營並獲 IXL 資源支援，交易金額未揭露。&quot;, &quot;para2&quot;: &quot;IXL 旗下已有 Rosetta Stone、Teachers Pay Teachers 等多個平台，此次加入 NoRedInk 進一步補強英語語文學習版圖。AI 評測工具能讓教師審核後再發送反饋給學生的設計，顯示市場對「教師可控 AI 反饋」的需求持續上升。&quot;, &quot;takeaway&quot;: &quot;台灣語文學習平台若評估 AI 寫作評測功能，NoRedInk「教師審核 → 學生收到反饋」的信任設計值得參考，可降低教師對 AI 直接評分的疑慮，加快校方採購決策。掌握平台整合收購邏輯也有助預判競爭格局。&quot;, &quot;sourceUrl&quot;: &quot;https://edtechinnovationhub.com/news/ixl-learning-acquires-noredink-in-14th-acquisition-since-2018&quot;, &quot;sourceName&quot;: &quot;EdTech Innovation Hub · IXL/NoRedInk 收購&quot;}">
+        <span class="tag tag-funding">資金</span>
+        <div class="item-text">
+          <div class="item-title">IXL Learning 完成第 14 起收購：吃下 AI 寫作評測平台 NoRedInk</div>
+          <div class="item-source">EdTech Innovation Hub</div>
+        </div>
+      </div>
+      <div class="section-label">效果研究</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;效果研究&quot;, &quot;tagClass&quot;: &quot;tag-research&quot;, &quot;tagLabel&quot;: &quot;研究&quot;, &quot;title&quot;: &quot;10/21 Gallup-Lumina：48% 雇主認為 AI 時代大學文憑將更有價值&quot;, &quot;para1&quot;: &quot;Gallup 與 Lumina 基金會 10 月 21 日發布雇主調查，展望未來 5 年，48% 雇主認為 AI 發展將使大學學歷更具市場價值，僅 26% 認為會降低。雇主同時表示，具備 AI 協作能力的畢業生在求職中更具競爭優勢，企業用人觀念面臨重新定義。&quot;, &quot;para2&quot;: &quot;「AI 讓文憑更值錢」的雇主主流觀點，與學生對職涯的焦慮感形成落差，揭示一個尚未被充分傳達的市場機會：幫助學生將 AI 能力轉化為可見的職涯資產，而非只是一個使用 AI 的人，是教育工具下一個競爭維度。&quot;, &quot;takeaway&quot;: &quot;台灣大學就業輔導中心與職涯發展平台，可以 Gallup 調查數據為佐證，推出「AI 能力 + 大學學歷組合展示」的職涯規劃服務。EdTech 廠商設計 AI 學習工具時，加入「可出示雇主的 AI 技能履歷」功能，能直接對應企業採購的痛點。&quot;, &quot;sourceUrl&quot;: &quot;https://insightintoacademia.com/employers-degrees-and-ai&quot;, &quot;sourceName&quot;: &quot;Gallup-Lumina · 雇主對學歷與 AI 態度調查&quot;}">
+        <span class="tag tag-research">研究</span>
+        <div class="item-text">
+          <div class="item-title">10/21 Gallup-Lumina：48% 雇主認為 AI 時代大學文憑將更有價值</div>
+          <div class="item-source">Gallup-Lumina</div>
+        </div>
+      </div>
+      <div class="section-label">市場趨勢</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;市場趨勢&quot;, &quot;tagClass&quot;: &quot;tag-market&quot;, &quot;tagLabel&quot;: &quot;趨勢&quot;, &quot;title&quot;: &quot;調查：70+ 美國學區確認無 AI 政策，39 個計劃本學年補訂&quot;, &quot;para1&quot;: &quot;紐約州調查顯示，超過 70 個學區確認尚未制定 AI 委員會政策，其中 39 個計劃在 2026-27 學年推動。距 Highlands Current 報導（10 月 13 日），美國 K-12 校園 AI 規範的系統性建立仍處於起步階段，各地落差顯著，部分學區甚至尚未啟動討論。&quot;, &quot;para2&quot;: &quot;「無政策」並非「無使用」——學生與教師在沒有規範的情況下已廣泛使用 AI，空白狀態本身就是一種風險。政策真空期往往為教育工具廠商提供「協助建立規範」的切入機會，比單純賣產品更容易建立長期夥伴關係。&quot;, &quot;takeaway&quot;: &quot;台灣 EdTech 廠商可主動為無 AI 政策的中小學提供免費「AI 使用政策模板」及評估工具，藉由協助學校降低政策風險建立信任，再進一步推廣自家產品。從「工具提供者」升級為「政策夥伴」，是差異化競爭的有效路徑。&quot;, &quot;sourceUrl&quot;: &quot;https://highlandscurrent.org/2026/10/13/most-school-districts-dont-have-ai-policies/&quot;, &quot;sourceName&quot;: &quot;Highlands Current · 學區 AI 政策調查&quot;}">
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">調查：70+ 美國學區確認無 AI 政策，39 個計劃本學年補訂</div>
+          <div class="item-source">Highlands Current</div>
+        </div>
+      </div>
+      <div class="section-label">台灣與亞洲</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;台灣與亞洲&quot;, &quot;tagClass&quot;: &quot;tag-taiwan&quot;, &quot;tagLabel&quot;: &quot;台灣&quot;, &quot;title&quot;: &quot;10/22 教育部 AI 教學研究成果展示：以人為本、備課到評量全覆蓋&quot;, &quot;para1&quot;: &quot;教育部領域教學研究中心於 10 月 16-17 日在國立台北教育大學舉辦成果發表，展示以 AI 輔助教學為主軸的研究成果，涵蓋從備課、課堂互動到課後學習的全流程應用。消息於 10 月 22 日由 yam 新聞報導，標誌台灣教師 AI 教學應用已從個人摸索進入系統性研究與推廣階段。&quot;, &quot;para2&quot;: &quot;教育部直接主辦 AI 教學研究成果展示，代表台灣公部門對 AI 融入正規教育的正式背書力度提升。以研究成果為基礎推廣工具，比直接推廣工具更能獲得教師信任，也為 EdTech 廠商提供了與官方研究接軌的合作機會。&quot;, &quot;takeaway&quot;: &quot;台灣 EdTech 廠商應積極關注教育部 AI 教學研究計畫的公開徵件，爭取成為研究中心的工具合作夥伴或數據提供方。與官方研究成果掛鉤的產品，在學校採購決策中具有顯著的信任背書效果，是進入公立學校市場最具性價比的背書路徑。&quot;, &quot;sourceUrl&quot;: &quot;https://n.yam.com/Article/20261022808143&quot;, &quot;sourceName&quot;: &quot;yam 新聞 · 教育部 AI 教學研究成果發表&quot;}">
+        <span class="tag tag-taiwan">台灣</span>
+        <div class="item-text">
+          <div class="item-title">10/22 教育部 AI 教學研究成果展示：以人為本、備課到評量全覆蓋</div>
+          <div class="item-source">yam 新聞</div>
+        </div>
+      </div>
+    </aside>
+    <div class="detail-panel" id="detail-2026-10-23">
+      <div class="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <p>點擊左側新聞查看詳情</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="day-pane" hidden data-day="2026-10-22">
   <div class="split">
     <aside class="news-list" id="list-2026-10-22">
       <div class="pane-header">10月22日（週四）<span class="count"> · 7 則</span></div>
@@ -1342,7 +1410,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026-10-22 07:20 (台北)</span>
+  最近更新：<span id="updated">2026/10/23 07:20 台北</span>
 </footer>
 
 <script>
