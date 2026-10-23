@@ -490,8 +490,8 @@ body {
   <button class="tab" data-week="0" data-day="2026-10-20"><span class="tab-dow">週二</span><span class="tab-date">10/20</span></button>
   <button class="tab" data-week="0" data-day="2026-10-21"><span class="tab-dow">週三</span><span class="tab-date">10/21</span></button>
   <button class="tab" data-week="0" data-day="2026-10-22"><span class="tab-dow">週四</span><span class="tab-date">10/22</span></button>
-  <button class="tab active" data-week="0" data-day="2026-10-23"><span class="tab-dow">週五</span><span class="tab-date">10/23</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-week="0" data-day="2026-10-24"><span class="tab-dow">週六</span><span class="tab-date">10/24</span></button>
+  <button class="tab" data-week="0" data-day="2026-10-23"><span class="tab-dow">週五</span><span class="tab-date">10/23</span></button>
+  <button class="tab active" data-week="0" data-day="2026-10-24"><span class="tab-dow">週六</span><span class="tab-date">10/24</span><span class="tab-today">今日</span></button>
   <button class="tab empty" data-week="0" data-day="2026-10-25"><span class="tab-dow">週日</span><span class="tab-date">10/25</span></button>
   <button class="tab" data-week="1" data-day="2026-10-12"><span class="tab-dow">週一</span><span class="tab-date">10/12</span></button>
   <button class="tab" data-week="1" data-day="2026-10-13"><span class="tab-dow">週二</span><span class="tab-date">10/13</span></button>
@@ -504,7 +504,90 @@ body {
 </nav>
 
 <div id="panesContainer">
-<section class="day-pane" data-day="2026-10-23">
+<section class="day-pane" data-day="2026-10-24">
+  <div class="split">
+    <aside class="news-list" id="list-2026-10-24">
+      <div class="pane-header">10月24日（週六）<span class="count"> · 8 則</span></div>
+
+      <div class="section-label">市場趨勢</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;市場趨勢&quot;, &quot;tagClass&quot;: &quot;tag-market&quot;, &quot;tagLabel&quot;: &quot;趨勢&quot;, &quot;title&quot;: &quot;10/23 美國 AI 學士學位突破 100 所，MIT AI 組成為第二熱門科系&quot;, &quot;para1&quot;: &quot;WBUR 10 月 23 日報導，東北大學研究資料庫顯示，提供 AI 大學部學位的美國高校已超過 100 所。麻省理工學院 AI 與決策制定學系目前有 354 名在籍學生，成為全校第二熱門科系；Bentley 大學 AI 學程也已培養近百名學生。&quot;, &quot;para2&quot;: &quot;AI 學位從稀缺走向普及，意味著企業幾年後將迎來首波「原生 AI 學士」人才。這一趨勢正加速高校課程標準化，也預示 AI 工具廠商的採購決策者將由懷疑者換成在學期間即習慣使用 AI 的新世代。&quot;, &quot;takeaway&quot;: &quot;台灣大學若規劃 AI 學程，可以 MIT 354 人的學習規模為標竿，先聚焦「AI 與決策分析」跨域組合，設計小而精的 30 學分課程，以快速開班回應學生需求，搶佔市場先機後再擴大。&quot;, &quot;sourceUrl&quot;: &quot;https://wbur.org/news/2026/10/23/ai-college-major-massachusetts&quot;, &quot;sourceName&quot;: &quot;WBUR · AI 大學部學位調查&quot;}">
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">10/23 美國 AI 學士學位突破 100 所，MIT AI 組成為第二熱門科系</div>
+          <div class="item-source">WBUR</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;市場趨勢&quot;, &quot;tagClass&quot;: &quot;tag-market&quot;, &quot;tagLabel&quot;: &quot;趨勢&quot;, &quot;title&quot;: &quot;紐約市公立學校宣布一年生成 AI 禁令，K-8 全面停用&quot;, &quot;para1&quot;: &quot;紐約市公立學校宣布對學生端生成 AI 實施一年暫停令：禁止 2K 至 8 年級學生使用 AI 及 AI 嵌入軟體，並禁止全體學生使用 AI 陪伴機器人。教師仍可使用 AI 備課及處理行政工作。此政策涵蓋全市逾百萬名學生。&quot;, &quot;para2&quot;: &quot;全美最大學區的禁用宣示具有強烈示範效應，可能促使其他大城市學區跟進。「一律禁止」策略的出現，反映 AI 監護責任不明確與學術誠信漏洞在家長群體中的焦慮已達臨界點，並非單純政策保守。&quot;, &quot;takeaway&quot;: &quot;面對紐約市禁令效應，台灣 EdTech 廠商應主動強化「教師可視化管控面板」功能，並準備一套面向學校決策者的隱私與防護說明書，在家長疑慮升溫時提前建立信任基礎，避免被政策浪潮掃到邊緣。&quot;, &quot;sourceUrl&quot;: &quot;https://www.govtech.com/education/k-12/nyc-schools-hits-pause-on-ai-draws-clear-line-on-student-use&quot;, &quot;sourceName&quot;: &quot;Government Technology · NYC AI 禁令&quot;}">
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">紐約市公立學校宣布一年生成 AI 禁令，K-8 全面停用</div>
+          <div class="item-source">Government Technology</div>
+        </div>
+      </div>
+      <div class="section-label">機構合作</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;機構合作&quot;, &quot;tagClass&quot;: &quot;tag-partner&quot;, &quot;tagLabel&quot;: &quot;合作&quot;, &quot;title&quot;: &quot;10/19 Emory 大學全校開放 Claude AI，師生研究行政均可用&quot;, &quot;para1&quot;: &quot;美國 Emory 大學於 10 月 19 日宣布，全校學生、教師與行政人員皆可使用 Anthropic Claude 作為機構 AI 工具，適用場景涵蓋研究、教學、修課及行政作業，且所有運作均受 Emory 資料治理與隱私框架保護。&quot;, &quot;para2&quot;: &quot;頂尖研究型大學整機構導入 Claude 而非分系試點，代表高等教育 AI 採購走向「全校平台授權」模式。AI 廠商從「課程工具」升級為「機構基礎設施」，採購層級與合約金額將大幅提升，競爭門檻隨之拉高。&quot;, &quot;takeaway&quot;: &quot;台灣 EdTech 廠商若欲進入大學市場，應避免只賣單一課堂工具，可改以「全校 AI 助理平台」定位提案，搭配資料安全白皮書與本地資料落地方案，精準切入大學資訊長的採購語境，拉高議題層次。&quot;, &quot;sourceUrl&quot;: &quot;https://emergent.sh/news/claude-ai-now-available-emory-university&quot;, &quot;sourceName&quot;: &quot;Emergent · Emory 大學 AI 部署&quot;}">
+        <span class="tag tag-partner">合作</span>
+        <div class="item-text">
+          <div class="item-title">10/19 Emory 大學全校開放 Claude AI，師生研究行政均可用</div>
+          <div class="item-source">Emergent</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;機構合作&quot;, &quot;tagClass&quot;: &quot;tag-partner&quot;, &quot;tagLabel&quot;: &quot;合作&quot;, &quot;title&quot;: &quot;CSU 每年花 1,300 萬美元為 47 萬學生購置 ChatGPT Edu 授權&quot;, &quot;para1&quot;: &quot;加州州立大學系統（CSU）每年支付 1,300 萬美元，為全體 47 萬名學生開通 ChatGPT Edu 授權，是目前全球高教最大規模 AI 工具採購案之一。此舉旨在培養具備 AI 職場能力的畢業生，但部分正在求職的學生對實際效益仍抱持觀望。&quot;, &quot;para2&quot;: &quot;CSU 每生 AI 授權成本約 28 美元，相比之下效益主張建立在「職場準備」的軟性承諾上。這一巨額採購在展現公立大學 AI 決心的同時，也引發對評估機制是否完善的疑問，「如何驗證 AI 投資回報」成為高教採購下一個議題。&quot;, &quot;takeaway&quot;: &quot;台灣公立大學若要提出類似 AI 全校授權計畫，建議先在 1-2 個院系進行有數據追蹤的試點（學習成效、就業率指標），以量化成果作為全校推廣的政策佐證，避免預算審核時缺乏可信效益數據。&quot;, &quot;sourceUrl&quot;: &quot;https://edsource.org/2026/csu-ai-workforce-preparedness/767404&quot;, &quot;sourceName&quot;: &quot;EdSource · CSU AI 全校授權&quot;}">
+        <span class="tag tag-partner">合作</span>
+        <div class="item-text">
+          <div class="item-title">CSU 每年花 1,300 萬美元為 47 萬學生購置 ChatGPT Edu 授權</div>
+          <div class="item-source">EdSource</div>
+        </div>
+      </div>
+      <div class="section-label">台灣與亞洲</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;台灣與亞洲&quot;, &quot;tagClass&quot;: &quot;tag-taiwan&quot;, &quot;tagLabel&quot;: &quot;台灣&quot;, &quot;title&quot;: &quot;台灣 117.55 億元 AI 人才方舟計畫啟動，AI 家教全面進教室&quot;, &quot;para1&quot;: &quot;教育部推動 4 年期「AI 人才方舟計畫」，投入約 117.55 億元，核心目標是將 AI 家教與 AI 助教系統化引入中小學課室。此計畫已吸引韓國、新加坡等國教育官員來台取經，標誌台灣正從 AI 工具使用者轉型為政策輸出者。&quot;, &quot;para2&quot;: &quot;百億元級政府投資確立了 AI 進教室的長期方向，也為本土 EdTech 廠商創造了可預期的公部門採購機會。競逐「AI 家教、AI 助教」系統整合標案，將是未來 3-4 年台灣教育 AI 市場最大的規模化機會。&quot;, &quot;takeaway&quot;: &quot;台灣 EdTech 廠商應立即研究「AI 人才方舟計畫」的相關招標規格，提前針對政府採購要求（如資料落地、無障礙設計、多語支援）優化產品，並積極與各縣市教育局建立關係，搶佔地方試點合約，奠定全國展開基礎。&quot;, &quot;sourceUrl&quot;: &quot;https://flipedu.parenting.com.tw/article/010743&quot;, &quot;sourceName&quot;: &quot;翻轉教育 · 台灣 AI 人才方舟計畫&quot;}">
+        <span class="tag tag-taiwan">台灣</span>
+        <div class="item-text">
+          <div class="item-title">台灣 117.55 億元 AI 人才方舟計畫啟動，AI 家教全面進教室</div>
+          <div class="item-source">翻轉教育</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;台灣與亞洲&quot;, &quot;tagClass&quot;: &quot;tag-taiwan&quot;, &quot;tagLabel&quot;: &quot;亞洲&quot;, &quot;title&quot;: &quot;韓國廢止強制 AI 教科書政策，轉型 9.6 億美元 AI 人才中心計畫&quot;, &quot;para1&quot;: &quot;韓國國會今年撤銷強制推行 AI 教科書的官方地位，起因是採用率僅約 30%，教師工會指出推行速度超過教師備課能力。政府隨即轉向，宣布投入 9.6 億美元到 2030 年建設 AI 人才中心與職業高中，改採基礎建設優先路線。&quot;, &quot;para2&quot;: &quot;韓國從「強制內容」到「投資基礎設施」的政策轉彎，提供了 AI 教育政策設計的反面教材：未配套師資培訓的課程強制，不但無效且引發反彈。培育教師能力先於課程部署，是可推廣的重要政策經驗。&quot;, &quot;takeaway&quot;: &quot;台灣 EdTech 廠商在進入學校市場時，應避免以「導入課程」為主要銷售模式，改為以「師資培訓工作坊 + 工具同步導入」的捆包策略進校，降低教師抵觸感，參考韓國失敗案例提高採購說服力。&quot;, &quot;sourceUrl&quot;: &quot;https://crpe.org/shockwaves-and-innovations-how-nations-worldwide-are-dealing-with-ai-in-education/&quot;, &quot;sourceName&quot;: &quot;CRPE · 全球 AI 教育政策比較&quot;}">
+        <span class="tag tag-taiwan">亞洲</span>
+        <div class="item-text">
+          <div class="item-title">韓國廢止強制 AI 教科書政策，轉型 9.6 億美元 AI 人才中心計畫</div>
+          <div class="item-source">CRPE</div>
+        </div>
+      </div>
+      <div class="section-label">效果研究</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;效果研究&quot;, &quot;tagClass&quot;: &quot;tag-research&quot;, &quot;tagLabel&quot;: &quot;研究&quot;, &quot;title&quot;: &quot;全球調查：高教學生 AI 使用率達 88%，逾半數認為評量指引不足&quot;, &quot;para1&quot;: &quot;Digital Education Council 橫跨 35 國的高等教育 AI 調查顯示，學生使用率已達 88%，教師使用率為 77%（較 2025 年上升 16 個百分點）。然而 57% 的學生表示現有評量對 AI 使用的指引不足，僅 29% 認為指導教師已具備引導 AI 應用的能力。&quot;, &quot;para2&quot;: &quot;「使用率高但指引缺口大」的矛盾揭示一個市場空白：AI 工具比 AI 使用規範跑得更快。學生在無明確框架下自行摸索，不僅影響學習質量，也給學術誠信管理帶來壓力，「AI 評量設計支援」正成為高教新需求。&quot;, &quot;takeaway&quot;: &quot;台灣大學 AI 導入策略可主打「AI 使用規範建立工具包」，包含評量重新設計指引、課堂 AI 使用同意書模板與教師認證方案，以「解決 57% 指引不足」的具體痛點為切入點，協助學校建立使用框架，贏得機構信任。&quot;, &quot;sourceUrl&quot;: &quot;https://www.edtechinnovationhub.com/news/q6zw9wco2mttajdbd1jyeonjnpiovu&quot;, &quot;sourceName&quot;: &quot;EdTech Innovation Hub · Digital Education Council 調查&quot;}">
+        <span class="tag tag-research">研究</span>
+        <div class="item-text">
+          <div class="item-title">全球調查：高教學生 AI 使用率達 88%，逾半數認為評量指引不足</div>
+          <div class="item-source">EdTech Innovation Hub</div>
+        </div>
+      </div>
+      <div class="section-label">資金動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;資金動態&quot;, &quot;tagClass&quot;: &quot;tag-funding&quot;, &quot;tagLabel&quot;: &quot;資金&quot;, &quot;title&quot;: &quot;Google.org 頒發 3,600 萬美元，支持 17 個 AI 科學研究計畫&quot;, &quot;para1&quot;: &quot;Google.org 宣布向 17 個 AI 驅動科學研究團隊提供共 3,600 萬美元資助，受資助機構包含劍橋大學與 MIT。研究重點涵蓋材料科學、生物學與氣候研究等領域，目標是利用 AI 加速基礎科學突破，並建立開放的 AI 研究生態。&quot;, &quot;para2&quot;: &quot;Google 以慈善資金而非商業合約支持頂尖學術 AI 研究，策略上同時實現人才培育、研究成果取得與品牌建立三重目的。此模式顯示大型科技廠商正以「資助研究」作為進入高教市場的柔性策略，比直接銷售更具長期滲透力。&quot;, &quot;takeaway&quot;: &quot;台灣本土 AI 公司可參考 Google 以小額研究資助換取大學合作的模式，規劃「大學 AI 研究基金」，每年資助 5-10 個教師研究計畫，換取成果優先使用授權與品牌露出，建立低風險、高聲量的學術影響力佈局。&quot;, &quot;sourceUrl&quot;: &quot;https://www.edtechinnovationhub.com/news/googleorg-awards-36m-to-17-ai-science-projects-including-cambridge-and-mit&quot;, &quot;sourceName&quot;: &quot;EdTech Innovation Hub · Google.org AI 科學資助&quot;}">
+        <span class="tag tag-funding">資金</span>
+        <div class="item-text">
+          <div class="item-title">Google.org 頒發 3,600 萬美元，支持 17 個 AI 科學研究計畫</div>
+          <div class="item-source">EdTech Innovation Hub</div>
+        </div>
+      </div>
+    </aside>
+    <div class="detail-panel" id="detail-2026-10-24">
+      <div class="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <p>點擊左側新聞查看詳情</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="day-pane" hidden data-day="2026-10-23">
   <div class="split">
     <aside class="news-list" id="list-2026-10-23">
       <div class="pane-header">10月23日（週五）<span class="count"> · 6 則</span></div>
@@ -1410,7 +1493,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026/10/23 07:20 台北</span>
+  最近更新：<span id="updated">2026/10/24 07:18 台北</span>
 </footer>
 
 <script>
