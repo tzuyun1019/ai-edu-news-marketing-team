@@ -486,8 +486,8 @@ body {
   <button class="week-nav-btn" id="btnThisWeek" onclick="switchToWeek(0)" disabled>本週 →</button>
 </div>
 <nav class="day-tabs" id="dayTabs">
-  <button class="tab active" data-week="0" data-day="2026-10-26"><span class="tab-dow">週一</span><span class="tab-date">10/26</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-week="0" data-day="2026-10-27"><span class="tab-dow">週二</span><span class="tab-date">10/27</span></button>
+  <button class="tab" data-week="0" data-day="2026-10-26"><span class="tab-dow">週一</span><span class="tab-date">10/26</span></button>
+  <button class="tab active" data-week="0" data-day="2026-10-27"><span class="tab-dow">週二</span><span class="tab-date">10/27</span><span class="tab-today">今日</span></button>
   <button class="tab empty" data-week="0" data-day="2026-10-28"><span class="tab-dow">週三</span><span class="tab-date">10/28</span></button>
   <button class="tab empty" data-week="0" data-day="2026-10-29"><span class="tab-dow">週四</span><span class="tab-date">10/29</span></button>
   <button class="tab empty" data-week="0" data-day="2026-10-30"><span class="tab-dow">週五</span><span class="tab-date">10/30</span></button>
@@ -504,7 +504,83 @@ body {
 </nav>
 
 <div id="panesContainer">
-<section class="day-pane" data-day="2026-10-26">
+<section class="day-pane" data-day="2026-10-27">
+  <div class="split">
+    <aside class="news-list" id="list-2026-10-27">
+      <div class="pane-header">10月27日（週二）<span class="count"> · 7 則</span></div>
+
+      <div class="section-label">台灣與亞洲</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;台灣與亞洲&quot;, &quot;tagClass&quot;: &quot;tag-taiwan&quot;, &quot;tagLabel&quot;: &quot;台灣&quot;, &quot;title&quot;: &quot;10/14 台灣 TAICA 聯盟擴至 63 校，首批 AI 學分證書頒發、逾六成修課者非資工背景&quot;, &quot;para1&quot;: &quot;遠見雜誌 10 月 14 日報導，教育部推動的「臺灣大專院校人工智慧學程聯盟」（TAICA）從 2024 年的 25 所擴大至 63 所大學，並於 2026 年首度頒發跨校 AI 學程學分證明。修課學生中超過六成沒有資通訊背景。教育部次長劉國偉指出，同步強化全台 20 萬名中小學教師的 AI 教學能力。&quot;, &quot;para2&quot;: &quot;TAICA 打破「AI 是資工人專利」的刻板印象，跨校修課制度讓人文、商管、設計系學生同樣取得 AI 學分。此模式顯示台灣高教 AI 政策已從「工具導入」升級為「跨域素養」，為下一波多元 AI 人才培育奠定制度基礎。&quot;, &quot;takeaway&quot;: &quot;台灣 EdTech 廠商可以 TAICA 跨域需求為切入點，設計非資工背景學生易上手的 AI 應用課程（如人文系用 AI 做研究分析、商科生用 AI 財務預測），並主動向 63 所聯盟校提案，以學分認定換取校方背書，建立第一批制度性客戶基礎，形成難以複製的進入壁壘。&quot;, &quot;sourceUrl&quot;: &quot;https://www.gvm.com.tw/article/133655&quot;, &quot;sourceName&quot;: &quot;遠見雜誌 · 台灣 TAICA 聯盟擴大&quot;}">
+        <span class="tag tag-taiwan">台灣</span>
+        <div class="item-text">
+          <div class="item-title">10/14 台灣 TAICA 聯盟擴至 63 校，首批 AI 學分證書頒發、逾六成修課者非資工背景</div>
+          <div class="item-source">遠見雜誌</div>
+        </div>
+      </div>
+      <div class="section-label">資金動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;資金動態&quot;, &quot;tagClass&quot;: &quot;tag-funding&quot;, &quot;tagLabel&quot;: &quot;資金&quot;, &quot;title&quot;: &quot;9/29 Pearson 宣布收購 AI 技能評估平台 Workera，劍指企業人才培訓市場&quot;, &quot;para1&quot;: &quot;Pearson 於 9 月 29 日宣布有意收購 Workera，一個結合 AI、心理計量學與適應性評估的原生 AI 技能智能平台。Workera 累積逾 50 萬次技能評估，員工超過 80 名，創辦人曾任史丹佛 AI 課程講師。交易完成後將納入 Pearson 企業學習與技能事業部，金額未揭露。&quot;, &quot;para2&quot;: &quot;Pearson 以技能驗證切入企業 AI 人才市場，從學校到職場的生命週期布局日趨完整。「AI 技能＋認證」將是企業培訓採購的下一競爭焦點，能提供可測量的技能落差分析，才能打入人資與 L&amp;D 決策者的採購清單。&quot;, &quot;takeaway&quot;: &quot;台灣 EdTech 廠商若鎖定 B2B 企業培訓市場，可參考 Workera 以「AI 技能評估 + 客製學習路徑」為核心，針對台灣半導體、軟體業設計業界技能評量，結合 104 或 1111 職缺資料驗證需求，打造台灣製造業 AI 轉型人才的本土解決方案，差異化與外商大平台直接競爭。&quot;, &quot;sourceUrl&quot;: &quot;https://www.reworked.co/learning-development/pearson-acquires-ai-skills-verification-platform-workera/&quot;, &quot;sourceName&quot;: &quot;Reworked · Pearson 收購 Workera&quot;}">
+        <span class="tag tag-funding">資金</span>
+        <div class="item-text">
+          <div class="item-title">9/29 Pearson 宣布收購 AI 技能評估平台 Workera，劍指企業人才培訓市場</div>
+          <div class="item-source">Reworked</div>
+        </div>
+      </div>
+      <div class="section-label">市場趨勢</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;市場趨勢&quot;, &quot;tagClass&quot;: &quot;tag-market&quot;, &quot;tagLabel&quot;: &quot;趨勢&quot;, &quot;title&quot;: &quot;10/6 奧克拉荷馬州《負責任學校科技法》啟動，AI 不能當評分主因、家長可隨時退出&quot;, &quot;para1&quot;: &quot;奧克拉荷馬州《負責任學校科技法》（SB 1734）於 7 月 1 日生效，州教育部 10 月更新模型政策，要求全州學區在 2027-28 學年前完成 AI 使用政策。核心規定：AI 不可作為評分或紀律決定的主要依據；家長可隨時申請退出學生端 AI 工具，且不受任何懲處。&quot;, &quot;para2&quot;: &quot;奧克拉荷馬州提供了地方學區 AI 治理的標準模版，強調「教師主導、AI 輔助」並內建家長退出機制。此框架預示美國各州 AI 政策將走向制式化，廠商的合規支援能力將成為學區採購的差異化評分項目。&quot;, &quot;takeaway&quot;: &quot;台灣教育 AI 廠商在美國市場應準備「家長同意書模板」與「AI 決策透明報告」兩份文件，作為學區採購標準配備，主動降低合規門檻。研究各州法規差異，提供客製化政策配合服務，以合規能力為差異化賣點，尤其優先針對有強制立法壓力的州政府採購市場進行布局。&quot;, &quot;sourceUrl&quot;: &quot;https://www.hppr.org/hppr-news/2026-10-06/building-the-airplane-while-its-flying-oklahoma-schools-set-guardrails-for-ai-in-the-classroom&quot;, &quot;sourceName&quot;: &quot;HPPR · 奧克拉荷馬學校 AI 守則&quot;}">
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">10/6 奧克拉荷馬州《負責任學校科技法》啟動，AI 不能當評分主因、家長可隨時退出</div>
+          <div class="item-source">HPPR</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;市場趨勢&quot;, &quot;tagClass&quot;: &quot;tag-market&quot;, &quot;tagLabel&quot;: &quot;趨勢&quot;, &quot;title&quot;: &quot;7/28 英國 AI 家教計畫踢除 Google，Pearson + Anthropic 組合存留、測試秋季展開&quot;, &quot;para1&quot;: &quot;英國教育部（DfE）的全國 AI 家教標準計畫宣布以 PA 顧問公司取代 Google，後者因合約條款未達政府標準遭替換。計畫瞄準 9-10 年級弱勢學生的英文、數學、科學與外語，六家合作商共分 288 萬英鎊，工具測試已於暑假展開，預計 2027 年全國推廣，潛在受益弱勢學生達 45 萬人。&quot;, &quot;para2&quot;: &quot;Google 遭替換說明政府主導 AI 教育計畫將出現更嚴格的供應商管理機制。「通過政府標準審查」成為公部門 EdTech 入場門票，此案也顯示大型科技公司不一定比中型 EdTech 廠商更容易拿到政府合約，合規與配合意願反而是勝負關鍵。&quot;, &quot;takeaway&quot;: &quot;台灣 EdTech 廠商進軍政府採購市場，應優先建立合規文件能力：教育資料保護政策、AI 模型透明度報告與學術誠信影響評估。台灣教育部的 AI 工具審查標準尚未完全確立，正是搶先建立「政府可採購」認證形象的最佳窗口，讓行政合規能力形成難以模仿的護城河。&quot;, &quot;sourceUrl&quot;: &quot;https://schoolsweek.co.uk/google-no-longer-helping-government-develop-ai-tutoring-tools-for-schools&quot;, &quot;sourceName&quot;: &quot;Schools Week · 英國 DfE AI 家教計畫&quot;}">
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">7/28 英國 AI 家教計畫踢除 Google，Pearson + Anthropic 組合存留、測試秋季展開</div>
+          <div class="item-source">Schools Week</div>
+        </div>
+      </div>
+      <div class="section-label">機構合作</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;機構合作&quot;, &quot;tagClass&quot;: &quot;tag-partner&quot;, &quot;tagLabel&quot;: &quot;合作&quot;, &quot;title&quot;: &quot;芝加哥大學全體師生免費開通 Claude Enterprise，成頂尖大學 Anthropic 機構採購標竿&quot;, &quot;para1&quot;: &quot;芝加哥大學校長 Paul Alivisatos 宣布，全體學生、教師與職員將免費獲得 Anthropic Claude Enterprise 使用權，涵蓋所有現行 Claude 模型，並享有更強的資料隱私保護及校內資源整合。此前自 2024 年 9 月起，該校師生已透過校內 PhoenixAI 平台使用 OpenAI GPT 模型。&quot;, &quot;para2&quot;: &quot;芝加哥大學從 OpenAI 生態轉向 Anthropic Claude，顯示頂尖大學企業 AI 採購市場出現真正競爭。大學開始以資料隱私、模型能力與校內整合深度進行主動比較採購，對 AI 廠商而言意味著大學客群的議價能力正在提高，單靠品牌認知已難以維繫採購黏著度。&quot;, &quot;takeaway&quot;: &quot;台灣大學 AI 採購時可要求廠商提供學術機構專屬資料條款；台灣本土 AI 廠商則應主動向台大、清大等研究型大學提案，以繁體中文語料優化、台灣法規合規及本地資料落地為差異化籌碼，打造台版教育企業 AI 生態，在芝大案例引發的換廠商話題期搶先卡位。&quot;, &quot;sourceUrl&quot;: &quot;https://chicagomaroon.com/52867/news/university-announces-claude-enterprise-access-for-students-faculty-staff/&quot;, &quot;sourceName&quot;: &quot;Chicago Maroon · 芝大 Claude Enterprise&quot;}">
+        <span class="tag tag-partner">合作</span>
+        <div class="item-text">
+          <div class="item-title">芝加哥大學全體師生免費開通 Claude Enterprise，成頂尖大學 Anthropic 機構採購標竿</div>
+          <div class="item-source">Chicago Maroon</div>
+        </div>
+      </div>
+      <div class="section-label">效果研究</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;效果研究&quot;, &quot;tagClass&quot;: &quot;tag-research&quot;, &quot;tagLabel&quot;: &quot;研究&quot;, &quot;title&quot;: &quot;歐盟與 OECD 聯合發布 K-12 AI 素養框架：19 項能力指標，預計納入 2029 PISA 評量&quot;, &quot;para1&quot;: &quot;歐洲委員會與 OECD 聯合發布中小學 AI 素養框架，設定 19 項能力指標，分屬「與 AI 互動、與 AI 共創、管理 AI、形塑 AI」四大領域，倫理思維貫穿全框架而非獨立模組。包含低科技教室活動，不要求高科技設備。框架預計成為 2029 年 PISA 首次媒體與 AI 素養評量的設計基礎，結果預計 2031 年底公布。&quot;, &quot;para2&quot;: &quot;PISA 把 AI 素養列入評量，代表它即將成為各國中學課程的核心能力。OECD 主導標準化後，教育 AI 工具若能對應框架能力指標，將在政府採購中取得優勢。「幫學生通過 PISA AI 素養評測」即將成為教育 AI 產品的新一代核心賣點。&quot;, &quot;takeaway&quot;: &quot;台灣 EdTech 廠商應盡早研讀此框架，對照自家產品功能標註能力對應關係，尤其著重「管理 AI」與「形塑 AI」兩個較少受關注的高層次能力。在 2029 年 PISA 正式上路前，率先推出「AI 素養課程能力對照表」，可作為向教育部、縣市教育局及國際學校提案的強力背書工具。&quot;, &quot;sourceUrl&quot;: &quot;https://edtechinnovationhub.com/news/european-commission-and-oecd-set-19-ai-literacy-competences-for-schools&quot;, &quot;sourceName&quot;: &quot;EdTech Innovation Hub · 歐盟 OECD AI 素養框架&quot;}">
+        <span class="tag tag-research">研究</span>
+        <div class="item-text">
+          <div class="item-title">歐盟與 OECD 聯合發布 K-12 AI 素養框架：19 項能力指標，預計納入 2029 PISA 評量</div>
+          <div class="item-source">EdTech Innovation Hub</div>
+        </div>
+      </div>
+      <div class="section-label">產品動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;產品動態&quot;, &quot;tagClass&quot;: &quot;tag-product&quot;, &quot;tagLabel&quot;: &quot;產品&quot;, &quot;title&quot;: &quot;10/26 AI 評分輔助工具 Kriteria 開業首月吸 363 教師、完成 1,095 次評量&quot;, &quot;para1&quot;: &quot;北歐 EdTech 週報（Nordic EdTech News #168）10 月 26 日報導，AI 評分輔助工具 Kriteria 於 9 月正式上線，首月即有 363 名教師完成註冊，合計完成 1,095 次評量作業。同期報導亦涵蓋 Canva 推出 60 堂免費 AI 數位素養課程，以及 OpenAI 向美國大學實驗室提供最長 12 個月免費 GPT-Rosalind 使用資格。&quot;, &quot;para2&quot;: &quot;Kriteria 的冷啟動數字驗證了「AI 幫教師批改」不只是功能亮點，而是真正解決教師時間痛點的剛性需求。首月千次以上的評量規模，顯示北歐中小學教師對 AI 評分輔助工具存在快速採用意願，此類工具的病毒式口碑傳播在小型教師社群中尤其有效。&quot;, &quot;takeaway&quot;: &quot;台灣 EdTech 廠商若切入教師評分輔助市場，可先鎖定每週批改量大的高中國文、英文教師進行封測，以「平均節省批改時間」為量化指標設計 A/B 測試，在 30 天取得可發表的效率數據，作為後續學校採購說服的核心佐證。免費試用期間的數據累積將形成競爭者難以複製的使用者驗證壁壘。&quot;, &quot;sourceUrl&quot;: &quot;https://nordicedtech.substack.com/p/nordic-edtech-news-168-2026-10-26&quot;, &quot;sourceName&quot;: &quot;Nordic EdTech News · 本週 AI 教育摘要&quot;}">
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">10/26 AI 評分輔助工具 Kriteria 開業首月吸 363 教師、完成 1,095 次評量</div>
+          <div class="item-source">Nordic EdTech News</div>
+        </div>
+      </div>
+    </aside>
+    <div class="detail-panel" id="detail-2026-10-27">
+      <div class="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <p>點擊左側新聞查看詳情</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="day-pane" hidden data-day="2026-10-26">
   <div class="split">
     <aside class="news-list" id="list-2026-10-26">
       <div class="pane-header">10月26日（週一）<span class="count"> · 5 則</span></div>
@@ -1095,7 +1171,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026/10/26 07:22 (台北時間)</span>
+  最近更新：<span id="updated">2026-10-27 07:21 (台北)</span>
 </footer>
 
 <script>
