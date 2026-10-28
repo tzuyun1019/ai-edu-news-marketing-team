@@ -488,8 +488,8 @@ body {
 <nav class="day-tabs" id="dayTabs">
   <button class="tab" data-week="0" data-day="2026-10-26"><span class="tab-dow">週一</span><span class="tab-date">10/26</span></button>
   <button class="tab" data-week="0" data-day="2026-10-27"><span class="tab-dow">週二</span><span class="tab-date">10/27</span></button>
-  <button class="tab active" data-week="0" data-day="2026-10-28"><span class="tab-dow">週三</span><span class="tab-date">10/28</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-week="0" data-day="2026-10-29"><span class="tab-dow">週四</span><span class="tab-date">10/29</span></button>
+  <button class="tab" data-week="0" data-day="2026-10-28"><span class="tab-dow">週三</span><span class="tab-date">10/28</span></button>
+  <button class="tab active" data-week="0" data-day="2026-10-29"><span class="tab-dow">週四</span><span class="tab-date">10/29</span><span class="tab-today">今日</span></button>
   <button class="tab empty" data-week="0" data-day="2026-10-30"><span class="tab-dow">週五</span><span class="tab-date">10/30</span></button>
   <button class="tab empty" data-week="0" data-day="2026-10-31"><span class="tab-dow">週六</span><span class="tab-date">10/31</span></button>
   <button class="tab empty" data-week="0" data-day="2026-11-01"><span class="tab-dow">週日</span><span class="tab-date">11/1</span></button>
@@ -504,7 +504,89 @@ body {
 </nav>
 
 <div id="panesContainer">
-<section class="day-pane" data-day="2026-10-28">
+<section class="day-pane" data-day="2026-10-29">
+  <div class="split">
+    <aside class="news-list" id="list-2026-10-29">
+      <div class="pane-header">10月29日（週四）<span class="count"> · 8 則</span></div>
+      <div class="section-label">市場趨勢</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;市場趨勢&quot;, &quot;tagClass&quot;: &quot;tag-market&quot;, &quot;tagLabel&quot;: &quot;趨勢&quot;, &quot;title&quot;: &quot;10/23 紐約市公布 38 個遭禁 AI 產品清單，連自家開發的聊天機器人也在列&quot;, &quot;para1&quot;: &quot;Chalkbeat 於 10 月 23 日取得紐約市教育局完整的禁用名單，38 款具有生成式 AI 功能的教育科技產品遭到封鎖，涵蓋閱讀、數學課程軟體、學生評量工具，甚至包含教育局自行開發的 AI 聊天機器人。多家廠商反映自己並未使用禁令所定義的生成式 AI，且教育局坦承目前缺乏全市 1,600 所學校 AI 使用現況的硬數據。&quot;, &quot;para2&quot;: &quot;「連教育局自己做的工具都上了禁單」說明政策制訂者對 AI 定義的不確定性。清單引發廠商集體申訴，顯示「生成式 AI」的法律邊界成為採購衝突核心；此前在班禁令壓力下急於宣示強硬立場的官員，正承受比預期更大的來自廠商與學校的反彈壓力。&quot;, &quot;takeaway&quot;: &quot;台灣 EdTech 廠商在產品行銷時應清楚標示「哪些功能屬生成式 AI、哪些不是」，準備分層功能說明文件供教育局審核，降低進入封鎖名單的風險。同時可設計「非生成式 AI 版本」作為政策管制期的學校版，確保在禁令環境中仍能維持進入管道。&quot;, &quot;sourceUrl&quot;: &quot;https://www.chalkbeat.org/newyork/2026/10/23/nyc-schools-ai-ban-list-38-education-technology-products/&quot;, &quot;sourceName&quot;: &quot;Chalkbeat · 紐約市 38 項 AI 教育產品禁單&quot;}">
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">10/23 紐約市公布 38 個遭禁 AI 產品清單，連自家開發的聊天機器人也在列</div>
+          <div class="item-source">Chalkbeat</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;市場趨勢&quot;, &quot;tagClass&quot;: &quot;tag-market&quot;, &quot;tagLabel&quot;: &quot;趨勢&quot;, &quot;title&quot;: &quot;10/21 調查：82% 美國大學生使用 AI，66% 因此更擔心未來就業前景&quot;, &quot;para1&quot;: &quot;HelloCollege 於 10 月 21 日發布 2026 年大學生 AI 調查，82% 受訪大學生在學業中使用 AI，但 66% 表示因 AI 發展而對自己的職涯前景感到更加焦慮。此數字與 Gallup-Lumina 基金會調查相互印證，後者顯示超過半數學生每週使用 AI，其中五分之一每天使用。&quot;, &quot;para2&quot;: &quot;「用得多、卻更焦慮」揭示了一個市場矛盾：AI 工具使用率高，但並未有效轉化為學生的職涯信心，反而擴大了不確定感。這代表目前 AI 教育工具在「幫學生理解 AI 對其職涯的影響並積極應對」這個需求上，仍存在巨大缺口，也為職涯導向 AI 教育產品提供了強勁的進入理由。&quot;, &quot;takeaway&quot;: &quot;「降低學生對 AI 就業衝擊的焦慮」應成為台灣 EdTech 廠商新的產品核心訴求。設計讓學生看見「AI 如何放大自己原有專業優勢」的課程和工具，而非只強調 AI 技能本身，能有效將焦慮轉化為學習動機，且在家長、大學與就業市場三端同時產生共鳴。&quot;, &quot;sourceUrl&quot;: &quot;https://www.prnewswire.com/news-releases/new-survey-data-shows-ai-reshaping-college-and-career-plans-302914953.html&quot;, &quot;sourceName&quot;: &quot;PR Newswire · HelloCollege 2026 大學生 AI 調查&quot;}">
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">10/21 調查：82% 美國大學生使用 AI，66% 因此更擔心未來就業前景</div>
+          <div class="item-source">PR Newswire</div>
+        </div>
+      </div>
+      <div class="section-label">效果研究</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;效果研究&quot;, &quot;tagClass&quot;: &quot;tag-research&quot;, &quot;tagLabel&quot;: &quot;研究&quot;, &quot;title&quot;: &quot;10/28 明尼蘇達大學報告警告：生成式 AI 對小學生認知發展構成「嚴重威脅」&quot;, &quot;para1&quot;: &quot;明尼蘇達大學最新報告指出，生成式 AI 有可能嚴重干擾學生核心學習歷程，包括記憶力形成、批判性思考及解決問題能力，對小學生的影響尤為顯著。報告特別引用認知科學研究，說明 AI 代替學生完成認知努力的行為，會阻礙長期記憶的鞏固。此報告發布時機恰逢全美學區正加緊制定 AI 使用政策的關鍵節點。&quot;, &quot;para2&quot;: &quot;「AI 有害認知發展」的學術背書，將給禁令派提供更強的政策依據，加速各學區採取管制行動。然而研究同時點出關鍵差異：AI 作為「提示工具」與「答案機器」的效果截然不同，此區分將成為未來 AI 教育工具設計的核心爭論焦點，也是廠商與監管者溝通的重要說明方向。&quot;, &quot;takeaway&quot;: &quot;台灣 EdTech 廠商應積極與認知心理學研究者合作，蒐集產品促進主動學習的使用數據（如學生提問次數、反思作業完成率），建立「促進認知投入而非替代思考」的研究背書，作為對抗管制壓力的核心論述，在學術圈形成差異化的「促學型 AI」品牌定位。&quot;, &quot;sourceUrl&quot;: &quot;https://mprnews.org/story/2026/10/28/university-of-minnesota-report-warns-student-ai-use-poses-severe-threat-to-learning&quot;, &quot;sourceName&quot;: &quot;MPR News · 明大 AI 學習威脅報告&quot;}">
+        <span class="tag tag-research">研究</span>
+        <div class="item-text">
+          <div class="item-title">10/28 明尼蘇達大學報告警告：生成式 AI 對小學生認知發展構成「嚴重威脅」</div>
+          <div class="item-source">MPR News</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;效果研究&quot;, &quot;tagClass&quot;: &quot;tag-research&quot;, &quot;tagLabel&quot;: &quot;研究&quot;, &quot;title&quot;: &quot;全球最大高教 AI 調查：88% 學生使用 AI，但 57% 認為評量指引嚴重不足&quot;, &quot;para1&quot;: &quot;數位教育委員會（Digital Education Council）發布橫跨 35 個國家、逾 45,000 份問卷的 2026 年全球高教 AI 調查，結果顯示 88% 的學生及 77% 的教師使用 AI，但 57% 的學生認為評量中缺乏足夠的 AI 使用指引，僅 29% 認為老師具備引導他們使用 AI 的能力。更值得關注的是，美國與加拿大教師的 AI 使用意願在一年內從 76% 下跌至 67%。&quot;, &quot;para2&quot;: &quot;數字揭示一個警訊：AI 普及速度遠超過機構治理準備速度。學生已大量使用 AI，但評量設計、教師能力與制度指引全面落後。「學生比老師更懂 AI」的現象若持續，將動搖傳統的師生知識權威結構，也代表教師 AI 賦能是全球教育市場最迫切的需求缺口。&quot;, &quot;takeaway&quot;: &quot;「師生 AI 使用落差」是台灣 EdTech 廠商最值得切入的市場缺口。設計專為教師打造的 AI 評量指引工具包，幫助老師快速制訂學生 AI 使用規範，並提供學術誠信檢測功能，可以同時解決學生端需求與教師端焦慮，是最具說服力的雙邊市場產品設計方向。&quot;, &quot;sourceUrl&quot;: &quot;https://www.edtechinnovationhub.com/news/q6zw9wco2mttajdbd1jyeonjnpiovu&quot;, &quot;sourceName&quot;: &quot;EdTech Innovation Hub · 全球高教 AI 調查 2026&quot;}">
+        <span class="tag tag-research">研究</span>
+        <div class="item-text">
+          <div class="item-title">全球最大高教 AI 調查：88% 學生使用 AI，但 57% 認為評量指引嚴重不足</div>
+          <div class="item-source">EdTech Innovation Hub</div>
+        </div>
+      </div>
+      <div class="section-label">台灣與亞洲</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;台灣與亞洲&quot;, &quot;tagClass&quot;: &quot;tag-taiwan&quot;, &quot;tagLabel&quot;: &quot;亞洲&quot;, &quot;title&quot;: &quot;10/22 亞洲最大教育科技展 EDUtech Asia 2026 登場新加坡，8,000 教育工作者聚焦 AI 未來&quot;, &quot;para1&quot;: &quot;EDUtech Asia 2026 宣布將於 11 月 4 至 5 日在新加坡聚集 8,000 名來自全球的教育工作者，新加坡教育部將在現場分享 AI 功能融入全國學生學習空間（Student Learning Space）的進展。值得注意的是，新加坡民調顯示支持學校禁用 AI 的比例已從去年的 37% 降至今年的 28%，顯示社會對學校 AI 的接受度正在提升。&quot;, &quot;para2&quot;: &quot;新加坡持續以政府主導方式系統化整合 AI 教育，並同步影響民眾態度。與美國的禁令浪潮相比，新加坡走的是「管控使用、強化師培」路線，其成效正成為亞洲其他地區政策制定者的重要參照，也為積極進入東南亞市場的教育科技廠商提供重要訊號。&quot;, &quot;takeaway&quot;: &quot;EDUtech Asia 是台灣 EdTech 廠商進軍東南亞市場的最佳展示平台。今年新加坡政府的大量參與及民眾態度轉趨開放，是明年布局新加坡合作通路的最佳時機，建議積極接觸新加坡系統整合商及教育局官員，以雙語繁中英文產品為切入點，搭配台灣與新加坡的教育政策相似性強調合作優勢。&quot;, &quot;sourceUrl&quot;: &quot;https://www.manilatimes.net/2026/10/22/tmt-newswire/pr-newswire/asias-largest-education-event-returns-edutech-asia-2026-brings-8000-educators-to-singapore-to-shape-a-human-centred-ai-powered-future-of-learning/2451597&quot;, &quot;sourceName&quot;: &quot;Manila Times · EDUtech Asia 2026 新加坡&quot;}">
+        <span class="tag tag-taiwan">亞洲</span>
+        <div class="item-text">
+          <div class="item-title">10/22 亞洲最大教育科技展 EDUtech Asia 2026 登場新加坡，8,000 教育工作者聚焦 AI 未來</div>
+          <div class="item-source">Manila Times</div>
+        </div>
+      </div>
+      <div class="section-label">機構合作</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;機構合作&quot;, &quot;tagClass&quot;: &quot;tag-partner&quot;, &quot;tagLabel&quot;: &quot;合作&quot;, &quot;title&quot;: &quot;10/19 艾默理大學為全體師生開通 Claude for Education，AI 人文計畫標竿案例&quot;, &quot;para1&quot;: &quot;艾默理大學（Emory University）宣布於 10 月 19 日正式為全體學生、教師與職員推出 Claude for Education，隸屬其 AI.Humanity 旗艦計畫。具 emory.edu 帳號的使用者可免費使用標準版，進階版月費 50 美元由各學院部門自行補助。此舉使艾默理加入哈佛、芝加哥大學等多所頂尖大學推行機構授權 AI 的行列。&quot;, &quot;para2&quot;: &quot;美國頂尖大學已進入「機構 AI 採購」常態化階段，競爭重點從「是否部署」轉移到「部署哪個平台」。學院分攤進階版費用的模式，顯示大學 AI 預算開始下沉到系所層級，為廠商創造更細分的採購窗口，且「數據安全與學術用途合規」正取代「功能強大」成為採購核心考量。&quot;, &quot;takeaway&quot;: &quot;台灣各大學若有意引進機構 AI，可參考艾默理的「標準免費、進階學院補助」分層模式，有效降低全校部署的財務障礙。台灣 AI 廠商應主動聯繫大學 AI 政策辦公室，設計符合個資法與學術誠信要求的機構授權方案，以「本土合規」為差異化優勢爭取優先採購。&quot;, &quot;sourceUrl&quot;: &quot;https://emergent.sh/news/claude-ai-now-available-emory-university&quot;, &quot;sourceName&quot;: &quot;Emergent · 艾默理大學 Claude 機構部署&quot;}">
+        <span class="tag tag-partner">合作</span>
+        <div class="item-text">
+          <div class="item-title">10/19 艾默理大學為全體師生開通 Claude for Education，AI 人文計畫標竿案例</div>
+          <div class="item-source">Emergent</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;機構合作&quot;, &quot;tagClass&quot;: &quot;tag-partner&quot;, &quot;tagLabel&quot;: &quot;合作&quot;, &quot;title&quot;: &quot;雪梨大學與 OpenAI 簽多年合作協議，10 月率先開通教職員 ChatGPT Edu&quot;, &quot;para1&quot;: &quot;雪梨大學宣布與 OpenAI 簽署多年合作協議，教職員 ChatGPT Edu 使用權已於 2026 年 10 月開通，學生試點計畫同步啟動，完整學生版將於 2027 年第一學期全面上線。協議還包含設立 AI 永續研究基金，成為亞太地區規模最大的大學與 AI 廠商合作案之一。&quot;, &quot;para2&quot;: &quot;雪梨大學的案例代表 AI 大廠正以「多年戰略合作 + 研究基金」模式深度綁定亞太頂尖大學。與此同時，這也是對亞洲高校 IT 採購決策者的訊號：純工具購買時代正在結束，能提供「研究合作 + 學術資源」的整合型合作夥伴方案才是談判新籌碼。&quot;, &quot;takeaway&quot;: &quot;台灣大學在 AI 平台採購談判中，可借鑑雪梨大學的案例要求廠商提供「研究合作條款」，如共同研究專案、優先取得新功能測試資格，或台灣語料優化支援。台灣本土 EdTech 廠商則可以「繁中學術場景優化」為賣點，搭建差異化的本土大學合作生態，在外資大廠強攻亞太市場時仍保留本土競爭空間。&quot;, &quot;sourceUrl&quot;: &quot;https://ramadawaterloo.com/article/university-of-sydney-enters-multi-year-partnership-with-openai&quot;, &quot;sourceName&quot;: &quot;Ramada Waterloo · 雪梨大學 × OpenAI 多年合作&quot;}">
+        <span class="tag tag-partner">合作</span>
+        <div class="item-text">
+          <div class="item-title">雪梨大學與 OpenAI 簽多年合作協議，10 月率先開通教職員 ChatGPT Edu</div>
+          <div class="item-source">Ramada Waterloo</div>
+        </div>
+      </div>
+      <div class="section-label">產品動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;產品動態&quot;, &quot;tagClass&quot;: &quot;tag-product&quot;, &quot;tagLabel&quot;: &quot;產品&quot;, &quot;title&quot;: &quot;Docebo 十月更新推出 AI 助教代理，聲稱可降低 25% 客服工單量&quot;, &quot;para1&quot;: &quot;企業學習管理平台 Docebo 於十月更新中正式推出三款 AI 代理：「助教代理」能基於課程內容與課程資料集即時回答學員問題；「課程創作代理」可將來源素材自動轉化為互動式課程；「強化代理」則自動安排複習練習時程。官方表示助教代理有助於將支援工單量減少 25%，三款代理整合於同一工作流程。&quot;, &quot;para2&quot;: &quot;Docebo 的三代理整合架構代表企業學習平台正全面進入「AI 原生」時代，從內容生成、學習支援到複習排程形成閉環。對使用 Docebo 的企業而言，AI 代理的運行品質將直接影響員工學習體驗；對競爭廠商而言，「端到端 AI 代理學習流程」已成為新的功能配備基準線。&quot;, &quot;takeaway&quot;: &quot;台灣企業培訓平台廠商可參考 Docebo 的「AI 代理三件套」架構，評估自家產品的 AI 代理整合路徑。尤其是「助教代理」降低客服成本的論點，在向企業 HR 提案時極具說服力。優先在客服票量大的大型企業客戶進行試點，收集可量化的效益數據作為銷售素材。&quot;, &quot;sourceUrl&quot;: &quot;https://www.docebo.com/whatsnew/2026-october/&quot;, &quot;sourceName&quot;: &quot;Docebo · 2026 年 10 月產品更新&quot;}">
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">Docebo 十月更新推出 AI 助教代理，聲稱可降低 25% 客服工單量</div>
+          <div class="item-source">Docebo</div>
+        </div>
+      </div>
+    </aside>
+    <div class="detail-panel" id="detail-2026-10-29">
+      <div class="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <p>點擊左側新聞查看詳情</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="day-pane" hidden data-day="2026-10-28">
   <div class="split">
     <aside class="news-list" id="list-2026-10-28">
       <div class="pane-header">10月28日（週三）<span class="count"> · 8 則</span></div>
@@ -1258,7 +1340,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026-10-28 07:21 (台北)</span>
+  最近更新：<span id="updated">2026/10/29 07:19 (台北)</span>
 </footer>
 
 <script>
