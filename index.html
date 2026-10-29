@@ -489,8 +489,8 @@ body {
   <button class="tab" data-week="0" data-day="2026-10-26"><span class="tab-dow">週一</span><span class="tab-date">10/26</span></button>
   <button class="tab" data-week="0" data-day="2026-10-27"><span class="tab-dow">週二</span><span class="tab-date">10/27</span></button>
   <button class="tab" data-week="0" data-day="2026-10-28"><span class="tab-dow">週三</span><span class="tab-date">10/28</span></button>
-  <button class="tab active" data-week="0" data-day="2026-10-29"><span class="tab-dow">週四</span><span class="tab-date">10/29</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-week="0" data-day="2026-10-30"><span class="tab-dow">週五</span><span class="tab-date">10/30</span></button>
+  <button class="tab" data-week="0" data-day="2026-10-29"><span class="tab-dow">週四</span><span class="tab-date">10/29</span></button>
+  <button class="tab active" data-week="0" data-day="2026-10-30"><span class="tab-dow">週五</span><span class="tab-date">10/30</span><span class="tab-today">今日</span></button>
   <button class="tab empty" data-week="0" data-day="2026-10-31"><span class="tab-dow">週六</span><span class="tab-date">10/31</span></button>
   <button class="tab empty" data-week="0" data-day="2026-11-01"><span class="tab-dow">週日</span><span class="tab-date">11/1</span></button>
 
@@ -504,7 +504,89 @@ body {
 </nav>
 
 <div id="panesContainer">
-<section class="day-pane" data-day="2026-10-29">
+<section class="day-pane" data-day="2026-10-30">
+  <div class="split">
+    <aside class="news-list" id="list-2026-10-30">
+      <div class="pane-header">10月30日（週五）<span class="count"> · 8 則</span></div>
+      <div class="section-label">市場趨勢</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;市場趨勢&quot;, &quot;tagClass&quot;: &quot;tag-market&quot;, &quot;tagLabel&quot;: &quot;趨勢&quot;, &quot;title&quot;: &quot;10/29 達特茅斯教務長因使用 AI 改寫公文遭揭露，主動請辭引學術誠信震盪&quot;, &quot;para1&quot;: &quot;達特茅斯學院教務長 Santiago Schnell 於 10 月 29 日辭職，起因是教職委員會調查報告確認其「使用 AI 對書面文件進行實質性修改」，且「對 AI 使用情況未如實說明」。此案為目前美國高校中最具代表性的學術領導層 AI 使用爭議，促使多所大學啟動領導層 AI 使用揭露政策的討論。&quot;, &quot;para2&quot;: &quot;此事件說明 AI 誠信問題已從學生端蔓延至機構領導層，學術界對「AI 使用邊界」的社會規範正在快速形成。達特茅斯案例預示著高校將出現新一波針對管理層與教師的 AI 使用揭露要求，AI 工具廠商的機構合作條款也將面臨更嚴格的透明度要求。&quot;, &quot;takeaway&quot;: &quot;台灣高教 AI 廠商應主動在產品中加入「AI 使用日誌」功能，幫助機構用戶記錄 AI 介入程度，讓學校管理者可依需要選擇揭露。此功能可作為打入高教市場的差異化賣點，同時預先降低未來監管合規風險。&quot;, &quot;sourceUrl&quot;: &quot;https://clickondetroit.com/tech/2026/10/29/dartmouth-provost-resigns-following-accusations-he-used-artificial-intelligence-for-writing&quot;, &quot;sourceName&quot;: &quot;Click On Detroit · 達特茅斯教務長 AI 使用辭職案&quot;}">
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">10/29 達特茅斯教務長因使用 AI 改寫公文遭揭露，主動請辭引學術誠信震盪</div>
+          <div class="item-source">Click On Detroit</div>
+        </div>
+      </div>
+      <div class="section-label">資金動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;資金動態&quot;, &quot;tagClass&quot;: &quot;tag-funding&quot;, &quot;tagLabel&quot;: &quot;資金&quot;, &quot;title&quot;: &quot;10/19 IXL Learning 第 14 度出手收購寫作平台 NoRedInk，覆蓋美國九成學區&quot;, &quot;para1&quot;: &quot;IXL Learning 於 10 月 19 日宣布收購英語語藝寫作平台 NoRedInk，後者已在九成美國學區使用，這是 IXL 自 2018 年以來的第 14 宗收購案。收購後 NoRedInk 將維持獨立品牌運作，現有師生使用不受影響，交易金額未公開。Tucker Capital 擔任 NoRedInk 的獨家財務顧問。&quot;, &quot;para2&quot;: &quot;IXL 以高密度收購策略整合 K-12 英文語藝市場，此次收購進一步鞏固其覆蓋「閱讀→寫作→詞彙」的全語藝學習閉環。對競爭廠商而言，此案代表美國 K-12 EdTech 整合速度加快，平台型廠商正透過 M&A 快速構建生態壁壘，留給單點工具廠商的獨立生存空間正在收窄。&quot;, &quot;takeaway&quot;: &quot;台灣語文教育科技廠商應思考如何進入被大型平台整合前的市場空白：集中資源深耕中文寫作 AI 分析能力，打造 IXL 在中文市場尚未觸及的「繁中語藝全流程」解決方案，才能在外資大廠全球整合浪潮中找到難以被替代的利基位置。&quot;, &quot;sourceUrl&quot;: &quot;https://pulse2.com/ixl-learning-acquires-noredink-to-expand-digital-writing-instruction-platform/&quot;, &quot;sourceName&quot;: &quot;Pulse 2.0 · IXL 收購 NoRedInk&quot;}">
+        <span class="tag tag-funding">資金</span>
+        <div class="item-text">
+          <div class="item-title">10/19 IXL Learning 第 14 度出手收購寫作平台 NoRedInk，覆蓋美國九成學區</div>
+          <div class="item-source">Pulse 2.0</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;資金動態&quot;, &quot;tagClass&quot;: &quot;tag-funding&quot;, &quot;tagLabel&quot;: &quot;資金&quot;, &quot;title&quot;: &quot;EdVisorly 獲 1,330 萬美元 A 輪，用 AI 解決美國大學轉學地獄&quot;, &quot;para1&quot;: &quot;EdVisorly 完成 1,330 萬美元 A 輪融資，目標解決美國大學轉學制度的複雜性問題。平台以 AI 自動分析各大學學分認抵規則、轉學申請要求與入學機會，幫助學生規劃最佳轉學路徑，減少因資訊不對稱導致的學分浪費與申請失敗。美國每年約有 130 萬名學生轉學，但成功率和效率均偏低。&quot;, &quot;para2&quot;: &quot;EdVisorly 的崛起顯示「教育行政流程自動化」是 2026 年 EdTech 融資的熱門賽道之一：升學輔導、學分評估、申請文件整理等高度重複但資訊密集的流程，是 AI 代理最快創造價值的切入點。此模式對台灣「大學申請 AI 輔助」工具也有借鑑意義。&quot;, &quot;takeaway&quot;: &quot;台灣升學顧問公司與補習班可研究 EdVisorly 模式，評估以 AI 自動化建立「繁中版升學路徑規劃工具」的可行性，尤其是針對出國留學申請、大學系所選填與學測志願規劃的智能輔助功能。此類工具在台灣家長付費意願高、資訊不對稱嚴重的升學市場，具備高度商業化潛力。&quot;, &quot;sourceUrl&quot;: &quot;https://news.crunchbase.com/venture/edtech-university-ai-platform-funding-edvisorly/&quot;, &quot;sourceName&quot;: &quot;Crunchbase · EdVisorly A 輪融資&quot;}">
+        <span class="tag tag-funding">資金</span>
+        <div class="item-text">
+          <div class="item-title">EdVisorly 獲 1,330 萬美元 A 輪，用 AI 解決美國大學轉學地獄</div>
+          <div class="item-source">Crunchbase</div>
+        </div>
+      </div>
+      <div class="section-label">機構合作</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;機構合作&quot;, &quot;tagClass&quot;: &quot;tag-partner&quot;, &quot;tagLabel&quot;: &quot;合作&quot;, &quot;title&quot;: &quot;10/29 普渡大學成全美首所部署 Google TPU 的大學，研究算力增加三成&quot;, &quot;para1&quot;: &quot;普渡大學於 10 月 29 日宣布成為美國首所部署 Google TPU（張量處理器）AI 運算基礎設施的大學，新系統預計 2027 年 1 月起開放教職員與學生用於研究計畫。此批 TPU 將普渡大學的 AI 運算能力提升約 30%，為機器學習研究與大型語言模型訓練提供更大算力支援。&quot;, &quot;para2&quot;: &quot;大學與 AI 硬體廠商合作從「使用雲端服務」升級到「校園專屬算力基礎設施」，代表研究型大學的 AI 策略正從工具層進入基礎設施層。這種深度綁定不只是技術採購，更是學術研究資源的長期戰略配置，對學術成果產出與人才培育都將產生結構性影響。&quot;, &quot;takeaway&quot;: &quot;台灣研究型大學可參考普渡案例，評估與 Google、NVIDIA 等廠商協商「校園專屬 AI 算力」合作方案的可行性，建議由教育部統籌跨校算力聯盟談判，降低個別大學的議價難度。台灣 AI EdTech 廠商也可藉此機會，針對具備算力基礎的大學開發本地部署版本，避免資料跨境疑慮。&quot;, &quot;sourceUrl&quot;: &quot;https://purdue.edu/newsroom/2026/Q4/purdue-is-first-u-s-university-to-deploy-google-tpu-ai-infrastructure&quot;, &quot;sourceName&quot;: &quot;Purdue 新聞室 · 普渡大學 Google TPU 部署&quot;}">
+        <span class="tag tag-partner">合作</span>
+        <div class="item-text">
+          <div class="item-title">10/29 普渡大學成全美首所部署 Google TPU 的大學，研究算力增加三成</div>
+          <div class="item-source">Purdue 新聞室</div>
+        </div>
+      </div>
+      <div class="section-label">台灣與亞洲</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;台灣與亞洲&quot;, &quot;tagClass&quot;: &quot;tag-taiwan&quot;, &quot;tagLabel&quot;: &quot;台灣&quot;, &quot;title&quot;: &quot;教部「AI 人才方舟計畫」117 億元啟動，台灣迎 AI 教育元年全面升級&quot;, &quot;para1&quot;: &quot;台灣教育部啟動「AI 人才方舟計畫」，2026 至 2029 年投入 117.55 億元，聚焦教師 AI 教學增能、數位素養課程設計及 AI 融入各科教學。計畫涵蓋中小學至高中職各階段，強調讓教師具備在課室中引導學生有效使用 AI 工具的能力，而非僅限於認識 AI 技術原理。&quot;, &quot;para2&quot;: &quot;117 億元的政策投入規模是台灣教育 AI 化進程中最大規模的一次政府資源配置，將直接帶動教師研習課程、數位教材、AI 輔助備課工具等配套商機。與此同時，韓國、新加坡等鄰國高層代表團已赴台取經，台灣 AI 教育模式正在成為亞洲參照標竿。&quot;, &quot;takeaway&quot;: &quot;117 億元預算代表巨大的台灣本土市場機會：建議廠商優先布局「教師 AI 增能工具包」賽道，包含備課 AI 助手、AI 教案產生器與課堂管理輔助工具，搭配教育部官方課程認證申請，以政策合規性搶佔優先採購資格，是當前最高報酬率的市場進入路徑。&quot;, &quot;sourceUrl&quot;: &quot;https://www.cw.com.tw/article/5140414&quot;, &quot;sourceName&quot;: &quot;天下雜誌 · 台灣 AI 教育元年&quot;}">
+        <span class="tag tag-taiwan">台灣</span>
+        <div class="item-text">
+          <div class="item-title">教部「AI 人才方舟計畫」117 億元啟動，台灣迎 AI 教育元年全面升級</div>
+          <div class="item-source">天下雜誌</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;台灣與亞洲&quot;, &quot;tagClass&quot;: &quot;tag-taiwan&quot;, &quot;tagLabel&quot;: &quot;台灣&quot;, &quot;title&quot;: &quot;10/29 教育部公布 AI 數位學習績優名單，各縣市創新應用典範浮現&quot;, &quot;para1&quot;: &quot;教育部於 10 月 29 日公告「115 年推動教育 AI 及數位學習績優徵選計畫」獲獎名單，表彰在 AI 融入教學與數位學習推廣上表現卓越的學校與教育工作者。本次評選強調實際教學應用成效與學生學習成果，而非技術展示本身，代表台灣教育 AI 評鑑指標從「工具導入率」轉向「學習影響力」。&quot;, &quot;para2&quot;: &quot;績優名單的公告具有政策風向標作用：入選學校的做法將成為全台各縣市教育局推廣的參考範本，加速 AI 教學工具從試驗性使用走向系統性推廣。廠商若能與獲獎學校合作取得案例背書，將大幅降低進入其他學校的採購阻力。&quot;, &quot;takeaway&quot;: &quot;建議台灣 EdTech 廠商即時研究本次績優名單，主動聯繫獲獎學校討論深度合作可能，取得「教育部績優認可學校採用」的案例背書。同時可規劃以績優學校的實際教學案例為素材，製作白皮書與實務報告，作為向其他學校招商時的信任建立利器。&quot;, &quot;sourceUrl&quot;: &quot;https://pads.moe.edu.tw/&quot;, &quot;sourceName&quot;: &quot;教育部數位學習入口網 · 115 年績優名單&quot;}">
+        <span class="tag tag-taiwan">台灣</span>
+        <div class="item-text">
+          <div class="item-title">10/29 教育部公布 AI 數位學習績優名單，各縣市創新應用典範浮現</div>
+          <div class="item-source">教育部數位學習入口網</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;台灣與亞洲&quot;, &quot;tagClass&quot;: &quot;tag-taiwan&quot;, &quot;tagLabel&quot;: &quot;亞洲&quot;, &quot;title&quot;: &quot;香港 960 所學校將獲 50 萬港元 AI 教學補助，自建大型語言模型進 HKEdCity&quot;, &quot;para1&quot;: &quot;香港教育局計畫於 2026/27 學年協助 300 所學校推行 AI 輔助教學，並對 960 所以上學校每校提供 50 萬港元補助。計畫亦包含在「香港教育城」（HKEdCity）平台上部署香港自建的大型語言模型，以保障學生資料在境內處理。新加坡則規定小學四年級以上學生方可在教師監督下使用 AI 教育工具，低年級完全不接觸 AI 學習作業。&quot;, &quot;para2&quot;: &quot;香港與新加坡的亞洲雙城模式正在形成對比：香港以大規模補助驅動全面普及，新加坡以年齡分層管理確保安全導入。兩者均強調本地化數據主權，自建 LLM 的趨勢反映亞洲教育機構對資料外送的高度敏感，這對採用外資雲端服務的 EdTech 廠商是明確的市場訊號。&quot;, &quot;takeaway&quot;: &quot;香港每校 50 萬港元補助代表龐大的採購能量：建議台灣 EdTech 廠商加速香港版產品的繁中港式用語在地化，尤其需要提供「本地資料處理選項」作為核心賣點，並積極申請香港教育局合作夥伴資格，搭上這波補助採購浪潮。&quot;, &quot;sourceUrl&quot;: &quot;https://scoopasia.com/same-composition-task-three-ai-tutors-what-hong-kong-singapore-and-taiwan-built/&quot;, &quot;sourceName&quot;: &quot;Scoop Asia · 港新台 AI 教學比較報告&quot;}">
+        <span class="tag tag-taiwan">亞洲</span>
+        <div class="item-text">
+          <div class="item-title">香港 960 所學校將獲 50 萬港元 AI 教學補助，自建大型語言模型進 HKEdCity</div>
+          <div class="item-source">Scoop Asia</div>
+        </div>
+      </div>
+      <div class="section-label">效果研究</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;效果研究&quot;, &quot;tagClass&quot;: &quot;tag-research&quot;, &quot;tagLabel&quot;: &quot;研究&quot;, &quot;title&quot;: &quot;英國 DfE 秋季啟動 AI 家教試點，鎖定 45 萬弱勢中學生補救偏差&quot;, &quot;para1&quot;: &quot;英國教育部（DfE）自 2026 年秋季起在全英中學試行 AI 1:1 個人化輔導工具，目標是讓接受免費學校餐補助（弱勢指標）的九至十一年級學生每年有機會享受 AI 一對一輔導，估計每年受益達 45 萬人。工具由業界與教師共同設計，強調輔助教師教學而非取代，完整版預計 2027 年底前對全英學校開放使用。&quot;, &quot;para2&quot;: &quot;英國政府以「縮小學習落差」而非「提升頂尖學生成績」為 AI 家教的核心政策定位，是全球少數明確以弱勢學生為主要受眾的政府主導 AI 教育計畫。此定位為 AI 輔導工具提供了強有力的社會正當性，也為廠商爭取政府補助資金提供了最有效的論述框架。&quot;, &quot;takeaway&quot;: &quot;台灣 EdTech 廠商在爭取政府標案或社會影響力投資時，可借鑑英國 DfE 框架，主動強化產品在「補救教學」與「縮短城鄉落差」情境下的功效數據，並與偏鄉學校合作建立實證案例，以「教育公平」定位提升政策採購能見度，尤其適合爭取教育部偏鄉數位學習相關預算。&quot;, &quot;sourceUrl&quot;: &quot;https://thirdspacelearning.com/blog/dfe-ai-tutoring/&quot;, &quot;sourceName&quot;: &quot;Third Space Learning · 英國 DfE AI 家教計畫&quot;}">
+        <span class="tag tag-research">研究</span>
+        <div class="item-text">
+          <div class="item-title">英國 DfE 秋季啟動 AI 家教試點，鎖定 45 萬弱勢中學生補救偏差</div>
+          <div class="item-source">Third Space Learning</div>
+        </div>
+      </div>
+    </aside>
+    <div class="detail-panel" id="detail-2026-10-30">
+      <div class="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <p>點擊左側新聞查看詳情</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="day-pane" hidden data-day="2026-10-29">
   <div class="split">
     <aside class="news-list" id="list-2026-10-29">
       <div class="pane-header">10月29日（週四）<span class="count"> · 8 則</span></div>
@@ -1340,7 +1422,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026/10/29 07:19 (台北)</span>
+  最近更新：<span id="updated">2026/10/30 07:19 (台北)</span>
 </footer>
 
 <script>
