@@ -490,8 +490,8 @@ body {
   <button class="tab" data-week="0" data-day="2026-11-03"><span class="tab-dow">週二</span><span class="tab-date">11/3</span></button>
   <button class="tab" data-week="0" data-day="2026-11-04"><span class="tab-dow">週三</span><span class="tab-date">11/4</span></button>
   <button class="tab" data-week="0" data-day="2026-11-05"><span class="tab-dow">週四</span><span class="tab-date">11/5</span></button>
-  <button class="tab active" data-week="0" data-day="2026-11-06"><span class="tab-dow">週五</span><span class="tab-date">11/6</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-week="0" data-day="2026-11-07"><span class="tab-dow">週六</span><span class="tab-date">11/7</span></button>
+  <button class="tab" data-week="0" data-day="2026-11-06"><span class="tab-dow">週五</span><span class="tab-date">11/6</span></button>
+  <button class="tab active" data-week="0" data-day="2026-11-07"><span class="tab-dow">週六</span><span class="tab-date">11/7</span><span class="tab-today">今日</span></button>
   <button class="tab empty" data-week="0" data-day="2026-11-08"><span class="tab-dow">週日</span><span class="tab-date">11/8</span></button>
 
   <button class="tab" data-week="1" data-day="2026-10-26"><span class="tab-dow">週一</span><span class="tab-date">10/26</span></button>
@@ -504,7 +504,82 @@ body {
 </nav>
 
 <div id="panesContainer">
-<section class="day-pane" data-day="2026-11-06">
+<section class="day-pane" data-day="2026-11-07">
+  <div class="split">
+    <aside class="news-list" id="list-2026-11-07">
+      <div class="pane-header">11月7日（週六）<span class="count"> · 7 則</span></div>
+      <div class="section-label">機構合作</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;機構合作&quot;, &quot;tagClass&quot;: &quot;tag-partner&quot;, &quot;tagLabel&quot;: &quot;合作&quot;, &quot;title&quot;: &quot;11/5 澳洲 4 所大學擴大 OpenAI 合作，雪梨大學 2027 年起全員導入 ChatGPT Edu&quot;, &quot;para1&quot;: &quot;UNSW 雪梨、雪梨大學、拉籌伯大學與阿德雷德大學於 11月5日宣布擴大與 OpenAI 的合作協議。雪梨大學完成試點後，計畫自 2027 年第一學期起將 ChatGPT Edu 全面開放給所有學生使用，並同步設立百萬澳幣 AI 永續研究創新基金。拉籌伯大學則已對全體 3,500 名教職人員開放存取，預計 2027 年初擴及學生群體。&quot;, &quot;para2&quot;: &quot;澳洲多所大學集體押注同一 AI 平台，代表高教機構與科技公司的「戰略配對」趨勢已超越工具試用階段，演進為以國家學術系統為單位的規模化部署。ChatGPT Edu 合規版的快速滲透，意味著全球大學 AI 採購週期正大幅縮短。&quot;, &quot;takeaway&quot;: &quot;雪梨大學百萬澳幣 AI 研究基金模式值得台灣大學參考。台灣 EdTech 廠商可主動向各大學提案聯合申請教育部數位轉型計畫，以「學校出場地與受試對象、廠商出工具與研究設計」的共研模式，同時降低學校採購風險、提升廠商品牌背書效益。&quot;, &quot;sourceUrl&quot;: &quot;https://dig.watch/updates/australian-universities-ai-openai&quot;, &quot;sourceName&quot;: &quot;Dig Watch · 澳洲大學 AI 合作&quot;}">
+        <span class="tag tag-partner">合作</span>
+        <div class="item-text">
+          <div class="item-title">11/5 澳洲 4 所大學擴大 OpenAI 合作，雪梨大學 2027 年起全員導入 ChatGPT Edu</div>
+          <div class="item-source">Dig Watch</div>
+        </div>
+      </div>
+      <div class="section-label">效果研究</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;效果研究&quot;, &quot;tagClass&quot;: &quot;tag-research&quot;, &quot;tagLabel&quot;: &quot;研究&quot;, &quot;title&quot;: &quot;DEC 拉丁美洲調查：92% 學生用 AI，教師提供 AI 批改比例卻僅 19%&quot;, &quot;para1&quot;: &quot;數位教育協會（Digital Education Council）發布的拉丁美洲高等教育 AI 調查顯示，92% 的學生與 79% 的教師正積極使用 AI 工具。然而在批改作業這一高需求場景中，僅 19% 的教師目前使用 AI 提供反饋，但多達 50% 的學生表示希望獲得 AI 批改服務。全球版同份調查則發現，美加地區教師採用 AI 的意願從 2025 年的 76% 下滑至 67%。&quot;, &quot;para2&quot;: &quot;師生之間「50% 需求對 19% 供給」的批改落差，揭示了高教 AI 市場尚未填補的核心缺口。教師不願使用 AI 批改並非缺乏意識，而是缺乏對工具準確性與學術誠信的信任。誰能建立可信賴的 AI 批改方案，就能直接切入這個需求最迫切的場景。&quot;, &quot;takeaway&quot;: &quot;「AI 批改」是拉美與台灣市場都未被充分服務的場景。台灣 EdTech 廠商可設計「教師可核查的 AI 批改輔助工具」——AI 建議改分，教師一鍵確認或修改——以此降低教師採用疑慮，同時大幅節省批改時間。這個訴求對招生壓力大、班級人數多的台灣私立高中職最具說服力。&quot;, &quot;sourceUrl&quot;: &quot;https://www.digitaleducationcouncil.com/dec-insights/92-of-students-and-79-of-faculty-actively-engaging-with-ai-findings-from-ai-in-higher-education-latam-survey-2026&quot;, &quot;sourceName&quot;: &quot;Digital Education Council · 拉丁美洲高教 AI 調查&quot;}">
+        <span class="tag tag-research">研究</span>
+        <div class="item-text">
+          <div class="item-title">DEC 拉丁美洲調查：92% 學生用 AI，教師提供 AI 批改比例卻僅 19%</div>
+          <div class="item-source">Digital Education Council</div>
+        </div>
+      </div>
+      <div class="section-label">市場趨勢</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;市場趨勢&quot;, &quot;tagClass&quot;: &quot;tag-market&quot;, &quot;tagLabel&quot;: &quot;趨勢&quot;, &quot;title&quot;: &quot;RAISE US AI 勞動力承諾突破 7.35 億美元，Apple、Google、Walmart 相繼加入&quot;, &quot;para1&quot;: &quot;美國 AI 勞動力培育非營利組織 RAISE US 宣布其多年期資金承諾已超過 7.35 億美元，Apple、Google、Walmart 為本輪新加入的承諾方。RAISE US 聚焦培育具備 AI 應用能力的美國勞動力，涵蓋社區學院、在職訓練與中等後教育機構，透過課程補貼、師資培訓與認證合作等方式擴大影響規模。&quot;, &quot;para2&quot;: &quot;科技與零售龍頭共同資助 AI 勞動力計畫，代表企業對現有人才供給不足的憂慮已到達臨界點，不再坐等教育體系自然跟上。這一資金結構也暗示 EdTech 廠商若能設計與 RAISE US 框架相容的課程，將有機會接入數億美元的企業培訓採購需求。&quot;, &quot;takeaway&quot;: &quot;台灣正面臨同樣的 AI 勞動力缺口，企業大規模投資培訓的趨勢值得優先關注。建議台灣 EdTech 廠商主動向製造業、金融業 HR 主管推廣「AI 職場素養」微認證課程，以「企業資助、員工學習」模式設計採購方案，繞過傳統教育機構審批，直接進入企業培訓預算。&quot;, &quot;sourceUrl&quot;: &quot;https://edtechinnovationhub.com/news/raise-us-passes-735-million-as-apple-google-and-walmart-join-ai-workforce-push&quot;, &quot;sourceName&quot;: &quot;EdTech Innovation Hub · RAISE US AI 勞動力資金&quot;}">
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">RAISE US AI 勞動力承諾突破 7.35 億美元，Apple、Google、Walmart 相繼加入</div>
+          <div class="item-source">EdTech Innovation Hub</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;市場趨勢&quot;, &quot;tagClass&quot;: &quot;tag-market&quot;, &quot;tagLabel&quot;: &quot;趨勢&quot;, &quot;title&quot;: &quot;2026 上半年全球 EdTech 創投達 85 億美元，AI 適性學習平台佔四成&quot;, &quot;para1&quot;: &quot;2026 年上半年全球 EdTech 創投總額達 85 億美元，較 2025 年同期成長 15%。其中，採用人工智慧的適性學習平台（AI-driven adaptive learning）獲得最多資金青睞，佔 Q2 2026 所有 EdTech 投資的 40%。資金集中在個人化學習、AI 輔導及企業技能培訓三大方向。&quot;, &quot;para2&quot;: &quot;AI 適性學習拿下四成創投份額，說明市場已對此方向投票。傳統工具型 EdTech 和單純內容平台持續失去估值吸引力，投資人正在押注「AI 是核心引擎而非附加功能」的新世代產品。這個資金信號預示採購端標準也將同步提高。&quot;, &quot;takeaway&quot;: &quot;台灣 EdTech 廠商若仍定位為「數位化傳統內容」，將面臨愈來愈難取得投資和訂單的困境。建議在 2027 年品牌重塑時，明確展示「AI 如何根據學生反應即時調整學習路徑」的動態適性功能，以具體使用者行為數據說明差異，才能在下一輪教育採購週期中維持競爭力。&quot;, &quot;sourceUrl&quot;: &quot;https://theeducationecho.com/edtech-investment-ai-platforms-soar-in-2026/&quot;, &quot;sourceName&quot;: &quot;The Education Echo · EdTech 創投分析 2026&quot;}">
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">2026 上半年全球 EdTech 創投達 85 億美元，AI 適性學習平台佔四成</div>
+          <div class="item-source">The Education Echo</div>
+        </div>
+      </div>
+      <div class="section-label">機構合作</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;機構合作&quot;, &quot;tagClass&quot;: &quot;tag-partner&quot;, &quot;tagLabel&quot;: &quot;合作&quot;, &quot;title&quot;: &quot;11/5 NC State 成立全校 AI 中心，首屆跨領域聚會吸引百人出席&quot;, &quot;para1&quot;: &quot;北卡羅來納州立大學（NC State）AI 中心於 11月5日舉行首次全校 AI 社群聚會，聚焦跨領域連結與 AI 研究合作。活動吸引來自工程、人文、醫學與商學等多個學院的逾百名教職人員與研究生參與。NC State AI Hub 定位為促進跨學科合作的平台，非單一系所的研究中心，強調應用場景的廣度而非技術深度。&quot;, &quot;para2&quot;: &quot;「跨院系 AI 中心」模式正在美國研究型大學快速擴散，代表高校已意識到 AI 衝擊無法被單一學科吸收，必須形成制度化的跨領域對話平台。台灣各大學目前多以計資中心或資工系主導 AI 議程，尚缺乏同等的跨域整合結構。&quot;, &quot;takeaway&quot;: &quot;台灣 EdTech 廠商可主動向各大學教務處或研究發展處提案協助建立類似的「AI 教學實踐社群」，以廠商工具為平台、大學師資為內容，共同打造定期聚會機制。這類社群一旦建立，就成為廠商與學校持續接觸的長期管道，遠比單次工作坊更有採購黏性。&quot;, &quot;sourceUrl&quot;: &quot;https://ece.ncsu.edu/2026/prompting-action-nc-state-ai-hub-hosts-first-campus-gathering&quot;, &quot;sourceName&quot;: &quot;NC State ECE · AI Hub 首屆聚會&quot;}">
+        <span class="tag tag-partner">合作</span>
+        <div class="item-text">
+          <div class="item-title">11/5 NC State 成立全校 AI 中心，首屆跨領域聚會吸引百人出席</div>
+          <div class="item-source">NC State ECE</div>
+        </div>
+      </div>
+      <div class="section-label">效果研究</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;效果研究&quot;, &quot;tagClass&quot;: &quot;tag-research&quot;, &quot;tagLabel&quot;: &quot;研究&quot;, &quot;title&quot;: &quot;美國高教內稽報告：34 所大學僅 12 所有正式 AI 政策，半數仍在起草&quot;, &quot;para1&quot;: &quot;美國大學內部稽核協會（ACUA）2026 年調查顯示，34 所受訪高等教育機構中，僅 12 所已完成正式 AI 政策或使用指引的制定，另有約半數機構仍在起草階段。受訪者列出的最主要憂慮為：AI 相關資安漏洞（首位）、機構使用未經驗證的 AI 輸出（次位），顯示政策滯後帶來顯著的法遵與聲譽風險。&quot;, &quot;para2&quot;: &quot;「有使用無政策」是當前高等教育 AI 治理的普遍困境。在缺乏明確政策的情況下，師生的 AI 使用行為游走於機構規範灰色地帶，資安與隱私風險累積卻無人問責。有意進入高教市場的 EdTech 廠商，主動提供合規建議的能力已成為差異化要素。&quot;, &quot;takeaway&quot;: &quot;台灣大學端同樣缺乏系統性 AI 治理架構。台灣 EdTech 廠商可在拜訪學校時，主動提供「AI 工具導入政策範本包」——包含資料使用協議、學術誠信條款、師生使用分級建議——作為免費附加服務。此舉可大幅降低教務主任的顧慮門檻，將廠商從「賣工具的」升格為「可信賴的 AI 治理夥伴」。&quot;, &quot;sourceUrl&quot;: &quot;https://www.eisneramper.com/insights/education-insights/higher-education-internal-audit-ai-survey-1026&quot;, &quot;sourceName&quot;: &quot;EisnerAmper · 美國高教 AI 政策內稽調查&quot;}">
+        <span class="tag tag-research">研究</span>
+        <div class="item-text">
+          <div class="item-title">美國高教內稽報告：34 所大學僅 12 所有正式 AI 政策，半數仍在起草</div>
+          <div class="item-source">EisnerAmper</div>
+        </div>
+      </div>
+      <div class="section-label">台灣與亞洲</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;台灣與亞洲&quot;, &quot;tagClass&quot;: &quot;tag-taiwan&quot;, &quot;tagLabel&quot;: &quot;台灣&quot;, &quot;title&quot;: &quot;台大為全國中小學教師辦 AI 教學設計研習，11/21 備課應用、11/22 生成圖像教材&quot;, &quot;para1&quot;: &quot;國立臺灣大學以「2026 教育未來式—AI 時代的教學新能力」為題，規劃一系列線上研習課程，對象為全國中小學在職教師。11月21日場次聚焦「AI 教學設計與備課應用」，11月22日場次主題為「AI 生成圖像與視覺教材設計」，兩場課程均強調實作演練而非概念介紹，協助教師將 AI 工具直接整合進日常教學準備流程。&quot;, &quot;para2&quot;: &quot;台大以頂尖研究大學之姿深入 K-12 師培領域，顯示台灣高校正主動打破學術與基礎教育之間的邊界。生成圖像教材設計場次更顯示師培需求已從文字型 AI 擴展至多模態應用，教師的 AI 能力要求快速升級。&quot;, &quot;takeaway&quot;: &quot;台灣 K-12 教師的 AI 研習需求持續擴大，但場次供給仍以一次性講座為主，缺乏持續的實作陪伴。EdTech 廠商可設計「研習後 30 天實作挑戰包」，提供結構化的課後跟進任務，幫助教師將研習所學轉化為可見的課堂成果，同時建立廠商與教師社群之間的長期接觸點。&quot;, &quot;sourceUrl&quot;: &quot;https://www.cyc.edu.tw/modules/tadnews/index.php?nsn=95208&quot;, &quot;sourceName&quot;: &quot;嘉義縣教育資訊網 · 台大 AI 師培研習&quot;}">
+        <span class="tag tag-taiwan">台灣</span>
+        <div class="item-text">
+          <div class="item-title">台大為全國中小學教師辦 AI 教學設計研習，11/21 備課應用、11/22 生成圖像教材</div>
+          <div class="item-source">嘉義縣教育資訊網</div>
+        </div>
+      </div>
+    </aside>
+    <div class="detail-panel" id="detail-2026-11-07">
+      <div class="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <p>點擊左側新聞查看詳情</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="day-pane" hidden data-day="2026-11-06">
   <div class="split">
     <aside class="news-list" id="list-2026-11-06">
       <div class="pane-header">11月6日（週五）<span class="count"> · 7 則</span></div>
@@ -1466,7 +1541,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">11/6 07:19 台北時間</span>
+  最近更新：<span id="updated">11/7 07:21 台北時間</span>
 </footer>
 
 <script>
