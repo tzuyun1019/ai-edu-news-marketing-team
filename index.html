@@ -486,8 +486,8 @@ body {
   <button class="week-nav-btn" id="btnThisWeek" onclick="switchToWeek(0)" disabled>本週 →</button>
 </div>
 <nav class="day-tabs" id="dayTabs">
-  <button class="tab active" data-week="0" data-day="2026-11-09"><span class="tab-dow">週一</span><span class="tab-date">11/9</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-week="0" data-day="2026-11-10"><span class="tab-dow">週二</span><span class="tab-date">11/10</span></button>
+  <button class="tab" data-week="0" data-day="2026-11-09"><span class="tab-dow">週一</span><span class="tab-date">11/9</span></button>
+  <button class="tab active" data-week="0" data-day="2026-11-10"><span class="tab-dow">週二</span><span class="tab-date">11/10</span><span class="tab-today">今日</span></button>
   <button class="tab empty" data-week="0" data-day="2026-11-11"><span class="tab-dow">週三</span><span class="tab-date">11/11</span></button>
   <button class="tab empty" data-week="0" data-day="2026-11-12"><span class="tab-dow">週四</span><span class="tab-date">11/12</span></button>
   <button class="tab empty" data-week="0" data-day="2026-11-13"><span class="tab-dow">週五</span><span class="tab-date">11/13</span></button>
@@ -499,11 +499,91 @@ body {
   <button class="tab" data-week="1" data-day="2026-11-05"><span class="tab">週四</span><span class="tab">11/5</span></button>
   <button class="tab" data-week="1" data-day="2026-11-06"><span class="tab">週五</span><span class="tab">11/6</span></button>
   <button class="tab" data-week="1" data-day="2026-11-07"><span class="tab">週六</span><span class="tab">11/7</span></button>
-  <button class="tab" data-week="1" data-day="2026-11-08"><span class="tab">週日</span><span class="tab">11/8</span><span class="tab">今日</span></button>
+  <button class="tab" data-week="1" data-day="2026-11-08"><span class="tab-dow">週日</span><span class="tab-date">11/8</span></button>
 </nav>
 
 <div id="panesContainer">
-<section class="day-pane" data-day="2026-11-09">
+<section class="day-pane" data-day="2026-11-10">
+  <div class="split">
+    <aside class="news-list" id="list-2026-11-10">
+      <div class="pane-header">11月10日（週二）<span class="count"> · 8 則</span></div>
+      <div class="section-label">市場趨勢</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;市場趨勢&quot;, &quot;tagClass&quot;: &quot;tag-market&quot;, &quot;tagLabel&quot;: &quot;趨勢&quot;, &quot;title&quot;: &quot;11/9 西雅圖公校封鎖 Gemini、限制3-5年級科技設備，加入 AI 管制浪潮&quot;, &quot;para1&quot;: &quot;美國西雅圖公立學校於11月9日宣布收緊3至5年級學生的科技使用政策，新增螢幕時間上限並封鎖 Gemini、YouTube 及 Minecraft，以減少分心與生成式 AI 依賴。此舉呼應紐約市、洛杉磯等大學區的 AI 管制方向，全美「學區主動限制生成式 AI」的浪潮持續擴大。&quot;, &quot;para2&quot;: &quot;當規模前十大學區相繼出手管制 AI，代表「先禁後議」成為美國K-12主流政策路徑。此趨勢顯示，市場對於「預設開放學生存取AI工具」的容忍度正快速降低，EdTech廠商的核心挑戰從「說服使用」轉向「贏得機構信任」。&quot;, &quot;takeaway&quot;: &quot;台灣縣市教育局若正評估AI工具導入，西雅圖模式可作為「分齡分階段」政策設計的具體參考。台灣EdTech廠商可主動提供「不同年齡層建議管控矩陣」，協助學校設計符合各年段認知發展的AI存取規則，以此取代單一的全開或全禁，建立精準的顧問式銷售定位。&quot;, &quot;sourceUrl&quot;: &quot;https://komonews.com/news/local/seattle-public-schools-ben-shuldiner-tighten-student-technology-policies-grades-3-to-5-screen-time-cap-minecraft-youtube-gemini-blocked-ai&quot;, &quot;sourceName&quot;: &quot;KOMO News · 西雅圖學區 AI 政策&quot;}">
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">11/9 西雅圖公校封鎖 Gemini、限制3-5年級科技設備，加入 AI 管制浪潮</div>
+          <div class="item-source">KOMO News</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;市場趨勢&quot;, &quot;tagClass&quot;: &quot;tag-market&quot;, &quot;tagLabel&quot;: &quot;趨勢&quot;, &quot;title&quot;: &quot;11/9 美參議員 Markey 致函 Google CEO：學校拒絕 AI 不應喪失搜尋權&quot;, &quot;para1&quot;: &quot;美國參議員 Ed Markey 於11月9日致函 Google CEO Sundar Pichai，直接點名 Google 的K-12 AI政策是「最後通牒」（ultimatum），批評其以搜尋服務為籌碼施壓學校接受生成式AI。Markey要求 Google 明確說明：學校能否在不喪失Google搜尋存取權的情況下單獨關閉 AI 功能。&quot;, &quot;para2&quot;: &quot;當聯邦參議員正式介入科技公司的教育政策設計，代表學校AI工具採購已超越教育議題，演變成數位權力結構的政治議題。此事件預示未來AI教育工具的採購評估，將新增「不綁定、可單獨關閉、資料自主」等政策門檻，EdTech廠商須提前備妥合規論述。&quot;, &quot;takeaway&quot;: &quot;此事件是向台灣採購決策者說明「平台鎖定風險」的最佳時事案例。建議行銷團隊設計「你的學校AI選擇清單」文件，列出五大關鍵問題——包含「功能能否單獨關閉」「資料是否留台」「合約有無鎖定條款」——以此建立差異化定位，強調台灣在地廠商的合規透明優勢。&quot;, &quot;sourceUrl&quot;: &quot;https://boston.com/news/local-news/2026/11/09/markey-google-ai-school-search-policy&quot;, &quot;sourceName&quot;: &quot;Boston.com · 美國教育政策&quot;}">
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">11/9 美參議員 Markey 致函 Google CEO：學校拒絕 AI 不應喪失搜尋權</div>
+          <div class="item-source">Boston.com</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;市場趨勢&quot;, &quot;tagClass&quot;: &quot;tag-market&quot;, &quot;tagLabel&quot;: &quot;趨勢&quot;, &quot;title&quot;: &quot;澳洲推「數位排毒」：國家級限制AI進入小學與升學考試評量&quot;, &quot;para1&quot;: &quot;澳洲教育部長會議近期討論通過限制生成式AI在小學階段及中等教育評量中的使用。各州響應包括：NSW年5的全國學力測驗（NAPLAN）將回歸紙筆作答，並研議取消考試中的螢幕使用；NSW同時規定高中「帶回家評量」AI使用限制，2027屆起生效。&quot;, &quot;para2&quot;: &quot;澳洲這波「數位排毒」浪潮折射出全球政策制定者的共同困境：AI工具的普及速度遠超過教育系統的吸收能力，紙筆回歸不是拒絕科技，而是在缺乏評量設計配套的情況下先行降低風險的過渡措施。這為能提供「AI整合式評量設計工具」的廠商留下了真實的市場需求空間。&quot;, &quot;takeaway&quot;: &quot;澳洲模式對台灣的啟示是：在AI評量框架未成形前，「考試場景」是最難快速突破的壁壘。建議台灣EdTech廠商優先聚焦「課堂形成性評量」而非「正式考試」，以診斷學習落差、提供即時反饋為主軸切入，待評量政策框架確立後再布局正式考試市場，避免過早與制度慣性對衝。&quot;, &quot;sourceUrl&quot;: &quot;https://educationhq.com/news/nation-leading-ai-rule-change-for-students-a-step-in-the-right-direction-expert-214566/&quot;, &quot;sourceName&quot;: &quot;EducationHQ · 澳洲教育政策&quot;}">
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">澳洲推「數位排毒」：國家級限制AI進入小學與升學考試評量</div>
+          <div class="item-source">EducationHQ</div>
+        </div>
+      </div>
+      <div class="section-label">資金動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;資金動態&quot;, &quot;tagClass&quot;: &quot;tag-funding&quot;, &quot;tagLabel&quot;: &quot;資金&quot;, &quot;title&quot;: &quot;11/9 Higher Logic 收購 Mission Fuel AI，AI 課程設計進入協會教育市場&quot;, &quot;para1&quot;: &quot;會員管理平台 Higher Logic 於11月9日宣布收購 Mission Fuel AI，將 AI 課程設計與課程開發服務整合進其 Thrive Learn 學習平台，服務對象為各類行業協會的員工教育與認證培訓市場。Mission Fuel 團隊維持現狀並持續支援現有客戶，收購金額未披露。&quot;, &quot;para2&quot;: &quot;此收購代表 AI 課程開發工具正從 K-12 與高等教育加速滲透「非正規教育」市場，尤其是行業協會、職業認證與企業培訓領域。當規模化 AI 課程自動生成能力成為學習平台的標準配備，沒有 AI 課程設計功能的傳統 LMS 廠商將面臨更直接的競爭壓力。&quot;, &quot;takeaway&quot;: &quot;台灣許多行業工會與職業協會仍以紙本或純人工方式設計認證課程，AI課程設計工具在此市場幾乎是空白。台灣EdTech廠商可將「AI快速生成產業認證課程」作為B2B切入點，以製造業、金融業、護理等高認證需求行業為優先，這類客戶決策週期短且願意為明確ROI付費。&quot;, &quot;sourceUrl&quot;: &quot;https://www.edtechinnovationhub.com/news/higher-logic-acquires-mission-fuel-ai-to-turn-association-expertise-into-courses&quot;, &quot;sourceName&quot;: &quot;EdTech Innovation Hub · 資金與併購動態&quot;}">
+        <span class="tag tag-funding">資金</span>
+        <div class="item-text">
+          <div class="item-title">11/9 Higher Logic 收購 Mission Fuel AI，AI 課程設計進入協會教育市場</div>
+          <div class="item-source">EdTech Innovation Hub</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;資金動態&quot;, &quot;tagClass&quot;: &quot;tag-funding&quot;, &quot;tagLabel&quot;: &quot;資金&quot;, &quot;title&quot;: &quot;10/29 Digital Science 收購 Jenni AI：800萬用戶、171百萬篇論文資料庫整合&quot;, &quot;para1&quot;: &quot;學術研究基礎設施公司 Digital Science 於10月29日宣布收購 AI 研究寫作平台 Jenni AI，後者擁有橫跨189國的800萬名用戶。Jenni AI 將連接 Digital Science 旗下 Dimensions 資料庫（收錄1.71億篇學術文獻），後續整合計畫持續推進；Jenni AI 品牌、定價與訂閱方案維持不變。&quot;, &quot;para2&quot;: &quot;此收購將 AI 學術寫作助理與大規模論文資料庫直接整合，代表「有資料護城河的 AI 研究工具」正成為學術市場的核心競爭格局。擁有龐大資料庫的傳統學術出版/資訊服務商正快速透過收購補強 AI 能力，意味著沒有資料資產的純 AI 寫作工具估值空間將被壓縮。&quot;, &quot;takeaway&quot;: &quot;台灣學術界對 AI 寫作輔助工具需求旺盛，但本地廠商普遍缺乏資料護城河。台灣EdTech廠商可尋求與台灣學術成果資料庫（如華藝、HyRead）合作，打造「台灣本地化 AI 學術寫作助理」，以在地語言、在地引用格式（APA/APA-Taiwan）及在地法規合規為差異化，抵禦 Jenni AI 等國際品牌的競爭。&quot;, &quot;sourceUrl&quot;: &quot;https://www.citybiz.co/?p=926385&quot;, &quot;sourceName&quot;: &quot;CityBiz · EdTech 併購動態&quot;}">
+        <span class="tag tag-funding">資金</span>
+        <div class="item-text">
+          <div class="item-title">10/29 Digital Science 收購 Jenni AI：800萬用戶、171百萬篇論文資料庫整合</div>
+          <div class="item-source">CityBiz</div>
+        </div>
+      </div>
+      <div class="section-label">台灣與亞洲</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;台灣與亞洲&quot;, &quot;tagClass&quot;: &quot;tag-taiwan&quot;, &quot;tagLabel&quot;: &quot;亞洲&quot;, &quot;title&quot;: &quot;11/4-5 EDUtech Asia 新加坡吸引 8,000 名教育工作者，新加坡教育部親自詮釋 AI 中間路線&quot;, &quot;para1&quot;: &quot;亞洲最大教育科技展 EDUtech Asia 2026 於11月4至5日在新加坡濱海灣金沙盛大舉行，吸引來自全亞洲的8,000名教育工作者參與。新加坡教育部官員在論壇上闡述該國的AI教育立場：既非全面禁止、也非完全開放，而是由政府資助研究中心先行試點、待成效確認後才推進課堂應用。&quot;, &quot;para2&quot;: &quot;新加坡「政府試點先行、課堂跟進」的模式，在全球AI教育政策光譜上代表了最系統化的中間路線，與美國學區「先禁後議」及韓國「大規模快推又急煞車」形成鮮明對比。亞洲教育市場的政策分歧，為能適應不同監管文化的EdTech廠商創造了差異化進入空間。&quot;, &quot;takeaway&quot;: &quot;新加坡模式對台灣的啟示在於「可複製的政策驗證機制」：教育部若能建立類似的AI試點認證流程，可大幅降低學校採購的疑慮門檻。台灣EdTech廠商應積極爭取納入教育部試點名單，一旦獲得官方驗證背書，便能複製新加坡模式在東南亞市場的信任效應。&quot;, &quot;sourceUrl&quot;: &quot;https://www.manilatimes.net/2026/10/22/tmt-newswire/pr-newswire/asias-largest-education-event-returns-edutech-asia-2026-brings-8000-educators-to-singapore-to-shape-a-human-centred-ai-powered-future-of-learning/2451597&quot;, &quot;sourceName&quot;: &quot;Manila Times · EDUtech Asia 2026&quot;}">
+        <span class="tag tag-taiwan">亞洲</span>
+        <div class="item-text">
+          <div class="item-title">11/4-5 EDUtech Asia 新加坡吸引 8,000 名教育工作者，新加坡教育部親自詮釋 AI 中間路線</div>
+          <div class="item-source">Manila Times</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;台灣與亞洲&quot;, &quot;tagClass&quot;: &quot;tag-taiwan&quot;, &quot;tagLabel&quot;: &quot;亞洲&quot;, &quot;title&quot;: &quot;南韓 AI 教科書遭國會撤銷法定地位，轉以 9,600 億韓元建 AI 人才中心補救&quot;, &quot;para1&quot;: &quot;南韓強推AI教科書遭遇重大挫折：強制AI教科書採用率至今年3月仍低於30%，國會隨後於8月撤銷其法定教科書地位，全國教師工會認為推進速度遠超過師培準備。南韓政府轉而宣布規劃9,600億韓元（約6.9億美元）新方案，2030年前建設AI人才中心及職業高中網絡。&quot;, &quot;para2&quot;: &quot;南韓案例是全球「由上而下強推AI教育」最具代表性的警示：政策速度超越教師準備，導致工具投入換來抵制而非採用。9,600億韓元的快速轉向資金也顯示政府寧願高成本補救、也要在AI人才培育的國際競爭中不落隊。師培生態系的投資報酬遠高於工具本身。&quot;, &quot;takeaway&quot;: &quot;南韓的失敗路徑是台灣EdTech廠商最具說服力的反面教材。向教育局推廣時，強調「我們的導入方案包含教師增能模組，不只賣工具」，可直接對應政策決策者對「重蹈南韓覆轍」的隱憂。將師培支援服務納入報價包，而非附加選配，能大幅提升方案的整體可信度與採購意願。&quot;, &quot;sourceUrl&quot;: &quot;https://crpe.org/shockwaves-and-innovations-how-nations-worldwide-are-dealing-with-ai-in-education/&quot;, &quot;sourceName&quot;: &quot;CRPE · 全球AI教育政策比較&quot;}">
+        <span class="tag tag-taiwan">亞洲</span>
+        <div class="item-text">
+          <div class="item-title">南韓 AI 教科書遭國會撤銷法定地位，轉以 9,600 億韓元建 AI 人才中心補救</div>
+          <div class="item-source">CRPE</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;台灣與亞洲&quot;, &quot;tagClass&quot;: &quot;tag-taiwan&quot;, &quot;tagLabel&quot;: &quot;台灣&quot;, &quot;title&quot;: &quot;11/5 資訊月暨教育科技展本週三開幕，「AI走進教室」成最大主軸&quot;, &quot;para1&quot;: &quot;工商時報11月5日報導，2026年資訊月暨臺灣教育科技展以「AI走進教室 啟動未來學習」為核心主題，強調從工具操作轉向素養培育，聚焦提問能力、資訊查核與批判思考。150家參展單位中不乏AI教學工具、適性學習與教師數位增能服務商，整體定位從「展示科技」轉為「展示教育成效」。&quot;, &quot;para2&quot;: &quot;當台灣最大教育科技展的核心主軸從「AI工具」轉為「AI素養」，代表市場敘事已從功能競賽進入效果驗證階段。能展示「學生學習成效提升數據」而非僅強調「功能豐富」的廠商，才能在此次展覽中脫穎而出，贏得採購決策者的長期信任。&quot;, &quot;takeaway&quot;: &quot;若公司準備參加明後天的展覽，現在就該備妥兩份核心材料：一是具體使用成效案例（最好含前後對比數據），二是針對「AI素養」而非「AI工具」重新包裝的一頁紙。強調「我們幫助學生學會問好問題、查核資訊」，遠比展示功能清單更能吸引今年評審與採購主任的目光。&quot;, &quot;sourceUrl&quot;: &quot;https://www.ctee.com.tw/news/20261105700653-431202&quot;, &quot;sourceName&quot;: &quot;工商時報 · 台灣教育科技展&quot;}">
+        <span class="tag tag-taiwan">台灣</span>
+        <div class="item-text">
+          <div class="item-title">11/5 資訊月暨教育科技展本週三開幕，「AI走進教室」成最大主軸</div>
+          <div class="item-source">工商時報</div>
+        </div>
+      </div>
+    </aside>
+    <div class="detail-panel" id="detail-2026-11-10">
+      <div class="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <p>點擊左側新聞查看詳情</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="day-pane" hidden data-day="2026-11-09">
   <div class="split">
     <aside class="news-list" id="list-2026-11-09">
       <div class="pane-header">11月9日（週一）<span class="count"> · 7 則</span></div>
@@ -1130,7 +1210,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">11/9 07:20 台北時間</span>
+  最近更新：<span id="updated">2026-11-10 07:20 台北時間</span>
 </footer>
 
 <script>
