@@ -489,8 +489,8 @@ body {
   <button class="tab" data-week="0" data-day="2026-11-09"><span class="tab-dow">週一</span><span class="tab-date">11/9</span></button>
   <button class="tab" data-week="0" data-day="2026-11-10"><span class="tab-dow">週二</span><span class="tab-date">11/10</span></button>
   <button class="tab" data-week="0" data-day="2026-11-11"><span class="tab-dow">週三</span><span class="tab-date">11/11</span></button>
-  <button class="tab active" data-week="0" data-day="2026-11-12"><span class="tab-dow">週四</span><span class="tab-date">11/12</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-week="0" data-day="2026-11-13"><span class="tab-dow">週五</span><span class="tab-date">11/13</span></button>
+  <button class="tab" data-week="0" data-day="2026-11-12"><span class="tab-dow">週四</span><span class="tab-date">11/12</span></button>
+  <button class="tab active" data-week="0" data-day="2026-11-13"><span class="tab-dow">週五</span><span class="tab-date">11/13</span><span class="tab-today">今日</span></button>
   <button class="tab empty" data-week="0" data-day="2026-11-14"><span class="tab-dow">週六</span><span class="tab-date">11/14</span></button>
   <button class="tab empty" data-week="0" data-day="2026-11-15"><span class="tab-dow">週日</span><span class="tab-date">11/15</span></button>
   <button class="tab" data-week="1" data-day="2026-11-02"><span class="tab">週一</span><span class="tab">11/2</span></button>
@@ -503,7 +503,79 @@ body {
 </nav>
 
 <div id="panesContainer">
-<section class="day-pane" data-day="2026-11-12">
+<section class="day-pane" data-day="2026-11-13">
+  <div class="split">
+    <aside class="news-list" id="list-2026-11-13">
+      <div class="pane-header">11月13日（週五）<span class="count"> · 7 則</span></div>
+      <div class="section-label">產品動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;產品動態&quot;, &quot;tagClass&quot;: &quot;tag-product&quot;, &quot;tagLabel&quot;: &quot;產品&quot;, &quot;title&quot;: &quot;10/29 麥格羅‧希爾宣布 MCP 插件，授權教材直接整合進 Microsoft Copilot&quot;, &quot;para1&quot;: &quot;麥格羅‧希爾（McGraw-Hill）於10月29日宣布推出 Microsoft 365 Copilot 教育插件，透過 Model Context Protocol（MCP）將其 K-12 至高等教育授權課程內容整合進 Copilot AI 工作環境。師生可在 Copilot 中直接摘要教材、轉化為教案或生成學習筆記，限量 Beta 預計 2027 年初上線，需具備 Microsoft 企業授權及相應課程授權。&quot;, &quot;para2&quot;: &quot;此整合代表傳統教科書出版商將「授權內容護城河」與生成式 AI 工作流結合的戰略轉折。MCP 標準讓 Copilot 能跨接外部授權內容庫，對 EdTech 廠商而言預示一個趨勢：擁有高品質授權內容的業者可藉此直接進入 AI 工作台生態，突破傳統採購渠道。&quot;, &quot;takeaway&quot;: &quot;台灣 EdTech 廠商若有優質授權內容（如名師課程、考古題庫、官方教材），應評估接入主流 AI 工作台（Copilot、Claude Enterprise、Gemini）的 MCP 策略，將內容資產轉化為 AI 插件是在大廠生態中保持曝光的低成本路徑，建議列入 2027 年產品路線圖討論。&quot;, &quot;sourceUrl&quot;: &quot;https://www.mheducation.com/about-us/news-insights/press-releases/mcgraw-hill-announces-agentic-ai-education-plugin-for-microsoft-copilot.html&quot;, &quot;sourceName&quot;: &quot;McGraw-Hill · 新聞稿&quot;}">
+        <span class="tag tag-product">產品動態</span>
+        <div class="item-text">
+          <div class="item-title">10/29 麥格羅‧希爾宣布 MCP 插件，授權教材直接整合進 Microsoft Copilot</div>
+          <div class="item-source">McGraw-Hill</div>
+        </div>
+      </div>
+      <div class="section-label">市場趨勢</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;市場趨勢&quot;, &quot;tagClass&quot;: &quot;tag-market&quot;, &quot;tagLabel&quot;: &quot;趨勢&quot;, &quot;title&quot;: &quot;11/5 EdSource 深度報導：加州多方憂心 Google「AI 與搜尋捆綁」政策的壟斷風險&quot;, &quot;para1&quot;: &quot;EdSource 於11月5日報導，Google 教育部門副總裁在線上說明會中確認：學校若在管理員後台完全關閉 AI 功能，將同時無法單獨保留 Google Search，因為 AI Mode 與 AI Overviews 已深度整合於搜尋。加州多位教育倡議者、媒體評論者批評此政策讓學校幾乎沒有選擇空間，擔憂 Google 透過基礎設施壟斷推進 AI 採用。&quot;, &quot;para2&quot;: &quot;EdSource 的深度報導強調這不只是功能設定問題，而是對公共教育機構自主決策權的衝擊。當全球最廣泛使用的教育搜尋工具與 AI 功能捆綁，學校面臨的不是「選擇哪種 AI」，而是「是否還能選擇不用 AI」。此報導持續延燒，影響全美學區採購評估標準。&quot;, &quot;takeaway&quot;: &quot;台灣 EdTech 廠商應主動借助此事件建立「可關閉、無鎖定、資料在台」的信任品牌。建議整理一份「AI 工具採購五問」（功能能否單獨關閉、資料是否留台、合約有無自動更新鎖定、能否匯出學習數據、是否有政府合規認證），發送給教育局採購主管，以透明度拉開與國際大廠的差異化定位。&quot;, &quot;sourceUrl&quot;: &quot;https://edsource.org/2026/google-ai-school-search-restriction/769862&quot;, &quot;sourceName&quot;: &quot;EdSource · 加州教育政策&quot;}">
+        <span class="tag tag-market">市場趨勢</span>
+        <div class="item-text">
+          <div class="item-title">11/5 EdSource 深度報導：加州多方憂心 Google「AI 與搜尋捆綁」政策的壟斷風險</div>
+          <div class="item-source">EdSource</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;市場趨勢&quot;, &quot;tagClass&quot;: &quot;tag-market&quot;, &quot;tagLabel&quot;: &quot;趨勢&quot;, &quot;title&quot;: &quot;11/12 密西根州 Novi 學區榮獲 AI 教育領跑標竿，三大護欄框架受全國關注&quot;, &quot;para1&quot;: &quot;WDET 11月12日報導，密西根州 Novi Community School District 因在8月率先通過具體 AI 教育計畫，成為全美 AI 教育政策標竿。校長強調三大護欄原則：AI 應促進而非繞過批判思考、師生共學模式必須納入課程設計、禁止 AI 完全代替學生獨立完成核心學習任務。該校已擬定教師 AI 使用指引並持續滾動更新。&quot;, &quot;para2&quot;: &quot;Novi 的正面案例說明，平衡「開放使用」與「設定邊界」的 AI 教育政策是可操作的，而非零和選擇。在全美充斥著「禁」或「放任」兩種極端的背景下，Novi 的「有護欄的歡迎」框架正引發廣泛關注，為有意建立 AI 教育典範的學區提供可複製的藍本。&quot;, &quot;takeaway&quot;: &quot;Novi 的「三大護欄」框架是台灣廠商對教育局提案時最有力的論述結構之一。建議開發一套「台灣版 AI 課堂使用框架」（呼應108課綱素養導向），協助教育局以政策文件而非技術規格來描述 AI 工具的用途邊界，以此建立顧問式夥伴關係，取代傳統功能導向銷售。&quot;, &quot;sourceUrl&quot;: &quot;https://wdet.org/2026/11/12/this-school-district-wants-ai-in-the-classroom-with-serious-guardrails-the-metro/&quot;, &quot;sourceName&quot;: &quot;WDET · 密西根 AI 教育政策&quot;}">
+        <span class="tag tag-market">市場趨勢</span>
+        <div class="item-text">
+          <div class="item-title">11/12 密西根州 Novi 學區榮獲 AI 教育領跑標竿，三大護欄框架受全國關注</div>
+          <div class="item-source">WDET</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;市場趨勢&quot;, &quot;tagClass&quot;: &quot;tag-market&quot;, &quot;tagLabel&quot;: &quot;趨勢&quot;, &quot;title&quot;: &quot;11/13 維吉尼亞州 Martinsville 學校 AI 政策押後 12 月，治理難題延燒全美&quot;, &quot;para1&quot;: &quot;維吉尼亞州 Martinsville City School Board 於11月會議中決定，將 AI 課堂使用政策討論延至12月，原因是校委會成員需要更多時間研究維吉尼亞州學校委員會協會（VSBA）提供的示範政策文件。同鄰近的 Franklin County 學區也考慮在下個月跟進。此案反映全美二三線學區在 AI 政策制定上普遍缺乏技術能力和決策信心。&quot;, &quot;para2&quot;: &quot;大量二三線學區正困在「知道要做但不知道如何做」的 AI 政策困境中——治理能力的缺口比工具本身更難填補。州級示範政策的出現加速了政策擴散，但仍需要在地詮釋與教師文化配合，預示「AI 政策導入顧問服務」將成為未來12個月高需求的新型 EdTech 服務類別。&quot;, &quot;takeaway&quot;: &quot;台灣縣市教育局同樣面臨 AI 政策制定能力不足的困境，這正是廠商切入的機會。建議開發「學校 AI 治理快速起步包」——包含範例政策文件（可依縣市法規調整）、家長溝通範本、教師研習指引——以免費工具包建立品牌信任，再透過工作坊和培訓服務轉換為收入，實現「顧問先行、採購在後」的長線策略。&quot;, &quot;sourceUrl&quot;: &quot;https://wset.com/newsletter-daily/martinsville-school-board-to-consider-optional-ai-policy-for-classroom-use-november-2026&quot;, &quot;sourceName&quot;: &quot;WSET · 維吉尼亞州教育政策&quot;}">
+        <span class="tag tag-market">市場趨勢</span>
+        <div class="item-text">
+          <div class="item-title">11/13 維吉尼亞州 Martinsville 學校 AI 政策押後 12 月，治理難題延燒全美</div>
+          <div class="item-source">WSET</div>
+        </div>
+      </div>
+      <div class="section-label">效果研究</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;效果研究&quot;, &quot;tagClass&quot;: &quot;tag-research&quot;, &quot;tagLabel&quot;: &quot;研究&quot;, &quot;title&quot;: &quot;11/3 Google AI 教育報告：全球 85% 教師用 AI，美國僅 18% 受過正式培訓&quot;, &quot;para1&quot;: &quot;Google 11月3日發布 AI in the Learning Era 教育報告，在全球逾 1,000 名教育工作者調查中發現：85% 的受訪教師已在使用生成式 AI，但美國境內僅有 18% 曾接受過正式的 AI 使用引導培訓。報告同時指出，教師最常將 AI 用於行政文書與課程備案，較少應用於個人化教學反饋或差異化教學設計等高影響力場景。&quot;, &quot;para2&quot;: &quot;85% 使用率對比 18% 培訓覆蓋率，呈現出全球教育 AI 市場的核心矛盾：工具已普及，能力卻嚴重滯後。這為師培 AI 課程、使用輔助文件與教師社群等支援型產品創造了高度剛需，而非僅靠工具本身售賣。&quot;, &quot;takeaway&quot;: &quot;此數據對台灣師培市場的啟示極為直接：只有 18% 有培訓代表 82% 的市場機會。建議行銷訴求從「功能展示」轉向「培訓賦能」——聚焦提供結構化師培方案、教師使用手冊及在職進修認證，定位自己為「教師 AI 能力建構夥伴」，而非又一個 AI 工具供應商。&quot;, &quot;sourceUrl&quot;: &quot;https://www.winssolutions.org/google-ai-in-education-report-2026/&quot;, &quot;sourceName&quot;: &quot;WINS Solutions · Google AI 教育報告解析&quot;}">
+        <span class="tag tag-research">效果研究</span>
+        <div class="item-text">
+          <div class="item-title">11/3 Google AI 教育報告：全球 85% 教師用 AI，美國僅 18% 受過正式培訓</div>
+          <div class="item-source">WINS Solutions</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;效果研究&quot;, &quot;tagClass&quot;: &quot;tag-research&quot;, &quot;tagLabel&quot;: &quot;研究&quot;, &quot;title&quot;: &quot;DEC 拉美高教 AI 調查：92% 學生用 AI，但僅 30% 大學有正式政策&quot;, &quot;para1&quot;: &quot;數位教育委員會（DEC）發布拉丁美洲高等教育 AI 調查，共收集29所高校逾3萬份問卷。調查顯示：92% 的學生與79% 的教師正在使用 AI 工具，67% 學生每天或每週使用 AI；但全拉美僅 30% 的大學已發布 AI 使用政策，56% 學生擔心資料隱私。全球高教 AI 採用率持續突破新高，但制度建設嚴重滯後。&quot;, &quot;para2&quot;: &quot;92% 採用率對比 30% 政策覆蓋率，揭示一個高教 AI 市場的結構性需求：學生已在大規模使用 AI，機構卻缺乏配套管理框架。這不只是發展中國家的問題——台灣各大學的政策完整度同樣面臨相近挑戰，尤其是跨部門 AI 使用指引與學術誠信新定義。&quot;, &quot;takeaway&quot;: &quot;DEC 的 30% 政策覆蓋率數字是針對台灣大學教務處開啟對話的完美切入點。建議設計「大學 AI 政策自評工具」（線上問卷或 PDF），協助教務長辦公室快速評估本校政策成熟度，並提供客製化建議報告——以免費諮詢工具開啟關係，取代冷呼行銷話術，逐步進入高值採購決策流程。&quot;, &quot;sourceUrl&quot;: &quot;https://www.digitaleducationcouncil.com/post/92-of-students-and-79-of-faculty-actively-engaging-with-ai-findings-from-ai-in-higher-education-latam-survey-2026&quot;, &quot;sourceName&quot;: &quot;Digital Education Council · 拉美高教 AI 調查&quot;}">
+        <span class="tag tag-research">效果研究</span>
+        <div class="item-text">
+          <div class="item-title">DEC 拉美高教 AI 調查：92% 學生用 AI，但僅 30% 大學有正式政策</div>
+          <div class="item-source">Digital Education Council</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;效果研究&quot;, &quot;tagClass&quot;: &quot;tag-research&quot;, &quot;tagLabel&quot;: &quot;研究&quot;, &quot;title&quot;: &quot;EDUCAUSE 2026 研究：55% 高教職員憂 AI 錯誤資訊蔓延，5% 機構仍無 AI 策略&quot;, &quot;para1&quot;: &quot;EDUCAUSE 2026 年「AI 對高等教育工作影響」研究發現：僅 5% 的受訪機構表示完全沒有任何工作相關 AI 策略；但另一方面，55% 的職員與教師將 AI 增加錯誤資訊風險列為首要顧慮。研究同時顯示，4 成受訪者的機構已投入 AI 相關工具評估流程，但多數缺乏正式的全院 AI 使用指引。&quot;, &quot;para2&quot;: &quot;95% 機構有 AI 策略意圖但缺乏正式落地框架，呈現了「有意圖卻缺工具」的普遍性困境。55% 的錯誤資訊顧慮更顯示，高教機構需要的不只是採購 AI 工具，而是完整的 AI 資訊素養培育體系——包括來源查核訓練、批判性 AI 閱讀能力以及 AI 輸出校驗機制。&quot;, &quot;takeaway&quot;: &quot;台灣大學教務與研發處對 EDUCAUSE 數據接受度高，此報告是開啟高教業務對話的優質素材。建議行銷團隊將「AI 資訊素養課程」列為大學合作提案主軸之一，強調「不只提供工具，也協助培訓師生正確使用、辨別 AI 輸出的準確性」，回應機構對錯誤資訊風險的核心顧慮，以此差異化競爭純工具型競爭對手。&quot;, &quot;sourceUrl&quot;: &quot;https://www.educause.edu/research/2026/the-impact-of-ai-on-work-in-higher-education&quot;, &quot;sourceName&quot;: &quot;EDUCAUSE · 高等教育 AI 衝擊研究&quot;}">
+        <span class="tag tag-research">效果研究</span>
+        <div class="item-text">
+          <div class="item-title">EDUCAUSE 2026 研究：55% 高教職員憂 AI 錯誤資訊蔓延，5% 機構仍無 AI 策略</div>
+          <div class="item-source">EDUCAUSE</div>
+        </div>
+      </div>
+    </aside>
+    <div class="detail-panel" id="detail-2026-11-13">
+      <div class="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <p>點擊左側新聞查看詳情</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="day-pane" hidden data-day="2026-11-12">
   <div class="split">
     <aside class="news-list" id="list-2026-11-12">
       <div class="pane-header">11月12日（週四）<span class="count"> · 8 則</span></div>
@@ -1374,7 +1446,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026-11-12 07:19 台北時間</span>
+  最近更新：<span id="updated">2026-11-13 07:21 台北時間</span>
 </footer>
 
 <script>
