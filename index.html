@@ -490,8 +490,8 @@ body {
   <button class="tab" data-week="0" data-day="2026-11-10"><span class="tab-dow">週二</span><span class="tab-date">11/10</span></button>
   <button class="tab" data-week="0" data-day="2026-11-11"><span class="tab-dow">週三</span><span class="tab-date">11/11</span></button>
   <button class="tab" data-week="0" data-day="2026-11-12"><span class="tab-dow">週四</span><span class="tab-date">11/12</span></button>
-  <button class="tab active" data-week="0" data-day="2026-11-13"><span class="tab-dow">週五</span><span class="tab-date">11/13</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-week="0" data-day="2026-11-14"><span class="tab-dow">週六</span><span class="tab-date">11/14</span></button>
+  <button class="tab" data-week="0" data-day="2026-11-13"><span class="tab-dow">週五</span><span class="tab-date">11/13</span></button>
+  <button class="tab active" data-week="0" data-day="2026-11-14"><span class="tab-dow">週六</span><span class="tab-date">11/14</span><span class="tab-today">今日</span></button>
   <button class="tab empty" data-week="0" data-day="2026-11-15"><span class="tab-dow">週日</span><span class="tab-date">11/15</span></button>
   <button class="tab" data-week="1" data-day="2026-11-02"><span class="tab">週一</span><span class="tab">11/2</span></button>
   <button class="tab" data-week="1" data-day="2026-11-03"><span class="tab">週二</span><span class="tab">11/3</span></button>
@@ -503,7 +503,80 @@ body {
 </nav>
 
 <div id="panesContainer">
-<section class="day-pane" data-day="2026-11-13">
+<section class="day-pane" data-day="2026-11-14">
+  <div class="split">
+    <aside class="news-list" id="list-2026-11-14">
+      <div class="pane-header">11月14日（週六）<span class="count"> · 7 則</span></div>
+      <div class="section-label">市場趨勢</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;市場趨勢&quot;, &quot;tagClass&quot;: &quot;tag-market&quot;, &quot;tagLabel&quot;: &quot;趨勢&quot;, &quot;title&quot;: &quot;11/13 夏威夷 K-12 納入 AI 課綱，聚焦責任使用與批判思考防護&quot;, &quot;para1&quot;: &quot;夏威夷教育廳計畫將 AI 教學納入全州 K-12 新版電腦科學課程標準，以 2026 年美國電腦科學教師協會（CSTA）指引為藍本。官員強調學生需從小建立負責任、符合倫理的 AI 使用能力，但部分州教育委員質疑若過早引入 AI，可能削弱學生的批判性思考發展。&quot;, &quot;para2&quot;: &quot;夏威夷的「AI 納入必修課綱」政策是全美繼陸續有州提出相關立法後的具體落地案例，代表基礎教育 AI 素養從「選修補充」正式走向「必修主流」。這對台灣各縣市在推動 108 課綱資訊科技領域 AI 模組時，提供了可參照的政策路徑與課綱設計邏輯。&quot;, &quot;takeaway&quot;: &quot;夏威夷案例是向台灣縣市教育局論述「AI 素養必修化必要性」的最新國際佐證。建議整理一份「AI 素養課綱國際趨勢速報」，列出美、英、新加坡、夏威夷最新政策動向，作為說服教育局納入課程架構的政策簡報素材，增強提案的國際視野說服力。&quot;, &quot;sourceUrl&quot;: &quot;https://hawaiipublicradio.org/local-news/2026-11-13/ai-makes-its-way-into-hawaii-education-curriculum&quot;, &quot;sourceName&quot;: &quot;Hawaii Public Radio · K-12 課綱政策&quot;}">
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">11/13 夏威夷 K-12 納入 AI 課綱，聚焦責任使用與批判思考防護</div>
+          <div class="item-source">Hawaii Public Radio</div>
+        </div>
+      </div>
+      <div class="section-label">機構合作</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;機構合作&quot;, &quot;tagClass&quot;: &quot;tag-partner&quot;, &quot;tagLabel&quot;: &quot;合作&quot;, &quot;title&quot;: &quot;Stanford 斥資千萬美元重塑 AI 時代學術主修，逾 15 學系同步展開課程改造&quot;, &quot;para1&quot;: &quot;史丹佛大學教務長辦公室宣布投入 1,000 萬美元，啟動多年期「AI 時代主修改造計畫」，與約 15 個學系共同調整學術課程架構，目標是將 AI 能力整合進各學科核心，而非僅設立獨立 AI 課程。計畫強調人文、社會科學、工程等不同領域均需發展該領域專屬的 AI 應用能力。&quot;, &quot;para2&quot;: &quot;史丹佛的「學科 AI 整合」策略代表頂尖研究型大學的最新共識：AI 不是一門獨立科目，而是所有學科的基礎能力要求。這對台灣各大學課程委員會是重要訊號，尤其對理工、商管以外的文法社科系所，「如何設計該學科的 AI 應用課程」將是未來評鑑的重要指標。&quot;, &quot;takeaway&quot;: &quot;史丹佛模式適合作為台灣大學「各系所 AI 課程規劃工作坊」的標竿案例。建議針對不同科系設計差異化 AI 導入提案，例如：法律系的 AI 合約審查、中文系的 AI 文學分析、商管系的 AI 決策支援——用學科語境取代通用工具介紹，讓不同系所教師感到「這是為我設計的」。&quot;, &quot;sourceUrl&quot;: &quot;https://news.stanford.edu/stories/2026/11/provost-initiative-college-majors-ai&quot;, &quot;sourceName&quot;: &quot;Stanford University · AI 課程改造計畫&quot;}">
+        <span class="tag tag-partner">合作</span>
+        <div class="item-text">
+          <div class="item-title">Stanford 斥資千萬美元重塑 AI 時代學術主修，逾 15 學系同步展開課程改造</div>
+          <div class="item-source">Stanford University</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;機構合作&quot;, &quot;tagClass&quot;: &quot;tag-partner&quot;, &quot;tagLabel&quot;: &quot;合作&quot;, &quot;title&quot;: &quot;OpenAI ChatGPT Edu 擴展至澳洲四所名校，附設千萬台幣 AI 研究專項基金&quot;, &quot;para1&quot;: &quot;OpenAI 宣布 ChatGPT Edu 合作方案延伸至澳洲新南威爾斯大學、雪梨大學、拉籌伯大學及阿得萊德大學。其中雪梨大學在試點評估後正式進入階段性全校部署，配套師生培訓及使用指引，並宣布設立 100 萬澳幣（約 2,200 萬台幣）AI 教育研究基金，支持各院系探索負責任的 AI 教學實踐。&quot;, &quot;para2&quot;: &quot;OpenAI 在澳洲同時簽下四所頂尖大學，顯示其企業教育市場策略從「單點試驗」轉向「區域批次擴張」。澳洲模式——附帶研究基金、分階段部署、師培支持——已成為高教機構接受 ChatGPT Edu 的標準誘因套餐，對亞太其他市場的後續擴展具有高度複製性。&quot;, &quot;takeaway&quot;: &quot;OpenAI 以「研究基金」作為高校合作誘因是值得台灣廠商借鑑的業務模式。建議評估設立「合作大學 AI 教學研究補助」機制，以小額研究金換取深度合作案例與使用數據授權，既增加銷售黏著度，也能累積本地實證數據強化後續提案說服力，形成良性飛輪效應。&quot;, &quot;sourceUrl&quot;: &quot;https://casrai.org/news/openai-four-australian-universities-chatgpt-edu-2026&quot;, &quot;sourceName&quot;: &quot;CASRAI · OpenAI 澳洲高校部署&quot;}">
+        <span class="tag tag-partner">合作</span>
+        <div class="item-text">
+          <div class="item-title">OpenAI ChatGPT Edu 擴展至澳洲四所名校，附設千萬台幣 AI 研究專項基金</div>
+          <div class="item-source">CASRAI</div>
+        </div>
+      </div>
+      <div class="section-label">台灣與亞洲</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;台灣與亞洲&quot;, &quot;tagClass&quot;: &quot;tag-taiwan&quot;, &quot;tagLabel&quot;: &quot;台灣&quot;, &quot;title&quot;: &quot;11/13 台灣 AI 新十大建設四年砸逾 1,300 億，AI 教育從中小學強制扎根&quot;, &quot;para1&quot;: &quot;行政院長卓榮泰於 2026 資訊月開幕典禮上宣示，未來四年將投入逾 1,300 億元推動「AI 新十大建設」，其中 AI 教育專項預計至 2029 年投入約 117 億元，重點方向為中小學 AI 素養紮根、教師培力及智慧教室建置。此預算規模為台灣史上最大規模的 AI 教育專項預算。&quot;, &quot;para2&quot;: &quot;1,300 億元的「AI 新十大建設」代表台灣政府正式將 AI 教育基礎建設列為國家級投資，而非只是試驗性補助。117 億元的教育專項預算將在未來三年釋出可觀的政府採購標案，包含硬體、平台、師培及課程內容等面向，是台灣 EdTech 廠商三年內最大的結構性機遇。&quot;, &quot;takeaway&quot;: &quot;117 億教育 AI 預算代表未來 36 個月的可見商機。建議立即盤點自家產品與政府預算方向的對應程度，聚焦「師培認證」「智慧教室整合」「AI 素養課程模組」三大方向提前布局——並開始建立與教育部、各縣市教育局採購承辦人的接觸點，在預算正式下達前完成提案就位。&quot;, &quot;sourceUrl&quot;: &quot;https://www.secretchina.com/news/b5/2026/11/13/1107404.html&quot;, &quot;sourceName&quot;: &quot;看中國 · 台灣 AI 政策預算&quot;}">
+        <span class="tag tag-taiwan">台灣</span>
+        <div class="item-text">
+          <div class="item-title">11/13 台灣 AI 新十大建設四年砸逾 1,300 億，AI 教育從中小學強制扎根</div>
+          <div class="item-source">看中國</div>
+        </div>
+      </div>
+      <div class="section-label">效果研究</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;效果研究&quot;, &quot;tagClass&quot;: &quot;tag-research&quot;, &quot;tagLabel&quot;: &quot;研究&quot;, &quot;title&quot;: &quot;Gallup 最新調查：57% 美國大學生日常用 AI，逾半數被勸阻卻照樣使用&quot;, &quot;para1&quot;: &quot;Gallup 與 Lumina Foundation 2026 年調查發現，57% 的美國在學大學生已將 AI 工具用於日常學習；但在這群學生中，42% 表示所在學校「勸阻」使用 AI，11% 更表示學校明文禁止。禁止令並未阻止學生使用，反而使使用行為轉入地下，衍生學術誠信管理難題。&quot;, &quot;para2&quot;: &quot;「禁令無效」的數據揭示一個不可迴避的現實：AI 使用行為已超越機構管制能力。學校無論是禁止還是放任，都會對學生的學習體驗與誠信文化產生影響——唯有積極「引導並界定」才是有效策略。這對提供 AI 使用管理工具、政策諮詢的 EdTech 廠商，是極為清晰的需求確認。&quot;, &quot;takeaway&quot;: &quot;此數據對台灣校方決策者的衝擊力極強：當禁令無效，剩下的選項是「引導」。建議設計一套「AI 使用引導框架」解決方案提案，針對大學教務處說明「引導優於禁止」的全球實證，並展示如何透過工具可視化學生 AI 使用、建立評量誠信新標準，讓教務長看到解決方案而非只聽到問題。&quot;, &quot;sourceUrl&quot;: &quot;https://news.gallup.com/poll/704090/routine-college-students-despite-campus-limits.aspx&quot;, &quot;sourceName&quot;: &quot;Gallup · 美國大學生 AI 使用調查&quot;}">
+        <span class="tag tag-research">研究</span>
+        <div class="item-text">
+          <div class="item-title">Gallup 最新調查：57% 美國大學生日常用 AI，逾半數被勸阻卻照樣使用</div>
+          <div class="item-source">Gallup</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;機構合作&quot;, &quot;tagClass&quot;: &quot;tag-partner&quot;, &quot;tagLabel&quot;: &quot;合作&quot;, &quot;title&quot;: &quot;辛辛那提大學 AI 中心正式獲批，承諾跨院系整合部署展開新里程&quot;, &quot;para1&quot;: &quot;美國辛辛那提大學（University of Cincinnati）宣布 AI 中心正式通過校方審批，進入正式營運階段。該中心的設立旨在推動全校跨院系 AI 研究與教學整合，重點涵蓋 AI 在醫學、工程、設計及商業等領域的應用研究，並計畫提供師生跨領域 AI 技能培訓課程。&quot;, &quot;para2&quot;: &quot;大學層級「AI 中心」的設立正在全美各研究型大學形成浪潮，代表 AI 整合從院系個別嘗試演進為機構級戰略部署。擁有專責 AI 中心的大學將在教育部評鑑與校務研究上取得優勢，同時形成統一的 AI 工具採購決策樞紐，使廠商可透過一個窗口滲透全校採購。&quot;, &quot;takeaway&quot;: &quot;辛辛那提模式顯示「AI 中心」正成為大學 AI 採購的新決策入口。建議在台灣高校業務拓展中，將「是否有 AI 委員會或 AI 中心負責人」列為優先識別標準，並針對這些角色設計「大學 AI 中心啟動顧問方案」——比起院系個別銷售，透過中央化決策單位更有效率地推動全校合作。&quot;, &quot;sourceUrl&quot;: &quot;https://www.uc.edu/news/articles/2026/11/ai-center-officially-approved.html&quot;, &quot;sourceName&quot;: &quot;University of Cincinnati · AI 中心公告&quot;}">
+        <span class="tag tag-partner">合作</span>
+        <div class="item-text">
+          <div class="item-title">辛辛那提大學 AI 中心正式獲批，承諾跨院系整合部署展開新里程</div>
+          <div class="item-source">University of Cincinnati</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;台灣與亞洲&quot;, &quot;tagClass&quot;: &quot;tag-taiwan&quot;, &quot;tagLabel&quot;: &quot;亞洲&quot;, &quot;title&quot;: &quot;新加坡主導 ASEAN AI 教育計畫，聯合日本、韓國共推跨國 AI 素養培育框架&quot;, &quot;para1&quot;: &quot;新加坡擔任 2026-2027 年東協教育部門主席國期間，計畫推動一項涵蓋東協成員國、中國、日本及韓國的「AI 教育論壇」區域倡議。核心目標是建立跨國 AI 素養培育共同框架，包含教師能力標準、學生 AI 使用指引，以及各國教育政策的協調機制。新加坡教育部在此前定調將以「謹慎中間路線」作為區域政策指南。&quot;, &quot;para2&quot;: &quot;新加坡主導的跨國 AI 教育框架，將東亞主要教育體系（日、韓、中）納入同一政策協調機制，預示亞太地區 AI 教育標準將逐漸趨向一致化。台灣雖非東協成員，但地理與文化位置使其可成為此框架與東協市場的重要橋接角色，尤其在繁體中文 AI 教育內容與課程設計上具有不可替代的優勢。&quot;, &quot;takeaway&quot;: &quot;此跨國框架創造了台灣廠商進軍東南亞市場的政策切入點。建議研究新加坡「謹慎中間路線」政策框架的具體內容，並在對東南亞教育機構的提案中展示台灣產品如何符合此框架的設計原則——將「符合亞太主流 AI 教育治理標準」作為出口市場的核心賣點之一。&quot;, &quot;sourceUrl&quot;: &quot;https://www.chinadailyhk.com/hk/article/636844&quot;, &quot;sourceName&quot;: &quot;China Daily HK · 新加坡 ASEAN AI 教育&quot;}">
+        <span class="tag tag-taiwan">亞洲</span>
+        <div class="item-text">
+          <div class="item-title">新加坡主導 ASEAN AI 教育計畫，聯合日本、韓國共推跨國 AI 素養培育框架</div>
+          <div class="item-source">China Daily HK</div>
+        </div>
+      </div>
+    </aside>
+    <div class="detail-panel" id="detail-2026-11-14">
+      <div class="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <p>點擊左側新聞查看詳情</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="day-pane" hidden data-day="2026-11-13">
   <div class="split">
     <aside class="news-list" id="list-2026-11-13">
       <div class="pane-header">11月13日（週五）<span class="count"> · 7 則</span></div>
@@ -1446,7 +1519,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026-11-13 07:21 台北時間</span>
+  最近更新：<span id="updated">2026-11-14 07:19 台北時間</span>
 </footer>
 
 <script>
