@@ -491,8 +491,8 @@ body {
   <button class="tab" data-week="0" data-day="2026-11-11"><span class="tab-dow">週三</span><span class="tab-date">11/11</span></button>
   <button class="tab" data-week="0" data-day="2026-11-12"><span class="tab-dow">週四</span><span class="tab-date">11/12</span></button>
   <button class="tab" data-week="0" data-day="2026-11-13"><span class="tab-dow">週五</span><span class="tab-date">11/13</span></button>
-  <button class="tab active" data-week="0" data-day="2026-11-14"><span class="tab-dow">週六</span><span class="tab-date">11/14</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-week="0" data-day="2026-11-15"><span class="tab-dow">週日</span><span class="tab-date">11/15</span></button>
+  <button class="tab" data-week="0" data-day="2026-11-14"><span class="tab-dow">週六</span><span class="tab-date">11/14</span></button>
+  <button class="tab active" data-week="0" data-day="2026-11-15"><span class="tab-dow">週日</span><span class="tab-date">11/15</span><span class="tab-today">今日</span></button>
   <button class="tab" data-week="1" data-day="2026-11-02"><span class="tab">週一</span><span class="tab">11/2</span></button>
   <button class="tab" data-week="1" data-day="2026-11-03"><span class="tab">週二</span><span class="tab">11/3</span></button>
   <button class="tab" data-week="1" data-day="2026-11-04"><span class="tab">週三</span><span class="tab">11/4</span></button>
@@ -503,7 +503,80 @@ body {
 </nav>
 
 <div id="panesContainer">
-<section class="day-pane" data-day="2026-11-14">
+<section class="day-pane" data-day="2026-11-15">
+  <div class="split">
+    <aside class="news-list" id="list-2026-11-15">
+      <div class="pane-header">11月15日（週日）<span class="count"> · 7 則</span></div>
+      <div class="section-label">產品動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;產品動態&quot;, &quot;tagClass&quot;: &quot;tag-product&quot;, &quot;tagLabel&quot;: &quot;產品&quot;, &quot;title&quot;: &quot;11/10 Anthropic 與美國兩大教師工會簽署 K-12 資料隱私協議，Claude 學校部署取得法律保障&quot;, &quot;para1&quot;: &quot;Anthropic 於 11 月 10 日宣布與美國教師聯合會（AFT）及紐約聯合教師聯合會（UFT）簽署具法律約束力的 K-12 資料保護協議。協議規定 Claude for Teachers 中的學生與教師資料僅能用於教育目的，學校掌控資料保存與刪除時程，且條款追溯適用於現有學區合約。此前微軟已於同年 9 月簽署類似協議。&quot;, &quot;para2&quot;: &quot;工會背書的隱私協議代表 AI 廠商在進入 K-12 市場的「信任門檻」正式提高。Anthropic 的做法不僅是自願行為，更是在競爭壓力下的策略跟進——顯示有教師工會發言權的市場，資料合規已從加分項變成入場券。這對正在評估 AI 工具採購的台灣學區，提供了制定採購標準的國際參照。&quot;, &quot;takeaway&quot;: &quot;台灣尚無 AI EdTech 廠商公開揭露標準化資料保護協議。建議將「與教師組織共同制定資料承諾書」列入業務策略，不必等政府法規強制——主動公告具體的資料不訓練聲明、刪除時程與第三方稽核機制，能在台灣市場快速建立差異化信任優勢，對教師工會及家長會的說服效力遠強於一般行銷話術。&quot;, &quot;sourceUrl&quot;: &quot;https://www.k12dive.com/news/anthropic-enters-student-ai-privacy-agreement-with-teachers-unions/&quot;, &quot;sourceName&quot;: &quot;K-12 Dive · Anthropic 教育隱私協議&quot;}">
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">11/10 Anthropic 與美國兩大教師工會簽署 K-12 資料隱私協議，Claude 學校部署取得法律保障</div>
+          <div class="item-source">K-12 Dive</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;產品動態&quot;, &quot;tagClass&quot;: &quot;tag-product&quot;, &quot;tagLabel&quot;: &quot;產品&quot;, &quot;title&quot;: &quot;OpenAI 宣告 12/11 關閉自訂 GPT，K-12 學校須在限期前完成工作流遷移&quot;, &quot;para1&quot;: &quot;OpenAI 確認自訂 GPT（Custom GPTs）將於 2026 年 12 月 11 日正式退場，企業版與 K-12 教育工作區新 GPT 創建已於 10 月 26 日截止。現有對話紀錄、自訂動作及分享設定不會自動遷移，學校須在期限前手動重建工作流，以 Plugins 或 MCP 伺服器替代。部分有核准豁免的企業可延至 2027 年 2 月。&quot;, &quot;para2&quot;: &quot;此次退場是 OpenAI 將生態系從「獨立 GPT」切換至「Plugin 標準化架構」的重大轉型。對已部署自訂 GPT 的台灣大學院所而言，這是立即的遷移壓力；但更深遠的意義是：GPT 時代的個性化客製化邏輯正在被標準化 Plugin 取代，機構與廠商都需要重新評估 AI 工具的整合策略。&quot;, &quot;takeaway&quot;: &quot;台灣已使用 ChatGPT Edu 或 K-12 自訂 GPT 的學校應立即清查現有工作流，並在 11 月底前完成遷移計畫。建議廠商將此次退場視為切入機會：主動提供「GPT 轉 Plugin 一鍵遷移工具」或諮詢服務，幫助學校在限期前安全轉換，同時借機重新深化與校方的合作關係。&quot;, &quot;sourceUrl&quot;: &quot;https://www.edtechinnovationhub.com/news/openai-to-retire-custom-gpts-in-december-as-creators-move-to-plugins&quot;, &quot;sourceName&quot;: &quot;EdTech Innovation Hub · OpenAI GPT 退場&quot;}">
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">OpenAI 宣告 12/11 關閉自訂 GPT，K-12 學校須在限期前完成工作流遷移</div>
+          <div class="item-source">EdTech Innovation Hub</div>
+        </div>
+      </div>
+      <div class="section-label">機構合作</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;機構合作&quot;, &quot;tagClass&quot;: &quot;tag-partner&quot;, &quot;tagLabel&quot;: &quot;合作&quot;, &quot;title&quot;: &quot;11/10 Ohio State 與 Microsoft 簽 5 年 AI 雲端教研戰略協議，涵蓋教學、研究與臨床&quot;, &quot;para1&quot;: &quot;俄亥俄州立大學與 Microsoft 於 11 月 10 日宣布為期五年的 AI 與雲端戰略夥伴關係，合作範疇涵蓋學術研究、臨床醫療與教育三大領域。協議目標是將大學 70 至 80% 的儲存與運算資源遷移至 Azure，並深度整合 Microsoft 的 AI 工具於教學流程與研究工作流中。&quot;, &quot;para2&quot;: &quot;頂尖研究型大學與科技巨頭的五年戰略協議，代表高教 AI 採購正在從「專案式試驗」升級為「機構層級長期綁定」。此類協議通常包含聯合研究基金、師生培訓計畫及優先技術取用權，對其他大學形成「早簽約取得更好條件」的壓力，加速了高教 AI 整合的集中化趨勢。&quot;, &quot;takeaway&quot;: &quot;台灣大學在與 Microsoft、Google 等大廠談判時，可參考 Ohio State 模式提出「跨領域、多年期、附帶師培」的合作框架，而非僅採購單一授權。建議台灣廠商主動協助校方整理「合作大廠談判清單」——從資料主權、研究基金到師生培訓——以顧問角色強化在學校 AI 採購決策中的不可取代性。&quot;, &quot;sourceUrl&quot;: &quot;https://casrai.org/news/ohio-state-microsoft-ai-research-partnership-2026&quot;, &quot;sourceName&quot;: &quot;CASRAI · Ohio State-Microsoft 合作&quot;}">
+        <span class="tag tag-partner">合作</span>
+        <div class="item-text">
+          <div class="item-title">11/10 Ohio State 與 Microsoft 簽 5 年 AI 雲端教研戰略協議，涵蓋教學、研究與臨床</div>
+          <div class="item-source">CASRAI</div>
+        </div>
+      </div>
+      <div class="section-label">市場趨勢</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;市場趨勢&quot;, &quot;tagClass&quot;: &quot;tag-market&quot;, &quot;tagLabel&quot;: &quot;趨勢&quot;, &quot;title&quot;: &quot;11/13 Kansas 要求全州所有學區強制訂定 AI 教學政策與實施計畫&quot;, &quot;para1&quot;: &quot;堪薩斯州教育委員會於 11 月 13 日公布規定，要求全州每一個學區及經認可私立學校，均需訂定「教學科技政策」與「AI 導入實施計畫」。此舉使堪薩斯成為繼紐約、加州之後，另一個以州級行政命令強制推動學區 AI 政策的美國大州。&quot;, &quot;para2&quot;: &quot;從「各校自主決定」到「州級強制規範」，堪薩斯案例標誌著美國 AI 教育政策的治理層級正從個別學區上移至州政府。當更多州跟進時，學區 AI 政策將趨向標準化——這對提供政策諮詢、合規工具或課程認證的 EdTech 廠商，意味著未來採購將集中在「符合州級規範」的解決方案。&quot;, &quot;takeaway&quot;: &quot;台灣縣市教育局目前各自擬定 AI 政策，尚無統一規範框架。建議廠商提前研究堪薩斯、紐約、加州的州級 AI 政策模板，整理出「符合主流政策框架的 AI 學校部署清單」，作為說服教育局「跟上國際標準」的具體工具包，在台灣縣市政策制定期間搶佔顧問位置。&quot;, &quot;sourceUrl&quot;: &quot;https://www.yahoo.com/news/politics/articles/artificial-intelligence-policy-implemented-kansas-224043954.html&quot;, &quot;sourceName&quot;: &quot;Yahoo News · Kansas AI 教育政策&quot;}">
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">11/13 Kansas 要求全州所有學區強制訂定 AI 教學政策與實施計畫</div>
+          <div class="item-source">Yahoo News</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;市場趨勢&quot;, &quot;tagClass&quot;: &quot;tag-market&quot;, &quot;tagLabel&quot;: &quot;趨勢&quot;, &quot;title&quot;: &quot;南韓 AI 教科書政策大逆轉：採用率僅 30%，出版商集體對教育部提行政訴訟&quot;, &quot;para1&quot;: &quot;南韓原定強制推行的 AI 數位教科書計畫，在輿論反彈與採用率不足 30% 的壓力下，於 2025 年 8 月被國會降級為「選用教材」。多家因政策急轉直下蒙受損失的 EdTech 出版商，已於 2026 年提起行政訴訟，要求教育部為政策搖擺造成的商業損失負責，案件目前仍在審理中。&quot;, &quot;para2&quot;: &quot;南韓案例揭示政府主導的 AI 教育強制推行若缺乏配套師培與教師認同，將面臨執行失靈的系統性風險。「由上而下」的政策驅動若未轉化為「由內而外」的教師使用意願，採用率天花板極低。這對台灣 AI 方舟計畫的實施者和廠商都是重要警示：投入前務必鎖定教師痛點，而非只對接政策指標。&quot;, &quot;takeaway&quot;: &quot;南韓失敗案例是台灣廠商做「教師深度訪談」最有力的說服材料。建議整理一份「AI 教育政策風險速報：南韓案例教訓」，主動分享給教育部政策顧問與縣市教育局——以提供預警洞察的顧問姿態切入，遠比單純推銷產品更能建立長期信任關係與政策影響力。&quot;, &quot;sourceUrl&quot;: &quot;https://www.aacrao.org/edge/emergent-news/south-korea-pulls-plug-on-ai-textbooks--leaving-schools--companies-without-funding-for-them&quot;, &quot;sourceName&quot;: &quot;AACRAO Edge · 南韓 AI 教科書政策逆轉&quot;}">
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">南韓 AI 教科書政策大逆轉：採用率僅 30%，出版商集體對教育部提行政訴訟</div>
+          <div class="item-source">AACRAO Edge</div>
+        </div>
+      </div>
+      <div class="section-label">台灣與亞洲</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;台灣與亞洲&quot;, &quot;tagClass&quot;: &quot;tag-taiwan&quot;, &quot;tagLabel&quot;: &quot;台灣&quot;, &quot;title&quot;: &quot;11/11 台灣教育科技展盛大開幕，AI 方舟計畫 114 億元學習投資正式啟動&quot;, &quot;para1&quot;: &quot;2026 資訊月暨台灣教育科技展於 11 月 11 至 15 日在台北世貿一館登場，以「共創 AI 新時代」為主題，集結 150 個參展單位、700 個攤位。教育部推動的 AI 人才方舟計畫至 2029 年將投入 114 億元，聚焦 AI 學習環境建構、跨域師資培育及強化數據決策能力三大方向。教育部長鄭英耀在展覽論壇上揭示「未來人才 AI 能力圖像」，規劃國小到大學的貫穿式 AI 素養培育路徑。&quot;, &quot;para2&quot;: &quot;展覽規模與預算規模同步創歷史新高，代表台灣政府正式宣示將 AI 教育基礎建設列為國家級優先投資。114 億元的四年預算將在未來數年釋出包含硬體、平台、師培及課程內容的採購標案，是台灣本土 EdTech 廠商三年內最大的結構性機遇窗口。&quot;, &quot;takeaway&quot;: &quot;此次展覽是台灣 EdTech 廠商接觸決策者的黃金場域。建議盤點自家產品與「AI 學習環境建構」「師培認證」「跨域課程模組」三大預算方向的對應程度，同時整理參展廠商名單分析競爭版圖，在預算正式下達前完成提案就位，尤其要建立與縣市教育局採購承辦人的直接聯繫管道。&quot;, &quot;sourceUrl&quot;: &quot;https://flipedu.parenting.com.tw/article/011202&quot;, &quot;sourceName&quot;: &quot;翻轉教育 · 台灣教育科技展 2026&quot;}">
+        <span class="tag tag-taiwan">台灣</span>
+        <div class="item-text">
+          <div class="item-title">11/11 台灣教育科技展盛大開幕，AI 方舟計畫 114 億元學習投資正式啟動</div>
+          <div class="item-source">翻轉教育</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;台灣與亞洲&quot;, &quot;tagClass&quot;: &quot;tag-taiwan&quot;, &quot;tagLabel&quot;: &quot;亞洲&quot;, &quot;title&quot;: &quot;11/4 新加坡 EDUtech Asia 2026 閉幕：8,000 位教育者共塑 AI 人本教育未來&quot;, &quot;para1&quot;: &quot;亞洲最大教育科技展會 EDUtech Asia 2026 於 11 月 4 至 5 日在新加坡聖淘沙展覽中心舉行，匯集 250 位以上演講者、200 個以上參展廠商及 60 個以上新創，總出席人數逾 8,000 人。新加坡教育部代表闡述該國「謹慎中間路線」AI 政策——既不全面禁止，也不放任採用，強調以學生學習成效為核心治理原則。&quot;, &quot;para2&quot;: &quot;新加坡定位為「人本 AI 教育」的區域標準制定者，吸引日本、韓國、東南亞各國教育部代表出席。在台灣缺席東協教育體系的情況下，新加坡模式正在填補亞太 AI 教育治理的論述空缺，對台灣廠商開拓東南亞市場具有直接的政策參考價值。&quot;, &quot;takeaway&quot;: &quot;新加坡的「人本 AI」論述框架具高度可移植性。建議台灣廠商研究此次 EDUtech Asia 的主題演講與白皮書，將「以學生學習成效為核心的 AI 設計原則」納入品牌敘事——這種論述比技術規格更能打動亞太區教育政策制定者，尤其在競標東南亞教育機構時，能快速建立與新加坡主流政策語境的一致性。&quot;, &quot;sourceUrl&quot;: &quot;https://en.prnasia.com/releases/apac/asia-s-largest-education-event-returns-edutech-asia-2026-brings-8-000-educators-to-singapore-to-shape-a-human-centred-ai-powered-future-of-learning-552805.shtml&quot;, &quot;sourceName&quot;: &quot;PR Newswire APAC · EDUtech Asia 2026&quot;}">
+        <span class="tag tag-taiwan">亞洲</span>
+        <div class="item-text">
+          <div class="item-title">11/4 新加坡 EDUtech Asia 2026 閉幕：8,000 位教育者共塑 AI 人本教育未來</div>
+          <div class="item-source">PR Newswire APAC</div>
+        </div>
+      </div>
+    </aside>
+    <div class="detail-panel" id="detail-2026-11-15">
+      <div class="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <p>點擊左側新聞查看詳情</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="day-pane" hidden data-day="2026-11-14">
   <div class="split">
     <aside class="news-list" id="list-2026-11-14">
       <div class="pane-header">11月14日（週六）<span class="count"> · 7 則</span></div>
@@ -1519,7 +1592,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026-11-14 07:19 台北時間</span>
+  最近更新：<span id="updated">2026-11-15 07:20 (台北)</span>
 </footer>
 
 <script>
