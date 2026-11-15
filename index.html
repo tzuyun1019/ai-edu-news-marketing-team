@@ -472,7 +472,7 @@ body {
   <div class="kicker">每日情報 · 教育 AI 應用</div>
   <h1>全球教育 AI 應用動態 <span style="font-weight:400;color:var(--ink-soft);font-size:.82em">快讀版</span></h1>
   <div class="meta">
-    <span id="weekrange">本週 11/9–11/15</span>
+    <span id="weekrange">本週 11/16–11/22</span>
     <span class="dot">·</span>
     <span class="badge">行銷團隊版</span>
     <span class="dot">·</span>
@@ -486,24 +486,107 @@ body {
   <button class="week-nav-btn" id="btnThisWeek" onclick="switchToWeek(0)" disabled>本週 →</button>
 </div>
 <nav class="day-tabs" id="dayTabs">
-  <button class="tab" data-week="0" data-day="2026-11-09"><span class="tab-dow">週一</span><span class="tab-date">11/9</span></button>
-  <button class="tab" data-week="0" data-day="2026-11-10"><span class="tab-dow">週二</span><span class="tab-date">11/10</span></button>
-  <button class="tab" data-week="0" data-day="2026-11-11"><span class="tab-dow">週三</span><span class="tab-date">11/11</span></button>
-  <button class="tab" data-week="0" data-day="2026-11-12"><span class="tab-dow">週四</span><span class="tab-date">11/12</span></button>
-  <button class="tab" data-week="0" data-day="2026-11-13"><span class="tab-dow">週五</span><span class="tab-date">11/13</span></button>
-  <button class="tab" data-week="0" data-day="2026-11-14"><span class="tab-dow">週六</span><span class="tab-date">11/14</span></button>
-  <button class="tab active" data-week="0" data-day="2026-11-15"><span class="tab-dow">週日</span><span class="tab-date">11/15</span><span class="tab-today">今日</span></button>
-  <button class="tab" data-week="1" data-day="2026-11-02"><span class="tab">週一</span><span class="tab">11/2</span></button>
-  <button class="tab" data-week="1" data-day="2026-11-03"><span class="tab">週二</span><span class="tab">11/3</span></button>
-  <button class="tab" data-week="1" data-day="2026-11-04"><span class="tab">週三</span><span class="tab">11/4</span></button>
-  <button class="tab" data-week="1" data-day="2026-11-05"><span class="tab">週四</span><span class="tab">11/5</span></button>
-  <button class="tab" data-week="1" data-day="2026-11-06"><span class="tab">週五</span><span class="tab">11/6</span></button>
-  <button class="tab" data-week="1" data-day="2026-11-07"><span class="tab">週六</span><span class="tab">11/7</span></button>
-  <button class="tab" data-week="1" data-day="2026-11-08"><span class="tab-dow">週日</span><span class="tab-date">11/8</span></button>
+  <button class="tab active" data-week="0" data-day="2026-11-16"><span class="tab-dow">週一</span><span class="tab-date">11/16</span><span class="tab-today">今日</span></button>
+  <button class="tab empty" data-week="0" data-day="2026-11-17"><span class="tab-dow">週二</span><span class="tab-date">11/17</span></button>
+  <button class="tab empty" data-week="0" data-day="2026-11-18"><span class="tab-dow">週三</span><span class="tab-date">11/18</span></button>
+  <button class="tab empty" data-week="0" data-day="2026-11-19"><span class="tab-dow">週四</span><span class="tab-date">11/19</span></button>
+  <button class="tab empty" data-week="0" data-day="2026-11-20"><span class="tab-dow">週五</span><span class="tab-date">11/20</span></button>
+  <button class="tab empty" data-week="0" data-day="2026-11-21"><span class="tab-dow">週六</span><span class="tab-date">11/21</span></button>
+  <button class="tab empty" data-week="0" data-day="2026-11-22"><span class="tab-dow">週日</span><span class="tab-date">11/22</span></button>
+  <button class="tab" data-week="1" data-day="2026-11-09"><span class="tab-dow">週一</span><span class="tab-date">11/9</span></button>
+  <button class="tab" data-week="1" data-day="2026-11-10"><span class="tab-dow">週二</span><span class="tab-date">11/10</span></button>
+  <button class="tab" data-week="1" data-day="2026-11-11"><span class="tab-dow">週三</span><span class="tab-date">11/11</span></button>
+  <button class="tab" data-week="1" data-day="2026-11-12"><span class="tab-dow">週四</span><span class="tab-date">11/12</span></button>
+  <button class="tab" data-week="1" data-day="2026-11-13"><span class="tab-dow">週五</span><span class="tab-date">11/13</span></button>
+  <button class="tab" data-week="1" data-day="2026-11-14"><span class="tab-dow">週六</span><span class="tab-date">11/14</span></button>
+  <button class="tab" data-week="1" data-day="2026-11-15"><span class="tab-dow">週日</span><span class="tab-date">11/15</span></button>
 </nav>
 
 <div id="panesContainer">
-<section class="day-pane" data-day="2026-11-15">
+<section class="day-pane" data-day="2026-11-16">
+  <div class="split">
+    <aside class="news-list" id="list-2026-11-16">
+      <div class="pane-header">11月16日（週一）<span class="count"> · 8 則</span></div>
+      <div class="section-label">產品動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;產品動態&quot;, &quot;tagClass&quot;: &quot;tag-product&quot;, &quot;tagLabel&quot;: &quot;產品&quot;, &quot;title&quot;: &quot;11/4 Google AI Educator Series 擴至五大區域並攜手菲律賓培訓百萬教師&quot;, &quot;para1&quot;: &quot;Google 於 2026 年 11 月初宣布 AI Educator Series 擴展至西班牙、巴西、墨西哥、澳洲及撒哈拉以南非洲地區，首批全球模組 11 月 4 日起在美國上線。另與菲律賓教育部、高等教育委員會及技職發展局三方合作，目標為超過一百萬名教師提供 AI 教學能力培訓課程。&quot;, &quot;para2&quot;: &quot;Google 此次擴張選定的五個區域涵蓋高成長教育市場，配合菲律賓百萬師培計畫，代表 Google 正在把教師培訓作為 AI 教育生態系入口策略——以免費師培課程換取未來 Workspace for Education 的深度綁定，這種「師培換黏著」模式對台灣市場同樣值得警惕與學習。&quot;, &quot;takeaway&quot;: &quot;台灣廠商可研究 Google AI Educator Series 的課程架構，參照其「模組化、可認證」設計，為台灣教師打造專屬 AI 教學應用工作坊，強調取得可展示的結業認證，以差異化對抗 Google 免費資源的競爭壓力。&quot;, &quot;sourceUrl&quot;: &quot;https://blog.google/products-and-platforms/products/education/google-ai-educator-series-global-expansion-november-2026/&quot;, &quot;sourceName&quot;: &quot;Google Blog · AI Educator Series 全球擴張&quot;}">
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">11/4 Google AI Educator Series 擴至五大區域並攜手菲律賓培訓百萬教師</div>
+          <div class="item-source">Google Blog</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;產品動態&quot;, &quot;tagClass&quot;: &quot;tag-product&quot;, &quot;tagLabel&quot;: &quot;產品&quot;, &quot;title&quot;: &quot;11/3 Google K-12 政策：學校若停用 Gemini 可能同步失去 Google 搜尋功能&quot;, &quot;para1&quot;: &quot;Google 於 11 月 3 日宣布調整學校帳號 AI 控制設定：Gemini 與 Gemini Notebook 可由管理員關閉，但 AI Mode 與 AI Overview 仍嵌入 Google 搜尋，學校若選擇全面停用 AI，學生可能同步喪失 Google 搜尋存取。加州教師工會要求暫停 K-8 年級使用生成式 AI 三年，紐約市則宣布 2026-27 學年對 2 至 8 年級學生面向生成式 AI 實施一年暫緩。&quot;, &quot;para2&quot;: &quot;Google 把搜尋與 AI 功能深度綁定，讓學校面臨「要 AI 就要接受全套、不要 AI 就失去基礎工具」的兩難。這種技術鎖定策略將迫使學區重新評估替代搜尋方案，也可能加速政府對科技巨頭在教育場域的反壟斷審視，台灣教育主管機關應關注後續政策演變。&quot;, &quot;takeaway&quot;: &quot;此事件為台灣非 Google 生態廠商創造機會視窗：當學校開始質疑過度依賴 Google 的風險，主動提出「開放、可管控、不綁定搜尋」的 AI 教育工具方案，是切入對話的最佳時機，可搭配「AI 工具主權管控指南」做行銷內容佈局。&quot;, &quot;sourceUrl&quot;: &quot;https://www.cnn.com/2026/11/03/tech/google-ai-search-policy&quot;, &quot;sourceName&quot;: &quot;CNN · Google 學校 AI 政策爭議&quot;}">
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">11/3 Google K-12 政策：學校若停用 Gemini 可能同步失去 Google 搜尋功能</div>
+          <div class="item-source">CNN</div>
+        </div>
+      </div>
+      <div class="section-label">機構合作</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;機構合作&quot;, &quot;tagClass&quot;: &quot;tag-partner&quot;, &quot;tagLabel&quot;: &quot;合作&quot;, &quot;title&quot;: &quot;11/9 OpenAI 擴大 ChatGPT Edu 至澳洲四所頂尖大學，雪梨大學設百萬澳幣 AI 研究基金&quot;, &quot;para1&quot;: &quot;OpenAI 於 2026 年 11 月 9 日宣布與 UNSW 雪梨、雪梨大學、拉籌伯大學及阿得萊德大學合作推廣 ChatGPT Edu，雪梨大學採分階段試點導入模式，並同步設立一百萬澳幣 AI 永續研究與創新基金，支持 AI 教育研究及師生培訓計畫。&quot;, &quot;para2&quot;: &quot;OpenAI 在澳洲四所大學同步落地，代表 ChatGPT Edu 的高教滲透策略正在英語系太平洋地區加速。澳洲大學的分階段試點模式，以及配套研究基金的設立，提供了一個可複製的「大學 AI 夥伴關係框架」，對台灣大學評估引入 ChatGPT Edu 具直接參考價值。&quot;, &quot;takeaway&quot;: &quot;台灣大學在與 OpenAI 或 Anthropic 談判導入方案時，可參照澳洲案例提出「附帶聯合研究基金」條款，而非單純採購授權。建議台灣 EdTech 顧問整理「澳洲大學 ChatGPT Edu 導入可行性報告」作為說服工具，協助校方爭取更好的合作條件。&quot;, &quot;sourceUrl&quot;: &quot;https://casrai.org/news/openai-four-australian-universities-chatgpt-edu-2026&quot;, &quot;sourceName&quot;: &quot;CASRAI · OpenAI 澳洲大學合作&quot;}">
+        <span class="tag tag-partner">合作</span>
+        <div class="item-text">
+          <div class="item-title">11/9 OpenAI 擴大 ChatGPT Edu 至澳洲四所頂尖大學，雪梨大學設百萬澳幣 AI 研究基金</div>
+          <div class="item-source">CASRAI</div>
+        </div>
+      </div>
+      <div class="section-label">資金動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;資金動態&quot;, &quot;tagClass&quot;: &quot;tag-funding&quot;, &quot;tagLabel&quot;: &quot;資金&quot;, &quot;title&quot;: &quot;10/29 Digital Science 收購 Jenni AI：800 萬學術用戶 AI 寫作平台整合 1.71 億篇論文資料庫&quot;, &quot;para1&quot;: &quot;學術科技集團 Digital Science 於 2026 年 10 月 29 日宣布收購 AI 學術寫作平台 Jenni AI，後者服務全球 189 個國家超過 800 萬名學生與研究者。收購完成後，Digital Science 計畫將 Jenni AI 與旗下 Dimensions 資料庫（收錄 1.71 億篇論文）整合，提升引用可驗證性，財務條款未披露。&quot;, &quot;para2&quot;: &quot;此次收購讓 Digital Science 旗下學術工具矩陣（Overleaf、Papers AI、ReadCube）新增了面向廣大學生的 AI 寫作入口。「大量用戶 + 龐大論文資料庫」的整合邏輯，代表學術 AI 競爭正從功能比拚升級為「數據護城河」之爭，對沒有原生學術資料庫的新創形成更高進入壁壘。&quot;, &quot;takeaway&quot;: &quot;台灣尚無本土學術寫作 AI 平台具備可比的引用核實能力。建議廠商研究與國家圖書館、各大學圖書館合作建立台灣版「可驗證引用資料庫」，或先以與 Jenni AI 整合為短期策略，做為進入台灣高教 AI 寫作市場的快速切入點。&quot;, &quot;sourceUrl&quot;: &quot;https://www.citybiz.co/?p=926385&quot;, &quot;sourceName&quot;: &quot;CityBiz · Digital Science 收購 Jenni AI&quot;}">
+        <span class="tag tag-funding">資金</span>
+        <div class="item-text">
+          <div class="item-title">10/29 Digital Science 收購 Jenni AI：800 萬學術用戶 AI 寫作平台整合 1.71 億篇論文資料庫</div>
+          <div class="item-source">CityBiz</div>
+        </div>
+      </div>
+      <div class="section-label">台灣與亞洲</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;台灣與亞洲&quot;, &quot;tagClass&quot;: &quot;tag-taiwan&quot;, &quot;tagLabel&quot;: &quot;台灣&quot;, &quot;title&quot;: &quot;11/13 台灣投入逾 1,300 億元推 AI 新十大建設，AI 教育 4 年投入 117 億從中小學扎根&quot;, &quot;para1&quot;: &quot;行政院長卓榮泰於 2026 年資訊月開幕致詞宣示，未來 4 年將投入逾 1,300 億元推動「AI 新十大建設」，其中 AI 教育專項資金至 2029 年投入約 117 億元，從中小學階段全面推動 AI 素養培育，台北市同步發布《AI 教育政策白皮書》，2026 資訊月展覽集結 150 個參展單位。&quot;, &quot;para2&quot;: &quot;117 億元 4 年的教育專項預算將在未來數年持續釋出採購標案，涵蓋硬體建設、平台授權、師培課程及內容開發。這是台灣本土 EdTech 廠商三至四年內最具規模的政策驅動成長機遇，早期卡位政策標準制定比後期競標更具戰略優勢。&quot;, &quot;takeaway&quot;: &quot;現在是鎖定縣市教育局採購承辦人與政策顧問的黃金時機。建議盤點自家產品與「AI 學習環境建設」「師培認證模組」「跨域課程內容」三大預算方向的對應程度，在正式標案發出前完成提案就位，同時主動產出符合白皮書語境的技術說明文件，提高後續採購評審的辨識度。&quot;, &quot;sourceUrl&quot;: &quot;https://www.secretchina.com/news/b5/2026/11/13/1107404.html&quot;, &quot;sourceName&quot;: &quot;看中國 · 台灣 AI 新十大建設&quot;}">
+        <span class="tag tag-taiwan">台灣</span>
+        <div class="item-text">
+          <div class="item-title">11/13 台灣投入逾 1,300 億元推 AI 新十大建設，AI 教育 4 年投入 117 億從中小學扎根</div>
+          <div class="item-source">看中國</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;台灣與亞洲&quot;, &quot;tagClass&quot;: &quot;tag-taiwan&quot;, &quot;tagLabel&quot;: &quot;亞洲&quot;, &quot;title&quot;: &quot;南韓 1.4 兆韓元 AI 人才計畫：2026 年起設全國 17 區域 AI 教育支援中心&quot;, &quot;para1&quot;: &quot;依據南韓「全民 AI 人才培育計畫」，教育部 2026 年起分階段於全國各地方教育廳設立 AI 教育支援中心，2028 年前擴展至 17 個區域，提供學生、家長及教師培訓，預計 2026 年讓逾 150 萬名學生接受 AI 學習內容。該計畫總預算 1.4 兆韓元（約 9.6 億美元），與今年 1 月生效的「AI 框架法」緊密連結。&quot;, &quot;para2&quot;: &quot;南韓以「全民 AI」為政策主軸，把 AI 教育支援中心從首都圈向地方城市分散佈局，是東亞國家中最積極的 AI 教育基礎建設擴張計畫。相較於台灣集中在都會區的師培資源，南韓的區域分散策略對台灣農村或偏遠縣市的 AI 教育推廣具有政策參考價值。&quot;, &quot;takeaway&quot;: &quot;南韓的「地方 AI 教育中心」模式啟示台灣：政策資金不應只集中在六都，建議廠商主動設計「非都會縣市 AI 教育適地化方案」，包括低頻寬友善介面、師培巡迴工作坊及在地語境教材，以差異化策略搶進競爭較少的離島與偏鄉教育市場。&quot;, &quot;sourceUrl&quot;: &quot;https://www.koreaherald.com/article/10612847&quot;, &quot;sourceName&quot;: &quot;Korea Herald · 南韓 AI 人才計畫&quot;}">
+        <span class="tag tag-taiwan">亞洲</span>
+        <div class="item-text">
+          <div class="item-title">南韓 1.4 兆韓元 AI 人才計畫：2026 年起設全國 17 區域 AI 教育支援中心</div>
+          <div class="item-source">Korea Herald</div>
+        </div>
+      </div>
+      <div class="section-label">效果研究</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;效果研究&quot;, &quot;tagClass&quot;: &quot;tag-research&quot;, &quot;tagLabel&quot;: &quot;研究&quot;, &quot;title&quot;: &quot;CSU 全美最大高教 AI 調查：9.4 萬人參與，95% 曾使用 AI 但信任度仍待建立&quot;, &quot;para1&quot;: &quot;加州州立大學系統（CSU）發布迄今規模最大的高教 AI 調查，逾 94,000 名師生參與，95% 受訪者表示曾使用至少一種 AI 工具；然而受訪者對 AI 輸出準確性仍持高度保留態度，強調需要驗證機制。另一項 Digital Education Council 拉丁美洲調查顯示，僅 29% 學生認為教師有能力引導 AI 使用。&quot;, &quot;para2&quot;: &quot;「高使用率、低信任度」的調查結果，揭示了高教 AI 整合最關鍵的斷層：工具普及但使用指引嚴重不足。尤其在師生互動層面，教師本身對 AI 的掌握度直接決定學生的使用品質——這為專注提供「教師 AI 使用能力培訓」的廠商提供了明確的市場空缺定位。&quot;, &quot;takeaway&quot;: &quot;「高滲透率但缺乏信任」正是推廣 AI 核實工具與教師引導課程的最佳市場切入點。建議廠商以「幫助師生正確使用 AI、而非只提供 AI 工具」為核心訊息重新定位，開發「AI 輸出核實工作坊」、「教師 AI 引導力認證」等差異化產品線，直接對應調查揭示的痛點。&quot;, &quot;sourceUrl&quot;: &quot;https://blogs.sjsu.edu/newsroom/2026/csu-releases-findings-after-conducting-the-largest-and-most-comprehensive-survey-on-artificial-intelligence-in-higher-education/&quot;, &quot;sourceName&quot;: &quot;CSU San José State · 高教 AI 大調查&quot;}">
+        <span class="tag tag-research">研究</span>
+        <div class="item-text">
+          <div class="item-title">CSU 全美最大高教 AI 調查：9.4 萬人參與，95% 曾使用 AI 但信任度仍待建立</div>
+          <div class="item-source">CSU San José State</div>
+        </div>
+      </div>
+      <div class="section-label">市場趨勢</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;市場趨勢&quot;, &quot;tagClass&quot;: &quot;tag-market&quot;, &quot;tagLabel&quot;: &quot;趨勢&quot;, &quot;title&quot;: &quot;11/5 新加坡 EDUtech Asia 2026 閉幕：8,000 位亞洲教育者形塑人本 AI 教育標準&quot;, &quot;para1&quot;: &quot;亞洲最大教育科技展會 EDUtech Asia 2026 於 11 月 4 至 5 日在新加坡舉行，吸引 8,000 名教育者、250 位演講者及 200 個參展廠商，主題為「人本教育，AI 驅動」。新加坡身為 ASEAN 2026-2027 教育年主席國，於展會中宣示將規劃涵蓋東協、中日韓各國代表的跨國 AI 素養論壇計畫。&quot;, &quot;para2&quot;: &quot;新加坡以「謹慎中間路線」AI 教育政策定位東南亞區域標準制定者，吸引日、韓、東南亞各國教育部代表出席。當台灣尚未在東協教育體系中取得顯著存在感時，新加坡正在填補亞太 AI 教育治理的論述空缺，對希望開拓東南亞市場的台灣廠商而言是重要的政策信號。&quot;, &quot;takeaway&quot;: &quot;台灣廠商若有計畫進入東南亞教育市場，EDUtech Asia 是最具效率的年度入場門票。建議積極申請 2027 年展位並準備「台灣 AI 教育政策白皮書英文摘要」，以「與台灣 AI 教育政策接軌」作為品牌背書，對接新加坡主導的東協 AI 教育標準框架，提升在東南亞採購決策中的可信度。&quot;, &quot;sourceUrl&quot;: &quot;https://en.prnasia.com/releases/apac/asia-s-largest-education-event-returns-edutech-asia-2026-brings-8-000-educators-to-singapore-to-shape-a-human-centred-ai-powered-future-of-learning-552805.shtml&quot;, &quot;sourceName&quot;: &quot;PR Newswire APAC · EDUtech Asia 2026&quot;}">
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">11/5 新加坡 EDUtech Asia 2026 閉幕：8,000 位亞洲教育者形塑人本 AI 教育標準</div>
+          <div class="item-source">PR Newswire APAC</div>
+        </div>
+      </div>
+    </aside>
+    <div class="detail-panel" id="detail-2026-11-16">
+      <div class="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <p>點擊左側新聞查看詳情</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="day-pane" data-day="2026-11-15" hidden>
   <div class="split">
     <aside class="news-list" id="list-2026-11-15">
       <div class="pane-header">11月15日（週日）<span class="count"> · 7 則</span></div>
@@ -1038,544 +1121,6 @@ body {
     </div>
   </div>
 </section>
-<section class="day-pane" hidden data-day="2026-11-08">
-  <div class="split">
-    <aside class="news-list" id="list-2026-11-08">
-      <div class="pane-header">11月8日（週日）<span class="count"> · 6 則</span></div>
-      <div class="section-label">市場趨勢</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;市場趨勢&quot;, &quot;tagClass&quot;: &quot;tag-market&quot;, &quot;tagLabel&quot;: &quot;趨勢&quot;, &quot;title&quot;: &quot;11/3 CNN 深度報導：Google「搜尋綁AI」政策成為美國K-12教育最大爭議&quot;, &quot;para1&quot;: &quot;CNN 於 11月3日深度報導 Google 新 K-12 政策：學校選擇關閉 AI 功能，將同時失去 Google 搜尋存取權，因兩者已深度整合。前 FTC 主席 Lina Khan 直斥此舉「具強迫性」，批評 Google 以搜尋壟斷地位脅迫學校接受 AI。紐約市和洛杉磯兩大學區已率先宣布對學生使用生成式 AI 設置限制或暫時禁令。&quot;, &quot;para2&quot;: &quot;CNN 以主流媒體報導此議題，代表 Google 教育 AI 捆綁策略已從 EdTech 圈內討論升格為廣泛社會政策爭議。當科技巨頭的商業模式與教育機構的自主性產生結構性衝突，全球採購決策者需重新評估對單一平台的高度依賴。&quot;, &quot;takeaway&quot;: &quot;Google 此案例是向台灣學校主管機關提出「平台多元化策略」最有力的外部論據。建議設計「風險分散採購指南」，說明如何避免對單一科技廠商過度依賴，以此在教育採購決策中建立顧問式信任關係，而非純粹的工具銷售競爭。&quot;, &quot;sourceUrl&quot;: &quot;https://www.cnn.com/2026/11/03/tech/google-ai-search-policy&quot;, &quot;sourceName&quot;: &quot;CNN · 教育科技政策&quot;}">
-        <span class="tag tag-market">趨勢</span>
-        <div class="item-text">
-          <div class="item-title">11/3 CNN 深度報導：Google「搜尋綁AI」政策成為美國K-12教育最大爭議</div>
-          <div class="item-source">CNN</div>
-        </div>
-      </div>
-      <div class="section-label">產品動態</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;產品動態&quot;, &quot;tagClass&quot;: &quot;tag-product&quot;, &quot;tagLabel&quot;: &quot;產品&quot;, &quot;title&quot;: &quot;11/6 波士頓 AI 完全學校開學，幼稚園至8年級以 AI 授課，教師工會強烈反對&quot;, &quot;para1&quot;: &quot;AI 驅動學校 Alpha School 於波士頓開設分校，招收幼稚園至八年級學生，以 AI 擔任主要教學角色，傳統教師角色改為「導師」（Guide）輔助秩序管理。11月6日 WGBH 報導，波士頓教師工會領導層對此表示強烈反對，擔憂 AI 主導教學對學生社會情感發展的長期影響。&quot;, &quot;para2&quot;: &quot;Alpha School 模式代表 AI 教育的激進邊界：完全取代傳統教師角色。各地教師工會的強烈反應，揭示 AI 與教師角色之間的張力已進入制度性對抗階段，不再只是個別教師的接受度問題。此模式若在美國擴散，將引發深刻的師培政策與勞動法規討論。&quot;, &quot;takeaway&quot;: &quot;台灣 AI 教育推廣仍面臨類似的教師接受度挑戰。建議以「AI 輔助教師、而非取代教師」為核心訴求，主動與波士頓案例做出區別定位。在師培研習中強調 AI 解放教師時間用於高價值師生互動，能有效降低恐懼感並建立正向使用意願。&quot;, &quot;sourceUrl&quot;: &quot;https://wgbh.org/news/education-news/2026-11-06/ai-powered-youth-education-has-come-to-boston-teachers-arent-happy&quot;, &quot;sourceName&quot;: &quot;WGBH · 波士頓教育報導&quot;}">
-        <span class="tag tag-product">產品</span>
-        <div class="item-text">
-          <div class="item-title">11/6 波士頓 AI 完全學校開學，幼稚園至8年級以 AI 授課，教師工會強烈反對</div>
-          <div class="item-source">WGBH</div>
-        </div>
-      </div>
-      <div class="section-label">台灣與亞洲</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;台灣與亞洲&quot;, &quot;tagClass&quot;: &quot;tag-taiwan&quot;, &quot;tagLabel&quot;: &quot;台灣&quot;, &quot;title&quot;: &quot;11/12 資訊月開幕在即：150家參展、700攤位，總統盃AI素養決賽同場登場&quot;, &quot;para1&quot;: &quot;2026年115資訊月暨台灣教育科技展以「探索AI學習歷程」為主題，於11月12至15日在台北世貿一館免費展出。活動集結150家參展單位、700個攤位，13日同步舉辦國際教育領袖論壇（邀請新加坡、印尼專家與談），以及115年度總統盃AI素養爭霸賽全國決賽頒獎典禮。&quot;, &quot;para2&quot;: &quot;展覽規模與議題廣度顯示台灣正從「AI教育試點期」進入「系統化展示期」。各縣市競相展出AI教育成果、大型政府競賽同場登場，意味著制度資源已實質投入，採購端的決策壓力也隨之具體化。&quot;, &quot;takeaway&quot;: &quot;距開幕僅剩數日，仍有時間安排人員出席。建議帶著產品一頁紙，重點參訪教育局官員攤位並記錄聯絡方式。總統盃決賽現場是接觸有AI使用動機師生的高效場合，可設計現場掃碼試用機制，把實體曝光轉化為可追蹤的潛在客戶名單。&quot;, &quot;sourceUrl&quot;: &quot;https://n.yam.com/Article/20261105838999&quot;, &quot;sourceName&quot;: &quot;Yahoo奇摩新聞 · 台灣教育科技展&quot;}">
-        <span class="tag tag-taiwan">台灣</span>
-        <div class="item-text">
-          <div class="item-title">11/12 資訊月開幕在即：150家參展、700攤位，總統盃AI素養決賽同場登場</div>
-          <div class="item-source">Yahoo奇摩新聞</div>
-        </div>
-      </div>
-      <div class="section-label">產品動態</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;產品動態&quot;, &quot;tagClass&quot;: &quot;tag-product&quot;, &quot;tagLabel&quot;: &quot;工具&quot;, &quot;title&quot;: &quot;MagicSchool 推出 AI 簡報生成器：教師輸入課題即自動產出完整投影片&quot;, &quot;para1&quot;: &quot;教師 AI 工具平台 MagicSchool 推出 AI Presentation Generator，教師只需輸入課程主題或教學提示，即可自動生成可直接使用的課堂投影片組。工具在《Tech & Learning》11月 EdTech 精選工具評比中獲得推薦，定位為節省教師備課時間的核心場景工具。&quot;, &quot;para2&quot;: &quot;此功能聚焦教師最耗時備課痛點之一：製作投影片。在 Bett 研究指出 AI 普遍未能縮減教師工時的背景下，能直接對應特定耗時任務的工具具更強的採購說服力，不再是泛用「AI 助理」口號。&quot;, &quot;takeaway&quot;: &quot;台灣教師對投影片備課的需求同樣顯著，此功能方向是本地市場需求的有效驗證。若公司有類似功能，建議在行銷文案中明確標示「節省多少備課時間」，以具體小時數呈現效益，而非抽象的「更有效率」——這種差異在審慎型教師眼中遠比功能清單更有說服力。&quot;, &quot;sourceUrl&quot;: &quot;https://www.techlearning.com/learning/edtech/edtech-show-and-tell-november-2026&quot;, &quot;sourceName&quot;: &quot;Tech & Learning · EdTech Show & Tell 11月&quot;}">
-        <span class="tag tag-product">工具</span>
-        <div class="item-text">
-          <div class="item-title">MagicSchool 推出 AI 簡報生成器：教師輸入課題即自動產出完整投影片</div>
-          <div class="item-source">Tech & Learning</div>
-        </div>
-      </div>
-      <div class="section-label">市場趨勢</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;市場趨勢&quot;, &quot;tagClass&quot;: &quot;tag-market&quot;, &quot;tagLabel&quot;: &quot;趨勢&quot;, &quot;title&quot;: &quot;11/3 Google AI 教師培訓系列擴展至西班牙、巴西、墨西哥、澳洲及非洲五大市場&quot;, &quot;para1&quot;: &quot;Google 於 11月3日宣布「Google AI 教育工作者系列」擴展至五個新市場：西班牙、巴西、墨西哥、澳洲及撒哈拉以南非洲地區，提供教師免費的 AI 技能線上訓練並每月更新課程。系列已先後在美國、印度、韓國、馬來西亞、菲律賓及英國愛爾蘭啟動，累計覆蓋全球逾百萬名教師。&quot;, &quot;para2&quot;: &quot;Google 免費師培培訓的全球快速擴張，代表平台廠商已將教師 AI 能力建置視為市場開拓的前置投資。當科技巨頭以免費資源快速搶佔教師心智，付費師培工具將面臨更高的價值論證門檻。&quot;, &quot;takeaway&quot;: &quot;Google 免費師培全球擴張對台灣付費師培課程形成直接壓力。建議調整定位：不再主打「學會用AI工具」（Google 已免費提供），而是聚焦「在台灣課綱脈絡下、與教學評量直接掛鉤的具體實踐」。這種在地化差異是 Google 通用課程無法複製的護城河。&quot;, &quot;sourceUrl&quot;: &quot;https://blog.google/products-and-platforms/products/education/google-ai-educator-series-global-expansion-november-2026/&quot;, &quot;sourceName&quot;: &quot;Google Blog · AI 教師培訓擴展&quot;}">
-        <span class="tag tag-market">趨勢</span>
-        <div class="item-text">
-          <div class="item-title">11/3 Google AI 教師培訓系列擴展至西班牙、巴西、墨西哥、澳洲及非洲五大市場</div>
-          <div class="item-source">Google Blog</div>
-        </div>
-      </div>
-      <div class="section-label">資金動態</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;資金動態&quot;, &quot;tagClass&quot;: &quot;tag-funding&quot;, &quot;tagLabel&quot;: &quot;資金&quot;, &quot;title&quot;: &quot;Gates 基金會透過 Digital Promise 推出 800 萬美元開源 AI 數學家教研發計畫&quot;, &quot;para1&quot;: &quot;美國教育非營利組織 Digital Promise 在蓋茨基金會支持下啟動最高 800 萬美元的開源 AI 數學家教研發計畫，徵求能開發「可公開共享」K-12 數學 AI 家教模型的研究團隊。成果需開放供全球教育機構免費使用，計畫橫跨 30 至 36 個月，預計 2026年11月啟動。&quot;, &quot;para2&quot;: &quot;以「開源」為核心條件的大額資金，代表主流慈善機構對 AI 教育工具的商業鎖定效應已有所警覺。開源 AI 家教的出現，將使全球 EdTech 廠商面臨基礎功能免費化壓力，尤其影響以數學輔導為核心賣點的業者。&quot;, &quot;takeaway&quot;: &quot;開源數學AI家教的出現，意味著台灣K-12數學輔導市場未來3年將面臨基礎功能免費化。建議現在就思考「超越題庫與自動批改」的差異化，聚焦教師洞察報告、家長溝通工具或學習診斷深度——這些才是開源工具短期難以複製的護城河，也是值得優先投入研發資源的方向。&quot;, &quot;sourceUrl&quot;: &quot;https://www.edtechinnovationhub.com/news/digital-promise-program-opens-8-million-ai-tutoring-grant-backed-by-gates-foundation&quot;, &quot;sourceName&quot;: &quot;EdTech Innovation Hub · Digital Promise AI 家教補助&quot;}">
-        <span class="tag tag-funding">資金</span>
-        <div class="item-text">
-          <div class="item-title">Gates 基金會透過 Digital Promise 推出 800 萬美元開源 AI 數學家教研發計畫</div>
-          <div class="item-source">EdTech Innovation Hub</div>
-        </div>
-      </div>
-    </aside>
-    <div class="detail-panel" id="detail-2026-11-08">
-      <div class="detail-empty">
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-        <p>點擊左側新聞查看詳情</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="day-pane" hidden data-day="2026-11-07">
-  <div class="split">
-    <aside class="news-list" id="list-2026-11-07">
-      <div class="pane-header">11月7日（週六）<span class="count"> · 7 則</span></div>
-      <div class="section-label">機構合作</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;機構合作&quot;, &quot;tagClass&quot;: &quot;tag-partner&quot;, &quot;tagLabel&quot;: &quot;合作&quot;, &quot;title&quot;: &quot;11/5 澳洲 4 所大學擴大 OpenAI 合作，雪梨大學 2027 年起全員導入 ChatGPT Edu&quot;, &quot;para1&quot;: &quot;UNSW 雪梨、雪梨大學、拉籌伯大學與阿德雷德大學於 11月5日宣布擴大與 OpenAI 的合作協議。雪梨大學完成試點後，計畫自 2027 年第一學期起將 ChatGPT Edu 全面開放給所有學生使用，並同步設立百萬澳幣 AI 永續研究創新基金。拉籌伯大學則已對全體 3,500 名教職人員開放存取，預計 2027 年初擴及學生群體。&quot;, &quot;para2&quot;: &quot;澳洲多所大學集體押注同一 AI 平台，代表高教機構與科技公司的「戰略配對」趨勢已超越工具試用階段，演進為以國家學術系統為單位的規模化部署。ChatGPT Edu 合規版的快速滲透，意味著全球大學 AI 採購週期正大幅縮短。&quot;, &quot;takeaway&quot;: &quot;雪梨大學百萬澳幣 AI 研究基金模式值得台灣大學參考。台灣 EdTech 廠商可主動向各大學提案聯合申請教育部數位轉型計畫，以「學校出場地與受試對象、廠商出工具與研究設計」的共研模式，同時降低學校採購風險、提升廠商品牌背書效益。&quot;, &quot;sourceUrl&quot;: &quot;https://dig.watch/updates/australian-universities-ai-openai&quot;, &quot;sourceName&quot;: &quot;Dig Watch · 澳洲大學 AI 合作&quot;}">
-        <span class="tag tag-partner">合作</span>
-        <div class="item-text">
-          <div class="item-title">11/5 澳洲 4 所大學擴大 OpenAI 合作，雪梨大學 2027 年起全員導入 ChatGPT Edu</div>
-          <div class="item-source">Dig Watch</div>
-        </div>
-      </div>
-      <div class="section-label">效果研究</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;效果研究&quot;, &quot;tagClass&quot;: &quot;tag-research&quot;, &quot;tagLabel&quot;: &quot;研究&quot;, &quot;title&quot;: &quot;DEC 拉丁美洲調查：92% 學生用 AI，教師提供 AI 批改比例卻僅 19%&quot;, &quot;para1&quot;: &quot;數位教育協會（Digital Education Council）發布的拉丁美洲高等教育 AI 調查顯示，92% 的學生與 79% 的教師正積極使用 AI 工具。然而在批改作業這一高需求場景中，僅 19% 的教師目前使用 AI 提供反饋，但多達 50% 的學生表示希望獲得 AI 批改服務。全球版同份調查則發現，美加地區教師採用 AI 的意願從 2025 年的 76% 下滑至 67%。&quot;, &quot;para2&quot;: &quot;師生之間「50% 需求對 19% 供給」的批改落差，揭示了高教 AI 市場尚未填補的核心缺口。教師不願使用 AI 批改並非缺乏意識，而是缺乏對工具準確性與學術誠信的信任。誰能建立可信賴的 AI 批改方案，就能直接切入這個需求最迫切的場景。&quot;, &quot;takeaway&quot;: &quot;「AI 批改」是拉美與台灣市場都未被充分服務的場景。台灣 EdTech 廠商可設計「教師可核查的 AI 批改輔助工具」——AI 建議改分，教師一鍵確認或修改——以此降低教師採用疑慮，同時大幅節省批改時間。這個訴求對招生壓力大、班級人數多的台灣私立高中職最具說服力。&quot;, &quot;sourceUrl&quot;: &quot;https://www.digitaleducationcouncil.com/dec-insights/92-of-students-and-79-of-faculty-actively-engaging-with-ai-findings-from-ai-in-higher-education-latam-survey-2026&quot;, &quot;sourceName&quot;: &quot;Digital Education Council · 拉丁美洲高教 AI 調查&quot;}">
-        <span class="tag tag-research">研究</span>
-        <div class="item-text">
-          <div class="item-title">DEC 拉丁美洲調查：92% 學生用 AI，教師提供 AI 批改比例卻僅 19%</div>
-          <div class="item-source">Digital Education Council</div>
-        </div>
-      </div>
-      <div class="section-label">市場趨勢</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;市場趨勢&quot;, &quot;tagClass&quot;: &quot;tag-market&quot;, &quot;tagLabel&quot;: &quot;趨勢&quot;, &quot;title&quot;: &quot;RAISE US AI 勞動力承諾突破 7.35 億美元，Apple、Google、Walmart 相繼加入&quot;, &quot;para1&quot;: &quot;美國 AI 勞動力培育非營利組織 RAISE US 宣布其多年期資金承諾已超過 7.35 億美元，Apple、Google、Walmart 為本輪新加入的承諾方。RAISE US 聚焦培育具備 AI 應用能力的美國勞動力，涵蓋社區學院、在職訓練與中等後教育機構，透過課程補貼、師資培訓與認證合作等方式擴大影響規模。&quot;, &quot;para2&quot;: &quot;科技與零售龍頭共同資助 AI 勞動力計畫，代表企業對現有人才供給不足的憂慮已到達臨界點，不再坐等教育體系自然跟上。這一資金結構也暗示 EdTech 廠商若能設計與 RAISE US 框架相容的課程，將有機會接入數億美元的企業培訓採購需求。&quot;, &quot;takeaway&quot;: &quot;台灣正面臨同樣的 AI 勞動力缺口，企業大規模投資培訓的趨勢值得優先關注。建議台灣 EdTech 廠商主動向製造業、金融業 HR 主管推廣「AI 職場素養」微認證課程，以「企業資助、員工學習」模式設計採購方案，繞過傳統教育機構審批，直接進入企業培訓預算。&quot;, &quot;sourceUrl&quot;: &quot;https://edtechinnovationhub.com/news/raise-us-passes-735-million-as-apple-google-and-walmart-join-ai-workforce-push&quot;, &quot;sourceName&quot;: &quot;EdTech Innovation Hub · RAISE US AI 勞動力資金&quot;}">
-        <span class="tag tag-market">趨勢</span>
-        <div class="item-text">
-          <div class="item-title">RAISE US AI 勞動力承諾突破 7.35 億美元，Apple、Google、Walmart 相繼加入</div>
-          <div class="item-source">EdTech Innovation Hub</div>
-        </div>
-      </div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;市場趨勢&quot;, &quot;tagClass&quot;: &quot;tag-market&quot;, &quot;tagLabel&quot;: &quot;趨勢&quot;, &quot;title&quot;: &quot;2026 上半年全球 EdTech 創投達 85 億美元，AI 適性學習平台佔四成&quot;, &quot;para1&quot;: &quot;2026 年上半年全球 EdTech 創投總額達 85 億美元，較 2025 年同期成長 15%。其中，採用人工智慧的適性學習平台（AI-driven adaptive learning）獲得最多資金青睞，佔 Q2 2026 所有 EdTech 投資的 40%。資金集中在個人化學習、AI 輔導及企業技能培訓三大方向。&quot;, &quot;para2&quot;: &quot;AI 適性學習拿下四成創投份額，說明市場已對此方向投票。傳統工具型 EdTech 和單純內容平台持續失去估值吸引力，投資人正在押注「AI 是核心引擎而非附加功能」的新世代產品。這個資金信號預示採購端標準也將同步提高。&quot;, &quot;takeaway&quot;: &quot;台灣 EdTech 廠商若仍定位為「數位化傳統內容」，將面臨愈來愈難取得投資和訂單的困境。建議在 2027 年品牌重塑時，明確展示「AI 如何根據學生反應即時調整學習路徑」的動態適性功能，以具體使用者行為數據說明差異，才能在下一輪教育採購週期中維持競爭力。&quot;, &quot;sourceUrl&quot;: &quot;https://theeducationecho.com/edtech-investment-ai-platforms-soar-in-2026/&quot;, &quot;sourceName&quot;: &quot;The Education Echo · EdTech 創投分析 2026&quot;}">
-        <span class="tag tag-market">趨勢</span>
-        <div class="item-text">
-          <div class="item-title">2026 上半年全球 EdTech 創投達 85 億美元，AI 適性學習平台佔四成</div>
-          <div class="item-source">The Education Echo</div>
-        </div>
-      </div>
-      <div class="section-label">機構合作</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;機構合作&quot;, &quot;tagClass&quot;: &quot;tag-partner&quot;, &quot;tagLabel&quot;: &quot;合作&quot;, &quot;title&quot;: &quot;11/5 NC State 成立全校 AI 中心，首屆跨領域聚會吸引百人出席&quot;, &quot;para1&quot;: &quot;北卡羅來納州立大學（NC State）AI 中心於 11月5日舉行首次全校 AI 社群聚會，聚焦跨領域連結與 AI 研究合作。活動吸引來自工程、人文、醫學與商學等多個學院的逾百名教職人員與研究生參與。NC State AI Hub 定位為促進跨學科合作的平台，非單一系所的研究中心，強調應用場景的廣度而非技術深度。&quot;, &quot;para2&quot;: &quot;「跨院系 AI 中心」模式正在美國研究型大學快速擴散，代表高校已意識到 AI 衝擊無法被單一學科吸收，必須形成制度化的跨領域對話平台。台灣各大學目前多以計資中心或資工系主導 AI 議程，尚缺乏同等的跨域整合結構。&quot;, &quot;takeaway&quot;: &quot;台灣 EdTech 廠商可主動向各大學教務處或研究發展處提案協助建立類似的「AI 教學實踐社群」，以廠商工具為平台、大學師資為內容，共同打造定期聚會機制。這類社群一旦建立，就成為廠商與學校持續接觸的長期管道，遠比單次工作坊更有採購黏性。&quot;, &quot;sourceUrl&quot;: &quot;https://ece.ncsu.edu/2026/prompting-action-nc-state-ai-hub-hosts-first-campus-gathering&quot;, &quot;sourceName&quot;: &quot;NC State ECE · AI Hub 首屆聚會&quot;}">
-        <span class="tag tag-partner">合作</span>
-        <div class="item-text">
-          <div class="item-title">11/5 NC State 成立全校 AI 中心，首屆跨領域聚會吸引百人出席</div>
-          <div class="item-source">NC State ECE</div>
-        </div>
-      </div>
-      <div class="section-label">效果研究</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;效果研究&quot;, &quot;tagClass&quot;: &quot;tag-research&quot;, &quot;tagLabel&quot;: &quot;研究&quot;, &quot;title&quot;: &quot;美國高教內稽報告：34 所大學僅 12 所有正式 AI 政策，半數仍在起草&quot;, &quot;para1&quot;: &quot;美國大學內部稽核協會（ACUA）2026 年調查顯示，34 所受訪高等教育機構中，僅 12 所已完成正式 AI 政策或使用指引的制定，另有約半數機構仍在起草階段。受訪者列出的最主要憂慮為：AI 相關資安漏洞（首位）、機構使用未經驗證的 AI 輸出（次位），顯示政策滯後帶來顯著的法遵與聲譽風險。&quot;, &quot;para2&quot;: &quot;「有使用無政策」是當前高等教育 AI 治理的普遍困境。在缺乏明確政策的情況下，師生的 AI 使用行為游走於機構規範灰色地帶，資安與隱私風險累積卻無人問責。有意進入高教市場的 EdTech 廠商，主動提供合規建議的能力已成為差異化要素。&quot;, &quot;takeaway&quot;: &quot;台灣大學端同樣缺乏系統性 AI 治理架構。台灣 EdTech 廠商可在拜訪學校時，主動提供「AI 工具導入政策範本包」——包含資料使用協議、學術誠信條款、師生使用分級建議——作為免費附加服務。此舉可大幅降低教務主任的顧慮門檻，將廠商從「賣工具的」升格為「可信賴的 AI 治理夥伴」。&quot;, &quot;sourceUrl&quot;: &quot;https://www.eisneramper.com/insights/education-insights/higher-education-internal-audit-ai-survey-1026&quot;, &quot;sourceName&quot;: &quot;EisnerAmper · 美國高教 AI 政策內稽調查&quot;}">
-        <span class="tag tag-research">研究</span>
-        <div class="item-text">
-          <div class="item-title">美國高教內稽報告：34 所大學僅 12 所有正式 AI 政策，半數仍在起草</div>
-          <div class="item-source">EisnerAmper</div>
-        </div>
-      </div>
-      <div class="section-label">台灣與亞洲</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;台灣與亞洲&quot;, &quot;tagClass&quot;: &quot;tag-taiwan&quot;, &quot;tagLabel&quot;: &quot;台灣&quot;, &quot;title&quot;: &quot;台大為全國中小學教師辦 AI 教學設計研習，11/21 備課應用、11/22 生成圖像教材&quot;, &quot;para1&quot;: &quot;國立臺灣大學以「2026 教育未來式—AI 時代的教學新能力」為題，規劃一系列線上研習課程，對象為全國中小學在職教師。11月21日場次聚焦「AI 教學設計與備課應用」，11月22日場次主題為「AI 生成圖像與視覺教材設計」，兩場課程均強調實作演練而非概念介紹，協助教師將 AI 工具直接整合進日常教學準備流程。&quot;, &quot;para2&quot;: &quot;台大以頂尖研究大學之姿深入 K-12 師培領域，顯示台灣高校正主動打破學術與基礎教育之間的邊界。生成圖像教材設計場次更顯示師培需求已從文字型 AI 擴展至多模態應用，教師的 AI 能力要求快速升級。&quot;, &quot;takeaway&quot;: &quot;台灣 K-12 教師的 AI 研習需求持續擴大，但場次供給仍以一次性講座為主，缺乏持續的實作陪伴。EdTech 廠商可設計「研習後 30 天實作挑戰包」，提供結構化的課後跟進任務，幫助教師將研習所學轉化為可見的課堂成果，同時建立廠商與教師社群之間的長期接觸點。&quot;, &quot;sourceUrl&quot;: &quot;https://www.cyc.edu.tw/modules/tadnews/index.php?nsn=95208&quot;, &quot;sourceName&quot;: &quot;嘉義縣教育資訊網 · 台大 AI 師培研習&quot;}">
-        <span class="tag tag-taiwan">台灣</span>
-        <div class="item-text">
-          <div class="item-title">台大為全國中小學教師辦 AI 教學設計研習，11/21 備課應用、11/22 生成圖像教材</div>
-          <div class="item-source">嘉義縣教育資訊網</div>
-        </div>
-      </div>
-    </aside>
-    <div class="detail-panel" id="detail-2026-11-07">
-      <div class="detail-empty">
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-        <p>點擊左側新聞查看詳情</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="day-pane" hidden data-day="2026-11-06">
-  <div class="split">
-    <aside class="news-list" id="list-2026-11-06">
-      <div class="pane-header">11月6日（週五）<span class="count"> · 7 則</span></div>
-      <div class="section-label">政策動態</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;政策動態&quot;, &quot;tagClass&quot;: &quot;tag-product&quot;, &quot;tagLabel&quot;: &quot;政策&quot;, &quot;title&quot;: &quot;11/4 加州教育媒體揭 Google 捆綁政策三難：學校面臨「接受 AI、放棄搜尋或自建系統」三選一&quot;, &quot;para1&quot;: &quot;加州知名教育媒體 EdSource 於 11月4日深度報導，Google 新 AI 政策將讓加州學區面臨三難困境：全面接受 Gemini AI、放棄 Google 搜尋改用其他搜尋引擎，或斥資建置獨立數位基礎設施。多個加州學區行政主管表示尚未評估因應方案，主因政策預計 2027 年才生效。&quot;, &quot;para2&quot;: &quot;此報導從學校端視角呈現科技巨頭如何透過基礎服務捆綁形塑教育決策空間。在台灣，同樣有許多學校高度依賴 Google Workspace for Education，此政策風向值得本地教育採購主任及行政主管密切追蹤。&quot;, &quot;takeaway&quot;: &quot;台灣 EdTech 廠商可趁此機會主動接觸高依賴 Google 服務的學校，提出「功能分離、可單獨停用 AI」的替代方案文件。面對「捆綁恐懼」心理，強調「你有選擇」的產品定位，能在目前市場情緒下取得顯著的決策者注意力。&quot;, &quot;sourceUrl&quot;: &quot;https://edsource.org/2026/google-ai-school-search-restriction/769862&quot;, &quot;sourceName&quot;: &quot;EdSource · 加州教育政策&quot;}">
-        <span class="tag tag-product">政策</span>
-        <div class="item-text">
-          <div class="item-title">11/4 加州教育媒體揭 Google 捆綁政策三難：學校面臨「接受 AI、放棄搜尋或自建系統」三選一</div>
-          <div class="item-source">EdSource</div>
-        </div>
-      </div>
-      <div class="section-label">台灣與亞洲</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;台灣與亞洲&quot;, &quot;tagClass&quot;: &quot;tag-taiwan&quot;, &quot;tagLabel&quot;: &quot;台灣&quot;, &quot;title&quot;: &quot;11/5 AI走進教室！資訊月暨教育科技展本月12日起世貿登場，北市展出積木陀螺與 VR 體驗&quot;, &quot;para1&quot;: &quot;2026年115資訊月暨臺灣教育科技展將於11月12至15日在台北世貿一館盛大開幕，免費入場。台北市教育局以「與孩子共創智慧未來」為題，展出積木陀螺、VR 體驗與無人機機械手臂等 AI 教育成果；嘉義縣教育局亦帶隊參展。整體展覽強調從工具使用轉向培育提問、查證與思考能力。&quot;, &quot;para2&quot;: &quot;本次展覽將「AI 走進教室」從口號化為可觸摸的互動體驗，代表台灣 K-12 教育現場已進入 AI 實作展示階段。各縣市爭相展示 AI 教育成果，意味採購端決策已實質啟動，不再只是政策宣示。&quot;, &quot;takeaway&quot;: &quot;距展覽僅剩一週，仍有機會安排人員出席蒐集競品情報。強烈建議帶著產品一頁紙與手機示範，重點參訪各縣市攤位、記錄採購主任與教育局官員聯絡方式，作為Q4業務拓展的直接材料。&quot;, &quot;sourceUrl&quot;: &quot;https://www.minews.com.tw/2026/11/30717/&quot;, &quot;sourceName&quot;: &quot;鳴新聞 · 台北市AI教育展區&quot;}">
-        <span class="tag tag-taiwan">台灣</span>
-        <div class="item-text">
-          <div class="item-title">11/5 AI走進教室！資訊月暨教育科技展本月12日起世貿登場，北市展出積木陀螺與 VR 體驗</div>
-          <div class="item-source">鳴新聞</div>
-        </div>
-      </div>
-      <div class="section-label">效果研究</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;效果研究&quot;, &quot;tagClass&quot;: &quot;tag-research&quot;, &quot;tagLabel&quot;: &quot;研究&quot;, &quot;title&quot;: &quot;英國HEPI學生AI調查：95%學生使用AI，但僅36%感受到校方鼓勵，12%已將AI生成文字放入作業&quot;, &quot;para1&quot;: &quot;英國高等教育政策研究院（HEPI）2026年學生調查顯示，95% 大學生至少以一種方式使用 AI 工具，然而僅 36% 表示感受到所在機構的積極鼓勵。將 AI 生成文字直接放入評分作業的學生比例已升至 12%，較 2025 年的 8% 顯著上升，學術誠信問題持續惡化。&quot;, &quot;para2&quot;: &quot;「高使用、低機構支持」的格局在全球高校幾乎普遍存在。當學生自行摸索 AI 使用而機構保持沉默，學術誠信灰色地帶只會持續擴大。如何建立清晰的 AI 使用框架，已是高等教育無法迴避的當務之急。&quot;, &quot;takeaway&quot;: &quot;「12% 學生已將AI文字放入作業」這個數字是向台灣大學行政端推廣 AI 學術誠信課程的強力開場白。設計「AI 識讀 × 學術誠信」複合型工作坊，同時解決學生能力建置與機構風險管控兩個痛點，將是本季最具說服力的高教提案方向。&quot;, &quot;sourceUrl&quot;: &quot;https://www.hepi.ac.uk/reports/student-generative-ai-survey-2026/&quot;, &quot;sourceName&quot;: &quot;HEPI · 英國高教學生AI調查&quot;}">
-        <span class="tag tag-research">研究</span>
-        <div class="item-text">
-          <div class="item-title">英國HEPI學生AI調查：95%學生使用AI，但僅36%感受到校方鼓勵，12%已將AI生成文字放入作業</div>
-          <div class="item-source">HEPI</div>
-        </div>
-      </div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;效果研究&quot;, &quot;tagClass&quot;: &quot;tag-research&quot;, &quot;tagLabel&quot;: &quot;研究&quot;, &quot;title&quot;: &quot;11/3 全球高教AI準備度缺口報告：美加教師使用意願年降9個百分點，師生落差持續擴大&quot;, &quot;para1&quot;: &quot;11月3日發布的《AI 與高等教育全球準備度缺口簡報》指出，美國和加拿大教師使用 AI 的意願從 2025 年的 76% 降至 2026 年的 67%，新鮮感消退與不確定性上升是主因。相對地，學生使用率仍在上升，師生之間形成日益擴大的「AI 實踐落差」。&quot;, &quot;para2&quot;: &quot;當教師 AI 採用意願下降而學生使用率攀升，代表高校正面臨「學生跑在教師前面」的結構性挑戰。工具有了，但使用指導缺位，最終造成的是學術品質模糊帶，而非生產力提升。教師增能已是比工具採購更迫切的需求。&quot;, &quot;takeaway&quot;: &quot;台灣大學在規劃 AI 導入方案時，應優先配置「教師 AI 使用信心建立」預算，而非僅採購工具授權。可設計「教師 AI 夥伴計畫」，以小組同儕互助取代單一大型研習，更有效降低教師的採用焦慮，提升持續使用率。&quot;, &quot;sourceUrl&quot;: &quot;https://www.lynnfaustin.com/ai-higher-education-global-brief-the-readiness-gap-november-3-2026/&quot;, &quot;sourceName&quot;: &quot;Lynn Faustin · 全球高教AI準備度缺口報告&quot;}">
-        <span class="tag tag-research">研究</span>
-        <div class="item-text">
-          <div class="item-title">11/3 全球高教AI準備度缺口報告：美加教師使用意願年降9個百分點，師生落差持續擴大</div>
-          <div class="item-source">Lynn Faustin</div>
-        </div>
-      </div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;效果研究&quot;, &quot;tagClass&quot;: &quot;tag-research&quot;, &quot;tagLabel&quot;: &quot;研究&quot;, &quot;title&quot;: &quot;EDUCAUSE：92%高校已有AI工作策略，但教師最憂慮的是錯誤訊息擴散、資料濫用與基礎思考力退化&quot;, &quot;para1&quot;: &quot;EDUCAUSE 2026 年「AI 對高等教育工作的影響」報告顯示，92% 受訪機構已制定 AI 工作相關策略。然而教職員最擔憂的三大風險依序為：錯誤訊息增加（55%）、未經同意使用資料（52%）、以及學生或教職員喪失需要獨立思考的基礎能力（51%）。&quot;, &quot;para2&quot;: &quot;「有策略但有憂慮」是高教 AI 導入的主流現實。制度建立速度跟不上工具普及速度，導致機構在正式政策與實際使用之間存在巨大灰色地帶。資料治理與學術誠信框架，已成為高校採購 AI 工具的核心評估維度。&quot;, &quot;takeaway&quot;: &quot;台灣 EdTech 廠商在拜訪大學資訊長或教務長時，應事先備妥「資料不用於模型訓練聲明」與「學術誠信使用指引」等文件。主動回應這三大憂慮，而非等採購方提問，能顯著縮短審查週期，並建立「負責任 AI 廠商」的品牌形象。&quot;, &quot;sourceUrl&quot;: &quot;https://www.educause.edu/research/2026/the-impact-of-ai-on-work-in-higher-education&quot;, &quot;sourceName&quot;: &quot;EDUCAUSE · AI對高教工作影響研究2026&quot;}">
-        <span class="tag tag-research">研究</span>
-        <div class="item-text">
-          <div class="item-title">EDUCAUSE：92%高校已有AI工作策略，但教師最憂慮的是錯誤訊息擴散、資料濫用與基礎思考力退化</div>
-          <div class="item-source">EDUCAUSE</div>
-        </div>
-      </div>
-      <div class="section-label">市場趨勢</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;市場趨勢&quot;, &quot;tagClass&quot;: &quot;tag-market&quot;, &quot;tagLabel&quot;: &quot;趨勢&quot;, &quot;title&quot;: &quot;Bett 2026 研究：AI使用率逐年攀升，但多數教師仍說工作量未因此減少&quot;, &quot;para1&quot;: &quot;Bett 2026 年度教育科技報告指出，教師對 AI 工具的採用率持續上升，但受訪教師普遍反映整體工作負擔並未隨之下降。研究顯示 AI 工具主要提升了特定任務效率（如備課材料生成），卻衍生更多新任務，包括核對 AI 輸出、設計防 AI 抄襲的評量等，使淨工時效益有限。&quot;, &quot;para2&quot;: &quot;這項發現是全球 EdTech 廠商的重要警訊：「讓老師更輕鬆」如果只是口號而非實測數據支撐的承諾，將在市場成熟後遭遇越來越嚴格的採購審查。工具評估標準正從「功能是否豐富」轉向「實際工時是否可量化減少」。&quot;, &quot;takeaway&quot;: &quot;建議台灣 EdTech 廠商主動設計「工作量減少承諾書」，以具體場景說明使用產品後哪些任務可節省多少時間（例：每週備課節省 2 小時）。可邀請試用教師提供時間紀錄作為社會證明，轉化成行銷素材，這類數據在審慎型採購主任眼中遠比功能清單更有說服力。&quot;, &quot;sourceUrl&quot;: &quot;https://edtechinnovationhub.com/news/the-state-of-ai-in-education-2026-rising-teacher-use-is-not-always-translating-into-shorter-working-hours&quot;, &quot;sourceName&quot;: &quot;EdTech Innovation Hub · Bett 2026 教師AI工作量研究&quot;}">
-        <span class="tag tag-market">趨勢</span>
-        <div class="item-text">
-          <div class="item-title">Bett 2026 研究：AI使用率逐年攀升，但多數教師仍說工作量未因此減少</div>
-          <div class="item-source">EdTech Innovation Hub</div>
-        </div>
-      </div>
-      <div class="section-label">工具推薦</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;工具推薦&quot;, &quot;tagClass&quot;: &quot;tag-product&quot;, &quot;tagLabel&quot;: &quot;工具&quot;, &quot;title&quot;: &quot;2026年K-12 AI素養挑戰報告：師資培訓不足仍是最大障礙，「會用工具≠有能力教」&quot;, &quot;para1&quot;: &quot;EF Institute 11月發布的《2026年K-12 AI素養挑戰與展望》指出，全球K-12教育在AI素養推廣面臨三大挑戰：教師本身的AI工具熟練度不足、缺乏系統性課程框架、以及「教師會用工具但不知如何教學生用」的能力鴻溝。報告強調AI素養教育需從「工具使用」升級至「批判性應用」。&quot;, &quot;para2&quot;: &quot;「會用工具不等於有能力教」這一發現，揭示師資培訓市場仍有巨大缺口。技術工具的普及速度遠超師資培訓的速度，導致課堂中出現大量形式化的AI使用，而非真正的思維轉型。建立有體系的教師AI教學能力認證機制，將是未來五年的重要方向。&quot;, &quot;takeaway&quot;: &quot;台灣正在快速推動AI進教室，但師資培訓方案若僅聚焦工具操作，將重蹈此報告所描述的覆轍。建議行銷團隊在推廣教師工作坊時，強調「教你如何帶學生用AI」而非「教你用AI」——這個差異化訴求能吸引最有採購預算的師培主管注意。&quot;, &quot;sourceUrl&quot;: &quot;https://www.efinstitute.org/2026/11/ai-literacy-challenges-and-promise-in-k-12-schools/&quot;, &quot;sourceName&quot;: &quot;EF Institute · K-12 AI素養挑戰報告&quot;}">
-        <span class="tag tag-product">工具</span>
-        <div class="item-text">
-          <div class="item-title">2026年K-12 AI素養挑戰報告：師資培訓不足仍是最大障礙，「會用工具≠有能力教」</div>
-          <div class="item-source">EF Institute</div>
-        </div>
-      </div>
-    </aside>
-    <div class="detail-panel" id="detail-2026-11-06">
-      <div class="detail-empty">
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-        <p>點擊左側新聞查看詳情</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="day-pane" hidden data-day="2026-11-05">
-  <div class="split">
-    <aside class="news-list" id="list-2026-11-05">
-      <div class="pane-header">11月5日（週四）<span class="count"> · 8 則</span></div>
-      <div class="section-label">政策動態</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;政策動態&quot;, &quot;tagClass&quot;: &quot;tag-product&quot;, &quot;tagLabel&quot;: &quot;產品&quot;, &quot;title&quot;: &quot;11/3 Google 宣布：學校拒絕 AI 將同步失去 Google 搜尋功能&quot;, &quot;para1&quot;: &quot;Google 於 11月3日宣布新 K-12 政策，預設關閉學生帳號的 AI 功能，但若學校選擇全面封鎖 AI，將連帶失去 Google 搜尋權限，因兩者已深度整合。紐約市與洛杉磯已率先宣布暫時禁止國小與國中使用生成式 AI，紐約市長馬曼達尼公開批評 Google「強迫」學校接受 AI。&quot;, &quot;para2&quot;: &quot;此舉揭示 AI 與基礎數位工具的捆綁已成為科技巨頭影響教育政策的新槓桿。學校在拒絕 AI 的同時，將付出放棄核心搜尋資源的代價，引發反壟斷討論。&quot;, &quot;takeaway&quot;: &quot;Google 的捆綁策略是台灣學校採購評估的重要案例。若貴校正評估是否全面導入 AI 工具，建議先釐清各平台的「拒絕成本」，作為議約或替代方案規劃的依據。&quot;, &quot;sourceUrl&quot;: &quot;https://techcrunch.com/2026/11/03/google-will-let-schools-disable-its-ai-tools-but-not-without-sacrificing-search/&quot;, &quot;sourceName&quot;: &quot;TechCrunch · 教育科技政策&quot;}">
-        <span class="tag tag-product">產品</span>
-        <div class="item-text">
-          <div class="item-title">11/3 Google 宣布：學校拒絕 AI 將同步失去 Google 搜尋功能</div>
-          <div class="item-source">TechCrunch</div>
-        </div>
-      </div>
-      <div class="section-label">資金動態</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;資金動態&quot;, &quot;tagClass&quot;: &quot;tag-funding&quot;, &quot;tagLabel&quot;: &quot;資金&quot;, &quot;title&quot;: &quot;11/3 Google.org 砸 950 萬美元資助五大 AI 師培工具組織&quot;, &quot;para1&quot;: &quot;Google.org 於 11月3日宣布向五個專注師培的組織提供逾 950 萬美元資助，受益機構包括 Fab AI 與 1EdTech Global。此次資助是 Google「AI 學習新時代 2026」計畫的一部分，同步推出的還有 Google Classroom 的引導學習（Guided Learning）功能，以及 Gemini 的新 K-12 管控工具。&quot;, &quot;para2&quot;: &quot;Google 將資金集中在師培工具，顯示業界已將「教師能力建置」視為 AI 教育推廣的核心瓶頸，而非學生端使用率。這一策略轉向對教師培訓生態系有深遠影響。&quot;, &quot;takeaway&quot;: &quot;師培工具正獲得科技巨頭的大規模投資，台灣的教師增能方案若能與此類國際資助機構建立夥伴關係，將有機會取得課程、工具與品牌背書的三重加值。&quot;, &quot;sourceUrl&quot;: &quot;https://blog.google/products-and-platforms/products/education/google-org-funding-ai-education&quot;, &quot;sourceName&quot;: &quot;Google Blog · 教育資助&quot;}">
-        <span class="tag tag-funding">資金</span>
-        <div class="item-text">
-          <div class="item-title">11/3 Google.org 砸 950 萬美元資助五大 AI 師培工具組織</div>
-          <div class="item-source">Google Blog</div>
-        </div>
-      </div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;資金動態&quot;, &quot;tagClass&quot;: &quot;tag-funding&quot;, &quot;tagLabel&quot;: &quot;資金&quot;, &quot;title&quot;: &quot;10/29 Digital Science 收購 Jenni AI，納入 800 萬學術用戶&quot;, &quot;para1&quot;: &quot;學術數據巨頭 Digital Science 於 10月29日宣布收購 AI 學術寫作平台 Jenni AI，後者擁有橫跨 189 個國家的 800 萬名用戶。整合後，Jenni AI 將接入 Digital Science 旗下 Dimensions 資料庫（收錄 1.71 億篇學術文獻），讓 AI 寫作建議得以即時比對真實來源。&quot;, &quot;para2&quot;: &quot;此次收購讓學術寫作 AI 從「生成文字」進化到「可驗證引用」，直接回應學術誠信爭議。Jenni 加入 Overleaf、Papers AI 等工具，Digital Science 正在建構完整的研究生命週期 AI 生態。&quot;, &quot;takeaway&quot;: &quot;台灣大學端正評估學術 AI 工具時，「可驗證引用」將成為重要採購標準。行銷團隊可將 Jenni AI 此次整合作為說服學術主管機構的具體案例，強調 AI 寫作工具也能守護學術誠信。&quot;, &quot;sourceUrl&quot;: &quot;https://tech.eu/2026/10/29/digital-science-acquires-jenni-ai-to-bring-verified-research-data-to-ai-powered-academic-writing/&quot;, &quot;sourceName&quot;: &quot;Tech.eu · EdTech 併購&quot;}">
-        <span class="tag tag-funding">資金</span>
-        <div class="item-text">
-          <div class="item-title">10/29 Digital Science 收購 Jenni AI，納入 800 萬學術用戶</div>
-          <div class="item-source">Tech.eu</div>
-        </div>
-      </div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;資金動態&quot;, &quot;tagClass&quot;: &quot;tag-funding&quot;, &quot;tagLabel&quot;: &quot;資金&quot;, &quot;title&quot;: &quot;11/2 加拿大政府對 Cohere 注資逾 16 億加幣，強化 AI 人才版圖&quot;, &quot;para1&quot;: &quot;加拿大政府於 11月2日宣布對多倫多大學校友創辦的 AI 公司 Cohere 進行最高 16 億加幣的股權投資。多倫多大學稍早已簽署多年期合作協議，推動 Cohere 在校內的負責任 AI 採用。這是近期北美高校與本土 AI 新創深度整合的指標性案例。&quot;, &quot;para2&quot;: &quot;政府以國家股權投資方式支持大學校友創業，並透過校方合作推動技術落地，展現了「研究-創業-政策」三位一體的 AI 生態系建設路徑，值得台灣借鑑。&quot;, &quot;takeaway&quot;: &quot;此案例可用於倡議台灣建立類似的「大學-新創-政府」AI 合作架構。在拜訪教育部或國科會時，可引用加拿大案例，強調國家級 AI 投資如何透過大學體系快速形成產業影響力。&quot;, &quot;sourceUrl&quot;: &quot;https://www.utoronto.ca/news/ai-company-cohere-founded-u-t-alumni-receive-16-billion-government-canada&quot;, &quot;sourceName&quot;: &quot;University of Toronto · AI 投資&quot;}">
-        <span class="tag tag-funding">資金</span>
-        <div class="item-text">
-          <div class="item-title">11/2 加拿大政府對 Cohere 注資逾 16 億加幣，強化 AI 人才版圖</div>
-          <div class="item-source">University of Toronto</div>
-        </div>
-      </div>
-      <div class="section-label">機構合作</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;機構合作&quot;, &quot;tagClass&quot;: &quot;tag-partner&quot;, &quot;tagLabel&quot;: &quot;合作&quot;, &quot;title&quot;: &quot;11月 Stanford 投入 1,000 萬美元重塑 15 個系所的 AI 時代課程&quot;, &quot;para1&quot;: &quot;史丹佛大學教務長辦公室啟動一項耗資 1,000 萬美元的多年期計畫，目標是系統性重設計大學科系以因應 AI 時代需求。預計約 15 個科系將參與，計畫從 2026-27 學年展開至 2028-29 年。此計畫強調不是在現有課程加入 AI 模組，而是從根本重新思考各學科的核心能力定義。&quot;, &quot;para2&quot;: &quot;當全球頂尖大學以千萬美元等級的投入來重塑科系，代表 AI 對高等教育的衝擊已超越工具使用的層次，進入課程架構重組的階段。台灣大學的回應速度將決定未來競爭力。&quot;, &quot;takeaway&quot;: &quot;台灣大學端可將 Stanford 此計畫作為說服校方啟動類似改革的外部佐證。行銷素材中可引用「15 個系所、3 年重塑」這一具體規模，以傳遞改革的急迫性與可操作性。&quot;, &quot;sourceUrl&quot;: &quot;https://news.stanford.edu/stories/2026/11/provost-initiative-college-majors-ai&quot;, &quot;sourceName&quot;: &quot;Stanford News · 高等教育改革&quot;}">
-        <span class="tag tag-partner">合作</span>
-        <div class="item-text">
-          <div class="item-title">11月 Stanford 投入 1,000 萬美元重塑 15 個系所的 AI 時代課程</div>
-          <div class="item-source">Stanford News</div>
-        </div>
-      </div>
-      <div class="section-label">台灣與亞洲</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;台灣與亞洲&quot;, &quot;tagClass&quot;: &quot;tag-taiwan&quot;, &quot;tagLabel&quot;: &quot;台灣&quot;, &quot;title&quot;: &quot;11/12-15 台灣教育科技展登場，教育部辦 AI 教學專場論壇&quot;, &quot;para1&quot;: &quot;2026 資訊月暨臺灣教育科技展將於 11月12至15日在台北世貿一館舉行。教育部於 11月14日主辦專場論壇，議題涵蓋 App 安全、AI 跨域課程與親子數位學習指引。11月13日同步舉辦總統盃 AI 素養爭霸賽頒獎典禮，並有新加坡、印尼國際專家共同參與的國際教育領袖論壇。&quot;, &quot;para2&quot;: &quot;本次展覽規模與議題廣度顯示台灣正從「AI 工具試點」進入「AI 教育系統化」的新階段，政府、業者與學術機構的協作密度持續提升。&quot;, &quot;takeaway&quot;: &quot;這是年度最重要的台灣 EdTech 展覽，強烈建議安排團隊出席並蒐集競品情報。若有產品或服務想觸及學校採購決策者，現場攤位或論壇演講是本季最高 CP 值的曝光機會。&quot;, &quot;sourceUrl&quot;: &quot;https://www.edtech.tw/post/2026-ministry-of-education-forum&quot;, &quot;sourceName&quot;: &quot;EdTech Taiwan · 展覽資訊&quot;}">
-        <span class="tag tag-taiwan">台灣</span>
-        <div class="item-text">
-          <div class="item-title">11/12-15 台灣教育科技展登場，教育部辦 AI 教學專場論壇</div>
-          <div class="item-source">EdTech Taiwan</div>
-        </div>
-      </div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;台灣與亞洲&quot;, &quot;tagClass&quot;: &quot;tag-taiwan&quot;, &quot;tagLabel&quot;: &quot;台灣&quot;, &quot;title&quot;: &quot;教育部推 117 億 AI 家教計畫，現場教師揭四大執行焦慮&quot;, &quot;para1&quot;: &quot;台灣教育部宣布投入 117.55 億元推動「AI 人才方舟計畫」，以 AI 家教和 AI 助教形式進入 K-12 教學現場。然而前線教師反映四大執行焦慮：AI 建議與自身教學邏輯衝突、學生過度依賴、評估效度存疑，以及隱私與資料安全顧慮。&quot;, &quot;para2&quot;: &quot;百億級投入背後，教師的執行意願與能力是最關鍵的落地變數。技術導入與師培支持若無法同步，大規模計畫的成效將大打折扣，這一問題在全球各地都在重演。&quot;, &quot;takeaway&quot;: &quot;四大焦慮點是進入台灣校園市場的精準切入口。針對「教師使用意願不足」設計輔導方案，或針對「家長資料安全疑慮」提出透明度保證，都是差異化競爭的可操作方向。&quot;, &quot;sourceUrl&quot;: &quot;https://flipedu.parenting.com.tw/article/010818&quot;, &quot;sourceName&quot;: &quot;翻轉教育 · 教育政策&quot;}">
-        <span class="tag tag-taiwan">台灣</span>
-        <div class="item-text">
-          <div class="item-title">教育部推 117 億 AI 家教計畫，現場教師揭四大執行焦慮</div>
-          <div class="item-source">翻轉教育</div>
-        </div>
-      </div>
-      <div class="section-label">效果研究</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;效果研究&quot;, &quot;tagClass&quot;: &quot;tag-research&quot;, &quot;tagLabel&quot;: &quot;研究&quot;, &quot;title&quot;: &quot;全球調查：88% 大學生使用 AI，57% 卻說學校給的指引不足&quot;, &quot;para1&quot;: &quot;Digital Education Council 針對全球 35 國超過 4.5 萬名師生的 2026 年調查顯示，大學生 AI 使用率達 88%（年增 16 個百分點），教師則為 77%。但 57% 學生表示作業缺乏足夠的 AI 使用指引，僅 29% 認為教師有能力引導他們正確使用 AI。&quot;, &quot;para2&quot;: &quot;使用率的爆炸式成長與指引品質的嚴重落差，意味著高校 AI 採用已進入「野蠻成長」階段。如何建立有效的 AI 學術倫理教育框架，正成為全球高等教育的共同急迫課題。&quot;, &quot;takeaway&quot;: &quot;「57% 學生沒有足夠 AI 指引」這個數字可直接用於提案。向台灣大學行政端推廣 AI 素養課程或政策框架時，以此作為開場數據，能立即建立緊迫感並吸引資源分配。&quot;, &quot;sourceUrl&quot;: &quot;https://www.edtechinnovationhub.com/news/q6zw9wco2mttajdbd1jyeonjnpiovu&quot;, &quot;sourceName&quot;: &quot;EdTech Innovation Hub · 高等教育研究&quot;}">
-        <span class="tag tag-research">研究</span>
-        <div class="item-text">
-          <div class="item-title">全球調查：88% 大學生使用 AI，57% 卻說學校給的指引不足</div>
-          <div class="item-source">EdTech Innovation Hub</div>
-        </div>
-      </div>
-    </aside>
-    <div class="detail-panel" id="detail-2026-11-05">
-      <div class="detail-empty">
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-        <p>點擊左側新聞查看詳情</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="day-pane" hidden data-day="2026-11-04">
-  <div class="split">
-    <aside class="news-list" id="list-2026-11-04">
-      <div class="pane-header">11月4日（週三）<span class="count"> · 8 則</span></div>
-      <div class="section-label">市場趨勢</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;市場趨勢&quot;, &quot;tagClass&quot;: &quot;tag-market&quot;, &quot;tagLabel&quot;: &quot;趨勢&quot;, &quot;title&quot;: &quot;11/3 Google：學校禁 AI 將同步失去 Search 存取，各界批評此舉強迫捆綁&quot;, &quot;para1&quot;: &quot;Google 於 11 月 3 日宣布 2027 年起 K-12 學生帳號預設關閉所有 AI 功能，學校若選擇禁用 AI，學生將同時失去 Google Search 存取權。此捆綁政策迅速引發美國教育界批評，前 FTC 主席 Lina Khan 直斥「具強迫性」，紐約、洛杉磯等多個學區已宣布禁 AI 政策正面臨衝擊。&quot;, &quot;para2&quot;: &quot;此政策揭示平台廠商如何以「搜尋基礎設施」鎖定教育市場：學校若想保有 Google 搜尋，就必須接受 AI 進入課堂。這不僅是採購決策，更是教育主權問題，預示學區採購合約將新增「AI 功能獨立控制權」條款。&quot;, &quot;takeaway&quot;: &quot;台灣 EdTech 廠商可在提案簡報首頁加入「AI 與核心功能完全分離設計」聲明，明確告知客戶每項功能可獨立開啟或關閉。面對保守型採購主任，「給學校控制權」比「功能最豐富」更有說服力，是此時最有效的差異化定位。&quot;, &quot;sourceUrl&quot;: &quot;https://techcrunch.com/2026/11/03/google-will-let-schools-disable-its-ai-tools-but-not-without-sacrificing-search/&quot;, &quot;sourceName&quot;: &quot;TechCrunch · Google AI 學校搜尋捆綁政策&quot;}">
-        <span class="tag tag-market">趨勢</span>
-        <div class="item-text">
-          <div class="item-title">11/3 Google：學校禁 AI 將同步失去 Search 存取，各界批評此舉強迫捆綁</div>
-          <div class="item-source">TechCrunch</div>
-        </div>
-      </div>
-      <div class="section-label">產品動態</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;產品動態&quot;, &quot;tagClass&quot;: &quot;tag-product&quot;, &quot;tagLabel&quot;: &quot;產品&quot;, &quot;title&quot;: &quot;11/3 Google AI Educator Series 擴展至西班牙、巴西、墨西哥、澳洲及非洲&quot;, &quot;para1&quot;: &quot;Google 於 11 月 3 日宣布 AI Educator Series 擴展至西班牙、巴西、墨西哥、澳洲及撒哈拉以南非洲四個新地區。同時，Guided Learning 個人化學習引導功能已在全球 Google Classroom 正式上線，新版 11 月教師模組聚焦評量設計與遊戲化學習活動，11 月 4 日起率先於美國開放。&quot;, &quot;para2&quot;: &quot;Google 在全球教育版圖快速擴點，透過免費師訓課程建立品牌忠誠與生態系黏性。東南亞與拉丁美洲市場成為下一波爭奪焦點，台灣廠商若有全球化規劃，應提前觀察這些地區的需求落點與競爭格局。&quot;, &quot;takeaway&quot;: &quot;目前 Google Educator Series 尚未直接覆蓋台灣，但其全球擴張路徑顯示台灣市場早晚納入。台灣廠商可把握窗口期，以更貼近本土師培需求的中文化實作課程建立先行優勢，以在地深耕抵禦平台規模效應。&quot;, &quot;sourceUrl&quot;: &quot;https://blog.google/products-and-platforms/products/education/google-ai-educator-series-global-expansion-november-2026/&quot;, &quot;sourceName&quot;: &quot;Google Blog · AI Educator Series 全球擴展&quot;}">
-        <span class="tag tag-product">產品</span>
-        <div class="item-text">
-          <div class="item-title">11/3 Google AI Educator Series 擴展至西班牙、巴西、墨西哥、澳洲及非洲</div>
-          <div class="item-source">Google Blog</div>
-        </div>
-      </div>
-      <div class="section-label">效果研究</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;效果研究&quot;, &quot;tagClass&quot;: &quot;tag-research&quot;, &quot;tagLabel&quot;: &quot;研究&quot;, &quot;title&quot;: &quot;Stanford 審查逾 800 篇 K-12 AI 研究：僅 20 篇合格，無一涉及中小學生&quot;, &quot;para1&quot;: &quot;《Education Week》11 月報導指出，Stanford AI Hub 系統性審查逾 800 篇 AI 教育研究後，僅篩出 20 篇具備強因果設計；且此 20 篇無一以 K-12 學生為受試對象。這意味當前絕大多數 AI 教育工具的效果宣稱，幾乎缺乏嚴謹的中小學生實證基礎，審查報告形容整個研究領域「一團混亂」。&quot;, &quot;para2&quot;: &quot;效果宣稱缺乏實證，對 EdTech 廠商是雙面刃：短期內競爭門檻尚低，但歐美主要採購方正快速提升對「效果研究」的要求。率先投資對照試驗、提出同儕審閱報告的廠商，將在下一波政府採購招標中取得壓倒性優勢。&quot;, &quot;takeaway&quot;: &quot;現在著手與台灣師範大學、清大或成大教育研究所接洽，設計準實驗設計（quasi-experiment）效果評估計畫。三年後一份已發表的效果研究，就能成為進入美國、歐盟採購評選的核心競爭資產，早投資一年等於提早三年卡位。&quot;, &quot;sourceUrl&quot;: &quot;https://www.edweek.org/technology/the-research-on-ai-in-education-is-a-mess/2026/11&quot;, &quot;sourceName&quot;: &quot;Education Week · AI 教育研究品質審查&quot;}">
-        <span class="tag tag-research">研究</span>
-        <div class="item-text">
-          <div class="item-title">Stanford 審查逾 800 篇 K-12 AI 研究：僅 20 篇合格，無一涉及中小學生</div>
-          <div class="item-source">Education Week</div>
-        </div>
-      </div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;效果研究&quot;, &quot;tagClass&quot;: &quot;tag-research&quot;, &quot;tagLabel&quot;: &quot;研究&quot;, &quot;title&quot;: &quot;CSU 全美最大規模 AI 高教調查：9.4 萬受訪者中 95% 使用 AI，但多數不信任輸出&quot;, &quot;para1&quot;: &quot;加州州立大學系統（CSU）發布全美最大規模高等教育 AI 調查，逾 9.4 萬份有效問卷涵蓋 21 種常用 AI 工具，結果顯示 95% 受訪學生至少使用過一項 AI 工具，ChatGPT 使用率最高。然而多數受訪者明確表示對 AI 輸出準確性抱持疑慮，強調手動驗證的必要性。&quot;, &quot;para2&quot;: &quot;95% 使用率顯示 AI 已是大學生的日常工具，但「高使用、低信任」格局揭示市場尚未被「有引導、有驗證機制」的系統性解決方案填補。機構若能提供結構化的 AI 使用指導框架，將比單純提供工具存取更有長期黏性。&quot;, &quot;takeaway&quot;: &quot;「AI 輸出批判查核」正是台灣 EdTech 廠商的藍海課程方向。可引用 CSU 這份 9.4 萬人調查作為說服學校採購主任的數據彈藥，設計「AI 識讀能力工作坊」切入大學通識課程，將需求急迫性數字化後行動轉換率會顯著提高。&quot;, &quot;sourceUrl&quot;: &quot;https://blogs.sjsu.edu/newsroom/2026/csu-releases-findings-after-conducting-the-largest-and-most-comprehensive-survey-on-artificial-intelligence-in-higher-education/&quot;, &quot;sourceName&quot;: &quot;San Jose State · CSU AI 高教調查&quot;}">
-        <span class="tag tag-research">研究</span>
-        <div class="item-text">
-          <div class="item-title">CSU 全美最大規模 AI 高教調查：9.4 萬受訪者中 95% 使用 AI，但多數不信任輸出</div>
-          <div class="item-source">San Jose State</div>
-        </div>
-      </div>
-      <div class="section-label">資金動態</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;資金動態&quot;, &quot;tagClass&quot;: &quot;tag-funding&quot;, &quot;tagLabel&quot;: &quot;資金&quot;, &quot;title&quot;: &quot;10/29 Digital Science 收購 Jenni AI：800 萬學術用戶、189 國版圖整合&quot;, &quot;para1&quot;: &quot;英國學術研究平台 Digital Science 於 10 月 29 日宣布收購 AI 學術寫作工具 Jenni AI，後者擁有橫跨 189 個國家的逾 800 萬名學生與研究者用戶。Jenni 將維持獨立品牌運作，優先整合 Digital Science 旗下 Dimensions 學術數據庫，讓 AI 生成的學術寫作直接獲得可驗證的引文來源支撐。&quot;, &quot;para2&quot;: &quot;此收購是「學術 AI 寫作 + 可信資料庫」整合趨勢的里程碑：Jenni 獲得 Digital Science 的 Overleaf、Papers AI、ReadCube 生態系資源，代表下一代學術 AI 工具的核心競爭力將從「生成能力」轉向「可驗證性」。&quot;, &quot;takeaway&quot;: &quot;台灣EdTech廠商若切入高教寫作或研究輔助領域，應優先把「來源可追蹤、引文自動核實」做為主打功能，而非只強調 AI 生成速度。教師和學術機構更願意為「可問責的 AI 輸出」付費，此功能也能直接對應各校學術誠信政策的採購需求。&quot;, &quot;sourceUrl&quot;: &quot;https://tech.eu/2026/10/29/digital-science-acquires-jenni-ai-to-bring-verified-research-data-to-ai-powered-academic-writing/&quot;, &quot;sourceName&quot;: &quot;Tech.eu · Digital Science 收購 Jenni AI&quot;}">
-        <span class="tag tag-funding">資金</span>
-        <div class="item-text">
-          <div class="item-title">10/29 Digital Science 收購 Jenni AI：800 萬學術用戶、189 國版圖整合</div>
-          <div class="item-source">Tech.eu</div>
-        </div>
-      </div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;資金動態&quot;, &quot;tagClass&quot;: &quot;tag-funding&quot;, &quot;tagLabel&quot;: &quot;資金&quot;, &quot;title&quot;: &quot;10/29 加拿大政府注資最高 16 億加幣入股 AI 公司 Cohere，確保技術主權&quot;, &quot;para1&quot;: &quot;加拿大總理 Mark Carney 於 10 月 29 日宣布聯邦政府將分階段對多倫多 AI 公司 Cohere 進行最高 C$16 億的股權投資，要求 Cohere 承諾於 2030 年前在加拿大創造逾千個高薪技術職位，並保留全球總部。Cohere 同日宣布整體在加投資承諾將升至 C$40 億以上，新增逾 1,500 個職位。&quot;, &quot;para2&quot;: &quot;加拿大此舉標誌「政府以股權保技術主權」的 AI 投資新模式，與美國純私人資本主導形成對比。多倫多大學此前已與 Cohere 簽署多年合作協議，代表主權 AI 投資直接帶動高教 AI 生態系建構，各國政府正在形成「投資 AI 公司 + 綁定大學合作」的政策組合拳。&quot;, &quot;takeaway&quot;: &quot;台灣政府若欲複製此模式，可參考加拿大「入股 + 就業條件 + 大學合作三連動」設計。台灣 EdTech 廠商可提前研究 Cohere 的企業 API 方案，評估是否以其繁中語言模型能力作為自家產品基礎架構，借力使力而非從零開發語言模型。&quot;, &quot;sourceUrl&quot;: &quot;https://betakit.com/canada-to-invest-up-to-1-6-billion-in-ai-firm-cohere/&quot;, &quot;sourceName&quot;: &quot;BetaKit · 加拿大政府注資 Cohere&quot;}">
-        <span class="tag tag-funding">資金</span>
-        <div class="item-text">
-          <div class="item-title">10/29 加拿大政府注資最高 16 億加幣入股 AI 公司 Cohere，確保技術主權</div>
-          <div class="item-source">BetaKit</div>
-        </div>
-      </div>
-      <div class="section-label">台灣與亞洲</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;台灣與亞洲&quot;, &quot;tagClass&quot;: &quot;tag-taiwan&quot;, &quot;tagLabel&quot;: &quot;台灣&quot;, &quot;title&quot;: &quot;11/12 臺灣教育科技展以「AI賦能，跨域共生」開幕，TAVA AI 備課工具首亮相&quot;, &quot;para1&quot;: &quot;2026 資訊月暨臺灣教育科技展將於 11 月 12 至 15 日於台北世貿一館舉行，主題「AI 賦能，跨域共生」，乾淨世界攜手 TAVA AI 展示教師 AI 備課工具，教育部將於 11 月 14 日辦理五場免費論壇，涵蓋 App 安全教育、AI 跨域課程設計及親子數位學習指引，參觀人次預計觸及 35 萬。&quot;, &quot;para2&quot;: &quot;此展是全台密度最高的教育採購場合，每年集中縣市教育局、學校採購主任與校長。今年「AI 賦能」主軸傳遞明確政策信號：政府將 AI 融入教育列為當前施政核心，官方預算釋放訊號強烈。&quot;, &quot;takeaway&quot;: &quot;未設攤的台灣 EdTech 廠商仍應安排 11/12 至 11/15 人員到場蒐集競品情報，優先參加 11/14 教育部論壇、記錄主講人聯絡資訊。攜帶產品一頁紙與手機示範，四天內可低成本完成大量採購端關係的初次觸達。&quot;, &quot;sourceUrl&quot;: &quot;https://n.yam.com/Article/20261029957636&quot;, &quot;sourceName&quot;: &quot;Yahoo新聞 · 2026臺灣教育科技展&quot;}">
-        <span class="tag tag-taiwan">台灣</span>
-        <div class="item-text">
-          <div class="item-title">11/12 臺灣教育科技展以「AI賦能，跨域共生」開幕，TAVA AI 備課工具首亮相</div>
-          <div class="item-source">Yahoo新聞</div>
-        </div>
-      </div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;台灣與亞洲&quot;, &quot;tagClass&quot;: &quot;tag-taiwan&quot;, &quot;tagLabel&quot;: &quot;台灣&quot;, &quot;title&quot;: &quot;香港全面補貼 AI 教育：每校 50 萬港幣補助，逾 99% 公立學校納入覆蓋&quot;, &quot;para1&quot;: &quot;2026 年最新數據顯示，香港政府透過每校 50 萬港幣的補助計畫，支持逾 960 所學校（佔公立學校 99% 以上）推行 AI 課程，自 2023 年起已強制規定初中生修習 10 至 14 小時 AI 教育。另據新研究，香港、新加坡、台灣三地 AI 作文輔助工具的教學比較結果已於近期發表。&quot;, &quot;para2&quot;: &quot;香港「全額補貼 + 課綱強制」雙軌並進的模式，是亞洲 AI 教育政策最積極的案例之一。台灣尚未到達同等補貼力度，但比較研究顯示三地教師對 AI 寫作輔助的接受度差異，為本地廠商提供了精準的產品定位依據。&quot;, &quot;takeaway&quot;: &quot;台灣廠商可主動向教育部提出「AI 教育課綱工具補助建議白皮書」，以香港補助模式為參照，具體建議政府補助額度與採購機制。先主動提議的廠商通常在後續政策採購中獲得優先評選資格，參政意見書是成本最低的市場卡位工具。&quot;, &quot;sourceUrl&quot;: &quot;https://www.jcnnewswire.com/pressrelease/111206/3&quot;, &quot;sourceName&quot;: &quot;JCN Newswire · 香港全面補助 AI 教育&quot;}">
-        <span class="tag tag-taiwan">台灣</span>
-        <div class="item-text">
-          <div class="item-title">香港全面補貼 AI 教育：每校 50 萬港幣補助，逾 99% 公立學校納入覆蓋</div>
-          <div class="item-source">JCN Newswire</div>
-        </div>
-      </div>
-    </aside>
-    <div class="detail-panel" id="detail-2026-11-04">
-      <div class="detail-empty">
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-        <p>點擊左側新聞查看詳情</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="day-pane" hidden data-day="2026-11-03">
-  <div class="split">
-    <aside class="news-list" id="list-2026-11-03">
-      <div class="pane-header">11月3日（週二）<span class="count"> · 8 則</span></div>
-
-      <div class="section-label">產品動態</div>      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;產品動態&quot;, &quot;tagClass&quot;: &quot;tag-product&quot;, &quot;tagLabel&quot;: &quot;產品&quot;, &quot;title&quot;: &quot;11/2 Google 開放教師查閱學生 AI 對話記錄，但學校仍無法全面停用搜尋 AI&quot;, &quot;para1&quot;: &quot;Google 自 11 月初起讓教師可查閱學生在 Google 搜尋中的 AI 對話記錄，回應學校對學習透明度的要求。然而學校至今仍無法完全關閉 Google 搜尋的 AI 功能，美國兩位參議員因此致函 Google 提出九項問題，要求說明教師及管理員的實際控制範圍。Google 方面表示教師與管理員仍保有管控權。&quot;, &quot;para2&quot;: &quot;Google 此舉形同「給了透明度，但仍保留控制權」——提供監看功能卻不開放關閉鍵，反映大型平台在教育市場中的利益邊界。學校在採購 AI 工具時，必須在合約中明確要求功能關閉權，而非只談使用條款，否則仍處於被動角色。&quot;, &quot;takeaway&quot;: &quot;台灣 EdTech 廠商可在銷售話術中強調「教師完整控制權」，主動列出哪些 AI 功能可由學校自行開啟或關閉，與 Google 不給關閉鍵的模式形成清楚對比。在接觸保守型學校採購主任時，「AI 功能完全可管控」是最有說服力的差異化賣點，尤其在管制趨嚴的環境中更具競爭優勢。&quot;, &quot;sourceUrl&quot;: &quot;https://newcurrent.substack.com/p/the-syllabus-november-2-2026&quot;, &quot;sourceName&quot;: &quot;The Syllabus · 教師查閱學生 AI 對話&quot;}">
-        <span class="tag tag-product">產品</span>
-        <div class="item-text">
-          <div class="item-title">11/2 Google 開放教師查閱學生 AI 對話記錄，但學校仍無法全面停用搜尋 AI</div>
-          <div class="item-source">The Syllabus</div>
-        </div>
-      </div>
-      <div class="section-label">市場趨勢</div>      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;市場趨勢&quot;, &quot;tagClass&quot;: &quot;tag-market&quot;, &quot;tagLabel&quot;: &quot;趨勢&quot;, &quot;title&quot;: &quot;11/1 微軟與教師工會聯合制定的 AI 安全隱私標準正式對全美學區開放採用&quot;, &quot;para1&quot;: &quot;微軟與美國教師聯合會（AFT）及紐約市教師工會（UFT）共同制定的「AI 安全與隱私標準」自 11 月 1 日起對全美所有學區開放，任何學區均可將此標準納入現有或新簽合約而無需重新談判。標準涵蓋 AI 資料安全、學生隱私保障與透明度要求，由教師工會主導起草，具備工會認可背書。&quot;, &quot;para2&quot;: &quot;工會主導訂定合約標準，代表未來美國學區購置 AI 工具的談判籌碼大幅提升，未符合此標準的 AI 廠商將在採購評選中面臨更大壓力。此標準預計成為 K-12 AI 採購的事實最低門檻，非美國廠商進入美國市場時也應主動對齊以降低採購阻力。&quot;, &quot;takeaway&quot;: &quot;台灣廠商計畫進入美國 K-12 市場時，應提前下載微軟-AFT 標準並逐條對照自家產品的隱私政策。提前完成對齊並製作合規聲明文件，可大幅縮短學區採購審查週期。此份合規文件成本低但進場加速效果顯著，是最划算的市場準入前置投資之一。&quot;, &quot;sourceUrl&quot;: &quot;https://cornfordandcross.com/legal/people-and-ai-in-schools-what-microsoft-s-pact-and-california-s-new-laws-say/&quot;, &quot;sourceName&quot;: &quot;Cornford &amp; Cross · 微軟 AI 學校標準分析&quot;}">
-        <span class="tag tag-market">趨勢</span>
-        <div class="item-text">
-          <div class="item-title">11/1 微軟與教師工會聯合制定的 AI 安全隱私標準正式對全美學區開放採用</div>
-          <div class="item-source">Cornford & Cross</div>
-        </div>
-      </div>      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;市場趨勢&quot;, &quot;tagClass&quot;: &quot;tag-market&quot;, &quot;tagLabel&quot;: &quot;趨勢&quot;, &quot;title&quot;: &quot;11/2 費爾法克斯郡草擬教育 AI 政策，首度區分「輔助型」與「代理型」AI 工具分類&quot;, &quot;para1&quot;: &quot;維吉尼亞州費爾法克斯郡公立學校於 11 月 2 日公開新興科技政策草案，首度在學區政策文件中明確區分「AI 賦能工具」與「代理型生成 AI」，後者指能自動執行任務的 AI，受到更嚴格的管制。草案另含各年級使用分級建議，一位教育委員建議針對高中生訂立更細緻的操作標準。&quot;, &quot;para2&quot;: &quot;費爾法克斯郡的分類框架預示學區政策文件將越來越細化 AI 功能層次，簡單的「允許/禁止」二元管制將被多層次功能分類框架取代。廠商若無法清楚說明自家工具屬哪種 AI 類型，就可能在政策審查中被誤列為高管制類別而喪失進場機會。&quot;, &quot;takeaway&quot;: &quot;建議台灣 EdTech 廠商在產品文件中主動採用「AI 功能分層描述」框架：哪些是「AI 賦能輔助」（如文法建議），哪些是「代理型 AI 執行」（如自動生成作業）。以費爾法克斯郡分類標準為對照依據，讓採購主任一目瞭然，顯著降低政策審查阻力，也能提升專業形象。&quot;, &quot;sourceUrl&quot;: &quot;https://ffxnow.com/2026/11/02/new-fcps-policies-governing-educational-technology-use-of-ai-start-to-take-shape&quot;, &quot;sourceName&quot;: &quot;FFXnow · 費爾法克斯郡教育 AI 政策草案&quot;}">
-        <span class="tag tag-market">趨勢</span>
-        <div class="item-text">
-          <div class="item-title">11/2 費爾法克斯郡草擬教育 AI 政策，首度區分「輔助型」與「代理型」AI 工具分類</div>
-          <div class="item-source">FFXnow</div>
-        </div>
-      </div>
-      <div class="section-label">效果研究</div>      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;效果研究&quot;, &quot;tagClass&quot;: &quot;tag-research&quot;, &quot;tagLabel&quot;: &quot;研究&quot;, &quot;title&quot;: &quot;Education Week：逾 800 篇 K-12 AI 教育研究中，僅 20 篇具有因果設計且無一涉及中小學生&quot;, &quot;para1&quot;: &quot;《教育週報》（Education Week）最新報導指出，2026 年一項系統性回顧蒐集超過 800 篇 AI 教育研究，篩選後僅 20 篇具備「強因果關係設計」，且這 20 篇研究均不以中小學生為受試對象。這意味當前 AI 教育工具的效果宣稱，幾乎缺乏嚴謹的 K-12 實驗支撐。&quot;, &quot;para2&quot;: &quot;「800 篇中只有 20 篇合格」為整個 EdTech 行業敲響警鐘：AI 教育工具的效果宣稱大多建立在相關性分析而非對照實驗。對擬進入美國或歐洲等注重實證市場的廠商而言，委託獨立研究機構進行對照試驗，將成為區分真假功效的最終競爭門檻。&quot;, &quot;takeaway&quot;: &quot;台灣 EdTech 廠商應把「產品效果研究」排入三年路線圖，可主動與台師大、清大或成大教育研究所合作設計準實驗研究，發表同儕審閱的效果報告。在各國日益嚴格的採購實證要求下，現在布局三年後就能以研究論文作為銷售彈藥，是長期競爭力的最高 ROI 投資。&quot;, &quot;sourceUrl&quot;: &quot;https://www.edweek.org/technology/the-research-on-ai-in-education-is-a-mess/2026/11&quot;, &quot;sourceName&quot;: &quot;Education Week · AI 教育研究品質分析&quot;}">
-        <span class="tag tag-research">研究</span>
-        <div class="item-text">
-          <div class="item-title">Education Week：逾 800 篇 K-12 AI 教育研究中，僅 20 篇具有因果設計且無一涉及中小學生</div>
-          <div class="item-source">Education Week</div>
-        </div>
-      </div>
-      <div class="section-label">機構合作</div>      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;機構合作&quot;, &quot;tagClass&quot;: &quot;tag-partner&quot;, &quot;tagLabel&quot;: &quot;合作&quot;, &quot;title&quot;: &quot;康乃爾大學 11 月起提供全體教職員免費 ChatGPT、Claude、Copilot，並設責任使用培訓門檻&quot;, &quot;para1&quot;: &quot;康乃爾大學宣布自 2026 年 11 月起，在兩年期試行計畫中為伊薩卡校區與 Cornell Tech 教職員及博士生提供免費基礎 AI 帳號，涵蓋 OpenAI ChatGPT Edu、Anthropic Claude 及 Microsoft Copilot Chat，碩士生與大學部將於 2027 年初陸續加入。所有使用者須先完成線上 AI 責任使用培訓才可申請帳號，資料不納入模型訓練。&quot;, &quot;para2&quot;: &quot;康乃爾同時採購三大廠商而非單一平台，顯示研究型大學的 AI 策略進入「多平台並行測試」新階段；「培訓為使用前提」的設計標誌高教 AI 部署從工具導入升級為系統性素養培育。此模式為台灣大學提供了一個可直接參考的採購範本。&quot;, &quot;takeaway&quot;: &quot;台灣大專院校 IT 部門可參考康乃爾模式，向教育部申請「多平台 AI 試行計畫」預算，以跨廠商比較研究框架讓院校安全試行。AI 廠商則可以「素養培訓模組搭配授權」作為進入高教採購的組合策略，培訓服務既增加黏性，也可作為資料收集學校實際使用情況的管道，持續優化產品。&quot;, &quot;sourceUrl&quot;: &quot;https://news.cornell.edu/node/333837&quot;, &quot;sourceName&quot;: &quot;Cornell Chronicle · 康乃爾多平台 AI 試行計畫&quot;}">
-        <span class="tag tag-partner">合作</span>
-        <div class="item-text">
-          <div class="item-title">康乃爾大學 11 月起提供全體教職員免費 ChatGPT、Claude、Copilot，並設責任使用培訓門檻</div>
-          <div class="item-source">Cornell Chronicle</div>
-        </div>
-      </div>
-      <div class="section-label">效果研究</div>      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;效果研究&quot;, &quot;tagClass&quot;: &quot;tag-research&quot;, &quot;tagLabel&quot;: &quot;研究&quot;, &quot;title&quot;: &quot;全球高教 AI 調查：92% 拉美學生積極使用 AI，但僅 30% 認為學校 AI 整合達到期望&quot;, &quot;para1&quot;: &quot;數位教育委員會（Digital Education Council）拉丁美洲高教 AI 調查顯示，92% 學生與 79% 教師主動使用 AI，但在滿意度端，僅 30% 學生認為學校的 AI 整合達到期望。另一份全球調查發現，美國及加拿大教師使用 AI 的意願從 76% 降至 67%，反映新鮮感消退與信心不穩的雙重現象。&quot;, &quot;para2&quot;: &quot;「高採用、低滿意」格局揭示 AI 教育工具的最大缺口不在取得管道，而在師生引導配套。採用率已非競爭門檻，用戶體驗品質、教師有效引導能力與機構支援完整度，才是決定學校是否長期續用的核心因素。廠商若只強調功能豐富而忽略導入支援，將快速流失。&quot;, &quot;takeaway&quot;: &quot;建議台灣 EdTech 廠商把「導入成功服務包」列為核心銷售主張：提供教師入門培訓影片庫、教學案例資料庫與隨時可用的問答支援，讓學校在採購後真正「用得起來」。以「客戶成功率」而非「授權數」向採購主任呈報 KPI，將大幅提升續約率並帶動口碑推薦，形成正向增長飛輪。&quot;, &quot;sourceUrl&quot;: &quot;https://www.digitaleducationcouncil.com/post/92-of-students-and-79-of-faculty-actively-engaging-with-ai-findings-from-ai-in-higher-education-latam-survey-2026&quot;, &quot;sourceName&quot;: &quot;Digital Education Council · 拉美高教 AI 調查 2026&quot;}">
-        <span class="tag tag-research">研究</span>
-        <div class="item-text">
-          <div class="item-title">全球高教 AI 調查：92% 拉美學生積極使用 AI，但僅 30% 認為學校 AI 整合達到期望</div>
-          <div class="item-source">Digital Education Council</div>
-        </div>
-      </div>
-      <div class="section-label">台灣與亞洲</div>      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;台灣與亞洲&quot;, &quot;tagClass&quot;: &quot;tag-taiwan&quot;, &quot;tagLabel&quot;: &quot;台灣&quot;, &quot;title&quot;: &quot;11/12 臺灣教育科技展以「AI賦能，跨域共生」為主軸登場，教育部設專場論壇&quot;, &quot;para1&quot;: &quot;2026 資訊月暨臺灣教育科技展將於 11 月 12 至 15 日在台北世貿一館舉行，主題「AI 賦能，跨域共生」涵蓋 AI 生活應用、校園科技與親子樂齡共學等場館，預計觸及 35 萬人次。教育部將於 11 月 14 日辦理專場論壇，議題包含 App 安全教育、AI 跨域課程設計及 e 度學習備課實務，免費開放報名。&quot;, &quot;para2&quot;: &quot;臺灣教育科技展是國內最大規模的教育科技採購交流平台，每年集中縣市教育局官員、學校採購主任與校長，是 EdTech 廠商與政府採購端直接接觸密度最高的管道。今年「AI 賦能」主題更代表官方將 AI 融入教育列為最高主軸，採購預算釋放信號明確，不容錯過。&quot;, &quot;takeaway&quot;: &quot;未參展的台灣 EdTech 廠商應立即確認 11/12 參觀計畫，優先參加 11/14 教育部論壇並蒐集主講人聯絡名單。即使未設攤，四天展期是全年最高密度與縣市教育局及採購主任直接接觸的場合；帶著產品一頁紙和手機 Demo，可低成本完成大量潛在採購關係的首次接觸。&quot;, &quot;sourceUrl&quot;: &quot;https://n.yam.com/Article/20261029957636&quot;, &quot;sourceName&quot;: &quot;Yahoo新聞 · 2026臺灣教育科技展預告&quot;}">
-        <span class="tag tag-taiwan">台灣</span>
-        <div class="item-text">
-          <div class="item-title">11/12 臺灣教育科技展以「AI賦能，跨域共生」為主軸登場，教育部設專場論壇</div>
-          <div class="item-source">Yahoo新聞</div>
-        </div>
-      </div>      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;台灣與亞洲&quot;, &quot;tagClass&quot;: &quot;tag-taiwan&quot;, &quot;tagLabel&quot;: &quot;台灣&quot;, &quot;title&quot;: &quot;11/21 國立臺灣大學辦理 AI 備課與視覺教材免費研習，開放全台高中以下教師報名&quot;, &quot;para1&quot;: &quot;國立臺灣大學主辦「2026 教育未來式」系列研習，將於 11 月 21 日辦理「AI 教學設計與備課應用」課程，22 日辦理「AI 生成圖像與視覺教材設計」課程，地點在台大校園，兩場各限 80 名額，全台公私立高中以下學校教師均可免費報名。課程強調在課室情境中的實作應用。&quot;, &quot;para2&quot;: &quot;台大主辦教師 AI 研習傳遞強烈政策訊號：AI 備課能力已從「選修加分」升格為「教師職涯核心能力」，且頂尖大學已主動投入師資培力。這代表「AI 備課工具」市場需求正快速升溫，具備大學合作背書的廠商將在這波需求中取得優先信任與採購正當性。&quot;, &quot;takeaway&quot;: &quot;此研習的 160 個名額雖有限，但報名教師都是主動求變的早期採用者——正是最高價值的產品試用群。台灣 EdTech 廠商可聯繫研習主辦單位，申請在活動中設置工具體驗站或派發試用包，以低成本接觸高意願教師族群，為後續付費轉換打好人際基礎。&quot;, &quot;sourceUrl&quot;: &quot;https://www.cyc.edu.tw/modules/tadnews/index.php?nsn=95208&quot;, &quot;sourceName&quot;: &quot;嘉義縣教育資訊網 · 台灣大學 AI 師訓研習&quot;}">
-        <span class="tag tag-taiwan">台灣</span>
-        <div class="item-text">
-          <div class="item-title">11/21 國立臺灣大學辦理 AI 備課與視覺教材免費研習，開放全台高中以下教師報名</div>
-          <div class="item-source">嘉義縣教育資訊網</div>
-        </div>
-      </div>
-    </aside>
-    <div class="detail-panel" id="detail-2026-11-03">
-      <div class="detail-empty">
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-        <p>點擊左側新聞查看詳情</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="day-pane" hidden data-day="2026-11-02">
-  <div class="split">
-    <aside class="news-list" id="list-2026-11-02">
-      <div class="pane-header">11月2日（週一）<span class="count"> · 8 則</span></div>
-      <div class="section-label">機構合作</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;機構合作&quot;, &quot;tagClass&quot;: &quot;tag-partner&quot;, &quot;tagLabel&quot;: &quot;合作&quot;, &quot;title&quot;: &quot;10/26 Cornell大學全員開放ChatGPT、Claude及Gemini，兩年試行計畫啟動&quot;, &quot;para1&quot;: &quot;康乃爾大學於10月26日宣布將提供全體師生及員工免費使用ChatGPT Edu、Claude Enterprise及Google Gemini三款主流AI工具，完成AI素養培訓課程後即可申請帳號。合約條款確保用戶資料不納入模型訓練，隱私保護為採購先決條件。此兩年期試行計畫將於期滿後依使用數據及市場動態評估是否延續或調整。&quot;, &quot;para2&quot;: &quot;頂尖研究型大學同時採購三家平台而非鎖定單一廠商，標誌高教AI部署進入「多元供應商並行」新階段。以素養培訓為使用門檻的設計，也為其他大學建立了「先培訓、再開放」的採購模板，資料隱私要求則正在成為高教機構採購AI的最低合規基準。&quot;, &quot;takeaway&quot;: &quot;台灣大學IT採購部門可參考康乃爾多平台試行模式，同時引進兩至三套AI工具供師生比較使用，而非全押單一廠商。EdTech廠商則可以「AI素養認證模組」為切入點，搭配院校授權方案打包銷售，把培訓服務轉化為進入高教採購清單的敲門磚。&quot;, &quot;sourceUrl&quot;: &quot;https://news.cornell.edu/stories/2026/10/seat-table-cornell-expands-access-multiple-ai-tools-faculty-staff-students&quot;, &quot;sourceName&quot;: &quot;Cornell Chronicle · 大學AI工具試行計畫&quot;}">
-        <span class="tag tag-partner">合作</span>
-        <div class="item-text">
-          <div class="item-title">10/26 Cornell大學全員開放ChatGPT、Claude及Gemini，兩年試行計畫啟動</div>
-          <div class="item-source">Cornell Chronicle</div>
-        </div>
-      </div>
-      <div class="section-label">資金動態</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;資金動態&quot;, &quot;tagClass&quot;: &quot;tag-funding&quot;, &quot;tagLabel&quot;: &quot;資金&quot;, &quot;title&quot;: &quot;10/19 IXL收購全美最廣寫作平台NoRedInk，觸及90%美國學區&quot;, &quot;para1&quot;: &quot;IXL Learning於10月19日宣布收購AI輔助英語寫作平台NoRedInk，後者服務遍及全美逾90%學區，以分步驟語法練習與段落引導著稱。這是IXL自2018年以來完成的第14次收購，財務條款未公開。NoRedInk將以獨立品牌繼續運作，並獲IXL資源支援擴大AI功能開發。&quot;, &quot;para2&quot;: &quot;IXL持續以收購策略構建英語語言藝術全覆蓋護城河，顯示美國K-12 EdTech整合浪潮方興未艾。在AI管制趨嚴環境中，AI寫作過程引導工具反而成為搶手標的——因為它協助教師「看見學生思考歷程」，而非取代寫作，符合各地學校對AI使用透明度的訴求。&quot;, &quot;takeaway&quot;: &quot;台灣國語文及英語寫作工具廠商應把產品定位從「AI生成輸出」轉向「AI引導思考歷程」——展示寫作過程追蹤、段落邏輯評估等功能，讓教師保有教學主體性。此定位不只是管制環境中的防守策略，也是在管制趨嚴的市場中取得差異化進場優勢的主動出擊。&quot;, &quot;sourceUrl&quot;: &quot;https://www.prnewswire.com/news-releases/ixl-learning-acquires-noredink-302912835.html&quot;, &quot;sourceName&quot;: &quot;PR Newswire · IXL Learning收購NoRedInk&quot;}">
-        <span class="tag tag-funding">資金</span>
-        <div class="item-text">
-          <div class="item-title">10/19 IXL收購全美最廣寫作平台NoRedInk，觸及90%美國學區</div>
-          <div class="item-source">PR Newswire</div>
-        </div>
-      </div>
-      <div class="section-label">效果研究</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;效果研究&quot;, &quot;tagClass&quot;: &quot;tag-research&quot;, &quot;tagLabel&quot;: &quot;研究&quot;, &quot;title&quot;: &quot;加州州大94,000人調查：95%學生用AI，但超半數不信任輸出準確性&quot;, &quot;para1&quot;: &quot;加州州立大學（CSU）系統發布全美規模最大的高教AI調查，收集94,000份教職員生問卷，涵蓋21種常用AI工具使用情況。結果顯示95%受訪者至少使用過一種AI工具，ChatGPT使用率最高；然而超過半數受訪者明確表示對AI輸出準確度存有疑慮，採用率與信任度之間存在顯著落差。&quot;, &quot;para2&quot;: &quot;「高使用、低信任」現象揭示一個尚未被充分填補的市場缺口：學生需要的不是更多AI工具，而是能幫助他們評估AI輸出可靠程度的批判能力。這份來自美國最大州立大學系統的大規模數據，為「AI識讀素養課程」的採購說服力提供了堅實支撐。&quot;, &quot;takeaway&quot;: &quot;「AI輸出批判查核」是台灣EdTech廠商尚未充分開發的藍海課程方向。可設計「AI識讀能力工作坊」針對大學通識課程或高中進階課程，引用CSU這份94,000人調查作為銷售話術依據，以數據顯示需求急迫性，加快學校行政主管的採購決策節奏。&quot;, &quot;sourceUrl&quot;: &quot;https://blogs.sjsu.edu/newsroom/2026/csu-releases-findings-after-conducting-the-largest-and-most-comprehensive-survey-on-artificial-intelligence-in-higher-education/&quot;, &quot;sourceName&quot;: &quot;San Jose State · CSU全美最大AI高教調查&quot;}">
-        <span class="tag tag-research">研究</span>
-        <div class="item-text">
-          <div class="item-title">加州州大94,000人調查：95%學生用AI，但超半數不信任輸出準確性</div>
-          <div class="item-source">San Jose State</div>
-        </div>
-      </div>
-      <div class="section-label">市場趨勢</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;市場趨勢&quot;, &quot;tagClass&quot;: &quot;tag-market&quot;, &quot;tagLabel&quot;: &quot;趨勢&quot;, &quot;title&quot;: &quot;美國2026超30州提出教育AI法案，政策從探索期跨入立法制度建構期&quot;, &quot;para1&quot;: &quot;FutureEd最新追蹤顯示，美國2026年超過30州已提出或通過教育AI相關法案，涵蓋AI素養課程入課綱、教師培訓補助、學區AI政策強制要求及AI採購透明度規範等面向。部分州設立「AI創新教育試點計畫」，以政府資金推動學校系統性AI評估，標誌教育AI政策從草創探索正式進入制度建構階段。&quot;, &quot;para2&quot;: &quot;30州立法潮代表可預測的政府採購預算正在形成：AI素養課程採購、教師培訓方案、透明度合規工具都將成為政府契約標的。對EdTech廠商而言，這是長期穩定的市場訊號，但同時也意味著進入市場的合規成本與認證門檻正在提高，越早準備越有競爭優勢。&quot;, &quot;takeaway&quot;: &quot;台灣EdTech廠商可將美國各州教育AI法案作為台灣政策的先行指標，提前研究法案中對「AI工具透明度」「學習資料隱私保護」「AI使用揭露義務」的具體要求，將其納入產品設計規格，讓未來進入美國市場時具備天然合規優勢，而非事後補強付出更高代價。&quot;, &quot;sourceUrl&quot;: &quot;https://www.future-ed.org/legislative-tracker-2026-state-ai-in-education-bills/&quot;, &quot;sourceName&quot;: &quot;FutureEd · 2026年教育AI州立法追蹤&quot;}">
-        <span class="tag tag-market">趨勢</span>
-        <div class="item-text">
-          <div class="item-title">美國2026超30州提出教育AI法案，政策從探索期跨入立法制度建構期</div>
-          <div class="item-source">FutureEd</div>
-        </div>
-      </div>
-      <div class="section-label">台灣與亞洲</div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;台灣與亞洲&quot;, &quot;tagClass&quot;: &quot;tag-taiwan&quot;, &quot;tagLabel&quot;: &quot;台灣&quot;, &quot;title&quot;: &quot;10/27 台灣微軟攜手ISAC推校園AI專案，Copilot與Foundry全面進大學&quot;, &quot;para1&quot;: &quot;台灣微軟與中華民國大專校院資訊服務協會（ISAC）於10月27日宣布合作「全國大專校院微軟校園軟體教育版授權專案」，整合Microsoft 365 A3/A5與Copilot，由ISAC作為集體採購中介，協助各校降低AI工具導入門檻。方案提供Azure Foundry的token預算管理功能，並納入Microsoft Learn學習資源與AI Skills Navigator平台，供教職員自主進修。&quot;, &quot;para2&quot;: &quot;ISAC角色讓中小型技術學院免去自行洽談授權的繁複程序，直接受惠於企業級AI合約保護。此模式也預示後續校園AI應用場景（如Copilot Agent行政與教學助理）得以快速規模化，為台灣高教AI基礎建設提供更系統性的國家級部署路徑。&quot;, &quot;takeaway&quot;: &quot;台灣EdTech廠商應把握微軟ISAC生態系商機，主動開發與Microsoft 365相容的Copilot外掛應用，或為Teams教育環境設計AI工具模組。搭上ISAC現有授權渠道，可省去個別院校採購公關，大幅加速進場速度。&quot;, &quot;sourceUrl&quot;: &quot;https://news.microsoft.com/source/asia/2026/10/27/microft-taiwan-partners-with-isac/?lang=zh-hant&quot;, &quot;sourceName&quot;: &quot;Microsoft Source Asia · 台灣微軟ISAC合作&quot;}">
-        <span class="tag tag-taiwan">台灣</span>
-        <div class="item-text">
-          <div class="item-title">10/27 台灣微軟攜手ISAC推校園AI專案，Copilot與Foundry全面進大學</div>
-          <div class="item-source">Microsoft Source Asia</div>
-        </div>
-      </div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;台灣與亞洲&quot;, &quot;tagClass&quot;: &quot;tag-taiwan&quot;, &quot;tagLabel&quot;: &quot;台灣&quot;, &quot;title&quot;: &quot;10/5～9 教育部師培考察團赴新加坡，聚焦AI融入師訓與EdTech 2030藍圖&quot;, &quot;para1&quot;: &quot;台灣教育部師資培育專家考察團於10月5至9日赴新加坡，主要拜訪教育部及南洋理工大學國立教育學院（NIE），聚焦新加坡教育科技總藍圖（EdTech Masterplan 2030）執行現況、AI融入師資培育課程設計，以及新加坡自建「學生學習空間」（SLS）平台整合逾百萬學生資料的實際成效。&quot;, &quot;para2&quot;: &quot;新加坡為亞洲AI教育基礎設施最完善的政策標竿，其以政府投資建立全國統一學習平台的模式，是台灣最可能參考的師培AI部署路徑。台灣教育部此次主動考察，顯示師資培育AI系統化規劃具有政策優先性，師培相關課程與工具的政府採購需求預計於近一至兩年內快速升溫。&quot;, &quot;takeaway&quot;: &quot;師培AI平台是台灣EdTech廠商最有機會直接獲得政府採購的細分市場。建議廠商現在主動接觸師培大學或各縣市師培中心，設計「AI融入教學」微學分課程或工作坊作為POC，以師培機構為跳板取得教育部背書，搶佔即將到來的師培AI政策採購先機。&quot;, &quot;sourceUrl&quot;: &quot;https://n.yam.com/Article/20261019906501&quot;, &quot;sourceName&quot;: &quot;Yahoo新聞 · 教育部師培團赴新加坡考察&quot;}">
-        <span class="tag tag-taiwan">台灣</span>
-        <div class="item-text">
-          <div class="item-title">10/5～9 教育部師培考察團赴新加坡，聚焦AI融入師訓與EdTech 2030藍圖</div>
-          <div class="item-source">Yahoo新聞</div>
-        </div>
-      </div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;台灣與亞洲&quot;, &quot;tagClass&quot;: &quot;tag-taiwan&quot;, &quot;tagLabel&quot;: &quot;台灣&quot;, &quot;title&quot;: &quot;10/29 新北2026國際閱讀論壇：閱讀素養是AI時代最不可或缺的認知底層&quot;, &quot;para1&quot;: &quot;新北市教育局攜手天下雜誌教育基金會於10月29日在國立臺灣圖書館舉辦「2026國際閱讀教育論壇」，主題聚焦AI時代學生的關鍵學習能力。論壇邀請國內外專家探討在生成式AI普及下，如何重新定位閱讀素養為辨別AI輸出品質的認知基礎，而非僅視其為傳統語文能力。&quot;, &quot;para2&quot;: &quot;生成式AI大量產出文本，反而凸顯深度閱讀理解的不可替代性——能夠判斷AI輸出是否可信、邏輯是否完整，必須建立在紮實的文本閱讀能力之上。台灣官方與媒體合辦論壇傳遞明確政策訊號：閱讀教育投資將在AI時代獲得更強的政策支撐。&quot;, &quot;takeaway&quot;: &quot;「閱讀素養×AI識讀」跨域組合是台灣EdTech差異化利基。可針對國小中高年級至高中設計AI時代批判閱讀課程，強調「人機協作下的深度理解與查核能力」，以此次新北論壇及國際趨勢為政策背書，向縣市教育局提案研習課程包或教師增能方案，提升進場信度。&quot;, &quot;sourceUrl&quot;: &quot;https://tw.news.yahoo.com/2026%E5%9C%8B%E9%9A%9B%E9%96%B1%E8%AE%80%E6%95%99%E8%82%B2%E8%AB%96%E5%A3%87%E8%81%9A%E7%84%A6ai%E6%99%82%E4%BB%A3%E9%97%9C%E9%8D%B5%E5%AD%B8%E7%BF%92%E5%8A%9B-153620243.html&quot;, &quot;sourceName&quot;: &quot;Yahoo新聞 · 2026國際閱讀教育論壇&quot;}">
-        <span class="tag tag-taiwan">台灣</span>
-        <div class="item-text">
-          <div class="item-title">10/29 新北2026國際閱讀論壇：閱讀素養是AI時代最不可或缺的認知底層</div>
-          <div class="item-source">Yahoo新聞</div>
-        </div>
-      </div>
-      <div class="news-item" onclick="selectNews(this)"
-        data-story="{&quot;section&quot;: &quot;台灣與亞洲&quot;, &quot;tagClass&quot;: &quot;tag-taiwan&quot;, &quot;tagLabel&quot;: &quot;台灣&quot;, &quot;title&quot;: &quot;10/22 教育部AI教學研究中心成果登國際師培論壇，以人為本成主軸&quot;, &quot;para1&quot;: &quot;教育部領域教學研究中心於10月16至17日在國立臺北教育大學舉辦年度成果發表，同期結合第14屆師資培育國際學術研討會，主題定調「以人為本的AI教學應用」，展示各領域研究中心（數理、人文、藝術等）如何將AI融入課程設計。活動設有創新教材教法教具展及微型工作坊，歡迎現場體驗教師。&quot;, &quot;para2&quot;: &quot;師資培育是AI教育政策推進最關鍵的能力瓶頸——工具再強，教師無法有效引導就無從轉化為學習成效。教育部以國際學術論壇規格辦理師培AI成果展，傳達出「AI師培能力認證」即將從選修升格為教師職涯必備指標的政策方向，師培AI培訓市場將進入政策驅動的加速成長期。&quot;, &quot;takeaway&quot;: &quot;台灣EdTech廠商應把師培機構列為優先進場場域，盡快與師培大學合作設計符合學術規格的AI融入教學微學分課程或認證工作坊，以學術背書建立市場公信力，再橫向推廣至全台師培機構。先取得師培機構認可，就能讓廠商在政策驅動採購到來時站在最有利位置。&quot;, &quot;sourceUrl&quot;: &quot;https://n.yam.com/Article/20261022808143&quot;, &quot;sourceName&quot;: &quot;Yahoo新聞 · 教育部領域教研中心AI成果&quot;}">
-        <span class="tag tag-taiwan">台灣</span>
-        <div class="item-text">
-          <div class="item-title">10/22 教育部AI教學研究中心成果登國際師培論壇，以人為本成主軸</div>
-          <div class="item-source">Yahoo新聞</div>
-        </div>
-      </div>
-    </aside>
-    <div class="detail-panel" id="detail-2026-11-02">
-      <div class="detail-empty">
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-        <p>點擊左側新聞查看詳情</p>
-      </div>
-    </div>
-  </div>
-</section>
 <section class="day-pane" id="emptyPane" hidden>
     <div class="split">
       <aside class="news-list"><div class="list-empty">本日尚未產出情報</div></aside>
@@ -1592,7 +1137,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026-11-15 07:20 (台北)</span>
+  最近更新：<span id="updated">2026-11-16 07:19 (台北)</span>
 </footer>
 
 <script>
