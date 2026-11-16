@@ -486,8 +486,8 @@ body {
   <button class="week-nav-btn" id="btnThisWeek" onclick="switchToWeek(0)" disabled>本週 →</button>
 </div>
 <nav class="day-tabs" id="dayTabs">
-  <button class="tab active" data-week="0" data-day="2026-11-16"><span class="tab-dow">週一</span><span class="tab-date">11/16</span><span class="tab-today">今日</span></button>
-  <button class="tab empty" data-week="0" data-day="2026-11-17"><span class="tab-dow">週二</span><span class="tab-date">11/17</span></button>
+  <button class="tab" data-week="0" data-day="2026-11-16"><span class="tab-dow">週一</span><span class="tab-date">11/16</span></button>
+  <button class="tab active" data-week="0" data-day="2026-11-17"><span class="tab-dow">週二</span><span class="tab-date">11/17</span><span class="tab-today">今日</span></button>
   <button class="tab empty" data-week="0" data-day="2026-11-18"><span class="tab-dow">週三</span><span class="tab-date">11/18</span></button>
   <button class="tab empty" data-week="0" data-day="2026-11-19"><span class="tab-dow">週四</span><span class="tab-date">11/19</span></button>
   <button class="tab empty" data-week="0" data-day="2026-11-20"><span class="tab-dow">週五</span><span class="tab-date">11/20</span></button>
@@ -503,7 +503,90 @@ body {
 </nav>
 
 <div id="panesContainer">
-<section class="day-pane" data-day="2026-11-16">
+<section class="day-pane" data-day="2026-11-17">
+  <div class="split">
+    <aside class="news-list" id="list-2026-11-17">
+      <div class="pane-header">11月17日（週二）<span class="count"> · 8 則</span></div>
+      <div class="section-label">產品動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;產品動態&quot;, &quot;tagClass&quot;: &quot;tag-product&quot;, &quot;tagLabel&quot;: &quot;產品&quot;, &quot;title&quot;: &quot;11/3 Google K-12「Guided Learning」正式上線：AI 不再直接給答案，改為引導式提問&quot;, &quot;para1&quot;: &quot;Google 於 11 月 3 日推出 Guided Learning 模式，取代學生在學校帳號使用 Google 搜尋時的 AI Overview 摘要功能。新模式不直接提供答案，而是以一連串引導式問題帶領學生思考，回應外界批評 AI 替學生做功課的強烈壓力。該功能適用於所有啟用學校管理帳號的 K-12 學生。&quot;, &quot;para2&quot;: &quot;Google 此舉是在輿論壓力下的策略轉向，將「AI 不代替學生思考」明確設計進產品功能，代表 EdTech 產品設計正從「效率優先」轉向「學習歷程導向」。這股趨勢將迫使所有在教育場域部署 AI 的廠商重新審視其產品是否具備足夠的「學習鷹架」機制。&quot;, &quot;takeaway&quot;: &quot;台灣 EdTech 廠商可將「Guided Learning 式設計」轉化為行銷切入點：主動向學校展示自家 AI 工具如何以提示與引導取代直接答案，產出「我們的 AI 讓學生更會思考」的具體案例，與 Google 的新標準直接對話，強調本土工具在課程設計上的靈活性。&quot;, &quot;sourceUrl&quot;: &quot;https://www.chalkbeat.org/2026/11/03/google-pushes-gemini-guided-learning-amid-ai-backlash/&quot;, &quot;sourceName&quot;: &quot;Chalkbeat · Google Guided Learning 上線&quot;}">
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">11/3 Google K-12「Guided Learning」正式上線：AI 不再直接給答案，改為引導式提問</div>
+          <div class="item-source">Chalkbeat</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;產品動態&quot;, &quot;tagClass&quot;: &quot;tag-product&quot;, &quot;tagLabel&quot;: &quot;產品&quot;, &quot;title&quot;: &quot;11/3 Google K-12 政策警報：停用 AI 恐連 Google Search 一同失去，加州教師工會要求三年暫緩&quot;, &quot;para1&quot;: &quot;Google 11 月 3 日宣布，Gemini 與 Search 功能預設對 K-12 學生關閉，需管理員主動啟用；學校若選擇全面停用 AI，可能同時喪失 Google Search 存取。加州教師工會要求 K-8 年級暫緩使用生成式 AI 三年，紐約市則宣布 2026-27 學年對 2 至 8 年級實施一年暫緩措施，伯克利學區正評估放棄 Google Search。&quot;, &quot;para2&quot;: &quot;Google 把搜尋與 AI 深度綁定，製造「不接受 AI 就失去基礎工具」的壓迫性局面。多地教師工會與學區的反彈，揭示了教育現場對科技巨頭的高度警戒。這種反彈正在形塑一套新的採購邏輯：能提供「獨立且可管控 AI」的廠商，將在後 Google 教育市場中取得先機。&quot;, &quot;takeaway&quot;: &quot;此次 Google 政策風波是台灣廠商切入北美 K-12 市場的稀有機會視窗。建議準備「非 Google 生態、開放可管控 AI 教育方案」的一頁式比較表，主動觸達正在質疑 Google 鎖定效應的學區資訊長與採購主任，以「教育 AI 主權」為核心訊息框架。&quot;, &quot;sourceUrl&quot;: &quot;https://edsource.org/2026/google-ai-search-restriction/769862&quot;, &quot;sourceName&quot;: &quot;EdSource · Google AI 學校政策爭議&quot;}">
+        <span class="tag tag-product">產品</span>
+        <div class="item-text">
+          <div class="item-title">11/3 Google K-12 政策警報：停用 AI 恐連 Google Search 一同失去，加州教師工會要求三年暫緩</div>
+          <div class="item-source">EdSource</div>
+        </div>
+      </div>
+      <div class="section-label">效果研究</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;效果研究&quot;, &quot;tagClass&quot;: &quot;tag-research&quot;, &quot;tagLabel&quot;: &quot;研究&quot;, &quot;title&quot;: &quot;Google「AI 教育現況 2026」：85% 教師用 AI，82% 未獲正式培訓，政策跑輸採用速度&quot;, &quot;para1&quot;: &quot;Google 發布《AI in the Learning Era 2026》報告，全球 85% 的教育工作者使用生成式 AI，但僅 18% 的美國教師曾接受正式培訓指引；另有 40 個美國州與波多黎各已制定官方 AI 使用框架，代表政策面整備仍嚴重落後實際採用速度。報告訪談超過 2,400 名師生與行政人員。&quot;, &quot;para2&quot;: &quot;「高使用、低培訓」的斷層並非美國獨有，台灣教育現場同樣面臨教師自行摸索、缺乏系統性指引的困境。Google 以報告形式將此痛點全球化，同時也為自己的師培課程產品鋪路——這為有能力提供「本土語境 AI 教學培訓」的台灣廠商提供了明確的市場定位。&quot;, &quot;takeaway&quot;: &quot;以「彌補培訓缺口」為核心訊息進行內容行銷效益最高，現在正是發布《台灣教師 AI 使用現況白皮書》的理想時機。可設計三小時「AI 教學引導力認證工作坊」，主打「有完課證書」與「對應學校評鑑指標」兩大痛點，配合 Google 報告的全球討論熱度擴大觸及。&quot;, &quot;sourceUrl&quot;: &quot;https://blog.google/products-and-platforms/products/education/ai-learning-era-2026/&quot;, &quot;sourceName&quot;: &quot;Google Blog · AI in the Learning Era 2026&quot;}">
+        <span class="tag tag-research">研究</span>
+        <div class="item-text">
+          <div class="item-title">Google「AI 教育現況 2026」：85% 教師用 AI，82% 未獲正式培訓，政策跑輸採用速度</div>
+          <div class="item-source">Google Blog</div>
+        </div>
+      </div>
+      <div class="section-label">機構合作</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;機構合作&quot;, &quot;tagClass&quot;: &quot;tag-partner&quot;, &quot;tagLabel&quot;: &quot;合作&quot;, &quot;title&quot;: &quot;11/15 美兩所教會大學獲聯邦 500 萬美元補助，推動「負責任 AI 教育」五年計畫&quot;, &quot;para1&quot;: &quot;美國教育部於 11 月 15 日宣布，Mount Saint Mary&#x27;s University（加州）與 St. Catherine University（明尼蘇達）共同獲得聯邦 Title III 補助 499 萬 8,260 美元，計畫期間 2026 至 2031 年。兩校將以「倫理 AI 教育」為核心，開發跨院系 AI 素養課程，並建立教師 AI 教學能力培訓機制。&quot;, &quot;para2&quot;: &quot;聯邦 Title III 補助是美國強化小型及弱勢服務機構（MSI）競爭力的核心機制，此次明確聚焦「倫理 AI 教育」，代表美國高教政策正式將 AI 倫理素養納入長期課程改革的優先項目。對台灣大學而言，這提供了一個參照框架：AI 倫理不只是選修議題，而是聯邦補助認可的核心能力。&quot;, &quot;takeaway&quot;: &quot;台灣大學在申請教育部 AI 教育補助標案時，可參照此案的「跨院系 AI 素養 + 教師培訓雙軌架構」，提出更具說服力的完整方案。建議廠商開發「AI 倫理教育課程包」，與大學共同申請教育部數位學習計畫，以「補助就位」策略提前鎖定合作關係。&quot;, &quot;sourceUrl&quot;: &quot;https://casrai.org/news/mount-saint-marys-st-catherine-five-million-title-iii-ai-grant-2026&quot;, &quot;sourceName&quot;: &quot;CASRAI · 美聯邦 Title III 倫理 AI 補助&quot;}">
+        <span class="tag tag-partner">合作</span>
+        <div class="item-text">
+          <div class="item-title">11/15 美兩所教會大學獲聯邦 500 萬美元補助，推動「負責任 AI 教育」五年計畫</div>
+          <div class="item-source">CASRAI</div>
+        </div>
+      </div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;機構合作&quot;, &quot;tagClass&quot;: &quot;tag-partner&quot;, &quot;tagLabel&quot;: &quot;合作&quot;, &quot;title&quot;: &quot;OpenAI 捐 100 萬英鎊給英國 The King&#x27;s Trust，25,000 名弱勢青年獲 AI 技能培訓&quot;, &quot;para1&quot;: &quot;OpenAI 宣布捐款 100 萬英鎊給英國查爾斯三世創立的 The King&#x27;s Trust（前「王子信託」），計畫 18 個月內協助多達 2.5 萬名英國弱勢青年獲得 AI 技能培訓。計畫聚焦於原本難以接觸科技資源的年輕族群，強調 AI 普及與社會流動性之間的連結。&quot;, &quot;para2&quot;: &quot;OpenAI 選擇以慈善捐款而非商業合作模式進入英國青少年教育市場，藉由王室信譽背書強化品牌公信力，同時繞開商業化爭議。「AI 技能作為社會向上流動工具」的論述框架，正在成為大型 AI 公司建立正面公眾形象的核心策略，對台灣 CSR 行銷具有直接參考價值。&quot;, &quot;takeaway&quot;: &quot;OpenAI 此舉揭示了一個可複製的框架：與知名公益組織聯合推出「弱勢族群 AI 素養培訓」，既能展現社會責任也能接觸潛在未來用戶。台灣廠商可考慮與學校財團法人、教育基金會或兒福機構合作，推出針對偏鄉或經濟弱勢學生的 AI 教育計畫，以此獲得媒體曝光、政府補助加分及品牌好感度。&quot;, &quot;sourceUrl&quot;: &quot;https://www.edtechinnovationhub.com/news/openai-commits-1-million-to-the-kings-trust-for-youth-ai-skills-training&quot;, &quot;sourceName&quot;: &quot;EdTech Innovation Hub · OpenAI 英國青年 AI 培訓&quot;}">
+        <span class="tag tag-partner">合作</span>
+        <div class="item-text">
+          <div class="item-title">OpenAI 捐 100 萬英鎊給英國 The King&#x27;s Trust，25,000 名弱勢青年獲 AI 技能培訓</div>
+          <div class="item-source">EdTech Innovation Hub</div>
+        </div>
+      </div>
+      <div class="section-label">台灣與亞洲</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;台灣與亞洲&quot;, &quot;tagClass&quot;: &quot;tag-taiwan&quot;, &quot;tagLabel&quot;: &quot;亞洲&quot;, &quot;title&quot;: &quot;11/16 印度卡納塔克邦：AI 與 Python 課程正式進入 1,800 所公立高中&quot;, &quot;para1&quot;: &quot;印度卡納塔克邦於 11 月 16 日宣布，2026-27 學年起在全邦 1,800 所政府高中九年級學生（約 15 歲）中引入 AI 與 Python 程式設計課程，涵蓋生成式 AI 基礎、資料科學概念及 Python 語法，作為邦政府「數位能力擴展計畫」的核心項目。&quot;, &quot;para2&quot;: &quot;卡納塔克邦是印度科技中心（班加羅爾所在地），此舉代表印度正從高教向下延伸至中學階段強制推動 AI 程式素養。規模達 1,800 所學校的快速鋪展，意味著課程內容、師培工具和教學軟體的巨大採購需求即將釋出，對有志進入印度教育市場的台灣廠商是值得追蹤的信號。&quot;, &quot;takeaway&quot;: &quot;印度中學 AI 課程市場規模龐大但本土資源稀缺。建議台灣廠商評估將既有 AI 程式教育工具轉製為英語版，與印度當地 EdTech 通路商建立代理合作，以「適合公立學校大規模部署的平價解決方案」為核心訴求，搶先其他亞洲競爭者進入卡納塔克邦標案。&quot;, &quot;sourceUrl&quot;: &quot;https://ummid.com/news/2026/11/16/ai-python-and-karnataka-expands-digital-capabilities-across-state-schools.html&quot;, &quot;sourceName&quot;: &quot;Ummid · 印度卡納塔克邦 AI 教育擴張&quot;}">
+        <span class="tag tag-taiwan">亞洲</span>
+        <div class="item-text">
+          <div class="item-title">11/16 印度卡納塔克邦：AI 與 Python 課程正式進入 1,800 所公立高中</div>
+          <div class="item-source">Ummid</div>
+        </div>
+      </div>
+      <div class="section-label">資金動態</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;資金動態&quot;, &quot;tagClass&quot;: &quot;tag-funding&quot;, &quot;tagLabel&quot;: &quot;資金&quot;, &quot;title&quot;: &quot;2026 EdTech 資金年報：案件數增 11% 但平均金額縮 31%，AI 特性成融資門票&quot;, &quot;para1&quot;: &quot;11 月 14 日發布的 EdTech 資金分析報告顯示，2026 年 EdTech 交易案件數較前年增加 11%，但中位數融資金額縮水 31%。投資人審查標準明顯收緊：能展示 AI 功能差異性的新創仍可成功融資，缺乏清晰 AI 定位的平台則幾乎難以獲得支持，「AI 是否融資」而非「EdTech 是否融資」已成為市場分水嶺。&quot;, &quot;para2&quot;: &quot;「更多交易、更小張支票」的結構，代表 2026 年 EdTech 市場進入精選布局期——投資人傾向以小額多樣化方式押注，而非大賭注集中。這對台灣 EdTech 新創既是機會也是挑戰：機會在於種子輪融資門檻相對降低，挑戰在於後續輪次若無差異化 AI 定位，幾乎不可能吸引追加投資。&quot;, &quot;takeaway&quot;: &quot;台灣 EdTech 廠商在準備融資材料時，「AI 功能的具體學習效益數據」比「AI 功能描述」更具說服力。建議進行小規模、有明確對照組的學習成效實驗，以可量化的結果（例如：使用後學生測驗通過率提升 X%）強化 pitch deck，配合全球市場報告中的 AI 佔比趨勢作為宏觀背書。&quot;, &quot;sourceUrl&quot;: &quot;https://www.marketscale.com/industries/education-technology/edtech-deals-rose-11-while-the-median-funding-round-shrank-31&quot;, &quot;sourceName&quot;: &quot;MarketScale · 2026 EdTech 資金趨勢報告&quot;}">
+        <span class="tag tag-funding">資金</span>
+        <div class="item-text">
+          <div class="item-title">2026 EdTech 資金年報：案件數增 11% 但平均金額縮 31%，AI 特性成融資門票</div>
+          <div class="item-source">MarketScale</div>
+        </div>
+      </div>
+      <div class="section-label">市場趨勢</div>
+      <div class="news-item" onclick="selectNews(this)"
+        data-story="{&quot;section&quot;: &quot;市場趨勢&quot;, &quot;tagClass&quot;: &quot;tag-market&quot;, &quot;tagLabel&quot;: &quot;趨勢&quot;, &quot;title&quot;: &quot;11/10 美加州南帕薩迪納學區通過生成式 AI 政策：禁止學生在個人設備上使用 AI&quot;, &quot;para1&quot;: &quot;美國加州南帕薩迪納聯合學區（SPUSD）董事會於 11 月 10 日正式通過生成式 AI 政策，經歷多輪教育科技委員會審議。政策規定教職員須揭露工作中的 AI 使用情況，並禁止學生在學校場所的個人設備上使用生成式 AI 工具，管制範圍與執行機制較全美多數學區更為明確。&quot;, &quot;para2&quot;: &quot;SPUSD 政策的「員工揭露義務」設計較為罕見，代表學區開始把 AI 使用的透明度納入教師問責制度。結合加州各地學區對 Google AI 綑綁政策的反彈浪潮，可以看出加州教育現場正在逐步建立比聯邦層面更嚴格的 AI 管理框架，這將對進入加州市場的台灣廠商形成更高的合規要求。&quot;, &quot;takeaway&quot;: &quot;台灣廠商若有計畫進入美國 K-12 市場，應提前建立「學區 AI 合規文件包」，包括：資料隱私聲明、教師 AI 使用揭露模板、學生使用限制設定指南。這類合規輔助工具往往是學區採購的隱形加分項，可縮短審查周期並降低學區法律顧問的疑慮。&quot;, &quot;sourceUrl&quot;: &quot;https://southpasadenan.com/spusd-nov-10-board-meeting-ai-policy-adopted-strategic-plan-approved-46-million-bond-authorized/&quot;, &quot;sourceName&quot;: &quot;Pasadena Now · 南帕薩迪納 AI 政策通過&quot;}">
+        <span class="tag tag-market">趨勢</span>
+        <div class="item-text">
+          <div class="item-title">11/10 美加州南帕薩迪納學區通過生成式 AI 政策：禁止學生在個人設備上使用 AI</div>
+          <div class="item-source">Pasadena Now</div>
+        </div>
+      </div>
+    </aside>
+    <div class="detail-panel" id="detail-2026-11-17">
+      <div class="detail-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        <p>點擊左側新聞查看詳情</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="day-pane" data-day="2026-11-16" hidden>
   <div class="split">
     <aside class="news-list" id="list-2026-11-16">
       <div class="pane-header">11月16日（週一）<span class="count"> · 8 則</span></div>
@@ -1137,7 +1220,7 @@ body {
 
 <footer class="site-footer">
   資料由 Claude 自動彙整於每日清晨 7:00（台北時間）　·
-  最近更新：<span id="updated">2026-11-16 07:19 (台北)</span>
+  最近更新：<span id="updated">2026-11-17 07:21 (台北)</span>
 </footer>
 
 <script>
